@@ -37,7 +37,7 @@ def build_team_strength_index():
     Aggregates the Coefficients from your scraped top scorers and assisters 
     to create an 'Offensive Power' rating for each team per season.
     """
-    scorers = pd.read_csv('/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/LaligaScorers/Processed Scorers.csv')
+    scorers = pd.read_csv('/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/Laligascoring/Processed Scorers.csv')
     assists = pd.read_csv('/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/LaligaAssist/Processed Assists.csv')
     
     # Sum the coefficients of top scorers for each team per season
@@ -105,3 +105,6 @@ def main():
     print(f"Feature engineering complete! Final dataset shape: {final_dataset.shape}")
     print(f"Saved as {save_path}")
     print("--- Feature Engineering Complete ---")
+    
+if __name__ == "__main__":
+    main()
