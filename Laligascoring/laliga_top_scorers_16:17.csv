@@ -1,0 +1,101 @@
+Player,Team,Goals,Matches Played,Coefficient
+Lionel Messi,FC Barcelona,37,34,1.09
+Luis Suárez,FC Barcelona,28,35,0.8
+Cristiano Ronaldo,Real Madrid,25,29,0.86
+Iago Aspas,Celta,19,32,0.59
+Antoine Griezmann,Atlético de Madrid,16,36,0.44
+Aritz Aduriz,Athletic,16,32,0.5
+Álvaro Morata,Real Madrid,15,26,0.58
+Sandro Ramírez,Málaga,14,30,0.47
+Neymar,FC Barcelona,13,30,0.43
+Gerard Moreno,Espanyol,13,37,0.35
+Rubén Castro,Real Betis,13,35,0.37
+Willian José,Real Sociedad,12,28,0.43
+Florin Andone,Deportivo,12,37,0.32
+Kévin Gameiro,Atlético de Madrid,12,31,0.39
+Wissam Ben Yedder,Sevilla,11,31,0.35
+Karim Benzema,Real Madrid,11,29,0.38
+Juanmi,Real Sociedad,11,35,0.31
+Sergi Enrich,Eibar,11,38,0.29
+Pablo Piatti,Espanyol,10,30,0.33
+Isco,Real Madrid,10,30,0.33
+Pedro León,Eibar,10,37,0.27
+Kevin-Prince Boateng,Las Palmas,10,28,0.36
+Raúl García,Athletic,10,36,0.28
+Yannick Carrasco,Atlético de Madrid,10,35,0.29
+Sergio León,Osasuna,10,33,0.3
+Y. Carrasco,Atlético de Madrid,10,35,0.29
+C. Vela,Real Sociedad,9,35,0.26
+Duje Čop,Real Sporting,9,31,0.29
+R. Soriano,Villarreal,9,33,0.27
+C. Carmona,Real Sporting,8,25,0.32
+A. Szymanowski,Leganés,8,28,0.29
+Fernando Torres,Atlético de Madrid,8,31,0.26
+N. Sansone,Villarreal,8,32,0.25
+Ivan Rakitić,FC Barcelona,8,32,0.25
+Pablo Sarabia,Sevilla,8,34,0.24
+Xabi Prieto,Real Sociedad,8,38,0.21
+James,Real Madrid,8,22,0.36
+V. Iborra,Sevilla,7,31,0.23
+Iker Muniain,Athletic,7,35,0.2
+Roberto Torres,Osasuna,7,32,0.22
+Deyverson,Deportivo Alavés,7,32,0.22
+Jonathan Viera,UD Las Palmas,7,31,0.23
+Adrián,Eibar,7,28,0.25
+F. Vázquez,Sevilla,7,30,0.23
+Sergio Ramos,Real Madrid,7,28,0.25
+Kenan Kodro,Osasuna,7,28,0.25
+Kike García,Eibar,7,24,0.29
+G. Bale,Real Madrid,7,19,0.37
+Munir,Valencia,6,34,0.18
+C. Borges,RC Deportivo,6,34,0.18
+Santi Mina,Valencia,6,29,0.21
+Pablo Fornals,Málaga,6,32,0.19
+Vitolo,Sevilla,6,30,0.2
+Stevan Jovetić,Sevilla,6,21,0.29
+L. Vietto,Sevilla,6,21,0.29
+P. Alcácer,FC Barcelona,6,21,0.29
+S. Zaza,Valencia,6,20,0.3
+Rafinha,FC Barcelona,6,18,0.33
+L Leo Baptistão,Espanyol,6,21,0.29
+Ibai Gómez,Deportivo Alavés,5,29,0.17
+I. Williams,Athletic,5,38,0.13
+Manu Trigueros,Villarreal,5,37,0.14
+Dani Parejo,Valencia,5,36,0.14
+Andreas Pereira,Granada,5,35,0.14
+G. Pires,Leganés,5,34,0.15
+M. Guerrero,Leganés,5,31,0.16
+Bruno,Villarreal,5,34,0.15
+A. Kravets,Granada,5,26,0.19
+Marko Livaja,UD Las Palmas,5,25,0.2
+M. Lemos,UD Las Palmas,5,23,0.22
+Carcela-González,Granada,5,22,0.23
+Joselu,RC Deportivo,5,20,0.25
+Nani,Valencia,5,25,0.2
+Rodrigo Moreno,Valencia,5,19,0.26
+P. Bigas,UD Las Palmas,4,32,0.13
+E. Garay,Valencia,4,27,0.15
+Ángel Correa,Atlético de Madrid,4,31,0.13
+Tana,UD Las Palmas,4,32,0.13
+I. Camacho,Málaga,4,35,0.11
+Saúl,Atlético de Madrid,4,33,0.12
+M. San José,Athletic,4,35,0.11
+Koke,Atlético de Madrid,4,36,0.11
+N. El Zhar,Leganés,4,26,0.15
+Édgar Méndez,Deportivo Alavés,4,27,0.15
+G. Rossi,Celta,4,18,0.22
+J. Correa,Sevilla,4,26,0.15
+Casemiro,Real Madrid,4,25,0.16
+Luciano Neves,Leganés,4,25,0.16
+Carlos Castro,Real Sporting,4,25,0.16
+J. Guidetti,Celta,4,23,0.17
+A. Sanabria,Real Betis,4,22,0.18
+Oriol Riera,Osasuna,4,22,0.18
+Ramos,Granada,4,14,0.29
+R. Babel,RC Deportivo,4,11,0.36
+R. Soldado,Villarreal,4,10,0.4
+Jon Bautista,Real Sociedad,3,12,0.25
+M. Santos,Málaga,3,14,0.21
+Jesé Rodríguez,UD Las Palmas,3,16,0.19
+A. Turan,FC Barcelona,3,18,0.17
+Recio,Málaga,3,18,0.17
