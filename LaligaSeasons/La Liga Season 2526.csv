@@ -1,0 +1,381 @@
+date,time,matchday,home_team,away_team,city,stadium,status,result
+2025-08-15,13:00,1,Girona,Rayo Vallecano,Girona,Estadio Municipal de Montilivi,Played,1-3
+2025-08-15,15:30,1,Villarreal,Oviedo,Villarreal,Estadio de la Ceramica,Played,2-0
+2025-08-16,13:30,1,Mallorca,Barcelona,Palma de Mallorca,Estadi Mallorca Son Moix,Played,0-3
+2025-08-16,15:30,1,Valencia,Real Sociedad,Valencia,Estadio de Mestalla,Played,1-1
+2025-08-16,15:30,1,Alaves,Levante,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,2-1
+2025-08-17,11:00,1,Celta Vigo,Getafe,Vigo,Estadio Abanca Balaídos,Played,0-2
+2025-08-17,13:30,1,Athletic Club,Sevilla,Bilbao,San Mamés,Played,3-2
+2025-08-17,15:30,1,Espanyol,Atletico Madrid,Cornella de Llobregat,RCDE Stadium,Played,2-1
+2025-08-18,15:00,1,Elche,Real Betis,Elche,Estadio Manuel Martínez Valero,Played,1-1
+2025-08-19,15:00,1,Real Madrid,Osasuna,Madrid,Estadio Santiago Bernabéu,Played,1-0
+2025-08-22,15:30,2,Real Betis,Alaves,Sevilla,Estadio de La Cartuja,Played,1-0
+2025-08-23,11:00,2,Mallorca,Celta Vigo,Palma de Mallorca,Estadi Mallorca Son Moix,Played,1-1
+2025-08-23,13:30,2,Atletico Madrid,Elche,Madrid,Metropolitano Stadium,Played,1-1
+2025-08-23,15:30,2,Levante,Barcelona,Valencia,Estadio Ciudad de Valencia,Played,2-3
+2025-08-24,11:00,2,Osasuna,Valencia,Pamplona,Estadio El Sadar,Played,1-0
+2025-08-24,13:30,2,Villarreal,Girona,Villarreal,Estadio de la Ceramica,Played,5-0
+2025-08-24,13:30,2,Real Sociedad,Espanyol,San Sebastian,Reale Arena,Played,2-2
+2025-08-24,15:30,2,Oviedo,Real Madrid,Oviedo,Estadio Nuevo Carlos Tartiere,Played,0-3
+2025-08-25,13:30,2,Athletic Club,Rayo Vallecano,Bilbao,San Mamés,Played,1-0
+2025-08-25,15:30,2,Sevilla,Getafe,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,1-2
+2025-08-27,15:00,6,Celta Vigo,Real Betis,Vigo,Estadio Abanca Balaídos,Played,1-1
+2025-08-29,13:30,3,Elche,Levante,Elche,Estadio Manuel Martínez Valero,Played,2-0
+2025-08-29,15:30,3,Valencia,Getafe,Valencia,Estadio de Mestalla,Played,3-0
+2025-08-30,11:00,3,Alaves,Atletico Madrid,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,1-1
+2025-08-30,13:00,3,Oviedo,Real Sociedad,Oviedo,Estadio Nuevo Carlos Tartiere,Played,1-0
+2025-08-30,13:30,3,Girona,Sevilla,Girona,Estadio Municipal de Montilivi,Played,0-2
+2025-08-30,15:30,3,Real Madrid,Mallorca,Madrid,Estadio Santiago Bernabéu,Played,2-1
+2025-08-31,11:00,3,Celta Vigo,Villarreal,Vigo,Estadio Abanca Balaídos,Played,1-1
+2025-08-31,13:00,3,Real Betis,Athletic Club,Sevilla,Estadio de La Cartuja,Played,1-2
+2025-08-31,13:30,3,Espanyol,Osasuna,Cornella de Llobregat,RCDE Stadium,Played,1-0
+2025-08-31,15:30,3,Rayo Vallecano,Barcelona,Madrid,Campo de Futbol de Vallecas,Played,1-1
+2025-09-12,15:00,4,Sevilla,Elche,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,2-2
+2025-09-13,08:00,4,Getafe,Oviedo,Getafe,Coliseum,Played,2-0
+2025-09-13,10:15,4,Real Sociedad,Real Madrid,San Sebastian,Reale Arena,Played,1-2
+2025-09-13,12:30,4,Athletic Club,Alaves,Bilbao,San Mamés,Played,0-1
+2025-09-13,15:00,4,Atletico Madrid,Villarreal,Madrid,Metropolitano Stadium,Played,2-0
+2025-09-14,08:00,4,Celta Vigo,Girona,Vigo,Estadio Abanca Balaídos,Played,1-1
+2025-09-14,10:15,4,Levante,Real Betis,Valencia,Estadio Ciudad de Valencia,Played,2-2
+2025-09-14,12:30,4,Osasuna,Rayo Vallecano,Pamplona,Estadio El Sadar,Played,2-0
+2025-09-14,15:00,4,Barcelona,Valencia,Barcelona,Estadi Johan Cruyff,Played,6-0
+2025-09-15,15:00,4,Espanyol,Mallorca,Cornella de Llobregat,RCDE Stadium,Played,3-2
+2025-09-19,15:00,5,Real Betis,Real Sociedad,Sevilla,Estadio de La Cartuja,Played,3-1
+2025-09-20,08:00,5,Girona,Levante,Girona,Estadio Municipal de Montilivi,Played,0-4
+2025-09-20,10:15,5,Real Madrid,Espanyol,Madrid,Estadio Santiago Bernabéu,Played,2-0
+2025-09-20,12:30,5,Villarreal,Osasuna,Villarreal,Estadio de la Ceramica,Played,2-1
+2025-09-20,12:30,5,Alaves,Sevilla,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,1-2
+2025-09-20,15:00,5,Valencia,Athletic Club,Valencia,Estadio de Mestalla,Played,2-0
+2025-09-21,08:00,5,Rayo Vallecano,Celta Vigo,Madrid,Campo de Futbol de Vallecas,Played,1-1
+2025-09-21,10:15,5,Mallorca,Atletico Madrid,Palma de Mallorca,Estadi Mallorca Son Moix,Played,1-1
+2025-09-21,12:30,5,Elche,Oviedo,Elche,Estadio Manuel Martínez Valero,Played,1-0
+2025-09-21,15:00,5,Barcelona,Getafe,Barcelona,Estadi Johan Cruyff,Played,3-0
+2025-09-23,13:00,6,Athletic Club,Girona,Bilbao,San Mamés,Played,1-1
+2025-09-23,13:00,6,Espanyol,Valencia,Cornella de Llobregat,RCDE Stadium,Played,2-2
+2025-09-23,15:30,6,Sevilla,Villarreal,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,1-2
+2025-09-23,15:30,6,Levante,Real Madrid,Valencia,Estadio Ciudad de Valencia,Played,1-4
+2025-09-24,13:00,6,Getafe,Alaves,Getafe,Coliseum,Played,1-1
+2025-09-24,15:30,6,Atletico Madrid,Rayo Vallecano,Madrid,Metropolitano Stadium,Played,3-2
+2025-09-24,15:30,6,Real Sociedad,Mallorca,San Sebastian,Reale Arena,Played,1-0
+2025-09-25,13:30,6,Osasuna,Elche,Pamplona,Estadio El Sadar,Played,1-1
+2025-09-25,15:30,6,Oviedo,Barcelona,Oviedo,Estadio Nuevo Carlos Tartiere,Played,1-3
+2025-09-26,15:00,7,Girona,Espanyol,Girona,Estadio Municipal de Montilivi,Played,0-0
+2025-09-27,08:00,7,Getafe,Levante,Getafe,Coliseum,Played,1-1
+2025-09-27,10:15,7,Atletico Madrid,Real Madrid,Madrid,Metropolitano Stadium,Played,5-2
+2025-09-27,12:30,7,Mallorca,Alaves,Palma de Mallorca,Estadi Mallorca Son Moix,Played,1-0
+2025-09-27,15:00,7,Villarreal,Athletic Club,Villarreal,Estadio de la Ceramica,Played,1-0
+2025-09-28,08:00,7,Rayo Vallecano,Sevilla,Madrid,Campo de Futbol de Vallecas,Played,0-1
+2025-09-28,10:15,7,Elche,Celta Vigo,Elche,Estadio Manuel Martínez Valero,Played,2-1
+2025-09-28,12:30,7,Barcelona,Real Sociedad,Barcelona,Camp Nou,Played,2-1
+2025-09-28,15:00,7,Real Betis,Osasuna,Sevilla,Estadio de La Cartuja,Played,2-0
+2025-09-30,14:00,7,Valencia,Oviedo,Valencia,Estadio de Mestalla,Played,1-2
+2025-10-03,15:00,8,Osasuna,Getafe,Pamplona,Estadio El Sadar,Played,2-1
+2025-10-04,08:00,8,Oviedo,Levante,Oviedo,Estadio Nuevo Carlos Tartiere,Played,0-2
+2025-10-04,10:15,8,Girona,Valencia,Girona,Estadio Municipal de Montilivi,Played,2-1
+2025-10-04,12:30,8,Athletic Club,Mallorca,Bilbao,San Mamés,Played,2-1
+2025-10-04,15:00,8,Real Madrid,Villarreal,Madrid,Estadio Santiago Bernabéu,Played,3-1
+2025-10-05,08:00,8,Alaves,Elche,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,3-1
+2025-10-05,10:15,8,Sevilla,Barcelona,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,4-1
+2025-10-05,12:30,8,Espanyol,Real Betis,Cornella de Llobregat,RCDE Stadium,Played,1-2
+2025-10-05,12:30,8,Real Sociedad,Rayo Vallecano,San Sebastian,Reale Arena,Played,0-1
+2025-10-05,15:00,8,Celta Vigo,Atletico Madrid,Vigo,Estadio Abanca Balaídos,Played,1-1
+2025-10-17,15:00,9,Oviedo,Espanyol,Oviedo,Estadio Nuevo Carlos Tartiere,Played,0-2
+2025-10-18,08:00,9,Sevilla,Mallorca,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,1-3
+2025-10-18,10:15,9,Barcelona,Girona,Barcelona,Olímpic Lluís Companys,Played,2-1
+2025-10-18,12:30,9,Villarreal,Real Betis,Villarreal,Estadio de la Ceramica,Played,2-2
+2025-10-18,15:00,9,Atletico Madrid,Osasuna,Madrid,Metropolitano Stadium,Played,1-0
+2025-10-19,08:00,9,Elche,Athletic Club,Elche,Estadio Manuel Martínez Valero,Played,0-0
+2025-10-19,10:15,9,Celta Vigo,Real Sociedad,Vigo,Estadio Abanca Balaídos,Played,1-1
+2025-10-19,12:30,9,Levante,Rayo Vallecano,Valencia,Estadio Ciudad de Valencia,Played,0-3
+2025-10-19,15:00,9,Getafe,Real Madrid,Getafe,Coliseum,Played,0-1
+2025-10-20,15:00,9,Alaves,Valencia,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,0-0
+2025-10-24,15:00,10,Real Sociedad,Sevilla,San Sebastian,Reale Arena,Played,2-1
+2025-10-25,08:00,10,Girona,Oviedo,Girona,Estadio Municipal de Montilivi,Played,3-3
+2025-10-25,10:15,10,Espanyol,Elche,Cornella de Llobregat,RCDE Stadium,Played,1-0
+2025-10-25,12:30,10,Athletic Club,Getafe,Bilbao,San Mamés,Played,0-1
+2025-10-25,15:00,10,Valencia,Villarreal,Valencia,Estadio de Mestalla,Played,0-2
+2025-10-26,09:00,10,Mallorca,Levante,Palma de Mallorca,Estadi Mallorca Son Moix,Played,1-1
+2025-10-26,11:15,10,Real Madrid,Barcelona,Madrid,Estadio Santiago Bernabéu,Played,2-1
+2025-10-26,13:30,10,Osasuna,Celta Vigo,Pamplona,Estadio El Sadar,Played,2-3
+2025-10-26,16:00,10,Rayo Vallecano,Alaves,Madrid,Campo de Futbol de Vallecas,Played,1-0
+2025-10-27,16:00,10,Real Betis,Atletico Madrid,Sevilla,Estadio de La Cartuja,Played,0-2
+2025-10-31,16:00,11,Getafe,Girona,Getafe,Coliseum,Played,2-1
+2025-11-01,09:00,11,Villarreal,Rayo Vallecano,Villarreal,Estadio de la Ceramica,Played,4-0
+2025-11-01,11:15,11,Atletico Madrid,Sevilla,Madrid,Metropolitano Stadium,Played,3-0
+2025-11-01,13:30,11,Real Sociedad,Athletic Club,San Sebastian,Reale Arena,Played,3-2
+2025-11-01,16:00,11,Real Madrid,Valencia,Madrid,Estadio Santiago Bernabéu,Played,4-0
+2025-11-02,08:00,11,Levante,Celta Vigo,Valencia,Estadio Ciudad de Valencia,Played,1-2
+2025-11-02,10:15,11,Alaves,Espanyol,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,2-1
+2025-11-02,12:30,11,Barcelona,Elche,Barcelona,Olímpic Lluís Companys,Played,3-1
+2025-11-02,15:00,11,Real Betis,Mallorca,Sevilla,Estadio de La Cartuja,Played,3-0
+2025-11-03,15:00,11,Oviedo,Osasuna,Oviedo,Estadio Nuevo Carlos Tartiere,Played,0-0
+2025-11-07,15:00,12,Elche,Real Sociedad,Elche,Estadio Manuel Martínez Valero,Played,1-1
+2025-11-08,08:00,12,Girona,Alaves,Girona,Estadio Municipal de Montilivi,Played,1-0
+2025-11-08,10:15,12,Sevilla,Osasuna,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,1-0
+2025-11-08,12:30,12,Atletico Madrid,Levante,Madrid,Metropolitano Stadium,Played,3-1
+2025-11-08,15:00,12,Espanyol,Villarreal,Cornella de Llobregat,RCDE Stadium,Played,0-2
+2025-11-09,08:00,12,Athletic Club,Oviedo,Bilbao,San Mamés,Played,1-0
+2025-11-09,10:15,12,Rayo Vallecano,Real Madrid,Madrid,Campo de Futbol de Vallecas,Played,0-0
+2025-11-09,12:30,12,Valencia,Real Betis,Valencia,Estadio de Mestalla,Played,1-1
+2025-11-09,12:30,12,Mallorca,Getafe,Palma de Mallorca,Estadi Mallorca Son Moix,Played,1-0
+2025-11-09,15:00,12,Celta Vigo,Barcelona,Vigo,Estadio Abanca Balaídos,Played,2-4
+2025-11-21,15:00,13,Valencia,Levante,Valencia,Estadio de Mestalla,Played,1-0
+2025-11-22,08:00,13,Alaves,Celta Vigo,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,0-1
+2025-11-22,10:15,13,Barcelona,Athletic Club,Barcelona,Camp Nou,Played,4-0
+2025-11-22,12:30,13,Osasuna,Real Sociedad,Pamplona,Estadio El Sadar,Played,1-3
+2025-11-22,15:00,13,Villarreal,Mallorca,Villarreal,Estadio de la Ceramica,Played,2-1
+2025-11-23,08:00,13,Oviedo,Rayo Vallecano,Oviedo,Estadio Nuevo Carlos Tartiere,Played,0-0
+2025-11-23,10:15,13,Real Betis,Girona,Sevilla,Estadio de La Cartuja,Played,1-1
+2025-11-23,12:30,13,Getafe,Atletico Madrid,Getafe,Coliseum,Played,0-1
+2025-11-23,15:00,13,Elche,Real Madrid,Elche,Estadio Manuel Martínez Valero,Played,2-2
+2025-11-24,15:00,13,Espanyol,Sevilla,Cornella de Llobregat,RCDE Stadium,Played,2-1
+2025-11-28,15:00,14,Getafe,Elche,Getafe,Coliseum,Played,1-0
+2025-11-29,08:00,14,Mallorca,Osasuna,Palma de Mallorca,Estadi Mallorca Son Moix,Played,2-2
+2025-11-29,10:15,14,Barcelona,Alaves,Barcelona,Camp Nou,Played,3-1
+2025-11-29,12:30,14,Levante,Athletic Club,Valencia,Estadio Ciudad de Valencia,Played,0-2
+2025-11-29,15:00,14,Atletico Madrid,Oviedo,Madrid,Metropolitano Stadium,Played,2-0
+2025-11-30,08:00,14,Real Sociedad,Villarreal,San Sebastian,Reale Arena,Played,2-3
+2025-11-30,10:15,14,Sevilla,Real Betis,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,0-2
+2025-11-30,12:30,14,Celta Vigo,Espanyol,Vigo,Estadio Abanca Balaídos,Played,0-1
+2025-11-30,15:00,14,Girona,Real Madrid,Girona,Estadio Municipal de Montilivi,Played,1-1
+2025-12-01,15:00,14,Rayo Vallecano,Valencia,Madrid,Campo de Futbol de Vallecas,Played,1-1
+2025-12-02,15:00,19,Barcelona,Atletico Madrid,Barcelona,Camp Nou,Played,3-1
+2025-12-03,13:00,19,Athletic Club,Real Madrid,Bilbao,San Mamés,Played,0-3
+2025-12-05,15:00,15,Oviedo,Mallorca,Oviedo,Estadio Nuevo Carlos Tartiere,Played,0-0
+2025-12-06,08:00,15,Villarreal,Getafe,Villarreal,Estadio de la Ceramica,Played,2-0
+2025-12-06,10:15,15,Alaves,Real Sociedad,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,1-0
+2025-12-06,12:30,15,Real Betis,Barcelona,Sevilla,Estadio de La Cartuja,Played,3-5
+2025-12-06,15:00,15,Athletic Club,Atletico Madrid,Bilbao,San Mamés,Played,1-0
+2025-12-07,08:00,15,Elche,Girona,Elche,Estadio Manuel Martínez Valero,Played,3-0
+2025-12-07,10:15,15,Valencia,Sevilla,Valencia,Estadio de Mestalla,Played,1-1
+2025-12-07,12:30,15,Espanyol,Rayo Vallecano,Cornella de Llobregat,RCDE Stadium,Played,1-0
+2025-12-07,15:00,15,Real Madrid,Celta Vigo,Madrid,Estadio Santiago Bernabéu,Played,0-2
+2025-12-08,15:00,15,Osasuna,Levante,Pamplona,Estadio El Sadar,Played,2-0
+2025-12-12,15:00,16,Real Sociedad,Girona,San Sebastian,Reale Arena,Played,1-2
+2025-12-13,08:00,16,Atletico Madrid,Valencia,Madrid,Metropolitano Stadium,Played,2-1
+2025-12-13,10:15,16,Mallorca,Elche,Palma de Mallorca,Estadi Mallorca Son Moix,Played,3-1
+2025-12-13,12:30,16,Barcelona,Osasuna,Barcelona,Camp Nou,Played,2-0
+2025-12-13,15:00,16,Getafe,Espanyol,Getafe,Coliseum,Played,0-1
+2025-12-14,08:00,16,Sevilla,Oviedo,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,4-0
+2025-12-14,10:15,16,Celta Vigo,Athletic Club,Vigo,Estadio Abanca Balaídos,Played,2-0
+2025-12-14,15:00,16,Alaves,Real Madrid,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,1-2
+2025-12-15,15:00,16,Rayo Vallecano,Real Betis,Madrid,Campo de Futbol de Vallecas,Played,0-0
+2025-12-19,15:00,17,Valencia,Mallorca,Valencia,Estadio de Mestalla,Played,1-1
+2025-12-20,08:00,17,Oviedo,Celta Vigo,Oviedo,Estadio Nuevo Carlos Tartiere,Played,0-0
+2025-12-20,10:15,17,Levante,Real Sociedad,Valencia,Estadio Ciudad de Valencia,Played,1-1
+2025-12-20,12:30,17,Osasuna,Alaves,Pamplona,Estadio El Sadar,Played,3-0
+2025-12-20,15:00,17,Real Madrid,Sevilla,Madrid,Estadio Santiago Bernabéu,Played,2-0
+2025-12-21,08:00,17,Girona,Atletico Madrid,Girona,Estadio Municipal de Montilivi,Played,0-3
+2025-12-21,10:15,17,Villarreal,Barcelona,Villarreal,Estadio de la Ceramica,Played,0-2
+2025-12-21,12:30,17,Elche,Rayo Vallecano,Elche,Estadio Manuel Martínez Valero,Played,4-0
+2025-12-21,15:00,17,Real Betis,Getafe,Sevilla,Estadio de La Cartuja,Played,4-0
+2025-12-22,15:00,17,Athletic Club,Espanyol,Bilbao,San Mamés,Played,1-2
+2026-01-02,15:00,18,Rayo Vallecano,Getafe,Madrid,Campo de Futbol de Vallecas,Played,1-1
+2026-01-03,08:00,18,Celta Vigo,Valencia,Vigo,Estadio Abanca Balaídos,Played,4-1
+2026-01-03,10:15,18,Osasuna,Athletic Club,Pamplona,Estadio El Sadar,Played,1-1
+2026-01-03,12:30,18,Elche,Villarreal,Elche,Estadio Manuel Martínez Valero,Played,1-3
+2026-01-03,15:00,18,Espanyol,Barcelona,Cornella de Llobregat,RCDE Stadium,Played,0-2
+2026-01-04,08:00,18,Sevilla,Levante,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,0-3
+2026-01-04,10:15,18,Real Madrid,Real Betis,Madrid,Estadio Santiago Bernabéu,Played,5-1
+2026-01-04,12:30,18,Alaves,Oviedo,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,1-1
+2026-01-04,12:30,18,Mallorca,Girona,Palma de Mallorca,Estadi Mallorca Son Moix,Played,1-2
+2026-01-04,15:00,18,Real Sociedad,Atletico Madrid,San Sebastian,Reale Arena,Played,1-1
+2026-01-09,15:00,19,Getafe,Real Sociedad,Getafe,Coliseum,Played,1-2
+2026-01-10,08:00,19,Oviedo,Real Betis,Oviedo,Estadio Nuevo Carlos Tartiere,Played,1-1
+2026-01-10,10:15,19,Villarreal,Alaves,Villarreal,Estadio de la Ceramica,Played,3-1
+2026-01-10,12:30,19,Girona,Osasuna,Girona,Estadio Municipal de Montilivi,Played,1-0
+2026-01-10,15:00,19,Valencia,Elche,Valencia,Estadio de Mestalla,Played,1-1
+2026-01-11,08:00,19,Rayo Vallecano,Mallorca,Madrid,Campo de Futbol de Vallecas,Played,2-1
+2026-01-11,10:15,19,Levante,Espanyol,Valencia,Estadio Ciudad de Valencia,Played,1-1
+2026-01-12,15:00,19,Sevilla,Celta Vigo,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,0-1
+2026-01-16,15:00,20,Espanyol,Girona,Cornella de Llobregat,RCDE Stadium,Played,0-2
+2026-01-17,08:00,20,Real Madrid,Levante,Madrid,Estadio Santiago Bernabéu,Played,2-0
+2026-01-17,10:15,20,Mallorca,Athletic Club,Palma de Mallorca,Estadi Mallorca Son Moix,Played,3-2
+2026-01-17,12:30,20,Osasuna,Oviedo,Pamplona,Estadio El Sadar,Played,3-2
+2026-01-17,15:00,20,Real Betis,Villarreal,Sevilla,Estadio de La Cartuja,Played,2-0
+2026-01-18,08:00,20,Getafe,Valencia,Getafe,Coliseum,Played,0-1
+2026-01-18,10:15,20,Atletico Madrid,Alaves,Madrid,Metropolitano Stadium,Played,1-0
+2026-01-18,12:30,20,Celta Vigo,Rayo Vallecano,Vigo,Estadio Abanca Balaídos,Played,3-0
+2026-01-18,15:00,20,Real Sociedad,Barcelona,San Sebastian,Reale Arena,Played,2-1
+2026-01-19,15:00,20,Elche,Sevilla,Elche,Estadio Manuel Martínez Valero,Played,2-2
+2026-01-23,15:00,21,Levante,Elche,Valencia,Estadio Ciudad de Valencia,Played,3-2
+2026-01-24,08:00,21,Rayo Vallecano,Osasuna,Madrid,Campo de Futbol de Vallecas,Played,1-3
+2026-01-24,10:15,21,Valencia,Espanyol,Valencia,Estadio de Mestalla,Played,3-2
+2026-01-24,12:30,21,Sevilla,Athletic Club,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,2-1
+2026-01-24,15:00,21,Villarreal,Real Madrid,Villarreal,Estadio de la Ceramica,Played,0-2
+2026-01-25,08:00,21,Atletico Madrid,Mallorca,Madrid,Metropolitano Stadium,Played,3-0
+2026-01-25,10:15,21,Barcelona,Oviedo,Barcelona,Camp Nou,Played,3-0
+2026-01-25,12:30,21,Real Sociedad,Celta Vigo,San Sebastian,Reale Arena,Played,3-1
+2026-01-25,15:00,21,Alaves,Real Betis,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,2-1
+2026-01-26,15:00,21,Girona,Getafe,Girona,Estadio Municipal de Montilivi,Played,1-1
+2026-01-30,15:00,22,Espanyol,Alaves,Cornella de Llobregat,RCDE Stadium,Played,1-2
+2026-01-31,08:00,22,Oviedo,Girona,Oviedo,Estadio Nuevo Carlos Tartiere,Played,1-0
+2026-01-31,10:15,22,Osasuna,Villarreal,Pamplona,Estadio El Sadar,Played,2-2
+2026-01-31,12:30,22,Levante,Atletico Madrid,Valencia,Estadio Ciudad de Valencia,Played,0-0
+2026-01-31,15:00,22,Elche,Barcelona,Elche,Estadio Manuel Martínez Valero,Played,1-3
+2026-02-01,08:00,22,Real Madrid,Rayo Vallecano,Madrid,Estadio Santiago Bernabéu,Played,2-1
+2026-02-01,10:15,22,Real Betis,Valencia,Sevilla,Estadio de La Cartuja,Played,2-1
+2026-02-01,12:30,22,Getafe,Celta Vigo,Getafe,Coliseum,Played,0-0
+2026-02-01,15:00,22,Athletic Club,Real Sociedad,Bilbao,San Mamés,Played,1-1
+2026-02-02,15:00,22,Mallorca,Sevilla,Palma de Mallorca,Estadi Mallorca Son Moix,Played,4-1
+2026-02-06,15:00,23,Celta Vigo,Osasuna,Vigo,Estadio Abanca Balaídos,Played,1-2
+2026-02-07,10:15,23,Barcelona,Mallorca,Barcelona,Camp Nou,Played,3-0
+2026-02-07,15:00,23,Real Sociedad,Elche,San Sebastian,Reale Arena,Played,3-1
+2026-02-08,08:00,23,Alaves,Getafe,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,0-2
+2026-02-08,10:15,23,Athletic Club,Levante,Bilbao,San Mamés,Played,4-2
+2026-02-08,10:15,23,Sevilla,Girona,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,1-1
+2026-02-08,12:30,23,Atletico Madrid,Real Betis,Madrid,Metropolitano Stadium,Played,0-1
+2026-02-08,15:00,23,Valencia,Real Madrid,Valencia,Estadio de Mestalla,Played,0-2
+2026-02-09,15:00,23,Villarreal,Espanyol,Villarreal,Estadio de la Ceramica,Played,4-1
+2026-02-13,15:00,24,Elche,Osasuna,Elche,Estadio Manuel Martínez Valero,Played,0-0
+2026-02-14,08:00,24,Espanyol,Celta Vigo,Cornella de Llobregat,RCDE Stadium,Played,2-2
+2026-02-14,10:15,24,Getafe,Villarreal,Getafe,Coliseum,Played,2-1
+2026-02-14,12:30,24,Sevilla,Alaves,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,1-1
+2026-02-14,15:00,24,Real Madrid,Real Sociedad,Madrid,Estadio Santiago Bernabéu,Played,4-1
+2026-02-15,08:00,24,Oviedo,Athletic Club,Oviedo,Estadio Nuevo Carlos Tartiere,Played,1-2
+2026-02-15,10:15,24,Rayo Vallecano,Atletico Madrid,Leganes,Estadio Municipal de Butarque,Played,3-0
+2026-02-15,12:30,24,Levante,Valencia,Valencia,Estadio Ciudad de Valencia,Played,0-2
+2026-02-15,15:00,24,Mallorca,Real Betis,Palma de Mallorca,Estadi Mallorca Son Moix,Played,1-2
+2026-02-16,15:00,24,Girona,Barcelona,Girona,Estadio Municipal de Montilivi,Played,2-1
+2026-02-18,14:00,16,Levante,Villarreal,Valencia,Estadio Ciudad de Valencia,Played,0-1
+2026-02-20,15:00,25,Athletic Club,Elche,Bilbao,San Mamés,Played,2-1
+2026-02-21,08:00,25,Real Sociedad,Oviedo,San Sebastian,Reale Arena,Played,3-3
+2026-02-21,10:15,25,Real Betis,Rayo Vallecano,Sevilla,Estadio de La Cartuja,Played,1-1
+2026-02-21,12:30,25,Osasuna,Real Madrid,Pamplona,Estadio El Sadar,Played,2-1
+2026-02-21,15:00,25,Atletico Madrid,Espanyol,Madrid,Metropolitano Stadium,Played,4-2
+2026-02-22,08:00,25,Getafe,Sevilla,Getafe,Coliseum,Played,0-1
+2026-02-22,10:15,25,Barcelona,Levante,Barcelona,Camp Nou,Played,3-0
+2026-02-22,12:30,25,Celta Vigo,Mallorca,Vigo,Estadio Abanca Balaídos,Played,2-0
+2026-02-22,15:00,25,Villarreal,Valencia,Villarreal,Estadio de la Ceramica,Played,2-1
+2026-02-23,15:00,25,Alaves,Girona,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,2-2
+2026-02-27,15:00,26,Levante,Alaves,Valencia,Estadio Ciudad de Valencia,Played,2-0
+2026-02-28,08:00,26,Rayo Vallecano,Athletic Club,Madrid,Campo de Futbol de Vallecas,Played,1-1
+2026-02-28,10:15,26,Barcelona,Villarreal,Barcelona,Camp Nou,Played,4-1
+2026-02-28,12:30,26,Mallorca,Real Sociedad,Palma de Mallorca,Estadi Mallorca Son Moix,Played,0-1
+2026-02-28,15:00,26,Oviedo,Atletico Madrid,Oviedo,Estadio Nuevo Carlos Tartiere,Played,0-1
+2026-03-01,08:00,26,Elche,Espanyol,Elche,Estadio Manuel Martínez Valero,Played,2-2
+2026-03-01,10:15,26,Valencia,Osasuna,Valencia,Estadio de Mestalla,Played,1-0
+2026-03-01,12:30,26,Real Betis,Sevilla,Sevilla,Estadio de La Cartuja,Played,2-2
+2026-03-01,15:00,26,Girona,Celta Vigo,Girona,Estadio Municipal de Montilivi,Played,1-2
+2026-03-02,15:00,26,Real Madrid,Getafe,Madrid,Estadio Santiago Bernabéu,Played,0-1
+2026-03-04,13:00,23,Rayo Vallecano,Oviedo,Madrid,Campo de Futbol de Vallecas,Played,3-0
+2026-03-06,15:00,27,Celta Vigo,Real Madrid,Vigo,Estadio Abanca Balaídos,Played,1-2
+2026-03-07,08:00,27,Osasuna,Mallorca,Pamplona,Estadio El Sadar,Played,2-2
+2026-03-07,10:15,27,Levante,Girona,Valencia,Estadio Ciudad de Valencia,Played,1-1
+2026-03-07,12:30,27,Atletico Madrid,Real Sociedad,Madrid,Metropolitano Stadium,Played,3-2
+2026-03-07,15:00,27,Athletic Club,Barcelona,Bilbao,San Mamés,Played,0-1
+2026-03-08,09:00,27,Villarreal,Elche,Villarreal,Estadio de la Ceramica,Played,2-1
+2026-03-08,11:15,27,Getafe,Real Betis,Getafe,Coliseum,Played,2-0
+2026-03-08,13:30,27,Sevilla,Rayo Vallecano,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,1-1
+2026-03-08,16:00,27,Valencia,Alaves,Valencia,Estadio de Mestalla,Played,3-2
+2026-03-09,16:00,27,Espanyol,Oviedo,Cornella de Llobregat,RCDE Stadium,Played,1-1
+2026-03-13,16:00,28,Alaves,Villarreal,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,1-1
+2026-03-14,09:00,28,Girona,Athletic Club,Girona,Estadio Municipal de Montilivi,Played,3-0
+2026-03-14,11:15,28,Atletico Madrid,Getafe,Madrid,Metropolitano Stadium,Played,1-0
+2026-03-14,13:30,28,Oviedo,Valencia,Oviedo,Estadio Nuevo Carlos Tartiere,Played,1-0
+2026-03-14,16:00,28,Real Madrid,Elche,Madrid,Estadio Santiago Bernabéu,Played,4-1
+2026-03-15,09:00,28,Mallorca,Espanyol,Palma de Mallorca,Estadi Mallorca Son Moix,Played,2-1
+2026-03-15,11:15,28,Barcelona,Sevilla,Barcelona,Camp Nou,Played,5-2
+2026-03-15,13:30,28,Real Betis,Celta Vigo,Sevilla,Estadio de La Cartuja,Played,1-1
+2026-03-15,16:00,28,Real Sociedad,Osasuna,San Sebastian,Reale Arena,Played,3-1
+2026-03-16,16:00,28,Rayo Vallecano,Levante,Madrid,Campo de Futbol de Vallecas,Played,1-1
+2026-03-20,16:00,29,Villarreal,Real Sociedad,Villarreal,Estadio de la Ceramica,Played,3-1
+2026-03-21,09:00,29,Elche,Mallorca,Elche,Estadio Manuel Martínez Valero,Played,2-1
+2026-03-21,11:15,29,Espanyol,Getafe,Cornella de Llobregat,RCDE Stadium,Played,1-2
+2026-03-21,13:30,29,Levante,Oviedo,Valencia,Estadio Ciudad de Valencia,Played,4-2
+2026-03-21,13:30,29,Osasuna,Girona,Pamplona,Estadio El Sadar,Played,1-0
+2026-03-21,16:00,29,Sevilla,Valencia,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,0-2
+2026-03-22,09:00,29,Barcelona,Rayo Vallecano,Barcelona,Camp Nou,Played,1-0
+2026-03-22,11:15,29,Celta Vigo,Alaves,Vigo,Estadio Abanca Balaídos,Played,3-4
+2026-03-22,13:30,29,Athletic Club,Real Betis,Bilbao,San Mamés,Played,2-1
+2026-03-22,16:00,29,Real Madrid,Atletico Madrid,Madrid,Estadio Santiago Bernabéu,Played,3-2
+2026-04-03,15:00,30,Rayo Vallecano,Elche,Madrid,Campo de Futbol de Vallecas,Played,1-0
+2026-04-04,08:00,30,Real Sociedad,Levante,San Sebastian,Reale Arena,Played,2-0
+2026-04-04,10:15,30,Mallorca,Real Madrid,Palma de Mallorca,Estadi Mallorca Son Moix,Played,2-1
+2026-04-04,12:30,30,Real Betis,Espanyol,Seville,Estadio de la Cartuja,Played,0-0
+2026-04-04,15:00,30,Atletico Madrid,Barcelona,Madrid,Riyadh Air Metropolitano,Played,1-2
+2026-04-05,08:00,30,Getafe,Athletic Club,Getafe,Coliseum,Played,2-0
+2026-04-05,10:15,30,Valencia,Celta Vigo,Valencia,Estadio de Mestalla,Played,2-3
+2026-04-05,12:30,30,Oviedo,Sevilla,Oviedo,Estadio Nuevo Carlos Tartiere,Played,1-0
+2026-04-05,15:00,30,Alaves,Osasuna,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,2-2
+2026-04-06,15:00,30,Girona,Villarreal,Girona,Estadio Municipal de Montilivi,Played,1-0
+2026-04-10,15:00,31,Real Madrid,Girona,Madrid,Estadio Santiago Bernabéu,Played,1-1
+2026-04-11,08:00,31,Real Sociedad,Alaves,San Sebastian,Reale Arena,Played,3-3
+2026-04-11,10:15,31,Elche,Valencia,Elche,Estadio Manuel Martínez Valero,Played,1-0
+2026-04-11,12:30,31,Barcelona,Espanyol,Barcelona,Camp Nou,Played,4-1
+2026-04-11,15:00,31,Sevilla,Atletico Madrid,Sevilla,Estadio Ramón Sánchez Pizjuán,Played,2-1
+2026-04-12,08:00,31,Osasuna,Real Betis,Pamplona,Estadio El Sadar,Played,1-1
+2026-04-12,10:15,31,Mallorca,Rayo Vallecano,Palma de Mallorca,Estadi Mallorca Son Moix,Played,3-0
+2026-04-12,12:30,31,Celta Vigo,Oviedo,Vigo,Estadio Abanca Balaídos,Played,0-3
+2026-04-12,15:00,31,Athletic Club,Villarreal,Bilbao,San Mamés,Played,1-2
+2026-04-13,15:00,31,Levante,Getafe,Valencia,Estadio Ciudad de Valencia,Played,1-0
+2026-04-21,13:00,33,Athletic Club,Osasuna,Bilbao,San Mamés,Played,1-0
+2026-04-21,13:00,33,Mallorca,Valencia,Palma de Mallorca,Estadi Mallorca Son Moix,Played,1-1
+2026-04-21,15:30,33,Real Madrid,Alaves,Madrid,Estadio Santiago Bernabéu,Played,2-1
+2026-04-21,15:30,33,Girona,Real Betis,Girona,Estadio Municipal de Montilivi,Played,2-3
+2026-04-22,13:00,33,Elche,Atletico Madrid,Elche,Estadio Manuel Martínez Valero,Played,3-2
+2026-04-22,14:00,33,Real Sociedad,Getafe,San Sebastian,Reale Arena,Played,0-1
+2026-04-22,15:30,33,Barcelona,Celta Vigo,Barcelona,Camp Nou,Played,1-0
+2026-04-23,13:00,33,Levante,Sevilla,Valencia,Estadio Ciudad de Valencia,Played,2-0
+2026-04-23,14:00,33,Rayo Vallecano,Espanyol,Madrid,Campo de Futbol de Vallecas,Played,1-0
+2026-04-23,15:30,33,Oviedo,Villarreal,Oviedo,Estadio Nuevo Carlos Tartiere,Played,1-1
+2026-04-24,15:00,32,Real Betis,Real Madrid,Seville,Estadio de la Cartuja,Played,1-1
+2026-04-25,08:00,32,Alaves,Mallorca,Vitoria-Gasteiz,Estadio Mendizorrotza,Played,2-1
+2026-04-25,10:15,32,Getafe,Barcelona,Getafe,Coliseum,Played,0-2
+2026-04-25,12:30,32,Valencia,Girona,Valencia,Estadio de Mestalla,Played,2-1
+2026-04-25,15:00,32,Atletico Madrid,Athletic Club,Madrid,Riyadh Air Metropolitano,Played,3-2
+2026-04-26,08:00,32,Rayo Vallecano,Real Sociedad,Madrid,Campo de Futbol de Vallecas,Played,3-3
+2026-04-26,10:15,32,Oviedo,Elche,Oviedo,Estadio Nuevo Carlos Tartiere,Played,1-2
+2026-04-26,12:30,32,Osasuna,Sevilla,Pamplona,Estadio El Sadar,Played,2-1
+2026-04-26,15:00,32,Villarreal,Celta Vigo,Villarreal,Estadio de la Ceramica,Played,2-1
+2026-04-27,15:00,32,Espanyol,Levante,Cornella,RCDE Stadium,Played,0-0
+2026-05-01,15:00,34,Girona,Mallorca,Girona,Estadio Municipal de Montilivi,To be played,
+2026-05-02,08:00,34,Villarreal,Levante,Villarreal,Estadio de la Ceramica,To be played,
+2026-05-02,10:15,34,Valencia,Atletico Madrid,Valencia,Estadio de Mestalla,To be played,
+2026-05-02,12:30,34,Alaves,Athletic Club,Vitoria-Gasteiz,Estadio Mendizorrotza,To be played,
+2026-05-02,15:00,34,Osasuna,Barcelona,Pamplona,Estadio El Sadar,To be played,
+2026-05-03,08:00,34,Celta Vigo,Elche,Vigo,Estadio Abanca-Balaídos,To be played,
+2026-05-03,10:15,34,Getafe,Rayo Vallecano,Getafe,Coliseum,To be played,
+2026-05-03,12:30,34,Real Betis,Oviedo,Sevilla,Estadio de La Cartuja,To be played,
+2026-05-03,15:00,34,Espanyol,Real Madrid,Cornella de Llobregat,RCDE Stadium,To be played,
+2026-05-04,15:00,34,Sevilla,Real Sociedad,Sevilla,Estadio Ramón Sánchez Pizjuán,To be played,
+2026-05-08,15:00,35,Levante,Osasuna,Valencia,Estadio Ciudad de Valencia,To be played,
+2026-05-09,08:00,35,Elche,Alaves,Elche,Estadio Manuel Martínez Valero,To be played,
+2026-05-09,10:15,35,Sevilla,Espanyol,Sevilla,Estadio Ramón Sánchez Pizjuán,To be played,
+2026-05-09,12:30,35,Atletico Madrid,Celta Vigo,Madrid,Metropolitano Stadium,To be played,
+2026-05-09,15:00,35,Real Sociedad,Real Betis,San Sebastian,Anoeta,To be played,
+2026-05-10,08:00,35,Mallorca,Villarreal,Palma de Mallorca,Estadi Mallorca Son Moix,To be played,
+2026-05-10,10:15,35,Athletic Club,Valencia,Bilbao,Estadio de San Mamés,To be played,
+2026-05-10,12:30,35,Oviedo,Getafe,Oviedo,Estadio Nuevo Carlos Tartiere,To be played,
+2026-05-10,15:00,35,Barcelona,Real Madrid,Barcelona,Camp Nou,To be played,
+2026-05-11,15:00,35,Rayo Vallecano,Girona,Madrid,Campo de Futbol de Vallecas,To be played,
+2026-05-12,13:00,36,Celta Vigo,Levante,Vigo,Estadio Abanca-Balaídos,To be played,
+2026-05-12,14:00,36,Real Betis,Elche,Sevilla,Estadio de La Cartuja,To be played,
+2026-05-12,15:30,36,Osasuna,Atletico Madrid,Pamplona,Estadio El Sadar,To be played,
+2026-05-13,13:00,36,Villarreal,Sevilla,Villarreal,Estadio de la Ceramica,To be played,
+2026-05-13,13:00,36,Espanyol,Athletic Club,Cornella de Llobregat,RCDE Stadium,To be played,
+2026-05-13,15:30,36,Alaves,Barcelona,Vitoria-Gasteiz,Estadio Mendizorrotza,To be played,
+2026-05-13,15:30,36,Getafe,Mallorca,Getafe,Coliseum,To be played,
+2026-05-14,13:00,36,Valencia,Rayo Vallecano,Valencia,Estadio de Mestalla,To be played,
+2026-05-14,14:00,36,Girona,Real Sociedad,Girona,Estadio Municipal de Montilivi,To be played,
+2026-05-14,15:30,36,Real Madrid,Oviedo,Madrid,Estadio Santiago Bernabéu,To be played,
+2026-05-17,12:00,37,Barcelona,Real Betis,Barcelona,Camp Nou,To be played,
+2026-05-17,12:00,37,Atletico Madrid,Girona,Madrid,Metropolitano Stadium,To be played,
+2026-05-17,12:00,37,Athletic Club,Celta Vigo,Bilbao,Estadio de San Mamés,To be played,
+2026-05-17,12:00,37,Sevilla,Real Madrid,Sevilla,Estadio Ramón Sánchez Pizjuán,To be played,
+2026-05-17,12:00,37,Levante,Mallorca,Valencia,Estadio Ciudad de Valencia,To be played,
+2026-05-17,12:00,37,Real Sociedad,Valencia,San Sebastian,Reale Arena,To be played,
+2026-05-17,12:00,37,Oviedo,Alaves,Oviedo,Estadio Nuevo Carlos Tartiere,To be played,
+2026-05-17,12:00,37,Osasuna,Espanyol,Pamplona,Estadio El Sadar,To be played,
+2026-05-17,12:00,37,Rayo Vallecano,Villarreal,Madrid,Campo de Futbol de Vallecas,To be played,
+2026-05-17,12:00,37,Elche,Getafe,Elche,Estadio Manuel Martínez Valero,To be played,
+2026-05-24,12:00,38,Valencia,Barcelona,Valencia,Estadio de Mestalla,To be played,
+2026-05-24,12:00,38,Villarreal,Atletico Madrid,Villarreal,Estadio de la Ceramica,To be played,
+2026-05-24,12:00,38,Celta Vigo,Sevilla,Vigo,Estadio Abanca-Balaídos,To be played,
+2026-05-24,12:00,38,Espanyol,Real Sociedad,Cornella de Llobregat,RCDE Stadium,To be played,
+2026-05-24,12:00,38,Real Madrid,Athletic Club,Madrid,Estadio Santiago Bernabéu,To be played,
+2026-05-24,12:00,38,Alaves,Rayo Vallecano,Vitoria-Gasteiz,Estadio Mendizorrotza,To be played,
+2026-05-24,12:00,38,Real Betis,Levante,Sevilla,Estadio de La Cartuja,To be played,
+2026-05-24,12:00,38,Getafe,Osasuna,Getafe,Coliseum,To be played,
+2026-05-24,12:00,38,Girona,Elche,Girona,Estadio Municipal de Montilivi,To be played,
+2026-05-24,12:00,38,Mallorca,Oviedo,Palma de Mallorca,Estadi Mallorca Son Moix,To be played,

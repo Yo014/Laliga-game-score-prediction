@@ -24,7 +24,7 @@ def main():
     features = [
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC',
         'Away_EMA_Points', 'Away_EMA_GS', 'Away_EMA_GC',
-        'Home_Expected_Offense', 'Away_Expected_Offense'
+        'Home_Expected_Offense', 'Away_Expected_Offense','Home_Days_Rest', 'Away_Days_Rest'
     ]
     
     X = df[features]
@@ -73,7 +73,7 @@ def main():
     print(confusion_matrix(y_test, predictions))
 
     # 6. Save the Model
-    model_save_path = 'laliga_advanced_rf_model.pkl'
+    model_save_path = 'laliga_rf_model.pkl'
     joblib.dump(best_model, model_save_path)
     
     print(f"\nAdvanced model saved successfully to: {model_save_path}")

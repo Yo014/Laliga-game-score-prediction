@@ -36,10 +36,10 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
     
     # 1. Load Data & Advanced Model
     data_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/ml_ready_data.csv'
-    model_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/laliga_advanced_rf_model.pkl'
+    model_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/laliga_rf_model.pkl'
     
     try:
-        raw_matches = pd.read_csv('/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/LaligaSeasons/Processed Matches.csv')
+        raw_matches = pd.read_csv('/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/Processed_Matches.csv')
         df = pd.read_csv(data_path)
         model = joblib.load(model_path)
     except FileNotFoundError as e:
@@ -87,5 +87,5 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
 
 if __name__ == "__main__":
     # Test matchups! Ensure you use the exact names from your processed data
-    predict_match("Real Madrid", "Barcelona")
-    predict_match("Valencia", "Girona")
+    predict_match("Real Madrid", "Barcelona",4,7)
+    predict_match("Ath Bilbao", "Real Madrid",7,3)
