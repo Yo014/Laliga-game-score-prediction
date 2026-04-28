@@ -1,20 +1,47 @@
 import pandas as pd
 import numpy as np
+
+def calculate_h2h(df):
+    """
+    Calculates the historical win percentage of the Home Team against the Away Team.
+    """
+    df = df.sort_values('Date')
+    h2h_win_rates = []
+    
+    for i, row in df.iterrows():
+        # Look at all past matches between these exact two teams
+        past_matches = df.iloc[:i]
+        matchups = past_matches[
+            ((past_matches['HomeTeam'] == row['HomeTeam']) & (past_matches['AwayTeam'] == row['AwayTeam'])) |
+            ((past_matches['HomeTeam'] == row['AwayTeam']) & (past_matches['AwayTeam'] == row['HomeTeam']))
+        ]
+        
+        if len(matchups) == 0:
+            h2h_win_rates.append(0.5) # No history, assume 50/50
+        else:
+            # How many times did the current Home Team win?
+            wins = len(matchups[(matchups['HomeTeam'] == row['HomeTeam']) & (matchups['FTR'] == 'H')]) + \
+                   len(matchups[(matchups['AwayTeam'] == row['HomeTeam']) & (matchups['FTR'] == 'A')])
+            h2h_win_rates.append(wins / len(matchups))
+            
+    df['H2H_Home_Win_Rate'] = h2h_win_rates
+    return df
+
 def calculate_ema_form(df, span=5):
     """
     Calculates the Exponential Moving Average (EMA) for team stats.
     Using EMA means recent matches have a higher weight in the 'form' calculation.
     """
     # Create a dataframe to track every team's individual match history
-    home_stats = df[['Date', 'HomeTeam', 'FTHG', 'FTAG']].rename(
-        columns={'HomeTeam': 'Team', 'FTHG': 'GoalsScored', 'FTAG': 'GoalsConceded'}
+    home_stats = df[['Date', 'HomeTeam', 'FTHG', 'FTAG', 'HS', 'HST', 'HC']].rename(
+        columns={'HomeTeam': 'Team', 'FTHG': 'GoalsScored', 'FTAG': 'GoalsConceded', 'HS': 'Shots', 'HST': 'ShotsOnTarget', 'HC': 'Corners'}
     )
     home_stats['IsHome'] = 1
     home_stats['Points'] = np.where(home_stats['GoalsScored'] > home_stats['GoalsConceded'], 3, 
                            np.where(home_stats['GoalsScored'] == home_stats['GoalsConceded'], 1, 0))
 
-    away_stats = df[['Date', 'AwayTeam', 'FTAG', 'FTHG']].rename(
-        columns={'AwayTeam': 'Team', 'FTAG': 'GoalsScored', 'FTHG': 'GoalsConceded'}
+    away_stats = df[['Date', 'AwayTeam', 'FTAG', 'FTHG', 'AS', 'AST', 'AC']].rename(
+        columns={'AwayTeam': 'Team', 'FTAG': 'GoalsScored', 'FTHG': 'GoalsConceded', 'AS': 'Shots', 'AST': 'ShotsOnTarget', 'AC': 'Corners'}
     )
     away_stats['IsHome'] = 0
     away_stats['Points'] = np.where(away_stats['GoalsScored'] > away_stats['GoalsConceded'], 3, 
@@ -29,8 +56,13 @@ def calculate_ema_form(df, span=5):
     team_matches['EMA_Points'] = team_matches.groupby('Team')['Points'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
     team_matches['EMA_GoalsScored'] = team_matches.groupby('Team')['GoalsScored'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
     team_matches['EMA_GoalsConceded'] = team_matches.groupby('Team')['GoalsConceded'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
+    
+    # New dominance metrics
+    team_matches['EMA_Shots'] = team_matches.groupby('Team')['Shots'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
+    team_matches['EMA_ShotsOnTarget'] = team_matches.groupby('Team')['ShotsOnTarget'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
+    team_matches['EMA_Corners'] = team_matches.groupby('Team')['Corners'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
 
-    return team_matches[['Date', 'Team', 'EMA_Points', 'EMA_GoalsScored', 'EMA_GoalsConceded']]
+    return team_matches[['Date', 'Team', 'EMA_Points', 'EMA_GoalsScored', 'EMA_GoalsConceded', 'EMA_Shots', 'EMA_ShotsOnTarget', 'EMA_Corners']]
 def get_rest_days(df):
     """
     Calculates the number of rest days a team has had since their last match.
@@ -80,6 +112,9 @@ def main():
     matches = pd.read_csv('/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/Processed_Matches.csv')
     matches['Date'] = pd.to_datetime(matches['Date'])
     
+    print("Calculating Head-to-Head history...")
+    matches = calculate_h2h(matches)
+    
     # Map the match date back to its specific season
     matches['Season'] = matches['Date'].apply(
         lambda x: f"{str(x.year)[-2:]}-{str(x.year+1)[-2:]}" if x.month >= 8 else f"{str(x.year-1)[-2:]}-{str(x.year)[-2:]}"
@@ -90,10 +125,16 @@ def main():
     form_df = calculate_ema_form(matches, span=5)
 
     matches = pd.merge(matches, form_df, left_on=['Date', 'HomeTeam'], right_on=['Date', 'Team'], how='left')
-    matches = matches.rename(columns={'EMA_Points': 'Home_EMA_Points', 'EMA_GoalsScored': 'Home_EMA_GS', 'EMA_GoalsConceded': 'Home_EMA_GC'}).drop('Team', axis=1)
+    matches = matches.rename(columns={
+        'EMA_Points': 'Home_EMA_Points', 'EMA_GoalsScored': 'Home_EMA_GS', 'EMA_GoalsConceded': 'Home_EMA_GC',
+        'EMA_Shots': 'Home_EMA_Shots', 'EMA_ShotsOnTarget': 'Home_EMA_ShotsOnTarget', 'EMA_Corners': 'Home_EMA_Corners'
+    }).drop('Team', axis=1)
 
     matches = pd.merge(matches, form_df, left_on=['Date', 'AwayTeam'], right_on=['Date', 'Team'], how='left')
-    matches = matches.rename(columns={'EMA_Points': 'Away_EMA_Points', 'EMA_GoalsScored': 'Away_EMA_GS', 'EMA_GoalsConceded': 'Away_EMA_GC'}).drop('Team', axis=1)
+    matches = matches.rename(columns={
+        'EMA_Points': 'Away_EMA_Points', 'EMA_GoalsScored': 'Away_EMA_GS', 'EMA_GoalsConceded': 'Away_EMA_GC',
+        'EMA_Shots': 'Away_EMA_Shots', 'EMA_ShotsOnTarget': 'Away_EMA_ShotsOnTarget', 'EMA_Corners': 'Away_EMA_Corners'
+    }).drop('Team', axis=1)
 
     # 3. Add Rest Days Context
     print("Calculating player fatigue and rest days...")
@@ -119,6 +160,11 @@ def main():
     matches['Home_Expected_Offense'] = matches['Home_Expected_Offense'].fillna(0)
     matches['Away_Expected_Offense'] = matches['Away_Expected_Offense'].fillna(0)
 
+    # Calculate Explicit Differentials
+    matches['Form_Diff'] = matches['Home_EMA_Points'] - matches['Away_EMA_Points']
+    matches['Offense_Diff'] = matches['Home_Expected_Offense'] - matches['Away_Expected_Offense']
+    matches['Rest_Diff'] = matches['Home_Days_Rest'] - matches['Away_Days_Rest']
+
     # 4. Target Variable Setup
     # 0 = Away Win, 1 = Draw, 2 = Home Win
     matches['Target'] = np.where(matches['FTR'] == 'H', 2, np.where(matches['FTR'] == 'D', 1, 0))
@@ -127,9 +173,13 @@ def main():
     features_to_keep = [
         'Date', 'HomeTeam', 'AwayTeam', 'FTR', 'Target',
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC',
+        'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
         'Away_EMA_Points', 'Away_EMA_GS', 'Away_EMA_GC',
+        'Away_EMA_Shots', 'Away_EMA_ShotsOnTarget', 'Away_EMA_Corners',
         'Home_Expected_Offense', 'Away_Expected_Offense',
-        'Home_Days_Rest', 'Away_Days_Rest'
+        'Home_Days_Rest', 'Away_Days_Rest',
+        'Form_Diff', 'Offense_Diff', 'Rest_Diff',
+        'H2H_Home_Win_Rate'
     ]
     final_dataset = matches[features_to_keep].dropna().reset_index(drop=True)
     # Use your absolute path so you know exactly where it saves

@@ -1,12 +1,9 @@
 import pandas as pd
 import numpy as np
-from sklearn.ensemble import RandomForestClassifier
+from xgboost import XGBClassifier
 from sklearn.model_selection import TimeSeriesSplit, GridSearchCV
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import joblib
-import warnings
-
-warnings.filterwarnings('ignore')
 
 def main():
     print("--- Starting Advanced Model Training ---")
@@ -20,11 +17,16 @@ def main():
     df['Date'] = pd.to_datetime(df['Date'])
     df = df.sort_values('Date').reset_index(drop=True)
 
-    # 2. Select Features (Now including Expected Offense)
+    # 2. Select Features (Now including Expected Offense, Match Dominance Metrics, Diffs, and H2H)
     features = [
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC',
+        'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
         'Away_EMA_Points', 'Away_EMA_GS', 'Away_EMA_GC',
-        'Home_Expected_Offense', 'Away_Expected_Offense','Home_Days_Rest', 'Away_Days_Rest'
+        'Away_EMA_Shots', 'Away_EMA_ShotsOnTarget', 'Away_EMA_Corners',
+        'Home_Expected_Offense', 'Away_Expected_Offense',
+        'Home_Days_Rest', 'Away_Days_Rest',
+        'Form_Diff', 'Offense_Diff', 'Rest_Diff',
+        'H2H_Home_Win_Rate'
     ]
     
     X = df[features]
@@ -42,17 +44,21 @@ def main():
     # We test different sizes and depths of the forest to find the most accurate one
     print("\nRunning Grid Search to find optimal parameters (This will take 30-60 seconds)...")
     
+    # New XGBoost specific parameters
     param_grid = {
-        'n_estimators': [100, 200, 300],
-        'max_depth': [5, 10, 15],
-        'min_samples_split': [10, 20, 30]
+        'n_estimators': [100, 200],
+        'max_depth': [3, 5, 7],
+        'learning_rate': [0.01, 0.1, 0.2],
+        'subsample': [0.8, 1.0] # Helps prevent overfitting
     }
     
     # We use TimeSeriesSplit for cross-validation to respect the chronological order
     tscv = TimeSeriesSplit(n_splits=3)
     
-    rf = RandomForestClassifier(random_state=42)
-    grid_search = GridSearchCV(estimator=rf, param_grid=param_grid, cv=tscv, scoring='accuracy', n_jobs=-1)
+    # Initialize XGBoost instead of Random Forest
+    xgb_model = XGBClassifier(random_state=42, use_label_encoder=False, eval_metric='mlogloss')
+    
+    grid_search = GridSearchCV(estimator=xgb_model, param_grid=param_grid, cv=tscv, scoring='accuracy', n_jobs=-1)
     
     grid_search.fit(X_train, y_train)
     
