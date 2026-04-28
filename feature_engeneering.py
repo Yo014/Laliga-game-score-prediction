@@ -29,7 +29,25 @@ def calculate_ema_form(df, span=5):
     team_matches['EMA_GoalsConceded'] = team_matches.groupby('Team')['GoalsConceded'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
 
     return team_matches[['Date', 'Team', 'EMA_Points', 'EMA_GoalsScored', 'EMA_GoalsConceded']]
-
+def get_rest_days(df):
+    """
+    Calculates the number of rest days a team has had since their last match.
+    Caps rest at 14 days (representing a full recovery / international break).
+    """
+    home_dates = df[['Date', 'HomeTeam']].rename(columns={'HomeTeam': 'Team'})
+    away_dates = df[['Date', 'AwayTeam']].rename(columns={'AwayTeam': 'Team'})
+    
+    all_dates = pd.concat([home_dates, away_dates]).sort_values(['Team', 'Date']).reset_index(drop=True)
+    
+    # Calculate the difference in days using shift(1) to look at the previous game
+    all_dates['Prev_Date'] = all_dates.groupby('Team')['Date'].shift(1)
+    all_dates['Days_Rest'] = (all_dates['Date'] - all_dates['Prev_Date']).dt.days
+    
+    # Cap the rest days at 14 
+    # all_dates['Days_Rest'] = all_dates['Days_Rest'].fillna(14) 
+    # all_dates['Days_Rest'] = np.where(all_dates['Days_Rest'] > 14, 14, all_dates['Days_Rest'])
+    
+    return all_dates.drop_duplicates(subset=['Team', 'Date'])
 def build_advanced_strength_index():
     """
     Aggregates Expected Goals (xG) and Expected Assists (xA) from your master datasets
@@ -74,6 +92,16 @@ def main():
 
     matches = pd.merge(matches, form_df, left_on=['Date', 'AwayTeam'], right_on=['Date', 'Team'], how='left')
     matches = matches.rename(columns={'EMA_Points': 'Away_EMA_Points', 'EMA_GoalsScored': 'Away_EMA_GS', 'EMA_GoalsConceded': 'Away_EMA_GC'}).drop('Team', axis=1)
+
+    # # 3. Add Rest Days Context
+    # print("Calculating player fatigue and rest days...")
+    # rest_df = get_rest_days(matches)
+
+    # matches = pd.merge(matches, rest_df[['Date', 'Team', 'Days_Rest']], left_on=['Date', 'HomeTeam'], right_on=['Date', 'Team'], how='left')
+    # matches = matches.rename(columns={'Days_Rest': 'Home_Days_Rest'}).drop('Team', axis=1)
+
+    # matches = pd.merge(matches, rest_df[['Date', 'Team', 'Days_Rest']], left_on=['Date', 'AwayTeam'], right_on=['Date', 'Team'], how='left')
+    # matches = matches.rename(columns={'Days_Rest': 'Away_Days_Rest'}).drop('Team', axis=1)
 
     # 3. Add Advanced Expected Strength Index
     print("Integrating Expected Goals (xG) and Expected Assists (xA)...")

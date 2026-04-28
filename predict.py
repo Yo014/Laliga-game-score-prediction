@@ -31,7 +31,7 @@ def get_latest_team_stats(team_name, is_home, df):
 
     return [ema_pts, ema_gs, ema_gc, off_idx]
 
-def predict_match(home_team, away_team):
+def predict_match(home_team, away_team, home_rest_days, away_rest_days):
     print(f"\nAnalyzing Matchup: {home_team} (Home) vs {away_team} (Away)...")
     
     # 1. Load Data & Advanced Model
@@ -62,7 +62,8 @@ def predict_match(home_team, away_team):
     match_features = [[
         home_stats[0], home_stats[1], home_stats[2],  # Home Form
         away_stats[0], away_stats[1], away_stats[2],  # Away Form
-        home_stats[3], away_stats[3]                  # Advanced Expected Offense Indices
+        home_stats[3], away_stats[3],                # Advanced Expected Offense Indices
+        home_rest_days, away_rest_days
     ]]
 
     # 4. Make Prediction
