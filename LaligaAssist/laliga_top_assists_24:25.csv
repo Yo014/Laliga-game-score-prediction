@@ -1,0 +1,80 @@
+Player,Team,Assists,Matches Played,Coefficient,Expected Assists (xA)
+Lamine Yamal,FC Barcelona,13,35,0.37,11.6
+Álex Baena,Villarreal,10,32,0.31,12.6
+I. Williams,Athletic,9,35,0.26,4.2
+Raphinha,FC Barcelona,9,36,0.25,10.1
+Isco,Real Betis,8,22,0.36,3.9
+Vinícius,Real Madrid,8,30,0.27,7.0
+J. Bellingham,Real Madrid,8,31,0.26,4.5
+Yéremy Pino,Villarreal,7,34,0.21,3.8
+Sergi Cardona,Villarreal,7,35,0.2,4.6
+Álex Berenguer,Athletic,7,36,0.19,4.4
+Dani Rodríguez,Mallorca,7,37,0.19,3.4
+A. Griezmann,Atlético de Madrid,7,38,0.18,6.5
+Dani Raba,Leganés,6,29,0.21,4.6
+Oliver Mcburnie,UD Las Palmas,6,34,0.18,1.0
+Giuliano,Atlético de Madrid,6,33,0.18,4.7
+C. Uche,Getafe,6,33,0.18,3.1
+Nicolas Pépé,Villarreal,6,28,0.21,4.1
+Ferran Torres,FC Barcelona,6,27,0.22,2.6
+Bryan Zaragoza,Osasuna,6,27,0.22,5.1
+Saúl,Sevilla,6,24,0.25,2.3
+Álex Balde,FC Barcelona,4,32,0.13,12.6
+A. Budimir,Osasuna,4,38,0.11,1.2
+F. Valverde,Real Madrid,4,36,0.11,3.2
+Thierno Barry,Villarreal,4,35,0.11,2.0
+Isi Palazón,Rayo Vallecano,4,35,0.11,4.7
+Javi Puado,Espanyol,4,35,0.11,2.1
+Juan Cruz,Leganés,4,34,0.12,3.7
+André Almeida,Valencia,4,34,0.12,4.9
+Luis Milla,Getafe,4,33,0.12,4.9
+M. Llorente,Atlético de Madrid,4,33,0.12,3.1
+Aimar Oroz,Osasuna,4,37,0.11,3.5
+Juanlu Sánchez,Sevilla,4,32,0.13,1.7
+Álvaro Tejero,Espanyol,4,28,0.14,3.6
+S. Lino,Atlético de Madrid,4,31,0.13,2.2
+O. De Marcos,Athletic,4,26,0.15,2.2
+Pablo Durán,Celta,4,27,0.15,1.0
+I. Ruiz De Galarreta,Athletic,4,26,0.15,2.7
+Arda Güler,Real Madrid,4,28,0.14,4.4
+Íñigo Martínez,FC Barcelona,4,28,0.14,1.8
+Óscar Rodríguez,Leganés,4,29,0.14,1.7
+Pablo Barrios,Atlético de Madrid,4,31,0.13,2.0
+A. Catena,Osasuna,3,35,0.09,1.9
+M. De La Fuente,Leganés,3,34,0.09,0.8
+K. Mbappé,Real Madrid,3,34,0.09,6.6
+Pau Cubarsí,FC Barcelona,3,35,0.09,1.0
+L. Agoumé,Sevilla,3,35,0.09,1.6
+Javi Muñoz,UD Las Palmas,3,35,0.09,2.3
+M. Oyarzabal,Real Sociedad,3,35,0.09,1.8
+Andrei Rațiu,Rayo Vallecano,3,35,0.09,3.9
+Jesús Areso,Osasuna,3,36,0.08,3.1
+Dani Parejo,Villarreal,3,36,0.08,1.9
+Javi Guerra,Valencia,3,36,0.08,3.2
+Jorge De Frutos,Rayo Vallecano,3,36,0.08,2.3
+Jules Koundé,FC Barcelona,3,32,0.09,3.8
+Borja Iglesias,Celta,3,37,0.08,1.4
+Jofre,Espanyol,3,37,0.08,1.9
+Florian Lejeune,Rayo Vallecano,3,37,0.08,1.1
+Luis Rioja,Valencia,3,37,0.08,5.7
+Diego Rico,Getafe,3,33,0.09,3.4
+Nahuel Molina,Atlético de Madrid,3,30,0.1,1.9
+C. Gallagher,Atlético de Madrid,3,32,0.09,1.1
+Unai Gómez,Athletic,3,32,0.09,0.9
+Kirian,UD Las Palmas,3,21,0.14,1.4
+Marc Casadó,FC Barcelona,3,23,0.13,1.8
+Fábio Silva,UD Las Palmas,3,24,0.13,1.8
+Javi Galán,Atlético de Madrid,3,25,0.12,3.1
+Dani Olmo,FC Barcelona,3,25,0.12,3.7
+J. Campaña,UD Las Palmas,3,25,0.12,1.0
+Bryan Gil,Girona FC,3,25,0.12,3.2
+G. Lo Celso,Real Betis,3,25,0.12,5.2
+Hugo Álvarez,Celta,3,26,0.12,2.1
+Gerard Martín,FC Barcelona,3,28,0.11,1.7
+Y. Herrera,Girona FC,3,29,0.1,1.3
+Eric García,FC Barcelona,3,29,0.1,1.6
+Aitor Ruibal,Real Betis,3,29,0.1,1.9
+A. Barrenetxea,Real Sociedad,3,30,0.1,2.5
+Sandro,UD Las Palmas,3,31,0.1,3.2
+Héctor Bellerín,Real Betis,2,9,0.22,2.1
+Assane Diao,Real Betis,2,10,0.2,0.6

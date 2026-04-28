@@ -1,0 +1,100 @@
+Player,Team,Assists,Matches Played,Coefficient,Expected Assists (xA)
+A. Griezmann,Atlético de Madrid,16,38,0.42,9.8
+Vinícius,Real Madrid,9,33,0.27,8.8
+Mikel Merino,Real Sociedad,9,33,0.27,5.0
+R. De Paul,Atlético de Madrid,8,30,0.27,3.8
+Rodrygo,Real Madrid,8,34,0.24,6.2
+L. Robertone,Almería,8,37,0.22,4.5
+Brian Oliván,Espanyol,7,30,0.23,3.9
+R. Lewandowski,FC Barcelona,7,34,0.21,5.3
+Kang-In Lee,Mallorca,7,36,0.19,5.0
+Raphinha,FC Barcelona,7,36,0.19,9.3
+Kike Barja,Osasuna,6,27,0.22,0.0
+V. Tsygankov,Girona FC,6,19,0.32,3.0
+O. Dembélé,FC Barcelona,6,25,0.24,5.0
+M. Asensio,Real Madrid,6,31,0.19,4.2
+Aimar Oroz,Osasuna,6,31,0.19,2.3
+Yéremy Pino,Villarreal,6,36,0.17,4.5
+Dani Rodríguez,Mallorca,6,35,0.17,2.4
+G. Gumbau,Elche,6,35,0.17,6.1
+O. De Marcos,Athletic,6,37,0.16,4.5
+Álex Balde,FC Barcelona,6,33,0.18,3.8
+David Silva,Real Sociedad,5,28,0.18,3.0
+Aleix García,Girona FC,5,30,0.17,6.0
+G. Plata,Real Valladolid,5,34,0.15,2.6
+Carles Pérez,Celta,5,35,0.14,1.7
+Álvaro García,Rayo Vallecano,5,35,0.14,4.9
+S. Chukwueze,Villarreal,5,37,0.14,4.4
+Isi Palazón,Rayo Vallecano,5,37,0.14,5.9
+Sergio Camello,Rayo Vallecano,5,38,0.13,1.7
+F. De Jong,FC Barcelona,4,33,0.12,6.3
+J. Larsen,Celta,4,32,0.13,1.1
+Dani Ceballos,Real Madrid,4,30,0.13,2.0
+Toni Kroos,Real Madrid,4,30,0.13,5.5
+Franco Cervi,Celta,4,36,0.11,2.9
+Adrián Embarba,Almería,4,30,0.13,2.7
+N. Jackson,Villarreal,4,26,0.15,2.0
+Hugo Guillamón,Valencia,4,25,0.16,1.5
+Luis Suárez,Almería,4,21,0.19,1.5
+Arnau Martínez,Girona FC,4,33,0.12,3.2
+Sergio Busquets,FC Barcelona,4,30,0.13,3.7
+A. Tchouaméni,Real Madrid,4,33,0.12,2.1
+Suso,Sevilla,4,25,0.16,3.2
+André Almeida,Valencia,4,34,0.12,4.0
+Pacha Espino,Cádiz,4,36,0.11,3.7
+F. Valverde,Real Madrid,4,34,0.12,5.1
+Sergi Darder,Espanyol,4,38,0.11,6.3
+Nico Williams,Athletic,4,36,0.11,4.1
+Gavi,FC Barcelona,4,36,0.11,3.8
+Óscar Trejo,Rayo Vallecano,4,34,0.12,2.9
+Dani Parejo,Villarreal,4,37,0.11,5.1
+Gabri Veiga,Celta,4,36,0.11,2.9
+Vedat Muriqi,Mallorca,4,35,0.11,1.7
+Take Kubo,Real Sociedad,4,35,0.11,5.4
+R. Riquelme,Girona FC,4,34,0.12,3.8
+Brais Méndez,Real Sociedad,4,34,0.12,4.8
+Jordi Alba,FC Barcelona,3,24,0.13,6.7
+Álex Pozo,Almería,3,30,0.1,1.4
+João Félix,Atlético de Madrid,3,14,0.21,1.0
+Álex Moreno,Real Betis,3,15,0.2,1.4
+Pape Gueye,Sevilla,3,16,0.19,0.9
+Cyle Larin,Real Valladolid,3,19,0.16,1.1
+Gerard Moreno,Villarreal,3,21,0.14,1.4
+G. Lo Celso,Villarreal,3,22,0.14,3.1
+David Alaba,Real Madrid,3,23,0.13,1.3
+Iván Martín,Girona FC,3,24,0.13,2.1
+Thomas Lemar,Atlético de Madrid,3,27,0.11,1.6
+K. Benzema,Real Madrid,3,24,0.13,5.5
+Aleix Vidal,Espanyol,3,25,0.12,1.3
+Toni Villa,Girona FC,3,26,0.12,1.3
+A. Pedraza,Villarreal,3,26,0.12,1.3
+Josan,Elche,3,26,0.12,0.6
+Luis Milla,Getafe,3,27,0.11,1.6
+G. Melero,Almería,3,27,0.11,1.3
+Gonzalo Montiel,Sevilla,3,28,0.11,2.5
+Jules Koundé,FC Barcelona,3,29,0.1,2.3
+Iker Muniain,Athletic,3,30,0.1,3.9
+Rodri,Real Betis,3,30,0.1,2.1
+Ivan Rakitić,Sevilla,3,31,0.1,2.7
+T. Bongonda,Cádiz,3,31,0.1,2.4
+Javi Galán,Celta,3,37,0.08,4.2
+Raúl García,Athletic,3,35,0.09,0.8
+José Gayà,Valencia,3,31,0.1,5.6
+Sergio Canales,Real Betis,3,31,0.1,5.1
+A. Raíllo,Mallorca,3,31,0.1,0.6
+Luka Modrić,Real Madrid,3,33,0.09,4.2
+Koke,Atlético de Madrid,3,33,0.09,1.7
+Luiz Henrique,Real Betis,3,33,0.09,2.1
+Miguel Gutiérrez,Girona FC,3,34,0.09,3.1
+Portu,Getafe,3,34,0.09,2.6
+A. Sørloth,Real Sociedad,3,34,0.09,1.9
+I. Williams,Athletic,3,36,0.08,4.1
+Borja Iglesias,Real Betis,3,35,0.09,2.2
+Enes Ünal,Getafe,3,35,0.09,1.9
+Y. Carrasco,Atlético de Madrid,3,35,0.09,4.1
+Pablo Maffeo,Mallorca,3,35,0.09,2.7
+Ansu Fati,FC Barcelona,3,36,0.08,2.3
+M. Zubimendi,Real Sociedad,3,36,0.08,2.2
+Mikel Vesga,Athletic,3,36,0.08,1.8
+J. Moncayola,Osasuna,3,37,0.08,2.2
+Iago Aspas,Celta,3,37,0.08,5.4
