@@ -8,14 +8,14 @@ This project uses historical match data, top scorer information, and top assist 
 
 ### Key Features Engineered
 - **Form (Exponential Moving Average):** Calculates an EMA for points, goals scored, and goals conceded over recent matches to give more weight to a team's most recent performances.
-- **Offensive Index:** Aggregates coefficients from top scorers and assisters to create an "Offensive Power" rating for each team per season.
+- **Expected Offensive Index:** Aggregates Expected Goals (xG) and Expected Assists (xA) from top scorers and assisters to create an "Expected Offensive Index" for each team per season, reflecting their underlying ability to create and finish chances.
 
 ## Project Structure
 
 - `LaligaSeasons/`: Directory containing raw match data CSVs.
 - `Laligascoring/`: Directory containing top scorers data for various seasons.
 - `LaligaAssist/`: Directory containing top assisters data for various seasons.
-- `feature_engeneering.py`: The data processing script. It loads the raw data, calculates the EMA and Offensive Index, and outputs a single `ml_ready_data.csv` file used for training.
+- `feature_engeneering.py`: The data processing script. It loads the raw data, calculates the EMA and Expected Offensive Index, and outputs a single `ml_ready_data.csv` file used for training.
 - `train_model.py`: The machine learning training script. It loads `ml_ready_data.csv`, trains a `RandomForestClassifier` from `scikit-learn`, evaluates its accuracy, and saves the trained model as `laliga_rf_model.pkl`.
 - `predict.py`: The inference script. It uses the saved model and recent team stats to predict the win/draw probabilities for a specified matchup.
 

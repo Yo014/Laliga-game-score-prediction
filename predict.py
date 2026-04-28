@@ -1,12 +1,15 @@
-import pandas as pd 
-import numpy as np 
-import joblib 
+import pandas as pd
+import joblib
+
 
 def get_latest_team_stats(team_name, is_home, df):
     """
-    Gets the latest stats for a team
+    Scans the dataset to find the most recent form and Expected Offensive Index 
+    for the requested team.
     """
+    # Filter matches where the team played
     team_history = df[(df['HomeTeam'] == team_name) | (df['AwayTeam'] == team_name)].copy()
+    
     if team_history.empty:
         print(f"Error: Could not find team '{team_name}'. Check spelling.")
         return None
@@ -29,17 +32,23 @@ def get_latest_team_stats(team_name, is_home, df):
     return [ema_pts, ema_gs, ema_gc, off_idx]
 
 def predict_match(home_team, away_team):
-    # 1. Load the datasets and trained model
-    data_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/ml_ready_data.csv'
-    model_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/laliga_rf_model.pkl'
+    print(f"\nAnalyzing Matchup: {home_team} (Home) vs {away_team} (Away)...")
     
-    raw_matches = pd.read_csv('/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/LaligaSeasons/Processed Matches.csv')
-    df = pd.read_csv(data_path)
-    model = joblib.load(model_path)
+    # 1. Load Data & Advanced Model
+    data_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/ml_ready_data.csv'
+    model_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/laliga_advanced_rf_model.pkl'
+    
+    try:
+        raw_matches = pd.read_csv('/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/LaligaSeasons/Processed Matches.csv')
+        df = pd.read_csv(data_path)
+        model = joblib.load(model_path)
+    except FileNotFoundError as e:
+        print(f"Error loading files: {e}")
+        return
+
+    # Attach team names to the engineered dataset to search for them
     df['HomeTeam'] = raw_matches.iloc[df.index]['HomeTeam']
     df['AwayTeam'] = raw_matches.iloc[df.index]['AwayTeam']
-
-    print(f"\n--- MATCH PREDICTION: {home_team} (Home) vs {away_team} (Away) ---")
 
     # 2. Fetch current form
     home_stats = get_latest_team_stats(home_team, True, df)
@@ -49,11 +58,11 @@ def predict_match(home_team, away_team):
         return
 
     # 3. Construct the feature array exactly how the model was trained
-    # Features: [Home_EMA_Points, Home_EMA_GS, Home_EMA_GC, Away_EMA_Points, Away_EMA_GS, Away_EMA_GC, Home_Off_Idx, Away_Off_Idx]
+    # Features: [Home_EMA_Pts, Home_EMA_GS, Home_EMA_GC, Away_EMA_Pts, Away_EMA_GS, Away_EMA_GC, Home_xG_xA, Away_xG_xA]
     match_features = [[
         home_stats[0], home_stats[1], home_stats[2],  # Home Form
         away_stats[0], away_stats[1], away_stats[2],  # Away Form
-        home_stats[3], away_stats[3]                  # Offensive Indices
+        home_stats[3], away_stats[3]                  # Advanced Expected Offense Indices
     ]]
 
     # 4. Make Prediction
@@ -62,22 +71,20 @@ def predict_match(home_team, away_team):
 
     outcomes = {0: "Away Win", 1: "Draw", 2: "Home Win"}
 
-    print(f"\nWin Probabilities:")
+    print(f"\n==============================================")
+    print(f"  MATCH PREDICTION: {home_team} vs {away_team} ")
+    print(f"==============================================")
+    print(f"Current Home xG+xA Index : {home_stats[3]:.2f}")
+    print(f"Current Away xG+xA Index : {away_stats[3]:.2f}")
+    print(f"----------------------------------------------")
+    print(f"Win Probabilities:")
     print(f"[{home_team}] Home Win : {probabilities[2] * 100:.1f}%")
     print(f"Draw              : {probabilities[1] * 100:.1f}%")
     print(f"[{away_team}] Away Win : {probabilities[0] * 100:.1f}%")
-    
     print(f"\n Model Prediction: {outcomes[prediction].upper()} \n")
+    print(f"==============================================\n")
 
 if __name__ == "__main__":
-    # You can change these two names to test different matchups!
-    # Make sure to use the standardized names from our data_preprocessing.py mapping
-    # Examples: 'Real Madrid', 'Barcelona', 'Ath Madrid', 'Sociedad', 'Betis'
-    
+    # Test matchups! Ensure you use the exact names from your processed data
     predict_match("Real Madrid", "Barcelona")
-    predict_match("Ath Bilbao", "Girona")
-
-    
-        
-
-    
+    predict_match("Valencia", "Girona")

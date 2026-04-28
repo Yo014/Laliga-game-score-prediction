@@ -1,15 +1,26 @@
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import TimeSeriesSplit, GridSearchCV
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 import joblib
+import warnings
+
+warnings.filterwarnings('ignore')
+
 def main():
+    print("--- Starting Advanced Model Training ---")
+    
+    # 1. Load the Advanced Engineered Data
     data_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/ml_ready_data.csv'
     df = pd.read_csv(data_path)
-    # Sort by date to ensure strict chronological order
+
+
+    # Sort chronologically to prevent data leakage
     df['Date'] = pd.to_datetime(df['Date'])
     df = df.sort_values('Date').reset_index(drop=True)
-    # Drop non-numeric columns that shouldn't be features
+
+    # 2. Select Features (Now including Expected Offense)
     features = [
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC',
         'Away_EMA_Points', 'Away_EMA_GS', 'Away_EMA_GC',
@@ -17,25 +28,43 @@ def main():
     ]
     
     X = df[features]
-    y = df['Target'] # 0 = Away Win, 1 = Draw, 2 = Home Win
-    split_index = int(len(X) * 0.8)
+    y = df['Target'] 
 
+    # 3. Time Series Split
+    split_index = int(len(df) * 0.8)
     X_train, X_test = X.iloc[:split_index], X.iloc[split_index:]
     y_train, y_test = y.iloc[:split_index], y.iloc[split_index:]
+    
+    print(f"Training on {len(X_train)} matches...")
+    print(f"Testing on {len(X_test)} matches...")
 
-    model= RandomForestClassifier(
-        n_estimators=200,# Number of trees in the forest
-        max_depth=10,# Maximum depth of the trees
-        class_weight='balanced',# Weight to handle imbalanced data
-        random_state=42,# For reproducibility
-        min_samples_split=10,# Minimum number of samples required to split a node
-    )
-    print("Training Random Forest Classifier... this might take a few seconds.")
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)
+    # 4. Hyperparameter Tuning (Finding the perfect brain structure)
+    # We test different sizes and depths of the forest to find the most accurate one
+    print("\nRunning Grid Search to find optimal parameters (This will take 30-60 seconds)...")
+    
+    param_grid = {
+        'n_estimators': [100, 200, 300],
+        'max_depth': [5, 10, 15],
+        'min_samples_split': [10, 20, 30]
+    }
+    
+    # We use TimeSeriesSplit for cross-validation to respect the chronological order
+    tscv = TimeSeriesSplit(n_splits=3)
+    
+    rf = RandomForestClassifier(random_state=42)
+    grid_search = GridSearchCV(estimator=rf, param_grid=param_grid, cv=tscv, scoring='accuracy', n_jobs=-1)
+    
+    grid_search.fit(X_train, y_train)
+    
+    # Extract the absolute best model from the grid search
+    best_model = grid_search.best_estimator_
+    print(f"Optimal Parameters Found: {grid_search.best_params_}")
+
+    # 5. Evaluate the Optimized Model
+    predictions = best_model.predict(X_test)
     accuracy = accuracy_score(y_test, predictions)
     
-    print("\n--- Model Evaluation ---")
+    print("\n--- Optimized Model Evaluation ---")
     print(f"Overall Accuracy: {accuracy * 100:.2f}%")
     print("\nClassification Report (0=Away Win, 1=Draw, 2=Home Win):")
     print(classification_report(y_test, predictions))
@@ -44,15 +73,11 @@ def main():
     print(confusion_matrix(y_test, predictions))
 
     # 6. Save the Model
-    # We save the trained model so predict.py can load it instantly without retraining
-    model_save_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/laliga_rf_model.pkl'
-    joblib.dump(model, model_save_path)
+    model_save_path = 'laliga_advanced_rf_model.pkl'
+    joblib.dump(best_model, model_save_path)
     
-    print(f"\nModel saved successfully to: {model_save_path}")
+    print(f"\nAdvanced model saved successfully to: {model_save_path}")
+    print("You can now update predict.py to use this new .pkl file!")
 
 if __name__ == "__main__":
     main()
-
-
-
-    
