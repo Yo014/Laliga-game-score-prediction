@@ -1,99 +1,99 @@
-Player,Team,Goals,Matches Played,Coefficient
-K. Benzema,Real Madrid,27,32,0.84
-Iago Aspas,Celta,17,37,0.46
-Raúl De Tomás,Espanyol,17,34,0.5
-Vinícius,Real Madrid,17,35,0.49
-Enes Ünal,Getafe,16,37,0.43
-Juanmi,Real Betis,16,33,0.48
-Joselu,Deportivo Alavés,14,37,0.38
-Morales,Levante,13,35,0.37
-Memphis,FC Barcelona,12,28,0.43
-Ángel Correa,Atlético de Madrid,12,36,0.33
-L. Suárez,Atlético de Madrid,11,35,0.31
-G. Guedes,Valencia,11,36,0.31
-Carlos Soler,Valencia,11,32,0.34
-P. Aubameyang,FC Barcelona,11,17,0.65
-A. Danjuma,Villarreal,10,23,0.43
-M. Asensio,Real Madrid,10,31,0.32
-Borja Iglesias,Real Betis,10,33,0.3
-Rafa Mir,Sevilla,10,34,0.29
-Jorge Molina,Granada,10,35,0.29
-M. Oyarzabal,Real Sociedad,9,22,0.41
-Willian José,Real Betis,9,32,0.28
-Gerard Moreno,Villarreal,9,17,0.53
-A. Budimir,Osasuna,8,28,0.29
-Sergi Guardiola,Rayo Vallecano,8,32,0.25
-Pere Milla,Elche,8,32,0.25
-Luis Suárez,Granada,8,37,0.22
-I. Williams,Athletic,8,38,0.21
-João Félix,Atlético de Madrid,8,24,0.33
-Hugo Duro,Valencia,7,31,0.23
-Santi Mina,Celta,7,33,0.21
-Álvaro García,Rayo Vallecano,7,36,0.19
-Á. Negredo,Cádiz,7,34,0.21
-G. Melero,Levante,7,29,0.24
-Roger Martí,Levante,7,29,0.24
-Lucas Boyé,Elche,7,24,0.29
-Y. Carrasco,Atlético de Madrid,6,34,0.18
-Antonio Puertas,Granada,6,33,0.18
-Nabil Fekir,Real Betis,6,34,0.18
-Choco Lozano,Cádiz,6,31,0.19
-Manu Trigueros,Villarreal,6,35,0.17
-Raúl García,Athletic,6,35,0.17
-Alexander Isak,Real Sociedad,6,32,0.19
-Chimy Ávila,Osasuna,6,36,0.17
-Yéremy Pino,Villarreal,6,31,0.19
-Matheus Cunha,Atlético de Madrid,6,29,0.21
-Oihan Sancet,Athletic,6,27,0.22
-R. Falcao,Rayo Vallecano,6,22,0.27
-Luuk De Jong,FC Barcelona,6,21,0.29
-B. Mayoral,Getafe,6,18,0.33
-Lucas Ocampos,Sevilla,6,30,0.2
-Papu Gómez,Sevilla,5,29,0.17
-Sergio Canales,Real Betis,5,34,0.15
-Pau Torres,Villarreal,5,33,0.15
-Lucas Pérez,Cádiz,5,33,0.15
-Fidel,Elche,5,33,0.15
-Álex Moreno,Real Betis,5,30,0.17
-Maxi Gómez,Valencia,5,29,0.17
-Salva  Mallorca,Sevilla,5,28,0.18
-Boulaye Dia,Villarreal,5,25,0.2
-Y. En-Nesyri,Sevilla,5,23,0.22
-Erik Lamela,Sevilla,5,20,0.25
-G. Escalante,Deportivo Alavés,5,17,0.29
-Vedat Muriqi,Mallorca,5,16,0.31
-Javi Puado,Espanyol,4,30,0.13
-Denis Suárez,Celta,4,38,0.11
-Brais Méndez,Celta,4,37,0.11
-Iker Muniain,Athletic,4,35,0.11
-Ivan Rakitić,Sevilla,4,35,0.11
-Rubén Sobrino,Cádiz,4,34,0.12
-A. Sørloth,Real Sociedad,4,33,0.12
-Rodrygo,Real Madrid,4,33,0.12
-Ronald Araujo,FC Barcelona,4,30,0.13
-Ángel,Mallorca,4,29,0.14
-A. Elustondo,Real Sociedad,4,30,0.13
-A. Pedraza,Villarreal,4,28,0.14
-Jorge De Frutos,Levante,4,25,0.16
-D. Machís,Granada,4,25,0.16
-Thomas Lemar,Atlético de Madrid,4,24,0.17
-Ferran Torres,FC Barcelona,4,18,0.22
-Ansu Fati,FC Barcelona,4,10,0.4
-Dani Gómez,Levante,4,28,0.14
-A. Griezmann,Atlético de Madrid,3,29,0.1
-Franco Cervi,Celta,3,33,0.09
-F. De Jong,FC Barcelona,3,32,0.09
-Álex Fernández,Cádiz,3,32,0.09
-Tete Morente,Elche,3,32,0.09
-Óscar Trejo,Rayo Vallecano,3,32,0.09
-E. Bardhi,Levante,3,30,0.1
-Lucas Vázquez,Real Madrid,3,29,0.1
-Íñigo Martínez,Athletic,3,27,0.11
-Sandro,Getafe,3,29,0.1
-Nacho,Real Madrid,3,28,0.11
-S. Chukwueze,Villarreal,3,27,0.11
-Alberto Moreno,Villarreal,3,24,0.13
-Abdón Prats,Mallorca,3,23,0.13
-R. Soldado,Levante,3,18,0.17
-Pedri,FC Barcelona,3,12,0.25
-Adnan Januzaj,Real Sociedad,3,33,0.09
+Player,Team,Goals,Matches Played,Coefficient,xG
+K. Benzema,Real Madrid,27,32,0.84,24.1
+Iago Aspas,Celta,17,37,0.46,14.2
+Raúl De Tomás,Espanyol,17,34,0.5,15.0
+Vinícius,Real Madrid,17,35,0.49,12.4
+Enes Ünal,Getafe,16,37,0.43,10.8
+Juanmi,Real Betis,16,33,0.48,11.8
+Joselu,Deportivo Alavés,14,37,0.38,13.1
+Morales,Levante,13,35,0.37,14.4
+Memphis,FC Barcelona,12,28,0.43,11.2
+Ángel Correa,Atlético de Madrid,12,36,0.33,7.3
+L. Suárez,Atlético de Madrid,11,35,0.31,10.1
+G. Guedes,Valencia,11,36,0.31,6.1
+Carlos Soler,Valencia,11,32,0.34,9.0
+P. Aubameyang,FC Barcelona,11,17,0.65,7.8
+A. Danjuma,Villarreal,10,23,0.43,11.9
+M. Asensio,Real Madrid,10,31,0.32,7.8
+Borja Iglesias,Real Betis,10,33,0.3,7.6
+Rafa Mir,Sevilla,10,34,0.29,7.7
+Jorge Molina,Granada,10,35,0.29,6.4
+M. Oyarzabal,Real Sociedad,9,22,0.41,9.2
+Willian José,Real Betis,9,32,0.28,6.2
+Gerard Moreno,Villarreal,9,17,0.53,7.4
+A. Budimir,Osasuna,8,28,0.29,8.4
+Sergi Guardiola,Rayo Vallecano,8,32,0.25,7.2
+Pere Milla,Elche,8,32,0.25,4.9
+Luis Suárez,Granada,8,37,0.22,11.0
+I. Williams,Athletic,8,38,0.21,14.4
+João Félix,Atlético de Madrid,8,24,0.33,5.4
+Hugo Duro,Valencia,7,31,0.23,3.9
+Santi Mina,Celta,7,33,0.21,8.5
+Álvaro García,Rayo Vallecano,7,36,0.19,5.2
+Á. Negredo,Cádiz,7,34,0.21,7.3
+G. Melero,Levante,7,29,0.24,4.2
+Roger Martí,Levante,7,29,0.24,8.5
+Lucas Boyé,Elche,7,24,0.29,4.3
+Y. Carrasco,Atlético de Madrid,6,34,0.18,5.4
+Antonio Puertas,Granada,6,33,0.18,3.5
+Nabil Fekir,Real Betis,6,34,0.18,4.9
+Choco Lozano,Cádiz,6,31,0.19,5.1
+Manu Trigueros,Villarreal,6,35,0.17,5.8
+Raúl García,Athletic,6,35,0.17,6.7
+Alexander Isak,Real Sociedad,6,32,0.19,10.2
+Chimy Ávila,Osasuna,6,36,0.17,4.4
+Yéremy Pino,Villarreal,6,31,0.19,5.5
+Matheus Cunha,Atlético de Madrid,6,29,0.21,5.4
+Oihan Sancet,Athletic,6,27,0.22,3.3
+R. Falcao,Rayo Vallecano,6,22,0.27,5.1
+Luuk De Jong,FC Barcelona,6,21,0.29,4.6
+B. Mayoral,Getafe,6,18,0.33,2.6
+Lucas Ocampos,Sevilla,6,30,0.2,5.8
+Papu Gómez,Sevilla,5,29,0.17,2.1
+Sergio Canales,Real Betis,5,34,0.15,4.2
+Pau Torres,Villarreal,5,33,0.15,3.0
+Lucas Pérez,Cádiz,5,33,0.15,5.4
+Fidel,Elche,5,33,0.15,3.1
+Álex Moreno,Real Betis,5,30,0.17,4.1
+Maxi Gómez,Valencia,5,29,0.17,4.8
+Salva  Mallorca,Sevilla,5,28,0.18,4.9
+Boulaye Dia,Villarreal,5,25,0.2,5.3
+Y. En-Nesyri,Sevilla,5,23,0.22,6.3
+Erik Lamela,Sevilla,5,20,0.25,3.0
+G. Escalante,Deportivo Alavés,5,17,0.29,2.9
+Vedat Muriqi,Mallorca,5,16,0.31,5.5
+Javi Puado,Espanyol,4,30,0.13,4.9
+Denis Suárez,Celta,4,38,0.11,2.2
+Brais Méndez,Celta,4,37,0.11,4.6
+Iker Muniain,Athletic,4,35,0.11,6.2
+Ivan Rakitić,Sevilla,4,35,0.11,3.2
+Rubén Sobrino,Cádiz,4,34,0.12,5.5
+A. Sørloth,Real Sociedad,4,33,0.12,6.6
+Rodrygo,Real Madrid,4,33,0.12,3.5
+Ronald Araujo,FC Barcelona,4,30,0.13,1.5
+Ángel,Mallorca,4,29,0.14,4.1
+A. Elustondo,Real Sociedad,4,30,0.13,1.7
+A. Pedraza,Villarreal,4,28,0.14,1.9
+Jorge De Frutos,Levante,4,25,0.16,4.9
+D. Machís,Granada,4,25,0.16,1.8
+Thomas Lemar,Atlético de Madrid,4,24,0.17,3.5
+Ferran Torres,FC Barcelona,4,18,0.22,7.0
+Ansu Fati,FC Barcelona,4,10,0.4,1.3
+Dani Gómez,Levante,4,28,0.14,4.7
+A. Griezmann,Atlético de Madrid,3,29,0.1,5.4
+Franco Cervi,Celta,3,33,0.09,3.1
+F. De Jong,FC Barcelona,3,32,0.09,5.0
+Álex Fernández,Cádiz,3,32,0.09,3.0
+Tete Morente,Elche,3,32,0.09,3.0
+Óscar Trejo,Rayo Vallecano,3,32,0.09,3.3
+E. Bardhi,Levante,3,30,0.1,3.9
+Lucas Vázquez,Real Madrid,3,29,0.1,2.0
+Íñigo Martínez,Athletic,3,27,0.11,2.0
+Sandro,Getafe,3,29,0.1,3.1
+Nacho,Real Madrid,3,28,0.11,1.4
+S. Chukwueze,Villarreal,3,27,0.11,4.6
+Alberto Moreno,Villarreal,3,24,0.13,3.0
+Abdón Prats,Mallorca,3,23,0.13,1.5
+R. Soldado,Levante,3,18,0.17,3.7
+Pedri,FC Barcelona,3,12,0.25,1.3
+Adnan Januzaj,Real Sociedad,3,33,0.09,4.1

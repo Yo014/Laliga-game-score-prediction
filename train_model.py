@@ -13,7 +13,7 @@ def main():
     features = [
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC',
         'Away_EMA_Points', 'Away_EMA_GS', 'Away_EMA_GC',
-        'Home_Offensive_Index', 'Away_Offensive_Index'
+        'Home_Expected_Offense', 'Away_Expected_Offense'
     ]
     
     X = df[features]

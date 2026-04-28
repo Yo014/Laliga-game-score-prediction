@@ -19,12 +19,12 @@ def get_latest_team_stats(team_name, is_home, df):
         ema_pts = latest_match['Home_EMA_Points']
         ema_gs = latest_match['Home_EMA_GS']
         ema_gc = latest_match['Home_EMA_GC']
-        off_idx = latest_match['Home_Offensive_Index']
+        off_idx = latest_match['Home_Expected_Offense']
     else:
         ema_pts = latest_match['Away_EMA_Points']
         ema_gs = latest_match['Away_EMA_GS']
         ema_gc = latest_match['Away_EMA_GC']
-        off_idx = latest_match['Away_Offensive_Index']
+        off_idx = latest_match['Away_Expected_Offense']
 
     return [ema_pts, ema_gs, ema_gc, off_idx]
 
