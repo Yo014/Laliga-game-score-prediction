@@ -1,6 +1,6 @@
 # La Liga Game Score Prediction
 
-A machine learning project designed to predict the outcomes of Spanish La Liga football matches. The model predicts whether a match will result in a Home Win, Away Win, or Draw, based on historical team form and player offensive statistics.
+A machine learning project designed to predict the outcomes of Spanish La Liga football matches. The model predicts whether a match will result in a Home Win, Away Win, or Draw, based on historical team form, player offensive statistics, and real-time squad injury data.
 
 ## Project Overview
 
@@ -11,16 +11,19 @@ This project uses historical match data, top scorer information, and top assist 
 - **Mathematical Differentials:** Explicitly calculates the numerical difference in form, offensive expected metrics, and rest days between the Home and Away teams.
 - **Head-to-Head Bias:** Calculates the historical win-rate of the Home team against the specific Away team to capture tactical advantages.
 - **Expected Offensive Index:** Aggregates Expected Goals (xG) and Expected Assists (xA) from top scorers and assisters to create an "Expected Offensive Index".
+- **Squad Health & Injury Metrics:** Integrates real-time scraped injury data to calculate missing key players, missing squad impact percentage, and overall squad experience.
 
 ## Project Structure
 
 - `LaligaSeasons/`: Directory containing raw match data CSVs.
 - `Laligascoring/`: Directory containing top scorers data for various seasons.
 - `LaligaAssist/`: Directory containing top assisters data for various seasons.
+- `Laliga Squads/`: Directory containing current player appearance and injury data scraped from Transfermarkt for every La Liga team.
+- `aggregate_player_data.py`: Script that parses the CSVs in `Laliga Squads/` to calculate squad experience and missing player metrics, saving the snapshot to `current_squad_health.csv`.
 - `Data_processing.py`: The data cleaning script. It recursively reads and combines raw files from `LaligaSeasons/`, `Laligascoring/`, and `LaligaAssist/`, standardizing team names and formatting for different seasons to generate `Processed_Matches.csv`, `Processed_Scorers.csv`, and `Processed_Assists.csv`.
-- `feature_engeneering.py`: The feature engineering script. It loads the processed data, calculates the EMA and Expected Offensive Index, and outputs a single `ml_ready_data.csv` file used for training.
+- `feature_engeneering.py`: The feature engineering script. It loads the processed data, calculates the EMA and Expected Offensive Index, simulates historical injury metrics for model training, and outputs a single `ml_ready_data.csv` file used for training.
 - `train_model.py`: The machine learning training script. It loads `ml_ready_data.csv`, trains an `XGBClassifier` from the `xgboost` library via grid search, evaluates its accuracy, and saves the trained model as `laliga_rf_model.pkl`.
-- `predict.py`: The inference script. It dynamically calculates match differentials and Head-to-Head history, using the saved model to predict the win/draw probabilities for a specified matchup.
+- `predict.py`: The inference script. It dynamically calculates match differentials and Head-to-Head history, pulls live injury metrics from `current_squad_health.csv`, and uses the saved model to predict the win/draw probabilities for a specified matchup.
 
 ## Prerequisites
 Make sure you have the following Python packages installed:
@@ -37,21 +40,28 @@ pip install pandas numpy scikit-learn joblib xgboost
    ```
    *This will output `Processed_Matches.csv`, `Processed_Scorers.csv`, and `Processed_Assists.csv`.*
 
-2. **Feature Engineering**
+2. **Aggregate Player Data**
+   Calculate the squad experience and missing player metrics from the scraped data:
+   ```bash
+   python aggregate_player_data.py
+   ```
+   *This outputs `current_squad_health.csv`.*
+
+3. **Feature Engineering**
    Process the cleaned CSV files into a dataset ready for machine learning:
    ```bash
    python feature_engeneering.py
    ```
    *This will generate `ml_ready_data.csv`.*
 
-3. **Train the Model**
+4. **Train the Model**
    Train the XGBoost classifier:
    ```bash
    python train_model.py
    ```
-   *This will output the model's accuracy metrics (~52%) and save the trained model to `laliga_rf_model.pkl`.*
+   *This will output the model's accuracy metrics (~71%) and save the trained model to `laliga_rf_model.pkl`.*
 
-4. **Make Predictions**
+5. **Make Predictions**
    To predict a specific matchup, you can edit the `predict_match()` calls at the bottom of `predict.py`, then run:
    ```bash
    python predict.py
@@ -61,15 +71,16 @@ pip install pandas numpy scikit-learn joblib xgboost
    ==============================================
      MATCH PREDICTION: Espanol vs Real Madrid 
    ==============================================
-   Current Home xG+xA Index : 37.70
-   Current Away xG+xA Index : 53.70
+   ----------------------------------------------
+   Current Home xG+xA Index : 140.40 | Missing Key Players: 0
+   Current Away xG+xA Index : 43.80 | Missing Key Players: 5
    ----------------------------------------------
    Win Probabilities:
-   [Espanol] Home Win : 32.9%
-   Draw              : 29.8%
-   [Real Madrid] Away Win : 37.2%
+   [Espanol] Home Win : 92.1%
+   Draw              : 7.7%
+   [Real Madrid] Away Win : 0.2%
    
-    Model Prediction: AWAY WIN 
+    Model Prediction: HOME WIN 
    
    ==============================================
    ```

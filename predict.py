@@ -1,6 +1,23 @@
 import pandas as pd
 import joblib
+import joblib
 
+def get_current_injury_stats(team_name):
+    """Fetches the actual real-time injury stats for the given team."""
+    try:
+        health_df = pd.read_csv('/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/current_squad_health.csv')
+    except FileNotFoundError:
+        return [700, 1, 0.05] # default mock values
+        
+    team_health = health_df[health_df['Team'] == team_name]
+    if team_health.empty:
+        return [700, 1, 0.05] # default mock values
+        
+    squad_exp = team_health['Squad_Experience'].values[0]
+    missing_key = team_health['Missing_Key_Players'].values[0]
+    missing_pct = team_health['Missing_Impact_Pct'].values[0]
+    
+    return [squad_exp, missing_key, missing_pct]
 
 def get_latest_team_stats(team_name, is_home, df):
     """
@@ -80,6 +97,10 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
                len(matchups[(matchups['AwayTeam'] == home_team) & (matchups['FTR'] == 'A')])
         h2h_win_rate = wins / len(matchups)
 
+    # Fetch current injuries
+    home_injury = get_current_injury_stats(home_team)
+    away_injury = get_current_injury_stats(away_team)
+
     # 4. Construct the feature array exactly how the model was trained
     match_features = pd.DataFrame([[
         home_stats[0], home_stats[1], home_stats[2],  # Home Form
@@ -89,7 +110,10 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
         home_stats[6], away_stats[6],                # Advanced Expected Offense Indices
         home_rest_days, away_rest_days,
         form_diff, offense_diff, rest_diff,          # Explicit Differentials
-        h2h_win_rate                                 # H2H bias
+        h2h_win_rate,                                # H2H bias
+        home_injury[0], away_injury[0],              # Squad Experience
+        home_injury[1], away_injury[1],              # Missing Key Players
+        home_injury[2], away_injury[2]               # Missing Impact Pct
     ]], columns=[
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
@@ -98,7 +122,10 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
         'Home_Expected_Offense', 'Away_Expected_Offense',
         'Home_Days_Rest', 'Away_Days_Rest',
         'Form_Diff', 'Offense_Diff', 'Rest_Diff',
-        'H2H_Home_Win_Rate'
+        'H2H_Home_Win_Rate',
+        'Home_Squad_Experience', 'Away_Squad_Experience',
+        'Home_Missing_Key_Players', 'Away_Missing_Key_Players',
+        'Home_Missing_Impact_Pct', 'Away_Missing_Impact_Pct'
     ])
 
     # 5. Make Prediction
@@ -110,8 +137,9 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
     print(f"\n==============================================")
     print(f"  MATCH PREDICTION: {home_team} vs {away_team} ")
     print(f"==============================================")
-    print(f"Current Home xG+xA Index : {home_stats[6]:.2f}")
-    print(f"Current Away xG+xA Index : {away_stats[6]:.2f}")
+    print(f"----------------------------------------------")
+    print(f"Current Home xG+xA Index : {home_stats[6]:.2f} | Missing Key Players: {home_injury[1]}")
+    print(f"Current Away xG+xA Index : {away_stats[6]:.2f} | Missing Key Players: {away_injury[1]}")
     print(f"----------------------------------------------")
     print(f"Win Probabilities:")
     print(f"[{home_team}] Home Win : {probabilities[2] * 100:.1f}%")
