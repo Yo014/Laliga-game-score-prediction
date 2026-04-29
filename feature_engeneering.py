@@ -160,10 +160,44 @@ def main():
     matches['Home_Expected_Offense'] = matches['Home_Expected_Offense'].fillna(0)
     matches['Away_Expected_Offense'] = matches['Away_Expected_Offense'].fillna(0)
 
+    # 5. Add Squad Health Data (only for the current 25-26 season)
+    print("Integrating squad health / injury data...")
+    squad_health_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/current_squad_health.csv'
+    squad_health = pd.read_csv(squad_health_path)
+
+    # Tag squad health with the current season so it only merges with 25-26 matches
+    squad_health['Season'] = '25-26'
+
+    # Merge for Home team (by Season + Team)
+    matches = pd.merge(matches, squad_health[['Season', 'Team', 'Missing_Key_Players', 'Missing_Impact_Pct', 'Missing_Goals_Pct']],
+                       left_on=['Season', 'HomeTeam'], right_on=['Season', 'Team'], how='left')
+    matches = matches.rename(columns={
+        'Missing_Key_Players': 'Home_Missing_Key_Players',
+        'Missing_Impact_Pct': 'Home_Missing_Impact_Pct',
+        'Missing_Goals_Pct': 'Home_Missing_Goals_Pct'
+    }).drop('Team', axis=1)
+
+    # Merge for Away team (by Season + Team)
+    matches = pd.merge(matches, squad_health[['Season', 'Team', 'Missing_Key_Players', 'Missing_Impact_Pct', 'Missing_Goals_Pct']],
+                       left_on=['Season', 'AwayTeam'], right_on=['Season', 'Team'], how='left')
+    matches = matches.rename(columns={
+        'Missing_Key_Players': 'Away_Missing_Key_Players',
+        'Missing_Impact_Pct': 'Away_Missing_Impact_Pct',
+        'Missing_Goals_Pct': 'Away_Missing_Goals_Pct'
+    }).drop('Team', axis=1)
+
+    # Fill 0 for teams/seasons without squad health data (all historical seasons)
+    for col in ['Home_Missing_Key_Players', 'Away_Missing_Key_Players',
+                'Home_Missing_Impact_Pct', 'Away_Missing_Impact_Pct',
+                'Home_Missing_Goals_Pct', 'Away_Missing_Goals_Pct']:
+        matches[col] = matches[col].fillna(0)
+
     # Calculate Explicit Differentials
     matches['Form_Diff'] = matches['Home_EMA_Points'] - matches['Away_EMA_Points']
     matches['Offense_Diff'] = matches['Home_Expected_Offense'] - matches['Away_Expected_Offense']
     matches['Rest_Diff'] = matches['Home_Days_Rest'] - matches['Away_Days_Rest']
+    matches['Missing_Key_Diff'] = matches['Home_Missing_Key_Players'] - matches['Away_Missing_Key_Players']
+    matches['Missing_Impact_Diff'] = matches['Home_Missing_Impact_Pct'] - matches['Away_Missing_Impact_Pct']
 
     # 4. Target Variable Setup
     # 0 = Away Win, 1 = Draw, 2 = Home Win
@@ -178,7 +212,11 @@ def main():
         'Away_EMA_Shots', 'Away_EMA_ShotsOnTarget', 'Away_EMA_Corners',
         'Home_Expected_Offense', 'Away_Expected_Offense',
         'Home_Days_Rest', 'Away_Days_Rest',
+        'Home_Missing_Key_Players', 'Away_Missing_Key_Players',
+        'Home_Missing_Impact_Pct', 'Away_Missing_Impact_Pct',
+        'Home_Missing_Goals_Pct', 'Away_Missing_Goals_Pct',
         'Form_Diff', 'Offense_Diff', 'Rest_Diff',
+        'Missing_Key_Diff', 'Missing_Impact_Diff',
         'H2H_Home_Win_Rate'
     ]
     final_dataset = matches[features_to_keep].dropna().reset_index(drop=True)

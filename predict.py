@@ -43,11 +43,13 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
     # 1. Load Data & Advanced Model
     data_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/ml_ready_data.csv'
     model_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/laliga_rf_model.pkl'
+    squad_health_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/current_squad_health.csv'
     
     try:
         raw_matches = pd.read_csv('/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/Processed_Matches.csv')
         df = pd.read_csv(data_path)
         model = joblib.load(model_path)
+        squad_health = pd.read_csv(squad_health_path)
     except FileNotFoundError as e:
         print(f"Error loading files: {e}")
         return
@@ -63,10 +65,23 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
     if not home_stats or not away_stats:
         return
 
-    # 3. Calculate Differentials and H2H
+    # 3. Look up squad health for both teams
+    home_health = squad_health[squad_health['Team'] == home_team]
+    away_health = squad_health[squad_health['Team'] == away_team]
+
+    home_missing_key = home_health['Missing_Key_Players'].values[0] if len(home_health) > 0 else 0
+    home_missing_impact = home_health['Missing_Impact_Pct'].values[0] if len(home_health) > 0 else 0
+    home_missing_goals = home_health['Missing_Goals_Pct'].values[0] if len(home_health) > 0 else 0
+    away_missing_key = away_health['Missing_Key_Players'].values[0] if len(away_health) > 0 else 0
+    away_missing_impact = away_health['Missing_Impact_Pct'].values[0] if len(away_health) > 0 else 0
+    away_missing_goals = away_health['Missing_Goals_Pct'].values[0] if len(away_health) > 0 else 0
+
+    # 4. Calculate Differentials and H2H
     form_diff = home_stats[0] - away_stats[0]
     offense_diff = home_stats[6] - away_stats[6]
     rest_diff = home_rest_days - away_rest_days
+    missing_key_diff = home_missing_key - away_missing_key
+    missing_impact_diff = home_missing_impact - away_missing_impact
     
     matchups = raw_matches[
         ((raw_matches['HomeTeam'] == home_team) & (raw_matches['AwayTeam'] == away_team)) |
@@ -80,7 +95,7 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
                len(matchups[(matchups['AwayTeam'] == home_team) & (matchups['FTR'] == 'A')])
         h2h_win_rate = wins / len(matchups)
 
-    # 4. Construct the feature array exactly how the model was trained
+    # 5. Construct the feature array exactly how the model was trained
     match_features = pd.DataFrame([[
         home_stats[0], home_stats[1], home_stats[2],  # Home Form
         home_stats[3], home_stats[4], home_stats[5],  # Home Dominance
@@ -88,7 +103,11 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
         away_stats[3], away_stats[4], away_stats[5],  # Away Dominance
         home_stats[6], away_stats[6],                # Advanced Expected Offense Indices
         home_rest_days, away_rest_days,
+        home_missing_key, away_missing_key,          # Squad Health
+        home_missing_impact, away_missing_impact,
+        home_missing_goals, away_missing_goals,
         form_diff, offense_diff, rest_diff,          # Explicit Differentials
+        missing_key_diff, missing_impact_diff,
         h2h_win_rate                                 # H2H bias
     ]], columns=[
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC',
@@ -97,11 +116,15 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
         'Away_EMA_Shots', 'Away_EMA_ShotsOnTarget', 'Away_EMA_Corners',
         'Home_Expected_Offense', 'Away_Expected_Offense',
         'Home_Days_Rest', 'Away_Days_Rest',
+        'Home_Missing_Key_Players', 'Away_Missing_Key_Players',
+        'Home_Missing_Impact_Pct', 'Away_Missing_Impact_Pct',
+        'Home_Missing_Goals_Pct', 'Away_Missing_Goals_Pct',
         'Form_Diff', 'Offense_Diff', 'Rest_Diff',
+        'Missing_Key_Diff', 'Missing_Impact_Diff',
         'H2H_Home_Win_Rate'
     ])
 
-    # 5. Make Prediction
+    # 6. Make Prediction
     probabilities = model.predict_proba(match_features)[0]
     prediction = model.predict(match_features)[0]
 
@@ -112,6 +135,10 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
     print(f"==============================================")
     print(f"Current Home xG+xA Index : {home_stats[6]:.2f}")
     print(f"Current Away xG+xA Index : {away_stats[6]:.2f}")
+    print(f"----------------------------------------------")
+    print(f"Squad Health:")
+    print(f"  [{home_team}] Missing {int(home_missing_key)} key players ({home_missing_impact:.1f}% playing time, {home_missing_goals:.1f}% goals)")
+    print(f"  [{away_team}] Missing {int(away_missing_key)} key players ({away_missing_impact:.1f}% playing time, {away_missing_goals:.1f}% goals)")
     print(f"----------------------------------------------")
     print(f"Win Probabilities:")
     print(f"[{home_team}] Home Win : {probabilities[2] * 100:.1f}%")

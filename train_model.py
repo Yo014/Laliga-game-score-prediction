@@ -25,7 +25,11 @@ def main():
         'Away_EMA_Shots', 'Away_EMA_ShotsOnTarget', 'Away_EMA_Corners',
         'Home_Expected_Offense', 'Away_Expected_Offense',
         'Home_Days_Rest', 'Away_Days_Rest',
+        'Home_Missing_Key_Players', 'Away_Missing_Key_Players',
+        'Home_Missing_Impact_Pct', 'Away_Missing_Impact_Pct',
+        'Home_Missing_Goals_Pct', 'Away_Missing_Goals_Pct',
         'Form_Diff', 'Offense_Diff', 'Rest_Diff',
+        'Missing_Key_Diff', 'Missing_Impact_Diff',
         'H2H_Home_Win_Rate'
     ]
     
