@@ -56,7 +56,7 @@ def main():
     tscv = TimeSeriesSplit(n_splits=3)
     
     # Initialize XGBoost instead of Random Forest
-    xgb_model = XGBClassifier(random_state=42, use_label_encoder=False, eval_metric='mlogloss')
+    xgb_model = XGBClassifier(random_state=42, eval_metric='mlogloss')
     
     grid_search = GridSearchCV(estimator=xgb_model, param_grid=param_grid, cv=tscv, scoring='accuracy', n_jobs=-1)
     

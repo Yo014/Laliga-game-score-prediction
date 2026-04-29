@@ -123,4 +123,4 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
 if __name__ == "__main__":
     # Test matchups! Ensure you use the exact names from your processed data
     predict_match("Espanol", "Real Madrid",5,9)
-    predict_match("Ath Bilbao", "Real Madrid",7,3)
+    predict_match("Girona", "Mallorca",6,6)
