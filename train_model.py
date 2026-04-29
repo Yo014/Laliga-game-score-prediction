@@ -27,9 +27,10 @@ def main():
         'Home_Days_Rest', 'Away_Days_Rest',
         'Form_Diff', 'Offense_Diff', 'Rest_Diff',
         'H2H_Home_Win_Rate',
-        'Home_Squad_Experience', 'Away_Squad_Experience',
+        # --- Player availability features (simulated for history, real for predictions) ---
         'Home_Missing_Key_Players', 'Away_Missing_Key_Players',
-        'Home_Missing_Impact_Pct', 'Away_Missing_Impact_Pct'
+        'Home_Missing_Impact_Pct',  'Away_Missing_Impact_Pct',
+        'Missing_Key_Diff',          'Missing_Impact_Diff',
     ]
     
     X = df[features]

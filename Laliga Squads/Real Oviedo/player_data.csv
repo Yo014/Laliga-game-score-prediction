@@ -1,40 +1,40 @@
-Player,Appearances,Injuries,Day Injured,Missed Games,Expected Return
-Aarón Escandell,33,0,N/A,0,N/A
-Adrián Fernández,0,0,N/A,0,N/A
-Alberto Reina,33,0,N/A,0,N/A
-Borja Sánchez,1,0,N/A,0,N/A
-Brandon Dominguès,1,0,N/A,0,N/A
-Cheli Pereda,0,0,N/A,0,N/A
-Dani Calvo,17,0,N/A,0,N/A
-David Carmo,22,0,N/A,0,N/A
-David Costas,21,0,N/A,0,N/A
-Diego Espinosa,0,0,N/A,0,N/A
-Diego Menéndez,0,0,N/A,0,N/A
-Eric Bailly,13,0,N/A,0,N/A
-Federico Viñas,30,0,N/A,0,N/A
-Haissem Hassan,33,0,N/A,0,N/A
-Horațiu Moldovan,1,0,N/A,0,N/A
-Ilyas Chaira,32,0,N/A,0,N/A
-Javi López,22,0,N/A,0,N/A
-Josip Brekalo,15,0,N/A,0,N/A
-Kwasi Sibo,25,0,N/A,0,N/A
-Lamine Gueye,0,0,N/A,0,N/A
-Leander Dendoncker,19,0,N/A,0,N/A
-Lucas Ahijado,16,0,N/A,0,N/A
-Luka Ilic,19,0,N/A,0,N/A
-Marco Esteban,1,0,N/A,0,N/A
-Miguel Narváez,0,0,N/A,0,N/A
-Nacho Vidal,24,0,N/A,0,N/A
-Nicolás Fonseca,15,0,N/A,0,N/A
-Oier Luengo,3,0,N/A,0,N/A
-Omar Falah,1,0,N/A,0,N/A
-Ovie Ejaria,8,0,N/A,0,N/A
-Pablo Agudín,7,0,N/A,0,N/A
-Rahim Alhassane,25,0,N/A,0,N/A
-Salomón Rondón,16,0,N/A,0,N/A
-Santi Cazorla,23,0,N/A,0,N/A
-Santiago Colombatto,29,0,N/A,0,N/A
-Thiago Borbas,8,0,N/A,0,N/A
-Thiago Fernández,12,0,N/A,0,N/A
-Álex Cardero,0,0,N/A,0,N/A
-Álex Forés,16,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
+Aarón Escandell,33,1,0,N/A,0,N/A
+Horațiu Moldovan,1,0,0,N/A,0,N/A
+Miguel Narváez,Not used during this season,0,0,N/A,0,N/A
+David Carmo,22,0,0,N/A,0,N/A
+Javi López,22,1,0,N/A,0,N/A
+Rahim Alhassane,25,0,0,N/A,0,N/A
+Nacho Vidal,24,0,0,N/A,0,N/A
+Eric Bailly,13,0,0,N/A,0,N/A
+David Costas,21,0,0,N/A,0,N/A
+Dani Calvo,17,0,0,N/A,0,N/A
+Oier Luengo,3,1,0,N/A,0,N/A
+Lucas Ahijado,16,1,0,N/A,0,N/A
+Marco Esteban,1,0,0,N/A,0,N/A
+Omar Falah,1,0,0,N/A,0,N/A
+Diego Espinosa,Not used during this season,0,0,N/A,0,N/A
+Adrián Fernández,Not used during this season,0,0,N/A,0,N/A
+Santiago Colombatto,29,1,0,N/A,0,N/A
+Leander Dendoncker,19,0,0,N/A,0,N/A
+Nicolás Fonseca,15,0,0,N/A,0,N/A
+Alberto Reina,33,1,0,N/A,0,N/A
+Luka Ilic,19,0,0,N/A,0,N/A
+Kwasi Sibo,25,0,0,N/A,0,N/A
+Pablo Agudín,7,0,0,N/A,0,N/A
+Álex Cardero,Not used during this season,0,0,N/A,0,N/A
+Santi Cazorla,23,1,0,N/A,0,N/A
+Diego Menéndez,Not used during this season,0,0,N/A,0,N/A
+Cheli Pereda,Not used during this season,0,0,N/A,0,N/A
+Thiago Fernández,12,4,0,N/A,0,N/A
+Ilyas Chaira,32,2,0,N/A,0,N/A
+Federico Viñas,30,1,0,N/A,0,N/A
+Haissem Hassan,33,3,0,N/A,0,N/A
+Thiago Borbas,8,0,0,N/A,0,N/A
+Josip Brekalo,15,0,0,N/A,0,N/A
+Álex Forés,16,2,0,N/A,0,N/A
+Brandon Dominguès,1,0,0,N/A,0,N/A
+Ovie Ejaria,8,0,0,N/A,0,N/A
+Salomón Rondón,16,0,0,N/A,0,N/A
+Borja Sánchez,1,0,0,N/A,0,N/A
+Lamine Gueye,Not used during this season,0,0,N/A,0,N/A

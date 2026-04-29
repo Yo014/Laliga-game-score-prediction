@@ -1,42 +1,42 @@
-Player,Appearances,Injuries,Day Injured,Missed Games,Expected Return
-Adrià Altimira,4,0,N/A,0,N/A
-Alassane Diatta,1,0,N/A,0,N/A
-Alberto Moleiro,40,0,N/A,0,N/A
-Alex Freeman,7,0,N/A,0,N/A
-Alfon González,8,0,N/A,0,N/A
-Alfonso Pedraza,32,0,N/A,0,N/A
-Arnau Tenas,10,0,N/A,0,N/A
-Ayoze Pérez,28,0,N/A,0,N/A
-Carlos Macià,5,0,N/A,0,N/A
-Dani Parejo,36,0,N/A,0,N/A
-Daniel Budesca,1,0,N/A,0,N/A
-Denis Suárez,0,0,N/A,0,N/A
-Diego Conde,1,0,N/A,0,N/A
-Georges Mikautadze,38,0,N/A,0,N/A
-Gerard Moreno,20,0,N/A,0,N/A
-Hugo López,5,0,N/A,0,N/A
-Ilias Akhomach,15,0,N/A,0,N/A
-Ismael Sierra,0,0,N/A,0,N/A
-Jean Ives Valou,0,0,N/A,0,N/A
-Joselillo Gaitán,0,0,N/A,0,N/A
-Juan Foyth,18,1,24/01/2026,20,31/08/2026
-Karl Etta Eyong,3,0,N/A,0,N/A
-Logan Costa,0,0,N/A,0,N/A
-Luiz Júnior,33,0,N/A,0,N/A
-Mahamoud Barry,0,0,N/A,0,N/A
-Manor Solomon,11,0,N/A,0,N/A
-Nicolas Pépé,42,0,N/A,0,N/A
-Pape Gueye,36,0,N/A,0,N/A
-Pau Cabanes,0,0,N/A,0,N/A
-Pau Navarro,24,0,N/A,0,N/A
-Rafa Marín,28,0,N/A,0,N/A
-Renato Veiga,39,0,N/A,0,N/A
-Rubén Gómez,0,0,N/A,0,N/A
-Santi Comesaña,40,0,N/A,0,N/A
-Santiago Mouriño,31,0,N/A,0,N/A
-Sergi Cardona,38,0,N/A,0,N/A
-Tajon Buchanan,39,0,N/A,0,N/A
-Tani Oluwaseyi,35,0,N/A,0,N/A
-Thomas Partey,28,0,N/A,0,N/A
-Willy Kambwala,0,0,N/A,0,N/A
-Yéremy Pino,2,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
+Luiz Júnior,33,0,0,N/A,0,N/A
+Diego Conde,1,0,0,N/A,0,N/A
+Arnau Tenas,10,0,0,N/A,0,N/A
+Rubén Gómez,Not used during this season,0,0,N/A,0,N/A
+Renato Veiga,39,0,0,N/A,0,N/A
+Logan Costa,Not used during this season,0,0,N/A,0,N/A
+Rafa Marín,28,1,0,N/A,0,N/A
+Pau Navarro,24,0,0,N/A,0,N/A
+Juan Foyth,18,0,1,24/01/2026,20,31/08/2026
+Santiago Mouriño,31,2,0,N/A,0,N/A
+Sergi Cardona,38,3,0,N/A,0,N/A
+Willy Kambwala,Not used during this season,0,0,N/A,0,N/A
+Alex Freeman,7,0,0,N/A,0,N/A
+Alfonso Pedraza,32,4,0,N/A,0,N/A
+Adrià Altimira,4,0,0,N/A,0,N/A
+Jean Ives Valou,Not used during this season,0,0,N/A,0,N/A
+Daniel Budesca,1,0,0,N/A,0,N/A
+Ismael Sierra,Not used during this season,0,0,N/A,0,N/A
+Pape Gueye,36,2,0,N/A,0,N/A
+Santi Comesaña,40,5,0,N/A,0,N/A
+Carlos Macià,5,0,0,N/A,0,N/A
+Thomas Partey,28,0,0,N/A,0,N/A
+Denis Suárez,Not used during this season,0,0,N/A,0,N/A
+Dani Parejo,36,1,0,N/A,0,N/A
+Alassane Diatta,1,0,0,N/A,0,N/A
+Alberto Moleiro,40,5,0,N/A,0,N/A
+Yéremy Pino,2,1,0,N/A,0,N/A
+Georges Mikautadze,38,5,0,N/A,0,N/A
+Karl Etta Eyong,3,2,0,N/A,0,N/A
+Ilias Akhomach,15,2,0,N/A,0,N/A
+Tajon Buchanan,39,1,0,N/A,0,N/A
+Manor Solomon,11,4,0,N/A,0,N/A
+Tani Oluwaseyi,35,2,0,N/A,0,N/A
+Nicolas Pépé,42,6,0,N/A,0,N/A
+Ayoze Pérez,28,4,0,N/A,0,N/A
+Alfon González,8,0,0,N/A,0,N/A
+Gerard Moreno,20,0,0,N/A,0,N/A
+Hugo López,5,1,0,N/A,0,N/A
+Pau Cabanes,Not used during this season,0,0,N/A,0,N/A
+Joselillo Gaitán,Not used during this season,0,0,N/A,0,N/A
+Mahamoud Barry,Not used during this season,0,0,N/A,0,N/A

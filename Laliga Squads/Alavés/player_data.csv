@@ -1,38 +1,38 @@
-Player,Appearances,Injuries,Day Injured,Missed Games,Expected Return
-Abde Rebbach,28,0,N/A,0,N/A
-Aitor Mañas,10,0,N/A,0,N/A
-Ander Guevara,27,0,N/A,0,N/A
-Antonio Blanco,34,0,N/A,0,N/A
-Antonio Sivera,33,0,N/A,0,N/A
-Calebe,21,0,N/A,0,N/A
-Carles Aleñá,37,0,N/A,0,N/A
-Carlos Ballestero,2,0,N/A,0,N/A
-Carlos Protesoni,13,1,09/03/2026,6,Unknown
-Carlos Vicente,25,0,N/A,0,N/A
-Denis Suárez,27,0,N/A,0,N/A
-Diego Morcillo,2,0,N/A,0,N/A
-Egoitz Muñoz,2,0,N/A,0,N/A
-Facundo Garcés,10,0,N/A,0,N/A
-Grégoire Swiderski,0,0,N/A,0,N/A
-Ibrahim Diabate,5,0,N/A,0,N/A
-Izei Hernández,1,0,N/A,0,N/A
-Jon Guridi,28,0,N/A,0,N/A
-Jon Pacheco,25,0,N/A,0,N/A
-Jonny Otto,35,0,N/A,0,N/A
-Lander Pinillos,2,0,N/A,0,N/A
-Lucas Boyé,29,0,N/A,0,N/A
-Mariano Díaz,12,0,N/A,0,N/A
-Moussa Diarra,5,0,N/A,0,N/A
-Nahuel Tenaglia,34,0,N/A,0,N/A
-Nikola Maras,0,0,N/A,0,N/A
-Pablo Ibáñez,36,0,N/A,0,N/A
-Paco Sanz,0,0,N/A,0,N/A
-Raúl Fernández,5,0,N/A,0,N/A
-Rubén Montero,0,0,N/A,0,N/A
-Toni Martínez,37,0,N/A,0,N/A
-Victor Parada,28,0,N/A,0,N/A
-Ville Koski,2,0,N/A,0,N/A
-Xanet Oláiz,1,0,N/A,0,N/A
-Youssef Enríquez,27,0,N/A,0,N/A
-Álvaro García,0,0,N/A,0,N/A
-Ángel Pérez,12,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
+Antonio Sivera,33,0,0,N/A,0,N/A
+Grégoire Swiderski,Not used during this season,0,0,N/A,0,N/A
+Raúl Fernández,5,0,0,N/A,0,N/A
+Rubén Montero,Not used during this season,0,0,N/A,0,N/A
+Jon Pacheco,25,0,0,N/A,0,N/A
+Youssef Enríquez,27,1,0,N/A,0,N/A
+Nahuel Tenaglia,34,1,0,N/A,0,N/A
+Jonny Otto,35,0,0,N/A,0,N/A
+Victor Parada,28,3,0,N/A,0,N/A
+Moussa Diarra,5,0,0,N/A,0,N/A
+Ville Koski,2,0,0,N/A,0,N/A
+Nikola Maras,Not used during this season,0,0,N/A,0,N/A
+Egoitz Muñoz,2,0,0,N/A,0,N/A
+Álvaro García,Not used during this season,0,0,N/A,0,N/A
+Xanet Oláiz,1,0,0,N/A,0,N/A
+Paco Sanz,Not used during this season,0,0,N/A,0,N/A
+Carlos Ballestero,2,1,0,N/A,0,N/A
+Facundo Garcés,10,0,0,N/A,0,N/A
+Antonio Blanco,34,2,0,N/A,0,N/A
+Pablo Ibáñez,36,1,0,N/A,0,N/A
+Carles Aleñá,37,4,0,N/A,0,N/A
+Ander Guevara,27,1,0,N/A,0,N/A
+Jon Guridi,28,0,0,N/A,0,N/A
+Calebe,21,0,0,N/A,0,N/A
+Denis Suárez,27,2,0,N/A,0,N/A
+Carlos Protesoni,13,0,1,09/03/2026,6,Unknown
+Lander Pinillos,2,1,0,N/A,0,N/A
+Carlos Vicente,25,3,0,N/A,0,N/A
+Lucas Boyé,29,1,0,N/A,0,N/A
+Toni Martínez,37,3,0,N/A,0,N/A
+Abde Rebbach,28,4,0,N/A,0,N/A
+Ibrahim Diabate,5,0,0,N/A,0,N/A
+Ángel Pérez,12,2,0,N/A,0,N/A
+Aitor Mañas,10,1,0,N/A,0,N/A
+Mariano Díaz,12,1,0,N/A,0,N/A
+Diego Morcillo,2,0,0,N/A,0,N/A
+Izei Hernández,1,0,0,N/A,0,N/A

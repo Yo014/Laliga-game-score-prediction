@@ -1,42 +1,42 @@
-Player,Appearances,Injuries,Day Injured,Missed Games,Expected Return
-Aaron Mayol,0,0,N/A,0,N/A
-Aimar Blázquez,0,0,N/A,0,N/A
-Alejandro Panach,1,0,N/A,0,N/A
-André Almeida,23,0,N/A,0,N/A
-Arnaut Danjuma,33,0,N/A,0,N/A
-Baptiste Santamaria,22,0,N/A,0,N/A
-Cristian Rivero,0,0,N/A,0,N/A
-César Tárrega,30,0,N/A,0,N/A
-Dani Raba,15,0,N/A,0,N/A
-David Otorbi,2,0,N/A,0,N/A
-Diego López,34,0,N/A,0,N/A
-Dimitri Foulquier,19,1,02/02/2026,12,Unknown
-Eray Cömert,18,1,11/04/2026,3,01/05/2026
-Filip Ugrinic,25,0,N/A,0,N/A
-Guido Rodríguez,12,0,N/A,0,N/A
-Hugo Duro,36,0,N/A,0,N/A
-Javi Guerra,35,0,N/A,0,N/A
-Javi Navarro,0,0,N/A,0,N/A
-Jesús Vázquez,24,0,N/A,0,N/A
-Joel Fontanet,0,0,N/A,0,N/A
-José Copete,24,1,22/02/2026,14,30/06/2026
-José Gayà,29,0,N/A,0,N/A
-Julen Agirrezabala,19,1,28/02/2026,8,Unknown
-Largie Ramazani,26,0,N/A,0,N/A
-Lucas Beltrán,30,0,N/A,0,N/A
-Lucas Núñez,1,0,N/A,0,N/A
-Luis Rioja,37,0,N/A,0,N/A
-Marc Jurado,1,0,N/A,0,N/A
-Marcos Navarro,0,0,N/A,0,N/A
-Mario Domínguez,0,0,N/A,0,N/A
-Mouctar Diakhaby,9,1,05/01/2026,22,30/06/2026
-Pablo López,0,0,N/A,0,N/A
-Pepelu,28,0,N/A,0,N/A
-Pere García,0,0,N/A,0,N/A
-Renzo Saravia,2,0,N/A,0,N/A
-Rubén Iranzo,4,0,N/A,0,N/A
-Stole Dimitrievski,19,0,N/A,0,N/A
-Thierry Correia,23,1,21/04/2026,6,21/05/2026
-Umar Sadiq,17,0,N/A,0,N/A
-Unai Núñez,9,0,N/A,0,N/A
-Vicent Abril,0,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
+Julen Agirrezabala,19,0,1,28/02/2026,8,Unknown
+Stole Dimitrievski,19,0,0,N/A,0,N/A
+Vicent Abril,Not used during this season,0,0,N/A,0,N/A
+Cristian Rivero,Not used during this season,0,0,N/A,0,N/A
+Pere García,Not used during this season,0,0,N/A,0,N/A
+César Tárrega,30,0,0,N/A,0,N/A
+José Copete,24,0,1,22/02/2026,14,30/06/2026
+José Gayà,29,2,0,N/A,0,N/A
+Jesús Vázquez,24,0,0,N/A,0,N/A
+Unai Núñez,9,1,0,N/A,0,N/A
+Thierry Correia,23,1,1,21/04/2026,6,21/05/2026
+Eray Cömert,18,0,1,11/04/2026,3,01/05/2026
+Mouctar Diakhaby,9,0,1,05/01/2026,22,30/06/2026
+Renzo Saravia,2,0,0,N/A,0,N/A
+Dimitri Foulquier,19,0,1,02/02/2026,12,Unknown
+Rubén Iranzo,4,0,0,N/A,0,N/A
+Marcos Navarro,Not used during this season,0,0,N/A,0,N/A
+Alejandro Panach,1,0,0,N/A,0,N/A
+Joel Fontanet,Not used during this season,0,0,N/A,0,N/A
+Javi Guerra,35,5,0,N/A,0,N/A
+Pepelu,28,1,0,N/A,0,N/A
+André Almeida,23,2,0,N/A,0,N/A
+Filip Ugrinic,25,3,0,N/A,0,N/A
+Guido Rodríguez,12,0,0,N/A,0,N/A
+Baptiste Santamaria,22,2,0,N/A,0,N/A
+Javi Navarro,Not used during this season,0,0,N/A,0,N/A
+Lucas Núñez,1,1,0,N/A,0,N/A
+Aaron Mayol,Not used during this season,0,0,N/A,0,N/A
+Hugo Duro,36,1,0,N/A,0,N/A
+Diego López,34,1,0,N/A,0,N/A
+Lucas Beltrán,30,2,0,N/A,0,N/A
+Largie Ramazani,26,2,0,N/A,0,N/A
+Umar Sadiq,17,3,0,N/A,0,N/A
+Arnaut Danjuma,33,3,0,N/A,0,N/A
+Luis Rioja,37,5,0,N/A,0,N/A
+Dani Raba,15,1,0,N/A,0,N/A
+David Otorbi,2,0,0,N/A,0,N/A
+Pablo López,Not used during this season,0,0,N/A,0,N/A
+Marc Jurado,1,0,0,N/A,0,N/A
+Mario Domínguez,Not used during this season,0,0,N/A,0,N/A
+Aimar Blázquez,Not used during this season,0,0,N/A,0,N/A

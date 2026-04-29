@@ -1,37 +1,37 @@
-Player,Appearances,Injuries,Day Injured,Missed Games,Expected Return
-Alejandro Balde,38,0,N/A,0,N/A
-Andreas Christensen,17,1,21/12/2025,28,30/04/2026
-Dani Olmo,44,0,N/A,0,N/A
-Dani Rodríguez,0,0,N/A,0,N/A
-Diego Kochen,0,0,N/A,0,N/A
-Dro Fernández,5,0,N/A,0,N/A
-Eder Aller,0,0,N/A,0,N/A
-Eric García,47,0,N/A,0,N/A
-Fermín López,45,0,N/A,0,N/A
-Ferran Torres,45,0,N/A,0,N/A
-Frenkie de Jong,35,0,N/A,0,N/A
-Gavi,9,0,N/A,0,N/A
-Gerard Martín,47,0,N/A,0,N/A
-Guille Fernández,0,0,N/A,0,N/A
-Iñaki Peña,0,0,N/A,0,N/A
-Joan García,42,0,N/A,0,N/A
-Jofre Torrents,4,0,N/A,0,N/A
-João Cancelo,18,0,N/A,0,N/A
-Juan Hernández,0,0,N/A,0,N/A
-Jules Koundé,45,0,N/A,0,N/A
-Lamine Yamal,45,1,23/04/2026,6,31/05/2026
-Marc Bernal,28,1,04/04/2026,6,01/05/2026
-Marc Casadó,31,0,N/A,0,N/A
-Marc-André ter Stegen,1,0,N/A,0,N/A
-Marcus Rashford,45,0,N/A,0,N/A
-Pau Cubarsí,45,0,N/A,0,N/A
-Pedri,39,0,N/A,0,N/A
-Raphinha,31,1,28/03/2026,6,Unknown
-Robert Lewandowski,41,0,N/A,0,N/A
-Ronald Araujo,35,0,N/A,0,N/A
-Roony Bardghji,25,0,N/A,0,N/A
-Tommy Marqués,1,0,N/A,0,N/A
-Toni Fernández,1,0,N/A,0,N/A
-Wojciech Szczęsny,10,0,N/A,0,N/A
-Xavi Espart,4,0,N/A,0,N/A
-Álvaro Cortés,0,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
+Joan García,42,0,0,N/A,0,N/A
+Iñaki Peña,Not used during this season,0,0,N/A,0,N/A
+Marc-André ter Stegen,1,0,0,N/A,0,N/A
+Wojciech Szczęsny,10,0,0,N/A,0,N/A
+Diego Kochen,Not used during this season,0,0,N/A,0,N/A
+Eder Aller,Not used during this season,0,0,N/A,0,N/A
+Pau Cubarsí,45,0,0,N/A,0,N/A
+Jules Koundé,45,4,0,N/A,0,N/A
+Alejandro Balde,38,3,0,N/A,0,N/A
+Eric García,47,2,0,N/A,0,N/A
+Gerard Martín,47,1,0,N/A,0,N/A
+Ronald Araujo,35,0,0,N/A,0,N/A
+João Cancelo,18,4,0,N/A,0,N/A
+Andreas Christensen,17,0,1,21/12/2025,28,30/04/2026
+Xavi Espart,4,0,0,N/A,0,N/A
+Álvaro Cortés,Not used during this season,0,0,N/A,0,N/A
+Jofre Torrents,4,0,0,N/A,0,N/A
+Pedri,39,11,0,N/A,0,N/A
+Fermín López,45,16,0,N/A,0,N/A
+Dani Olmo,44,9,0,N/A,0,N/A
+Frenkie de Jong,35,8,0,N/A,0,N/A
+Gavi,9,1,0,N/A,0,N/A
+Marc Bernal,28,1,1,04/04/2026,6,01/05/2026
+Marc Casadó,31,1,0,N/A,0,N/A
+Dro Fernández,5,1,0,N/A,0,N/A
+Tommy Marqués,1,0,0,N/A,0,N/A
+Guille Fernández,Not used during this season,0,0,N/A,0,N/A
+Toni Fernández,1,0,0,N/A,0,N/A
+Juan Hernández,Not used during this season,0,0,N/A,0,N/A
+Lamine Yamal,45,18,1,23/04/2026,6,31/05/2026
+Raphinha,31,8,1,28/03/2026,6,Unknown
+Ferran Torres,45,2,0,N/A,0,N/A
+Marcus Rashford,45,13,0,N/A,0,N/A
+Roony Bardghji,25,4,0,N/A,0,N/A
+Robert Lewandowski,41,4,0,N/A,0,N/A
+Dani Rodríguez,Not used during this season,0,0,N/A,0,N/A

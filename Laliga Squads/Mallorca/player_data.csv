@@ -1,38 +1,38 @@
-Player,Appearances,Injuries,Day Injured,Missed Games,Expected Return
-Abdón Prats,15,0,N/A,0,N/A
-Antonio Raíllo,23,1,01/04/2026,9,30/06/2026
-Antonio Sánchez,30,0,N/A,0,N/A
-Cesc Riba,0,0,N/A,0,N/A
-Dani Rodríguez,2,0,N/A,0,N/A
-Daniel Luna,0,0,N/A,0,N/A
-David López,13,0,N/A,0,N/A
-Iliesse Salhi,3,0,N/A,0,N/A
-Iván Cuéllar,1,0,N/A,0,N/A
-Jan Salas,2,1,01/09/2026,0,Unknown
-Jan Virgili,29,0,N/A,0,N/A
-Jandro García,0,0,N/A,0,N/A
-Javi Llabrés,18,0,N/A,0,N/A
-Javier Olaizola,1,0,N/A,0,N/A
-Johan Mojica,32,0,N/A,0,N/A
-Justin Kalumba,2,0,N/A,0,N/A
-Leo Román,28,0,N/A,0,N/A
-Leo Sánchez,0,0,N/A,0,N/A
-Lucas Bergström,7,0,N/A,0,N/A
-Luis Orejuela,0,0,N/A,0,N/A
-Manu Morlanes,28,0,N/A,0,N/A
-Marash Kumbulla,10,0,N/A,0,N/A
-Marc Domènech,9,0,N/A,0,N/A
-Martin Valjent,34,0,N/A,0,N/A
-Mateo Joseph,30,1,08/04/2026,0,01/02/2027
-Mateu Morey,20,0,N/A,0,N/A
-Nil Torreguitart,0,0,N/A,0,N/A
-Omar Mascarell,28,0,N/A,0,N/A
-Pablo Maffeo,28,0,N/A,0,N/A
-Pablo Torre,33,0,N/A,0,N/A
-Rareș Vlad,0,0,N/A,0,N/A
-Samú Costa,32,0,N/A,0,N/A
-Sergi Darder,35,0,N/A,0,N/A
-Takuma Asano,20,0,N/A,0,N/A
-Toni Lato,12,0,N/A,0,N/A
-Vedat Muriqi,32,0,N/A,0,N/A
-Zito Luvumbo,6,1,12/04/2026,3,Unknown
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
+Leo Román,28,0,0,N/A,0,N/A
+Lucas Bergström,7,0,0,N/A,0,N/A
+Nil Torreguitart,Not used during this season,0,0,N/A,0,N/A
+Iván Cuéllar,1,0,0,N/A,0,N/A
+Rareș Vlad,Not used during this season,0,0,N/A,0,N/A
+Pablo Maffeo,28,1,0,N/A,0,N/A
+Martin Valjent,34,0,0,N/A,0,N/A
+Marash Kumbulla,10,0,0,N/A,0,N/A
+Johan Mojica,32,3,0,N/A,0,N/A
+Mateu Morey,20,0,0,N/A,0,N/A
+Toni Lato,12,1,0,N/A,0,N/A
+Antonio Raíllo,23,1,1,01/04/2026,9,30/06/2026
+David López,13,0,0,N/A,0,N/A
+Iliesse Salhi,3,0,0,N/A,0,N/A
+Javier Olaizola,1,0,0,N/A,0,N/A
+Luis Orejuela,Not used during this season,0,0,N/A,0,N/A
+Leo Sánchez,Not used during this season,0,0,N/A,0,N/A
+Samú Costa,32,2,0,N/A,0,N/A
+Pablo Torre,33,4,0,N/A,0,N/A
+Sergi Darder,35,5,0,N/A,0,N/A
+Antonio Sánchez,30,0,0,N/A,0,N/A
+Manu Morlanes,28,0,0,N/A,0,N/A
+Omar Mascarell,28,2,0,N/A,0,N/A
+Daniel Luna,Not used during this season,0,0,N/A,0,N/A
+Jan Salas,2,0,1,01/09/2026,0,Unknown
+Dani Rodríguez,2,0,0,N/A,0,N/A
+Cesc Riba,Not used during this season,0,0,N/A,0,N/A
+Jandro García,Not used during this season,0,0,N/A,0,N/A
+Jan Virgili,29,6,0,N/A,0,N/A
+Vedat Muriqi,32,1,0,N/A,0,N/A
+Zito Luvumbo,6,2,1,12/04/2026,3,Unknown
+Mateo Joseph,30,4,1,08/04/2026,0,01/02/2027
+Takuma Asano,20,1,0,N/A,0,N/A
+Marc Domènech,9,1,0,N/A,0,N/A
+Abdón Prats,15,0,0,N/A,0,N/A
+Javi Llabrés,18,0,0,N/A,0,N/A
+Justin Kalumba,2,0,0,N/A,0,N/A

@@ -105,50 +105,6 @@ def build_advanced_strength_index():
     
     return strength_index
 
-def simulate_historical_injury_data(df):
-    """
-    Simulates injury data for historical matches to allow the ML model to learn 
-    the relationship between missing players and match outcomes.
-    In reality, we bias the random generation slightly based on the match result
-    so the model learns that more injuries = higher chance of losing.
-    """
-    np.random.seed(42)
-    
-    # Base squad experience usually around 600-800
-    df['Home_Squad_Experience'] = np.random.normal(700, 50, len(df)).astype(int)
-    df['Away_Squad_Experience'] = np.random.normal(700, 50, len(df)).astype(int)
-    
-    home_missing = []
-    away_missing = []
-    home_impact = []
-    away_impact = []
-    
-    for _, row in df.iterrows():
-        # 0 = Away Win, 1 = Draw, 2 = Home Win
-        if row['Target'] == 2: # Home Win -> Home had fewer injuries, Away had more
-            h_miss = np.random.poisson(0.5)
-            a_miss = np.random.poisson(2.5)
-        elif row['Target'] == 0: # Away Win -> Home had more injuries, Away had fewer
-            h_miss = np.random.poisson(2.5)
-            a_miss = np.random.poisson(0.5)
-        else: # Draw
-            h_miss = np.random.poisson(1.5)
-            a_miss = np.random.poisson(1.5)
-            
-        home_missing.append(h_miss)
-        away_missing.append(a_miss)
-        
-        # Impact % loosely correlates with missing players (approx 3% impact per player)
-        home_impact.append(min(1.0, h_miss * 0.03 + np.random.uniform(0, 0.05)))
-        away_impact.append(min(1.0, a_miss * 0.03 + np.random.uniform(0, 0.05)))
-        
-    df['Home_Missing_Key_Players'] = home_missing
-    df['Away_Missing_Key_Players'] = away_missing
-    df['Home_Missing_Impact_Pct'] = home_impact
-    df['Away_Missing_Impact_Pct'] = away_impact
-    
-    return df
-
 def main():
     print("--- Starting Advanced Feature Engineering ---")
     
@@ -213,10 +169,6 @@ def main():
     # 0 = Away Win, 1 = Draw, 2 = Home Win
     matches['Target'] = np.where(matches['FTR'] == 'H', 2, np.where(matches['FTR'] == 'D', 1, 0))
 
-    # 5. Simulate Historical Injury Data for ML Training
-    print("Simulating historical injury data...")
-    matches = simulate_historical_injury_data(matches)
-
     final_dataset = matches.dropna().reset_index(drop=True)
     features_to_keep = [
         'Date', 'HomeTeam', 'AwayTeam', 'FTR', 'Target',
@@ -227,10 +179,7 @@ def main():
         'Home_Expected_Offense', 'Away_Expected_Offense',
         'Home_Days_Rest', 'Away_Days_Rest',
         'Form_Diff', 'Offense_Diff', 'Rest_Diff',
-        'H2H_Home_Win_Rate',
-        'Home_Squad_Experience', 'Away_Squad_Experience',
-        'Home_Missing_Key_Players', 'Away_Missing_Key_Players',
-        'Home_Missing_Impact_Pct', 'Away_Missing_Impact_Pct'
+        'H2H_Home_Win_Rate'
     ]
     final_dataset = matches[features_to_keep].dropna().reset_index(drop=True)
     # Use your absolute path so you know exactly where it saves
