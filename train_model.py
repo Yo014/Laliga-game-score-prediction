@@ -31,6 +31,8 @@ def main():
         'Home_EMA_xG_Created', 'Home_EMA_xG_Conceded',
         'Away_EMA_xG_Created', 'Away_EMA_xG_Conceded',
         'xG_Form_Diff',
+        'Home_EMA_Field_Tilt', 'Away_EMA_Field_Tilt', 'Tilt_Diff',
+        'Home_PPDA', 'Away_PPDA', 'PPDA_Diff',
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
         'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',

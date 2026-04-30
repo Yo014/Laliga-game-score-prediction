@@ -24,7 +24,8 @@ def get_latest_team_stats(team_name, is_home, df):
             latest_match['Home_EMA_Shots'], latest_match['Home_EMA_ShotsOnTarget'], latest_match['Home_EMA_Corners'],
             latest_match['Home_EMA_ShotsConceded'], latest_match['Home_EMA_SOTConceded'], latest_match['Home_EMA_CornersConceded'],
             latest_match['Home_Expected_Offense'],
-            latest_match['Home_EMA_xG_Created'], latest_match['Home_EMA_xG_Conceded']
+            latest_match['Home_EMA_xG_Created'], latest_match['Home_EMA_xG_Conceded'],
+            latest_match['Home_EMA_Field_Tilt'], latest_match['Home_PPDA']
         ]
     else:
         stats = [
@@ -32,7 +33,8 @@ def get_latest_team_stats(team_name, is_home, df):
             latest_match['Away_EMA_Shots'], latest_match['Away_EMA_ShotsOnTarget'], latest_match['Away_EMA_Corners'],
             latest_match['Away_EMA_ShotsConceded'], latest_match['Away_EMA_SOTConceded'], latest_match['Away_EMA_CornersConceded'],
             latest_match['Away_Expected_Offense'],
-            latest_match['Away_EMA_xG_Created'], latest_match['Away_EMA_xG_Conceded']
+            latest_match['Away_EMA_xG_Created'], latest_match['Away_EMA_xG_Conceded'],
+            latest_match['Away_EMA_Field_Tilt'], latest_match['Away_PPDA']
         ]
 
     return stats
@@ -120,6 +122,8 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
         h2h_win_rate = wins / len(matchups)
 
     xg_form_diff = home_stats[11] - away_stats[11]
+    tilt_diff = home_stats[13] - away_stats[13]    # EMA_Field_Tilt
+    ppda_diff = home_stats[14] - away_stats[14]    # PPDA
 
     # 5. Construct the feature array exactly how the model was trained
     match_features = pd.DataFrame([[
@@ -130,6 +134,8 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
         home_stats[11], home_stats[12],              # Home xG Form
         away_stats[11], away_stats[12],              # Away xG Form
         xg_form_diff,
+        home_stats[13], away_stats[13], tilt_diff,   # Field Tilt
+        home_stats[14], away_stats[14], ppda_diff,   # PPDA
         home_stats[0], home_stats[1], home_stats[2], home_stats[3],  # Home Form
         home_stats[4], home_stats[5], home_stats[6],  # Home Dominance
         home_stats[7], home_stats[8], home_stats[9],  # Home Defense
@@ -152,6 +158,8 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
         'Home_EMA_xG_Created', 'Home_EMA_xG_Conceded',
         'Away_EMA_xG_Created', 'Away_EMA_xG_Conceded',
         'xG_Form_Diff',
+        'Home_EMA_Field_Tilt', 'Away_EMA_Field_Tilt', 'Tilt_Diff',
+        'Home_PPDA', 'Away_PPDA', 'PPDA_Diff',
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
         'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',
