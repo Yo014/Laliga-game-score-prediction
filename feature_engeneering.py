@@ -50,19 +50,28 @@ def calculate_ema_form(df, span=5):
     # Combine and sort chronologically
     team_matches = pd.concat([home_stats, away_stats]).sort_values(['Team', 'Date'])
 
-    # Calculate EMA. The shift(1) is critical: it prevents data leakage (peeking into the future)
-    # Calculate EMA for points, goals scored, and goals conceded
-    # The shift(1) is critical: it ensures we only look at matches BEFORE the current date
+    # Calculate Goal Difference for each match
+    team_matches['GoalDiff'] = team_matches['GoalsScored'] - team_matches['GoalsConceded']
+
+    # Calculate EMA. The shift(1) is critical: it prevents data leakage
     team_matches['EMA_Points'] = team_matches.groupby('Team')['Points'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
     team_matches['EMA_GoalsScored'] = team_matches.groupby('Team')['GoalsScored'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
     team_matches['EMA_GoalsConceded'] = team_matches.groupby('Team')['GoalsConceded'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
+    team_matches['EMA_GoalDiff'] = team_matches.groupby('Team')['GoalDiff'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
     
-    # New dominance metrics
+    # Offensive dominance metrics
     team_matches['EMA_Shots'] = team_matches.groupby('Team')['Shots'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
     team_matches['EMA_ShotsOnTarget'] = team_matches.groupby('Team')['ShotsOnTarget'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
     team_matches['EMA_Corners'] = team_matches.groupby('Team')['Corners'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
 
-    return team_matches[['Date', 'Team', 'EMA_Points', 'EMA_GoalsScored', 'EMA_GoalsConceded', 'EMA_Shots', 'EMA_ShotsOnTarget', 'EMA_Corners']]
+    # Defensive dominance metrics (How much they allow)
+    team_matches['EMA_ShotsConceded'] = team_matches.groupby('Team')['GoalsConceded'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
+    team_matches['EMA_SOTConceded'] = team_matches.groupby('Team')['GoalsConceded'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
+    team_matches['EMA_CornersConceded'] = team_matches.groupby('Team')['GoalsConceded'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
+
+    return team_matches[['Date', 'Team', 'EMA_Points', 'EMA_GoalsScored', 'EMA_GoalsConceded', 'EMA_GoalDiff', 
+                         'EMA_Shots', 'EMA_ShotsOnTarget', 'EMA_Corners', 
+                         'EMA_ShotsConceded', 'EMA_SOTConceded', 'EMA_CornersConceded']]
 def get_rest_days(df):
     """
     Calculates the number of rest days a team has had since their last match.
@@ -127,13 +136,15 @@ def main():
     matches = pd.merge(matches, form_df, left_on=['Date', 'HomeTeam'], right_on=['Date', 'Team'], how='left')
     matches = matches.rename(columns={
         'EMA_Points': 'Home_EMA_Points', 'EMA_GoalsScored': 'Home_EMA_GS', 'EMA_GoalsConceded': 'Home_EMA_GC',
-        'EMA_Shots': 'Home_EMA_Shots', 'EMA_ShotsOnTarget': 'Home_EMA_ShotsOnTarget', 'EMA_Corners': 'Home_EMA_Corners'
+        'EMA_GoalDiff': 'Home_EMA_GoalDiff', 'EMA_Shots': 'Home_EMA_Shots', 'EMA_ShotsOnTarget': 'Home_EMA_ShotsOnTarget', 'EMA_Corners': 'Home_EMA_Corners',
+        'EMA_ShotsConceded': 'Home_EMA_ShotsConceded', 'EMA_SOTConceded': 'Home_EMA_SOTConceded', 'EMA_CornersConceded': 'Home_EMA_CornersConceded'
     }).drop('Team', axis=1)
 
     matches = pd.merge(matches, form_df, left_on=['Date', 'AwayTeam'], right_on=['Date', 'Team'], how='left')
     matches = matches.rename(columns={
         'EMA_Points': 'Away_EMA_Points', 'EMA_GoalsScored': 'Away_EMA_GS', 'EMA_GoalsConceded': 'Away_EMA_GC',
-        'EMA_Shots': 'Away_EMA_Shots', 'EMA_ShotsOnTarget': 'Away_EMA_ShotsOnTarget', 'EMA_Corners': 'Away_EMA_Corners'
+        'EMA_GoalDiff': 'Away_EMA_GoalDiff', 'EMA_Shots': 'Away_EMA_Shots', 'EMA_ShotsOnTarget': 'Away_EMA_ShotsOnTarget', 'EMA_Corners': 'Away_EMA_Corners',
+        'EMA_ShotsConceded': 'Away_EMA_ShotsConceded', 'EMA_SOTConceded': 'Away_EMA_SOTConceded', 'EMA_CornersConceded': 'Away_EMA_CornersConceded'
     }).drop('Team', axis=1)
 
     # 3. Add Rest Days Context
@@ -206,10 +217,12 @@ def main():
     final_dataset = matches.dropna().reset_index(drop=True)
     features_to_keep = [
         'Date', 'HomeTeam', 'AwayTeam', 'FTR', 'Target',
-        'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC',
+        'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
-        'Away_EMA_Points', 'Away_EMA_GS', 'Away_EMA_GC',
+        'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',
+        'Away_EMA_Points', 'Away_EMA_GS', 'Away_EMA_GC', 'Away_EMA_GoalDiff',
         'Away_EMA_Shots', 'Away_EMA_ShotsOnTarget', 'Away_EMA_Corners',
+        'Away_EMA_ShotsConceded', 'Away_EMA_SOTConceded', 'Away_EMA_CornersConceded',
         'Home_Expected_Offense', 'Away_Expected_Offense',
         'Home_Days_Rest', 'Away_Days_Rest',
         'Home_Missing_Key_Players', 'Away_Missing_Key_Players',

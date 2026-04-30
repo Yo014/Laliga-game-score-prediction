@@ -19,10 +19,12 @@ def main():
 
     # 2. Select Features (Now including Expected Offense, Match Dominance Metrics, Diffs, and H2H)
     features = [
-        'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC',
+        'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
-        'Away_EMA_Points', 'Away_EMA_GS', 'Away_EMA_GC',
+        'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',
+        'Away_EMA_Points', 'Away_EMA_GS', 'Away_EMA_GC', 'Away_EMA_GoalDiff',
         'Away_EMA_Shots', 'Away_EMA_ShotsOnTarget', 'Away_EMA_Corners',
+        'Away_EMA_ShotsConceded', 'Away_EMA_SOTConceded', 'Away_EMA_CornersConceded',
         'Home_Expected_Offense', 'Away_Expected_Offense',
         'Home_Days_Rest', 'Away_Days_Rest',
         'Home_Missing_Key_Players', 'Away_Missing_Key_Players',
