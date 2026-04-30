@@ -1,12 +1,14 @@
 # La Liga Game Score Prediction
 
-A machine learning project designed to predict the outcomes of Spanish La Liga football matches. The model predicts whether a match will result in a Home Win, Away Win, or Draw, based on historical team form, player offensive statistics, and real-time squad availability.
+A machine learning project designed to predict the outcomes of Spanish La Liga football matches. The model predicts whether a match will result in a Home Win, Away Win, or Draw, based on historical team form, player offensive statistics, real-time squad availability, betting market data, and referee characteristics.
 
 ## Project Overview
 
 This project uses historical match data, top scorer information, top assist data, and per-team injury reports to engineer features representing a team's current form, offensive power, and squad health. An XGBoost Classifier is then trained on these features to predict future match outcomes.
 
 ### Key Features Engineered
+- **Market Data (Betting Odds):** Incorporates raw betting odds and calculates **Normalized Implied Probabilities** (Market_Prob_H/D/A). This captures the "wisdom of the crowd" and is currently the model's most influential feature set.
+- **Referee Statistics:** Tracks historical referee "personalities" by calculating rolling averages for cards shown and fouls called per game.
 - **Form & Dominance (Exponential Moving Average):** Calculates an EMA for points, goals, shots, shots on target, and corners over recent matches to capture true match dominance.
 - **Mathematical Differentials:** Explicitly calculates the numerical difference in form, offensive expected metrics, rest days, and squad health between the Home and Away teams.
 - **Head-to-Head Bias:** Calculates the historical win-rate of the Home team against the specific Away team to capture tactical advantages.
@@ -15,15 +17,15 @@ This project uses historical match data, top scorer information, top assist data
 
 ## Project Structure
 
-- `LaligaSeasons/`: Directory containing raw match data CSVs.
+- `LaligaSeasons/`: Directory containing raw match data CSVs (2015-2025).
 - `Laligascoring/`: Directory containing top scorers data for various seasons.
 - `LaligaAssist/`: Directory containing top assisters data for various seasons.
 - `Laliga Squads/`: Directory containing per-team player data CSVs for the current season (appearances, goals, injuries, expected return dates).
-- `Data_processing.py`: The data cleaning script. It recursively reads and combines raw files from `LaligaSeasons/`, `Laligascoring/`, and `LaligaAssist/`, standardizing team names and formatting for different seasons to generate `Processed_Matches.csv`, `Processed_Scorers.csv`, and `Processed_Assists.csv`.
-- `build_squad_health.py`: The squad health aggregation script. It reads all player CSVs from `Laliga Squads/`, identifies currently injured players, and computes team-level injury metrics saved to `current_squad_health.csv`.
-- `feature_engeneering.py`: The feature engineering script. It loads the processed data and squad health, calculates the EMA, Expected Offensive Index, and injury impact features, and outputs a single `ml_ready_data.csv` file used for training.
-- `train_model.py`: The machine learning training script. It loads `ml_ready_data.csv`, trains an `XGBClassifier` from the `xgboost` library via grid search, evaluates its accuracy, and saves the trained model as `laliga_rf_model.pkl`.
-- `predict.py`: The inference script. It dynamically calculates match differentials, Head-to-Head history, and squad health context, using the saved model to predict the win/draw probabilities for a specified matchup.
+- `Data_processing.py`: The data cleaning script. It recursively reads and combines raw files, standardizing team names and formatting for different seasons. It now captures fouls and cards for referee analysis.
+- `build_squad_health.py`: The squad health aggregation script. It reads all player CSVs, identifies currently injured players, and computes team-level injury metrics.
+- `feature_engeneering.py`: The feature engineering script. It loads processed data, calculates EMA, Market Probabilities, and Referee Stats. Outputs `ml_ready_data.csv`.
+- `train_model.py`: The machine learning training script. Trains an `XGBClassifier` with grid search, evaluates accuracy, and saves the model as `laliga_rf_model.pkl`. Includes feature importance visualization.
+- `predict.py`: The inference script. Dynamically calculates match differentials, handles betting odds inputs, and uses the saved model to predict outcomes.
 
 ## Prerequisites
 Make sure you have the following Python packages installed:
@@ -34,71 +36,48 @@ pip install pandas numpy scikit-learn joblib xgboost
 ## How to Use
 
 1. **Data Processing**
-   Clean and combine the raw CSV files from subdirectories across different seasons (including the latest formats):
    ```bash
    python Data_processing.py
    ```
-   *This will output `Processed_Matches.csv`, `Processed_Scorers.csv`, and `Processed_Assists.csv`.*
+   *Combines raw CSVs into `Processed_Matches.csv`, capturing fouls, cards, and betting odds.*
 
 2. **Build Squad Health**
-   Aggregate the current season's player injury data into team-level metrics:
    ```bash
    python build_squad_health.py
    ```
-   *This will output `current_squad_health.csv` with per-team injury statistics.*
+   *Aggregates current season's player injury data into `current_squad_health.csv`.*
 
 3. **Feature Engineering**
-   Process the cleaned CSV files and squad health into a dataset ready for machine learning:
    ```bash
    python feature_engeneering.py
    ```
-   *This will generate `ml_ready_data.csv` with 28 model features plus metadata.*
+   *Generates `ml_ready_data.csv` with 50+ model features including Market Data and Referee Stats.*
 
 4. **Train the Model**
-   Train the XGBoost classifier:
    ```bash
    python train_model.py
    ```
-   *This will output the model's accuracy metrics (~52%) and save the trained model to `laliga_rf_model.pkl`.*
+   *Trains the optimized XGBoost classifier. Current accuracy: **~54.5%**.*
 
 5. **Make Predictions**
-   To predict a specific matchup, you can edit the `predict_match()` calls at the bottom of `predict.py`, then run:
    ```bash
    python predict.py
    ```
-   *Example Output:*
-   ```text
-   ==============================================
-     MATCH PREDICTION: Espanol vs Real Madrid 
-   ==============================================
-   Current Home xG+xA Index : 140.40
-   Current Away xG+xA Index : 43.80
-   ----------------------------------------------
-   Squad Health:
-     [Espanol] Missing 0 key players (0.0% playing time, 0.0% goals)
-     [Real Madrid] Missing 5 key players (22.9% playing time, 33.7% goals)
-   ----------------------------------------------
-   Win Probabilities:
-   [Espanol] Home Win : 48.8%
-   Draw              : 26.5%
-   [Real Madrid] Away Win : 24.6%
+   *Example call:* `predict_match("Barcelona", "Real Madrid", 7, 7, 2.10, 3.50, 3.30, "Jose Maria Sánchez")`
 
-    Model Prediction: HOME WIN 
-
-   ==============================================
-   ```
-
-## Model Features (28 total)
+## Model Features (50 total)
 
 | Category | Features |
 |---|---|
-| Home Form (EMA) | Points, Goals Scored, Goals Conceded, Shots, Shots on Target, Corners |
-| Away Form (EMA) | Points, Goals Scored, Goals Conceded, Shots, Shots on Target, Corners |
-| Offensive Strength | Home Expected Offense, Away Expected Offense |
-| Rest & Fatigue | Home Days Rest, Away Days Rest |
-| Squad Health | Home/Away Missing Key Players, Missing Impact %, Missing Goals % |
-| Differentials | Form Diff, Offense Diff, Rest Diff, Missing Key Diff, Missing Impact Diff |
-| Historical | H2H Home Win Rate |
+| **Market Data** | B365H/D/A Odds, Normalized Implied Probabilities (Prob_H/D/A) |
+| **Referee Stats** | Historical Average Cards per Game, Average Fouls per Game |
+| **Home Form (EMA)** | Points, GS, GC, GoalDiff, Shots, ShotsOnTarget, Corners, ShotsConceded, SOTConceded, CornersConceded |
+| **Away Form (EMA)** | Points, GS, GC, GoalDiff, Shots, ShotsOnTarget, Corners, ShotsConceded, SOTConceded, CornersConceded |
+| **Offensive Strength**| Home Expected Offense (xG+xA), Away Expected Offense |
+| **Rest & Fatigue** | Home Days Rest, Away Days Rest |
+| **Squad Health** | Home/Away Missing Key Players, Missing Impact %, Missing Goals % |
+| **Differentials** | Form Diff, Offense Diff, Rest Diff, Missing Key Diff, Missing Impact Diff |
+| **Historical** | H2H Home Win Rate, Team Codes, Referee Codes |
 
 ## Target Variable Classes
 The model's internal target mapping is:

@@ -110,7 +110,7 @@ def clean_and_combine_data():
         df['AwayTeam'] = df['AwayTeam'].apply(clean_team_name)
         df['Date'] = pd.to_datetime(df['Date'], format='mixed', dayfirst=True, errors='coerce').dt.strftime('%Y-%m-%d')
         
-        cols_to_keep = ['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'HS', 'AS', 'HST', 'AST', 'HC', 'AC']
+        cols_to_keep = ['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'HS', 'AS', 'HST', 'AST', 'HC', 'AC', 'HF', 'AF', 'HY', 'AY', 'HR', 'AR', 'Referee', 'B365H', 'B365D', 'B365A']
         for c in cols_to_keep:
             if c not in df.columns: df[c] = None # Fill gracefully if a column doesn't exist
             
@@ -118,7 +118,7 @@ def clean_and_combine_data():
         matches_list.append(df)
 
     pd.concat(matches_list, ignore_index=True).to_csv("Processed_Matches.csv", index=False)
-    print("Files successfully combined into Processed_Matches_New.csv, Processed_Assists_New.csv, and Processed_Scorers_New.csv!")
+    print("Files successfully combined into Processed_Matches.csv, Processed_Assists.csv, and Processed_Scorers.csv!")
 
 if __name__ == "__main__":
     clean_and_combine_data()

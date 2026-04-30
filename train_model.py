@@ -17,8 +17,17 @@ def main():
     df['Date'] = pd.to_datetime(df['Date'])
     df = df.sort_values('Date').reset_index(drop=True)
 
+    # Convert Referee and Team names to categorical codes
+    df['Referee_Code'] = pd.factorize(df['Referee'])[0]
+    df['Home_Code'] = pd.factorize(df['HomeTeam'])[0]
+    df['Away_Code'] = pd.factorize(df['AwayTeam'])[0]
+
     # 2. Select Features (Now including Expected Offense, Match Dominance Metrics, Diffs, and H2H)
     features = [
+        'Home_Code', 'Away_Code', 'Referee_Code',
+        'B365H', 'B365D', 'B365A',
+        'Market_Prob_H', 'Market_Prob_D', 'Market_Prob_A',
+        'Ref_Avg_Cards', 'Ref_Avg_Fouls',
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
         'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',
@@ -81,7 +90,11 @@ def main():
     print("\nClassification Report (0=Away Win, 1=Draw, 2=Home Win):")
     print(classification_report(y_test, predictions))
     
-    print("Confusion Matrix:")
+    # print("\nTop 10 Most Important Features:")
+    # importances = pd.Series(best_model.feature_importances_, index=features).sort_values(ascending=False)
+    # print(importances.head(10))
+
+    print("\nConfusion Matrix:")
     print(confusion_matrix(y_test, predictions))
 
     # 6. Save the Model

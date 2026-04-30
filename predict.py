@@ -35,7 +35,7 @@ def get_latest_team_stats(team_name, is_home, df):
 
     return stats
 
-def predict_match(home_team, away_team, home_rest_days, away_rest_days):
+def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.0, b365d=3.0, b365a=3.0, referee_name="Unknown"):
     print(f"\nAnalyzing Matchup: {home_team} (Home) vs {away_team} (Away)...")
     
     # 1. Load Data & Advanced Model
@@ -81,6 +81,30 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
     missing_key_diff = home_missing_key - away_missing_key
     missing_impact_diff = home_missing_impact - away_missing_impact
     
+    # 4.1. Calculate Implied Market Probabilities
+    prob_h_raw = 1 / b365h
+    prob_d_raw = 1 / b365d
+    prob_a_raw = 1 / b365a
+    overround = prob_h_raw + prob_d_raw + prob_a_raw
+    market_prob_h = prob_h_raw / overround
+    market_prob_d = prob_d_raw / overround
+    market_prob_a = prob_a_raw / overround
+
+    # 4.2. Get Referee Stats
+    ref_history = df[df['Referee'] == referee_name]
+    if not ref_history.empty:
+        ref_avg_cards = ref_history['Ref_Avg_Cards'].iloc[-1]
+        ref_avg_fouls = ref_history['Ref_Avg_Fouls'].iloc[-1]
+    else:
+        # Default to global averages if referee is new
+        ref_avg_cards = df['Ref_Avg_Cards'].mean()
+        ref_avg_fouls = df['Ref_Avg_Fouls'].mean()
+
+    # 4.3. Get Categorical Codes
+    # We recreate the factorize mapping from the training data
+    home_code = pd.Categorical(df['HomeTeam']).categories.get_loc(home_team) if home_team in df['HomeTeam'].values else -1
+    away_code = pd.Categorical(df['AwayTeam']).categories.get_loc(away_team) if away_team in df['AwayTeam'].values else -1
+    referee_code = pd.Categorical(df['Referee']).categories.get_loc(referee_name) if referee_name in df['Referee'].values else -1
     matchups = raw_matches[
         ((raw_matches['HomeTeam'] == home_team) & (raw_matches['AwayTeam'] == away_team)) |
         ((raw_matches['HomeTeam'] == away_team) & (raw_matches['AwayTeam'] == home_team))
@@ -95,6 +119,10 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
 
     # 5. Construct the feature array exactly how the model was trained
     match_features = pd.DataFrame([[
+        home_code, away_code, referee_code,
+        b365h, b365d, b365a,
+        market_prob_h, market_prob_d, market_prob_a,
+        ref_avg_cards, ref_avg_fouls,
         home_stats[0], home_stats[1], home_stats[2], home_stats[3],  # Home Form
         home_stats[4], home_stats[5], home_stats[6],  # Home Dominance
         home_stats[7], home_stats[8], home_stats[9],  # Home Defense
@@ -110,6 +138,10 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
         missing_key_diff, missing_impact_diff,
         h2h_win_rate                                 # H2H bias
     ]], columns=[
+        'Home_Code', 'Away_Code', 'Referee_Code',
+        'B365H', 'B365D', 'B365A',
+        'Market_Prob_H', 'Market_Prob_D', 'Market_Prob_A',
+        'Ref_Avg_Cards', 'Ref_Avg_Fouls',
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
         'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',
@@ -150,6 +182,7 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days):
     print(f"==============================================\n")
 
 if __name__ == "__main__":
-    # Test matchups! Ensure you use the exact names from your processed data
-    predict_match("Villarreal", "Levante",6,5)
-    predict_match("Girona", "Mallorca",6,6)
+    # Test matchups with Betting Odds and Referees!
+    # Format: home, away, home_rest, away_rest, b365h, b365d, b365a, referee
+    predict_match("Barcelona", "Real Madrid", 7, 7, 2.10, 3.50, 3.30, "Jose Maria Sánchez")
+    predict_match("Villarreal", "Getafe", 6, 5, 1.80, 3.40, 4.50, "Mario Melero")

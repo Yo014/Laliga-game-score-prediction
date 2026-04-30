@@ -72,6 +72,31 @@ def calculate_ema_form(df, span=5):
     return team_matches[['Date', 'Team', 'EMA_Points', 'EMA_GoalsScored', 'EMA_GoalsConceded', 'EMA_GoalDiff', 
                          'EMA_Shots', 'EMA_ShotsOnTarget', 'EMA_Corners', 
                          'EMA_ShotsConceded', 'EMA_SOTConceded', 'EMA_CornersConceded']]
+
+def calculate_referee_stats(df, span=20):
+    """
+    Calculates historical card and foul averages for each referee.
+    Using a longer span (20) to capture their long-term 'personality'.
+    """
+    df = df.sort_values('Date')
+    
+    # Clean numeric columns
+    for col in ['HY', 'AY', 'HR', 'AR', 'HF', 'AF']:
+        df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
+    
+    df['Total_Cards'] = df['HY'] + df['AY'] + df['HR'] + df['AR']
+    df['Total_Fouls'] = df['HF'] + df['AF']
+    
+    # Calculate rolling averages per referee
+    # Shift(1) to avoid leakage
+    df['Ref_Avg_Cards'] = df.groupby('Referee')['Total_Cards'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
+    df['Ref_Avg_Fouls'] = df.groupby('Referee')['Total_Fouls'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
+    
+    # Fill first-time referee stats with global averages
+    df['Ref_Avg_Cards'] = df['Ref_Avg_Cards'].fillna(df['Total_Cards'].mean())
+    df['Ref_Avg_Fouls'] = df['Ref_Avg_Fouls'].fillna(df['Total_Fouls'].mean())
+    
+    return df[['Date', 'HomeTeam', 'AwayTeam', 'Ref_Avg_Cards', 'Ref_Avg_Fouls']]
 def get_rest_days(df):
     """
     Calculates the number of rest days a team has had since their last match.
@@ -203,6 +228,28 @@ def main():
                 'Home_Missing_Goals_Pct', 'Away_Missing_Goals_Pct']:
         matches[col] = matches[col].fillna(0)
 
+    # 6. Add Betting Odds Implied Probabilities
+    # Prob = 1 / Odds. We normalize these to remove the bookmaker's margin (overround).
+    matches['B365H'] = pd.to_numeric(matches['B365H'], errors='coerce').fillna(2.0)
+    matches['B365D'] = pd.to_numeric(matches['B365D'], errors='coerce').fillna(3.0)
+    matches['B365A'] = pd.to_numeric(matches['B365A'], errors='coerce').fillna(3.0)
+    
+    # Calculate raw probabilities
+    matches['Prob_H_Raw'] = 1 / matches['B365H']
+    matches['Prob_D_Raw'] = 1 / matches['B365D']
+    matches['Prob_A_Raw'] = 1 / matches['B365A']
+    
+    # Normalize (Divide by the sum of probabilities to make them sum to 1.0)
+    overround = matches['Prob_H_Raw'] + matches['Prob_D_Raw'] + matches['Prob_A_Raw']
+    matches['Market_Prob_H'] = matches['Prob_H_Raw'] / overround
+    matches['Market_Prob_D'] = matches['Prob_D_Raw'] / overround
+    matches['Market_Prob_A'] = matches['Prob_A_Raw'] / overround
+
+    # 7. Add Referee Stats
+    print("Calculating referee historical stats (cards/fouls)...")
+    ref_stats = calculate_referee_stats(matches)
+    matches = pd.merge(matches, ref_stats, on=['Date', 'HomeTeam', 'AwayTeam'], how='left')
+
     # Calculate Explicit Differentials
     matches['Form_Diff'] = matches['Home_EMA_Points'] - matches['Away_EMA_Points']
     matches['Offense_Diff'] = matches['Home_Expected_Offense'] - matches['Away_Expected_Offense']
@@ -216,7 +263,10 @@ def main():
 
     final_dataset = matches.dropna().reset_index(drop=True)
     features_to_keep = [
-        'Date', 'HomeTeam', 'AwayTeam', 'FTR', 'Target',
+        'Date', 'HomeTeam', 'AwayTeam', 'FTR', 'Target', 'Referee',
+        'B365H', 'B365D', 'B365A',
+        'Market_Prob_H', 'Market_Prob_D', 'Market_Prob_A',
+        'Ref_Avg_Cards', 'Ref_Avg_Fouls',
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
         'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',
@@ -232,6 +282,13 @@ def main():
         'Missing_Key_Diff', 'Missing_Impact_Diff',
         'H2H_Home_Win_Rate'
     ]
+    
+    # Fill missing values for betting odds and referee before saving
+    matches['B365H'] = pd.to_numeric(matches['B365H'], errors='coerce').fillna(1.0)
+    matches['B365D'] = pd.to_numeric(matches['B365D'], errors='coerce').fillna(1.0)
+    matches['B365A'] = pd.to_numeric(matches['B365A'], errors='coerce').fillna(1.0)
+    matches['Referee'] = matches['Referee'].fillna('Unknown')
+
     final_dataset = matches[features_to_keep].dropna().reset_index(drop=True)
     # Use your absolute path so you know exactly where it saves
     save_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/ml_ready_data.csv'
