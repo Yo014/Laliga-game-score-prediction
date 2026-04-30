@@ -23,14 +23,16 @@ def get_latest_team_stats(team_name, is_home, df):
             latest_match['Home_EMA_Points'], latest_match['Home_EMA_GS'], latest_match['Home_EMA_GC'], latest_match['Home_EMA_GoalDiff'],
             latest_match['Home_EMA_Shots'], latest_match['Home_EMA_ShotsOnTarget'], latest_match['Home_EMA_Corners'],
             latest_match['Home_EMA_ShotsConceded'], latest_match['Home_EMA_SOTConceded'], latest_match['Home_EMA_CornersConceded'],
-            latest_match['Home_Expected_Offense']
+            latest_match['Home_Expected_Offense'],
+            latest_match['Home_EMA_xG_Created'], latest_match['Home_EMA_xG_Conceded']
         ]
     else:
         stats = [
             latest_match['Away_EMA_Points'], latest_match['Away_EMA_GS'], latest_match['Away_EMA_GC'], latest_match['Away_EMA_GoalDiff'],
             latest_match['Away_EMA_Shots'], latest_match['Away_EMA_ShotsOnTarget'], latest_match['Away_EMA_Corners'],
             latest_match['Away_EMA_ShotsConceded'], latest_match['Away_EMA_SOTConceded'], latest_match['Away_EMA_CornersConceded'],
-            latest_match['Away_Expected_Offense']
+            latest_match['Away_Expected_Offense'],
+            latest_match['Away_EMA_xG_Created'], latest_match['Away_EMA_xG_Conceded']
         ]
 
     return stats
@@ -117,12 +119,17 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
                len(matchups[(matchups['AwayTeam'] == home_team) & (matchups['FTR'] == 'A')])
         h2h_win_rate = wins / len(matchups)
 
+    xg_form_diff = home_stats[11] - away_stats[11]
+
     # 5. Construct the feature array exactly how the model was trained
     match_features = pd.DataFrame([[
         home_code, away_code, referee_code,
         b365h, b365d, b365a,
         market_prob_h, market_prob_d, market_prob_a,
         ref_avg_cards, ref_avg_fouls,
+        home_stats[11], home_stats[12],              # Home xG Form
+        away_stats[11], away_stats[12],              # Away xG Form
+        xg_form_diff,
         home_stats[0], home_stats[1], home_stats[2], home_stats[3],  # Home Form
         home_stats[4], home_stats[5], home_stats[6],  # Home Dominance
         home_stats[7], home_stats[8], home_stats[9],  # Home Defense
@@ -142,6 +149,9 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
         'B365H', 'B365D', 'B365A',
         'Market_Prob_H', 'Market_Prob_D', 'Market_Prob_A',
         'Ref_Avg_Cards', 'Ref_Avg_Fouls',
+        'Home_EMA_xG_Created', 'Home_EMA_xG_Conceded',
+        'Away_EMA_xG_Created', 'Away_EMA_xG_Conceded',
+        'xG_Form_Diff',
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
         'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',
@@ -184,5 +194,5 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
 if __name__ == "__main__":
     # Test matchups with Betting Odds and Referees!
     # Format: home, away, home_rest, away_rest, b365h, b365d, b365a, referee
-    predict_match("Barcelona", "Real Madrid", 7, 7, 2.10, 3.50, 3.30, "Jose Maria Sánchez")
-    predict_match("Villarreal", "Getafe", 6, 5, 1.80, 3.40, 4.50, "Mario Melero")
+    predict_match("Girona", "Mallorca", 6, 11, 2.00, 3.50, 3.75, "Francisco Hernandez")
+    predict_match("Villarreal", "Levante", 6, 5, 1.72, 4.35, 4.76, "Mario Melero")

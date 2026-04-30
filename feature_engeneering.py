@@ -52,6 +52,15 @@ def calculate_ema_form(df, span=5):
 
     # Calculate Goal Difference for each match
     team_matches['GoalDiff'] = team_matches['GoalsScored'] - team_matches['GoalsConceded']
+    
+    # Calculate Proxy Match xG (True Form Indicator)
+    # Formula: (SOT * 0.3) + (Non-SOT Shots * 0.07) + (Corners * 0.05)
+    team_matches['Match_xG'] = (pd.to_numeric(team_matches['ShotsOnTarget'], errors='coerce') * 0.3) + \
+                               ((pd.to_numeric(team_matches['Shots'], errors='coerce') - pd.to_numeric(team_matches['ShotsOnTarget'], errors='coerce')) * 0.07) + \
+                               (pd.to_numeric(team_matches['Corners'], errors='coerce') * 0.05)
+    
+    # Fill any NaNs in xG calculation with 0 (for games with missing shot data)
+    team_matches['Match_xG'] = team_matches['Match_xG'].fillna(0)
 
     # Calculate EMA. The shift(1) is critical: it prevents data leakage
     team_matches['EMA_Points'] = team_matches.groupby('Team')['Points'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
@@ -69,9 +78,18 @@ def calculate_ema_form(df, span=5):
     team_matches['EMA_SOTConceded'] = team_matches.groupby('Team')['GoalsConceded'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
     team_matches['EMA_CornersConceded'] = team_matches.groupby('Team')['GoalsConceded'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
 
+    # TRUE FORM METRICS: EMA of Match xG (Created and Conceded)
+    team_matches['EMA_xG_Created'] = team_matches.groupby('Team')['Match_xG'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
+    
+    # To get EMA_xG_Conceded, we need to know what xG the opponent created
+    # We'll merge this back later, but for now we'll calculate it by looking at the Match_xG allowed
+    # Actually, a simpler way in this combined dataframe is to group by match and take the other team's xG
+    # But since team_matches is a long-form table of EVERY team performance, we can just use the match link.
+
     return team_matches[['Date', 'Team', 'EMA_Points', 'EMA_GoalsScored', 'EMA_GoalsConceded', 'EMA_GoalDiff', 
                          'EMA_Shots', 'EMA_ShotsOnTarget', 'EMA_Corners', 
-                         'EMA_ShotsConceded', 'EMA_SOTConceded', 'EMA_CornersConceded']]
+                         'EMA_ShotsConceded', 'EMA_SOTConceded', 'EMA_CornersConceded',
+                         'EMA_xG_Created']]
 
 def calculate_referee_stats(df, span=20):
     """
@@ -162,15 +180,21 @@ def main():
     matches = matches.rename(columns={
         'EMA_Points': 'Home_EMA_Points', 'EMA_GoalsScored': 'Home_EMA_GS', 'EMA_GoalsConceded': 'Home_EMA_GC',
         'EMA_GoalDiff': 'Home_EMA_GoalDiff', 'EMA_Shots': 'Home_EMA_Shots', 'EMA_ShotsOnTarget': 'Home_EMA_ShotsOnTarget', 'EMA_Corners': 'Home_EMA_Corners',
-        'EMA_ShotsConceded': 'Home_EMA_ShotsConceded', 'EMA_SOTConceded': 'Home_EMA_SOTConceded', 'EMA_CornersConceded': 'Home_EMA_CornersConceded'
+        'EMA_ShotsConceded': 'Home_EMA_ShotsConceded', 'EMA_SOTConceded': 'Home_EMA_SOTConceded', 'EMA_CornersConceded': 'Home_EMA_CornersConceded',
+        'EMA_xG_Created': 'Home_EMA_xG_Created'
     }).drop('Team', axis=1)
 
     matches = pd.merge(matches, form_df, left_on=['Date', 'AwayTeam'], right_on=['Date', 'Team'], how='left')
     matches = matches.rename(columns={
         'EMA_Points': 'Away_EMA_Points', 'EMA_GoalsScored': 'Away_EMA_GS', 'EMA_GoalsConceded': 'Away_EMA_GC',
         'EMA_GoalDiff': 'Away_EMA_GoalDiff', 'EMA_Shots': 'Away_EMA_Shots', 'EMA_ShotsOnTarget': 'Away_EMA_ShotsOnTarget', 'EMA_Corners': 'Away_EMA_Corners',
-        'EMA_ShotsConceded': 'Away_EMA_ShotsConceded', 'EMA_SOTConceded': 'Away_EMA_SOTConceded', 'EMA_CornersConceded': 'Away_EMA_CornersConceded'
+        'EMA_ShotsConceded': 'Away_EMA_ShotsConceded', 'EMA_SOTConceded': 'Away_EMA_SOTConceded', 'EMA_CornersConceded': 'Away_EMA_CornersConceded',
+        'EMA_xG_Created': 'Away_EMA_xG_Created'
     }).drop('Team', axis=1)
+
+    # Calculate xG Conceded (which is just the opponent's xG Created)
+    matches['Home_EMA_xG_Conceded'] = matches['Away_EMA_xG_Created']
+    matches['Away_EMA_xG_Conceded'] = matches['Home_EMA_xG_Created']
 
     # 3. Add Rest Days Context
     print("Calculating player fatigue and rest days...")
@@ -256,6 +280,7 @@ def main():
     matches['Rest_Diff'] = matches['Home_Days_Rest'] - matches['Away_Days_Rest']
     matches['Missing_Key_Diff'] = matches['Home_Missing_Key_Players'] - matches['Away_Missing_Key_Players']
     matches['Missing_Impact_Diff'] = matches['Home_Missing_Impact_Pct'] - matches['Away_Missing_Impact_Pct']
+    matches['xG_Form_Diff'] = matches['Home_EMA_xG_Created'] - matches['Away_EMA_xG_Created']
 
     # 4. Target Variable Setup
     # 0 = Away Win, 1 = Draw, 2 = Home Win
@@ -268,6 +293,9 @@ def main():
         'Market_Prob_H', 'Market_Prob_D', 'Market_Prob_A',
         'Ref_Avg_Cards', 'Ref_Avg_Fouls',
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
+        'Home_EMA_xG_Created', 'Home_EMA_xG_Conceded',
+        'Away_EMA_xG_Created', 'Away_EMA_xG_Conceded',
+        'xG_Form_Diff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
         'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',
         'Away_EMA_Points', 'Away_EMA_GS', 'Away_EMA_GC', 'Away_EMA_GoalDiff',
