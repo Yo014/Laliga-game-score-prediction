@@ -25,7 +25,8 @@ def get_latest_team_stats(team_name, is_home, df):
             latest_match['Home_EMA_ShotsConceded'], latest_match['Home_EMA_SOTConceded'], latest_match['Home_EMA_CornersConceded'],
             latest_match['Home_Expected_Offense'],
             latest_match['Home_EMA_xG_Created'], latest_match['Home_EMA_xG_Conceded'],
-            latest_match['Home_EMA_Field_Tilt'], latest_match['Home_PPDA']
+            latest_match['Home_EMA_Field_Tilt'], latest_match['Home_PPDA'],
+            latest_match['Home_Squad_Value']
         ]
     else:
         stats = [
@@ -34,7 +35,8 @@ def get_latest_team_stats(team_name, is_home, df):
             latest_match['Away_EMA_ShotsConceded'], latest_match['Away_EMA_SOTConceded'], latest_match['Away_EMA_CornersConceded'],
             latest_match['Away_Expected_Offense'],
             latest_match['Away_EMA_xG_Created'], latest_match['Away_EMA_xG_Conceded'],
-            latest_match['Away_EMA_Field_Tilt'], latest_match['Away_PPDA']
+            latest_match['Away_EMA_Field_Tilt'], latest_match['Away_PPDA'],
+            latest_match['Away_Squad_Value']
         ]
 
     return stats
@@ -55,10 +57,6 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
     except FileNotFoundError as e:
         print(f"Error loading files: {e}")
         return
-
-    # Attach team names to the engineered dataset to search for them
-    df['HomeTeam'] = raw_matches.iloc[df.index]['HomeTeam']
-    df['AwayTeam'] = raw_matches.iloc[df.index]['AwayTeam']
 
     # 2. Fetch current form
     home_stats = get_latest_team_stats(home_team, True, df)
@@ -124,6 +122,7 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
     xg_form_diff = home_stats[11] - away_stats[11]
     tilt_diff = home_stats[13] - away_stats[13]    # EMA_Field_Tilt
     ppda_diff = home_stats[14] - away_stats[14]    # PPDA
+    value_diff = home_stats[15] - away_stats[15]    # Squad Value
 
     # 5. Construct the feature array exactly how the model was trained
     match_features = pd.DataFrame([[
@@ -136,6 +135,7 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
         xg_form_diff,
         home_stats[13], away_stats[13], tilt_diff,   # Field Tilt
         home_stats[14], away_stats[14], ppda_diff,   # PPDA
+        home_stats[15], away_stats[15], value_diff,  # Squad Value
         home_stats[0], home_stats[1], home_stats[2], home_stats[3],  # Home Form
         home_stats[4], home_stats[5], home_stats[6],  # Home Dominance
         home_stats[7], home_stats[8], home_stats[9],  # Home Defense
@@ -160,6 +160,7 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
         'xG_Form_Diff',
         'Home_EMA_Field_Tilt', 'Away_EMA_Field_Tilt', 'Tilt_Diff',
         'Home_PPDA', 'Away_PPDA', 'PPDA_Diff',
+        'Home_Squad_Value', 'Away_Squad_Value', 'Value_Diff',
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
         'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',
@@ -187,6 +188,7 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
     print(f"==============================================")
     print(f"Current Home xG+xA Index : {home_stats[10]:.2f}")
     print(f"Current Away xG+xA Index : {away_stats[10]:.2f}")
+    print(f"Squad Market Values      : {home_team} (€{home_stats[15]/1e6:.1f}M) vs {away_team} (€{away_stats[15]/1e6:.1f}M)")
     print(f"----------------------------------------------")
     print(f"Squad Health:")
     print(f"  [{home_team}] Missing {int(home_missing_key)} key players ({home_missing_impact:.1f}% playing time, {home_missing_goals:.1f}% goals)")

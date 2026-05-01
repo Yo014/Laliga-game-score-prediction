@@ -1,38 +1,38 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
-Mathew Ryan,31,0,0,N/A,0,N/A
-Pablo Campos,5,0,0,N/A,0,N/A
-Álex Primo,Not used during this season,0,0,N/A,0,N/A
-Cayetano Romero,Not used during this season,0,0,N/A,0,N/A
-Manu Sánchez,29,2,0,N/A,0,N/A
-Matías Moreno,24,0,0,N/A,0,N/A
-Alan Matturro,19,0,0,N/A,0,N/A
-Adrián Dela,31,1,0,N/A,0,N/A
-Jeremy Toljan,34,3,0,N/A,0,N/A
-Diego Pampín,8,0,0,N/A,0,N/A
-Víctor García,21,2,0,N/A,0,N/A
-Jorge Cabello,7,0,0,N/A,0,N/A
-Unai Elgezabal,13,1,0,N/A,0,N/A
-Martín Krug,1,0,0,N/A,0,N/A
-Nacho Pérez,4,0,0,N/A,0,N/A
-Huseini Nakoha,1,0,0,N/A,0,N/A
-Carlos Álvarez,29,1,0,N/A,0,N/A
-Ugo Raghouber,12,0,0,N/A,0,N/A
-Pablo Martínez,24,2,0,N/A,0,N/A
-Jon Ander Olasagasti,31,3,0,N/A,0,N/A
-Unai Vencedor,19,0,0,N/A,0,N/A
-Oriol Rey,20,0,0,N/A,0,N/A
-Sergio Lozano,1,0,0,N/A,0,N/A
-Kervin Arriaga,24,2,0,N/A,0,N/A
-Dani Cervera,Not used during this season,0,0,N/A,0,N/A
-Joan Ruiz,Not used during this season,0,0,N/A,0,N/A
-Pablo Rosón,1,0,0,N/A,0,N/A
-Karl Etta Eyong,27,2,0,N/A,0,N/A
-Iván Romero,30,2,0,N/A,0,N/A
-Goduine Koyalipou,14,0,0,N/A,0,N/A
-Carlos Espí,22,0,0,N/A,0,N/A
-Roger Brugué,16,2,0,N/A,0,N/A
-Iker Losada,22,2,0,N/A,0,N/A
-Kareem Tunde,16,1,1,23/04/2026,7,01/06/2026
-Paco Cortés,12,0,0,N/A,0,N/A
-Tay Abed,5,0,0,N/A,0,N/A
-José Luis Morales,22,2,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
+Mathew Ryan,31,0,0,,0,,€2.00m
+Pablo Campos,5,0,0,,0,,€1.50m
+Álex Primo,Not used during this season,0,0,,0,,-
+Cayetano Romero,Not used during this season,0,0,,0,,Unknown
+Manu Sánchez,29,2,0,,0,,€6.00m
+Matías Moreno,24,0,0,,0,,€4.00m
+Alan Matturro,19,0,0,,0,,€4.00m
+Adrián Dela,31,1,0,,0,,€3.00m
+Jeremy Toljan,34,3,0,,0,,€2.20m
+Diego Pampín,8,0,0,,0,,€1.00m
+Víctor García,21,2,0,,0,,€1.00m
+Jorge Cabello,7,0,0,,0,,Unknown
+Unai Elgezabal,13,1,0,,0,,€600k
+Martín Krug,1,0,0,,0,,Unknown
+Nacho Pérez,4,0,0,,0,,Unknown
+Huseini Nakoha,1,0,0,,0,,Unknown
+Carlos Álvarez,29,1,0,,0,,€15.00m
+Ugo Raghouber,12,0,0,,0,,€3.00m
+Pablo Martínez,24,2,0,,0,,€2.00m
+Jon Ander Olasagasti,31,3,0,,0,,€1.80m
+Unai Vencedor,19,0,0,,0,,€1.80m
+Oriol Rey,20,0,0,,0,,€1.80m
+Sergio Lozano,1,0,0,,0,,Unknown
+Kervin Arriaga,24,2,0,,0,,€1.50m
+Dani Cervera,Not used during this season,0,0,,0,,Unknown
+Joan Ruiz,Not used during this season,0,0,,0,,Unknown
+Pablo Rosón,1,0,0,,0,,Unknown
+Karl Etta Eyong,27,2,0,,0,,€18.00m
+Iván Romero,30,2,0,,0,,€7.50m
+Goduine Koyalipou,14,0,0,,0,,Unknown
+Carlos Espí,22,0,0,,0,,€2.50m
+Roger Brugué,16,2,0,,0,,€2.00m
+Iker Losada,22,2,0,,0,,€1.40m
+Kareem Tunde,16,1,1,23/04/2026,7,01/06/2026,€1.00m
+Paco Cortés,12,0,0,,0,,€1.00m
+Tay Abed,5,0,0,,0,,€800k
+José Luis Morales,22,2,0,,0,,€300k

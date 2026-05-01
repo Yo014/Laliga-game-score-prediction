@@ -1,40 +1,40 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
-Aarón Escandell,33,1,0,N/A,0,N/A
-Horațiu Moldovan,1,0,0,N/A,0,N/A
-Miguel Narváez,Not used during this season,0,0,N/A,0,N/A
-David Carmo,22,0,0,N/A,0,N/A
-Javi López,22,1,0,N/A,0,N/A
-Rahim Alhassane,25,0,0,N/A,0,N/A
-Nacho Vidal,24,0,0,N/A,0,N/A
-Eric Bailly,13,0,0,N/A,0,N/A
-David Costas,21,0,0,N/A,0,N/A
-Dani Calvo,17,0,0,N/A,0,N/A
-Oier Luengo,3,1,0,N/A,0,N/A
-Lucas Ahijado,16,1,0,N/A,0,N/A
-Marco Esteban,1,0,0,N/A,0,N/A
-Omar Falah,1,0,0,N/A,0,N/A
-Diego Espinosa,Not used during this season,0,0,N/A,0,N/A
-Adrián Fernández,Not used during this season,0,0,N/A,0,N/A
-Santiago Colombatto,29,1,0,N/A,0,N/A
-Leander Dendoncker,19,0,0,N/A,0,N/A
-Nicolás Fonseca,15,0,0,N/A,0,N/A
-Alberto Reina,33,1,0,N/A,0,N/A
-Luka Ilic,19,0,0,N/A,0,N/A
-Kwasi Sibo,25,0,0,N/A,0,N/A
-Pablo Agudín,7,0,0,N/A,0,N/A
-Álex Cardero,Not used during this season,0,0,N/A,0,N/A
-Santi Cazorla,23,1,0,N/A,0,N/A
-Diego Menéndez,Not used during this season,0,0,N/A,0,N/A
-Cheli Pereda,Not used during this season,0,0,N/A,0,N/A
-Thiago Fernández,12,4,0,N/A,0,N/A
-Ilyas Chaira,32,2,0,N/A,0,N/A
-Federico Viñas,30,1,0,N/A,0,N/A
-Haissem Hassan,33,3,0,N/A,0,N/A
-Thiago Borbas,8,0,0,N/A,0,N/A
-Josip Brekalo,15,0,0,N/A,0,N/A
-Álex Forés,16,2,0,N/A,0,N/A
-Brandon Dominguès,1,0,0,N/A,0,N/A
-Ovie Ejaria,8,0,0,N/A,0,N/A
-Salomón Rondón,16,0,0,N/A,0,N/A
-Borja Sánchez,1,0,0,N/A,0,N/A
-Lamine Gueye,Not used during this season,0,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
+Aarón Escandell,33,1,0,,0,,€3.00m
+Horațiu Moldovan,1,0,0,,0,,€2.00m
+Miguel Narváez,Not used during this season,0,0,,0,,Unknown
+David Carmo,22,0,0,,0,,€8.00m
+Javi López,22,1,0,,0,,€5.00m
+Rahim Alhassane,25,0,0,,0,,€2.00m
+Nacho Vidal,24,0,0,,0,,€1.60m
+Eric Bailly,13,0,0,,0,,€1.50m
+David Costas,21,0,0,,0,,€1.40m
+Dani Calvo,17,0,0,,0,,€1.00m
+Oier Luengo,3,1,0,,0,,Unknown
+Lucas Ahijado,16,1,0,,0,,€700k
+Marco Esteban,1,0,0,,0,,Unknown
+Omar Falah,1,0,0,,0,,Unknown
+Diego Espinosa,Not used during this season,0,0,,0,,Unknown
+Adrián Fernández,Not used during this season,0,0,,0,,Unknown
+Santiago Colombatto,29,1,0,,0,,€3.00m
+Leander Dendoncker,19,0,0,,0,,€3.00m
+Nicolás Fonseca,15,0,0,,0,,€3.00m
+Alberto Reina,33,1,0,,0,,€2.00m
+Luka Ilic,19,0,0,,0,,€1.80m
+Kwasi Sibo,25,0,0,,0,,€1.50m
+Pablo Agudín,7,0,0,,0,,€800k
+Álex Cardero,Not used during this season,0,0,,0,,Unknown
+Santi Cazorla,23,1,0,,0,,€200k
+Diego Menéndez,Not used during this season,0,0,,0,,Unknown
+Cheli Pereda,Not used during this season,0,0,,0,,Unknown
+Thiago Fernández,12,4,0,,0,,€4.50m
+Ilyas Chaira,32,2,0,,0,,€4.00m
+Federico Viñas,30,1,0,,0,,€4.00m
+Haissem Hassan,33,3,0,,0,,€4.00m
+Thiago Borbas,8,0,0,,0,,€4.00m
+Josip Brekalo,15,0,0,,0,,Unknown
+Álex Forés,16,2,0,,0,,€800k
+Brandon Dominguès,1,0,0,,0,,€600k
+Ovie Ejaria,8,0,0,,0,,€500k
+Salomón Rondón,16,0,0,,0,,Unknown
+Borja Sánchez,1,0,0,,0,,Unknown
+Lamine Gueye,Not used during this season,0,0,,0,,Unknown

@@ -1,38 +1,38 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
-Leo Román,28,0,0,N/A,0,N/A
-Lucas Bergström,7,0,0,N/A,0,N/A
-Nil Torreguitart,Not used during this season,0,0,N/A,0,N/A
-Iván Cuéllar,1,0,0,N/A,0,N/A
-Rareș Vlad,Not used during this season,0,0,N/A,0,N/A
-Pablo Maffeo,28,1,0,N/A,0,N/A
-Martin Valjent,34,0,0,N/A,0,N/A
-Marash Kumbulla,10,0,0,N/A,0,N/A
-Johan Mojica,32,3,0,N/A,0,N/A
-Mateu Morey,20,0,0,N/A,0,N/A
-Toni Lato,12,1,0,N/A,0,N/A
-Antonio Raíllo,23,1,1,01/04/2026,9,30/06/2026
-David López,13,0,0,N/A,0,N/A
-Iliesse Salhi,3,0,0,N/A,0,N/A
-Javier Olaizola,1,0,0,N/A,0,N/A
-Luis Orejuela,Not used during this season,0,0,N/A,0,N/A
-Leo Sánchez,Not used during this season,0,0,N/A,0,N/A
-Samú Costa,32,2,0,N/A,0,N/A
-Pablo Torre,33,4,0,N/A,0,N/A
-Sergi Darder,35,5,0,N/A,0,N/A
-Antonio Sánchez,30,0,0,N/A,0,N/A
-Manu Morlanes,28,0,0,N/A,0,N/A
-Omar Mascarell,28,2,0,N/A,0,N/A
-Daniel Luna,Not used during this season,0,0,N/A,0,N/A
-Jan Salas,2,0,1,01/09/2026,0,Unknown
-Dani Rodríguez,2,0,0,N/A,0,N/A
-Cesc Riba,Not used during this season,0,0,N/A,0,N/A
-Jandro García,Not used during this season,0,0,N/A,0,N/A
-Jan Virgili,29,6,0,N/A,0,N/A
-Vedat Muriqi,32,1,0,N/A,0,N/A
-Zito Luvumbo,6,2,1,12/04/2026,3,Unknown
-Mateo Joseph,30,4,1,08/04/2026,0,01/02/2027
-Takuma Asano,20,1,0,N/A,0,N/A
-Marc Domènech,9,1,0,N/A,0,N/A
-Abdón Prats,15,0,0,N/A,0,N/A
-Javi Llabrés,18,0,0,N/A,0,N/A
-Justin Kalumba,2,0,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
+Leo Román,28,0,0,,0,,€6.00m
+Lucas Bergström,7,0,0,,0,,€1.50m
+Nil Torreguitart,Not used during this season,0,0,,0,,Unknown
+Iván Cuéllar,1,0,0,,0,,€100k
+Rareș Vlad,Not used during this season,0,0,,0,,Unknown
+Pablo Maffeo,28,1,0,,0,,€5.00m
+Martin Valjent,34,0,0,,0,,€4.50m
+Marash Kumbulla,10,0,0,,0,,€4.00m
+Johan Mojica,32,3,0,,0,,€1.80m
+Mateu Morey,20,0,0,,0,,€1.50m
+Toni Lato,12,1,0,,0,,€1.50m
+Antonio Raíllo,23,1,1,01/04/2026,9,30/06/2026,€1.50m
+David López,13,0,0,,0,,€1.20m
+Iliesse Salhi,3,0,0,,0,,Unknown
+Javier Olaizola,1,0,0,,0,,Unknown
+Luis Orejuela,Not used during this season,0,0,,0,,Unknown
+Leo Sánchez,Not used during this season,0,0,,0,,Unknown
+Samú Costa,32,2,0,,0,,€15.00m
+Pablo Torre,33,4,0,,0,,€5.00m
+Sergi Darder,35,5,0,,0,,€3.50m
+Antonio Sánchez,30,0,0,,0,,€2.40m
+Manu Morlanes,28,0,0,,0,,€2.40m
+Omar Mascarell,28,2,0,,0,,€800k
+Daniel Luna,Not used during this season,0,0,,0,,Unknown
+Jan Salas,2,0,1,01/09/2026,0,Unknown,€500k
+Dani Rodríguez,2,0,0,,0,,Unknown
+Cesc Riba,Not used during this season,0,0,,0,,Unknown
+Jandro García,Not used during this season,0,0,,0,,Unknown
+Jan Virgili,29,6,0,,0,,€15.00m
+Vedat Muriqi,32,1,0,,0,,€4.50m
+Zito Luvumbo,6,2,1,12/04/2026,3,Unknown,€3.50m
+Mateo Joseph,30,4,1,08/04/2026,0,01/02/2027,€3.50m
+Takuma Asano,20,1,0,,0,,€1.80m
+Marc Domènech,9,1,0,,0,,Unknown
+Abdón Prats,15,0,0,,0,,€900k
+Javi Llabrés,18,0,0,,0,,€800k
+Justin Kalumba,2,0,0,,0,,€800k

@@ -1,42 +1,42 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
-Luiz Júnior,33,0,0,N/A,0,N/A
-Diego Conde,1,0,0,N/A,0,N/A
-Arnau Tenas,10,0,0,N/A,0,N/A
-Rubén Gómez,Not used during this season,0,0,N/A,0,N/A
-Renato Veiga,39,0,0,N/A,0,N/A
-Logan Costa,Not used during this season,0,0,N/A,0,N/A
-Rafa Marín,28,1,0,N/A,0,N/A
-Pau Navarro,24,0,0,N/A,0,N/A
-Juan Foyth,18,0,1,24/01/2026,20,31/08/2026
-Santiago Mouriño,31,2,0,N/A,0,N/A
-Sergi Cardona,38,3,0,N/A,0,N/A
-Willy Kambwala,Not used during this season,0,0,N/A,0,N/A
-Alex Freeman,7,0,0,N/A,0,N/A
-Alfonso Pedraza,32,4,0,N/A,0,N/A
-Adrià Altimira,4,0,0,N/A,0,N/A
-Jean Ives Valou,Not used during this season,0,0,N/A,0,N/A
-Daniel Budesca,1,0,0,N/A,0,N/A
-Ismael Sierra,Not used during this season,0,0,N/A,0,N/A
-Pape Gueye,36,2,0,N/A,0,N/A
-Santi Comesaña,40,5,0,N/A,0,N/A
-Carlos Macià,5,0,0,N/A,0,N/A
-Thomas Partey,28,0,0,N/A,0,N/A
-Denis Suárez,Not used during this season,0,0,N/A,0,N/A
-Dani Parejo,36,1,0,N/A,0,N/A
-Alassane Diatta,1,0,0,N/A,0,N/A
-Alberto Moleiro,40,5,0,N/A,0,N/A
-Yéremy Pino,2,1,0,N/A,0,N/A
-Georges Mikautadze,38,5,0,N/A,0,N/A
-Karl Etta Eyong,3,2,0,N/A,0,N/A
-Ilias Akhomach,15,2,0,N/A,0,N/A
-Tajon Buchanan,39,1,0,N/A,0,N/A
-Manor Solomon,11,4,0,N/A,0,N/A
-Tani Oluwaseyi,35,2,0,N/A,0,N/A
-Nicolas Pépé,42,6,0,N/A,0,N/A
-Ayoze Pérez,28,4,0,N/A,0,N/A
-Alfon González,8,0,0,N/A,0,N/A
-Gerard Moreno,20,0,0,N/A,0,N/A
-Hugo López,5,1,0,N/A,0,N/A
-Pau Cabanes,Not used during this season,0,0,N/A,0,N/A
-Joselillo Gaitán,Not used during this season,0,0,N/A,0,N/A
-Mahamoud Barry,Not used during this season,0,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
+Luiz Júnior,33,0,0,,0,,€12.00m
+Diego Conde,1,0,0,,0,,€4.00m
+Arnau Tenas,10,0,0,,0,,€4.00m
+Rubén Gómez,Not used during this season,0,0,,0,,Unknown
+Renato Veiga,39,0,0,,0,,€25.00m
+Logan Costa,Not used during this season,0,0,,0,,€18.00m
+Rafa Marín,28,1,0,,0,,€12.00m
+Pau Navarro,24,0,0,,0,,€10.00m
+Juan Foyth,18,0,1,24/01/2026,20,31/08/2026,€10.00m
+Santiago Mouriño,31,2,0,,0,,€10.00m
+Sergi Cardona,38,3,0,,0,,€9.00m
+Willy Kambwala,Not used during this season,0,0,,0,,€4.00m
+Alex Freeman,7,0,0,,0,,€3.50m
+Alfonso Pedraza,32,4,0,,0,,€2.50m
+Adrià Altimira,4,0,0,,0,,Unknown
+Jean Ives Valou,Not used during this season,0,0,,0,,Unknown
+Daniel Budesca,1,0,0,,0,,Unknown
+Ismael Sierra,Not used during this season,0,0,,0,,Unknown
+Pape Gueye,36,2,0,,0,,€40.00m
+Santi Comesaña,40,5,0,,0,,€8.00m
+Carlos Macià,5,0,0,,0,,€3.00m
+Thomas Partey,28,0,0,,0,,€2.50m
+Denis Suárez,Not used during this season,0,0,,0,,Unknown
+Dani Parejo,36,1,0,,0,,€1.20m
+Alassane Diatta,1,0,0,,0,,Unknown
+Alberto Moleiro,40,5,0,,0,,€40.00m
+Yéremy Pino,2,1,0,,0,,Unknown
+Georges Mikautadze,38,5,0,,0,,€28.00m
+Karl Etta Eyong,3,2,0,,0,,Unknown
+Ilias Akhomach,15,2,0,,0,,Unknown
+Tajon Buchanan,39,1,0,,0,,€12.00m
+Manor Solomon,11,4,0,,0,,Unknown
+Tani Oluwaseyi,35,2,0,,0,,€8.00m
+Nicolas Pépé,42,6,0,,0,,€6.00m
+Ayoze Pérez,28,4,0,,0,,€6.00m
+Alfon González,8,0,0,,0,,€3.00m
+Gerard Moreno,20,0,0,,0,,€2.80m
+Hugo López,5,1,0,,0,,€1.00m
+Pau Cabanes,Not used during this season,0,0,,0,,€800k
+Joselillo Gaitán,Not used during this season,0,0,,0,,Unknown
+Mahamoud Barry,Not used during this season,0,0,,0,,Unknown

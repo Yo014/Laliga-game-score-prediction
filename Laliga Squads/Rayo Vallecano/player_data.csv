@@ -1,34 +1,34 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
-Augusto Batalla,42,1,0,N/A,0,N/A
-Dani Cárdenas,7,0,0,N/A,0,N/A
-Juanpe Gil,Not used during this season,0,0,N/A,0,N/A
-Adrián Molina,Not used during this season,0,0,N/A,0,N/A
-Andrei Rațiu,42,3,0,N/A,0,N/A
-Pep Chavarría,37,3,0,N/A,0,N/A
-Nobel Mendy,23,0,0,N/A,0,N/A
-Abdul Mumin,1,0,0,N/A,0,N/A
-Luiz Felipe,17,0,0,N/A,0,N/A
-Jozhua Vertrouwd,17,0,0,N/A,0,N/A
-Florian Lejeune,47,2,0,N/A,0,N/A
-Iván Balliu,23,1,0,N/A,0,N/A
-Alfonso Espino,38,1,0,N/A,0,N/A
-Pelayo Fernández,2,0,0,N/A,0,N/A
-Marco de las Sías,1,0,0,N/A,0,N/A
-Sergio Lozano,Not used during this season,0,0,N/A,0,N/A
-Pedro Díaz,40,3,0,N/A,0,N/A
-Unai López,36,4,0,N/A,0,N/A
-Óscar Valentín,41,1,0,N/A,0,N/A
-Pathé Ciss,35,2,0,N/A,0,N/A
-Gerard Gumbau,37,2,0,N/A,0,N/A
-Randy Nteka,13,0,0,N/A,0,N/A
-Óscar Trejo,15,0,0,N/A,0,N/A
-Samu Becerra,6,0,0,N/A,0,N/A
-Marco Román,Not used during this season,0,0,N/A,0,N/A
-Ilias Akhomach,14,1,0,N/A,0,N/A
-Jorge de Frutos,45,4,0,N/A,0,N/A
-Isi Palazón,47,6,0,N/A,0,N/A
-Alemão,29,0,0,N/A,0,N/A
-Fran Pérez,38,2,0,N/A,0,N/A
-Sergio Camello,32,3,0,N/A,0,N/A
-Carlos Martín,9,0,0,N/A,0,N/A
-Álvaro García,47,11,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
+Augusto Batalla,42,1,0,,0,,€6.00m
+Dani Cárdenas,7,0,0,,0,,€1.80m
+Juanpe Gil,Not used during this season,0,0,,0,,Unknown
+Adrián Molina,Not used during this season,0,0,,0,,Unknown
+Andrei Rațiu,42,3,0,,0,,€18.00m
+Pep Chavarría,37,3,0,,0,,€10.00m
+Nobel Mendy,23,0,0,,0,,€6.00m
+Abdul Mumin,1,0,0,,0,,€4.00m
+Luiz Felipe,17,0,0,,0,,€3.00m
+Jozhua Vertrouwd,17,0,0,,0,,€2.50m
+Florian Lejeune,47,2,0,,0,,€2.00m
+Iván Balliu,23,1,0,,0,,€1.20m
+Alfonso Espino,38,1,0,,0,,€1.00m
+Pelayo Fernández,2,0,0,,0,,Unknown
+Marco de las Sías,1,0,0,,0,,Unknown
+Sergio Lozano,Not used during this season,0,0,,0,,Unknown
+Pedro Díaz,40,3,0,,0,,€3.00m
+Unai López,36,4,0,,0,,€2.50m
+Óscar Valentín,41,1,0,,0,,€2.20m
+Pathé Ciss,35,2,0,,0,,€2.00m
+Gerard Gumbau,37,2,0,,0,,€1.40m
+Randy Nteka,13,0,0,,0,,€1.20m
+Óscar Trejo,15,0,0,,0,,€400k
+Samu Becerra,6,0,0,,0,,€300k
+Marco Román,Not used during this season,0,0,,0,,Unknown
+Ilias Akhomach,14,1,0,,0,,€12.00m
+Jorge de Frutos,45,4,0,,0,,€12.00m
+Isi Palazón,47,6,0,,0,,€3.00m
+Alemão,29,0,0,,0,,€3.00m
+Fran Pérez,38,2,0,,0,,€3.00m
+Sergio Camello,32,3,0,,0,,€2.00m
+Carlos Martín,9,0,0,,0,,€2.00m
+Álvaro García,47,11,0,,0,,€1.80m

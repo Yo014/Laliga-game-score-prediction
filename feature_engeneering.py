@@ -9,9 +9,61 @@ PPDA_TEAM_MAP = {
     'Rayo Vallecano': 'Vallecano', 'Real Sociedad': 'Sociedad',
     'Deportivo La Coruna': 'La Coruna', 'Sporting Gijon': 'Sp Gijon',
     'Espanyol': 'Espanol', 'Real Valladolid': 'Valladolid',
-    'SD Huesca': 'Huesca', 'Real Oviedo': 'Oviedo',
-    'Espanyol': 'Espanol'
+    'SD Huesca': 'Huesca', 'Real Oviedo': 'Oviedo'
 }
+
+# Map Squad folder names to match data team names
+SQUAD_NAME_MAP = {
+    'Alavés': 'Alaves', 'Athletic Bilbao': 'Ath Bilbao',
+    'Atlético Madrid': 'Ath Madrid', 'Barcelona': 'Barcelona',
+    'Celta Vigo': 'Celta', 'Elche': 'Elche',
+    'Espanyol': 'Espanol', 'Getafe': 'Getafe',
+    'Girona': 'Girona', 'Levante': 'Levante',
+    'Mallorca': 'Mallorca', 'Osasuna': 'Osasuna',
+    'Rayo Vallecano': 'Vallecano', 'Real Betis': 'Betis',
+    'Real Madrid': 'Real Madrid', 'Real Oviedo': 'Oviedo',
+    'Real Sociedad': 'Sociedad', 'Sevilla': 'Sevilla',
+    'Valencia': 'Valencia', 'Villarreal': 'Villarreal'
+}
+
+def parse_market_value(val_str):
+    """Parses market value strings like '€40.00m' or '€900k' into float numbers."""
+    if pd.isna(val_str) or val_str == "Unknown":
+        return 0
+    try:
+        val_str = str(val_str).replace("€", "").strip().lower()
+        if "m" in val_str:
+            return float(val_str.replace("m", "")) * 1_000_000
+        if "k" in val_str:
+            return float(val_str.replace("k", "")) * 1_000
+        return float(val_str)
+    except (ValueError, TypeError):
+        return 0
+
+def load_squad_value_data():
+    """
+    Aggregates player market values from the 'Laliga Squads' directory.
+    Returns a DataFrame with 'Team' and 'Total_Squad_Value'.
+    """
+    base_dir = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/Laliga Squads'
+    squad_values = []
+    
+    if not os.path.exists(base_dir):
+        print(f"Warning: Squad directory not found at {base_dir}")
+        return pd.DataFrame(columns=['Team', 'Total_Squad_Value'])
+
+    for folder_name in os.listdir(base_dir):
+        folder_path = os.path.join(base_dir, folder_name)
+        if os.path.isdir(folder_path):
+            file_path = os.path.join(folder_path, 'player_data.csv')
+            if os.path.exists(file_path):
+                df = pd.read_csv(file_path)
+                if 'Market Value' in df.columns:
+                    total_value = df['Market Value'].apply(parse_market_value).sum()
+                    match_name = SQUAD_NAME_MAP.get(folder_name, folder_name)
+                    squad_values.append({'Team': match_name, 'Total_Squad_Value': total_value})
+    
+    return pd.DataFrame(squad_values)
 
 def load_ppda_data():
     """
@@ -286,6 +338,21 @@ def main():
     squad_health_path = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/current_squad_health.csv'
     squad_health = pd.read_csv(squad_health_path)
 
+    # 5b. Add Total Squad Market Value (Proxy for raw talent/depth)
+    print("Integrating Total Squad Market Value (Transfermarkt)...")
+    squad_values = load_squad_value_data()
+    
+    matches = pd.merge(matches, squad_values, left_on='HomeTeam', right_on='Team', how='left')
+    matches = matches.rename(columns={'Total_Squad_Value': 'Home_Squad_Value'}).drop('Team', axis=1)
+    
+    matches = pd.merge(matches, squad_values, left_on='AwayTeam', right_on='Team', how='left')
+    matches = matches.rename(columns={'Total_Squad_Value': 'Away_Squad_Value'}).drop('Team', axis=1)
+    
+    # Fill missing values with league median
+    median_val = squad_values['Total_Squad_Value'].median() if not squad_values.empty else 100_000_000
+    matches['Home_Squad_Value'] = matches['Home_Squad_Value'].fillna(median_val)
+    matches['Away_Squad_Value'] = matches['Away_Squad_Value'].fillna(median_val)
+
     # Tag squad health with the current season so it only merges with 25-26 matches
     squad_health['Season'] = '25-26'
 
@@ -344,6 +411,7 @@ def main():
     matches['xG_Form_Diff'] = matches['Home_EMA_xG_Created'] - matches['Away_EMA_xG_Created']
     matches['PPDA_Diff'] = matches['Home_PPDA'] - matches['Away_PPDA']
     matches['Tilt_Diff'] = matches['Home_EMA_Field_Tilt'] - matches['Away_EMA_Field_Tilt']
+    matches['Value_Diff'] = matches['Home_Squad_Value'] - matches['Away_Squad_Value']
 
     # 4. Target Variable Setup
     # 0 = Away Win, 1 = Draw, 2 = Home Win
@@ -361,6 +429,7 @@ def main():
         'xG_Form_Diff',
         'Home_EMA_Field_Tilt', 'Away_EMA_Field_Tilt', 'Tilt_Diff',
         'Home_PPDA', 'Away_PPDA', 'PPDA_Diff',
+        'Home_Squad_Value', 'Away_Squad_Value', 'Value_Diff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
         'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',
         'Away_EMA_Points', 'Away_EMA_GS', 'Away_EMA_GC', 'Away_EMA_GoalDiff',

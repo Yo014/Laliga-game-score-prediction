@@ -1,44 +1,44 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
-David Soria,33,0,0,N/A,0,N/A
-Jiri Letacek,3,0,0,N/A,0,N/A
-Diego Ferrer,Not used during this season,0,0,N/A,0,N/A
-Jorge Benito,Not used during this season,0,0,N/A,0,N/A
-Juan Iglesias,33,3,0,N/A,0,N/A
-Abdel Abqar,20,2,0,N/A,0,N/A
-Sebastián Boselli,10,0,0,N/A,0,N/A
-Zaid Romero,11,0,0,N/A,0,N/A
-Dakonam Djené,31,0,0,N/A,0,N/A
-Diego Rico,29,0,0,N/A,0,N/A
-Davinchi,9,0,0,N/A,0,N/A
-Kiko Femenía,28,1,0,N/A,0,N/A
-Domingos Duarte,30,1,0,N/A,0,N/A
-Ismael Bekhoucha,5,2,0,N/A,0,N/A
-Allan Nyom,14,0,0,N/A,0,N/A
-Marc Vilaplana,1,0,0,N/A,0,N/A
-Lucas Laso,3,0,0,N/A,0,N/A
-Jorge Montes,3,0,0,N/A,0,N/A
-Alberto Cordero,1,0,0,N/A,0,N/A
-Mario Martín,33,2,0,N/A,0,N/A
-Mauro Arambarri,32,2,0,N/A,0,N/A
-Luis Milla,33,9,0,N/A,0,N/A
-Yvan Neyou,8,1,0,N/A,0,N/A
-Javi Muñoz,18,0,0,N/A,0,N/A
-Alejandro Mestanza,3,0,0,N/A,0,N/A
-Alberto Risco,Not used during this season,0,0,N/A,0,N/A
-Hugo Solozábal,3,0,0,N/A,0,N/A
-Adrián Riquelme,Not used during this season,0,0,N/A,0,N/A
-Christantus Uche,3,1,0,N/A,0,N/A
-Borja Mayoral,17,1,1,22/12/2025,16,Unknown
-Martín Satriano,14,1,0,N/A,0,N/A
-Adrián Liso,29,3,0,N/A,0,N/A
-Veljko Birmancevic,5,0,0,N/A,0,N/A
-Abu Kamara,12,0,0,N/A,0,N/A
-Coba da Costa,16,1,0,N/A,0,N/A
-Luis Vázquez,13,0,0,N/A,0,N/A
-Álex Sancris,19,2,0,N/A,0,N/A
-Álex Sola,1,0,0,N/A,0,N/A
-Peter Federico,Not used during this season,0,0,N/A,0,N/A
-Juanmi,11,2,0,N/A,0,N/A
-Joselu Pérez,4,0,0,N/A,0,N/A
-Yassin Tallal,2,0,0,N/A,0,N/A
-Mykyta Aleksandrov,Not used during this season,0,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
+David Soria,33,0,0,,0,,€3.00m
+Jiri Letacek,3,0,0,,0,,€2.00m
+Diego Ferrer,Not used during this season,0,0,,0,,Unknown
+Jorge Benito,Not used during this season,0,0,,0,,Unknown
+Juan Iglesias,33,3,0,,0,,€5.00m
+Abdel Abqar,20,2,0,,0,,€4.00m
+Sebastián Boselli,10,0,0,,0,,€2.80m
+Zaid Romero,11,0,0,,0,,€2.50m
+Dakonam Djené,31,0,0,,0,,€1.60m
+Diego Rico,29,0,0,,0,,€1.20m
+Davinchi,9,0,0,,0,,€1.00m
+Kiko Femenía,28,1,0,,0,,€800k
+Domingos Duarte,30,1,0,,0,,€800k
+Ismael Bekhoucha,5,2,0,,0,,€300k
+Allan Nyom,14,0,0,,0,,€200k
+Marc Vilaplana,1,0,0,,0,,Unknown
+Lucas Laso,3,0,0,,0,,Unknown
+Jorge Montes,3,0,0,,0,,Unknown
+Alberto Cordero,1,0,0,,0,,Unknown
+Mario Martín,33,2,0,,0,,€10.00m
+Mauro Arambarri,32,2,0,,0,,€10.00m
+Luis Milla,33,9,0,,0,,€3.50m
+Yvan Neyou,8,1,0,,0,,Unknown
+Javi Muñoz,18,0,0,,0,,€1.50m
+Alejandro Mestanza,3,0,0,,0,,Unknown
+Alberto Risco,Not used during this season,0,0,,0,,Unknown
+Hugo Solozábal,3,0,0,,0,,Unknown
+Adrián Riquelme,Not used during this season,0,0,,0,,Unknown
+Christantus Uche,3,1,0,,0,,Unknown
+Borja Mayoral,17,1,1,22/12/2025,16,Unknown,€7.50m
+Martín Satriano,14,1,0,,0,,€6.00m
+Adrián Liso,29,3,0,,0,,€6.00m
+Veljko Birmancevic,5,0,0,,0,,€4.50m
+Abu Kamara,12,0,0,,0,,€3.00m
+Coba da Costa,16,1,0,,0,,Unknown
+Luis Vázquez,13,0,0,,0,,€2.50m
+Álex Sancris,19,2,0,,0,,€2.00m
+Álex Sola,1,0,0,,0,,Unknown
+Peter Federico,Not used during this season,0,0,,0,,Unknown
+Juanmi,11,2,0,,0,,€1.20m
+Joselu Pérez,4,0,0,,0,,Unknown
+Yassin Tallal,2,0,0,,0,,Unknown
+Mykyta Aleksandrov,Not used during this season,0,0,,0,,Unknown

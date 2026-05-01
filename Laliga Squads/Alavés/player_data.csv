@@ -1,38 +1,38 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
-Antonio Sivera,33,0,0,N/A,0,N/A
-Grégoire Swiderski,Not used during this season,0,0,N/A,0,N/A
-Raúl Fernández,5,0,0,N/A,0,N/A
-Rubén Montero,Not used during this season,0,0,N/A,0,N/A
-Jon Pacheco,25,0,0,N/A,0,N/A
-Youssef Enríquez,27,1,0,N/A,0,N/A
-Nahuel Tenaglia,34,1,0,N/A,0,N/A
-Jonny Otto,35,0,0,N/A,0,N/A
-Victor Parada,28,3,0,N/A,0,N/A
-Moussa Diarra,5,0,0,N/A,0,N/A
-Ville Koski,2,0,0,N/A,0,N/A
-Nikola Maras,Not used during this season,0,0,N/A,0,N/A
-Egoitz Muñoz,2,0,0,N/A,0,N/A
-Álvaro García,Not used during this season,0,0,N/A,0,N/A
-Xanet Oláiz,1,0,0,N/A,0,N/A
-Paco Sanz,Not used during this season,0,0,N/A,0,N/A
-Carlos Ballestero,2,1,0,N/A,0,N/A
-Facundo Garcés,10,0,0,N/A,0,N/A
-Antonio Blanco,34,2,0,N/A,0,N/A
-Pablo Ibáñez,36,1,0,N/A,0,N/A
-Carles Aleñá,37,4,0,N/A,0,N/A
-Ander Guevara,27,1,0,N/A,0,N/A
-Jon Guridi,28,0,0,N/A,0,N/A
-Calebe,21,0,0,N/A,0,N/A
-Denis Suárez,27,2,0,N/A,0,N/A
-Carlos Protesoni,13,0,1,09/03/2026,6,Unknown
-Lander Pinillos,2,1,0,N/A,0,N/A
-Carlos Vicente,25,3,0,N/A,0,N/A
-Lucas Boyé,29,1,0,N/A,0,N/A
-Toni Martínez,37,3,0,N/A,0,N/A
-Abde Rebbach,28,4,0,N/A,0,N/A
-Ibrahim Diabate,5,0,0,N/A,0,N/A
-Ángel Pérez,12,2,0,N/A,0,N/A
-Aitor Mañas,10,1,0,N/A,0,N/A
-Mariano Díaz,12,1,0,N/A,0,N/A
-Diego Morcillo,2,0,0,N/A,0,N/A
-Izei Hernández,1,0,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
+Antonio Sivera,33,0,0,,0,,€6.00m
+Grégoire Swiderski,Not used during this season,0,0,,0,,Unknown
+Raúl Fernández,5,0,0,,0,,€200k
+Rubén Montero,Not used during this season,0,0,,0,,Unknown
+Jon Pacheco,25,0,0,,0,,€6.00m
+Youssef Enríquez,27,1,0,,0,,€5.00m
+Nahuel Tenaglia,34,1,0,,0,,€3.00m
+Jonny Otto,35,0,0,,0,,€2.50m
+Victor Parada,28,3,0,,0,,€2.00m
+Moussa Diarra,5,0,0,,0,,Unknown
+Ville Koski,2,0,0,,0,,€1.50m
+Nikola Maras,Not used during this season,0,0,,0,,Unknown
+Egoitz Muñoz,2,0,0,,0,,Unknown
+Álvaro García,Not used during this season,0,0,,0,,Unknown
+Xanet Oláiz,1,0,0,,0,,Unknown
+Paco Sanz,Not used during this season,0,0,,0,,Unknown
+Carlos Ballestero,2,1,0,,0,,Unknown
+Facundo Garcés,10,0,0,,0,,-
+Antonio Blanco,34,2,0,,0,,€10.00m
+Pablo Ibáñez,36,1,0,,0,,€4.00m
+Carles Aleñá,37,4,0,,0,,€3.50m
+Ander Guevara,27,1,0,,0,,€3.00m
+Jon Guridi,28,0,0,,0,,€2.00m
+Calebe,21,0,0,,0,,€2.00m
+Denis Suárez,27,2,0,,0,,€1.20m
+Carlos Protesoni,13,0,1,09/03/2026,6,Unknown,€1.00m
+Lander Pinillos,2,1,0,,0,,Unknown
+Carlos Vicente,25,3,0,,0,,Unknown
+Lucas Boyé,29,1,0,,0,,€5.00m
+Toni Martínez,37,3,0,,0,,€4.00m
+Abde Rebbach,28,4,0,,0,,€1.50m
+Ibrahim Diabate,5,0,0,,0,,€1.50m
+Ángel Pérez,12,2,0,,0,,€1.00m
+Aitor Mañas,10,1,0,,0,,€600k
+Mariano Díaz,12,1,0,,0,,€400k
+Diego Morcillo,2,0,0,,0,,Unknown
+Izei Hernández,1,0,0,,0,,Unknown

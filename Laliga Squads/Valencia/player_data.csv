@@ -1,42 +1,42 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return
-Julen Agirrezabala,19,0,1,28/02/2026,8,Unknown
-Stole Dimitrievski,19,0,0,N/A,0,N/A
-Vicent Abril,Not used during this season,0,0,N/A,0,N/A
-Cristian Rivero,Not used during this season,0,0,N/A,0,N/A
-Pere García,Not used during this season,0,0,N/A,0,N/A
-César Tárrega,30,0,0,N/A,0,N/A
-José Copete,24,0,1,22/02/2026,14,30/06/2026
-José Gayà,29,2,0,N/A,0,N/A
-Jesús Vázquez,24,0,0,N/A,0,N/A
-Unai Núñez,9,1,0,N/A,0,N/A
-Thierry Correia,23,1,1,21/04/2026,6,21/05/2026
-Eray Cömert,18,0,1,11/04/2026,3,01/05/2026
-Mouctar Diakhaby,9,0,1,05/01/2026,22,30/06/2026
-Renzo Saravia,2,0,0,N/A,0,N/A
-Dimitri Foulquier,19,0,1,02/02/2026,12,Unknown
-Rubén Iranzo,4,0,0,N/A,0,N/A
-Marcos Navarro,Not used during this season,0,0,N/A,0,N/A
-Alejandro Panach,1,0,0,N/A,0,N/A
-Joel Fontanet,Not used during this season,0,0,N/A,0,N/A
-Javi Guerra,35,5,0,N/A,0,N/A
-Pepelu,28,1,0,N/A,0,N/A
-André Almeida,23,2,0,N/A,0,N/A
-Filip Ugrinic,25,3,0,N/A,0,N/A
-Guido Rodríguez,12,0,0,N/A,0,N/A
-Baptiste Santamaria,22,2,0,N/A,0,N/A
-Javi Navarro,Not used during this season,0,0,N/A,0,N/A
-Lucas Núñez,1,1,0,N/A,0,N/A
-Aaron Mayol,Not used during this season,0,0,N/A,0,N/A
-Hugo Duro,36,1,0,N/A,0,N/A
-Diego López,34,1,0,N/A,0,N/A
-Lucas Beltrán,30,2,0,N/A,0,N/A
-Largie Ramazani,26,2,0,N/A,0,N/A
-Umar Sadiq,17,3,0,N/A,0,N/A
-Arnaut Danjuma,33,3,0,N/A,0,N/A
-Luis Rioja,37,5,0,N/A,0,N/A
-Dani Raba,15,1,0,N/A,0,N/A
-David Otorbi,2,0,0,N/A,0,N/A
-Pablo López,Not used during this season,0,0,N/A,0,N/A
-Marc Jurado,1,0,0,N/A,0,N/A
-Mario Domínguez,Not used during this season,0,0,N/A,0,N/A
-Aimar Blázquez,Not used during this season,0,0,N/A,0,N/A
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
+Julen Agirrezabala,19,0,1,28/02/2026,8,Unknown,€15.00m
+Stole Dimitrievski,19,0,0,,0,,€2.00m
+Vicent Abril,Not used during this season,0,0,,0,,Unknown
+Cristian Rivero,Not used during this season,0,0,,0,,€100k
+Pere García,Not used during this season,0,0,,0,,Unknown
+César Tárrega,30,0,0,,0,,€12.00m
+José Copete,24,0,1,22/02/2026,14,30/06/2026,€5.00m
+José Gayà,29,2,0,,0,,€5.00m
+Jesús Vázquez,24,0,0,,0,,€4.00m
+Unai Núñez,9,1,0,,0,,€3.50m
+Thierry Correia,23,1,1,21/04/2026,6,21/05/2026,€3.00m
+Eray Cömert,18,0,1,11/04/2026,3,01/05/2026,€2.50m
+Mouctar Diakhaby,9,0,1,05/01/2026,22,30/06/2026,€2.00m
+Renzo Saravia,2,0,0,,0,,€1.50m
+Dimitri Foulquier,19,0,1,02/02/2026,12,Unknown,€1.00m
+Rubén Iranzo,4,0,0,,0,,Unknown
+Marcos Navarro,Not used during this season,0,0,,0,,Unknown
+Alejandro Panach,1,0,0,,0,,Unknown
+Joel Fontanet,Not used during this season,0,0,,0,,Unknown
+Javi Guerra,35,5,0,,0,,€25.00m
+Pepelu,28,1,0,,0,,€9.00m
+André Almeida,23,2,0,,0,,€7.50m
+Filip Ugrinic,25,3,0,,0,,€6.00m
+Guido Rodríguez,12,0,0,,0,,€5.00m
+Baptiste Santamaria,22,2,0,,0,,€3.00m
+Javi Navarro,Not used during this season,0,0,,0,,Unknown
+Lucas Núñez,1,1,0,,0,,Unknown
+Aaron Mayol,Not used during this season,0,0,,0,,Unknown
+Hugo Duro,36,1,0,,0,,€12.00m
+Diego López,34,1,0,,0,,€12.00m
+Lucas Beltrán,30,2,0,,0,,€8.00m
+Largie Ramazani,26,2,0,,0,,€8.00m
+Umar Sadiq,17,3,0,,0,,€4.00m
+Arnaut Danjuma,33,3,0,,0,,€4.00m
+Luis Rioja,37,5,0,,0,,€2.00m
+Dani Raba,15,1,0,,0,,€1.50m
+David Otorbi,2,0,0,,0,,Unknown
+Pablo López,Not used during this season,0,0,,0,,Unknown
+Marc Jurado,1,0,0,,0,,Unknown
+Mario Domínguez,Not used during this season,0,0,,0,,Unknown
+Aimar Blázquez,Not used during this season,0,0,,0,,Unknown
