@@ -205,4 +205,4 @@ if __name__ == "__main__":
     # Test matchups with Betting Odds and Referees!
     # Format: home, away, home_rest, away_rest, b365h, b365d, b365a, referee
     predict_match("Girona", "Mallorca", 6, 11, 2.00, 3.50, 3.75, "Francisco Hernandez")
-    predict_match("Villarreal", "Levante", 6, 5, 1.72, 4.35, 4.76, "Mario Melero")
+    predict_match("Villarreal", "Levante", 6, 5, 1.70, 4.33, 4.33, "Mario Melero")
