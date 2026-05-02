@@ -26,7 +26,8 @@ def get_latest_team_stats(team_name, is_home, df):
             latest_match['Home_Expected_Offense'],
             latest_match['Home_EMA_xG_Created'], latest_match['Home_EMA_xG_Conceded'],
             latest_match['Home_EMA_Field_Tilt'], latest_match['Home_PPDA'],
-            latest_match['Home_Squad_Value']
+            latest_match['Home_Squad_Value'],
+            latest_match['Home_Clean_Sheet_Rate'], latest_match['Home_FTS_Rate']
         ]
     else:
         stats = [
@@ -36,7 +37,8 @@ def get_latest_team_stats(team_name, is_home, df):
             latest_match['Away_Expected_Offense'],
             latest_match['Away_EMA_xG_Created'], latest_match['Away_EMA_xG_Conceded'],
             latest_match['Away_EMA_Field_Tilt'], latest_match['Away_PPDA'],
-            latest_match['Away_Squad_Value']
+            latest_match['Away_Squad_Value'],
+            latest_match['Away_Clean_Sheet_Rate'], latest_match['Away_FTS_Rate']
         ]
 
     return stats
@@ -97,10 +99,12 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
     if not ref_history.empty:
         ref_avg_cards = ref_history['Ref_Avg_Cards'].iloc[-1]
         ref_avg_fouls = ref_history['Ref_Avg_Fouls'].iloc[-1]
+        ref_home_win_rate = ref_history['Ref_Home_Win_Rate'].iloc[-1]
     else:
         # Default to global averages if referee is new
         ref_avg_cards = df['Ref_Avg_Cards'].mean()
         ref_avg_fouls = df['Ref_Avg_Fouls'].mean()
+        ref_home_win_rate = df['Ref_Home_Win_Rate'].mean()
 
     # 4.3. Get Categorical Codes
     # We recreate the factorize mapping from the training data
@@ -129,9 +133,11 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
         home_code, away_code, referee_code,
         b365h, b365d, b365a,
         market_prob_h, market_prob_d, market_prob_a,
-        ref_avg_cards, ref_avg_fouls,
+        ref_avg_cards, ref_avg_fouls, ref_home_win_rate,
         home_stats[11], home_stats[12],              # Home xG Form
         away_stats[11], away_stats[12],              # Away xG Form
+        home_stats[16], away_stats[16],              # Clean Sheet
+        home_stats[17], away_stats[17],              # FTS
         xg_form_diff,
         home_stats[13], away_stats[13], tilt_diff,   # Field Tilt
         home_stats[14], away_stats[14], ppda_diff,   # PPDA
@@ -154,9 +160,11 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
         'Home_Code', 'Away_Code', 'Referee_Code',
         'B365H', 'B365D', 'B365A',
         'Market_Prob_H', 'Market_Prob_D', 'Market_Prob_A',
-        'Ref_Avg_Cards', 'Ref_Avg_Fouls',
+        'Ref_Avg_Cards', 'Ref_Avg_Fouls', 'Ref_Home_Win_Rate',
         'Home_EMA_xG_Created', 'Home_EMA_xG_Conceded',
         'Away_EMA_xG_Created', 'Away_EMA_xG_Conceded',
+        'Home_Clean_Sheet_Rate', 'Away_Clean_Sheet_Rate',
+        'Home_FTS_Rate', 'Away_FTS_Rate',
         'xG_Form_Diff',
         'Home_EMA_Field_Tilt', 'Away_EMA_Field_Tilt', 'Tilt_Diff',
         'Home_PPDA', 'Away_PPDA', 'PPDA_Diff',
@@ -191,8 +199,10 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
     print(f"Squad Market Values      : {home_team} (€{home_stats[15]/1e6:.1f}M) vs {away_team} (€{away_stats[15]/1e6:.1f}M)")
     print(f"----------------------------------------------")
     print(f"Squad Health:")
-    print(f"  [{home_team}] Missing {int(home_missing_key)} key players ({home_missing_impact:.1f}% playing time, {home_missing_goals:.1f}% goals)")
-    print(f"  [{away_team}] Missing {int(away_missing_key)} key players ({away_missing_impact:.1f}% playing time, {away_missing_goals:.1f}% goals)")
+    print("")
+    print(f"[{home_team}] Missing {int(home_missing_key)} key players ({home_missing_impact:.1f}% playing time, {home_missing_goals:.1f}% goals)")
+    print(f"[{away_team}] Missing {int(away_missing_key)} key players ({away_missing_impact:.1f}% playing time, {away_missing_goals:.1f}% goals)")
+    print("")
     print(f"----------------------------------------------")
     print(f"Win Probabilities:")
     print(f"[{home_team}] Home Win : {probabilities[2] * 100:.1f}%")
@@ -204,5 +214,5 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
 if __name__ == "__main__":
     # Test matchups with Betting Odds and Referees!
     # Format: home, away, home_rest, away_rest, b365h, b365d, b365a, referee
-    predict_match("Girona", "Mallorca", 6, 11, 2.00, 3.50, 3.75, "Francisco Hernandez")
-    predict_match("Villarreal", "Levante", 6, 5, 1.70, 4.33, 4.33, "Mario Melero")
+    predict_match("Valencia", "Ath Madrid", 7, 5, 1.75, 4.00, 4.20, "Jose Munuera")
+    predict_match("Villarreal", "Levante", 6, 5, 1.70, 4.20, 4.33, "Alejandro Hernández")

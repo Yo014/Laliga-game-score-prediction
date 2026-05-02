@@ -8,8 +8,9 @@ This project uses historical match data, top scorer information, top assist data
 
 ### Key Features Engineered
 - **Market Data (Betting Odds):** Incorporates raw betting odds and calculates **Normalized Implied Probabilities** (Market_Prob_H/D/A). This captures the "wisdom of the crowd" and is currently the model's most influential feature set.
-- **Referee Statistics:** Tracks historical referee "personalities" by calculating rolling averages for cards shown and fouls called per game.
+- **Referee Statistics:** Tracks historical referee "personalities" by calculating rolling averages for cards shown, fouls called per game, and **Referee Home Bias** (historical win rate of home teams under a specific official).
 - **Match-Level xG Proxy & True Form:** Calculates a proxy for Expected Goals (xG) for every match based on shots, shots on target, and corners. A rolling EMA of this metric tracks "True Form," identifying teams that are playing well but perhaps getting unlucky results.
+- **Consistency Metrics:** Includes **Clean Sheet Rate** and **Failed To Score (FTS) Rate** EMAs to identify which teams are defensively rock-solid vs. offensively inconsistent.
 - **Tactical Style Metrics (PPDA & Field Tilt):** Integrates real PPDA data (pressing intensity) per team per season from Understat, plus a **Field Tilt Proxy** calculated from shots and corners ratios to measure territorial dominance. Rolling EMAs distinguish "counter-attacking" teams from "dominating" teams.
 - **Squad Market Value (Talent Floor):** Aggregates individual player market values from Transfermarkt for every team. This acts as a proxy for raw talent and squad depth, helping the model understand that top-tier teams have a higher "floor" even when rotating players.
 - **Mathematical Differentials:** Explicitly calculates the numerical difference in form, xG trends, pressing intensity, field tilt, squad market value, offensive expected metrics, rest days, and squad health between the Home and Away teams.
@@ -59,7 +60,7 @@ pip install pandas numpy scikit-learn joblib xgboost
    ```bash
    python train_model.py
    ```
-   *Trains the optimized XGBoost classifier. Current accuracy: **~54.5%**.*
+   *Trains the optimized XGBoost classifier. Current accuracy: **~56%**.*
 
 5. **Make Predictions**
    ```bash
@@ -72,9 +73,9 @@ pip install pandas numpy scikit-learn joblib xgboost
 | Category | Features |
 |---|---|
 | **Market Data** | B365H/D/A Odds, Normalized Implied Probabilities (Prob_H/D/A) |
-| **Referee Stats** | Historical Average Cards per Game, Average Fouls per Game |
-| **Home Form (EMA)** | Points, GS, GC, GoalDiff, Shots, ShotsOnTarget, Corners, ShotsConceded, SOTConceded, CornersConceded |
-| **Away Form (EMA)** | Points, GS, GC, GoalDiff, Shots, ShotsOnTarget, Corners, ShotsConceded, SOTConceded, CornersConceded |
+| **Referee Stats** | Historical Average Cards, Average Fouls, **Referee Home Win Rate** |
+| **Home Form (EMA)** | Points, GS, GC, GoalDiff, Shots, SOT, Corners, **Clean Sheet Rate, FTS Rate** |
+| **Away Form (EMA)** | Points, GS, GC, GoalDiff, Shots, SOT, Corners, **Clean Sheet Rate, FTS Rate** |
 | **Offensive Strength**| Home Expected Offense (xG+xA), Away Expected Offense |
 | **Rest & Fatigue** | Home Days Rest, Away Days Rest |
 | **Squad Health** | Home/Away Missing Key Players, Missing Impact %, Missing Goals % |

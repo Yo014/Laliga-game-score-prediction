@@ -27,9 +27,11 @@ def main():
         'Home_Code', 'Away_Code', 'Referee_Code',
         'B365H', 'B365D', 'B365A',
         'Market_Prob_H', 'Market_Prob_D', 'Market_Prob_A',
-        'Ref_Avg_Cards', 'Ref_Avg_Fouls',
+        'Ref_Avg_Cards', 'Ref_Avg_Fouls', 'Ref_Home_Win_Rate',
         'Home_EMA_xG_Created', 'Home_EMA_xG_Conceded',
         'Away_EMA_xG_Created', 'Away_EMA_xG_Conceded',
+        'Home_Clean_Sheet_Rate', 'Away_Clean_Sheet_Rate',
+        'Home_FTS_Rate', 'Away_FTS_Rate',
         'xG_Form_Diff',
         'Home_EMA_Field_Tilt', 'Away_EMA_Field_Tilt', 'Tilt_Diff',
         'Home_PPDA', 'Away_PPDA', 'PPDA_Diff',
@@ -67,10 +69,10 @@ def main():
     
     # New XGBoost specific parameters
     param_grid = {
-        'n_estimators': [100, 200],
-        'max_depth': [3, 5, 7],
-        'learning_rate': [0.01, 0.1, 0.2],
-        'subsample': [0.8, 1.0] # Helps prevent overfitting
+        'n_estimators': [100, 200, 300],
+        'max_depth': [3, 4, 6, 8],
+        'learning_rate': [0.01, 0.05, 0.1],
+        'subsample': [0.8, 0.9, 1.0] # Helps prevent overfitting
     }
     
     # We use TimeSeriesSplit for cross-validation to respect the chronological order
@@ -96,9 +98,9 @@ def main():
     print("\nClassification Report (0=Away Win, 1=Draw, 2=Home Win):")
     print(classification_report(y_test, predictions))
     
-    # print("\nTop 10 Most Important Features:")
+    # print("\nTop 20 Most Important Features:")
     # importances = pd.Series(best_model.feature_importances_, index=features).sort_values(ascending=False)
-    # print(importances.head(10))
+    # print(importances.head(20))
 
     print("\nConfusion Matrix:")
     print(confusion_matrix(y_test, predictions))

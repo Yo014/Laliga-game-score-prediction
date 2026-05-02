@@ -183,10 +183,17 @@ def calculate_ema_form(df, span=5):
     team_matches['EMA_xG_Created'] = team_matches.groupby('Team')['Match_xG'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
     team_matches['EMA_Field_Tilt'] = team_matches.groupby('Team')['Field_Tilt'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
 
+    # Defensve/Offensive reliability
+    team_matches['Clean_Sheet'] = np.where(team_matches['GoalsConceded'] == 0, 1, 0)
+    team_matches['Failed_To_Score'] = np.where(team_matches['GoalsScored'] == 0, 1, 0)
+    
+    team_matches['EMA_Clean_Sheet'] = team_matches.groupby('Team')['Clean_Sheet'].transform(lambda x: x.shift(1).ewm(span=span*2, adjust=False).mean())
+    team_matches['EMA_Failed_To_Score'] = team_matches.groupby('Team')['Failed_To_Score'].transform(lambda x: x.shift(1).ewm(span=span*2, adjust=False).mean())
+
     return team_matches[['Date', 'Team', 'EMA_Points', 'EMA_GoalsScored', 'EMA_GoalsConceded', 'EMA_GoalDiff', 
                          'EMA_Shots', 'EMA_ShotsOnTarget', 'EMA_Corners', 
                          'EMA_ShotsConceded', 'EMA_SOTConceded', 'EMA_CornersConceded',
-                         'EMA_xG_Created', 'EMA_Field_Tilt']]
+                         'EMA_xG_Created', 'EMA_Field_Tilt', 'EMA_Clean_Sheet', 'EMA_Failed_To_Score']]
 
 def calculate_referee_stats(df, span=20):
     """
@@ -207,11 +214,16 @@ def calculate_referee_stats(df, span=20):
     df['Ref_Avg_Cards'] = df.groupby('Referee')['Total_Cards'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
     df['Ref_Avg_Fouls'] = df.groupby('Referee')['Total_Fouls'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
     
+    # Referee Home Bias: Percentage of home wins
+    df['Is_Home_Win'] = np.where(df['FTR'] == 'H', 1, 0)
+    df['Ref_Home_Win_Rate'] = df.groupby('Referee')['Is_Home_Win'].transform(lambda x: x.shift(1).expanding().mean())
+    
     # Fill first-time referee stats with global averages
     df['Ref_Avg_Cards'] = df['Ref_Avg_Cards'].fillna(df['Total_Cards'].mean())
     df['Ref_Avg_Fouls'] = df['Ref_Avg_Fouls'].fillna(df['Total_Fouls'].mean())
+    df['Ref_Home_Win_Rate'] = df['Ref_Home_Win_Rate'].fillna(df['Is_Home_Win'].mean())
     
-    return df[['Date', 'HomeTeam', 'AwayTeam', 'Ref_Avg_Cards', 'Ref_Avg_Fouls']]
+    return df[['Date', 'HomeTeam', 'AwayTeam', 'Ref_Avg_Cards', 'Ref_Avg_Fouls', 'Ref_Home_Win_Rate']]
 def get_rest_days(df):
     """
     Calculates the number of rest days a team has had since their last match.
@@ -278,7 +290,8 @@ def main():
         'EMA_Points': 'Home_EMA_Points', 'EMA_GoalsScored': 'Home_EMA_GS', 'EMA_GoalsConceded': 'Home_EMA_GC',
         'EMA_GoalDiff': 'Home_EMA_GoalDiff', 'EMA_Shots': 'Home_EMA_Shots', 'EMA_ShotsOnTarget': 'Home_EMA_ShotsOnTarget', 'EMA_Corners': 'Home_EMA_Corners',
         'EMA_ShotsConceded': 'Home_EMA_ShotsConceded', 'EMA_SOTConceded': 'Home_EMA_SOTConceded', 'EMA_CornersConceded': 'Home_EMA_CornersConceded',
-        'EMA_xG_Created': 'Home_EMA_xG_Created', 'EMA_Field_Tilt': 'Home_EMA_Field_Tilt'
+        'EMA_xG_Created': 'Home_EMA_xG_Created', 'EMA_Field_Tilt': 'Home_EMA_Field_Tilt',
+        'EMA_Clean_Sheet': 'Home_Clean_Sheet_Rate', 'EMA_Failed_To_Score': 'Home_FTS_Rate'
     }).drop('Team', axis=1)
 
     matches = pd.merge(matches, form_df, left_on=['Date', 'AwayTeam'], right_on=['Date', 'Team'], how='left')
@@ -286,7 +299,8 @@ def main():
         'EMA_Points': 'Away_EMA_Points', 'EMA_GoalsScored': 'Away_EMA_GS', 'EMA_GoalsConceded': 'Away_EMA_GC',
         'EMA_GoalDiff': 'Away_EMA_GoalDiff', 'EMA_Shots': 'Away_EMA_Shots', 'EMA_ShotsOnTarget': 'Away_EMA_ShotsOnTarget', 'EMA_Corners': 'Away_EMA_Corners',
         'EMA_ShotsConceded': 'Away_EMA_ShotsConceded', 'EMA_SOTConceded': 'Away_EMA_SOTConceded', 'EMA_CornersConceded': 'Away_EMA_CornersConceded',
-        'EMA_xG_Created': 'Away_EMA_xG_Created', 'EMA_Field_Tilt': 'Away_EMA_Field_Tilt'
+        'EMA_xG_Created': 'Away_EMA_xG_Created', 'EMA_Field_Tilt': 'Away_EMA_Field_Tilt',
+        'EMA_Clean_Sheet': 'Away_Clean_Sheet_Rate', 'EMA_Failed_To_Score': 'Away_FTS_Rate'
     }).drop('Team', axis=1)
 
     # Calculate xG Conceded (which is just the opponent's xG Created)
@@ -422,10 +436,12 @@ def main():
         'Date', 'HomeTeam', 'AwayTeam', 'FTR', 'Target', 'Referee',
         'B365H', 'B365D', 'B365A',
         'Market_Prob_H', 'Market_Prob_D', 'Market_Prob_A',
-        'Ref_Avg_Cards', 'Ref_Avg_Fouls',
+        'Ref_Avg_Cards', 'Ref_Avg_Fouls', 'Ref_Home_Win_Rate',
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
+        'Home_Clean_Sheet_Rate', 'Home_FTS_Rate',
         'Home_EMA_xG_Created', 'Home_EMA_xG_Conceded',
         'Away_EMA_xG_Created', 'Away_EMA_xG_Conceded',
+        'Away_Clean_Sheet_Rate', 'Away_FTS_Rate',
         'xG_Form_Diff',
         'Home_EMA_Field_Tilt', 'Away_EMA_Field_Tilt', 'Tilt_Diff',
         'Home_PPDA', 'Away_PPDA', 'PPDA_Diff',
