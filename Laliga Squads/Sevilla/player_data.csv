@@ -1,40 +1,42 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
-Odysseas Vlachodimos,30,0,0,,0,,€4.00m
-Ørjan Nyland,6,0,0,,0,,€900k
-Alberto Flores,Not used during this season,0,0,,0,,Unknown
-Rafa Romero,Not used during this season,0,0,,0,,Unknown
-Loren Luchino,Not used during this season,0,0,,0,,Unknown
-Juanlu Sánchez,31,3,0,,0,,€15.00m
-José Ángel Carmona,33,3,0,,0,,€12.00m
-Kike Salas,23,0,0,,0,,€8.00m
-Gabriel Suazo,25,2,0,,0,,€7.00m
-Oso,19,3,0,,0,,€5.00m
-Adrià Pedrosa,1,0,0,,0,,Unknown
-Marcão,13,0,1,23/01/2026,13,Unknown,€2.50m
-Fábio Cardoso,5,0,0,,0,,€2.00m
-Andrés Castrín,17,0,0,,0,,€1.50m
-Tanguy Nianzou,12,0,0,,0,,€1.40m
-César Azpilicueta,15,1,0,,0,,€1.20m
-Ramón Martínez,3,0,0,,0,,Unknown
-Federico Gattoni,1,0,0,,0,,Unknown
-Iker Muñoz,Not used during this season,0,0,,0,,Unknown
-Lucien Agoumé,31,3,0,,0,,€12.00m
-Batista Mendy,27,0,0,,0,,€10.00m
-Djibril Sow,31,2,0,,0,,€7.50m
-Stanis Idumbo,1,0,0,,0,,Unknown
-Nemanja Gudelj,32,0,0,,0,,€2.50m
-Joan Jordán,5,0,0,,0,,€2.00m
-Manu Bueno,10,2,0,,0,,€1.50m
-Edu Altozano,Not used during this season,0,0,,0,,Unknown
-Dodi Lukébakio,2,0,0,,0,,Unknown
-Akor Adams,29,4,0,,0,,€12.00m
-Rubén Vargas,20,5,0,,0,,€12.00m
-Isaac Romero,27,2,0,,0,,€5.00m
-Neal Maupay,7,0,0,,0,,€4.00m
-Chidera Ejuke,25,1,0,,0,,€4.00m
-Peque Fernández,26,2,0,,0,,€3.50m
-Alfon González,13,0,0,,0,,Unknown
-Alexis Sánchez,25,1,0,,0,,€1.40m
-Adnan Januzaj,13,0,0,,0,,€1.20m
-Álex Costa,Not used during this season,0,0,,0,,Unknown
-Miguel Sierra,5,0,0,,0,,€300k
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR
+Odysseas Vlachodimos,30,0,0,,0,,€4.00m,0.0,0,0,0,0,0,1,0
+Ørjan Nyland,6,0,0,,0,,€900k,0.0,0,0,0,0,0,1,0
+Alberto Flores,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Rafa Romero,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Loren Luchino,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Juanlu Sánchez,31,3,0,,0,,€15.00m,0.0,3,3,0,0,0,5,1
+José Ángel Carmona,33,3,0,,0,,€12.00m,1.0,3,4,1,0,0,10,0
+Kike Salas,23,0,0,,0,,€8.00m,1.0,0,1,1,0,0,1,0
+Gabriel Suazo,25,2,0,,0,,€7.00m,0.0,2,2,0,0,0,7,0
+Oso,19,3,0,,0,,€5.00m,1.0,3,4,1,0,0,1,0
+Oso,19,3,0,,0,,€5.00m,0.0,0,0,0,0,0,0,0
+Adrià Pedrosa,1,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Marcão,13,0,1,23/01/2026,13,Unknown,€2.50m,1.0,0,1,1,0,0,5,1
+Fábio Cardoso,5,0,0,,0,,€2.00m,1.0,3,4,1,0,0,1,0
+Fábio Cardoso,5,0,0,,0,,€2.00m,0.0,0,0,0,0,0,0,0
+Andrés Castrín,17,0,0,,0,,€1.50m,0.0,0,0,0,0,0,3,0
+Tanguy Nianzou,12,0,0,,0,,€1.40m,0.0,0,0,0,0,0,5,1
+César Azpilicueta,15,1,0,,0,,€1.20m,0.0,1,1,0,0,0,4,0
+Ramón Martínez,3,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Federico Gattoni,1,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Iker Muñoz,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Lucien Agoumé,31,3,0,,0,,€12.00m,1.0,2,3,1,0,0,11,0
+Batista Mendy,27,0,0,,0,,€10.00m,1.0,0,1,1,0,0,6,0
+Djibril Sow,31,2,0,,0,,€7.50m,5.0,2,7,5,0,0,5,0
+Stanis Idumbo,1,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Nemanja Gudelj,32,0,0,,0,,€2.50m,2.0,0,2,2,0,0,8,0
+Joan Jordán,5,0,0,,0,,€2.00m,0.0,0,0,0,0,0,1,1
+Manu Bueno,10,2,0,,0,,€1.50m,0.0,0,0,0,0,0,2,0
+Edu Altozano,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Dodi Lukébakio,2,0,0,,0,,Unknown,1.0,0,1,1,0,0,0,0
+Akor Adams,29,4,0,,0,,€12.00m,8.0,3,11,5,3,3,2,0
+Rubén Vargas,20,5,0,,0,,€12.00m,3.0,5,8,2,1,1,1,0
+Isaac Romero,27,2,0,,0,,€5.00m,4.0,0,4,4,0,1,6,1
+Neal Maupay,7,0,0,,0,,€4.00m,2.0,0,2,2,0,0,1,0
+Chidera Ejuke,25,1,0,,0,,€4.00m,1.0,1,2,1,0,0,0,0
+Peque Fernández,26,2,0,,0,,€3.50m,2.0,1,3,2,0,0,7,0
+Alfon González,13,0,0,,0,,Unknown,1.0,0,1,1,0,0,0,0
+Alexis Sánchez,25,1,0,,0,,€1.40m,3.0,1,4,2,1,1,1,0
+Adnan Januzaj,13,0,0,,0,,€1.20m,0.0,0,0,0,0,0,1,0
+Álex Costa,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Miguel Sierra,5,0,0,,0,,€300k,0.0,0,0,0,0,0,0,0

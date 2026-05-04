@@ -95,8 +95,26 @@ def build_squad_health():
         df['Apps'] = df['Appearances'].apply(parse_appearances)
         df['Goals'] = pd.to_numeric(df['Goals Scored'], errors='coerce').fillna(0).astype(int)
 
+        # Advanced stats (may not exist in all files)
+        stats_to_track = {
+            'Ast': 'Assists',
+            'G-PK': 'Non_Penalty_Goals',
+            'CrdY': 'Yellow_Cards',
+            'CrdR': 'Red_Cards'
+        }
+        
+        for col, label in stats_to_track.items():
+            if col in df.columns:
+                df[label] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int)
+            else:
+                df[label] = 0
+
         total_apps = df['Apps'].sum()
         total_goals = df['Goals'].sum()
+        total_assists = df['Assists'].sum()
+        total_np_goals = df['Non_Penalty_Goals'].sum()
+        total_yellows = df['Yellow_Cards'].sum()
+        total_reds = df['Red_Cards'].sum()
 
         # Identify currently injured players
         df['Currently_Injured'] = df.apply(lambda r: is_currently_injured(r, today), axis=1)
@@ -117,6 +135,22 @@ def build_squad_health():
         missing_goals = injured['Goals'].sum()
         missing_goals_pct = round((missing_goals / total_goals * 100), 2) if total_goals > 0 else 0.0
 
+        # Missing Assists %
+        missing_assists = injured['Assists'].sum()
+        missing_assists_pct = round((missing_assists / total_assists * 100), 2) if total_assists > 0 else 0.0
+
+        # Missing NP Goals %
+        missing_np_goals = injured['Non_Penalty_Goals'].sum()
+        missing_np_goals_pct = round((missing_np_goals / total_np_goals * 100), 2) if total_np_goals > 0 else 0.0
+
+        # Missing Yellows %
+        missing_yellows = injured['Yellow_Cards'].sum()
+        missing_yellows_pct = round((missing_yellows / total_yellows * 100), 2) if total_yellows > 0 else 0.0
+
+        # Missing Reds %
+        missing_reds = injured['Red_Cards'].sum()
+        missing_reds_pct = round((missing_reds / total_reds * 100), 2) if total_reds > 0 else 0.0
+
         rows.append({
             'Team': model_name,
             'Total_Apps': total_apps,
@@ -124,6 +158,10 @@ def build_squad_health():
             'Total_Injured': total_injured,
             'Missing_Impact_Pct': missing_impact_pct,
             'Missing_Goals_Pct': missing_goals_pct,
+            'Missing_Assists_Pct': missing_assists_pct,
+            'Missing_NP_Goals_Pct': missing_np_goals_pct,
+            'Missing_Yellows_Pct': missing_yellows_pct,
+            'Missing_Reds_Pct': missing_reds_pct,
         })
 
     result = pd.DataFrame(rows)

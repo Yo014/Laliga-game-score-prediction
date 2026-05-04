@@ -1,43 +1,43 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
-Dominik Livakovic,Not used during this season,0,0,,0,,Unknown
-Marc-André ter Stegen,2,0,1,31/01/2026,13,01/05/2026,€4.00m
-Paulo Gazzaniga,31,0,0,,0,,€2.00m
-Rubén Blanco,Not used during this season,0,0,,0,,€800k
-Vladyslav Krapyvtsov,3,0,0,,0,,€400k
-Juan Carlos,Not used during this season,0,1,01/09/2025,32,Unknown,€100k
-Aleksandar Andreev,Not used during this season,0,0,,0,,Unknown
-Vitor Reis,33,1,0,,0,,€30.00m
-Ladislav Krejčí,2,0,0,,0,,Unknown
-Arnau Martínez,31,2,0,,0,,€10.00m
-Hugo Rincón,32,2,0,,0,,€3.50m
-Álex Moreno,27,3,0,,0,,€3.50m
-Alejandro Francés,21,2,0,,0,,€3.00m
-Daley Blind,30,0,0,,0,,€1.40m
-David López,3,0,0,,0,,€800k
-Pol Arnau,1,0,0,,0,,Unknown
-Gibert Jordana,1,0,0,,0,,Unknown
-Antonio Salguero,1,0,0,,0,,Unknown
-Claudio Echeverri,12,1,0,,0,,€15.00m
-Azzedine Ounahi,19,3,0,,0,,€10.00m
-Yangel Herrera,2,0,0,,0,,Unknown
-Iván Martín,33,1,0,,0,,€6.00m
-Fran Beltrán,12,0,0,,0,,€5.00m
-Jhon Solís,14,0,0,,0,,Unknown
-Donny van de Beek,2,0,1,24/09/2025,30,01/05/2026,€2.00m
-Thomas Lemar,24,2,0,,0,,€2.00m
-Axel Witsel,27,2,0,,0,,€1.40m
-Lass Kourouma,7,0,0,,0,,€500k
-Ricard Artero,Not used during this season,0,0,,0,,Unknown
-Viktor Tsygankov,29,4,0,,0,,€15.00m
-Vladyslav Vanat,29,2,1,06/04/2026,9,30/06/2026,€15.00m
-Yáser Asprilla,17,1,0,,0,,Unknown
-Bryan Gil,26,3,0,,0,,€12.00m
-Joel Roca,28,1,0,,0,,€5.00m
-Bojan Miovski,1,0,0,,0,,Unknown
-Abel Ruiz,11,1,0,,0,,€2.50m
-Portu,11,1,1,19/11/2025,27,30/06/2026,€1.50m
-Dawda Camara,2,0,0,,0,,Unknown
-Cristhian Stuani,17,0,0,,0,,€800k
-Papa Ba,2,0,0,,0,,Unknown
-Juan Arango,2,0,0,,0,,Unknown
-Javi Sarasa,1,0,0,,0,,Unknown
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR
+Dominik Livakovic,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Marc-André ter Stegen,2,0,1,31/01/2026,13,01/05/2026,€4.00m,0.0,0,0,0,0,0,0,0
+Paulo Gazzaniga,31,0,0,,0,,€2.00m,0.0,0,0,0,0,0,4,1
+Rubén Blanco,Not used during this season,0,0,,0,,€800k,,0,0,0,0,0,0,0
+Vladyslav Krapyvtsov,3,0,0,,0,,€400k,0.0,0,0,0,0,0,0,0
+Juan Carlos,Not used during this season,0,1,01/09/2025,32,Unknown,€100k,,0,0,0,0,0,0,0
+Aleksandar Andreev,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Vitor Reis,33,1,0,,0,,€30.00m,1.0,1,2,1,0,0,8,1
+Ladislav Krejčí,2,0,0,,0,,Unknown,0.0,0,0,0,0,0,1,0
+Arnau Martínez,31,2,0,,0,,€10.00m,1.0,2,3,1,0,0,6,0
+Hugo Rincón,32,2,0,,0,,€3.50m,1.0,1,2,1,0,0,4,0
+Álex Moreno,27,3,0,,0,,€3.50m,0.0,3,3,0,0,0,5,0
+Alejandro Francés,21,2,0,,0,,€3.00m,0.0,2,2,0,0,0,1,1
+Daley Blind,30,0,0,,0,,€1.40m,0.0,0,0,0,0,0,1,0
+David López,3,0,0,,0,,€800k,0.0,0,0,0,0,0,0,0
+Pol Arnau,1,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Gibert Jordana,1,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Antonio Salguero,1,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Claudio Echeverri,12,1,0,,0,,€15.00m,1.0,1,2,1,0,0,3,0
+Azzedine Ounahi,19,3,0,,0,,€10.00m,5.0,2,7,4,1,1,6,0
+Yangel Herrera,2,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Iván Martín,33,1,0,,0,,€6.00m,0.0,1,1,0,0,0,5,1
+Fran Beltrán,12,0,0,,0,,€5.00m,1.0,0,1,1,0,0,3,0
+Jhon Solís,14,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Donny van de Beek,2,0,1,24/09/2025,30,01/05/2026,€2.00m,0.0,0,0,0,0,0,0,0
+Thomas Lemar,24,2,0,,0,,€2.00m,3.0,1,4,3,0,0,3,0
+Axel Witsel,27,2,0,,0,,€1.40m,1.0,2,3,1,0,0,2,1
+Lass Kourouma,7,0,0,,0,,€500k,,0,0,0,0,0,0,0
+Ricard Artero,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Viktor Tsygankov,29,4,0,,0,,€15.00m,,0,0,0,0,0,0,0
+Vladyslav Vanat,29,2,1,06/04/2026,9,30/06/2026,€15.00m,9.0,1,10,6,3,3,4,0
+Yáser Asprilla,17,1,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Bryan Gil,26,3,0,,0,,€12.00m,0.0,3,3,0,0,0,5,0
+Joel Roca,28,1,0,,0,,€5.00m,3.0,1,4,3,0,0,3,1
+Bojan Miovski,1,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Abel Ruiz,11,1,0,,0,,€2.50m,0.0,0,0,0,0,0,0,0
+Portu,11,1,1,19/11/2025,27,30/06/2026,€1.50m,0.0,0,0,0,0,0,2,0
+Dawda Camara,2,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Cristhian Stuani,17,0,0,,0,,€800k,3.0,0,3,0,3,4,3,0
+Papa Ba,2,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Juan Arango,2,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Javi Sarasa,1,0,0,,0,,Unknown,,0,0,0,0,0,0,0

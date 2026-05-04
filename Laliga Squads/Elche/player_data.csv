@@ -1,43 +1,43 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
-Iñaki Peña,16,0,0,,0,,€5.00m
-Alejandro Iturbe,Not used during this season,0,0,,0,,€1.50m
-Matías Dituro,21,0,0,,0,,€200k
-Héctor Fort,13,2,0,,0,,€12.00m
-David Affengruber,34,2,0,,0,,€9.00m
-Álvaro Núñez,19,2,0,,0,,Unknown
-Víctor Chust,28,0,0,,0,,€4.00m
-Adrià Pedrosa,26,2,0,,0,,€3.00m
-Léo Pétrot,34,0,0,,0,,€1.50m
-John Donald,18,0,0,,0,,€1.00m
-Buba Sangaré,8,0,0,,0,,€1.00m
-Bambo Diaby,6,0,0,,0,,Unknown
-Jairo Izquierdo,1,0,0,,0,,Unknown
-Pedro Bigas,25,2,0,,0,,€400k
-David Delgado,1,0,0,,0,,Unknown
-Nico Salvador,1,0,0,,0,,Unknown
-Pablo Felipe,Not used during this season,0,0,,0,,Unknown
-Bema Sina,Not used during this season,0,0,,0,,Unknown
-Alex Herráiz,Not used during this season,0,0,,0,,Unknown
-Albert Niculăesei,Not used during this season,0,0,,0,,Unknown
-Rodrigo Mendoza,20,1,0,,0,,Unknown
-Aleix Febas,33,2,0,,0,,€5.00m
-Martim Neto,28,5,0,,0,,€5.00m
-Federico Redondo,15,0,0,,0,,€3.50m
-Marc Aguado,34,3,0,,0,,€3.50m
-Gonzalo Villar,7,0,0,,0,,€1.80m
-Antonio Martínez,Not used during this season,0,0,,0,,Unknown
-Germán Valera,33,4,0,,0,,€6.00m
-Álvaro Rodríguez,31,5,0,,0,,€5.00m
-Rafa Mir,29,0,0,,0,,€4.00m
-Lucas Cepeda,8,0,0,,0,,€3.50m
-André Silva,27,0,0,,0,,€3.00m
-Grady Diangana,18,0,0,,0,,€2.50m
-Tete Morente,8,1,0,,0,,€1.80m
-Mourad El Ghezouani,2,0,0,,0,,Unknown
-Yago Santiago,13,0,0,,0,,€1.00m
-Adam Boayar,11,1,0,,0,,€800k
-Ali Houary,4,0,0,,0,,Unknown
-Nordin Al Lal,Not used during this season,0,0,,0,,Unknown
-Josan,20,3,0,,0,,€100k
-Piri,Not used during this season,0,0,,0,,Unknown
-Álex Sánchez,1,1,0,,0,,Unknown
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR
+Iñaki Peña,16,0,0,,0,,€5.00m,0.0,0,0,0,0,0,0,0
+Alejandro Iturbe,Not used during this season,0,0,,0,,€1.50m,,0,0,0,0,0,0,0
+Matías Dituro,21,0,0,,0,,€200k,0.0,0,0,0,0,0,1,0
+Héctor Fort,13,2,0,,0,,€12.00m,1.0,2,3,1,0,0,0,0
+David Affengruber,34,2,0,,0,,€9.00m,1.0,1,2,1,0,0,6,1
+Álvaro Núñez,19,2,0,,0,,Unknown,0.0,2,2,0,0,0,2,0
+Víctor Chust,28,0,0,,0,,€4.00m,0.0,0,0,0,0,0,8,1
+Adrià Pedrosa,26,2,0,,0,,€3.00m,1.0,1,2,1,0,0,4,0
+Léo Pétrot,34,0,0,,0,,€1.50m,0.0,0,0,0,0,0,2,0
+John Donald,18,0,0,,0,,€1.00m,1.0,0,1,1,0,0,2,0
+Buba Sangaré,8,0,0,,0,,€1.00m,0.0,0,0,0,0,0,2,0
+Bambo Diaby,6,0,0,,0,,Unknown,0.0,0,0,0,0,0,1,0
+Jairo Izquierdo,1,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Pedro Bigas,25,2,0,,0,,€400k,1.0,2,3,1,0,0,5,1
+David Delgado,1,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Nico Salvador,1,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Pablo Felipe,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Bema Sina,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Alex Herráiz,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Albert Niculăesei,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Rodrigo Mendoza,20,1,0,,0,,Unknown,1.0,0,1,1,0,0,4,0
+Aleix Febas,33,2,0,,0,,€5.00m,2.0,2,4,2,0,0,8,0
+Martim Neto,28,5,0,,0,,€5.00m,2.0,5,7,2,0,0,2,0
+Federico Redondo,15,0,0,,0,,€3.50m,0.0,0,0,0,0,0,0,1
+Marc Aguado,34,3,0,,0,,€3.50m,1.0,2,3,1,0,0,2,0
+Gonzalo Villar,7,0,0,,0,,€1.80m,1.0,0,1,1,0,0,2,0
+Antonio Martínez,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Germán Valera,33,4,0,,0,,€6.00m,4.0,4,8,4,0,0,3,1
+Álvaro Rodríguez,31,5,0,,0,,€5.00m,5.0,5,10,5,0,0,1,0
+Rafa Mir,29,0,0,,0,,€4.00m,8.0,0,8,7,1,2,4,0
+Lucas Cepeda,8,0,0,,0,,€3.50m,1.0,0,1,1,0,0,1,0
+André Silva,27,0,0,,0,,€3.00m,10.0,0,10,7,3,3,2,0
+Grady Diangana,18,0,0,,0,,€2.50m,1.0,0,1,1,0,0,2,0
+Tete Morente,8,1,0,,0,,€1.80m,1.0,1,2,1,0,0,1,0
+Mourad El Ghezouani,2,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Yago Santiago,13,0,0,,0,,€1.00m,0.0,0,0,0,0,0,1,0
+Adam Boayar,11,1,0,,0,,€800k,1.0,0,1,1,0,0,0,0
+Ali Houary,4,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Nordin Al Lal,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Josan,20,3,0,,0,,€100k,0.0,2,2,0,0,0,2,0
+Piri,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Álex Sánchez,1,1,0,,0,,Unknown,0.0,1,1,0,0,0,0,0

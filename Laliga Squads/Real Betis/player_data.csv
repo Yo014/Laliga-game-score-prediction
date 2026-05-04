@@ -1,39 +1,39 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
-Álvaro Valles,29,0,0,,0,,€6.00m
-Pau López,16,0,0,,0,,€2.50m
-Adrián San Miguel,5,0,0,,0,,€400k
-Manu González,Not used during this season,0,0,,0,,Unknown
-Germán García,Not used during this season,0,0,,0,,Unknown
-Natan,41,1,0,,0,,€25.00m
-Valentín Gómez,37,0,0,,0,,€12.00m
-Junior Firpo,14,2,1,01/04/2026,6,01/05/2026,€5.00m
-Ángel Ortiz,23,2,1,22/03/2026,7,Unknown,€4.00m
-Diego Llorente,25,0,0,,0,,€3.00m
-Héctor Bellerín,24,3,0,,0,,€2.50m
-Ricardo Rodríguez,32,1,0,,0,,€1.50m
-Marc Bartra,34,0,0,,0,,€1.00m
-Darling Bladi,1,0,0,,0,,Unknown
-Félix Garreta,Not used during this season,0,0,,0,,Unknown
-Carlos de Roa,Not used during this season,0,0,,0,,Unknown
-Sergi Altimira,38,2,0,,0,,€20.00m
-Sofyan Amrabat,19,0,0,,0,,€12.00m
-Álvaro Fidalgo,11,0,0,,0,,€10.00m
-Giovani Lo Celso,28,3,0,,0,,€10.00m
-Nelson Deossa,30,1,0,,0,,€9.00m
-Pablo Fornals,47,7,0,,0,,€8.00m
-Marc Roca,36,3,0,,0,,€4.00m
-Isco,4,1,0,,0,,€4.00m
-Mawuli Mensah,Not used during this season,0,0,,0,,Unknown
-Dani Pérez,2,0,0,,0,,Unknown
-Iván Corralejo,3,0,0,,0,,Unknown
-Antony,41,9,0,,0,,€40.00m
-Abde Ezzalzouli,38,12,0,,0,,€30.00m
-Cucho Hernández,36,3,0,,0,,€18.00m
-Pablo García,25,1,0,,0,,€8.00m
-Rodrigo Riquelme,34,1,0,,0,,€6.00m
-Aitor Ruibal,41,4,0,,0,,€4.00m
-Rodrigo Marina,Not used during this season,0,0,,0,,Unknown
-Chimy Ávila,27,3,0,,0,,€1.50m
-Iker Losada,Not used during this season,0,0,,0,,Unknown
-Cédric Bakambu,26,3,0,,0,,€1.40m
-José Antonio Morante,1,0,0,,0,,Unknown
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR
+Álvaro Valles,29,0,0,,0,,€6.00m,0.0,0,0,0,0,0,1,0
+Pau López,16,0,0,,0,,€2.50m,0.0,0,0,0,0,0,1,0
+Adrián San Miguel,5,0,0,,0,,€400k,,0,0,0,0,0,0,0
+Manu González,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Germán García,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Natan,41,1,0,,0,,€25.00m,0.0,0,0,0,0,0,7,0
+Valentín Gómez,37,0,0,,0,,€12.00m,1.0,0,1,1,0,0,5,0
+Junior Firpo,14,2,1,01/04/2026,6,01/05/2026,€5.00m,0.0,1,1,0,0,0,2,0
+Ángel Ortiz,23,2,1,22/03/2026,7,Unknown,€4.00m,0.0,0,0,0,0,0,1,0
+Diego Llorente,25,0,0,,0,,€3.00m,1.0,0,1,1,0,0,3,0
+Héctor Bellerín,24,3,0,,0,,€2.50m,2.0,3,5,2,0,0,2,0
+Ricardo Rodríguez,32,1,0,,0,,€1.50m,0.0,1,1,0,0,0,0,0
+Marc Bartra,34,0,0,,0,,€1.00m,1.0,0,1,1,0,0,3,0
+Darling Bladi,1,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Félix Garreta,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Carlos de Roa,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Sergi Altimira,38,2,0,,0,,€20.00m,1.0,1,2,1,0,0,3,0
+Sofyan Amrabat,19,0,0,,0,,€12.00m,0.0,0,0,0,0,0,4,0
+Álvaro Fidalgo,11,0,0,,0,,€10.00m,1.0,0,1,1,0,0,0,0
+Giovani Lo Celso,28,3,0,,0,,€10.00m,2.0,3,5,2,0,0,4,0
+Nelson Deossa,30,1,0,,0,,€9.00m,0.0,0,0,0,0,0,3,0
+Pablo Fornals,47,7,0,,0,,€8.00m,7.0,5,12,7,0,0,2,0
+Marc Roca,36,3,0,,0,,€4.00m,1.0,1,2,1,0,0,1,0
+Isco,4,1,0,,0,,€4.00m,0.0,1,1,0,0,0,0,0
+Mawuli Mensah,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Dani Pérez,2,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Iván Corralejo,3,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Antony,41,9,0,,0,,€40.00m,7.0,6,13,7,0,0,5,1
+Abde Ezzalzouli,38,12,0,,0,,€30.00m,8.0,8,16,8,0,0,3,0
+Cucho Hernández,36,3,0,,0,,€18.00m,10.0,3,13,9,1,1,4,0
+Pablo García,25,1,0,,0,,€8.00m,0.0,0,0,0,0,0,1,0
+Rodrigo Riquelme,34,1,0,,0,,€6.00m,1.0,1,2,1,0,0,2,0
+Aitor Ruibal,41,4,0,,0,,€4.00m,4.0,2,6,4,0,0,4,0
+Rodrigo Marina,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Chimy Ávila,27,3,0,,0,,€1.50m,1.0,0,1,0,1,1,3,0
+Iker Losada,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Cédric Bakambu,26,3,0,,0,,€1.40m,3.0,1,4,3,0,0,1,0
+José Antonio Morante,1,0,0,,0,,Unknown,,0,0,0,0,0,0,0

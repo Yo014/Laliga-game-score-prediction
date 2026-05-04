@@ -1,41 +1,41 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
-Unai Simón,42,0,0,,0,,€25.00m
-Álex Padilla,5,0,0,,0,,€3.00m
-Mikel Santos,Not used during this season,0,0,,0,,Unknown
-Dani Vivian,38,0,0,,0,,€25.00m
-Aitor Paredes,29,1,0,,0,,€15.00m
-Aymeric Laporte,26,2,0,,0,,€9.00m
-Jesús Areso,33,1,0,,0,,€8.00m
-Andoni Gorosabel,29,2,0,,0,,€4.00m
-Adama Boiro,21,0,0,,0,,€3.00m
-Iñigo Lekue,18,0,0,,0,,€1.20m
-Yuri Berchiche,36,5,0,,0,,€1.20m
-Iker Monreal,2,0,0,,0,,Unknown
-Yeray Álvarez,2,0,0,,0,,€1.00m
-Unai Egiluz,Not used during this season,0,0,,0,,€600k
-Jon de Luis,Not used during this season,0,0,,0,,Unknown
-Aimar Duñabeitia,Not used during this season,0,0,,0,,Unknown
-Ander Izagirre,Not used during this season,0,0,,0,,Unknown
-Oihan Sancet,36,1,0,,0,,€35.00m
-Mikel Jauregizar,44,2,0,,0,,€35.00m
-Beñat Prados,2,0,1,13/09/2025,49,31/05/2026,€18.00m
-Unai Gómez,32,1,0,,0,,€5.00m
-Alejandro Rego,36,1,0,,0,,€3.00m
-Selton Sánchez,13,1,0,,0,,€3.00m
-Iñigo Ruiz de Galarreta,42,3,0,,0,,€2.50m
-Unai Vencedor,Not used during this season,0,0,,0,,Unknown
-Mikel Vesga,31,0,0,,0,,€1.50m
-Eder García,2,0,0,,0,,Unknown
-Ibon Sánchez,1,0,0,,0,,Unknown
-Nico Williams,30,6,0,,0,,€50.00m
-Iñaki Williams,34,4,0,,0,,€10.00m
-Robert Navarro,39,3,0,,0,,€6.00m
-Álex Berenguer,37,4,0,,0,,€5.00m
-Gorka Guruzeta,43,1,0,,0,,€5.00m
-Maroan Sannadi,10,0,0,,0,,€5.00m
-Nico Serrano,22,0,0,,0,,€1.50m
-Urko Izeta,14,0,0,,0,,€1.50m
-Elijah Gift,Not used during this season,0,0,,0,,Unknown
-Asier Hierro,4,0,0,,0,,Unknown
-Adrián Pérez,Not used during this season,0,0,,0,,Unknown
-Endika Buján,Not used during this season,0,0,,0,,Unknown
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR
+Unai Simón,42,0,0,,0,,€25.00m,0.0,0,0,0,0,0,1,0
+Álex Padilla,5,0,0,,0,,€3.00m,0.0,0,0,0,0,0,0,1
+Mikel Santos,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Dani Vivian,38,0,0,,0,,€25.00m,,0,0,0,0,0,0,0
+Aitor Paredes,29,1,0,,0,,€15.00m,2.0,0,2,2,0,0,4,0
+Aymeric Laporte,26,2,0,,0,,€9.00m,0.0,1,1,0,0,0,2,0
+Jesús Areso,33,1,0,,0,,€8.00m,0.0,1,1,0,0,0,3,0
+Andoni Gorosabel,29,2,0,,0,,€4.00m,0.0,1,1,0,0,0,3,0
+Adama Boiro,21,0,0,,0,,€3.00m,0.0,0,0,0,0,0,1,0
+Iñigo Lekue,18,0,0,,0,,€1.20m,0.0,0,0,0,0,0,2,2
+Yuri Berchiche,36,5,0,,0,,€1.20m,0.0,5,5,0,0,0,4,0
+Iker Monreal,2,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Yeray Álvarez,2,0,0,,0,,€1.00m,0.0,0,0,0,0,0,0,0
+Unai Egiluz,Not used during this season,0,0,,0,,€600k,,0,0,0,0,0,0,0
+Jon de Luis,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Aimar Duñabeitia,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Ander Izagirre,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Oihan Sancet,36,1,0,,0,,€35.00m,4.0,0,4,2,2,2,4,1
+Mikel Jauregizar,44,2,0,,0,,€35.00m,2.0,0,2,2,0,0,6,1
+Beñat Prados,2,0,1,13/09/2025,49,31/05/2026,€18.00m,0.0,0,0,0,0,0,1,0
+Unai Gómez,32,1,0,,0,,€5.00m,1.0,1,2,1,0,0,1,0
+Alejandro Rego,36,1,0,,0,,€3.00m,1.0,1,2,1,0,0,5,0
+Selton Sánchez,13,1,0,,0,,€3.00m,0.0,1,1,0,0,0,0,0
+Iñigo Ruiz de Galarreta,42,3,0,,0,,€2.50m,1.0,2,3,1,0,0,10,0
+Unai Vencedor,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Mikel Vesga,31,0,0,,0,,€1.50m,0.0,0,0,0,0,0,0,0
+Eder García,2,0,0,,0,,Unknown,0.0,0,0,0,0,0,1,0
+Ibon Sánchez,1,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Nico Williams,30,6,0,,0,,€50.00m,6.0,3,9,5,1,2,2,0
+Iñaki Williams,34,4,0,,0,,€10.00m,2.0,4,6,1,1,1,2,0
+Robert Navarro,39,3,0,,0,,€6.00m,,0,0,0,0,0,0,0
+Álex Berenguer,37,4,0,,0,,€5.00m,2.0,3,5,2,0,0,4,0
+Gorka Guruzeta,43,1,0,,0,,€5.00m,9.0,3,12,8,1,1,6,1
+Maroan Sannadi,10,0,0,,0,,€5.00m,1.0,0,1,1,0,0,2,0
+Nico Serrano,22,0,0,,0,,€1.50m,,0,0,0,0,0,0,0
+Urko Izeta,14,0,0,,0,,€1.50m,0.0,0,0,0,0,0,2,0
+Elijah Gift,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Asier Hierro,4,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Adrián Pérez,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Endika Buján,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0

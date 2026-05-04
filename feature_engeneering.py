@@ -92,25 +92,40 @@ def load_ppda_data():
 def calculate_h2h(df):
     """
     Calculates the historical win percentage of the Home Team against the Away Team.
+    Optimized to run in O(N) using an accumulated state dictionary.
     """
-    df = df.sort_values('Date')
+    df = df.sort_values('Date').copy()
     h2h_win_rates = []
     
-    for i, row in df.iterrows():
-        # Look at all past matches between these exact two teams
-        past_matches = df.iloc[:i]
-        matchups = past_matches[
-            ((past_matches['HomeTeam'] == row['HomeTeam']) & (past_matches['AwayTeam'] == row['AwayTeam'])) |
-            ((past_matches['HomeTeam'] == row['AwayTeam']) & (past_matches['AwayTeam'] == row['HomeTeam']))
-        ]
+    # Store wins and matches as: (team_a, team_b): {'matches': 0, team_a: 0, team_b: 0}
+    # team_a is always the alphabetically first team
+    history = {}
+    
+    for idx, row in df.iterrows():
+        home = row['HomeTeam']
+        away = row['AwayTeam']
+        ftr = row['FTR']
         
-        if len(matchups) == 0:
-            h2h_win_rates.append(0.5) # No history, assume 50/50
+        team_a, team_b = sorted([home, away])
+        key = (team_a, team_b)
+        
+        if key not in history:
+            h2h_win_rates.append(0.5)
+            history[key] = {'matches': 0, team_a: 0, team_b: 0}
         else:
-            # How many times did the current Home Team win?
-            wins = len(matchups[(matchups['HomeTeam'] == row['HomeTeam']) & (matchups['FTR'] == 'H')]) + \
-                   len(matchups[(matchups['AwayTeam'] == row['HomeTeam']) & (matchups['FTR'] == 'A')])
-            h2h_win_rates.append(wins / len(matchups))
+            match_data = history[key]
+            if match_data['matches'] == 0:
+                h2h_win_rates.append(0.5)
+            else:
+                home_wins = match_data[home]
+                h2h_win_rates.append(home_wins / match_data['matches'])
+                
+        # Update history AFTER appending to prevent data leakage
+        history[key]['matches'] += 1
+        if ftr == 'H':
+            history[key][home] += 1
+        elif ftr == 'A':
+            history[key][away] += 1
             
     df['H2H_Home_Win_Rate'] = h2h_win_rates
     return df
@@ -122,19 +137,19 @@ def calculate_ema_form(df, span=5):
     """
     # Create a dataframe to track every team's individual match history
     # Also need opponent shots/corners for Field Tilt calculation
-    home_stats = df[['Date', 'HomeTeam', 'FTHG', 'FTAG', 'HS', 'HST', 'HC', 'AS', 'AC']].rename(
+    home_stats = df[['Date', 'HomeTeam', 'FTHG', 'FTAG', 'HS', 'HST', 'HC', 'AS', 'AST', 'AC']].rename(
         columns={'HomeTeam': 'Team', 'FTHG': 'GoalsScored', 'FTAG': 'GoalsConceded',
                  'HS': 'Shots', 'HST': 'ShotsOnTarget', 'HC': 'Corners',
-                 'AS': 'OppShots', 'AC': 'OppCorners'}
+                 'AS': 'OppShots', 'AST': 'OppShotsOnTarget', 'AC': 'OppCorners'}
     )
     home_stats['IsHome'] = 1
     home_stats['Points'] = np.where(home_stats['GoalsScored'] > home_stats['GoalsConceded'], 3, 
                            np.where(home_stats['GoalsScored'] == home_stats['GoalsConceded'], 1, 0))
 
-    away_stats = df[['Date', 'AwayTeam', 'FTAG', 'FTHG', 'AS', 'AST', 'AC', 'HS', 'HC']].rename(
+    away_stats = df[['Date', 'AwayTeam', 'FTAG', 'FTHG', 'AS', 'AST', 'AC', 'HS', 'HST', 'HC']].rename(
         columns={'AwayTeam': 'Team', 'FTAG': 'GoalsScored', 'FTHG': 'GoalsConceded',
                  'AS': 'Shots', 'AST': 'ShotsOnTarget', 'AC': 'Corners',
-                 'HS': 'OppShots', 'HC': 'OppCorners'}
+                 'HS': 'OppShots', 'HST': 'OppShotsOnTarget', 'HC': 'OppCorners'}
     )
     away_stats['IsHome'] = 0
     away_stats['Points'] = np.where(away_stats['GoalsScored'] > away_stats['GoalsConceded'], 3, 
@@ -164,24 +179,37 @@ def calculate_ema_form(df, span=5):
                                           (shots + corners) / total_activity, 0.5)
 
     # Calculate EMA. The shift(1) is critical: it prevents data leakage
-    team_matches['EMA_Points'] = team_matches.groupby('Team')['Points'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
-    team_matches['EMA_GoalsScored'] = team_matches.groupby('Team')['GoalsScored'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
-    team_matches['EMA_GoalsConceded'] = team_matches.groupby('Team')['GoalsConceded'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
-    team_matches['EMA_GoalDiff'] = team_matches.groupby('Team')['GoalDiff'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
+    # We consolidate the groupby to a single operation for massive speedup
+    cols_to_ema = ['Points', 'GoalsScored', 'GoalsConceded', 'GoalDiff', 
+                   'Shots', 'ShotsOnTarget', 'Corners', 
+                   'OppShots', 'OppShotsOnTarget', 'OppCorners',
+                   'Match_xG', 'Field_Tilt']
+                   
+    for col in cols_to_ema:
+        team_matches[col] = pd.to_numeric(team_matches[col], errors='coerce').fillna(0)
+                   
+    grouped = team_matches.groupby('Team')[cols_to_ema]
+    ema_df = grouped.transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
+    
+    # Assign EMA columns
+    team_matches['EMA_Points'] = ema_df['Points']
+    team_matches['EMA_GoalsScored'] = ema_df['GoalsScored']
+    team_matches['EMA_GoalsConceded'] = ema_df['GoalsConceded']
+    team_matches['EMA_GoalDiff'] = ema_df['GoalDiff']
     
     # Offensive dominance metrics
-    team_matches['EMA_Shots'] = team_matches.groupby('Team')['Shots'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
-    team_matches['EMA_ShotsOnTarget'] = team_matches.groupby('Team')['ShotsOnTarget'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
-    team_matches['EMA_Corners'] = team_matches.groupby('Team')['Corners'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
+    team_matches['EMA_Shots'] = ema_df['Shots']
+    team_matches['EMA_ShotsOnTarget'] = ema_df['ShotsOnTarget']
+    team_matches['EMA_Corners'] = ema_df['Corners']
 
     # Defensive dominance metrics (How much they allow)
-    team_matches['EMA_ShotsConceded'] = team_matches.groupby('Team')['GoalsConceded'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
-    team_matches['EMA_SOTConceded'] = team_matches.groupby('Team')['GoalsConceded'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
-    team_matches['EMA_CornersConceded'] = team_matches.groupby('Team')['GoalsConceded'].transform(lambda x: pd.to_numeric(x, errors='coerce').shift(1).ewm(span=span, adjust=False).mean())
+    team_matches['EMA_ShotsConceded'] = ema_df['OppShots']
+    team_matches['EMA_SOTConceded'] = ema_df['OppShotsOnTarget']
+    team_matches['EMA_CornersConceded'] = ema_df['OppCorners']
 
     # TRUE FORM METRICS: EMA of Match xG and Field Tilt
-    team_matches['EMA_xG_Created'] = team_matches.groupby('Team')['Match_xG'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
-    team_matches['EMA_Field_Tilt'] = team_matches.groupby('Team')['Field_Tilt'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
+    team_matches['EMA_xG_Created'] = ema_df['Match_xG']
+    team_matches['EMA_Field_Tilt'] = ema_df['Field_Tilt']
 
     # Defensve/Offensive reliability
     team_matches['Clean_Sheet'] = np.where(team_matches['GoalsConceded'] == 0, 1, 0)
@@ -210,9 +238,12 @@ def calculate_referee_stats(df, span=20):
     df['Total_Fouls'] = df['HF'] + df['AF']
     
     # Calculate rolling averages per referee
-    # Shift(1) to avoid leakage
-    df['Ref_Avg_Cards'] = df.groupby('Referee')['Total_Cards'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
-    df['Ref_Avg_Fouls'] = df.groupby('Referee')['Total_Fouls'].transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
+    # Shift(1) to avoid leakage. Consolidated groupby for speed.
+    grouped = df.groupby('Referee')[['Total_Cards', 'Total_Fouls']]
+    ema_df = grouped.transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
+    
+    df['Ref_Avg_Cards'] = ema_df['Total_Cards']
+    df['Ref_Avg_Fouls'] = ema_df['Total_Fouls']
     
     # Referee Home Bias: Percentage of home wins
     df['Is_Home_Win'] = np.where(df['FTR'] == 'H', 1, 0)
@@ -371,27 +402,39 @@ def main():
     squad_health['Season'] = '25-26'
 
     # Merge for Home team (by Season + Team)
-    matches = pd.merge(matches, squad_health[['Season', 'Team', 'Missing_Key_Players', 'Missing_Impact_Pct', 'Missing_Goals_Pct']],
+    matches = pd.merge(matches, squad_health[['Season', 'Team', 'Missing_Key_Players', 'Missing_Impact_Pct', 'Missing_Goals_Pct', 'Missing_Assists_Pct', 'Missing_NP_Goals_Pct', 'Missing_Yellows_Pct', 'Missing_Reds_Pct']],
                        left_on=['Season', 'HomeTeam'], right_on=['Season', 'Team'], how='left')
     matches = matches.rename(columns={
         'Missing_Key_Players': 'Home_Missing_Key_Players',
         'Missing_Impact_Pct': 'Home_Missing_Impact_Pct',
-        'Missing_Goals_Pct': 'Home_Missing_Goals_Pct'
+        'Missing_Goals_Pct': 'Home_Missing_Goals_Pct',
+        'Missing_Assists_Pct': 'Home_Missing_Assists_Pct',
+        'Missing_NP_Goals_Pct': 'Home_Missing_NP_Goals_Pct',
+        'Missing_Yellows_Pct': 'Home_Missing_Yellows_Pct',
+        'Missing_Reds_Pct': 'Home_Missing_Reds_Pct'
     }).drop('Team', axis=1)
 
     # Merge for Away team (by Season + Team)
-    matches = pd.merge(matches, squad_health[['Season', 'Team', 'Missing_Key_Players', 'Missing_Impact_Pct', 'Missing_Goals_Pct']],
+    matches = pd.merge(matches, squad_health[['Season', 'Team', 'Missing_Key_Players', 'Missing_Impact_Pct', 'Missing_Goals_Pct', 'Missing_Assists_Pct', 'Missing_NP_Goals_Pct', 'Missing_Yellows_Pct', 'Missing_Reds_Pct']],
                        left_on=['Season', 'AwayTeam'], right_on=['Season', 'Team'], how='left')
     matches = matches.rename(columns={
         'Missing_Key_Players': 'Away_Missing_Key_Players',
         'Missing_Impact_Pct': 'Away_Missing_Impact_Pct',
-        'Missing_Goals_Pct': 'Away_Missing_Goals_Pct'
+        'Missing_Goals_Pct': 'Away_Missing_Goals_Pct',
+        'Missing_Assists_Pct': 'Away_Missing_Assists_Pct',
+        'Missing_NP_Goals_Pct': 'Away_Missing_NP_Goals_Pct',
+        'Missing_Yellows_Pct': 'Away_Missing_Yellows_Pct',
+        'Missing_Reds_Pct': 'Away_Missing_Reds_Pct'
     }).drop('Team', axis=1)
 
     # Fill 0 for teams/seasons without squad health data (all historical seasons)
     for col in ['Home_Missing_Key_Players', 'Away_Missing_Key_Players',
                 'Home_Missing_Impact_Pct', 'Away_Missing_Impact_Pct',
-                'Home_Missing_Goals_Pct', 'Away_Missing_Goals_Pct']:
+                'Home_Missing_Goals_Pct', 'Away_Missing_Goals_Pct',
+                'Home_Missing_Assists_Pct', 'Away_Missing_Assists_Pct',
+                'Home_Missing_NP_Goals_Pct', 'Away_Missing_NP_Goals_Pct',
+                'Home_Missing_Yellows_Pct', 'Away_Missing_Yellows_Pct',
+                'Home_Missing_Reds_Pct', 'Away_Missing_Reds_Pct']:
         matches[col] = matches[col].fillna(0)
 
     # 6. Add Betting Odds Implied Probabilities
@@ -422,6 +465,11 @@ def main():
     matches['Rest_Diff'] = matches['Home_Days_Rest'] - matches['Away_Days_Rest']
     matches['Missing_Key_Diff'] = matches['Home_Missing_Key_Players'] - matches['Away_Missing_Key_Players']
     matches['Missing_Impact_Diff'] = matches['Home_Missing_Impact_Pct'] - matches['Away_Missing_Impact_Pct']
+    matches['Missing_Goals_Diff'] = matches['Home_Missing_Goals_Pct'] - matches['Away_Missing_Goals_Pct']
+    matches['Missing_Assists_Diff'] = matches['Home_Missing_Assists_Pct'] - matches['Away_Missing_Assists_Pct']
+    matches['Missing_NP_Goals_Diff'] = matches['Home_Missing_NP_Goals_Pct'] - matches['Away_Missing_NP_Goals_Pct']
+    matches['Missing_Yellows_Diff'] = matches['Home_Missing_Yellows_Pct'] - matches['Away_Missing_Yellows_Pct']
+    matches['Missing_Reds_Diff'] = matches['Home_Missing_Reds_Pct'] - matches['Away_Missing_Reds_Pct']
     matches['xG_Form_Diff'] = matches['Home_EMA_xG_Created'] - matches['Away_EMA_xG_Created']
     matches['PPDA_Diff'] = matches['Home_PPDA'] - matches['Away_PPDA']
     matches['Tilt_Diff'] = matches['Home_EMA_Field_Tilt'] - matches['Away_EMA_Field_Tilt']
@@ -456,8 +504,14 @@ def main():
         'Home_Missing_Key_Players', 'Away_Missing_Key_Players',
         'Home_Missing_Impact_Pct', 'Away_Missing_Impact_Pct',
         'Home_Missing_Goals_Pct', 'Away_Missing_Goals_Pct',
+        'Home_Missing_Assists_Pct', 'Away_Missing_Assists_Pct',
+        'Home_Missing_NP_Goals_Pct', 'Away_Missing_NP_Goals_Pct',
+        'Home_Missing_Yellows_Pct', 'Away_Missing_Yellows_Pct',
+        'Home_Missing_Reds_Pct', 'Away_Missing_Reds_Pct',
         'Form_Diff', 'Offense_Diff', 'Rest_Diff',
         'Missing_Key_Diff', 'Missing_Impact_Diff',
+        'Missing_Goals_Diff', 'Missing_Assists_Diff',
+        'Missing_NP_Goals_Diff', 'Missing_Yellows_Diff', 'Missing_Reds_Diff',
         'H2H_Home_Win_Rate'
     ]
     

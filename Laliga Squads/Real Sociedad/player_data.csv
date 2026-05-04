@@ -1,44 +1,44 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
-Álex Remiro,35,0,0,,0,,€14.00m
-Aitor Fraga,Not used during this season,0,0,,0,,Unknown
-Unai Marrero,6,0,0,,0,,€600k
-Theo Folgado,Not used during this season,0,0,,0,,Unknown
-Jon Martín,28,0,0,,0,,€20.00m
-Jon Aramburu,38,0,0,,0,,€15.00m
-Sergio Gómez,38,3,0,,0,,€15.00m
-Igor Zubeldia,26,1,0,,0,,€9.00m
-Jon Pacheco,Not used during this season,0,0,,0,,Unknown
-Aihen Muñoz,25,0,0,,0,,€3.50m
-Duje Caleta-Car,29,0,0,,0,,€3.00m
-Hamari Traoré,Not used during this season,0,0,,0,,Unknown
-Aritz Elustondo,17,0,0,,0,,€1.80m
-Álvaro Odriozola,10,0,1,22/02/2026,15,30/11/2026,€800k
-Kazunari Kita,Not used during this season,0,0,,0,,Unknown
-Luken Beitia,2,0,0,,0,,Unknown
-Jon Gorrotxategi,34,3,0,,0,,€25.00m
-Brais Méndez,30,2,0,,0,,€12.00m
-Urko González de Zárate,1,0,0,,0,,Unknown
-Beñat Turrientes,30,4,0,,0,,€10.00m
-Arsen Zakharyan,20,0,0,,0,,€10.00m
-Luka Sucic,23,3,0,,0,,€10.00m
-Yangel Herrera,11,1,0,,0,,€9.00m
-Pablo Marín,35,1,0,,0,,€8.00m
-Carlos Soler,35,3,0,,0,,€8.00m
-Mikel Goti,6,0,0,,0,,Unknown
-Tomy Carbonell,Not used during this season,0,0,,0,,Unknown
-Ibai Aguirre,1,0,0,,0,,Unknown
-Alex Lebarbier,Not used during this season,0,0,,0,,Unknown
-Takefusa Kubo,24,4,0,,0,,€30.00m
-Mikel Oyarzabal,35,3,0,,0,,€25.00m
-Ander Barrenetxea,31,5,0,,0,,€18.00m
-Orri Óskarsson,21,0,0,,0,,€12.00m
-Gonçalo Guedes,38,8,0,,0,,€6.00m
-Wesley,4,0,0,,0,,€5.00m
-Umar Sadiq,7,2,0,,0,,Unknown
-Gorka Carrera,2,0,0,,0,,Unknown
-Dani Díaz,2,0,0,,0,,Unknown
-Lander Astiazaran,2,0,0,,0,,Unknown
-Alex Marchal,Not used during this season,0,0,,0,,Unknown
-Jon Karrikaburu,8,0,0,,0,,€2.00m
-Arkaitz Mariezkurrena,1,0,0,,0,,Unknown
-Job Ochieng,2,0,0,,0,,Unknown
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR
+Álex Remiro,35,0,0,,0,,€14.00m,0.0,0,0,0,0,0,1,0
+Aitor Fraga,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Unai Marrero,6,0,0,,0,,€600k,,0,0,0,0,0,0,0
+Theo Folgado,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Jon Martín,28,0,0,,0,,€20.00m,1.0,0,1,1,0,0,5,0
+Jon Aramburu,38,0,0,,0,,€15.00m,1.0,0,1,1,0,0,9,0
+Sergio Gómez,38,3,0,,0,,€15.00m,0.0,3,3,0,0,0,3,1
+Igor Zubeldia,26,1,0,,0,,€9.00m,0.0,1,1,0,0,0,8,0
+Jon Pacheco,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Aihen Muñoz,25,0,0,,0,,€3.50m,0.0,0,0,0,0,0,1,0
+Duje Caleta-Car,29,0,0,,0,,€3.00m,,0,0,0,0,0,0,0
+Hamari Traoré,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Aritz Elustondo,17,0,0,,0,,€1.80m,0.0,0,0,0,0,0,0,0
+Álvaro Odriozola,10,0,1,22/02/2026,15,30/11/2026,€800k,1.0,0,1,1,0,0,0,0
+Kazunari Kita,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Luken Beitia,2,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Jon Gorrotxategi,34,3,0,,0,,€25.00m,1.0,3,4,1,0,0,7,0
+Brais Méndez,30,2,0,,0,,€12.00m,6.0,2,8,5,1,2,4,1
+Urko González de Zárate,1,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Beñat Turrientes,30,4,0,,0,,€10.00m,0.0,3,3,0,0,0,5,0
+Arsen Zakharyan,20,0,0,,0,,€10.00m,0.0,0,0,0,0,0,1,0
+Luka Sucic,23,3,0,,0,,€10.00m,,0,0,0,0,0,0,0
+Yangel Herrera,11,1,0,,0,,€9.00m,0.0,0,0,0,0,0,1,0
+Pablo Marín,35,1,0,,0,,€8.00m,0.0,1,1,0,0,0,2,0
+Carlos Soler,35,3,0,,0,,€8.00m,4.0,3,7,4,0,0,3,1
+Mikel Goti,6,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Tomy Carbonell,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Ibai Aguirre,1,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Alex Lebarbier,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Takefusa Kubo,24,4,0,,0,,€30.00m,2.0,4,6,2,0,0,2,0
+Mikel Oyarzabal,35,3,0,,0,,€25.00m,14.0,3,17,8,6,6,2,0
+Ander Barrenetxea,31,5,0,,0,,€18.00m,3.0,5,8,3,0,0,3,0
+Orri Óskarsson,21,0,0,,0,,€12.00m,6.0,0,6,6,0,0,4,0
+Gonçalo Guedes,38,8,0,,0,,€6.00m,8.0,4,12,8,0,0,3,0
+Wesley,4,0,0,,0,,€5.00m,0.0,0,0,0,0,0,0,0
+Umar Sadiq,7,2,0,,0,,Unknown,0.0,0,0,0,0,0,1,0
+Gorka Carrera,2,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Dani Díaz,2,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Lander Astiazaran,2,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Alex Marchal,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Jon Karrikaburu,8,0,0,,0,,€2.00m,0.0,0,0,0,0,0,0,0
+Arkaitz Mariezkurrena,1,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Job Ochieng,2,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0

@@ -1,45 +1,45 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
-Jan Oblak,39,1,0,,0,,€17.00m
-Juan Musso,15,0,0,,0,,€3.00m
-Salvi Esquivel,Not used during this season,0,0,,0,,Unknown
-Mario de Luis,Not used during this season,0,0,,0,,Unknown
-Álvaro Moreno,Not used during this season,0,0,,0,,Unknown
-Dávid Hancko,43,3,1,08/04/2026,7,Unknown,€35.00m
-Marc Pubill,30,1,0,,0,,€28.00m
-Robin Le Normand,40,1,0,,0,,€25.00m
-Marcos Llorente,44,6,0,,0,,€22.00m
-Matteo Ruggeri,41,7,0,,0,,€20.00m
-Nahuel Molina,42,4,0,,0,,€15.00m
-José María Giménez,24,1,1,07/04/2026,7,Unknown,€12.00m
-Clément Lenglet,20,1,0,,0,,€5.00m
-Javi Galán,7,1,0,,0,,Unknown
-Julio Díaz,3,1,0,,0,,Unknown
-Aleksa Puric,Not used during this season,0,0,,0,,Unknown
-Javier Boñar,2,0,0,,0,,Unknown
-Ilias Kostis,Not used during this season,0,0,,0,,Unknown
-Dani Martinez,1,0,0,,0,,Unknown
-Gerónimo Spina,Not used during this season,0,0,,0,,Unknown
-Pablo Barrios,35,3,1,25/04/2026,8,24/05/2026,€60.00m
-Conor Gallagher,27,1,0,,0,,Unknown
-Johnny Cardoso,28,0,0,,0,,€22.00m
-Rodrigo Mendoza,8,1,0,,0,,€20.00m
-Obed Vargas,8,0,0,,0,,€8.00m
-Koke,49,3,0,,0,,€6.00m
-Javi Serrano,Not used during this season,0,0,,0,,Unknown
-Rayane Belaid,1,0,0,,0,,Unknown
-Jano Monserrate,2,0,0,,0,,Unknown
-Javi Morcillo,2,0,0,,0,,Unknown
-Taufik Seidu,1,0,0,,0,,Unknown
-Julián Alvarez,47,9,0,,0,,€90.00m
-Álex Baena,41,3,0,,0,,€45.00m
-Giuliano Simeone,49,8,0,,0,,€40.00m
-Ademola Lookman,18,4,0,,0,,€40.00m
-Nico González,37,0,1,28/04/2026,6,17/05/2026,€24.00m
-Giacomo Raspadori,15,3,0,,0,,Unknown
-Alexander Sørloth,49,1,0,,0,,€20.00m
-Thiago Almada,35,2,0,,0,,€20.00m
-Antoine Griezmann,49,5,0,,0,,€10.00m
-Carlos Martín,2,0,0,,0,,Unknown
-Iker Luque,Not used during this season,0,0,,0,,Unknown
-Miguel Cubo,Not used during this season,0,0,,0,,Unknown
-Sergio Esteban,Not used during this season,0,0,,0,,Unknown
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR
+Jan Oblak,39,1,0,,0,,€17.00m,0.0,0,0,0,0,0,0,0
+Juan Musso,15,0,0,,0,,€3.00m,0.0,0,0,0,0,0,2,0
+Salvi Esquivel,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Mario de Luis,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Álvaro Moreno,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Dávid Hancko,43,3,1,08/04/2026,7,Unknown,€35.00m,0.0,2,2,0,0,0,2,0
+Marc Pubill,30,1,0,,0,,€28.00m,0.0,1,1,0,0,0,1,0
+Robin Le Normand,40,1,0,,0,,€25.00m,1.0,1,2,1,0,0,3,0
+Marcos Llorente,44,6,0,,0,,€22.00m,0.0,4,4,0,0,0,5,0
+Matteo Ruggeri,41,7,0,,0,,€20.00m,0.0,3,3,0,0,0,4,0
+Nahuel Molina,42,4,0,,0,,€15.00m,2.0,2,4,2,0,0,4,0
+José María Giménez,24,1,1,07/04/2026,7,Unknown,€12.00m,0.0,1,1,0,0,0,3,0
+Clément Lenglet,20,1,0,,0,,€5.00m,0.0,1,1,0,0,0,6,1
+Javi Galán,7,1,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Julio Díaz,3,1,0,,0,,Unknown,0.0,1,1,0,0,0,2,0
+Aleksa Puric,Not used during this season,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Javier Boñar,2,0,0,,0,,Unknown,1.0,0,1,1,0,0,0,0
+Ilias Kostis,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Dani Martinez,1,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Gerónimo Spina,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Pablo Barrios,35,3,1,25/04/2026,8,24/05/2026,€60.00m,1.0,1,2,1,0,0,0,0
+Conor Gallagher,27,1,0,,0,,Unknown,2.0,0,2,2,0,0,2,0
+Johnny Cardoso,28,0,0,,0,,€22.00m,0.0,0,0,0,0,0,5,0
+Rodrigo Mendoza,8,1,0,,0,,€20.00m,0.0,1,1,0,0,0,2,0
+Obed Vargas,8,0,0,,0,,€8.00m,0.0,1,1,0,0,0,2,0
+Koke,49,3,0,,0,,€6.00m,2.0,2,4,2,0,0,5,0
+Javi Serrano,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Rayane Belaid,1,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Jano Monserrate,2,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Javi Morcillo,2,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,1
+Taufik Seidu,1,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,1
+Julián Alvarez,47,9,0,,0,,€90.00m,8.0,4,12,6,2,3,2,0
+Álex Baena,41,3,0,,0,,€45.00m,2.0,3,5,2,0,0,4,0
+Giuliano Simeone,49,8,0,,0,,€40.00m,4.0,6,10,4,0,0,1,0
+Ademola Lookman,18,4,0,,0,,€40.00m,2.0,0,2,2,0,0,1,0
+Nico González,37,0,1,28/04/2026,6,17/05/2026,€24.00m,5.0,0,5,5,0,0,4,1
+Giacomo Raspadori,15,3,0,,0,,Unknown,0.0,1,1,0,0,0,1,0
+Alexander Sørloth,49,1,0,,0,,€20.00m,12.0,0,12,12,0,0,4,1
+Thiago Almada,35,2,0,,0,,€20.00m,3.0,1,4,3,0,0,2,1
+Antoine Griezmann,49,5,0,,0,,€10.00m,7.0,2,9,7,0,0,1,0
+Carlos Martín,2,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Iker Luque,Not used during this season,0,0,,0,,Unknown,1.0,0,1,1,0,0,0,0
+Miguel Cubo,Not used during this season,0,0,,0,,Unknown,1.0,0,1,1,0,0,0,0
+Sergio Esteban,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0

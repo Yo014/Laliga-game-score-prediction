@@ -1,43 +1,43 @@
-Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value
-Thibaut Courtois,41,2,1,17/03/2026,8,01/05/2026,€18.00m
-Andriy Lunin,11,0,0,,0,,€15.00m
-Fran González,Not used during this season,0,0,,0,,€3.00m
-Sergio Mestre,Not used during this season,0,0,,0,,Unknown
-Javi Navarro,Not used during this season,0,0,,0,,Unknown
-Trent Alexander-Arnold,26,5,0,,0,,€65.00m
-Dean Huijsen,37,2,0,,0,,€65.00m
-Álvaro Carreras,38,2,0,,0,,€60.00m
-Éder Militão,21,1,1,21/04/2026,7,01/09/2026,€25.00m
-Raúl Asencio,31,1,0,,0,,€25.00m
-Fran García,20,1,0,,0,,€12.00m
-Antonio Rüdiger,23,0,0,,0,,€9.00m
-Daniel Carvajal,20,0,0,,0,,€6.00m
-Ferland Mendy,8,0,0,,0,,€6.00m
-David Jiménez,4,0,0,,0,,Unknown
-Joan Martínez,Not used during this season,0,0,,0,,Unknown
-Víctor Valdepeñas,1,0,0,,0,,Unknown
-Diego Aguado,1,0,0,,0,,Unknown
-David Alaba,14,0,0,,0,,€3.50m
-Jesús Fortea,Not used during this season,0,0,,0,,Unknown
-Lamini Fati,Not used during this season,0,0,,0,,Unknown
-Jude Bellingham,35,4,0,,0,,€140.00m
-Federico Valverde,47,13,0,,0,,€120.00m
-Arda Güler,50,14,1,23/04/2026,6,25/05/2026,€90.00m
-Aurélien Tchouaméni,45,2,0,,0,,€75.00m
-Eduardo Camavinga,39,1,0,,0,,€50.00m
-Thiago Pitarch,12,0,0,,0,,€20.00m
-Dani Ceballos,22,0,0,,0,,€8.00m
-Jorge Cestero,5,0,0,,0,,€7.50m
-César Palacios,4,0,0,,0,,Unknown
-Manuel Ángel,7,0,0,,0,,€5.00m
-Pol Fortuny,Not used during this season,0,0,,0,,Unknown
-Daniel Mesonero,1,0,0,,0,,Unknown
-Kylian Mbappé,41,6,1,25/04/2026,0,Unknown,€200.00m
-Vinicius Junior,49,14,0,,0,,€150.00m
-Rodrygo,27,6,1,03/03/2026,16,30/09/2026,€50.00m
-Franco Mastantuono,30,1,0,,0,,€45.00m
-Endrick,3,0,0,,0,,Unknown
-Brahim Díaz,37,8,0,,0,,€35.00m
-Gonzalo García,34,2,0,,0,,€30.00m
-Daniel Yáñez,1,1,0,,0,,Unknown
-Álvaro Leiva,Not used during this season,0,0,,0,,Unknown
+Player,Appearances,Goals Scored,Injuries,Day Injured,Missed Games,Expected Return,Market Value,Gls,Ast,G+A,G-PK,PK,PKatt,CrdY,CrdR
+Thibaut Courtois,41,2,1,17/03/2026,8,01/05/2026,€18.00m,0.0,0,0,0,0,0,1,0
+Andriy Lunin,11,0,0,,0,,€15.00m,0.0,0,0,0,0,0,0,1
+Fran González,Not used during this season,0,0,,0,,€3.00m,,0,0,0,0,0,0,0
+Sergio Mestre,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Javi Navarro,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Trent Alexander-Arnold,26,5,0,,0,,€65.00m,0.0,4,4,0,0,0,3,0
+Dean Huijsen,37,2,0,,0,,€65.00m,2.0,2,4,2,0,0,7,1
+Álvaro Carreras,38,2,0,,0,,€60.00m,2.0,2,4,2,0,0,5,1
+Éder Militão,21,1,1,21/04/2026,7,01/09/2026,€25.00m,2.0,1,3,2,0,0,2,0
+Raúl Asencio,31,1,0,,0,,€25.00m,2.0,0,2,2,0,0,3,0
+Fran García,20,1,0,,0,,€12.00m,1.0,1,2,1,0,0,2,1
+Antonio Rüdiger,23,0,0,,0,,€9.00m,1.0,0,1,1,0,0,0,0
+Daniel Carvajal,20,0,0,,0,,€6.00m,,0,0,0,0,0,0,0
+Ferland Mendy,8,0,0,,0,,€6.00m,0.0,0,0,0,0,0,0,0
+David Jiménez,4,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Joan Martínez,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Víctor Valdepeñas,1,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Diego Aguado,1,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+David Alaba,14,0,0,,0,,€3.50m,0.0,0,0,0,0,0,1,0
+Jesús Fortea,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Lamini Fati,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Jude Bellingham,35,4,0,,0,,€140.00m,4.0,4,8,4,0,0,1,0
+Federico Valverde,47,13,0,,0,,€120.00m,5.0,8,13,5,0,0,3,1
+Arda Güler,50,14,1,23/04/2026,6,25/05/2026,€90.00m,4.0,9,13,4,0,0,1,0
+Aurélien Tchouaméni,45,2,0,,0,,€75.00m,1.0,0,1,1,0,0,8,0
+Eduardo Camavinga,39,1,0,,0,,€50.00m,1.0,0,1,1,0,0,1,0
+Thiago Pitarch,12,0,0,,0,,€20.00m,0.0,0,0,0,0,0,1,0
+Dani Ceballos,22,0,0,,0,,€8.00m,0.0,0,0,0,0,0,1,0
+Jorge Cestero,5,0,0,,0,,€7.50m,0.0,0,0,0,0,0,0,0
+César Palacios,4,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,0
+Manuel Ángel,7,0,0,,0,,€5.00m,0.0,0,0,0,0,0,0,0
+Pol Fortuny,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Daniel Mesonero,1,0,0,,0,,Unknown,,0,0,0,0,0,0,0
+Kylian Mbappé,41,6,1,25/04/2026,0,Unknown,€200.00m,24.0,4,28,16,8,9,4,0
+Vinicius Junior,49,14,0,,0,,€150.00m,15.0,5,20,11,4,5,8,0
+Rodrygo,27,6,1,03/03/2026,16,30/09/2026,€50.00m,1.0,3,4,1,0,0,3,0
+Franco Mastantuono,30,1,0,,0,,€45.00m,1.0,0,1,1,0,0,5,1
+Endrick,3,0,0,,0,,Unknown,0.0,0,0,0,0,0,0,1
+Brahim Díaz,37,8,0,,0,,€35.00m,0.0,5,5,0,0,0,2,0
+Gonzalo García,34,2,0,,0,,€30.00m,4.0,1,5,4,0,0,2,0
+Daniel Yáñez,1,1,0,,0,,Unknown,0.0,1,1,0,0,0,0,0
+Álvaro Leiva,Not used during this season,0,0,,0,,Unknown,,0,0,0,0,0,0,0
