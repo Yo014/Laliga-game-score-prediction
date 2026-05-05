@@ -1,381 +1,381 @@
-Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,Referee,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR,B365H,B365D,B365A
-15/08/24,Ath Bilbao,Getafe,1,1,D,1,0,H,Alejandro Muñíz,7,9,4,2,15,12,5,6,4,1,0,0,1.48,4.0,8.0
-15/08/24,Betis,Girona,1,1,D,1,0,H,Miguel Ángel Ortiz Arias,19,13,4,2,11,7,4,4,2,0,0,0,2.35,3.4,3.0
-16/08/24,Celta,Alaves,2,1,H,0,1,A,Alejandro Quintero,6,10,4,2,8,23,3,3,3,2,0,0,2.0,3.2,4.1
-16/08/24,Las Palmas,Sevilla,2,2,D,1,1,D,Francisco Hernández,13,16,5,5,12,13,6,3,0,0,0,0,2.8,3.25,2.63
-17/08/24,Osasuna,Leganes,1,1,D,0,1,A,Juan Pulido,16,10,5,4,14,12,6,4,3,2,0,0,1.85,3.3,4.5
-17/08/24,Valencia,Barcelona,1,2,A,1,1,D,Jose Maria Sánchez,6,18,1,8,11,13,3,8,2,3,0,0,4.75,3.8,1.73
-18/08/24,Sociedad,Vallecano,1,2,A,0,0,D,Alejandro Hernández,11,12,5,5,14,21,10,5,2,4,0,0,1.57,3.75,7.0
-18/08/24,Mallorca,Real Madrid,1,1,D,0,1,A,César Soto,12,13,5,4,11,6,8,7,1,0,0,1,8.0,4.2,1.45
-19/08/24,Valladolid,Espanol,1,0,H,1,0,H,Pablo González,12,10,3,2,15,8,3,2,2,2,0,0,2.38,3.0,3.4
-19/08/24,Villarreal,Ath Madrid,2,2,D,2,2,D,Guillermo Cuadra,8,10,3,5,6,10,2,3,1,3,0,0,3.3,3.7,2.1
-23/08/24,Celta,Valencia,3,1,H,2,1,H,José Luis Munuera,7,13,5,5,9,11,4,7,3,0,0,0,2.1,3.4,3.6
-23/08/24,Sevilla,Villarreal,1,2,A,1,1,D,Isidro Díaz de Mera,15,6,9,5,15,7,7,2,3,5,0,0,2.4,3.6,2.8
-24/08/24,Osasuna,Mallorca,1,0,H,0,0,D,Adrián Cordero,15,11,5,2,10,8,5,4,2,1,0,0,2.45,3.1,3.1
-24/08/24,Barcelona,Ath Bilbao,2,1,H,1,1,D,Jesús Gil,13,9,5,2,11,16,5,6,4,5,0,0,1.62,4.2,5.0
-24/08/24,Espanol,Sociedad,0,1,A,0,0,D,Mario Melero,13,8,3,4,14,18,7,4,2,2,0,0,3.9,3.2,2.05
-24/08/24,Getafe,Vallecano,0,0,D,0,0,D,Javier Alberola,12,3,0,1,16,18,3,2,1,2,0,0,2.45,3.0,3.2
-25/08/24,Real Madrid,Valladolid,3,0,H,0,0,D,Víctor García,17,8,9,2,10,15,5,5,1,1,0,0,1.18,7.5,15.0
-25/08/24,Leganes,Las Palmas,2,1,H,0,0,D,Ricardo de Burgos,10,10,5,5,11,10,3,7,1,1,0,0,2.25,3.0,3.6
-25/08/24,Alaves,Betis,0,0,D,0,0,D,Mateo Busquets,3,13,1,3,16,13,3,8,1,4,1,0,2.38,3.1,3.25
-25/08/24,Ath Madrid,Girona,3,0,H,1,0,H,Juan Martínez,11,13,6,5,11,10,1,9,1,3,0,0,1.6,4.1,5.5
-26/08/24,Villarreal,Celta,4,3,H,1,2,A,Miguel Ángel Ortiz Arias,22,18,9,8,8,6,7,4,4,3,0,0,1.91,3.4,3.8
-27/08/24,Mallorca,Sevilla,0,0,D,0,0,D,Alejandro Muñíz,12,16,4,7,15,10,5,9,0,1,0,1,2.38,3.1,3.25
-27/08/24,Vallecano,Barcelona,1,2,A,1,0,H,César Soto,8,22,4,5,17,11,6,6,3,1,0,0,5.25,3.8,1.62
-28/08/24,Ath Bilbao,Valencia,1,0,H,1,0,H,Pablo González,13,2,4,0,14,9,5,3,1,3,0,0,1.62,3.9,5.75
-28/08/24,Valladolid,Leganes,0,0,D,0,0,D,Alejandro Quintero,12,8,2,1,13,19,4,4,1,5,0,0,2.3,3.0,3.6
-28/08/24,Ath Madrid,Espanol,0,0,D,0,0,D,Ricardo de Burgos,24,8,7,1,6,9,9,3,0,2,0,0,1.3,5.25,11.0
-28/08/24,Sociedad,Alaves,1,2,A,1,1,D,Jose Maria Sánchez,8,12,1,5,16,12,8,6,4,4,1,0,1.7,3.5,5.75
-29/08/24,Girona,Osasuna,4,0,H,1,0,H,Francisco Hernández,10,1,5,0,10,9,5,0,0,0,0,0,1.7,4.0,4.33
-29/08/24,Las Palmas,Real Madrid,1,1,D,1,0,H,Mateo Busquets,7,25,3,8,16,13,2,6,0,2,0,0,8.0,5.0,1.38
-31/08/24,Barcelona,Valladolid,7,0,H,3,0,H,Isidro Díaz de Mera,23,5,10,2,6,12,10,1,0,3,0,0,1.25,6.25,10.0
-31/08/24,Ath Bilbao,Ath Madrid,0,1,A,0,0,D,Alejandro Hernández,8,9,1,2,13,9,2,2,3,1,0,0,3.0,3.3,2.38
-31/08/24,Espanol,Vallecano,2,1,H,1,1,D,Adrián Cordero,10,17,5,5,14,16,3,7,3,2,0,0,2.8,3.0,2.8
-31/08/24,Leganes,Mallorca,0,1,A,0,1,A,Mario Melero,4,12,2,3,11,17,1,3,1,3,0,0,2.5,3.0,3.2
-31/08/24,Valencia,Villarreal,1,1,D,1,1,D,Jesús Gil,22,9,6,3,15,11,14,3,3,5,0,1,2.8,3.4,2.45
-01/09/24,Alaves,Las Palmas,2,0,H,1,0,H,Víctor García,15,12,5,7,13,9,6,5,3,0,0,0,1.95,3.4,4.0
-01/09/24,Osasuna,Celta,3,2,H,2,1,H,Juan Martínez,10,12,4,3,19,10,6,3,2,0,0,1,2.45,3.25,3.0
-01/09/24,Sevilla,Girona,0,2,A,0,1,A,Jose Maria Sánchez,16,11,5,4,6,14,7,5,3,2,0,0,2.35,3.8,2.75
-01/09/24,Getafe,Sociedad,0,0,D,0,0,D,José Luis Munuera,16,1,1,0,14,16,4,1,1,1,0,0,3.5,2.9,2.38
-01/09/24,Real Madrid,Betis,2,0,H,0,0,D,Javier Alberola,20,12,8,2,8,16,7,3,2,0,0,0,1.29,5.75,9.5
-13/09/24,Betis,Leganes,2,0,H,0,0,D,Pablo González,14,3,5,0,11,18,11,1,1,2,0,0,1.62,3.7,6.25
-14/09/24,Mallorca,Villarreal,1,2,A,0,1,A,Ricardo de Burgos,10,21,5,4,11,10,7,6,3,3,1,0,2.45,3.4,2.88
-14/09/24,Espanol,Alaves,3,2,H,1,1,D,Juan Pulido,9,19,4,6,17,14,0,5,2,3,0,0,2.63,3.2,2.8
-14/09/24,Sevilla,Getafe,1,0,H,1,0,H,Mateo Busquets,10,15,4,4,19,15,3,4,3,4,1,0,2.2,3.0,3.7
-14/09/24,Sociedad,Real Madrid,0,2,A,0,0,D,Juan Martínez,11,16,2,7,12,9,6,6,4,1,0,0,4.75,3.9,1.67
-15/09/24,Celta,Valladolid,3,1,H,2,0,H,Francisco Hernández,14,6,7,1,14,15,5,3,3,5,0,1,1.67,3.75,5.5
-15/09/24,Girona,Barcelona,1,4,A,0,2,A,Alejandro Muñíz,9,20,4,9,13,4,1,6,3,2,0,1,4.2,3.8,1.8
-15/09/24,Las Palmas,Ath Bilbao,2,3,A,0,2,A,Miguel Ángel Ortiz Arias,15,9,6,4,8,12,9,3,1,2,0,1,3.8,3.4,2.0
-15/09/24,Ath Madrid,Valencia,3,0,H,1,0,H,César Soto,14,5,5,1,10,8,7,3,1,2,0,0,1.33,4.5,11.0
-16/09/24,Vallecano,Osasuna,3,1,H,0,1,A,Alejandro Quintero,17,5,6,2,12,15,7,4,3,2,0,0,2.05,3.1,4.0
-17/09/24,Mallorca,Sociedad,1,0,H,1,0,H,Adri園 Cordero,10,13,4,4,5,10,5,5,1,1,0,0,2.9,2.75,3.0
-18/09/24,Betis,Getafe,2,1,H,0,0,D,Juan Pulido,18,15,8,5,10,20,8,4,3,5,0,0,1.91,3.0,5.0
-19/09/24,Leganes,Ath Bilbao,0,2,A,0,0,D,Francisco Hernández,14,10,3,4,12,11,4,7,3,0,0,0,3.75,3.2,2.05
-20/09/24,Alaves,Sevilla,2,1,H,1,0,H,Javier Alberola,10,8,4,2,11,16,3,5,1,4,0,0,2.15,3.1,3.7
-21/09/24,Valladolid,Sociedad,0,0,D,0,0,D,Guillermo Cuadra,15,14,2,4,15,12,5,7,4,4,0,0,3.9,3.0,2.2
-21/09/24,Osasuna,Las Palmas,2,1,H,1,1,D,Isidro Díaz de Mera,13,11,2,4,14,11,2,4,2,5,0,0,1.9,3.4,4.2
-21/09/24,Valencia,Girona,2,0,H,0,0,D,Alejandro Hernández,7,8,2,3,13,10,5,4,3,2,0,0,2.88,3.3,2.5
-21/09/24,Real Madrid,Espanol,4,1,H,0,0,D,José Luis Munuera,31,10,14,2,7,5,9,4,4,3,0,0,1.17,7.0,19.0
-22/09/24,Getafe,Leganes,1,1,D,0,0,D,Adri園 Cordero,12,6,3,3,16,17,6,2,3,2,0,0,2.05,2.8,4.75
-22/09/24,Ath Bilbao,Celta,3,1,H,2,1,H,Jose Maria Sánchez,10,11,7,4,16,11,3,6,3,2,0,0,1.7,3.7,5.25
-22/09/24,Villarreal,Barcelona,1,5,A,1,2,A,Mateo Busquets,13,17,4,10,12,12,7,3,6,1,0,0,3.9,3.9,1.85
-22/09/24,Vallecano,Ath Madrid,1,1,D,1,0,H,Mario Melero,15,10,3,5,9,12,3,4,0,0,0,0,5.0,3.4,1.8
-23/09/24,Betis,Mallorca,1,2,A,1,1,D,Víctor García,14,6,6,6,12,12,6,3,3,2,0,0,1.85,3.3,4.75
-24/09/24,Sevilla,Valladolid,2,1,H,1,0,H,Juan Pulido,22,8,5,2,14,12,6,4,5,4,1,0,1.65,3.8,5.5
-24/09/24,Valencia,Osasuna,0,0,D,0,0,D,Miguel Ángel Ortiz Arias,10,9,2,2,6,11,10,5,2,3,0,0,2.0,3.1,4.0
-24/09/24,Real Madrid,Alaves,3,2,H,2,0,H,Alejandro Muñíz,10,12,4,3,7,10,4,4,4,0,0,0,1.2,6.5,13.0
-25/09/24,Girona,Vallecano,0,0,D,0,0,D,Juan Martínez,11,2,0,0,8,16,4,3,3,4,0,0,1.73,3.7,4.5
-25/09/24,Barcelona,Getafe,1,0,H,1,0,H,Pablo González,16,7,4,1,4,14,7,5,1,1,0,0,1.25,6.25,10.0
-26/09/24,Espanol,Villarreal,1,2,A,1,1,D,Alejandro Quintero,11,15,2,4,12,14,4,1,5,3,0,0,3.25,3.5,2.15
-26/09/24,Las Palmas,Betis,1,1,D,1,1,D,Jose Maria Sánchez,8,14,2,5,21,10,1,4,4,2,0,0,3.1,3.1,2.38
-26/09/24,Celta,Ath Madrid,0,1,A,0,0,D,Víctor García,9,7,4,2,10,7,2,3,2,2,0,0,3.8,3.7,1.91
-27/09/24,Valladolid,Mallorca,1,2,A,0,0,D,José Luis Munuera,11,14,1,6,15,9,7,4,3,2,0,0,3.0,2.9,2.63
-28/09/24,Getafe,Alaves,2,0,H,1,0,H,Isidro Díaz de Mera,14,9,8,1,17,24,2,2,3,6,0,0,2.55,2.88,3.1
-28/09/24,Vallecano,Leganes,1,1,D,1,0,H,Alejandro Muñíz,15,13,6,3,12,7,5,5,2,1,0,0,1.9,3.0,5.0
-28/09/24,Sociedad,Valencia,3,0,H,1,0,H,Javier Alberola,11,9,6,4,7,12,6,4,0,0,0,0,1.85,3.25,4.75
-28/09/24,Osasuna,Barcelona,4,2,H,2,0,H,Guillermo Cuadra,11,12,6,5,13,3,5,8,2,2,0,0,7.0,4.5,1.45
-29/09/24,Celta,Girona,1,1,D,0,1,A,Ricardo de Burgos,12,9,2,4,9,14,4,4,1,0,0,0,2.1,3.6,3.25
-29/09/24,Ath Bilbao,Sevilla,1,1,D,1,0,H,César Soto,13,13,3,4,6,7,4,7,0,3,1,0,1.7,3.7,5.0
-29/09/24,Betis,Espanol,1,0,H,0,0,D,Alejandro Hernández,20,8,12,1,14,20,8,4,2,4,0,0,1.65,3.4,5.75
-29/09/24,Ath Madrid,Real Madrid,1,1,D,0,0,D,Mateo Busquets,12,12,4,4,11,11,5,5,3,1,1,0,2.8,3.3,2.5
-30/09/24,Villarreal,Las Palmas,3,1,H,1,0,H,Mario Melero,17,7,7,3,14,10,3,2,0,3,0,0,1.45,4.33,6.5
-04/10/24,Leganes,Valencia,0,0,D,0,0,D,Alejandro Quintero,8,6,0,1,15,14,1,2,2,2,0,0,2.9,2.88,2.8
-05/10/24,Espanol,Mallorca,2,1,H,1,0,H,Francisco Hernández,8,11,3,4,14,19,4,6,1,5,0,0,3.1,3.0,2.55
-05/10/24,Getafe,Osasuna,1,1,D,1,0,H,Jose Maria Sánchez,11,6,3,2,17,10,4,2,2,4,0,0,2.2,2.9,3.9
-05/10/24,Las Palmas,Celta,0,1,A,0,1,A,Adri園 Cordero,24,8,5,1,9,13,11,2,3,8,0,2,3.1,3.5,2.25
-05/10/24,Valladolid,Vallecano,1,2,A,0,0,D,Pablo González,13,17,5,3,13,18,5,13,4,2,0,0,3.1,3.0,2.5
-05/10/24,Real Madrid,Villarreal,2,0,H,1,0,H,Guillermo Cuadra,11,10,2,1,7,11,2,5,0,1,0,0,1.27,6.25,8.5
-06/10/24,Girona,Ath Bilbao,2,1,H,1,1,D,Juan Pulido,14,13,6,4,12,13,6,1,4,3,0,1,2.35,3.3,3.1
-06/10/24,Alaves,Barcelona,0,3,A,0,3,A,Miguel Ángel Ortiz Arias,11,14,2,8,13,8,11,3,2,2,0,0,5.25,4.5,1.57
-06/10/24,Sevilla,Betis,1,0,H,0,0,D,Juan Martínez,14,11,5,3,15,15,4,1,6,3,1,0,2.45,3.2,3.0
-06/10/24,Sociedad,Ath Madrid,1,1,D,0,1,A,Isidro Díaz de Mera,16,4,8,1,10,9,5,1,0,2,0,0,3.3,3.2,2.3
-18/10/24,Alaves,Valladolid,2,3,A,1,1,D,Mario Melero,10,12,4,4,15,14,5,6,6,2,1,0,1.62,3.9,5.75
-19/10/24,Ath Bilbao,Espanol,4,1,H,3,0,H,Mateo Busquets,10,5,6,2,15,22,5,5,2,3,0,0,1.45,4.2,7.5
-19/10/24,Osasuna,Betis,1,2,A,0,1,A,Alejandro Muñíz,19,11,6,7,12,8,10,2,2,1,0,1,2.5,3.4,2.7
-19/10/24,Girona,Sociedad,0,1,A,0,1,A,César Soto,8,14,3,4,10,12,6,6,2,1,0,0,2.4,3.4,2.88
-19/10/24,Celta,Real Madrid,1,2,A,0,1,A,Alejandro Hernández,13,10,5,3,16,13,6,2,2,1,0,0,4.75,4.5,1.6
-20/10/24,Mallorca,Vallecano,1,0,H,0,0,D,Javier Alberola,19,10,5,2,9,13,9,2,1,1,0,0,2.05,3.1,4.0
-20/10/24,Ath Madrid,Leganes,3,1,H,0,1,A,José Luis Munuera,24,5,9,2,14,8,8,2,5,1,0,0,1.33,4.75,10.0
-20/10/24,Villarreal,Getafe,1,1,D,1,0,H,Víctor García,10,21,4,4,18,21,5,5,4,3,0,0,1.67,3.8,5.0
-20/10/24,Barcelona,Sevilla,5,1,H,3,0,H,Ricardo de Burgos,21,7,9,1,6,14,5,5,1,2,0,0,1.3,5.75,8.0
-21/10/24,Valencia,Las Palmas,2,3,A,1,1,D,Jesús Gil,14,11,7,6,12,12,11,2,4,9,1,0,1.62,3.8,5.5
-25/10/24,Espanol,Sevilla,0,2,A,0,2,A,Miguel Ángel Ortiz Arias,16,6,1,3,14,9,13,2,2,0,0,0,3.0,3.25,2.4
-26/10/24,Valladolid,Villarreal,1,2,A,0,1,A,Francisco Hernández,7,21,3,9,16,13,4,6,4,3,0,0,3.5,3.75,2.0
-26/10/24,Vallecano,Alaves,1,0,H,0,0,D,Adri園 Cordero,16,15,4,7,8,14,6,2,2,4,1,0,2.25,3.1,3.5
-26/10/24,Las Palmas,Girona,1,0,H,1,0,H,Alejandro Quintero,12,8,3,3,12,14,3,5,4,5,0,1,2.88,3.4,2.45
-26/10/24,Real Madrid,Barcelona,0,4,A,0,0,D,Jose Maria Sánchez,9,15,4,7,15,17,10,3,2,5,0,0,2.0,4.1,3.25
-27/10/24,Leganes,Celta,3,0,H,0,0,D,Mario Melero,7,18,4,5,15,17,4,2,2,2,0,0,3.25,3.25,2.3
-27/10/24,Getafe,Valencia,1,1,D,0,1,A,Guillermo Cuadra,15,2,4,1,20,20,8,2,3,7,0,0,2.1,3.1,3.8
-27/10/24,Betis,Ath Madrid,1,0,H,1,0,H,Jesús Gil,24,10,3,3,8,4,3,10,3,2,0,0,3.1,3.4,2.3
-27/10/24,Sociedad,Osasuna,0,2,A,0,2,A,Juan Pulido,19,10,9,4,7,14,14,4,3,4,0,0,1.75,3.6,5.0
-28/10/24,Mallorca,Ath Bilbao,0,0,D,0,0,D,Juan Martínez,4,20,1,1,9,12,1,14,5,1,1,0,2.9,3.1,2.55
-01/11/24,Alaves,Mallorca,1,0,H,0,0,D,Pablo González,13,7,3,2,19,12,7,2,3,2,0,0,2.25,3.0,3.4
-02/11/24,Osasuna,Valladolid,1,0,H,1,0,H,Víctor García,20,7,4,4,21,12,7,2,1,5,0,0,1.6,3.7,6.25
-02/11/24,Girona,Leganes,4,3,H,2,2,D,Mateo Busquets,15,8,6,5,17,15,6,1,2,4,0,0,1.7,3.5,5.5
-03/11/24,Ath Madrid,Las Palmas,2,0,H,1,0,H,Ricardo de Burgos,15,1,3,1,13,13,9,1,1,1,0,0,1.27,6.0,9.5
-03/11/24,Barcelona,Espanol,3,1,H,3,0,H,José Luis Munuera,14,10,9,3,13,14,9,5,0,3,0,0,1.13,9.0,19.0
-03/11/24,Sevilla,Sociedad,0,2,A,0,1,A,Alejandro Muñíz,8,9,0,3,6,17,5,9,2,1,0,0,2.9,3.0,2.63
-03/11/24,Ath Bilbao,Betis,1,1,D,0,0,D,Javier Alberola,17,7,8,4,9,8,6,2,0,0,0,0,1.91,3.5,4.0
-04/11/24,Celta,Getafe,1,0,H,1,0,H,Jesús Gil,10,10,3,2,12,11,0,2,1,4,0,1,1.95,3.2,4.5
-08/11/24,Vallecano,Las Palmas,1,3,A,0,1,A,Francisco Hernández,35,11,7,3,9,13,12,4,1,3,0,0,1.83,3.4,4.5
-09/11/24,Real Madrid,Osasuna,4,0,H,2,0,H,Mario Melero,18,2,8,0,9,16,11,3,0,2,0,0,1.2,7.0,13.0
-09/11/24,Villarreal,Alaves,3,0,H,1,0,H,Alejandro Quintero,13,9,3,3,17,21,7,2,1,3,0,0,1.62,4.0,5.5
-09/11/24,Leganes,Sevilla,1,0,H,0,0,D,Juan Pulido,8,13,4,2,7,10,0,6,2,1,0,1,2.88,3.2,2.55
-10/11/24,Betis,Celta,2,2,D,1,1,D,Miguel Ángel Ortiz Arias,19,3,6,2,12,8,2,0,3,0,0,0,1.95,3.4,4.0
-10/11/24,Mallorca,Ath Madrid,0,1,A,0,0,D,Jose Maria Sánchez,12,9,6,2,10,16,7,2,1,3,0,0,3.6,3.1,2.2
-10/11/24,Getafe,Girona,0,1,A,0,1,A,Juan Martínez,8,3,0,2,25,16,5,2,3,3,0,0,2.45,3.2,3.0
-10/11/24,Valladolid,Ath Bilbao,1,1,D,0,0,D,Adri園 Cordero,6,17,3,1,12,12,5,5,4,4,0,0,4.5,3.4,1.85
-10/11/24,Sociedad,Barcelona,1,0,H,1,0,H,Guillermo Cuadra,14,11,6,0,17,6,7,6,3,1,0,0,4.75,4.1,1.65
-22/11/24,Getafe,Valladolid,2,0,H,0,0,D,Pablo González,12,6,5,3,15,15,3,2,3,2,0,0,1.65,3.4,6.5
-23/11/24,Valencia,Betis,4,2,H,1,1,D,Ricardo de Burgos,11,7,5,3,10,16,2,4,4,2,0,0,3.0,3.0,2.6
-23/11/24,Ath Madrid,Alaves,2,1,H,0,1,A,Víctor García,11,4,8,1,18,19,5,0,3,3,0,0,1.36,4.75,9.0
-23/11/24,Girona,Espanol,4,1,H,4,0,H,Alejandro Hernández,12,9,5,1,4,19,6,3,0,3,0,0,1.67,3.9,5.25
-23/11/24,Las Palmas,Mallorca,2,3,A,0,0,D,Alejandro Muñíz,14,10,3,3,10,18,4,3,4,2,0,1,2.8,3.0,2.7
-23/11/24,Celta,Barcelona,2,2,D,0,1,A,César Soto,15,9,8,4,13,9,5,1,5,5,0,1,4.75,4.33,1.65
-24/11/24,Osasuna,Villarreal,2,2,D,2,0,H,José Luis Munuera,4,17,3,7,12,13,0,8,6,5,0,0,2.55,3.4,2.75
-24/11/24,Sevilla,Vallecano,1,0,H,1,0,H,Mateo Busquets,11,9,3,1,14,14,8,3,2,5,0,1,2.3,3.2,3.3
-24/11/24,Leganes,Real Madrid,0,3,A,0,1,A,Javier Alberola,4,16,0,9,17,11,2,4,2,0,0,0,7.5,4.5,1.42
-24/11/24,Ath Bilbao,Sociedad,1,0,H,1,0,H,Jesús Gil,12,6,4,1,18,9,4,4,3,4,0,0,2.25,3.0,3.6
-29/11/24,Mallorca,Valencia,2,1,H,1,1,D,Alejandro Quintero,9,7,3,1,9,14,3,6,0,0,0,0,2.0,3.0,4.5
-30/11/24,Barcelona,Las Palmas,1,2,A,0,0,D,Adri園 Cordero,27,5,8,3,7,11,7,0,0,0,0,0,1.17,8.5,13.0
-30/11/24,Alaves,Leganes,1,1,D,0,0,D,Isidro Díaz de Mera,18,6,7,3,15,15,13,8,1,4,0,0,1.8,3.4,5.0
-30/11/24,Espanol,Celta,3,1,H,1,0,H,Jose Maria Sánchez,9,16,5,2,13,7,2,5,2,2,0,0,3.3,3.4,2.2
-30/11/24,Valladolid,Ath Madrid,0,5,A,0,3,A,Guillermo Cuadra,9,13,1,9,6,11,3,5,1,2,0,0,6.0,4.2,1.53
-01/12/24,Villarreal,Girona,2,2,D,1,0,H,Miguel Ángel Ortiz Arias,13,13,4,6,8,13,1,5,2,6,0,0,1.83,3.7,4.2
-01/12/24,Real Madrid,Getafe,2,0,H,2,0,H,Alejandro Hernández,13,8,4,3,7,26,5,3,2,6,0,0,1.36,4.5,10.0
-01/12/24,Vallecano,Ath Bilbao,1,2,A,1,0,H,Mario Melero,7,12,4,7,14,8,1,7,3,0,0,0,2.8,3.1,2.7
-01/12/24,Sociedad,Betis,2,0,H,2,0,H,Francisco Hernández,2,7,1,2,28,10,0,4,3,2,0,0,1.8,3.6,4.5
-02/12/24,Sevilla,Osasuna,1,1,D,0,0,D,Juan Martínez,12,7,5,3,11,15,5,1,1,1,0,0,2.1,3.4,3.5
-03/12/24,Mallorca,Barcelona,1,5,A,1,1,D,Jesús Gil,6,20,1,9,13,13,2,5,4,3,0,0,5.75,4.33,1.53
-04/12/24,Ath Bilbao,Real Madrid,2,1,H,0,0,D,Jose Maria Sánchez,9,10,3,5,21,9,5,2,3,3,0,0,3.2,3.3,2.25
-06/12/24,Celta,Mallorca,2,0,H,1,0,H,Ricardo de Burgos,12,9,5,4,9,12,3,3,1,0,0,1,1.85,3.4,4.5
-07/12/24,Las Palmas,Valladolid,2,1,H,1,1,D,Isidro Díaz de Mera,11,9,5,2,17,13,3,3,4,3,0,0,1.8,3.6,4.5
-07/12/24,Betis,Barcelona,2,2,D,0,1,A,Alejandro Muñíz,12,9,6,3,15,14,6,4,1,2,0,0,5.0,4.5,1.57
-07/12/24,Valencia,Vallecano,0,1,A,0,1,A,José Luis Munuera,14,6,6,1,5,12,9,4,2,2,0,0,2.25,2.9,3.75
-07/12/24,Girona,Real Madrid,0,3,A,0,1,A,Jesús Gil,10,10,4,7,6,7,6,3,3,2,0,0,4.5,3.9,1.73
-08/12/24,Leganes,Sociedad,0,3,A,0,1,A,Pablo González,11,15,2,5,12,15,5,3,2,2,0,0,4.75,3.1,1.91
-08/12/24,Ath Bilbao,Villarreal,2,0,H,1,0,H,Víctor García,12,11,4,1,15,10,3,3,2,1,0,0,1.95,3.6,3.8
-08/12/24,Osasuna,Alaves,2,2,D,0,1,A,César Soto,16,6,8,3,13,14,8,3,4,3,0,0,2.05,3.3,3.75
-08/12/24,Ath Madrid,Sevilla,4,3,H,1,2,A,Javier Alberola,14,4,9,3,11,8,5,3,4,3,0,0,1.38,4.75,8.5
-09/12/24,Getafe,Espanol,1,0,H,1,0,H,Mateo Busquets,15,9,6,1,14,15,3,3,3,6,0,0,1.8,3.1,5.75
-13/12/24,Valladolid,Valencia,1,0,H,1,0,H,Miguel Ángel Ortiz Arias,2,14,1,2,10,10,1,7,4,3,1,0,3.1,3.1,2.38
-14/12/24,Espanol,Osasuna,0,0,D,0,0,D,Adri園 Cordero,9,6,3,0,13,13,5,4,3,1,0,0,2.75,3.2,2.6
-14/12/24,Mallorca,Girona,2,1,H,1,1,D,Francisco Hernández,8,13,2,1,10,14,2,4,5,2,1,0,2.3,3.1,3.25
-14/12/24,Sevilla,Celta,1,0,H,0,0,D,Jesús Gil,8,10,3,2,12,9,3,4,7,3,0,0,2.2,3.25,3.3
-14/12/24,Vallecano,Real Madrid,3,3,D,2,2,D,Juan Martínez,14,13,5,6,18,8,4,3,4,2,0,0,6.0,3.8,1.57
-15/12/24,Ath Madrid,Getafe,1,0,H,0,0,D,César Soto,11,7,3,1,13,15,8,3,3,1,0,0,1.4,4.33,9.0
-15/12/24,Alaves,Ath Bilbao,1,1,D,0,1,A,Jose Maria Sánchez,6,9,3,2,14,17,2,4,2,2,0,0,3.6,3.1,2.15
-15/12/24,Sociedad,Las Palmas,0,0,D,0,0,D,Mario Melero,15,9,4,3,17,12,8,6,2,3,0,0,1.4,4.33,8.0
-15/12/24,Villarreal,Betis,1,2,A,0,1,A,Guillermo Cuadra,17,10,4,4,19,10,5,5,5,2,0,1,1.75,3.8,4.33
-15/12/24,Barcelona,Leganes,0,1,A,0,1,A,Alejandro Quintero,20,6,4,4,5,13,8,2,0,2,0,0,1.13,8.0,19.0
-18/12/24,Espanol,Valencia,1,1,D,1,0,H,Pablo González,10,14,3,4,13,11,4,7,1,0,0,0,2.6,3.0,3.0
-18/12/24,Villarreal,Vallecano,1,1,D,1,1,D,Alejandro Hernández,14,18,5,3,10,15,7,7,4,3,1,0,1.8,3.6,4.5
-20/12/24,Girona,Valladolid,3,0,H,2,0,H,Pablo González,23,1,7,1,13,7,9,1,3,1,0,0,1.38,5.0,8.0
-21/12/24,Getafe,Mallorca,0,1,A,0,0,D,José Luis Munuera,18,9,5,2,19,13,3,0,4,3,0,0,2.3,2.75,3.9
-21/12/24,Celta,Sociedad,2,0,H,2,0,H,Mateo Busquets,11,7,7,1,19,13,5,7,3,5,0,0,2.9,3.1,2.6
-21/12/24,Osasuna,Ath Bilbao,1,2,A,1,1,D,Alejandro Quintero,6,13,3,8,10,13,4,4,0,1,0,0,3.9,3.1,2.1
-21/12/24,Barcelona,Ath Madrid,1,2,A,1,0,H,Ricardo de Burgos,19,5,7,4,11,8,11,3,0,3,0,0,1.9,3.8,3.9
-22/12/24,Valencia,Alaves,2,2,D,0,1,A,Javier Alberola,8,11,3,3,20,15,5,4,2,1,0,0,2.25,3.1,3.5
-22/12/24,Real Madrid,Sevilla,4,2,H,3,1,H,Isidro Díaz de Mera,16,10,8,5,5,14,6,6,1,2,0,0,1.33,5.5,9.0
-22/12/24,Las Palmas,Espanol,1,0,H,0,0,D,César Soto,10,9,4,2,9,16,2,2,4,2,0,0,1.85,3.6,4.33
-22/12/24,Leganes,Villarreal,2,5,A,2,2,D,Alejandro Muñíz,5,18,3,9,17,15,1,5,1,2,2,0,4.2,3.4,1.91
-22/12/24,Betis,Vallecano,1,1,D,1,0,H,Víctor García,14,10,5,4,9,14,5,5,0,4,0,0,1.8,3.5,4.75
-03/01/25,Valencia,Real Madrid,1,2,A,1,0,H,César Soto,8,17,5,5,16,9,2,5,2,3,0,1,7.0,4.5,1.42
-10/01/25,Vallecano,Celta,2,1,H,1,1,D,Guillermo Cuadra,8,23,5,7,18,9,3,3,2,3,0,1,2.75,3.1,2.7
-11/01/25,Alaves,Girona,0,1,A,0,0,D,Mateo Busquets,11,3,2,1,16,11,6,3,1,4,0,0,2.75,3.1,2.75
-11/01/25,Valladolid,Betis,1,0,H,0,0,D,Adri園 Cordero,12,14,1,3,21,10,1,8,2,4,0,0,4.5,3.5,1.83
-11/01/25,Espanol,Leganes,1,1,D,1,1,D,Juan Martínez,15,14,5,6,15,19,8,4,2,2,0,1,2.1,3.0,4.0
-11/01/25,Sevilla,Valencia,1,1,D,0,0,D,Francisco Hernández,15,5,5,1,16,8,10,1,1,2,0,0,2.0,3.3,4.0
-12/01/25,Las Palmas,Getafe,1,2,A,0,0,D,Javier Alberola,15,12,7,3,14,17,4,5,2,3,0,0,2.45,2.9,3.3
-12/01/25,Ath Madrid,Osasuna,1,0,H,0,0,D,Isidro Díaz de Mera,9,6,5,1,8,14,4,0,2,0,0,0,1.33,5.0,10.0
-13/01/25,Sociedad,Villarreal,1,0,H,0,0,D,César Soto,6,15,3,5,17,6,3,7,4,2,0,0,2.0,3.3,4.0
-17/01/25,Espanol,Valladolid,2,1,H,1,0,H,Ricardo de Burgos,12,11,4,4,13,16,1,7,2,2,0,0,1.75,3.4,5.25
-18/01/25,Girona,Sevilla,1,2,A,1,0,H,Juan Martínez,7,14,4,6,6,15,7,4,0,4,0,0,1.91,3.5,4.0
-18/01/25,Leganes,Ath Madrid,1,0,H,0,0,D,Mario Melero,9,19,3,4,16,6,2,9,1,3,0,0,7.0,4.0,1.5
-18/01/25,Betis,Alaves,1,3,A,1,1,D,Alejandro Hernández,7,9,2,5,12,24,2,3,4,5,1,0,1.75,3.6,4.75
-18/01/25,Getafe,Barcelona,1,1,D,1,1,D,Pablo González,10,21,4,5,9,9,2,10,3,2,0,0,6.5,4.2,1.5
-19/01/25,Celta,Ath Bilbao,1,2,A,0,0,D,Miguel Ángel Ortiz Arias,3,14,1,6,14,6,3,4,0,0,0,0,2.8,3.2,2.6
-19/01/25,Real Madrid,Las Palmas,4,1,H,3,1,H,Alejandro Quintero,26,6,13,2,11,13,8,2,0,1,0,1,1.14,7.5,17.0
-19/01/25,Osasuna,Vallecano,1,1,D,0,1,A,Alejandro Muñíz,12,8,3,3,9,13,6,3,3,2,0,0,2.15,3.0,3.8
-19/01/25,Valencia,Sociedad,1,0,H,1,0,H,Víctor García,7,9,2,3,10,12,4,7,3,4,0,0,3.1,3.0,2.55
-20/01/25,Villarreal,Mallorca,4,0,H,4,0,H,José Luis Munuera,14,9,7,2,9,12,6,5,1,3,0,0,1.73,3.5,5.25
-24/01/25,Las Palmas,Osasuna,1,1,D,0,0,D,Jesús Gil,16,16,7,4,14,17,4,2,7,8,1,0,2.5,3.1,3.0
-25/01/25,Mallorca,Betis,0,1,A,0,0,D,Javier Alberola,16,8,3,3,12,18,4,4,2,2,1,0,2.25,3.0,3.5
-25/01/25,Ath Madrid,Villarreal,1,1,D,0,1,A,Jose Maria Sánchez,20,11,8,1,10,14,5,6,4,2,0,0,1.7,4.0,4.75
-25/01/25,Sevilla,Espanol,1,1,D,0,1,A,Adri園 Cordero,25,6,4,1,13,14,5,1,1,4,0,0,1.7,3.8,4.75
-25/01/25,Valladolid,Real Madrid,0,3,A,0,1,A,Mateo Busquets,6,20,2,4,11,12,1,7,3,3,1,0,10.0,6.0,1.27
-26/01/25,Vallecano,Girona,2,1,H,0,0,D,Isidro Díaz de Mera,17,12,7,5,19,9,4,1,3,1,0,0,2.75,2.9,2.88
-26/01/25,Sociedad,Getafe,0,3,A,0,0,D,Guillermo Cuadra,13,13,4,4,11,15,5,2,3,6,0,0,1.75,3.4,5.5
-26/01/25,Ath Bilbao,Leganes,0,0,D,0,0,D,Alejandro Hernández,29,5,3,2,10,8,16,1,1,1,0,0,1.38,5.0,7.5
-26/01/25,Barcelona,Valencia,7,1,H,5,0,H,César Soto,22,7,11,2,10,12,14,4,0,1,0,0,1.22,7.5,10.0
-27/01/25,Alaves,Celta,1,1,D,1,0,H,Francisco Hernández,3,5,1,2,15,14,3,4,2,3,0,0,2.63,3.0,3.0
-31/01/25,Leganes,Vallecano,0,1,A,0,0,D,Alejandro Quintero,5,19,1,3,7,19,2,9,2,4,1,0,3.3,3.0,2.38
-01/02/25,Getafe,Sevilla,0,0,D,0,0,D,Ricardo de Burgos,7,13,1,1,15,12,6,5,4,6,0,0,2.45,2.9,3.25
-01/02/25,Villarreal,Valladolid,5,1,H,1,0,H,Isidro Díaz de Mera,22,8,8,2,9,14,3,6,1,2,0,0,1.22,7.0,10.0
-01/02/25,Ath Madrid,Mallorca,2,0,H,1,0,H,Víctor García,17,10,5,1,9,14,10,4,2,3,0,0,1.4,4.33,8.5
-01/02/25,Espanol,Real Madrid,1,0,H,0,0,D,Alejandro Muñíz,5,21,2,7,14,3,1,8,2,0,0,0,9.0,5.75,1.3
-02/02/25,Barcelona,Alaves,1,0,H,0,0,D,José Luis Munuera,11,3,4,0,8,20,5,2,5,2,0,0,1.2,7.5,13.0
-02/02/25,Valencia,Celta,2,1,H,1,0,H,Pablo González,8,3,5,2,9,17,5,2,1,2,0,0,2.3,3.1,3.25
-02/02/25,Osasuna,Sociedad,2,1,H,1,0,H,Miguel Ángel Ortiz Arias,11,13,4,3,10,8,3,5,3,3,0,0,3.0,3.0,2.55
-02/02/25,Betis,Ath Bilbao,2,2,D,2,1,H,Juan Martínez,10,12,6,4,10,20,3,7,3,1,0,0,2.9,3.3,2.45
-03/02/25,Girona,Las Palmas,2,1,H,1,0,H,Mario Melero,12,10,4,2,12,12,11,3,2,2,0,0,1.6,4.2,5.0
-07/02/25,Vallecano,Valladolid,1,0,H,0,0,D,Jesús Gil,20,8,6,3,11,15,4,2,2,2,0,0,1.5,4.1,7.0
-08/02/25,Celta,Betis,3,2,H,0,2,A,Mateo Busquets,14,12,6,5,11,11,4,7,3,5,0,0,2.25,3.4,3.2
-08/02/25,Ath Bilbao,Girona,3,0,H,2,0,H,Jose Maria Sánchez,23,3,8,1,7,12,11,2,0,4,0,0,1.65,4.0,5.0
-08/02/25,Las Palmas,Villarreal,1,2,A,0,0,D,Francisco Hernández,20,9,4,4,12,12,6,5,6,3,0,0,4.75,3.9,1.7
-08/02/25,Real Madrid,Ath Madrid,1,1,D,0,1,A,César Soto,23,10,9,1,14,13,6,1,1,3,0,0,1.85,3.6,4.2
-09/02/25,Alaves,Getafe,0,1,A,0,1,A,Isidro Díaz de Mera,12,4,4,3,16,16,8,3,2,6,0,0,2.3,2.9,3.6
-09/02/25,Valencia,Leganes,2,0,H,2,0,H,Guillermo Cuadra,18,12,4,4,14,9,9,3,1,1,0,0,1.73,3.4,5.5
-09/02/25,Sociedad,Espanol,2,1,H,1,0,H,Javier Alberola,13,4,3,1,11,17,6,0,1,2,0,0,1.6,3.9,5.75
-09/02/25,Sevilla,Barcelona,1,4,A,1,1,D,Alejandro Hernández,8,10,4,6,14,6,5,6,5,2,0,1,5.25,4.5,1.55
-10/02/25,Mallorca,Osasuna,1,1,D,0,0,D,Adri園 Cordero,10,19,2,4,7,11,7,11,1,4,0,0,2.0,3.0,4.33
-14/02/25,Girona,Getafe,1,2,A,0,1,A,Alejandro Quintero,14,10,4,6,11,23,3,3,2,3,1,0,1.95,3.25,4.33
-15/02/25,Leganes,Alaves,3,3,D,2,1,H,Pablo González,8,16,3,7,18,15,3,2,4,5,1,0,3.1,2.9,2.6
-15/02/25,Osasuna,Real Madrid,1,1,D,0,1,A,José Luis Munuera,11,17,4,6,16,7,6,2,3,1,0,1,5.75,4.1,1.57
-15/02/25,Ath Madrid,Celta,1,1,D,0,0,D,Juan Martínez,9,11,3,4,8,18,2,7,3,5,1,0,1.39,4.5,8.0
-15/02/25,Villarreal,Valencia,1,1,D,1,0,H,Ricardo de Burgos,13,12,4,3,6,17,4,5,0,5,0,0,1.5,4.5,5.5
-16/02/25,Espanol,Ath Bilbao,1,1,D,0,0,D,Guillermo Cuadra,12,14,4,4,12,8,2,7,1,1,0,0,5.5,3.4,1.73
-16/02/25,Valladolid,Sevilla,0,4,A,0,2,A,Javier Alberola,7,11,2,6,11,10,3,2,4,2,0,0,4.0,3.4,1.95
-16/02/25,Mallorca,Las Palmas,3,1,H,3,0,H,Miguel Ángel Ortiz Arias,14,9,5,4,7,13,3,5,1,4,0,0,1.73,3.5,5.25
-16/02/25,Betis,Sociedad,3,0,H,0,0,D,Jesús Gil,24,5,8,1,9,15,5,5,0,2,0,2,2.55,3.1,2.9
-17/02/25,Barcelona,Vallecano,1,0,H,1,0,H,Mario Melero,14,9,5,4,11,9,4,5,2,3,0,0,1.22,7.0,11.0
-21/02/25,Celta,Osasuna,1,0,H,0,0,D,Jose Maria Sánchez,12,18,5,1,11,13,5,4,1,0,0,0,1.67,3.75,5.25
-22/02/25,Alaves,Espanol,0,1,A,0,0,D,Juan Pulido,15,9,5,2,13,17,7,0,2,2,0,0,1.8,3.25,5.25
-22/02/25,Vallecano,Villarreal,0,1,A,0,0,D,Víctor García,10,10,5,5,15,12,3,5,1,4,1,0,2.88,3.5,2.38
-22/02/25,Valencia,Ath Madrid,0,3,A,0,2,A,Mateo Busquets,18,11,2,3,18,16,7,0,1,3,0,0,4.2,3.4,1.91
-22/02/25,Las Palmas,Barcelona,0,2,A,0,0,D,Adri園 Cordero,10,15,2,5,13,4,5,3,1,1,0,0,8.5,7.0,1.25
-23/02/25,Ath Bilbao,Valladolid,7,1,H,4,0,H,César Soto,29,5,16,3,10,5,4,4,2,3,0,1,1.17,7.0,19.0
-23/02/25,Real Madrid,Girona,2,0,H,1,0,H,Guillermo Cuadra,22,6,5,2,1,7,11,5,0,2,0,0,1.29,6.25,8.5
-23/02/25,Getafe,Betis,1,2,A,0,1,A,Javier Alberola,10,13,4,6,17,20,2,5,3,0,1,1,2.6,3.1,2.9
-23/02/25,Sociedad,Leganes,3,0,H,1,0,H,Francisco Hernández,12,8,5,2,13,13,3,3,3,3,0,0,1.55,3.75,7.0
-24/02/25,Sevilla,Mallorca,1,1,D,1,0,H,Alejandro Muñíz,19,13,4,2,11,12,4,4,1,3,0,0,2.05,3.2,3.9
-28/02/25,Valladolid,Las Palmas,1,1,D,0,1,A,Ricardo de Burgos,23,4,7,3,11,8,13,4,2,1,0,1,3.1,3.2,2.4
-01/03/25,Girona,Celta,2,2,D,1,1,D,Miguel Ángel Ortiz Arias,9,10,6,6,8,17,4,2,0,0,0,0,2.2,3.5,3.25
-01/03/25,Vallecano,Sevilla,1,1,D,0,0,D,Pablo González,20,10,8,5,14,9,6,6,1,0,0,0,2.3,3.2,3.3
-01/03/25,Betis,Real Madrid,2,1,H,1,1,D,Alejandro Hernández,18,9,3,2,17,12,9,2,3,4,0,0,4.33,4.0,1.73
-01/03/25,Ath Madrid,Ath Bilbao,1,0,H,0,0,D,Jesús Gil,12,15,4,3,7,8,6,2,2,3,0,0,2.05,3.5,3.6
-02/03/25,Leganes,Getafe,1,0,H,0,0,D,Alejandro Muñíz,5,9,1,0,15,15,2,6,1,1,0,0,3.1,2.88,2.6
-02/03/25,Barcelona,Sociedad,4,0,H,2,0,H,Alejandro Quintero,33,0,10,0,15,6,12,0,0,0,0,1,1.25,5.75,12.0
-02/03/25,Mallorca,Alaves,1,1,D,1,0,H,César Soto,15,19,4,7,20,14,3,9,0,2,0,0,2.25,3.1,3.5
-02/03/25,Osasuna,Valencia,3,3,D,3,2,H,Mario Melero,12,12,5,5,10,7,3,3,2,1,0,0,2.3,3.2,3.3
-08/03/25,Celta,Leganes,2,1,H,2,1,H,Isidro Díaz de Mera,7,12,4,6,10,9,2,5,3,2,0,0,1.55,3.8,7.0
-08/03/25,Alaves,Villarreal,1,0,H,1,0,H,Miguel Ángel Ortiz Arias,5,24,3,2,11,13,1,6,3,1,2,0,3.1,3.25,2.38
-08/03/25,Valencia,Valladolid,2,1,H,1,1,D,Juan Pulido,17,11,4,4,11,10,5,4,1,3,0,0,1.38,4.5,9.0
-09/03/25,Getafe,Ath Madrid,2,1,H,0,0,D,Guillermo Cuadra,11,4,3,2,10,14,4,4,6,2,0,1,4.5,3.1,1.95
-09/03/25,Real Madrid,Vallecano,2,1,H,2,1,H,Francisco Hernández,10,20,5,6,12,17,4,6,3,1,0,0,1.29,5.75,9.5
-09/03/25,Ath Bilbao,Mallorca,1,1,D,0,0,D,Alejandro Hernández,8,9,2,2,6,13,3,3,1,3,0,0,1.62,3.7,6.0
-09/03/25,Betis,Las Palmas,1,0,H,0,0,D,Jose Maria Sánchez,14,8,6,1,12,14,11,1,2,8,0,1,1.42,4.5,7.5
-09/03/25,Sociedad,Sevilla,0,1,A,0,0,D,Víctor García,7,9,2,4,14,12,6,3,2,1,0,0,2.2,3.2,3.5
-10/03/25,Espanol,Girona,1,1,D,0,0,D,Adri園 Cordero,7,18,4,4,11,13,4,9,3,3,0,0,3.1,3.2,2.4
-14/03/25,Las Palmas,Alaves,2,2,D,0,1,A,Mario Melero,14,9,7,3,10,22,4,5,5,5,0,0,2.88,3.0,2.75
-15/03/25,Valladolid,Celta,0,1,A,0,0,D,Víctor García,5,10,2,1,9,15,3,4,3,3,0,0,5.0,3.8,1.63
-15/03/25,Mallorca,Espanol,2,1,H,0,0,D,Alejandro Quintero,20,2,7,0,10,12,6,2,0,2,0,0,1.77,3.3,5.0
-15/03/25,Villarreal,Real Madrid,1,2,A,1,2,A,Jesús Gil,23,9,10,5,17,3,11,4,2,1,0,0,3.1,3.75,2.15
-15/03/25,Girona,Valencia,1,1,D,0,0,D,José Luis Munuera,14,12,4,2,12,5,9,4,2,1,0,0,1.92,3.5,3.9
-16/03/25,Leganes,Betis,2,3,A,2,0,H,César Soto,10,21,4,6,16,5,3,7,2,1,0,0,3.8,3.3,2.05
-16/03/25,Sevilla,Ath Bilbao,0,1,A,0,0,D,Juan Pulido,11,9,4,4,13,12,4,6,4,2,0,0,2.9,3.2,2.5
-16/03/25,Osasuna,Getafe,1,2,A,1,0,H,Alejandro Hernández,12,7,4,4,19,15,3,2,2,3,0,1,2.25,2.88,3.8
-16/03/25,Vallecano,Sociedad,2,2,D,0,1,A,Alejandro Muñíz,10,8,5,4,16,9,4,4,3,2,0,0,2.5,3.0,3.1
-16/03/25,Ath Madrid,Barcelona,2,4,A,1,0,H,Ricardo de Burgos,7,13,2,6,10,11,6,6,1,3,0,0,3.1,3.6,2.2
-27/03/25,Barcelona,Osasuna,3,0,H,2,0,H,Mateo Busquets,19,4,5,0,7,14,8,4,1,3,0,0,1.29,7.0,7.0
-29/03/25,Sociedad,Valladolid,2,1,H,1,0,H,Adri園 Cordero,12,12,2,5,20,10,3,6,2,3,0,0,1.33,4.75,11.0
-29/03/25,Espanol,Ath Madrid,1,1,D,0,1,A,Javier Alberola,8,13,1,2,12,14,4,3,2,1,0,0,5.5,3.75,1.62
-29/03/25,Alaves,Vallecano,0,2,A,0,1,A,José Luis Munuera,12,11,4,5,14,12,8,5,3,5,0,0,2.15,2.9,4.1
-29/03/25,Real Madrid,Leganes,3,2,H,1,2,A,Pablo González,24,10,10,4,9,13,8,3,1,4,0,0,1.14,8.0,17.0
-30/03/25,Getafe,Villarreal,1,2,A,1,2,A,Isidro Díaz de Mera,11,9,4,3,16,21,3,1,1,4,0,0,3.25,3.1,2.35
-30/03/25,Barcelona,Girona,4,1,H,1,0,H,Juan Pulido,21,4,9,2,8,11,10,2,0,1,0,0,1.25,6.5,10.0
-30/03/25,Ath Bilbao,Osasuna,0,0,D,0,0,D,Guillermo Cuadra,11,5,5,2,12,12,3,4,1,1,0,0,1.45,4.1,7.0
-30/03/25,Valencia,Mallorca,1,0,H,0,0,D,Francisco Hernández,8,8,2,2,16,15,4,5,5,5,0,0,2.15,3.1,3.75
-30/03/25,Betis,Sevilla,2,1,H,2,1,H,Mateo Busquets,11,6,3,2,10,22,2,2,4,4,0,0,1.83,3.5,4.33
-31/03/25,Celta,Las Palmas,1,1,D,1,0,H,Juan Martínez,19,4,7,2,17,5,4,2,3,0,0,0,1.57,4.1,5.5
-04/04/25,Vallecano,Espanol,0,4,A,0,2,A,Alejandro Hernández,16,15,5,7,8,10,8,4,2,2,0,0,1.65,3.5,6.0
-05/04/25,Girona,Alaves,0,1,A,0,0,D,Alejandro Muñíz,11,14,6,3,9,16,1,5,1,4,0,0,2.05,3.4,3.6
-05/04/25,Real Madrid,Valencia,1,2,A,0,1,A,Guillermo Cuadra,21,10,9,2,10,13,9,4,0,4,0,0,1.3,5.75,8.5
-05/04/25,Mallorca,Celta,1,2,A,1,0,H,Ricardo de Burgos,7,10,2,4,9,11,4,2,3,0,0,0,2.63,3.2,2.8
-05/04/25,Barcelona,Betis,1,1,D,1,1,D,Jesús Gil,13,6,5,2,16,12,9,3,2,1,0,0,1.36,5.5,7.0
-06/04/25,Las Palmas,Sociedad,1,3,A,0,1,A,Miguel Ángel Ortiz Arias,13,13,5,8,7,10,5,4,0,2,0,0,3.2,3.2,2.35
-06/04/25,Sevilla,Ath Madrid,1,2,A,1,1,D,César Soto,11,13,6,5,14,12,7,7,1,4,0,0,3.5,3.2,2.2
-06/04/25,Valladolid,Getafe,0,4,A,0,3,A,Alejandro Quintero,5,16,0,9,11,17,3,4,3,1,1,0,4.75,3.1,1.9
-06/04/25,Villarreal,Ath Bilbao,0,0,D,0,0,D,Mario Melero,12,11,4,2,9,13,6,5,0,1,1,0,2.2,3.3,3.25
-07/04/25,Leganes,Osasuna,1,1,D,0,0,D,Víctor García,13,14,7,6,18,14,4,8,3,3,0,0,2.7,3.1,2.75
-11/04/25,Valencia,Sevilla,1,0,H,1,0,H,Jose Maria Sánchez,8,12,6,5,10,18,3,3,3,2,0,0,2.3,3.1,3.4
-12/04/25,Sociedad,Mallorca,0,2,A,0,1,A,José Luis Munuera,15,7,4,3,11,12,8,2,3,1,0,0,1.75,3.4,5.5
-12/04/25,Getafe,Las Palmas,1,3,A,1,0,H,Javier Alberola,11,10,6,5,14,15,3,2,0,2,1,0,1.75,3.3,5.5
-12/04/25,Celta,Espanol,0,2,A,0,1,A,Mateo Busquets,16,5,6,3,14,10,13,5,2,2,0,0,1.62,3.7,6.0
-12/04/25,Leganes,Barcelona,0,1,A,0,0,D,Francisco Hernández,6,12,1,3,10,4,4,8,2,1,0,0,8.5,6.0,1.3
-13/04/25,Osasuna,Girona,2,1,H,1,0,H,Pablo González,13,18,6,8,17,15,4,4,2,0,0,0,2.45,3.2,3.1
-13/04/25,Alaves,Real Madrid,0,1,A,0,1,A,César Soto,13,11,6,4,21,12,4,4,4,4,1,1,5.25,4.1,1.62
-13/04/25,Betis,Villarreal,1,2,A,1,1,D,Juan Pulido,24,8,5,2,4,13,5,5,0,4,0,0,2.35,3.3,3.1
-13/04/25,Ath Bilbao,Vallecano,3,1,H,0,1,A,Adri園 Cordero,13,11,4,3,12,7,7,1,4,3,0,0,1.75,3.4,5.5
-14/04/25,Ath Madrid,Valladolid,4,2,H,2,1,H,Isidro Díaz de Mera,24,6,9,3,11,8,5,1,1,1,0,0,1.14,8.0,19.0
-18/04/25,Espanol,Getafe,1,0,H,1,0,H,Ricardo de Burgos,9,9,3,4,12,15,6,8,0,2,0,1,2.88,2.63,3.0
-19/04/25,Vallecano,Valencia,1,1,D,1,0,H,Alejandro Quintero,11,10,4,3,18,13,5,2,3,1,0,0,2.25,3.0,3.4
-19/04/25,Barcelona,Celta,4,3,H,1,1,D,Mario Melero,18,11,6,8,10,13,4,1,2,2,0,0,1.3,5.75,8.0
-19/04/25,Mallorca,Leganes,0,0,D,0,0,D,Alejandro Muñíz,11,15,1,1,17,15,4,4,2,1,0,0,1.85,3.1,5.0
-19/04/25,Las Palmas,Ath Madrid,1,0,H,0,0,D,Víctor García,8,7,2,2,13,13,4,4,3,1,0,0,5.75,4.2,1.55
-20/04/25,Valladolid,Osasuna,2,3,A,0,2,A,Jesús Gil,12,11,5,6,12,17,5,2,2,0,0,0,4.5,3.4,1.83
-20/04/25,Villarreal,Sociedad,2,2,D,1,1,D,Guillermo Cuadra,20,4,5,4,12,12,10,4,5,1,0,0,1.7,3.7,5.0
-20/04/25,Sevilla,Alaves,1,1,D,1,1,D,Miguel Ángel Ortiz Arias,10,11,2,3,10,11,3,6,2,2,0,0,2.0,3.1,4.2
-20/04/25,Real Madrid,Ath Bilbao,1,0,H,0,0,D,Juan Martínez,22,3,7,1,7,15,14,1,1,2,0,0,1.65,3.9,5.25
-21/04/25,Girona,Betis,1,3,A,0,3,A,Alejandro Hernández,11,17,5,9,13,11,8,9,3,2,0,0,2.88,3.3,2.45
-22/04/25,Valencia,Espanol,1,1,D,0,1,A,Juan Pulido,16,8,7,3,7,7,6,4,2,1,0,0,1.95,3.3,4.1
-22/04/25,Barcelona,Mallorca,1,0,H,0,0,D,Miguel Ángel Ortiz Arias,40,4,13,0,10,7,13,2,0,1,0,0,1.2,7.0,13.0
-23/04/25,Ath Bilbao,Las Palmas,1,0,H,1,0,H,Isidro Díaz de Mera,13,10,4,2,13,9,3,3,1,3,0,0,1.36,5.25,7.0
-23/04/25,Celta,Villarreal,3,0,H,1,0,H,Javier Alberola,21,4,9,1,16,10,6,3,2,1,0,1,2.5,3.4,2.8
-23/04/25,Alaves,Sociedad,1,0,H,0,0,D,Mateo Busquets,10,6,1,0,17,17,6,6,4,5,0,0,2.35,3.0,3.4
-23/04/25,Getafe,Real Madrid,0,1,A,0,1,A,Jose Maria Sánchez,20,14,6,7,15,7,4,4,3,1,0,0,4.75,3.6,1.75
-24/04/25,Leganes,Girona,1,1,D,0,0,D,José Luis Munuera,7,8,1,3,16,18,4,5,4,2,1,0,2.75,3.1,2.75
-24/04/25,Osasuna,Sevilla,1,0,H,1,0,H,Adri園 Cordero,9,12,2,3,14,13,4,4,4,2,0,1,2.5,3.0,3.2
-24/04/25,Ath Madrid,Vallecano,3,0,H,2,0,H,Pablo González,10,12,5,5,8,15,6,3,0,2,0,0,1.53,4.0,6.5
-24/04/25,Betis,Valladolid,5,1,H,1,1,D,Francisco Hernández,16,10,6,5,7,7,4,4,1,0,0,0,1.2,7.0,13.0
-27/04/25,Villarreal,Espanol,1,0,H,0,0,D,José Luis Munuera,14,12,5,1,19,11,8,6,4,0,0,0,1.44,5.0,6.25
-02/05/25,Vallecano,Getafe,1,0,H,1,0,H,Víctor García,13,12,8,1,12,13,7,3,3,2,0,1,2.38,3.0,3.4
-03/05/25,Alaves,Ath Madrid,0,0,D,0,0,D,Juan Martínez,8,9,2,2,18,13,3,5,3,2,0,0,3.7,3.1,2.15
-03/05/25,Villarreal,Osasuna,4,2,H,3,0,H,Alejandro Quintero,15,11,5,4,10,18,2,8,4,1,0,0,1.53,4.2,6.0
-03/05/25,Las Palmas,Valencia,2,3,A,1,1,D,Ricardo de Burgos,15,10,3,5,12,6,9,5,1,1,0,0,2.63,3.3,2.7
-03/05/25,Valladolid,Barcelona,1,2,A,1,0,H,Alejandro Muñíz,5,24,4,7,12,15,4,8,3,2,0,0,15.0,8.0,1.14
-04/05/25,Real Madrid,Celta,3,2,H,2,0,H,Jesús Gil,17,14,6,7,5,11,4,6,2,1,0,0,1.33,5.75,7.0
-04/05/25,Sevilla,Leganes,2,2,D,1,1,D,Alejandro Hernández,25,9,7,3,17,12,8,2,4,5,0,0,1.77,3.5,4.75
-04/05/25,Espanol,Betis,1,2,A,1,0,H,Guillermo Cuadra,11,20,5,10,16,10,3,7,2,0,0,0,3.3,3.0,2.38
-04/05/25,Sociedad,Ath Bilbao,0,0,D,0,0,D,César Soto,12,3,3,1,18,13,7,3,1,2,0,0,2.55,3.0,3.0
-05/05/25,Girona,Mallorca,1,0,H,1,0,H,Mario Melero,13,9,6,1,11,14,5,2,0,2,0,0,2.0,3.1,4.2
-09/05/25,Las Palmas,Vallecano,0,1,A,0,0,D,Francisco Hernández,11,16,2,5,8,9,8,8,2,3,0,0,2.45,3.25,3.0
-10/05/25,Valencia,Getafe,3,0,H,3,0,H,Adri園 Cordero,10,10,6,3,17,20,2,6,3,5,0,0,2.0,3.0,4.33
-10/05/25,Celta,Sevilla,3,2,H,1,1,D,Pablo González,8,19,4,10,11,16,3,6,0,2,1,0,1.8,3.6,4.5
-10/05/25,Girona,Villarreal,0,1,A,0,0,D,Isidro Díaz de Mera,7,14,0,5,13,10,5,3,2,3,0,0,3.1,3.8,2.1
-10/05/25,Mallorca,Valladolid,2,1,H,1,1,D,Juan Pulido,12,16,4,7,16,12,5,10,2,1,0,0,1.33,5.25,9.0
-10/05/25,Ath Madrid,Sociedad,4,0,H,4,0,H,Jose Maria Sánchez,13,6,7,1,7,12,3,3,0,1,0,0,1.67,3.7,5.0
-11/05/25,Leganes,Espanol,3,2,H,2,0,H,Javier Alberola,13,12,5,6,14,18,3,8,2,2,0,0,2.4,3.0,3.2
-11/05/25,Barcelona,Real Madrid,4,3,H,4,2,H,Alejandro Hernández,23,9,9,5,17,15,10,2,4,3,0,0,1.9,3.7,3.2
-11/05/25,Ath Bilbao,Alaves,1,0,H,0,0,D,José Luis Munuera,11,4,3,1,17,12,9,2,1,1,0,0,1.8,2.9,4.5
-11/05/25,Betis,Osasuna,1,1,D,0,0,D,Miguel Ángel Ortiz Arias,10,16,5,5,8,12,6,7,3,2,0,0,1.62,3.75,5.75
-13/05/25,Valladolid,Girona,0,1,A,0,0,D,Alejandro Quintero,11,13,4,5,5,19,6,4,0,0,0,0,4.75,3.9,1.73
-13/05/25,Sociedad,Celta,0,1,A,0,1,A,Víctor García,15,6,5,2,18,11,14,1,3,1,0,0,2.3,3.3,3.1
-13/05/25,Sevilla,Las Palmas,1,0,H,0,0,D,Juan Martínez,10,14,3,3,22,15,4,2,6,6,0,0,1.67,3.7,5.25
-14/05/25,Alaves,Valencia,1,0,H,0,0,D,Jesús Gil,11,10,5,3,16,10,9,4,4,3,0,0,2.1,3.1,3.7
-14/05/25,Villarreal,Leganes,3,0,H,3,0,H,Ricardo de Burgos,17,23,7,6,5,11,3,6,1,1,0,0,1.33,5.75,8.0
-14/05/25,Real Madrid,Mallorca,2,1,H,0,1,A,Javier Alberola,39,4,13,2,6,15,26,0,0,3,0,0,1.38,5.25,7.0
-15/05/25,Vallecano,Betis,2,2,D,2,0,H,Pablo González,20,10,6,3,8,18,10,7,1,3,0,0,3.0,3.2,2.4
-15/05/25,Osasuna,Ath Madrid,2,0,H,1,0,H,Mario Melero,9,9,3,5,12,11,3,5,1,1,0,0,3.6,3.3,2.1
-15/05/25,Espanol,Barcelona,0,2,A,0,0,D,César Soto,9,12,1,4,8,10,3,3,2,2,1,0,9.0,5.75,1.3
-15/05/25,Getafe,Ath Bilbao,0,2,A,0,0,D,Guillermo Cuadra,11,9,1,2,10,7,2,5,1,0,0,0,3.2,2.75,2.63
-18/05/25,Ath Madrid,Betis,4,1,H,2,0,H,Adri園 Cordero,20,12,11,7,12,9,7,4,1,1,0,0,1.91,3.6,3.8
-18/05/25,Barcelona,Villarreal,2,3,A,2,1,H,José Luis Munuera,24,7,9,3,14,9,11,3,2,0,0,0,1.83,4.1,3.75
-18/05/25,Celta,Vallecano,1,2,A,1,2,A,Juan Pulido,24,7,7,2,10,17,9,2,2,3,0,0,1.75,3.9,4.33
-18/05/25,Las Palmas,Leganes,0,1,A,0,1,A,Jose Maria Sánchez,12,11,3,4,15,12,9,2,2,2,0,0,2.9,3.5,2.35
-18/05/25,Mallorca,Getafe,1,2,A,0,0,D,Alejandro Hernández,7,10,1,4,14,9,3,4,2,2,0,0,2.0,3.2,4.2
-18/05/25,Osasuna,Espanol,2,0,H,1,0,H,Francisco Hernández,16,16,3,6,11,5,8,6,1,1,0,0,1.8,3.3,4.75
-18/05/25,Sevilla,Real Madrid,0,2,A,0,0,D,Mateo Busquets,6,16,1,6,7,9,1,7,0,1,2,0,4.2,4.0,1.75
-18/05/25,Sociedad,Girona,3,2,H,2,1,H,Miguel Ángel Ortiz Arias,15,9,9,5,10,9,9,2,1,3,0,0,2.05,3.1,4.1
-18/05/25,Valencia,Ath Bilbao,0,1,A,0,0,D,Alejandro Muñíz,6,10,2,4,10,16,5,3,3,1,0,0,2.2,3.0,3.8
-18/05/25,Valladolid,Alaves,0,1,A,0,1,A,Isidro Díaz de Mera,7,14,1,4,12,24,5,9,0,2,0,0,6.0,3.75,1.6
-23/05/25,Betis,Valencia,1,1,D,1,0,H,Víctor García,14,9,4,2,8,12,3,2,1,2,0,0,1.91,3.75,3.75
-24/05/25,Real Madrid,Sociedad,2,0,H,1,0,H,Mario Melero,16,9,8,1,5,7,11,4,0,0,0,0,1.42,5.0,6.5
-24/05/25,Espanol,Las Palmas,2,0,H,0,0,D,Alejandro Muñíz,8,10,3,4,12,11,3,6,3,2,0,0,1.38,4.75,8.0
-24/05/25,Leganes,Valladolid,3,0,H,3,0,H,César Soto,16,6,6,2,11,16,3,4,0,1,0,0,1.3,5.5,9.5
-24/05/25,Alaves,Osasuna,1,1,D,0,0,D,Guillermo Cuadra,14,19,5,5,15,6,5,9,2,2,0,0,3.2,3.2,2.35
-24/05/25,Getafe,Celta,1,2,A,1,1,D,Juan Martínez,6,15,1,8,13,10,2,6,3,4,1,0,4.1,3.75,1.85
-24/05/25,Vallecano,Mallorca,0,0,D,0,0,D,Ricardo de Burgos,27,9,8,2,9,14,11,2,2,2,0,0,1.53,4.2,6.25
-25/05/25,Girona,Ath Madrid,0,4,A,0,0,D,Jesús Gil,2,19,1,11,13,11,1,8,0,1,0,0,3.8,3.75,1.91
-25/05/25,Villarreal,Sevilla,4,2,H,3,1,H,Javier Alberola,12,17,7,6,8,14,3,5,0,1,0,0,1.48,5.0,6.0
-25/05/25,Ath Bilbao,Barcelona,0,3,A,0,2,A,Pablo González,10,13,1,4,21,10,2,6,1,0,0,0,3.2,3.75,2.1
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,Referee,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR,B365H,B365D,B365A,Home_PPDA,Away_PPDA
+15/08/24,Ath Bilbao,Getafe,1,1,D,1,0,H,Alejandro Muñíz,7,9,4,2,15,12,5,6,4,1,0,0,1.48,4.0,8.0,5.105,14.611
+15/08/24,Betis,Girona,1,1,D,1,0,H,Miguel Ángel Ortiz Arias,19,13,4,2,11,7,4,4,2,0,0,0,2.35,3.4,3.0,12.852,9.909
+16/08/24,Celta,Alaves,2,1,H,0,1,A,Alejandro Quintero,6,10,4,2,8,23,3,3,3,2,0,0,2.0,3.2,4.1,5.52,11.793
+16/08/24,Las Palmas,Sevilla,2,2,D,1,1,D,Francisco Hernández,13,16,5,5,12,13,6,3,0,0,0,0,2.8,3.25,2.63,11.0,14.667
+17/08/24,Osasuna,Leganes,1,1,D,0,1,A,Juan Pulido,16,10,5,4,14,12,6,4,3,2,0,0,1.85,3.3,4.5,7.7,7.654
+17/08/24,Valencia,Barcelona,1,2,A,1,1,D,Jose Maria Sánchez,6,18,1,8,11,13,3,8,2,3,0,0,4.75,3.8,1.73,14.955,7.154
+18/08/24,Sociedad,Vallecano,1,2,A,0,0,D,Alejandro Hernández,11,12,5,5,14,21,10,5,2,4,0,0,1.57,3.75,7.0,6.0,7.152
+18/08/24,Mallorca,Real Madrid,1,1,D,0,1,A,César Soto,12,13,5,4,11,6,8,7,1,0,0,1,8.0,4.2,1.45,19.684,16.727
+19/08/24,Valladolid,Espanol,1,0,H,1,0,H,Pablo González,12,10,3,2,15,8,3,2,2,2,0,0,2.38,3.0,3.4,16.316,11.85
+19/08/24,Villarreal,Ath Madrid,2,2,D,2,2,D,Guillermo Cuadra,8,10,3,5,6,10,2,3,1,3,0,0,3.3,3.7,2.1,16.957,16.529
+23/08/24,Celta,Valencia,3,1,H,2,1,H,José Luis Munuera,7,13,5,5,9,11,4,7,3,0,0,0,2.1,3.4,3.6,14.684,15.7
+23/08/24,Sevilla,Villarreal,1,2,A,1,1,D,Isidro Díaz de Mera,15,6,9,5,15,7,7,2,3,5,0,0,2.4,3.6,2.8,6.852,23.267
+24/08/24,Osasuna,Mallorca,1,0,H,0,0,D,Adrián Cordero,15,11,5,2,10,8,5,4,2,1,0,0,2.45,3.1,3.1,6.156,9.312
+24/08/24,Barcelona,Ath Bilbao,2,1,H,1,1,D,Jesús Gil,13,9,5,2,11,16,5,6,4,5,0,0,1.62,4.2,5.0,7.682,19.105
+24/08/24,Espanol,Sociedad,0,1,A,0,0,D,Mario Melero,13,8,3,4,14,18,7,4,2,2,0,0,3.9,3.2,2.05,22.0,4.071
+24/08/24,Getafe,Vallecano,0,0,D,0,0,D,Javier Alberola,12,3,0,1,16,18,3,2,1,2,0,0,2.45,3.0,3.2,5.696,3.654
+25/08/24,Real Madrid,Valladolid,3,0,H,0,0,D,Víctor García,17,8,9,2,10,15,5,5,1,1,0,0,1.18,7.5,15.0,8.75,11.84
+25/08/24,Leganes,Las Palmas,2,1,H,0,0,D,Ricardo de Burgos,10,10,5,5,11,10,3,7,1,1,0,0,2.25,3.0,3.6,16.45,8.591
+25/08/24,Alaves,Betis,0,0,D,0,0,D,Mateo Busquets,3,13,1,3,16,13,3,8,1,4,1,0,2.38,3.1,3.25,10.469,7.278
+25/08/24,Ath Madrid,Girona,3,0,H,1,0,H,Juan Martínez,11,13,6,5,11,10,1,9,1,3,0,0,1.6,4.1,5.5,14.9,11.333
+26/08/24,Villarreal,Celta,4,3,H,1,2,A,Miguel Ángel Ortiz Arias,22,18,9,8,8,6,7,4,4,3,0,0,1.91,3.4,3.8,17.421,20.167
+27/08/24,Mallorca,Sevilla,0,0,D,0,0,D,Alejandro Muñíz,12,16,4,7,15,10,5,9,0,1,0,1,2.38,3.1,3.25,13.409,13.5
+27/08/24,Vallecano,Barcelona,1,2,A,1,0,H,César Soto,8,22,4,5,17,11,6,6,3,1,0,0,5.25,3.8,1.62,7.853,9.4
+28/08/24,Ath Bilbao,Valencia,1,0,H,1,0,H,Pablo González,13,2,4,0,14,9,5,3,1,3,0,0,1.62,3.9,5.75,7.212,13.056
+28/08/24,Valladolid,Leganes,0,0,D,0,0,D,Alejandro Quintero,12,8,2,1,13,19,4,4,1,5,0,0,2.3,3.0,3.6,9.435,13.917
+28/08/24,Ath Madrid,Espanol,0,0,D,0,0,D,Ricardo de Burgos,24,8,7,1,6,9,9,3,0,2,0,0,1.3,5.25,11.0,19.455,25.833
+28/08/24,Sociedad,Alaves,1,2,A,1,1,D,Jose Maria Sánchez,8,12,1,5,16,12,8,6,4,4,1,0,1.7,3.5,5.75,10.538,11.733
+29/08/24,Girona,Osasuna,4,0,H,1,0,H,Francisco Hernández,10,1,5,0,10,9,5,0,0,0,0,0,1.7,4.0,4.33,9.444,20.312
+29/08/24,Las Palmas,Real Madrid,1,1,D,1,0,H,Mateo Busquets,7,25,3,8,16,13,2,6,0,2,0,0,8.0,5.0,1.38,13.421,11.75
+31/08/24,Barcelona,Valladolid,7,0,H,3,0,H,Isidro Díaz de Mera,23,5,10,2,6,12,10,1,0,3,0,0,1.25,6.25,10.0,6.577,24.667
+31/08/24,Ath Bilbao,Ath Madrid,0,1,A,0,0,D,Alejandro Hernández,8,9,1,2,13,9,2,2,3,1,0,0,3.0,3.3,2.38,12.357,33.556
+31/08/24,Espanol,Vallecano,2,1,H,1,1,D,Adrián Cordero,10,17,5,5,14,16,3,7,3,2,0,0,2.8,3.0,2.8,10.286,7.345
+31/08/24,Leganes,Mallorca,0,1,A,0,1,A,Mario Melero,4,12,2,3,11,17,1,3,1,3,0,0,2.5,3.0,3.2,11.263,10.172
+31/08/24,Valencia,Villarreal,1,1,D,1,1,D,Jesús Gil,22,9,6,3,15,11,14,3,3,5,0,1,2.8,3.4,2.45,7.788,18.846
+01/09/24,Alaves,Las Palmas,2,0,H,1,0,H,Víctor García,15,12,5,7,13,9,6,5,3,0,0,0,1.95,3.4,4.0,16.0,6.562
+01/09/24,Osasuna,Celta,3,2,H,2,1,H,Juan Martínez,10,12,4,3,19,10,6,3,2,0,0,1,2.45,3.25,3.0,7.567,12.9
+01/09/24,Sevilla,Girona,0,2,A,0,1,A,Jose Maria Sánchez,16,11,5,4,6,14,7,5,3,2,0,0,2.35,3.8,2.75,16.562,8.484
+01/09/24,Getafe,Sociedad,0,0,D,0,0,D,José Luis Munuera,16,1,1,0,14,16,4,1,1,1,0,0,3.5,2.9,2.38,8.091,4.786
+01/09/24,Real Madrid,Betis,2,0,H,0,0,D,Javier Alberola,20,12,8,2,8,16,7,3,2,0,0,0,1.29,5.75,9.5,8.071,13.955
+13/09/24,Betis,Leganes,2,0,H,0,0,D,Pablo González,14,3,5,0,11,18,11,1,1,2,0,0,1.62,3.7,6.25,7.138,18.421
+14/09/24,Mallorca,Villarreal,1,2,A,0,1,A,Ricardo de Burgos,10,21,5,4,11,10,7,6,3,3,1,0,2.45,3.4,2.88,17.333,16.538
+14/09/24,Espanol,Alaves,3,2,H,1,1,D,Juan Pulido,9,19,4,6,17,14,0,5,2,3,0,0,2.63,3.2,2.8,14.2,8.15
+14/09/24,Sevilla,Getafe,1,0,H,1,0,H,Mateo Busquets,10,15,4,4,19,15,3,4,3,4,1,0,2.2,3.0,3.7,5.524,8.071
+14/09/24,Sociedad,Real Madrid,0,2,A,0,0,D,Juan Martínez,11,16,2,7,12,9,6,6,4,1,0,0,4.75,3.9,1.67,16.529,20.615
+15/09/24,Celta,Valladolid,3,1,H,2,0,H,Francisco Hernández,14,6,7,1,14,15,5,3,3,5,0,1,1.67,3.75,5.5,12.0,10.2
+15/09/24,Girona,Barcelona,1,4,A,0,2,A,Alejandro Muñíz,9,20,4,9,13,4,1,6,3,2,0,1,4.2,3.8,1.8,13.455,9.107
+15/09/24,Las Palmas,Ath Bilbao,2,3,A,0,2,A,Miguel Ángel Ortiz Arias,15,9,6,4,8,12,9,3,1,2,0,1,3.8,3.4,2.0,5.29,17.95
+15/09/24,Ath Madrid,Valencia,3,0,H,1,0,H,César Soto,14,5,5,1,10,8,7,3,1,2,0,0,1.33,4.5,11.0,19.545,20.562
+16/09/24,Vallecano,Osasuna,3,1,H,0,1,A,Alejandro Quintero,17,5,6,2,12,15,7,4,3,2,0,0,2.05,3.1,4.0,4.381,7.933
+17/09/24,Mallorca,Sociedad,1,0,H,1,0,H,Adri園 Cordero,10,13,4,4,5,10,5,5,1,1,0,0,2.9,2.75,3.0,18.75,6.966
+18/09/24,Betis,Getafe,2,1,H,0,0,D,Juan Pulido,18,15,8,5,10,20,8,4,3,5,0,0,1.91,3.0,5.0,4.81,12.174
+19/09/24,Leganes,Ath Bilbao,0,2,A,0,0,D,Francisco Hernández,14,10,3,4,12,11,4,7,3,0,0,0,3.75,3.2,2.05,11.478,14.667
+20/09/24,Alaves,Sevilla,2,1,H,1,0,H,Javier Alberola,10,8,4,2,11,16,3,5,1,4,0,0,2.15,3.1,3.7,13.583,7.615
+21/09/24,Valladolid,Sociedad,0,0,D,0,0,D,Guillermo Cuadra,15,14,2,4,15,12,5,7,4,4,0,0,3.9,3.0,2.2,12.077,4.429
+21/09/24,Osasuna,Las Palmas,2,1,H,1,1,D,Isidro Díaz de Mera,13,11,2,4,14,11,2,4,2,5,0,0,1.9,3.4,4.2,10.033,6.25
+21/09/24,Valencia,Girona,2,0,H,0,0,D,Alejandro Hernández,7,8,2,3,13,10,5,4,3,2,0,0,2.88,3.3,2.5,15.538,5.955
+21/09/24,Real Madrid,Espanol,4,1,H,0,0,D,José Luis Munuera,31,10,14,2,7,5,9,4,4,3,0,0,1.17,7.0,19.0,5.667,31.846
+22/09/24,Getafe,Leganes,1,1,D,0,0,D,Adri園 Cordero,12,6,3,3,16,17,6,2,3,2,0,0,2.05,2.8,4.75,5.407,8.714
+22/09/24,Ath Bilbao,Celta,3,1,H,2,1,H,Jose Maria Sánchez,10,11,7,4,16,11,3,6,3,2,0,0,1.7,3.7,5.25,19.091,6.727
+22/09/24,Villarreal,Barcelona,1,5,A,1,2,A,Mateo Busquets,13,17,4,10,12,12,7,3,6,1,0,0,3.9,3.9,1.85,18.789,5.647
+22/09/24,Vallecano,Ath Madrid,1,1,D,1,0,H,Mario Melero,15,10,3,5,9,12,3,4,0,0,0,0,5.0,3.4,1.8,12.048,14.3
+23/09/24,Betis,Mallorca,1,2,A,1,1,D,Víctor García,14,6,6,6,12,12,6,3,3,2,0,0,1.85,3.3,4.75,8.88,16.591
+24/09/24,Sevilla,Valladolid,2,1,H,1,0,H,Juan Pulido,22,8,5,2,14,12,6,4,5,4,1,0,1.65,3.8,5.5,7.238,11.938
+24/09/24,Valencia,Osasuna,0,0,D,0,0,D,Miguel Ángel Ortiz Arias,10,9,2,2,6,11,10,5,2,3,0,0,2.0,3.1,4.0,16.833,10.95
+24/09/24,Real Madrid,Alaves,3,2,H,2,0,H,Alejandro Muñíz,10,12,4,3,7,10,4,4,4,0,0,0,1.2,6.5,13.0,9.938,23.818
+25/09/24,Girona,Vallecano,0,0,D,0,0,D,Juan Martínez,11,2,0,0,8,16,4,3,3,4,0,0,1.73,3.7,4.5,5.24,13.44
+25/09/24,Barcelona,Getafe,1,0,H,1,0,H,Pablo González,16,7,4,1,4,14,7,5,1,1,0,0,1.25,6.25,10.0,3.833,21.938
+26/09/24,Espanol,Villarreal,1,2,A,1,1,D,Alejandro Quintero,11,15,2,4,12,14,4,1,5,3,0,0,3.25,3.5,2.15,13.611,15.619
+26/09/24,Las Palmas,Betis,1,1,D,1,1,D,Jose Maria Sánchez,8,14,2,5,21,10,1,4,4,2,0,0,3.1,3.1,2.38,8.926,17.333
+26/09/24,Celta,Ath Madrid,0,1,A,0,0,D,Víctor García,9,7,4,2,10,7,2,3,2,2,0,0,3.8,3.7,1.91,13.789,16.0
+27/09/24,Valladolid,Mallorca,1,2,A,0,0,D,José Luis Munuera,11,14,1,6,15,9,7,4,3,2,0,0,3.0,2.9,2.63,7.815,10.083
+28/09/24,Getafe,Alaves,2,0,H,1,0,H,Isidro Díaz de Mera,14,9,8,1,17,24,2,2,3,6,0,0,2.55,2.88,3.1,5.1,3.273
+28/09/24,Vallecano,Leganes,1,1,D,1,0,H,Alejandro Muñíz,15,13,6,3,12,7,5,5,2,1,0,0,1.9,3.0,5.0,10.571,13.952
+28/09/24,Sociedad,Valencia,3,0,H,1,0,H,Javier Alberola,11,9,6,4,7,12,6,4,0,0,0,0,1.85,3.25,4.75,9.556,15.591
+28/09/24,Osasuna,Barcelona,4,2,H,2,0,H,Guillermo Cuadra,11,12,6,5,13,3,5,8,2,2,0,0,7.0,4.5,1.45,13.44,6.071
+29/09/24,Celta,Girona,1,1,D,0,1,A,Ricardo de Burgos,12,9,2,4,9,14,4,4,1,0,0,0,2.1,3.6,3.25,19.238,20.733
+29/09/24,Ath Bilbao,Sevilla,1,1,D,1,0,H,César Soto,13,13,3,4,6,7,4,7,0,3,1,0,1.7,3.7,5.0,10.643,8.778
+29/09/24,Betis,Espanol,1,0,H,0,0,D,Alejandro Hernández,20,8,12,1,14,20,8,4,2,4,0,0,1.65,3.4,5.75,10.846,11.545
+29/09/24,Ath Madrid,Real Madrid,1,1,D,0,0,D,Mateo Busquets,12,12,4,4,11,11,5,5,3,1,1,0,2.8,3.3,2.5,26.308,17.25
+30/09/24,Villarreal,Las Palmas,3,1,H,1,0,H,Mario Melero,17,7,7,3,14,10,3,2,0,3,0,0,1.45,4.33,6.5,15.241,17.846
+04/10/24,Leganes,Valencia,0,0,D,0,0,D,Alejandro Quintero,8,6,0,1,15,14,1,2,2,2,0,0,2.9,2.88,2.8,8.5,12.269
+05/10/24,Espanol,Mallorca,2,1,H,1,0,H,Francisco Hernández,8,11,3,4,14,19,4,6,1,5,0,0,3.1,3.0,2.55,11.524,5.833
+05/10/24,Getafe,Osasuna,1,1,D,1,0,H,Jose Maria Sánchez,11,6,3,2,17,10,4,2,2,4,0,0,2.2,2.9,3.9,8.2,3.895
+05/10/24,Las Palmas,Celta,0,1,A,0,1,A,Adri園 Cordero,24,8,5,1,9,13,11,2,3,8,0,2,3.1,3.5,2.25,13.733,10.909
+05/10/24,Valladolid,Vallecano,1,2,A,0,0,D,Pablo González,13,17,5,3,13,18,5,13,4,2,0,0,3.1,3.0,2.5,11.292,6.571
+05/10/24,Real Madrid,Villarreal,2,0,H,1,0,H,Guillermo Cuadra,11,10,2,1,7,11,2,5,0,1,0,0,1.27,6.25,8.5,12.391,20.688
+06/10/24,Girona,Ath Bilbao,2,1,H,1,1,D,Juan Pulido,14,13,6,4,12,13,6,1,4,3,0,1,2.35,3.3,3.1,7.667,13.593
+06/10/24,Alaves,Barcelona,0,3,A,0,3,A,Miguel Ángel Ortiz Arias,11,14,2,8,13,8,11,3,2,2,0,0,5.25,4.5,1.57,27.824,4.917
+06/10/24,Sevilla,Betis,1,0,H,0,0,D,Juan Martínez,14,11,5,3,15,15,4,1,6,3,1,0,2.45,3.2,3.0,10.182,11.737
+06/10/24,Sociedad,Ath Madrid,1,1,D,0,1,A,Isidro Díaz de Mera,16,4,8,1,10,9,5,1,0,2,0,0,3.3,3.2,2.3,8.333,29.0
+18/10/24,Alaves,Valladolid,2,3,A,1,1,D,Mario Melero,10,12,4,4,15,14,5,6,6,2,1,0,1.62,3.9,5.75,9.357,16.154
+19/10/24,Ath Bilbao,Espanol,4,1,H,3,0,H,Mateo Busquets,10,5,6,2,15,22,5,5,2,3,0,0,1.45,4.2,7.5,13.176,10.481
+19/10/24,Osasuna,Betis,1,2,A,0,1,A,Alejandro Muñíz,19,11,6,7,12,8,10,2,2,1,0,1,2.5,3.4,2.7,10.235,10.444
+19/10/24,Girona,Sociedad,0,1,A,0,1,A,César Soto,8,14,3,4,10,12,6,6,2,1,0,0,2.4,3.4,2.88,17.947,10.333
+19/10/24,Celta,Real Madrid,1,2,A,0,1,A,Alejandro Hernández,13,10,5,3,16,13,6,2,2,1,0,0,4.75,4.5,1.6,12.679,14.905
+20/10/24,Mallorca,Vallecano,1,0,H,0,0,D,Javier Alberola,19,10,5,2,9,13,9,2,1,1,0,0,2.05,3.1,4.0,12.353,9.526
+20/10/24,Ath Madrid,Leganes,3,1,H,0,1,A,José Luis Munuera,24,5,9,2,14,8,8,2,5,1,0,0,1.33,4.75,10.0,5.205,18.062
+20/10/24,Villarreal,Getafe,1,1,D,1,0,H,Víctor García,10,21,4,4,18,21,5,5,4,3,0,0,1.67,3.8,5.0,5.13,5.027
+20/10/24,Barcelona,Sevilla,5,1,H,3,0,H,Ricardo de Burgos,21,7,9,1,6,14,5,5,1,2,0,0,1.3,5.75,8.0,6.241,14.12
+21/10/24,Valencia,Las Palmas,2,3,A,1,1,D,Jesús Gil,14,11,7,6,12,12,11,2,4,9,1,0,1.62,3.8,5.5,12.16,16.214
+25/10/24,Espanol,Sevilla,0,2,A,0,2,A,Miguel Ángel Ortiz Arias,16,6,1,3,14,9,13,2,2,0,0,0,3.0,3.25,2.4,10.464,17.4
+26/10/24,Valladolid,Villarreal,1,2,A,0,1,A,Francisco Hernández,7,21,3,9,16,13,4,6,4,3,0,0,3.5,3.75,2.0,15.579,19.571
+26/10/24,Vallecano,Alaves,1,0,H,0,0,D,Adri園 Cordero,16,15,4,7,8,14,6,2,2,4,1,0,2.25,3.1,3.5,11.105,8.476
+26/10/24,Las Palmas,Girona,1,0,H,1,0,H,Alejandro Quintero,12,8,3,3,12,14,3,5,4,5,0,1,2.88,3.4,2.45,10.31,6.963
+26/10/24,Real Madrid,Barcelona,0,4,A,0,0,D,Jose Maria Sánchez,9,15,4,7,15,17,10,3,2,5,0,0,2.0,4.1,3.25,8.258,7.269
+27/10/24,Leganes,Celta,3,0,H,0,0,D,Mario Melero,7,18,4,5,15,17,4,2,2,2,0,0,3.25,3.25,2.3,12.577,8.25
+27/10/24,Getafe,Valencia,1,1,D,0,1,A,Guillermo Cuadra,15,2,4,1,20,20,8,2,3,7,0,0,2.1,3.1,3.8,3.773,9.7
+27/10/24,Betis,Ath Madrid,1,0,H,1,0,H,Jesús Gil,24,10,3,3,8,4,3,10,3,2,0,0,3.1,3.4,2.3,13.522,14.333
+27/10/24,Sociedad,Osasuna,0,2,A,0,2,A,Juan Pulido,19,10,9,4,7,14,14,4,3,4,0,0,1.75,3.6,5.0,5.312,27.417
+28/10/24,Mallorca,Ath Bilbao,0,0,D,0,0,D,Juan Martínez,4,20,1,1,9,12,1,14,5,1,1,0,2.9,3.1,2.55,17.533,6.65
+01/11/24,Alaves,Mallorca,1,0,H,0,0,D,Pablo González,13,7,3,2,19,12,7,2,3,2,0,0,2.25,3.0,3.4,5.25,8.0
+02/11/24,Osasuna,Valladolid,1,0,H,1,0,H,Víctor García,20,7,4,4,21,12,7,2,1,5,0,0,1.6,3.7,6.25,8.708,5.958
+02/11/24,Girona,Leganes,4,3,H,2,2,D,Mateo Busquets,15,8,6,5,17,15,6,1,2,4,0,0,1.7,3.5,5.5,9.0,11.208
+03/11/24,Ath Madrid,Las Palmas,2,0,H,1,0,H,Ricardo de Burgos,15,1,3,1,13,13,9,1,1,1,0,0,1.27,6.0,9.5,8.724,10.962
+03/11/24,Barcelona,Espanol,3,1,H,3,0,H,José Luis Munuera,14,10,9,3,13,14,9,5,0,3,0,0,1.13,9.0,19.0,4.583,21.571
+03/11/24,Sevilla,Sociedad,0,2,A,0,1,A,Alejandro Muñíz,8,9,0,3,6,17,5,9,2,1,0,0,2.9,3.0,2.63,16.75,15.294
+03/11/24,Ath Bilbao,Betis,1,1,D,0,0,D,Javier Alberola,17,7,8,4,9,8,6,2,0,0,0,0,1.91,3.5,4.0,16.381,18.235
+04/11/24,Celta,Getafe,1,0,H,1,0,H,Jesús Gil,10,10,3,2,12,11,0,2,1,4,0,1,1.95,3.2,4.5,8.8,14.696
+08/11/24,Vallecano,Las Palmas,1,3,A,0,1,A,Francisco Hernández,35,11,7,3,9,13,12,4,1,3,0,0,1.83,3.4,4.5,6.038,13.667
+09/11/24,Real Madrid,Osasuna,4,0,H,2,0,H,Mario Melero,18,2,8,0,9,16,11,3,0,2,0,0,1.2,7.0,13.0,11.071,16.652
+09/11/24,Villarreal,Alaves,3,0,H,1,0,H,Alejandro Quintero,13,9,3,3,17,21,7,2,1,3,0,0,1.62,4.0,5.5,6.7,9.688
+09/11/24,Leganes,Sevilla,1,0,H,0,0,D,Juan Pulido,8,13,4,2,7,10,0,6,2,1,0,1,2.88,3.2,2.55,18.688,8.08
+10/11/24,Betis,Celta,2,2,D,1,1,D,Miguel Ángel Ortiz Arias,19,3,6,2,12,8,2,0,3,0,0,0,1.95,3.4,4.0,9.613,38.0
+10/11/24,Mallorca,Ath Madrid,0,1,A,0,0,D,Jose Maria Sánchez,12,9,6,2,10,16,7,2,1,3,0,0,3.6,3.1,2.2,17.444,12.826
+10/11/24,Getafe,Girona,0,1,A,0,1,A,Juan Martínez,8,3,0,2,25,16,5,2,3,3,0,0,2.45,3.2,3.0,8.2,8.5
+10/11/24,Valladolid,Ath Bilbao,1,1,D,0,0,D,Adri園 Cordero,6,17,3,1,12,12,5,5,4,4,0,0,4.5,3.4,1.85,18.375,8.667
+10/11/24,Sociedad,Barcelona,1,0,H,1,0,H,Guillermo Cuadra,14,11,6,0,17,6,7,6,3,1,0,0,4.75,4.1,1.65,11.176,9.867
+22/11/24,Getafe,Valladolid,2,0,H,0,0,D,Pablo González,12,6,5,3,15,15,3,2,3,2,0,0,1.65,3.4,6.5,6.412,11.385
+23/11/24,Valencia,Betis,4,2,H,1,1,D,Ricardo de Burgos,11,7,5,3,10,16,2,4,4,2,0,0,3.0,3.0,2.6,11.5,9.68
+23/11/24,Ath Madrid,Alaves,2,1,H,0,1,A,Víctor García,11,4,8,1,18,19,5,0,3,3,0,0,1.36,4.75,9.0,6.174,19.25
+23/11/24,Girona,Espanol,4,1,H,4,0,H,Alejandro Hernández,12,9,5,1,4,19,6,3,0,3,0,0,1.67,3.9,5.25,9.5,16.967
+23/11/24,Las Palmas,Mallorca,2,3,A,0,0,D,Alejandro Muñíz,14,10,3,3,10,18,4,3,4,2,0,1,2.8,3.0,2.7,9.714,11.955
+23/11/24,Celta,Barcelona,2,2,D,0,1,A,César Soto,15,9,8,4,13,9,5,1,5,5,0,1,4.75,4.33,1.65,11.355,13.688
+24/11/24,Osasuna,Villarreal,2,2,D,2,0,H,José Luis Munuera,4,17,3,7,12,13,0,8,6,5,0,0,2.55,3.4,2.75,10.538,8.952
+24/11/24,Sevilla,Vallecano,1,0,H,1,0,H,Mateo Busquets,11,9,3,1,14,14,8,3,2,5,0,1,2.3,3.2,3.3,11.632,10.545
+24/11/24,Leganes,Real Madrid,0,3,A,0,1,A,Javier Alberola,4,16,0,9,17,11,2,4,2,0,0,0,7.5,4.5,1.42,14.652,9.875
+24/11/24,Ath Bilbao,Sociedad,1,0,H,1,0,H,Jesús Gil,12,6,4,1,18,9,4,4,3,4,0,0,2.25,3.0,3.6,10.903,6.739
+29/11/24,Mallorca,Valencia,2,1,H,1,1,D,Alejandro Quintero,9,7,3,1,9,14,3,6,0,0,0,0,2.0,3.0,4.5,15.053,10.115
+30/11/24,Barcelona,Las Palmas,1,2,A,0,0,D,Adri園 Cordero,27,5,8,3,7,11,7,0,0,0,0,0,1.17,8.5,13.0,5.957,20.312
+30/11/24,Alaves,Leganes,1,1,D,0,0,D,Isidro Díaz de Mera,18,6,7,3,15,15,13,8,1,4,0,0,1.8,3.4,5.0,4.63,9.316
+30/11/24,Espanol,Celta,3,1,H,1,0,H,Jose Maria Sánchez,9,16,5,2,13,7,2,5,2,2,0,0,3.3,3.4,2.2,31.071,4.588
+30/11/24,Valladolid,Ath Madrid,0,5,A,0,3,A,Guillermo Cuadra,9,13,1,9,6,11,3,5,1,2,0,0,6.0,4.2,1.53,27.615,25.143
+01/12/24,Villarreal,Girona,2,2,D,1,0,H,Miguel Ángel Ortiz Arias,13,13,4,6,8,13,1,5,2,6,0,0,1.83,3.7,4.2,20.316,11.8
+01/12/24,Real Madrid,Getafe,2,0,H,2,0,H,Alejandro Hernández,13,8,4,3,7,26,5,3,2,6,0,0,1.36,4.5,10.0,7.8,11.629
+01/12/24,Vallecano,Ath Bilbao,1,2,A,1,0,H,Mario Melero,7,12,4,7,14,8,1,7,3,0,0,0,2.8,3.1,2.7,6.568,10.238
+01/12/24,Sociedad,Betis,2,0,H,2,0,H,Francisco Hernández,2,7,1,2,28,10,0,4,3,2,0,0,1.8,3.6,4.5,7.22,8.571
+02/12/24,Sevilla,Osasuna,1,1,D,0,0,D,Juan Martínez,12,7,5,3,11,15,5,1,1,1,0,0,2.1,3.4,3.5,6.944,18.714
+03/12/24,Mallorca,Barcelona,1,5,A,1,1,D,Jesús Gil,6,20,1,9,13,13,2,5,4,3,0,0,5.75,4.33,1.53,11.269,6.462
+04/12/24,Ath Bilbao,Real Madrid,2,1,H,0,0,D,Jose Maria Sánchez,9,10,3,5,21,9,5,2,3,3,0,0,3.2,3.3,2.25,14.63,12.125
+06/12/24,Celta,Mallorca,2,0,H,1,0,H,Ricardo de Burgos,12,9,5,4,9,12,3,3,1,0,0,1,1.85,3.4,4.5,13.167,13.273
+07/12/24,Las Palmas,Valladolid,2,1,H,1,1,D,Isidro Díaz de Mera,11,9,5,2,17,13,3,3,4,3,0,0,1.8,3.6,4.5,9.08,17.579
+07/12/24,Betis,Barcelona,2,2,D,0,1,A,Alejandro Muñíz,12,9,6,3,15,14,6,4,1,2,0,0,5.0,4.5,1.57,9.132,9.333
+07/12/24,Valencia,Vallecano,0,1,A,0,1,A,José Luis Munuera,14,6,6,1,5,12,9,4,2,2,0,0,2.25,2.9,3.75,7.375,11.0
+07/12/24,Girona,Real Madrid,0,3,A,0,1,A,Jesús Gil,10,10,4,7,6,7,6,3,3,2,0,0,4.5,3.9,1.73,34.909,19.867
+08/12/24,Leganes,Sociedad,0,3,A,0,1,A,Pablo González,11,15,2,5,12,15,5,3,2,2,0,0,4.75,3.1,1.91,8.444,6.098
+08/12/24,Ath Bilbao,Villarreal,2,0,H,1,0,H,Víctor García,12,11,4,1,15,10,3,3,2,1,0,0,1.95,3.6,3.8,11.152,12.824
+08/12/24,Osasuna,Alaves,2,2,D,0,1,A,César Soto,16,6,8,3,13,14,8,3,4,3,0,0,2.05,3.3,3.75,8.455,10.667
+08/12/24,Ath Madrid,Sevilla,4,3,H,1,2,A,Javier Alberola,14,4,9,3,11,8,5,3,4,3,0,0,1.38,4.75,8.5,13.52,24.312
+09/12/24,Getafe,Espanol,1,0,H,1,0,H,Mateo Busquets,15,9,6,1,14,15,3,3,3,6,0,0,1.8,3.1,5.75,9.778,5.741
+13/12/24,Valladolid,Valencia,1,0,H,1,0,H,Miguel Ángel Ortiz Arias,2,14,1,2,10,10,1,7,4,3,1,0,3.1,3.1,2.38,15.647,9.167
+14/12/24,Espanol,Osasuna,0,0,D,0,0,D,Adri園 Cordero,9,6,3,0,13,13,5,4,3,1,0,0,2.75,3.2,2.6,16.895,9.429
+14/12/24,Mallorca,Girona,2,1,H,1,1,D,Francisco Hernández,8,13,2,1,10,14,2,4,5,2,1,0,2.3,3.1,3.25,29.0,6.957
+14/12/24,Sevilla,Celta,1,0,H,0,0,D,Jesús Gil,8,10,3,2,12,9,3,4,7,3,0,0,2.2,3.25,3.3,10.1,14.529
+14/12/24,Vallecano,Real Madrid,3,3,D,2,2,D,Juan Martínez,14,13,5,6,18,8,4,3,4,2,0,0,6.0,3.8,1.57,10.314,8.1
+15/12/24,Ath Madrid,Getafe,1,0,H,0,0,D,César Soto,11,7,3,1,13,15,8,3,3,1,0,0,1.4,4.33,9.0,9.3,8.29
+15/12/24,Alaves,Ath Bilbao,1,1,D,0,1,A,Jose Maria Sánchez,6,9,3,2,14,17,2,4,2,2,0,0,3.6,3.1,2.15,8.481,8.3
+15/12/24,Sociedad,Las Palmas,0,0,D,0,0,D,Mario Melero,15,9,4,3,17,12,8,6,2,3,0,0,1.4,4.33,8.0,4.692,6.059
+15/12/24,Villarreal,Betis,1,2,A,0,1,A,Guillermo Cuadra,17,10,4,4,19,10,5,5,5,2,0,1,1.75,3.8,4.33,5.0,13.364
+15/12/24,Barcelona,Leganes,0,1,A,0,1,A,Alejandro Quintero,20,6,4,4,5,13,8,2,0,2,0,0,1.13,8.0,19.0,4.263,17.05
+18/12/24,Espanol,Valencia,1,1,D,1,0,H,Pablo González,10,14,3,4,13,11,4,7,1,0,0,0,2.6,3.0,3.0,13.95,10.727
+18/12/24,Villarreal,Vallecano,1,1,D,1,1,D,Alejandro Hernández,14,18,5,3,10,15,7,7,4,3,1,0,1.8,3.6,4.5,12.667,6.852
+20/12/24,Girona,Valladolid,3,0,H,2,0,H,Pablo González,23,1,7,1,13,7,9,1,3,1,0,0,1.38,5.0,8.0,7.5,34.8
+21/12/24,Getafe,Mallorca,0,1,A,0,0,D,José Luis Munuera,18,9,5,2,19,13,3,0,4,3,0,0,2.3,2.75,3.9,5.143,7.684
+21/12/24,Celta,Sociedad,2,0,H,2,0,H,Mateo Busquets,11,7,7,1,19,13,5,7,3,5,0,0,2.9,3.1,2.6,9.065,7.583
+21/12/24,Osasuna,Ath Bilbao,1,2,A,1,1,D,Alejandro Quintero,6,13,3,8,10,13,4,4,0,1,0,0,3.9,3.1,2.1,14.188,11.952
+21/12/24,Barcelona,Ath Madrid,1,2,A,1,0,H,Ricardo de Burgos,19,5,7,4,11,8,11,3,0,3,0,0,1.9,3.8,3.9,8.567,22.071
+22/12/24,Valencia,Alaves,2,2,D,0,1,A,Javier Alberola,8,11,3,3,20,15,5,4,2,1,0,0,2.25,3.1,3.5,4.067,10.308
+22/12/24,Real Madrid,Sevilla,4,2,H,3,1,H,Isidro Díaz de Mera,16,10,8,5,5,14,6,6,1,2,0,0,1.33,5.5,9.0,12.182,15.036
+22/12/24,Las Palmas,Espanol,1,0,H,0,0,D,César Soto,10,9,4,2,9,16,2,2,4,2,0,0,1.85,3.6,4.33,10.9,14.0
+22/12/24,Leganes,Villarreal,2,5,A,2,2,D,Alejandro Muñíz,5,18,3,9,17,15,1,5,1,2,2,0,4.2,3.4,1.91,16.6,8.619
+22/12/24,Betis,Vallecano,1,1,D,1,0,H,Víctor García,14,10,5,4,9,14,5,5,0,4,0,0,1.8,3.5,4.75,5.774,6.438
+03/01/25,Valencia,Real Madrid,1,2,A,1,0,H,César Soto,8,17,5,5,16,9,2,5,2,3,0,1,7.0,4.5,1.42,25.571,9.615
+10/01/25,Vallecano,Celta,2,1,H,1,1,D,Guillermo Cuadra,8,23,5,7,18,9,3,3,2,3,0,1,2.75,3.1,2.7,9.783,15.158
+11/01/25,Alaves,Girona,0,1,A,0,0,D,Mateo Busquets,11,3,2,1,16,11,6,3,1,4,0,0,2.75,3.1,2.75,10.179,10.706
+11/01/25,Valladolid,Betis,1,0,H,0,0,D,Adri園 Cordero,12,14,1,3,21,10,1,8,2,4,0,0,4.5,3.5,1.83,10.577,7.741
+11/01/25,Espanol,Leganes,1,1,D,1,1,D,Juan Martínez,15,14,5,6,15,19,8,4,2,2,0,1,2.1,3.0,4.0,13.143,9.615
+11/01/25,Sevilla,Valencia,1,1,D,0,0,D,Francisco Hernández,15,5,5,1,16,8,10,1,1,2,0,0,2.0,3.3,4.0,7.862,17.0
+12/01/25,Las Palmas,Getafe,1,2,A,0,0,D,Javier Alberola,15,12,7,3,14,17,4,5,2,3,0,0,2.45,2.9,3.3,6.0,10.0
+12/01/25,Ath Madrid,Osasuna,1,0,H,0,0,D,Isidro Díaz de Mera,9,6,5,1,8,14,4,0,2,0,0,0,1.33,5.0,10.0,19.0,13.808
+13/01/25,Sociedad,Villarreal,1,0,H,0,0,D,César Soto,6,15,3,5,17,6,3,7,4,2,0,0,2.0,3.3,4.0,6.138,17.062
+17/01/25,Espanol,Valladolid,2,1,H,1,0,H,Ricardo de Burgos,12,11,4,4,13,16,1,7,2,2,0,0,1.75,3.4,5.25,18.5,13.733
+18/01/25,Girona,Sevilla,1,2,A,1,0,H,Juan Martínez,7,14,4,6,6,15,7,4,0,4,0,0,1.91,3.5,4.0,10.6,14.304
+18/01/25,Leganes,Ath Madrid,1,0,H,0,0,D,Mario Melero,9,19,3,4,16,6,2,9,1,3,0,0,7.0,4.0,1.5,19.857,21.333
+18/01/25,Betis,Alaves,1,3,A,1,1,D,Alejandro Hernández,7,9,2,5,12,24,2,3,4,5,1,0,1.75,3.6,4.75,13.938,6.049
+18/01/25,Getafe,Barcelona,1,1,D,1,1,D,Pablo González,10,21,4,5,9,9,2,10,3,2,0,0,6.5,4.2,1.5,15.636,2.944
+19/01/25,Celta,Ath Bilbao,1,2,A,0,0,D,Miguel Ángel Ortiz Arias,3,14,1,6,14,6,3,4,0,0,0,0,2.8,3.2,2.6,11.364,13.552
+19/01/25,Real Madrid,Las Palmas,4,1,H,3,1,H,Alejandro Quintero,26,6,13,2,11,13,8,2,0,1,0,1,1.14,7.5,17.0,5.486,26.417
+19/01/25,Osasuna,Vallecano,1,1,D,0,1,A,Alejandro Muñíz,12,8,3,3,9,13,6,3,3,2,0,0,2.15,3.0,3.8,8.778,11.05
+19/01/25,Valencia,Sociedad,1,0,H,1,0,H,Víctor García,7,9,2,3,10,12,4,7,3,4,0,0,3.1,3.0,2.55,13.714,5.591
+20/01/25,Villarreal,Mallorca,4,0,H,4,0,H,José Luis Munuera,14,9,7,2,9,12,6,5,1,3,0,0,1.73,3.5,5.25,15.045,12.625
+24/01/25,Las Palmas,Osasuna,1,1,D,0,0,D,Jesús Gil,16,16,7,4,14,17,4,2,7,8,1,0,2.5,3.1,3.0,14.4,13.733
+25/01/25,Mallorca,Betis,0,1,A,0,0,D,Javier Alberola,16,8,3,3,12,18,4,4,2,2,1,0,2.25,3.0,3.5,9.071,5.97
+25/01/25,Ath Madrid,Villarreal,1,1,D,0,1,A,Jose Maria Sánchez,20,11,8,1,10,14,5,6,4,2,0,0,1.7,4.0,4.75,9.192,15.19
+25/01/25,Sevilla,Espanol,1,1,D,0,1,A,Adri園 Cordero,25,6,4,1,13,14,5,1,1,4,0,0,1.7,3.8,4.75,4.542,22.882
+25/01/25,Valladolid,Real Madrid,0,3,A,0,1,A,Mateo Busquets,6,20,2,4,11,12,1,7,3,3,1,0,10.0,6.0,1.27,20.118,11.167
+26/01/25,Vallecano,Girona,2,1,H,0,0,D,Isidro Díaz de Mera,17,12,7,5,19,9,4,1,3,1,0,0,2.75,2.9,2.88,7.31,12.292
+26/01/25,Sociedad,Getafe,0,3,A,0,0,D,Guillermo Cuadra,13,13,4,4,11,15,5,2,3,6,0,0,1.75,3.4,5.5,6.867,5.483
+26/01/25,Ath Bilbao,Leganes,0,0,D,0,0,D,Alejandro Hernández,29,5,3,2,10,8,16,1,1,1,0,0,1.38,5.0,7.5,5.87,15.077
+26/01/25,Barcelona,Valencia,7,1,H,5,0,H,César Soto,22,7,11,2,10,12,14,4,0,1,0,0,1.22,7.5,10.0,6.0,16.63
+27/01/25,Alaves,Celta,1,1,D,1,0,H,Francisco Hernández,3,5,1,2,15,14,3,4,2,3,0,0,2.63,3.0,3.0,9.148,9.517
+31/01/25,Leganes,Vallecano,0,1,A,0,0,D,Alejandro Quintero,5,19,1,3,7,19,2,9,2,4,1,0,3.3,3.0,2.38,14.0,5.724
+01/02/25,Getafe,Sevilla,0,0,D,0,0,D,Ricardo de Burgos,7,13,1,1,15,12,6,5,4,6,0,0,2.45,2.9,3.25,9.64,10.133
+01/02/25,Villarreal,Valladolid,5,1,H,1,0,H,Isidro Díaz de Mera,22,8,8,2,9,14,3,6,1,2,0,0,1.22,7.0,10.0,10.25,13.45
+01/02/25,Ath Madrid,Mallorca,2,0,H,1,0,H,Víctor García,17,10,5,1,9,14,10,4,2,3,0,0,1.4,4.33,8.5,14.588,15.188
+01/02/25,Espanol,Real Madrid,1,0,H,0,0,D,Alejandro Muñíz,5,21,2,7,14,3,1,8,2,0,0,0,9.0,5.75,1.3,34.75,12.0
+02/02/25,Barcelona,Alaves,1,0,H,0,0,D,José Luis Munuera,11,3,4,0,8,20,5,2,5,2,0,0,1.2,7.5,13.0,8.0,12.129
+02/02/25,Valencia,Celta,2,1,H,1,0,H,Pablo González,8,3,5,2,9,17,5,2,1,2,0,0,2.3,3.1,3.25,23.143,8.586
+02/02/25,Osasuna,Sociedad,2,1,H,1,0,H,Miguel Ángel Ortiz Arias,11,13,4,3,10,8,3,5,3,3,0,0,3.0,3.0,2.55,20.438,10.529
+02/02/25,Betis,Ath Bilbao,2,2,D,2,1,H,Juan Martínez,10,12,6,4,10,20,3,7,3,1,0,0,2.9,3.3,2.45,8.067,6.75
+03/02/25,Girona,Las Palmas,2,1,H,1,0,H,Mario Melero,12,10,4,2,12,12,11,3,2,2,0,0,1.6,4.2,5.0,12.227,13.15
+07/02/25,Vallecano,Valladolid,1,0,H,0,0,D,Jesús Gil,20,8,6,3,11,15,4,2,2,2,0,0,1.5,4.1,7.0,5.636,15.947
+08/02/25,Celta,Betis,3,2,H,0,2,A,Mateo Busquets,14,12,6,5,11,11,4,7,3,5,0,0,2.25,3.4,3.2,11.714,17.579
+08/02/25,Ath Bilbao,Girona,3,0,H,2,0,H,Jose Maria Sánchez,23,3,8,1,7,12,11,2,0,4,0,0,1.65,4.0,5.0,14.0,15.615
+08/02/25,Las Palmas,Villarreal,1,2,A,0,0,D,Francisco Hernández,20,9,4,4,12,12,6,5,6,3,0,0,4.75,3.9,1.7,11.85,14.111
+08/02/25,Real Madrid,Ath Madrid,1,1,D,0,1,A,César Soto,23,10,9,1,14,13,6,1,1,3,0,0,1.85,3.6,4.2,12.957,22.692
+09/02/25,Alaves,Getafe,0,1,A,0,1,A,Isidro Díaz de Mera,12,4,4,3,16,16,8,3,2,6,0,0,2.3,2.9,3.6,3.684,16.214
+09/02/25,Valencia,Leganes,2,0,H,2,0,H,Guillermo Cuadra,18,12,4,4,14,9,9,3,1,1,0,0,1.73,3.4,5.5,13.55,6.833
+09/02/25,Sociedad,Espanol,2,1,H,1,0,H,Javier Alberola,13,4,3,1,11,17,6,0,1,2,0,0,1.6,3.9,5.75,6.048,13.455
+09/02/25,Sevilla,Barcelona,1,4,A,1,1,D,Alejandro Hernández,8,10,4,6,14,6,5,6,5,2,0,1,5.25,4.5,1.55,14.889,9.6
+10/02/25,Mallorca,Osasuna,1,1,D,0,0,D,Adri園 Cordero,10,19,2,4,7,11,7,11,1,4,0,0,2.0,3.0,4.33,13.533,7.833
+14/02/25,Girona,Getafe,1,2,A,0,1,A,Alejandro Quintero,14,10,4,6,11,23,3,3,2,3,1,0,1.95,3.25,4.33,3.857,10.4
+15/02/25,Leganes,Alaves,3,3,D,2,1,H,Pablo González,8,16,3,7,18,15,3,2,4,5,1,0,3.1,2.9,2.6,12.438,8.857
+15/02/25,Osasuna,Real Madrid,1,1,D,0,1,A,José Luis Munuera,11,17,4,6,16,7,6,2,3,1,0,1,5.75,4.1,1.57,13.7,22.444
+15/02/25,Ath Madrid,Celta,1,1,D,0,0,D,Juan Martínez,9,11,3,4,8,18,2,7,3,5,1,0,1.39,4.5,8.0,22.333,7.348
+15/02/25,Villarreal,Valencia,1,1,D,1,0,H,Ricardo de Burgos,13,12,4,3,6,17,4,5,0,5,0,0,1.5,4.5,5.5,16.81,14.8
+16/02/25,Espanol,Ath Bilbao,1,1,D,0,0,D,Guillermo Cuadra,12,14,4,4,12,8,2,7,1,1,0,0,5.5,3.4,1.73,9.962,6.375
+16/02/25,Valladolid,Sevilla,0,4,A,0,2,A,Javier Alberola,7,11,2,6,11,10,3,2,4,2,0,0,4.0,3.4,1.95,17.25,20.15
+16/02/25,Mallorca,Las Palmas,3,1,H,3,0,H,Miguel Ángel Ortiz Arias,14,9,5,4,7,13,3,5,1,4,0,0,1.73,3.5,5.25,21.727,11.158
+16/02/25,Betis,Sociedad,3,0,H,0,0,D,Jesús Gil,24,5,8,1,9,15,5,5,0,2,0,2,2.55,3.1,2.9,5.5,13.789
+17/02/25,Barcelona,Vallecano,1,0,H,1,0,H,Mario Melero,14,9,5,4,11,9,4,5,2,3,0,0,1.22,7.0,11.0,8.72,16.591
+21/02/25,Celta,Osasuna,1,0,H,0,0,D,Jose Maria Sánchez,12,18,5,1,11,13,5,4,1,0,0,0,1.67,3.75,5.25,19.882,13.19
+22/02/25,Alaves,Espanol,0,1,A,0,0,D,Juan Pulido,15,9,5,2,13,17,7,0,2,2,0,0,1.8,3.25,5.25,6.455,11.895
+22/02/25,Vallecano,Villarreal,0,1,A,0,0,D,Víctor García,10,10,5,5,15,12,3,5,1,4,1,0,2.88,3.5,2.38,8.786,9.96
+22/02/25,Valencia,Ath Madrid,0,3,A,0,2,A,Mateo Busquets,18,11,2,3,18,16,7,0,1,3,0,0,4.2,3.4,1.91,11.065,12.524
+22/02/25,Las Palmas,Barcelona,0,2,A,0,0,D,Adri園 Cordero,10,15,2,5,13,4,5,3,1,1,0,0,8.5,7.0,1.25,17.762,8.278
+23/02/25,Ath Bilbao,Valladolid,7,1,H,4,0,H,César Soto,29,5,16,3,10,5,4,4,2,3,0,1,1.17,7.0,19.0,10.85,19.182
+23/02/25,Real Madrid,Girona,2,0,H,1,0,H,Guillermo Cuadra,22,6,5,2,1,7,11,5,0,2,0,0,1.29,6.25,8.5,35.5,31.167
+23/02/25,Getafe,Betis,1,2,A,0,1,A,Javier Alberola,10,13,4,6,17,20,2,5,3,0,1,1,2.6,3.1,2.9,6.4,5.633
+23/02/25,Sociedad,Leganes,3,0,H,1,0,H,Francisco Hernández,12,8,5,2,13,13,3,3,3,3,0,0,1.55,3.75,7.0,9.708,12.0
+24/02/25,Sevilla,Mallorca,1,1,D,1,0,H,Alejandro Muñíz,19,13,4,2,11,12,4,4,1,3,0,0,2.05,3.2,3.9,6.935,10.16
+28/02/25,Valladolid,Las Palmas,1,1,D,0,1,A,Ricardo de Burgos,23,4,7,3,11,8,13,4,2,1,0,1,3.1,3.2,2.4,6.944,21.5
+01/03/25,Girona,Celta,2,2,D,1,1,D,Miguel Ángel Ortiz Arias,9,10,6,6,8,17,4,2,0,0,0,0,2.2,3.5,3.25,13.783,12.917
+01/03/25,Vallecano,Sevilla,1,1,D,0,0,D,Pablo González,20,10,8,5,14,9,6,6,1,0,0,0,2.3,3.2,3.3,5.032,16.316
+01/03/25,Betis,Real Madrid,2,1,H,1,1,D,Alejandro Hernández,18,9,3,2,17,12,9,2,3,4,0,0,4.33,4.0,1.73,7.949,10.048
+01/03/25,Ath Madrid,Ath Bilbao,1,0,H,0,0,D,Jesús Gil,12,15,4,3,7,8,6,2,2,3,0,0,2.05,3.5,3.6,9.5,13.875
+02/03/25,Leganes,Getafe,1,0,H,0,0,D,Alejandro Muñíz,5,9,1,0,15,15,2,6,1,1,0,0,3.1,2.88,2.6,4.667,8.586
+02/03/25,Barcelona,Sociedad,4,0,H,2,0,H,Alejandro Quintero,33,0,10,0,15,6,12,0,0,0,0,1,1.25,5.75,12.0,4.212,24.444
+02/03/25,Mallorca,Alaves,1,1,D,1,0,H,César Soto,15,19,4,7,20,14,3,9,0,2,0,0,2.25,3.1,3.5,7.538,7.36
+02/03/25,Osasuna,Valencia,3,3,D,3,2,H,Mario Melero,12,12,5,5,10,7,3,3,2,1,0,0,2.3,3.2,3.3,10.682,15.467
+08/03/25,Celta,Leganes,2,1,H,2,1,H,Isidro Díaz de Mera,7,12,4,6,10,9,2,5,3,2,0,0,1.55,3.8,7.0,10.458,15.192
+08/03/25,Alaves,Villarreal,1,0,H,1,0,H,Miguel Ángel Ortiz Arias,5,24,3,2,11,13,1,6,3,1,2,0,3.1,3.25,2.38,15.529,4.524
+08/03/25,Valencia,Valladolid,2,1,H,1,1,D,Juan Pulido,17,11,4,4,11,10,5,4,1,3,0,0,1.38,4.5,9.0,8.0,17.929
+09/03/25,Getafe,Ath Madrid,2,1,H,0,0,D,Guillermo Cuadra,11,4,3,2,10,14,4,4,6,2,0,1,4.5,3.1,1.95,20.941,5.917
+09/03/25,Real Madrid,Vallecano,2,1,H,2,1,H,Francisco Hernández,10,20,5,6,12,17,4,6,3,1,0,0,1.29,5.75,9.5,13.214,12.739
+09/03/25,Ath Bilbao,Mallorca,1,1,D,0,0,D,Alejandro Hernández,8,9,2,2,6,13,3,3,1,3,0,0,1.62,3.7,6.0,19.455,9.75
+09/03/25,Betis,Las Palmas,1,0,H,0,0,D,Jose Maria Sánchez,14,8,6,1,12,14,11,1,2,8,0,1,1.42,4.5,7.5,6.364,17.526
+09/03/25,Sociedad,Sevilla,0,1,A,0,0,D,Víctor García,7,9,2,4,14,12,6,3,2,1,0,0,2.2,3.2,3.5,7.833,24.75
+10/03/25,Espanol,Girona,1,1,D,0,0,D,Adri園 Cordero,7,18,4,4,11,13,4,9,3,3,0,0,3.1,3.2,2.4,26.583,6.538
+14/03/25,Las Palmas,Alaves,2,2,D,0,1,A,Mario Melero,14,9,7,3,10,22,4,5,5,5,0,0,2.88,3.0,2.75,7.4,10.25
+15/03/25,Valladolid,Celta,0,1,A,0,0,D,Víctor García,5,10,2,1,9,15,3,4,3,3,0,0,5.0,3.8,1.63,21.733,9.08
+15/03/25,Mallorca,Espanol,2,1,H,0,0,D,Alejandro Quintero,20,2,7,0,10,12,6,2,0,2,0,0,1.77,3.3,5.0,8.824,17.643
+15/03/25,Villarreal,Real Madrid,1,2,A,1,2,A,Jesús Gil,23,9,10,5,17,3,11,4,2,1,0,0,3.1,3.75,2.15,8.658,15.667
+15/03/25,Girona,Valencia,1,1,D,0,0,D,José Luis Munuera,14,12,4,2,12,5,9,4,2,1,0,0,1.92,3.5,3.9,10.16,30.0
+16/03/25,Leganes,Betis,2,3,A,2,0,H,César Soto,10,21,4,6,16,5,3,7,2,1,0,0,3.8,3.3,2.05,12.955,13.462
+16/03/25,Sevilla,Ath Bilbao,0,1,A,0,0,D,Juan Pulido,11,9,4,4,13,12,4,6,4,2,0,0,2.9,3.2,2.5,11.467,14.083
+16/03/25,Osasuna,Getafe,1,2,A,1,0,H,Alejandro Hernández,12,7,4,4,19,15,3,2,2,3,0,1,2.25,2.88,3.8,5.0,14.158
+16/03/25,Vallecano,Sociedad,2,2,D,0,1,A,Alejandro Muñíz,10,8,5,4,16,9,4,4,3,2,0,0,2.5,3.0,3.1,6.115,12.0
+16/03/25,Ath Madrid,Barcelona,2,4,A,1,0,H,Ricardo de Burgos,7,13,2,6,10,11,6,6,1,3,0,0,3.1,3.6,2.2,17.267,5.333
+27/03/25,Barcelona,Osasuna,3,0,H,2,0,H,Mateo Busquets,19,4,5,0,7,14,8,4,1,3,0,0,1.29,7.0,7.0,7.0,12.364
+29/03/25,Sociedad,Valladolid,2,1,H,1,0,H,Adri園 Cordero,12,12,2,5,20,10,3,6,2,3,0,0,1.33,4.75,11.0,5.971,17.0
+29/03/25,Espanol,Ath Madrid,1,1,D,0,1,A,Javier Alberola,8,13,1,2,12,14,4,3,2,1,0,0,5.5,3.75,1.62,14.75,11.35
+29/03/25,Alaves,Vallecano,0,2,A,0,1,A,José Luis Munuera,12,11,4,5,14,12,8,5,3,5,0,0,2.15,2.9,4.1,6.407,9.056
+29/03/25,Real Madrid,Leganes,3,2,H,1,2,A,Pablo González,24,10,10,4,9,13,8,3,1,4,0,0,1.14,8.0,17.0,7.706,30.3
+30/03/25,Getafe,Villarreal,1,2,A,1,2,A,Isidro Díaz de Mera,11,9,4,3,16,21,3,1,1,4,0,0,3.25,3.1,2.35,7.407,6.333
+30/03/25,Barcelona,Girona,4,1,H,1,0,H,Juan Pulido,21,4,9,2,8,11,10,2,0,1,0,0,1.25,6.5,10.0,7.12,12.083
+30/03/25,Ath Bilbao,Osasuna,0,0,D,0,0,D,Guillermo Cuadra,11,5,5,2,12,12,3,4,1,1,0,0,1.45,4.1,7.0,6.31,18.733
+30/03/25,Valencia,Mallorca,1,0,H,0,0,D,Francisco Hernández,8,8,2,2,16,15,4,5,5,5,0,0,2.15,3.1,3.75,9.333,6.161
+30/03/25,Betis,Sevilla,2,1,H,2,1,H,Mateo Busquets,11,6,3,2,10,22,2,2,4,4,0,0,1.83,3.5,4.33,8.893,8.382
+31/03/25,Celta,Las Palmas,1,1,D,1,0,H,Juan Martínez,19,4,7,2,17,5,4,2,3,0,0,0,1.57,4.1,5.5,8.414,44.625
+04/04/25,Vallecano,Espanol,0,4,A,0,2,A,Alejandro Hernández,16,15,5,7,8,10,8,4,2,2,0,0,1.65,3.5,6.0,7.2,16.941
+05/04/25,Girona,Alaves,0,1,A,0,0,D,Alejandro Muñíz,11,14,6,3,9,16,1,5,1,4,0,0,2.05,3.4,3.6,10.5,8.417
+05/04/25,Real Madrid,Valencia,1,2,A,0,1,A,Guillermo Cuadra,21,10,9,2,10,13,9,4,0,4,0,0,1.3,5.75,8.5,5.267,18.611
+05/04/25,Mallorca,Celta,1,2,A,1,0,H,Ricardo de Burgos,7,10,2,4,9,11,4,2,3,0,0,0,2.63,3.2,2.8,15.95,11.0
+05/04/25,Barcelona,Betis,1,1,D,1,1,D,Jesús Gil,13,6,5,2,16,12,9,3,2,1,0,0,1.36,5.5,7.0,4.71,41.2
+06/04/25,Las Palmas,Sociedad,1,3,A,0,1,A,Miguel Ángel Ortiz Arias,13,13,5,8,7,10,5,4,0,2,0,0,3.2,3.2,2.35,7.714,16.583
+06/04/25,Sevilla,Ath Madrid,1,2,A,1,1,D,César Soto,11,13,6,5,14,12,7,7,1,4,0,0,3.5,3.2,2.2,13.125,11.174
+06/04/25,Valladolid,Getafe,0,4,A,0,3,A,Alejandro Quintero,5,16,0,9,11,17,3,4,3,1,1,0,4.75,3.1,1.9,12.389,12.417
+06/04/25,Villarreal,Ath Bilbao,0,0,D,0,0,D,Mario Melero,12,11,4,2,9,13,6,5,0,1,1,0,2.2,3.3,3.25,10.045,13.25
+07/04/25,Leganes,Osasuna,1,1,D,0,0,D,Víctor García,13,14,7,6,18,14,4,8,3,3,0,0,2.7,3.1,2.75,9.2,14.188
+11/04/25,Valencia,Sevilla,1,0,H,1,0,H,Jose Maria Sánchez,8,12,6,5,10,18,3,3,3,2,0,0,2.3,3.1,3.4,12.056,9.56
+12/04/25,Sociedad,Mallorca,0,2,A,0,1,A,José Luis Munuera,15,7,4,3,11,12,8,2,3,1,0,0,1.75,3.4,5.5,4.935,22.846
+12/04/25,Getafe,Las Palmas,1,3,A,1,0,H,Javier Alberola,11,10,6,5,14,15,3,2,0,2,1,0,1.75,3.3,5.5,11.2,8.167
+12/04/25,Celta,Espanol,0,2,A,0,1,A,Mateo Busquets,16,5,6,3,14,10,13,5,2,2,0,0,1.62,3.7,6.0,7.893,24.727
+12/04/25,Leganes,Barcelona,0,1,A,0,0,D,Francisco Hernández,6,12,1,3,10,4,4,8,2,1,0,0,8.5,6.0,1.3,15.789,9.526
+13/04/25,Osasuna,Girona,2,1,H,1,0,H,Pablo González,13,18,6,8,17,15,4,4,2,0,0,0,2.45,3.2,3.1,16.8,6.55
+13/04/25,Alaves,Real Madrid,0,1,A,0,1,A,César Soto,13,11,6,4,21,12,4,4,4,4,1,1,5.25,4.1,1.62,5.732,14.333
+13/04/25,Betis,Villarreal,1,2,A,1,1,D,Juan Pulido,24,8,5,2,4,13,5,5,0,4,0,0,2.35,3.3,3.1,11.143,12.429
+13/04/25,Ath Bilbao,Vallecano,3,1,H,0,1,A,Adri園 Cordero,13,11,4,3,12,7,7,1,4,3,0,0,1.75,3.4,5.5,7.926,12.474
+14/04/25,Ath Madrid,Valladolid,4,2,H,2,1,H,Isidro Díaz de Mera,24,6,9,3,11,8,5,1,1,1,0,0,1.14,8.0,19.0,12.207,32.667
+18/04/25,Espanol,Getafe,1,0,H,1,0,H,Ricardo de Burgos,9,9,3,4,12,15,6,8,0,2,0,1,2.88,2.63,3.0,3.81,11.545
+19/04/25,Vallecano,Valencia,1,1,D,1,0,H,Alejandro Quintero,11,10,4,3,18,13,5,2,3,1,0,0,2.25,3.0,3.4,6.7,10.955
+19/04/25,Barcelona,Celta,4,3,H,1,1,D,Mario Melero,18,11,6,8,10,13,4,1,2,2,0,0,1.3,5.75,8.0,6.704,14.696
+19/04/25,Mallorca,Leganes,0,0,D,0,0,D,Alejandro Muñíz,11,15,1,1,17,15,4,4,2,1,0,0,1.85,3.1,5.0,7.333,8.185
+19/04/25,Las Palmas,Ath Madrid,1,0,H,0,0,D,Víctor García,8,7,2,2,13,13,4,4,3,1,0,0,5.75,4.2,1.55,14.24,11.316
+20/04/25,Valladolid,Osasuna,2,3,A,0,2,A,Jesús Gil,12,11,5,6,12,17,5,2,2,0,0,0,4.5,3.4,1.83,15.778,10.774
+20/04/25,Villarreal,Sociedad,2,2,D,1,1,D,Guillermo Cuadra,20,4,5,4,12,12,10,4,5,1,0,0,1.7,3.7,5.0,16.0,16.312
+20/04/25,Sevilla,Alaves,1,1,D,1,1,D,Miguel Ángel Ortiz Arias,10,11,2,3,10,11,3,6,2,2,0,0,2.0,3.1,4.2,10.273,8.455
+20/04/25,Real Madrid,Ath Bilbao,1,0,H,0,0,D,Juan Martínez,22,3,7,1,7,15,14,1,1,2,0,0,1.65,3.9,5.25,6.105,22.438
+21/04/25,Girona,Betis,1,3,A,0,3,A,Alejandro Hernández,11,17,5,9,13,11,8,9,3,2,0,0,2.88,3.3,2.45,11.056,24.692
+22/04/25,Valencia,Espanol,1,1,D,0,1,A,Juan Pulido,16,8,7,3,7,7,6,4,2,1,0,0,1.95,3.3,4.1,11.0,18.474
+22/04/25,Barcelona,Mallorca,1,0,H,0,0,D,Miguel Ángel Ortiz Arias,40,4,13,0,10,7,13,2,0,1,0,0,1.2,7.0,13.0,3.152,17.9
+23/04/25,Ath Bilbao,Las Palmas,1,0,H,1,0,H,Isidro Díaz de Mera,13,10,4,2,13,9,3,3,1,3,0,0,1.36,5.25,7.0,11.24,12.789
+23/04/25,Celta,Villarreal,3,0,H,1,0,H,Javier Alberola,21,4,9,1,16,10,6,3,2,1,0,1,2.5,3.4,2.8,9.88,18.467
+23/04/25,Alaves,Sociedad,1,0,H,0,0,D,Mateo Busquets,10,6,1,0,17,17,6,6,4,5,0,0,2.35,3.0,3.4,6.535,6.941
+23/04/25,Getafe,Real Madrid,0,1,A,0,1,A,Jose Maria Sánchez,20,14,6,7,15,7,4,4,3,1,0,0,4.75,3.6,1.75,13.115,10.357
+24/04/25,Leganes,Girona,1,1,D,0,0,D,José Luis Munuera,7,8,1,3,16,18,4,5,4,2,1,0,2.75,3.1,2.75,15.6,7.706
+24/04/25,Osasuna,Sevilla,1,0,H,1,0,H,Adri園 Cordero,9,12,2,3,14,13,4,4,4,2,0,1,2.5,3.0,3.2,11.059,24.5
+24/04/25,Ath Madrid,Vallecano,3,0,H,2,0,H,Pablo González,10,12,5,5,8,15,6,3,0,2,0,0,1.53,4.0,6.5,19.765,8.862
+24/04/25,Betis,Valladolid,5,1,H,1,1,D,Francisco Hernández,16,10,6,5,7,7,4,4,1,0,0,0,1.2,7.0,13.0,6.185,16.684
+27/04/25,Villarreal,Espanol,1,0,H,0,0,D,José Luis Munuera,14,12,5,1,19,11,8,6,4,0,0,0,1.44,5.0,6.25,10.577,18.0
+02/05/25,Vallecano,Getafe,1,0,H,1,0,H,Víctor García,13,12,8,1,12,13,7,3,3,2,0,1,2.38,3.0,3.4,5.625,8.231
+03/05/25,Alaves,Ath Madrid,0,0,D,0,0,D,Juan Martínez,8,9,2,2,18,13,3,5,3,2,0,0,3.7,3.1,2.15,8.588,4.524
+03/05/25,Villarreal,Osasuna,4,2,H,3,0,H,Alejandro Quintero,15,11,5,4,10,18,2,8,4,1,0,0,1.53,4.2,6.0,18.231,9.923
+03/05/25,Las Palmas,Valencia,2,3,A,1,1,D,Ricardo de Burgos,15,10,3,5,12,6,9,5,1,1,0,0,2.63,3.3,2.7,10.696,20.5
+03/05/25,Valladolid,Barcelona,1,2,A,1,0,H,Alejandro Muñíz,5,24,4,7,12,15,4,8,3,2,0,0,15.0,8.0,1.14,22.231,2.536
+04/05/25,Real Madrid,Celta,3,2,H,2,0,H,Jesús Gil,17,14,6,7,5,11,4,6,2,1,0,0,1.33,5.75,7.0,15.421,18.75
+04/05/25,Sevilla,Leganes,2,2,D,1,1,D,Alejandro Hernández,25,9,7,3,17,12,8,2,4,5,0,0,1.77,3.5,4.75,5.069,10.0
+04/05/25,Espanol,Betis,1,2,A,1,0,H,Guillermo Cuadra,11,20,5,10,16,10,3,7,2,0,0,0,3.3,3.0,2.38,15.105,11.167
+04/05/25,Sociedad,Ath Bilbao,0,0,D,0,0,D,César Soto,12,3,3,1,18,13,7,3,1,2,0,0,2.55,3.0,3.0,5.778,17.7
+05/05/25,Girona,Mallorca,1,0,H,1,0,H,Mario Melero,13,9,6,1,11,14,5,2,0,2,0,0,2.0,3.1,4.2,9.806,17.667
+09/05/25,Las Palmas,Vallecano,0,1,A,0,0,D,Francisco Hernández,11,16,2,5,8,9,8,8,2,3,0,0,2.45,3.25,3.0,9.9,9.643
+10/05/25,Valencia,Getafe,3,0,H,3,0,H,Adri園 Cordero,10,10,6,3,17,20,2,6,3,5,0,0,2.0,3.0,4.33,5.095,6.971
+10/05/25,Celta,Sevilla,3,2,H,1,1,D,Pablo González,8,19,4,10,11,16,3,6,0,2,1,0,1.8,3.6,4.5,19.615,10.433
+10/05/25,Girona,Villarreal,0,1,A,0,0,D,Isidro Díaz de Mera,7,14,0,5,13,10,5,3,2,3,0,0,3.1,3.8,2.1,14.474,30.364
+10/05/25,Mallorca,Valladolid,2,1,H,1,1,D,Juan Pulido,12,16,4,7,16,12,5,10,2,1,0,0,1.33,5.25,9.0,8.429,18.077
+10/05/25,Ath Madrid,Sociedad,4,0,H,4,0,H,Jose Maria Sánchez,13,6,7,1,7,12,3,3,0,1,0,0,1.67,3.7,5.0,17.312,22.944
+11/05/25,Leganes,Espanol,3,2,H,2,0,H,Javier Alberola,13,12,5,6,14,18,3,8,2,2,0,0,2.4,3.0,3.2,7.417,10.263
+11/05/25,Barcelona,Real Madrid,4,3,H,4,2,H,Alejandro Hernández,23,9,9,5,17,15,10,2,4,3,0,0,1.9,3.7,3.2,7.192,12.167
+11/05/25,Ath Bilbao,Alaves,1,0,H,0,0,D,José Luis Munuera,11,4,3,1,17,12,9,2,1,1,0,0,1.8,2.9,4.5,3.971,10.077
+11/05/25,Betis,Osasuna,1,1,D,0,0,D,Miguel Ángel Ortiz Arias,10,16,5,5,8,12,6,7,3,2,0,0,1.62,3.75,5.75,10.579,13.368
+13/05/25,Valladolid,Girona,0,1,A,0,0,D,Alejandro Quintero,11,13,4,5,5,19,6,4,0,0,0,0,4.75,3.9,1.73,33.889,10.577
+13/05/25,Sociedad,Celta,0,1,A,0,1,A,Víctor García,15,6,5,2,18,11,14,1,3,1,0,0,2.3,3.3,3.1,6.714,25.0
+13/05/25,Sevilla,Las Palmas,1,0,H,0,0,D,Juan Martínez,10,14,3,3,22,15,4,2,6,6,0,0,1.67,3.7,5.25,6.784,10.562
+14/05/25,Alaves,Valencia,1,0,H,0,0,D,Jesús Gil,11,10,5,3,16,10,9,4,4,3,0,0,2.1,3.1,3.7,12.92,13.417
+14/05/25,Villarreal,Leganes,3,0,H,3,0,H,Ricardo de Burgos,17,23,7,6,5,11,3,6,1,1,0,0,1.33,5.75,8.0,26.5,7.607
+14/05/25,Real Madrid,Mallorca,2,1,H,0,1,A,Javier Alberola,39,4,13,2,6,15,26,0,0,3,0,0,1.38,5.25,7.0,9.235,20.5
+15/05/25,Vallecano,Betis,2,2,D,2,0,H,Pablo González,20,10,6,3,8,18,10,7,1,3,0,0,3.0,3.2,2.4,11.571,9.042
+15/05/25,Osasuna,Ath Madrid,2,0,H,1,0,H,Mario Melero,9,9,3,5,12,11,3,5,1,1,0,0,3.6,3.3,2.1,12.333,8.263
+15/05/25,Espanol,Barcelona,0,2,A,0,0,D,César Soto,9,12,1,4,8,10,3,3,2,2,1,0,9.0,5.75,1.3,23.438,4.76
+15/05/25,Getafe,Ath Bilbao,0,2,A,0,0,D,Guillermo Cuadra,11,9,1,2,10,7,2,5,1,0,0,0,3.2,2.75,2.63,12.783,8.333
+18/05/25,Ath Madrid,Betis,4,1,H,2,0,H,Adri園 Cordero,20,12,11,7,12,9,7,4,1,1,0,0,1.91,3.6,3.8,14.136,15.15
+18/05/25,Barcelona,Villarreal,2,3,A,2,1,H,José Luis Munuera,24,7,9,3,14,9,11,3,2,0,0,0,1.83,4.1,3.75,6.862,16.333
+18/05/25,Celta,Vallecano,1,2,A,1,2,A,Juan Pulido,24,7,7,2,10,17,9,2,2,3,0,0,1.75,3.9,4.33,11.2,12.182
+18/05/25,Las Palmas,Leganes,0,1,A,0,1,A,Jose Maria Sánchez,12,11,3,4,15,12,9,2,2,2,0,0,2.9,3.5,2.35,5.0,14.28
+18/05/25,Mallorca,Getafe,1,2,A,0,0,D,Alejandro Hernández,7,10,1,4,14,9,3,4,2,2,0,0,2.0,3.2,4.2,5.571,12.345
+18/05/25,Osasuna,Espanol,2,0,H,1,0,H,Francisco Hernández,16,16,3,6,11,5,8,6,1,1,0,0,1.8,3.3,4.75,12.737,10.412
+18/05/25,Sevilla,Real Madrid,0,2,A,0,0,D,Mateo Busquets,6,16,1,6,7,9,1,7,0,1,2,0,4.2,4.0,1.75,21.444,8.913
+18/05/25,Sociedad,Girona,3,2,H,2,1,H,Miguel Ángel Ortiz Arias,15,9,9,5,10,9,9,2,1,3,0,0,2.05,3.1,4.1,10.909,11.609
+18/05/25,Valencia,Ath Bilbao,0,1,A,0,0,D,Alejandro Muñíz,6,10,2,4,10,16,5,3,3,1,0,0,2.2,3.0,3.8,13.667,11.562
+18/05/25,Valladolid,Alaves,0,1,A,0,1,A,Isidro Díaz de Mera,7,14,1,4,12,24,5,9,0,2,0,0,6.0,3.75,1.6,10.438,4.39
+23/05/25,Betis,Valencia,1,1,D,1,0,H,Víctor García,14,9,4,2,8,12,3,2,1,2,0,0,1.91,3.75,3.75,11.63,11.4
+24/05/25,Real Madrid,Sociedad,2,0,H,1,0,H,Mario Melero,16,9,8,1,5,7,11,4,0,0,0,0,1.42,5.0,6.5,11.08,28.182
+24/05/25,Espanol,Las Palmas,2,0,H,0,0,D,Alejandro Muñíz,8,10,3,4,12,11,3,6,3,2,0,0,1.38,4.75,8.0,15.571,13.444
+24/05/25,Leganes,Valladolid,3,0,H,3,0,H,César Soto,16,6,6,2,11,16,3,4,0,1,0,0,1.3,5.5,9.5,8.586,12.714
+24/05/25,Alaves,Osasuna,1,1,D,0,0,D,Guillermo Cuadra,14,19,5,5,15,6,5,9,2,2,0,0,3.2,3.2,2.35,7.069,9.5
+24/05/25,Getafe,Celta,1,2,A,1,1,D,Juan Martínez,6,15,1,8,13,10,2,6,3,4,1,0,4.1,3.75,1.85,23.125,9.1
+24/05/25,Vallecano,Mallorca,0,0,D,0,0,D,Ricardo de Burgos,27,9,8,2,9,14,11,2,2,2,0,0,1.53,4.2,6.25,9.4,14.611
+25/05/25,Girona,Ath Madrid,0,4,A,0,0,D,Jesús Gil,2,19,1,11,13,11,1,8,0,1,0,0,3.8,3.75,1.91,15.45,10.545
+25/05/25,Villarreal,Sevilla,4,2,H,3,1,H,Javier Alberola,12,17,7,6,8,14,3,5,0,1,0,0,1.48,5.0,6.0,14.684,14.609
+25/05/25,Ath Bilbao,Barcelona,0,3,A,0,2,A,Pablo González,10,13,1,4,21,10,2,6,1,0,0,0,3.2,3.75,2.1,14.556,4.708

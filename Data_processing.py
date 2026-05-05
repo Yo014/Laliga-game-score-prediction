@@ -50,8 +50,8 @@ def clean_and_combine_data():
             return f"{nums[0][0:2]}-{nums[0][2:4]}"
         return "Unknown"
 
-    # Gather raw files (ignoring previously processed files and scratch dir)
-    all_files = [f for f in glob.glob("**/*.csv", recursive=True) if "Processed" not in f and "cleaned_" not in f and "scratch" not in f.lower() and "current_squad_health" not in f]
+    # Gather raw files (ignoring previously processed files)
+    all_files = [f for f in glob.glob("**/*.csv", recursive=True) if "Processed" not in f and "cleaned_" not in f]
     scorers_files = sorted([f for f in all_files if 'scorers' in f.lower()])
     assists_files = sorted([f for f in all_files if 'assists' in f.lower()])
     matches_files = sorted([f for f in all_files if 'la liga' in f.lower() and 'scorer' not in f.lower() and 'assist' not in f.lower()])
@@ -71,10 +71,7 @@ def clean_and_combine_data():
             
         scorers_list.append(df[['Player', 'Team', 'Goals', 'Matches Played', 'Coefficient', 'xG', 'Season']])
     
-    # Drop all-NA columns to prevent pd.concat FutureWarnings
-    scorers_list = [df.dropna(axis=1, how='all') for df in scorers_list if not df.empty]
-    if scorers_list:
-        pd.concat(scorers_list, ignore_index=True).to_csv("Processed_Scorers.csv", index=False)
+    pd.concat(scorers_list, ignore_index=True).to_csv("Processed_Scorers.csv", index=False)
 
     # --- 2. COMBINE ASSISTS ---
     assists_list = []
@@ -91,9 +88,7 @@ def clean_and_combine_data():
             
         assists_list.append(df[['Player', 'Team', 'Assists', 'Matches Played', 'Coefficient', 'xA', 'Season']])
         
-    assists_list = [df.dropna(axis=1, how='all') for df in assists_list if not df.empty]
-    if assists_list:
-        pd.concat(assists_list, ignore_index=True).to_csv("Processed_Assists.csv", index=False)
+    pd.concat(assists_list, ignore_index=True).to_csv("Processed_Assists.csv", index=False)
 
     # --- 3. COMBINE MATCHES --
     matches_list = []
@@ -122,9 +117,7 @@ def clean_and_combine_data():
         df = df[cols_to_keep].dropna(subset=['Date', 'HomeTeam', 'AwayTeam'])
         matches_list.append(df)
 
-    matches_list = [df.dropna(axis=1, how='all') for df in matches_list if not df.empty]
-    if matches_list:
-        pd.concat(matches_list, ignore_index=True).to_csv("Processed_Matches.csv", index=False)
+    pd.concat(matches_list, ignore_index=True).to_csv("Processed_Matches.csv", index=False)
     print("Files successfully combined into Processed_Matches.csv, Processed_Assists.csv, and Processed_Scorers.csv!")
 
 if __name__ == "__main__":

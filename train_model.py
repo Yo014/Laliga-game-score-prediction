@@ -34,7 +34,7 @@ def main():
         'Home_FTS_Rate', 'Away_FTS_Rate',
         'xG_Form_Diff',
         'Home_EMA_Field_Tilt', 'Away_EMA_Field_Tilt', 'Tilt_Diff',
-        'Home_PPDA', 'Away_PPDA', 'PPDA_Diff',
+        'Home_EMA_PPDA', 'Away_EMA_PPDA', 'PPDA_Diff',
         'Home_Squad_Value', 'Away_Squad_Value', 'Value_Diff',
         'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',

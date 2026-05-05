@@ -5,7 +5,7 @@ import joblib
 def get_latest_team_stats(team_name, is_home, df):
     """
     Scans the dataset to find the most recent form and Expected Offensive Index 
-    for the requested team. Returns a dictionary of features.
+    for the requested team.
     """
     # Filter matches where the team played
     team_history = df[(df['HomeTeam'] == team_name) | (df['AwayTeam'] == team_name)].copy()
@@ -17,21 +17,30 @@ def get_latest_team_stats(team_name, is_home, df):
     # Get their absolute most recent game
     latest_match = team_history.iloc[-1]
     
-    stats = {}
-    prefix = 'Home_' if latest_match['HomeTeam'] == team_name else 'Away_'
-        
-    keys = [
-        'EMA_Points', 'EMA_GS', 'EMA_GC', 'EMA_GoalDiff',
-        'EMA_Shots', 'EMA_ShotsOnTarget', 'EMA_Corners',
-        'EMA_ShotsConceded', 'EMA_SOTConceded', 'EMA_CornersConceded',
-        'Expected_Offense', 'EMA_xG_Created', 'EMA_xG_Conceded',
-        'EMA_Field_Tilt', 'PPDA', 'Squad_Value',
-        'Clean_Sheet_Rate', 'FTS_Rate'
-    ]
-    
-    for k in keys:
-        stats[k] = latest_match[f"{prefix}{k}"]
-        
+    # Extract the stats depending on if they were home or away in that last match
+    if latest_match['HomeTeam'] == team_name:
+        stats = [
+            latest_match['Home_EMA_Points'], latest_match['Home_EMA_GS'], latest_match['Home_EMA_GC'], latest_match['Home_EMA_GoalDiff'],
+            latest_match['Home_EMA_Shots'], latest_match['Home_EMA_ShotsOnTarget'], latest_match['Home_EMA_Corners'],
+            latest_match['Home_EMA_ShotsConceded'], latest_match['Home_EMA_SOTConceded'], latest_match['Home_EMA_CornersConceded'],
+            latest_match['Home_Expected_Offense'],
+            latest_match['Home_EMA_xG_Created'], latest_match['Home_EMA_xG_Conceded'],
+            latest_match['Home_EMA_Field_Tilt'], latest_match['Home_EMA_PPDA'],
+            latest_match['Home_Squad_Value'],
+            latest_match['Home_Clean_Sheet_Rate'], latest_match['Home_FTS_Rate']
+        ]
+    else:
+        stats = [
+            latest_match['Away_EMA_Points'], latest_match['Away_EMA_GS'], latest_match['Away_EMA_GC'], latest_match['Away_EMA_GoalDiff'],
+            latest_match['Away_EMA_Shots'], latest_match['Away_EMA_ShotsOnTarget'], latest_match['Away_EMA_Corners'],
+            latest_match['Away_EMA_ShotsConceded'], latest_match['Away_EMA_SOTConceded'], latest_match['Away_EMA_CornersConceded'],
+            latest_match['Away_Expected_Offense'],
+            latest_match['Away_EMA_xG_Created'], latest_match['Away_EMA_xG_Conceded'],
+            latest_match['Away_EMA_Field_Tilt'], latest_match['Away_EMA_PPDA'],
+            latest_match['Away_Squad_Value'],
+            latest_match['Away_Clean_Sheet_Rate'], latest_match['Away_FTS_Rate']
+        ]
+
     return stats
 
 def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.0, b365d=3.0, b365a=3.0, referee_name="Unknown"):
@@ -79,8 +88,8 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
     away_missing_reds = away_health['Missing_Reds_Pct'].values[0] if len(away_health) > 0 else 0
 
     # 4. Calculate Differentials and H2H
-    form_diff = home_stats['EMA_Points'] - away_stats['EMA_Points']
-    offense_diff = home_stats['Expected_Offense'] - away_stats['Expected_Offense']
+    form_diff = home_stats[0] - away_stats[0]
+    offense_diff = home_stats[10] - away_stats[10]
     rest_diff = home_rest_days - away_rest_days
     missing_key_diff = home_missing_key - away_missing_key
     missing_impact_diff = home_missing_impact - away_missing_impact
@@ -128,58 +137,79 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
                len(matchups[(matchups['AwayTeam'] == home_team) & (matchups['FTR'] == 'A')])
         h2h_win_rate = wins / len(matchups)
 
-    xg_form_diff = home_stats['EMA_xG_Created'] - away_stats['EMA_xG_Created']
-    tilt_diff = home_stats['EMA_Field_Tilt'] - away_stats['EMA_Field_Tilt']
-    ppda_diff = home_stats['PPDA'] - away_stats['PPDA']
-    value_diff = home_stats['Squad_Value'] - away_stats['Squad_Value']
+    xg_form_diff = home_stats[11] - away_stats[11]
+    tilt_diff = home_stats[13] - away_stats[13]    # EMA_Field_Tilt
+    ppda_diff = home_stats[14] - away_stats[14]    # EMA_PPDA
+    value_diff = home_stats[15] - away_stats[15]    # Squad Value
 
-    # 5. Construct the feature array exactly how the model was trained using named dictionary mapping
-    feature_dict = {
-        'Home_Code': home_code, 'Away_Code': away_code, 'Referee_Code': referee_code,
-        'B365H': b365h, 'B365D': b365d, 'B365A': b365a,
-        'Market_Prob_H': market_prob_h, 'Market_Prob_D': market_prob_d, 'Market_Prob_A': market_prob_a,
-        'Ref_Avg_Cards': ref_avg_cards, 'Ref_Avg_Fouls': ref_avg_fouls, 'Ref_Home_Win_Rate': ref_home_win_rate,
-        
-        'Home_EMA_xG_Created': home_stats['EMA_xG_Created'], 'Home_EMA_xG_Conceded': home_stats['EMA_xG_Conceded'],
-        'Away_EMA_xG_Created': away_stats['EMA_xG_Created'], 'Away_EMA_xG_Conceded': away_stats['EMA_xG_Conceded'],
-        'Home_Clean_Sheet_Rate': home_stats['Clean_Sheet_Rate'], 'Away_Clean_Sheet_Rate': away_stats['Clean_Sheet_Rate'],
-        'Home_FTS_Rate': home_stats['FTS_Rate'], 'Away_FTS_Rate': away_stats['FTS_Rate'],
-        'xG_Form_Diff': xg_form_diff,
-        
-        'Home_EMA_Field_Tilt': home_stats['EMA_Field_Tilt'], 'Away_EMA_Field_Tilt': away_stats['EMA_Field_Tilt'], 'Tilt_Diff': tilt_diff,
-        'Home_PPDA': home_stats['PPDA'], 'Away_PPDA': away_stats['PPDA'], 'PPDA_Diff': ppda_diff,
-        'Home_Squad_Value': home_stats['Squad_Value'], 'Away_Squad_Value': away_stats['Squad_Value'], 'Value_Diff': value_diff,
-        
-        'Home_EMA_Points': home_stats['EMA_Points'], 'Home_EMA_GS': home_stats['EMA_GS'], 'Home_EMA_GC': home_stats['EMA_GC'], 'Home_EMA_GoalDiff': home_stats['EMA_GoalDiff'],
-        'Home_EMA_Shots': home_stats['EMA_Shots'], 'Home_EMA_ShotsOnTarget': home_stats['EMA_ShotsOnTarget'], 'Home_EMA_Corners': home_stats['EMA_Corners'],
-        'Home_EMA_ShotsConceded': home_stats['EMA_ShotsConceded'], 'Home_EMA_SOTConceded': home_stats['EMA_SOTConceded'], 'Home_EMA_CornersConceded': home_stats['EMA_CornersConceded'],
-        
-        'Away_EMA_Points': away_stats['EMA_Points'], 'Away_EMA_GS': away_stats['EMA_GS'], 'Away_EMA_GC': away_stats['EMA_GC'], 'Away_EMA_GoalDiff': away_stats['EMA_GoalDiff'],
-        'Away_EMA_Shots': away_stats['EMA_Shots'], 'Away_EMA_ShotsOnTarget': away_stats['EMA_ShotsOnTarget'], 'Away_EMA_Corners': away_stats['EMA_Corners'],
-        'Away_EMA_ShotsConceded': away_stats['EMA_ShotsConceded'], 'Away_EMA_SOTConceded': away_stats['EMA_SOTConceded'], 'Away_EMA_CornersConceded': away_stats['EMA_CornersConceded'],
-        
-        'Home_Expected_Offense': home_stats['Expected_Offense'], 'Away_Expected_Offense': away_stats['Expected_Offense'],
-        'Home_Days_Rest': home_rest_days, 'Away_Days_Rest': away_rest_days,
-        
-        'Home_Missing_Key_Players': home_missing_key, 'Away_Missing_Key_Players': away_missing_key,
-        'Home_Missing_Impact_Pct': home_missing_impact, 'Away_Missing_Impact_Pct': away_missing_impact,
-        'Home_Missing_Goals_Pct': home_missing_goals, 'Away_Missing_Goals_Pct': away_missing_goals,
-        'Home_Missing_Assists_Pct': home_missing_assists, 'Away_Missing_Assists_Pct': away_missing_assists,
-        'Home_Missing_NP_Goals_Pct': home_missing_np_goals, 'Away_Missing_NP_Goals_Pct': away_missing_np_goals,
-        'Home_Missing_Yellows_Pct': home_missing_yellows, 'Away_Missing_Yellows_Pct': away_missing_yellows,
-        'Home_Missing_Reds_Pct': home_missing_reds, 'Away_Missing_Reds_Pct': away_missing_reds,
-        
-        'Form_Diff': form_diff, 'Offense_Diff': offense_diff, 'Rest_Diff': rest_diff,
-        'Missing_Key_Diff': missing_key_diff, 'Missing_Impact_Diff': missing_impact_diff,
-        'Missing_Goals_Diff': missing_goals_diff, 'Missing_Assists_Diff': missing_assists_diff,
-        'Missing_NP_Goals_Diff': missing_np_goals_diff, 'Missing_Yellows_Diff': missing_yellows_diff, 'Missing_Reds_Diff': missing_reds_diff,
-        
-        'H2H_Home_Win_Rate': h2h_win_rate
-    }
-    
-    # Ensure correct feature order matching training data exactly
-    expected_cols = model.feature_names_in_
-    match_features = pd.DataFrame([feature_dict])[expected_cols]
+    # 5. Construct the feature array exactly how the model was trained
+    match_features = pd.DataFrame([[
+        home_code, away_code, referee_code,
+        b365h, b365d, b365a,
+        market_prob_h, market_prob_d, market_prob_a,
+        ref_avg_cards, ref_avg_fouls, ref_home_win_rate,
+        home_stats[11], home_stats[12],              # Home xG Form
+        away_stats[11], away_stats[12],              # Away xG Form
+        home_stats[16], away_stats[16],              # Clean Sheet
+        home_stats[17], away_stats[17],              # FTS
+        xg_form_diff,
+        home_stats[13], away_stats[13], tilt_diff,   # Field Tilt
+        home_stats[14], away_stats[14], ppda_diff,   # EMA_PPDA
+        home_stats[15], away_stats[15], value_diff,  # Squad Value
+        home_stats[0], home_stats[1], home_stats[2], home_stats[3],  # Home Form
+        home_stats[4], home_stats[5], home_stats[6],  # Home Dominance
+        home_stats[7], home_stats[8], home_stats[9],  # Home Defense
+        away_stats[0], away_stats[1], away_stats[2], away_stats[3],  # Away Form
+        away_stats[4], away_stats[5], away_stats[6],  # Away Dominance
+        away_stats[7], away_stats[8], away_stats[9],  # Away Defense
+        home_stats[10], away_stats[10],                # Advanced Expected Offense Indices
+        home_rest_days, away_rest_days,
+        home_missing_key, away_missing_key,          # Squad Health
+        home_missing_impact, away_missing_impact,
+        home_missing_goals, away_missing_goals,
+        home_missing_assists, away_missing_assists,
+        home_missing_np_goals, away_missing_np_goals,
+        home_missing_yellows, away_missing_yellows,
+        home_missing_reds, away_missing_reds,
+        form_diff, offense_diff, rest_diff,          # Explicit Differentials
+        missing_key_diff, missing_impact_diff,
+        missing_goals_diff, missing_assists_diff,
+        missing_np_goals_diff, missing_yellows_diff, missing_reds_diff,
+        h2h_win_rate                                 # H2H bias
+    ]], columns=[
+        'Home_Code', 'Away_Code', 'Referee_Code',
+        'B365H', 'B365D', 'B365A',
+        'Market_Prob_H', 'Market_Prob_D', 'Market_Prob_A',
+        'Ref_Avg_Cards', 'Ref_Avg_Fouls', 'Ref_Home_Win_Rate',
+        'Home_EMA_xG_Created', 'Home_EMA_xG_Conceded',
+        'Away_EMA_xG_Created', 'Away_EMA_xG_Conceded',
+        'Home_Clean_Sheet_Rate', 'Away_Clean_Sheet_Rate',
+        'Home_FTS_Rate', 'Away_FTS_Rate',
+        'xG_Form_Diff',
+        'Home_EMA_Field_Tilt', 'Away_EMA_Field_Tilt', 'Tilt_Diff',
+        'Home_EMA_PPDA', 'Away_EMA_PPDA', 'PPDA_Diff',
+        'Home_Squad_Value', 'Away_Squad_Value', 'Value_Diff',
+        'Home_EMA_Points', 'Home_EMA_GS', 'Home_EMA_GC', 'Home_EMA_GoalDiff',
+        'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
+        'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',
+        'Away_EMA_Points', 'Away_EMA_GS', 'Away_EMA_GC', 'Away_EMA_GoalDiff',
+        'Away_EMA_Shots', 'Away_EMA_ShotsOnTarget', 'Away_EMA_Corners',
+        'Away_EMA_ShotsConceded', 'Away_EMA_SOTConceded', 'Away_EMA_CornersConceded',
+        'Home_Expected_Offense', 'Away_Expected_Offense',
+        'Home_Days_Rest', 'Away_Days_Rest',
+        'Home_Missing_Key_Players', 'Away_Missing_Key_Players',
+        'Home_Missing_Impact_Pct', 'Away_Missing_Impact_Pct',
+        'Home_Missing_Goals_Pct', 'Away_Missing_Goals_Pct',
+        'Home_Missing_Assists_Pct', 'Away_Missing_Assists_Pct',
+        'Home_Missing_NP_Goals_Pct', 'Away_Missing_NP_Goals_Pct',
+        'Home_Missing_Yellows_Pct', 'Away_Missing_Yellows_Pct',
+        'Home_Missing_Reds_Pct', 'Away_Missing_Reds_Pct',
+        'Form_Diff', 'Offense_Diff', 'Rest_Diff',
+        'Missing_Key_Diff', 'Missing_Impact_Diff',
+        'Missing_Goals_Diff', 'Missing_Assists_Diff',
+        'Missing_NP_Goals_Diff', 'Missing_Yellows_Diff', 'Missing_Reds_Diff',
+        'H2H_Home_Win_Rate'
+    ])
 
     # 6. Make Prediction
     probabilities = model.predict_proba(match_features)[0]
@@ -190,9 +220,9 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
     print(f"\n==============================================")
     print(f"  MATCH PREDICTION: {home_team} vs {away_team} ")
     print(f"==============================================")
-    print(f"Current Home xG+xA Index : {home_stats['Expected_Offense']:.2f}")
-    print(f"Current Away xG+xA Index : {away_stats['Expected_Offense']:.2f}")
-    print(f"Squad Market Values      : {home_team} (€{home_stats['Squad_Value']/1e6:.1f}M) vs {away_team} (€{away_stats['Squad_Value']/1e6:.1f}M)")
+    print(f"Current Home xG+xA Index : {home_stats[10]:.2f}")
+    print(f"Current Away xG+xA Index : {away_stats[10]:.2f}")
+    print(f"Squad Market Values      : {home_team} (€{home_stats[15]/1e6:.1f}M) vs {away_team} (€{away_stats[15]/1e6:.1f}M)")
     print(f"----------------------------------------------")
     print(f"Squad Health:")
     print("")

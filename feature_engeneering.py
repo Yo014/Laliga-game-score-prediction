@@ -2,15 +2,7 @@ import pandas as pd
 import numpy as np
 import os
 
-# Map PPDA team names to match data team names
-PPDA_TEAM_MAP = {
-    'Athletic Club': 'Ath Bilbao', 'Atletico Madrid': 'Ath Madrid',
-    'Celta Vigo': 'Celta', 'Real Betis': 'Betis',
-    'Rayo Vallecano': 'Vallecano', 'Real Sociedad': 'Sociedad',
-    'Deportivo La Coruna': 'La Coruna', 'Sporting Gijon': 'Sp Gijon',
-    'Espanyol': 'Espanol', 'Real Valladolid': 'Valladolid',
-    'SD Huesca': 'Huesca', 'Real Oviedo': 'Oviedo'
-}
+
 
 # Map Squad folder names to match data team names
 SQUAD_NAME_MAP = {
@@ -65,29 +57,6 @@ def load_squad_value_data():
     
     return pd.DataFrame(squad_values)
 
-def load_ppda_data():
-    """
-    Loads all PPDA CSV files and returns a DataFrame with Team, Season, and PPDA columns.
-    Maps PPDA team names to match the naming convention in match data.
-    """
-    ppda_dir = '/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/ppda'
-    season_map = {
-        'ppda1516': '15-16', 'ppda1617': '16-17', 'ppda1718': '17-18',
-        'ppda1819': '18-19', 'ppda1920': '19-20', 'ppda2021': '20-21',
-        'ppda2122': '21-22', 'ppda2223': '22-23', 'ppda2324': '23-24',
-        'ppda2425': '24-25', 'ppda2526': '25-26'
-    }
-    all_ppda = []
-    for filename, season in season_map.items():
-        filepath = os.path.join(ppda_dir, f'{filename}.csv')
-        if os.path.exists(filepath):
-            df = pd.read_csv(filepath, sep=';', encoding='utf-8-sig')
-            df = df[['team', 'ppda']].copy()
-            df.columns = ['Team', 'PPDA']
-            df['Team'] = df['Team'].str.strip().replace(PPDA_TEAM_MAP)
-            df['Season'] = season
-            all_ppda.append(df)
-    return pd.concat(all_ppda, ignore_index=True)
 
 def calculate_h2h(df):
     """
@@ -133,23 +102,24 @@ def calculate_h2h(df):
 def calculate_ema_form(df, span=5):
     """
     Calculates the Exponential Moving Average (EMA) for team stats.
-    Using EMA means recent matches have a higher weight in the 'form' calculation.
     """
     # Create a dataframe to track every team's individual match history
     # Also need opponent shots/corners for Field Tilt calculation
-    home_stats = df[['Date', 'HomeTeam', 'FTHG', 'FTAG', 'HS', 'HST', 'HC', 'AS', 'AST', 'AC']].rename(
+    home_stats = df[['Date', 'HomeTeam', 'FTHG', 'FTAG', 'HS', 'HST', 'HC', 'AS', 'AST', 'AC', 'Home_PPDA']].rename(
         columns={'HomeTeam': 'Team', 'FTHG': 'GoalsScored', 'FTAG': 'GoalsConceded',
                  'HS': 'Shots', 'HST': 'ShotsOnTarget', 'HC': 'Corners',
-                 'AS': 'OppShots', 'AST': 'OppShotsOnTarget', 'AC': 'OppCorners'}
+                 'AS': 'OppShots', 'AST': 'OppShotsOnTarget', 'AC': 'OppCorners',
+                 'Home_PPDA': 'Match_PPDA'}
     )
     home_stats['IsHome'] = 1
     home_stats['Points'] = np.where(home_stats['GoalsScored'] > home_stats['GoalsConceded'], 3, 
                            np.where(home_stats['GoalsScored'] == home_stats['GoalsConceded'], 1, 0))
 
-    away_stats = df[['Date', 'AwayTeam', 'FTAG', 'FTHG', 'AS', 'AST', 'AC', 'HS', 'HST', 'HC']].rename(
+    away_stats = df[['Date', 'AwayTeam', 'FTAG', 'FTHG', 'AS', 'AST', 'AC', 'HS', 'HST', 'HC', 'Away_PPDA']].rename(
         columns={'AwayTeam': 'Team', 'FTAG': 'GoalsScored', 'FTHG': 'GoalsConceded',
                  'AS': 'Shots', 'AST': 'ShotsOnTarget', 'AC': 'Corners',
-                 'HS': 'OppShots', 'HST': 'OppShotsOnTarget', 'HC': 'OppCorners'}
+                 'HS': 'OppShots', 'HST': 'OppShotsOnTarget', 'HC': 'OppCorners',
+                 'Away_PPDA': 'Match_PPDA'}
     )
     away_stats['IsHome'] = 0
     away_stats['Points'] = np.where(away_stats['GoalsScored'] > away_stats['GoalsConceded'], 3, 
@@ -183,10 +153,13 @@ def calculate_ema_form(df, span=5):
     cols_to_ema = ['Points', 'GoalsScored', 'GoalsConceded', 'GoalDiff', 
                    'Shots', 'ShotsOnTarget', 'Corners', 
                    'OppShots', 'OppShotsOnTarget', 'OppCorners',
-                   'Match_xG', 'Field_Tilt']
+                   'Match_xG', 'Field_Tilt', 'Match_PPDA']
                    
     for col in cols_to_ema:
-        team_matches[col] = pd.to_numeric(team_matches[col], errors='coerce').fillna(0)
+        if col == 'Match_PPDA':
+            team_matches[col] = pd.to_numeric(team_matches[col], errors='coerce').fillna(10.0)
+        else:
+            team_matches[col] = pd.to_numeric(team_matches[col], errors='coerce').fillna(0)
                    
     grouped = team_matches.groupby('Team')[cols_to_ema]
     ema_df = grouped.transform(lambda x: x.shift(1).ewm(span=span, adjust=False).mean())
@@ -210,6 +183,7 @@ def calculate_ema_form(df, span=5):
     # TRUE FORM METRICS: EMA of Match xG and Field Tilt
     team_matches['EMA_xG_Created'] = ema_df['Match_xG']
     team_matches['EMA_Field_Tilt'] = ema_df['Field_Tilt']
+    team_matches['EMA_PPDA'] = ema_df['Match_PPDA']
 
     # Defensve/Offensive reliability
     team_matches['Clean_Sheet'] = np.where(team_matches['GoalsConceded'] == 0, 1, 0)
@@ -221,7 +195,7 @@ def calculate_ema_form(df, span=5):
     return team_matches[['Date', 'Team', 'EMA_Points', 'EMA_GoalsScored', 'EMA_GoalsConceded', 'EMA_GoalDiff', 
                          'EMA_Shots', 'EMA_ShotsOnTarget', 'EMA_Corners', 
                          'EMA_ShotsConceded', 'EMA_SOTConceded', 'EMA_CornersConceded',
-                         'EMA_xG_Created', 'EMA_Field_Tilt', 'EMA_Clean_Sheet', 'EMA_Failed_To_Score']]
+                         'EMA_xG_Created', 'EMA_Field_Tilt', 'EMA_PPDA', 'EMA_Clean_Sheet', 'EMA_Failed_To_Score']]
 
 def calculate_referee_stats(df, span=20):
     """
@@ -321,7 +295,7 @@ def main():
         'EMA_Points': 'Home_EMA_Points', 'EMA_GoalsScored': 'Home_EMA_GS', 'EMA_GoalsConceded': 'Home_EMA_GC',
         'EMA_GoalDiff': 'Home_EMA_GoalDiff', 'EMA_Shots': 'Home_EMA_Shots', 'EMA_ShotsOnTarget': 'Home_EMA_ShotsOnTarget', 'EMA_Corners': 'Home_EMA_Corners',
         'EMA_ShotsConceded': 'Home_EMA_ShotsConceded', 'EMA_SOTConceded': 'Home_EMA_SOTConceded', 'EMA_CornersConceded': 'Home_EMA_CornersConceded',
-        'EMA_xG_Created': 'Home_EMA_xG_Created', 'EMA_Field_Tilt': 'Home_EMA_Field_Tilt',
+        'EMA_xG_Created': 'Home_EMA_xG_Created', 'EMA_Field_Tilt': 'Home_EMA_Field_Tilt', 'EMA_PPDA': 'Home_EMA_PPDA',
         'EMA_Clean_Sheet': 'Home_Clean_Sheet_Rate', 'EMA_Failed_To_Score': 'Home_FTS_Rate'
     }).drop('Team', axis=1)
 
@@ -330,7 +304,7 @@ def main():
         'EMA_Points': 'Away_EMA_Points', 'EMA_GoalsScored': 'Away_EMA_GS', 'EMA_GoalsConceded': 'Away_EMA_GC',
         'EMA_GoalDiff': 'Away_EMA_GoalDiff', 'EMA_Shots': 'Away_EMA_Shots', 'EMA_ShotsOnTarget': 'Away_EMA_ShotsOnTarget', 'EMA_Corners': 'Away_EMA_Corners',
         'EMA_ShotsConceded': 'Away_EMA_ShotsConceded', 'EMA_SOTConceded': 'Away_EMA_SOTConceded', 'EMA_CornersConceded': 'Away_EMA_CornersConceded',
-        'EMA_xG_Created': 'Away_EMA_xG_Created', 'EMA_Field_Tilt': 'Away_EMA_Field_Tilt',
+        'EMA_xG_Created': 'Away_EMA_xG_Created', 'EMA_Field_Tilt': 'Away_EMA_Field_Tilt', 'EMA_PPDA': 'Away_EMA_PPDA',
         'EMA_Clean_Sheet': 'Away_Clean_Sheet_Rate', 'EMA_Failed_To_Score': 'Away_FTS_Rate'
     }).drop('Team', axis=1)
 
@@ -362,21 +336,7 @@ def main():
     matches['Home_Expected_Offense'] = matches['Home_Expected_Offense'].fillna(0)
     matches['Away_Expected_Offense'] = matches['Away_Expected_Offense'].fillna(0)
 
-    # 4b. Add PPDA (Pressing Intensity) per team per season
-    print("Integrating PPDA (pressing intensity) data...")
-    ppda_df = load_ppda_data()
-    
-    matches = pd.merge(matches, ppda_df[['Season', 'Team', 'PPDA']],
-                       left_on=['Season', 'HomeTeam'], right_on=['Season', 'Team'], how='left')
-    matches = matches.rename(columns={'PPDA': 'Home_PPDA'}).drop('Team', axis=1)
-    
-    matches = pd.merge(matches, ppda_df[['Season', 'Team', 'PPDA']],
-                       left_on=['Season', 'AwayTeam'], right_on=['Season', 'Team'], how='left')
-    matches = matches.rename(columns={'PPDA': 'Away_PPDA'}).drop('Team', axis=1)
-    
-    # Fill missing PPDA with league average (~10)
-    matches['Home_PPDA'] = matches['Home_PPDA'].fillna(10.0)
-    matches['Away_PPDA'] = matches['Away_PPDA'].fillna(10.0)
+
 
     # 5. Add Squad Health Data (only for the current 25-26 season)
     print("Integrating squad health / injury data...")
@@ -471,7 +431,7 @@ def main():
     matches['Missing_Yellows_Diff'] = matches['Home_Missing_Yellows_Pct'] - matches['Away_Missing_Yellows_Pct']
     matches['Missing_Reds_Diff'] = matches['Home_Missing_Reds_Pct'] - matches['Away_Missing_Reds_Pct']
     matches['xG_Form_Diff'] = matches['Home_EMA_xG_Created'] - matches['Away_EMA_xG_Created']
-    matches['PPDA_Diff'] = matches['Home_PPDA'] - matches['Away_PPDA']
+    matches['PPDA_Diff'] = matches['Home_EMA_PPDA'] - matches['Away_EMA_PPDA']
     matches['Tilt_Diff'] = matches['Home_EMA_Field_Tilt'] - matches['Away_EMA_Field_Tilt']
     matches['Value_Diff'] = matches['Home_Squad_Value'] - matches['Away_Squad_Value']
 
@@ -492,7 +452,7 @@ def main():
         'Away_Clean_Sheet_Rate', 'Away_FTS_Rate',
         'xG_Form_Diff',
         'Home_EMA_Field_Tilt', 'Away_EMA_Field_Tilt', 'Tilt_Diff',
-        'Home_PPDA', 'Away_PPDA', 'PPDA_Diff',
+        'Home_EMA_PPDA', 'Away_EMA_PPDA', 'PPDA_Diff',
         'Home_Squad_Value', 'Away_Squad_Value', 'Value_Diff',
         'Home_EMA_Shots', 'Home_EMA_ShotsOnTarget', 'Home_EMA_Corners',
         'Home_EMA_ShotsConceded', 'Home_EMA_SOTConceded', 'Home_EMA_CornersConceded',
