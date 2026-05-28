@@ -110,7 +110,7 @@ def clean_and_combine_data():
         df['AwayTeam'] = df['AwayTeam'].apply(clean_team_name)
         df['Date'] = pd.to_datetime(df['Date'], format='mixed', dayfirst=True, errors='coerce').dt.strftime('%Y-%m-%d')
         
-        cols_to_keep = ['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'HS', 'AS', 'HST', 'AST', 'HC', 'AC', 'HF', 'AF', 'HY', 'AY', 'HR', 'AR', 'Referee', 'B365H', 'B365D', 'B365A']
+        cols_to_keep = ['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'HS', 'AS', 'HST', 'AST', 'HC', 'AC', 'HF', 'AF', 'HY', 'AY', 'HR', 'AR', 'Referee', 'B365H', 'B365D', 'B365A', 'Home_PPDA', 'Away_PPDA']
         for c in cols_to_keep:
             if c not in df.columns: df[c] = None # Fill gracefully if a column doesn't exist
             
