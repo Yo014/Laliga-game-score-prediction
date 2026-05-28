@@ -1,6 +1,7 @@
 import pandas as pd
 import glob
 import re
+import db_manager
 
 def clean_and_combine_data():
     # Standardize team names exactly as you had them
@@ -71,7 +72,9 @@ def clean_and_combine_data():
             
         scorers_list.append(df[['Player', 'Team', 'Goals', 'Matches Played', 'Coefficient', 'xG', 'Season']])
     
-    pd.concat(scorers_list, ignore_index=True).to_csv("Processed_Scorers.csv", index=False)
+    combined_scorers = pd.concat(scorers_list, ignore_index=True)
+    combined_scorers.to_csv("Processed_Scorers.csv", index=False)
+    db_manager.save_to_db(combined_scorers, 'processed_scorers')
 
     # --- 2. COMBINE ASSISTS ---
     assists_list = []
@@ -88,7 +91,9 @@ def clean_and_combine_data():
             
         assists_list.append(df[['Player', 'Team', 'Assists', 'Matches Played', 'Coefficient', 'xA', 'Season']])
         
-    pd.concat(assists_list, ignore_index=True).to_csv("Processed_Assists.csv", index=False)
+    combined_assists = pd.concat(assists_list, ignore_index=True)
+    combined_assists.to_csv("Processed_Assists.csv", index=False)
+    db_manager.save_to_db(combined_assists, 'processed_assists')
 
     # --- 3. COMBINE MATCHES --
     matches_list = []
@@ -117,7 +122,9 @@ def clean_and_combine_data():
         df = df[cols_to_keep].dropna(subset=['Date', 'HomeTeam', 'AwayTeam'])
         matches_list.append(df)
 
-    pd.concat(matches_list, ignore_index=True).to_csv("Processed_Matches.csv", index=False)
+    combined_matches = pd.concat(matches_list, ignore_index=True)
+    combined_matches.to_csv("Processed_Matches.csv", index=False)
+    db_manager.save_to_db(combined_matches, 'processed_matches')
     print("Files successfully combined into Processed_Matches.csv, Processed_Assists.csv, and Processed_Scorers.csv!")
 
 if __name__ == "__main__":

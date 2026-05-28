@@ -24,49 +24,58 @@ This project uses historical match data, top scorer information, top assist data
 - `Laligascoring/`: Directory containing top scorers data for various seasons.
 - `LaligaAssist/`: Directory containing top assisters data for various seasons.
 - `Laliga Squads/`: Directory containing per-team player data CSVs for the current season (appearances, goals, injuries, expected return dates).
-- `Data_processing.py`: The data cleaning script. It recursively reads and combines raw files, standardizing team names and formatting for different seasons. It now captures fouls and cards for referee analysis.
-- `build_squad_health.py`: The squad health aggregation script. It reads all player CSVs, identifies currently injured players, and computes team-level injury metrics.
-- `feature_engeneering.py`: The feature engineering script. It loads processed data, calculates EMA, Market Probabilities, and Referee Stats. Outputs `ml_ready_data.csv`.
+- `db_manager.py`: The database manager module. Handles SQL connection lifecycles, index optimizations, and clean data queries for SQLite.
+- `populate_db.py`: The database seeding script. Parses the raw season CSV files and player directories and bulk inserts them into SQLite tables.
+- `laliga.db`: Local SQLite database storing all raw and processed tables.
+- `Data_processing.py`: The data cleaning script. Recursively reads, combines, and standardizes match datasets, saving them to CSVs and the SQLite database.
+- `build_squad_health.py`: The squad health aggregation script. Reads all player CSVs, identifies currently injured players, and computes team-level injury metrics.
+- `feature_engeneering.py`: The feature engineering script. Queries team squads and match history directly from SQLite (with a CSV fallback), calculates EMA features, and outputs `ml_ready_data.csv`.
 - `train_model.py`: The machine learning training script. Trains an `XGBClassifier` with grid search, evaluates accuracy, and saves the model as `laliga_rf_model.pkl`. Includes feature importance visualization.
-- `predict.py`: The inference script. Dynamically calculates match differentials, handles betting odds inputs, and uses the saved model to predict outcomes.
+- `predict.py`: The inference script. Queries matches from SQLite, dynamically calculates match differentials, and makes live matchup predictions.
 
 ## Prerequisites
-Make sure you have the following Python packages installed:
+Make sure you have the following Python packages installed. (Note: `sqlite3` is built into Python's standard library and requires no extra installation).
 ```bash
 pip install pandas numpy scikit-learn joblib xgboost
 ```
 
 ## How to Use
 
-1. **Data Processing**
+1. **Seed the SQL Database (First Time Only)**
+   ```bash
+   python populate_db.py
+   ```
+   *Parses all raw match CSVs and player folders, and seeds the SQLite database (`laliga.db`).*
+
+2. **Data Processing**
    ```bash
    python Data_processing.py
    ```
-   *Combines raw CSVs into `Processed_Matches.csv`, capturing fouls, cards, and betting odds.*
+   *Combines raw CSVs into `Processed_Matches.csv` and saves the processed tables into SQLite.*
 
-2. **Build Squad Health**
+3. **Build Squad Health**
    ```bash
    python build_squad_health.py
    ```
    *Aggregates current season's player injury data into `current_squad_health.csv`.*
 
-3. **Feature Engineering**
+4. **Feature Engineering**
    ```bash
    python feature_engeneering.py
    ```
-    *Generates `ml_ready_data.csv` with 82 model features including PPDA, Field Tilt, and Squad Market Value.*
+   *Queries team squads and matches from the SQLite database to generate `ml_ready_data.csv`.*
 
-4. **Train the Model**
+5. **Train the Model**
    ```bash
    python train_model.py
    ```
-    *Trains the optimized XGBoost classifier. Current accuracy: **~54.5%**.*
+   *Trains the optimized XGBoost classifier on the engineered dataset.*
 
-5. **Make Predictions**
+6. **Make Predictions**
    ```bash
    python predict.py
    ```
-   *Example call:* `predict_match("Barcelona", "Real Madrid", 7, 7, 2.10, 3.50, 3.30, "Jose Maria Sánchez")`
+   *Makes live match predictions, loading historical trends directly from SQLite.*
 
 
 ## Model Features (82 total)

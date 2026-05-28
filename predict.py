@@ -1,5 +1,6 @@
 import pandas as pd
 import joblib
+import db_manager
 
 
 def get_latest_team_stats(team_name, is_home, df):
@@ -52,7 +53,16 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
     squad_health_path = 'current_squad_health.csv'
     
     try:
-        raw_matches = pd.read_csv('Processed_Matches.csv')
+        raw_matches = db_manager.query_db("SELECT * FROM processed_matches;")
+    except Exception as e:
+        print(f"SQL raw match query failed: {e}. Falling back to CSV search.")
+        try:
+            raw_matches = pd.read_csv('Processed_Matches.csv')
+        except FileNotFoundError:
+            print("Error: Processed_Matches.csv not found.")
+            return
+
+    try:
         df = pd.read_csv(data_path)
         model = joblib.load(model_path)
         squad_health = pd.read_csv(squad_health_path)

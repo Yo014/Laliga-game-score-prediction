@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
+import db_manager
 
 
 
@@ -34,28 +35,34 @@ def parse_market_value(val_str):
 
 def load_squad_value_data():
     """
-    Aggregates player market values from the 'Laliga Squads' directory.
+    Aggregates player market values from the SQLite database with a CSV fallback.
     Returns a DataFrame with 'Team' and 'Total_Squad_Value'.
     """
-    base_dir = 'Laliga Squads'
-    squad_values = []
-    
-    if not os.path.exists(base_dir):
-        print(f"Warning: Squad directory not found at {base_dir}")
-        return pd.DataFrame(columns=['Team', 'Total_Squad_Value'])
+    try:
+        squad_values = db_manager.get_squad_value_data()
+        print("Successfully queried squad value data from SQL database.")
+        return squad_values
+    except Exception as e:
+        print(f"SQL squad value query failed: {e}. Falling back to CSV search.")
+        base_dir = 'Laliga Squads'
+        squad_values = []
+        
+        if not os.path.exists(base_dir):
+            print(f"Warning: Squad directory not found at {base_dir}")
+            return pd.DataFrame(columns=['Team', 'Total_Squad_Value'])
 
-    for folder_name in os.listdir(base_dir):
-        folder_path = os.path.join(base_dir, folder_name)
-        if os.path.isdir(folder_path):
-            file_path = os.path.join(folder_path, 'player_data.csv')
-            if os.path.exists(file_path):
-                df = pd.read_csv(file_path)
-                if 'Market Value' in df.columns:
-                    total_value = df['Market Value'].apply(parse_market_value).sum()
-                    match_name = SQUAD_NAME_MAP.get(folder_name, folder_name)
-                    squad_values.append({'Team': match_name, 'Total_Squad_Value': total_value})
-    
-    return pd.DataFrame(squad_values)
+        for folder_name in os.listdir(base_dir):
+            folder_path = os.path.join(base_dir, folder_name)
+            if os.path.isdir(folder_path):
+                file_path = os.path.join(folder_path, 'player_data.csv')
+                if os.path.exists(file_path):
+                    df = pd.read_csv(file_path)
+                    if 'Market Value' in df.columns:
+                        total_value = df['Market Value'].apply(parse_market_value).sum()
+                        match_name = SQUAD_NAME_MAP.get(folder_name, folder_name)
+                        squad_values.append({'Team': match_name, 'Total_Squad_Value': total_value})
+        
+        return pd.DataFrame(squad_values)
 
 
 def calculate_h2h(df):
@@ -253,9 +260,15 @@ def build_advanced_strength_index():
     Aggregates Expected Goals (xG) and Expected Assists (xA) from your master datasets
     to create a true 'Expected Offensive Index' for each team per season.
     """
-    # Load your updated master files
-    scorers = pd.read_csv('Processed_Scorers.csv')
-    assists = pd.read_csv('Processed_Assists.csv')
+    # Load from SQL with a CSV fallback
+    try:
+        scorers = db_manager.query_db("SELECT * FROM processed_scorers;")
+        assists = db_manager.query_db("SELECT * FROM processed_assists;")
+        print("Successfully queried advanced expected offensive metrics from SQL database.")
+    except Exception as e:
+        print(f"SQL expected metrics query failed: {e}. Falling back to CSV search.")
+        scorers = pd.read_csv('Processed_Scorers.csv')
+        assists = pd.read_csv('Processed_Assists.csv')
     
     # Calculate total Expected Goals (xG) per team per season
     team_xg = scorers.groupby(['Season', 'Team'])['xG'].sum().reset_index(name='Total_xG_Power')
@@ -275,7 +288,12 @@ def main():
     print("--- Starting Advanced Feature Engineering ---")
     
     # 1. Load Match Data
-    matches = pd.read_csv('Processed_Matches.csv')
+    try:
+        matches = db_manager.query_db("SELECT * FROM processed_matches;")
+        print("Successfully loaded matches data from SQL database.")
+    except Exception as e:
+        print(f"SQL match query failed: {e}. Falling back to CSV search.")
+        matches = pd.read_csv('Processed_Matches.csv')
     matches['Date'] = pd.to_datetime(matches['Date'])
     
     print("Calculating Head-to-Head history...")
