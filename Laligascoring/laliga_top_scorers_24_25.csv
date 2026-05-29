@@ -1,0 +1,80 @@
+Player,Team,Goals,Matches Played,Coefficient,Expected Goals (xG)
+K. Mbappé,Real Madrid,31,34,0.91,25.9
+R. Lewandowski,FC Barcelona,27,34,0.79,27.1
+A. Budimir,Osasuna,21,38,0.55,18.6
+A. Sørloth,Atlético de Madrid,20,35,0.57,17.0
+Ayoze,Villarreal,19,30,0.63,12.8
+Raphinha,FC Barcelona,18,36,0.5,19.4
+Julián Alvarez,Atlético de Madrid,17,37,0.46,14.2
+Oihan Sancet,Athletic,15,29,0.52,9.7
+Kike García,Deportivo Alavés,13,35,0.37,9.8
+Javi Puado,Espanyol,12,35,0.34,11.5
+Thierno Barry,Villarreal,11,35,0.31,12.4
+D. Lukébakio,Sevilla,11,38,0.29,10.0
+Borja Iglesias,Celta,11,37,0.3,9.4
+C. Stuani,Girona FC,11,32,0.34,8.3
+Hugo Duro,Valencia,11,31,0.35,9.4
+Vinícius,Real Madrid,11,30,0.37,10.7
+Fábio Silva,UD Las Palmas,10,24,0.42,8.8
+Dani Olmo,FC Barcelona,10,25,0.4,6.5
+Ferran Torres,FC Barcelona,10,27,0.37,8.0
+Iago Aspas,Celta,10,30,0.33,8.7
+Jorge De Frutos,Rayo Vallecano,6,36,0.17,6.4
+F. Valverde,Real Madrid,6,36,0.17,2.7
+Nico Williams,Athletic,5,29,0.17,4.2
+Luis Rioja,Valencia,5,37,0.14,3.2
+Aimar Oroz,Osasuna,5,37,0.14,4.2
+Carlos Vicente,Deportivo Alavés,5,37,0.14,3.5
+Rubén García,Osasuna,5,36,0.14,3.1
+Take Kubo,Real Sociedad,5,36,0.14,3.6
+Juan Cruz,Leganés,5,34,0.15,0.1
+Umar Sadiq,Valencia,5,23,0.22,3.6
+Mamadou Sylla,Real Valladolid,5,29,0.17,5.1
+Antony,Real Betis,5,17,0.29,2.9
+Alfon González,Celta,5,26,0.19,4.6
+Cucho,Real Betis,5,15,0.33,
+B. Mayoral,Getafe,5,24,0.21,3.5
+Joan Jordán,Deportivo Alavés,5,25,0.2,4.8
+W. Swedberg,Celta,4,32,0.13,5.3
+Pedri,FC Barcelona,4,37,0.11,2.2
+Dani Rodríguez,Mallorca,4,37,0.11,0.0
+Álvaro García,Rayo Vallecano,4,36,0.11,7.7
+Isi Palazón,Rayo Vallecano,4,35,0.11,4.6
+Ó. Mingueza,Celta,4,34,0.12,1.5
+Pape Gueye,Villarreal,4,34,0.12,3.3
+Yéremy Pino,Villarreal,4,34,0.12,4.0
+Pathé Ciss,Rayo Vallecano,4,33,0.12,1.9
+Raúl Moro,Real Valladolid,4,33,0.12,4.2
+L. Cabrera,Espanyol,4,33,0.12,1.2
+C. Uche,Getafe,4,33,0.12,3.7
+Dani Vivian,Athletic,4,32,0.13,2.0
+Ramón Terrats,Getafe,4,26,0.15,2.1
+Raúl García,Osasuna,4,32,0.13,3.5
+Toni Martínez,Deportivo Alavés,4,28,0.14,3.9
+Juanlu Sánchez,Sevilla,4,32,0.13,2.8
+Vitor Roque,Real Betis,4,22,0.18,6.1
+Abel Ruiz,Girona FC,4,23,0.17,4.8
+Hugo Álvarez,Celta,4,26,0.15,2.6
+Pablo Durán,Celta,4,27,0.15,3.7
+Munir,Leganés,4,25,0.16,3.6
+A. Danjuma,Girona FC,4,28,0.14,4.4
+Y. Herrera,Girona FC,4,29,0.14,3.6
+Ángel Correa,Atlético de Madrid,4,31,0.13,4.5
+Isaac Romero,Sevilla,4,31,0.13,6.7
+Brahim Díaz,Real Madrid,4,31,0.13,5.5
+Randy Nteka,Rayo Vallecano,3,24,0.13,2.9
+Yáser Asprilla,Girona FC,3,27,0.11,2.1
+Carles Pérez,Getafe,3,27,0.11,2.4
+Brais Méndez,Real Sociedad,3,27,0.11,3.6
+Pedro Díaz,Rayo Vallecano,3,26,0.12,2.4
+Bryan Gil,Girona FC,3,25,0.12,2.3
+S. Amallah,Real Valladolid,3,24,0.13,3.3
+Gerard Moreno,Villarreal,3,17,0.18,4.1
+Aitor Paredes,Athletic,3,23,0.13,2.3
+O. Óskarsson,Real Sociedad,3,23,0.13,5.1
+Sergio Camello,Rayo Vallecano,3,23,0.13,4.4
+Álex Muñoz,UD Las Palmas,3,21,0.14,0.8
+Tasos Douvikas,Celta,3,20,0.15,4.4
+Pere Milla,Espanyol,3,20,0.15,1.5
+Pablo Torre,FC Barcelona,3,10,0.3,0.4
+Diego García,Leganés,3,28,0.11,4.0

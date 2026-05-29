@@ -2,8 +2,9 @@ import pandas as pd
 import os
 
 # Paths
-sp1_path = "/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/LaligaSeasons/SP1 25-26.csv"
-target_path = "/Users/santomukiza/Desktop/Github/LaligaPrediction/Laliga-game-score-prediction/LaligaSeasons/La Liga Season 2526.csv"
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sp1_path = os.path.join(base_dir, "LaligaSeasons", "SP1.csv")
+target_path = os.path.join(base_dir, "LaligaSeasons", "La Liga Season 2526.csv")
 
 # Load data
 # Note: SP1 CSV has a BOM character at the start, so using utf-8-sig

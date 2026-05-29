@@ -1,0 +1,101 @@
+Player,Team,Assists,Matches Played,Coefficient,Expected Assists (xA)
+Álex Baena,Villarreal,14,34,0.41,9.5
+Nico Williams,Athletic,11,31,0.35,7.5
+Iago Aspas,Celta,10,35,0.29,9.3
+Savinho,Girona FC,10,37,0.27,9.9
+Raphinha,FC Barcelona,9,28,0.32,5.0
+İ. Gündoğan,FC Barcelona,9,36,0.25,9.8
+Toni Kroos,Real Madrid,8,33,0.24,5.9
+Yan Couto,Girona FC,8,34,0.24,4.3
+R. Lewandowski,FC Barcelona,8,35,0.23,3.6
+Artem Dovbyk,Girona FC,8,36,0.22,3.7
+Diego Rico,Getafe,7,32,0.22,3.4
+F. Valverde,Real Madrid,7,37,0.19,3.4
+Miguel Gutiérrez,Girona FC,7,35,0.2,6.8
+J. Bellingham,Real Madrid,7,28,0.25,4.3
+Brahim Díaz,Real Madrid,7,31,0.23,4.7
+Gerard Moreno,Villarreal,7,30,0.23,4.6
+V. Tsygankov,Girona FC,7,30,0.23,6.5
+A. Sørloth,Villarreal,6,34,0.18,3.0
+Aleix García,Girona FC,6,37,0.16,6.0
+Jesús Areso,Osasuna,6,37,0.16,2.9
+Diego López,Valencia,6,36,0.17,2.4
+M. Greenwood,Getafe,6,33,0.18,4.3
+Brais Méndez,Real Sociedad,6,32,0.19,4.4
+Luka Modrić,Real Madrid,6,32,0.19,4.8
+Lucas Vázquez,Real Madrid,6,29,0.21,3.6
+A. Griezmann,Atlético de Madrid,6,33,0.18,5.8
+Dani Parejo,Villarreal,5,33,0.15,4.0
+Lamine Yamal,FC Barcelona,5,37,0.14,6.5
+Sergi Darder,Mallorca,5,36,0.14,5.0
+Portu,Girona FC,5,36,0.14,2.5
+S. Lino,Atlético de Madrid,5,34,0.15,9.9
+R. De Paul,Atlético de Madrid,5,34,0.15,6.2
+Rodrygo,Real Madrid,5,34,0.15,4.2
+R. Riquelme,Atlético de Madrid,5,34,0.15,3.7
+G. Guruzeta,Athletic,5,32,0.16,1.8
+Isco,Real Betis,5,29,0.17,6.4
+L. Ramazani,Almería,5,29,0.17,2.4
+O. De Marcos,Athletic,5,28,0.18,3.4
+Vinícius,Real Madrid,5,26,0.19,4.4
+Manu Sánchez,Celta,5,26,0.19,3.0
+Fran García,Real Madrid,5,25,0.2,1.8
+Oihan Sancet,Athletic,5,30,0.17,2.9
+Koke,Atlético de Madrid,4,35,0.11,3.0
+Sergio Arribas,Almería,4,34,0.12,3.3
+L. Robertone,Almería,4,33,0.12,2.2
+Sergio Ruiz,Granada,4,35,0.11,1.8
+Luis Rioja,Deportivo Alavés,4,37,0.11,4.2
+Iván Martín,Girona FC,4,36,0.11,3.3
+Jon Guridi,Deportivo Alavés,4,36,0.11,2.9
+Dani Rodríguez,Mallorca,4,36,0.11,5.2
+M. Llorente,Atlético de Madrid,4,37,0.11,4.5
+Saúl,Atlético de Madrid,4,34,0.12,2.1
+Fran Pérez,Valencia,4,32,0.13,2.1
+Willian José,Real Betis,4,33,0.12,1.7
+Adrià Pedrosa,Sevilla,4,31,0.13,2.0
+L. De La Torre,Celta,4,31,0.13,1.5
+Take Kubo,Real Sociedad,4,30,0.13,6.5
+Suso,Sevilla,4,29,0.14,4.9
+Jonathan Viera,Almería,4,21,0.19,2.4
+Carlos Vicente,Deportivo Alavés,4,18,0.22,2.9
+Isaac Romero,Sevilla,4,14,0.29,1.0
+João Cancelo,FC Barcelona,4,32,0.13,6.7
+M. Oyarzabal,Real Sociedad,3,33,0.09,1.3
+Álex Sola,Deportivo Alavés,3,31,0.1,2.1
+Lucas Boyé,Granada,3,31,0.1,2.0
+Javi López,Deportivo Alavés,3,32,0.09,2.5
+Á. Morata,Atlético de Madrid,3,32,0.09,1.6
+Mikel Merino,Real Sociedad,3,32,0.09,2.8
+G. Gumbau,Granada,3,35,0.09,4.0
+I. Williams,Athletic,3,34,0.09,7.5
+Álex Berenguer,Athletic,3,35,0.09,4.0
+Gonzalo Villar,Granada,3,35,0.09,2.2
+Lucas Ocampos,Sevilla,3,35,0.09,4.1
+J. Larsen,Celta,3,37,0.08,2.1
+Javi Muñoz,UD Las Palmas,3,37,0.08,1.8
+C. Stuani,Girona FC,3,31,0.1,0.5
+A. Catena,Osasuna,3,30,0.1,1.0
+Johan Mojica,Osasuna,3,30,0.1,3.2
+Chimy Ávila,Real Betis,3,23,0.13,2.8
+Luiz Henrique,Real Betis,3,14,0.21,1.5
+A. Pedraza,Villarreal,3,19,0.16,2.3
+Nahuel Molina,Atlético de Madrid,3,30,0.1,2.2
+Ander Herrera,Athletic,3,23,0.13,1.9
+Roger Martí,Cádiz,3,23,0.13,1.3
+W. Carvalho,Real Betis,3,22,0.14,0.7
+Marc Pubill,Almería,3,23,0.13,1.2
+Iñigo Lekue,Athletic,3,27,0.11,0.9
+Sandro,UD Las Palmas,3,27,0.11,9.9
+A. Moleiro,UD Las Palmas,3,28,0.11,2.7
+Dani Carvajal,Real Madrid,3,28,0.11,3.1
+João Félix,FC Barcelona,3,30,0.1,2.6
+Damián,Celta,2,5,0.4,1.1
+Héctor Fort,FC Barcelona,2,7,0.29,0.5
+Sergi Roberto,FC Barcelona,2,14,0.14,0.8
+Ilaix Moriba,Getafe,2,14,0.14,0.4
+Giuliano,Deportivo Alavés,2,14,0.14,1.2
+S. Becker,Real Sociedad,2,15,0.13,1.8
+Pablo Fornals,Real Betis,2,15,0.13,2.0
+D. Suárez,Getafe,2,16,0.13,1.1
+G. Guedes,Villarreal,2,17,0.12,1.1

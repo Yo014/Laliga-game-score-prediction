@@ -1,381 +1,381 @@
-Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,Referee,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR,B365H,B365D,B365A
-12/08/22,Osasuna,Sevilla,2,1,H,1,1,D,Carlos del Cerro,12,10,5,3,16,9,5,2,5,3,0,0,3.2,3.1,2.4
-13/08/22,Celta,Espanol,2,2,D,1,0,H,Miguel Ángel Ortiz Arias,8,10,3,2,17,15,3,3,5,2,0,0,1.8,3.75,4.75
-13/08/22,Valladolid,Villarreal,0,3,A,0,0,D,Mario Melero,12,10,6,4,6,10,4,5,1,0,0,0,3.9,3.6,1.9
-13/08/22,Barcelona,Vallecano,0,0,D,0,0,D,Alejandro Hernández,21,4,6,2,16,14,8,0,3,6,1,0,1.22,7.0,12.0
-14/08/22,Cadiz,Sociedad,0,1,A,0,1,A,Isidro Díaz de Mera,7,15,2,7,9,20,3,6,4,2,0,0,3.6,3.2,2.2
-14/08/22,Valencia,Girona,1,0,H,1,0,H,Jorge Figueroa,17,5,2,1,18,14,4,4,2,3,1,0,1.85,3.4,4.5
-14/08/22,Almeria,Real Madrid,1,2,A,1,0,H,Juan Martínez,10,29,6,15,11,4,2,15,3,1,0,0,7.5,5.0,1.4
-15/08/22,Ath Bilbao,Mallorca,0,0,D,0,0,D,Javier Villanueva,23,6,6,2,13,12,7,2,0,6,0,0,1.6,3.75,6.5
-15/08/22,Getafe,Ath Madrid,0,3,A,0,1,A,José Sánchez,10,12,0,5,14,19,3,6,2,1,0,0,5.0,3.1,1.9
-15/08/22,Betis,Elche,3,0,H,2,0,H,Guillermo Cuadra,17,4,8,2,10,18,8,4,3,6,0,1,1.44,4.5,7.0
-19/08/22,Espanol,Vallecano,0,2,A,0,1,A,Jorge Figueroa,13,8,1,3,12,17,9,2,2,5,1,1,2.45,3.1,3.1
-19/08/22,Sevilla,Valladolid,1,1,D,0,0,D,Juan Pulido,18,6,2,3,20,10,12,2,3,2,1,1,1.5,4.2,6.5
-20/08/22,Osasuna,Cadiz,2,0,H,1,0,H,Antonio Matéu Lahoz,16,9,3,2,11,13,2,2,2,5,0,1,1.9,3.25,4.5
-20/08/22,Mallorca,Betis,1,2,A,0,1,A,Pablo González,13,8,7,3,22,17,5,2,7,8,0,0,3.1,3.2,2.4
-20/08/22,Celta,Real Madrid,1,4,A,1,2,A,Jesús Gil,15,16,2,7,12,8,2,2,2,2,0,0,4.5,4.2,1.66
-21/08/22,Ath Bilbao,Valencia,1,0,H,1,0,H,César Soto,12,10,2,0,11,15,6,3,5,2,0,0,1.8,3.75,4.5
-21/08/22,Ath Madrid,Villarreal,0,2,A,0,0,D,Ricardo de Burgos,13,19,5,5,8,11,5,6,2,3,1,0,1.85,3.5,4.33
-21/08/22,Sociedad,Barcelona,1,4,A,1,1,D,José Luis Munuera,10,15,5,7,16,9,3,6,2,1,0,0,3.3,3.6,2.1
-22/08/22,Elche,Almeria,1,1,D,1,1,D,Isidro Díaz de Mera,13,12,3,7,12,16,6,5,1,4,0,1,2.5,3.2,3.0
-22/08/22,Girona,Getafe,3,1,H,1,0,H,Alejandro Muñíz,12,7,6,3,16,18,5,2,3,6,0,1,2.8,2.9,2.9
-26/08/22,Girona,Celta,0,1,A,0,0,D,Carlos del Cerro,11,11,3,6,16,13,2,4,2,1,0,0,2.8,3.1,2.75
-26/08/22,Betis,Osasuna,1,0,H,1,0,H,Juan Martínez,7,12,1,2,9,21,2,4,0,3,1,0,1.8,3.6,4.75
-27/08/22,Elche,Sociedad,0,1,A,0,1,A,Javier Villanueva,12,9,5,5,13,18,4,6,3,3,0,0,3.6,3.2,2.15
-27/08/22,Vallecano,Mallorca,0,2,A,0,1,A,José Sánchez,15,9,0,4,11,18,7,3,1,3,0,0,2.05,3.25,4.0
-27/08/22,Almeria,Sevilla,2,1,H,1,1,D,Jesús Gil,11,13,5,5,18,11,5,2,5,8,0,0,3.6,3.25,2.15
-28/08/22,Getafe,Villarreal,0,0,D,0,0,D,Jorge Figueroa,8,11,2,6,11,19,1,4,1,5,0,0,4.33,3.4,1.85
-28/08/22,Barcelona,Valladolid,4,0,H,2,0,H,Ricardo de Burgos,24,8,9,3,9,8,14,4,0,3,0,0,1.14,8.5,15.0
-28/08/22,Espanol,Real Madrid,1,3,A,1,1,D,Mario Melero,15,19,4,6,15,12,7,7,0,0,1,0,6.5,4.75,1.45
-29/08/22,Cadiz,Ath Bilbao,0,4,A,0,1,A,Miguel Ángel Ortiz Arias,9,20,3,8,18,4,0,6,2,1,0,0,3.6,3.2,2.15
-29/08/22,Valencia,Ath Madrid,0,1,A,0,0,D,Guillermo Cuadra,12,13,2,7,15,17,6,2,4,3,0,0,4.0,3.3,2.0
-02/09/22,Celta,Cadiz,3,0,H,0,0,D,Juan Pulido,9,7,5,0,13,23,2,2,1,2,0,0,1.66,3.6,5.5
-03/09/22,Mallorca,Girona,1,1,D,0,0,D,Isidro Díaz de Mera,10,10,4,4,23,9,6,3,4,2,0,0,2.15,3.2,3.6
-03/09/22,Real Madrid,Betis,2,1,H,1,1,D,José Sánchez,22,8,4,4,8,12,9,2,0,1,0,0,1.4,5.25,6.5
-03/09/22,Sociedad,Ath Madrid,1,1,D,0,1,A,César Soto,12,15,5,7,18,13,7,7,5,4,0,0,2.9,3.2,2.55
-03/09/22,Sevilla,Barcelona,0,3,A,0,2,A,Antonio Matéu Lahoz,9,18,4,7,15,14,4,4,2,4,0,0,4.5,3.6,1.8
-04/09/22,Osasuna,Vallecano,2,1,H,0,0,D,Alejandro Muñíz,13,5,6,3,14,16,4,0,2,2,0,0,2.0,3.1,4.33
-04/09/22,Ath Bilbao,Espanol,0,1,A,0,0,D,Juan Martínez,17,9,2,2,12,12,4,2,3,2,0,0,1.53,4.0,6.5
-04/09/22,Villarreal,Elche,4,0,H,2,0,H,Miguel Ángel Ortiz Arias,18,7,10,0,10,9,6,4,1,3,0,0,1.33,5.0,10.0
-04/09/22,Valencia,Getafe,5,1,H,3,0,H,José Luis Munuera,24,7,9,4,11,21,9,1,3,6,1,1,1.9,3.2,4.5
-05/09/22,Valladolid,Almeria,1,0,H,0,0,D,Pablo González,14,12,6,1,11,20,2,8,1,6,0,0,2.3,3.3,3.1
-09/09/22,Girona,Valladolid,2,1,H,1,1,D,César Soto,14,14,5,4,11,15,3,12,0,2,0,0,2.25,3.25,3.4
-10/09/22,Vallecano,Valencia,2,1,H,1,0,H,Jesús Gil,14,17,6,4,22,11,7,7,5,2,0,0,2.62,3.1,2.87
-10/09/22,Espanol,Sevilla,2,3,A,1,3,A,Guillermo Cuadra,19,11,5,7,11,14,9,3,3,5,0,1,2.87,3.25,2.5
-10/09/22,Cadiz,Barcelona,0,4,A,0,0,D,Carlos del Cerro,6,16,0,8,12,13,5,6,1,2,0,0,13.0,6.5,1.22
-10/09/22,Ath Madrid,Celta,4,1,H,1,0,H,Alejandro Hernández,10,14,4,3,11,6,4,7,2,3,0,0,1.61,3.8,6.0
-11/09/22,Real Madrid,Mallorca,4,1,H,1,1,D,Jorge Figueroa,22,5,7,2,7,15,4,3,3,5,0,0,1.25,6.0,11.0
-11/09/22,Elche,Ath Bilbao,1,4,A,0,4,A,Mario Melero,9,16,2,8,15,9,5,5,3,0,0,0,4.0,3.6,1.9
-11/09/22,Getafe,Sociedad,2,1,H,1,0,H,Juan Pulido,8,13,3,6,9,16,3,7,4,1,0,0,3.75,3.0,2.15
-11/09/22,Betis,Villarreal,1,0,H,0,0,D,Ricardo de Burgos,16,14,5,3,11,14,9,8,1,1,0,0,2.8,3.4,2.5
-12/09/22,Almeria,Osasuna,0,1,A,0,1,A,Javier Villanueva,7,15,2,4,4,9,5,10,0,2,0,0,2.6,3.25,2.75
-16/09/22,Valladolid,Cadiz,0,1,A,0,0,D,José Sánchez,18,7,6,1,12,19,8,2,1,4,0,0,2.0,3.25,4.0
-17/09/22,Mallorca,Almeria,1,0,H,1,0,H,Juan Martínez,5,9,2,3,15,14,5,2,3,6,0,0,2.0,3.3,4.0
-17/09/22,Barcelona,Elche,3,0,H,2,0,H,Alejandro Muñíz,25,1,9,1,11,9,6,0,2,2,0,1,1.08,11.0,26.0
-17/09/22,Valencia,Celta,3,0,H,1,0,H,Pablo González,14,6,7,2,18,23,5,4,3,2,0,1,2.3,3.2,3.3
-17/09/22,Ath Bilbao,Vallecano,3,2,H,3,1,H,Antonio Matéu Lahoz,14,11,7,2,13,13,2,7,1,2,0,0,1.53,4.0,6.5
-18/09/22,Osasuna,Getafe,0,2,A,0,1,A,Isidro Díaz de Mera,12,10,4,4,15,15,8,1,7,3,1,1,1.8,3.4,5.0
-18/09/22,Villarreal,Sevilla,1,1,D,0,1,A,Alejandro Hernández,17,12,7,1,15,12,6,4,1,5,0,0,1.7,3.8,5.0
-18/09/22,Betis,Girona,2,1,H,1,1,D,Miguel Ángel Ortiz Arias,9,8,3,3,9,8,2,4,0,3,0,0,1.75,3.6,5.0
-18/09/22,Sociedad,Espanol,2,1,H,2,1,H,Carlos del Cerro,14,14,6,4,18,8,4,2,3,0,0,0,1.7,3.6,5.0
-18/09/22,Ath Madrid,Real Madrid,1,2,A,0,2,A,José Luis Munuera,12,6,5,3,15,16,8,1,4,2,1,0,3.1,3.4,2.3
-30/09/22,Ath Bilbao,Almeria,4,0,H,2,0,H,Juan Pulido,17,8,4,2,17,8,11,2,1,3,0,0,1.33,5.0,9.5
-01/10/22,Cadiz,Villarreal,0,0,D,0,0,D,Javier Villanueva,10,14,2,6,13,8,6,5,2,3,1,0,6.0,4.0,1.57
-01/10/22,Getafe,Valladolid,2,3,A,2,2,D,Alejandro Muñíz,14,14,6,7,23,13,4,2,2,4,0,0,2.3,3.0,3.5
-01/10/22,Sevilla,Ath Madrid,0,2,A,0,1,A,Ricardo de Burgos,14,20,3,6,9,12,5,7,3,2,0,0,3.0,3.2,2.5
-01/10/22,Mallorca,Barcelona,0,1,A,0,1,A,Jesús Gil,13,11,3,3,9,13,5,5,2,4,0,0,9.0,5.0,1.36
-02/10/22,Espanol,Valencia,2,2,D,0,0,D,Valentín Pizarro,10,12,5,5,16,15,6,4,2,1,1,1,2.62,3.3,2.7
-02/10/22,Celta,Betis,1,0,H,1,0,H,César Soto,11,9,4,4,26,3,5,3,4,3,0,1,2.45,3.4,2.87
-02/10/22,Girona,Sociedad,3,5,A,2,2,D,Mario Melero,16,11,8,5,9,19,2,2,3,1,0,0,3.25,3.2,2.3
-02/10/22,Real Madrid,Osasuna,1,1,D,1,0,H,Guillermo Cuadra,22,8,4,2,9,13,10,2,1,2,0,1,1.3,5.5,9.5
-03/10/22,Vallecano,Elche,2,1,H,1,1,D,Jorge Figueroa,15,5,6,2,5,19,13,3,1,8,0,0,1.72,3.6,5.25
-07/10/22,Osasuna,Valencia,1,2,A,0,1,A,Miguel Ángel Ortiz Arias,11,15,2,7,11,19,7,5,3,6,2,1,2.4,3.2,3.1
-08/10/22,Almeria,Vallecano,3,1,H,3,0,H,Pablo González,10,12,4,4,22,12,7,6,4,2,1,0,2.9,3.3,2.55
-08/10/22,Ath Madrid,Girona,2,1,H,1,0,H,Juan Martínez,13,11,7,4,12,13,8,3,3,1,0,0,1.45,4.33,7.5
-08/10/22,Sevilla,Ath Bilbao,1,1,D,1,0,H,Jesús Gil,10,21,3,4,19,14,5,7,4,0,0,1,3.0,3.3,2.4
-08/10/22,Getafe,Real Madrid,0,1,A,0,1,A,Antonio Matéu Lahoz,9,19,2,4,10,5,4,4,0,0,0,0,6.5,4.5,1.5
-09/10/22,Valladolid,Betis,0,0,D,0,0,D,Carlos del Cerro,12,4,3,1,12,16,3,1,1,1,0,1,2.8,3.4,2.4
-09/10/22,Cadiz,Espanol,2,2,D,1,0,H,Alejandro Hernández,8,9,3,6,13,12,8,3,4,4,0,0,2.87,3.2,2.55
-09/10/22,Sociedad,Villarreal,1,0,H,1,0,H,César Soto,17,5,5,1,21,18,9,3,5,3,0,0,2.5,3.4,2.75
-09/10/22,Barcelona,Celta,1,0,H,1,0,H,José Luis Munuera,13,14,5,3,16,9,6,3,2,4,0,0,1.28,6.0,9.0
-10/10/22,Elche,Mallorca,1,1,D,1,0,H,Valentín Pizarro,7,11,2,4,12,17,5,7,4,5,1,1,3.0,3.1,2.5
-14/10/22,Vallecano,Getafe,0,0,D,0,0,D,Mario Melero,16,6,3,3,13,17,4,1,2,3,0,0,2.05,3.2,3.8
-15/10/22,Girona,Cadiz,1,1,D,0,0,D,Ricardo de Burgos,23,9,6,2,16,9,6,2,5,4,0,0,1.9,3.3,4.5
-15/10/22,Valencia,Elche,2,2,D,2,1,H,Juan Pulido,20,8,8,6,14,19,6,1,3,6,0,0,1.4,4.75,7.5
-15/10/22,Mallorca,Sevilla,0,1,A,0,0,D,Javier Villanueva,9,4,5,1,17,15,1,3,2,3,0,0,2.9,3.0,2.7
-15/10/22,Ath Bilbao,Ath Madrid,0,1,A,0,0,D,Jorge Figueroa,13,3,3,1,14,17,6,1,0,6,0,0,2.45,3.2,3.0
-16/10/22,Celta,Sociedad,1,2,A,1,1,D,Guillermo Cuadra,10,8,3,6,14,17,1,6,5,7,1,0,2.6,3.2,2.8
-16/10/22,Real Madrid,Barcelona,3,1,H,2,0,H,José Sánchez,8,18,4,5,11,14,2,3,2,2,0,0,2.2,3.6,3.1
-16/10/22,Espanol,Valladolid,1,0,H,0,0,D,Antonio Matéu Lahoz,15,14,3,2,13,11,6,4,1,4,0,0,2.2,3.3,3.5
-16/10/22,Betis,Almeria,3,1,H,1,0,H,Alejandro Muñíz,15,12,6,5,6,7,9,3,1,1,0,0,1.57,4.1,5.75
-17/10/22,Villarreal,Osasuna,2,0,H,1,0,H,Pablo González,12,14,9,3,14,23,8,4,2,6,0,0,1.57,4.2,6.0
-18/10/22,Sevilla,Valencia,1,1,D,0,1,A,César Soto,18,13,5,5,11,26,11,6,4,7,1,0,2.25,3.4,3.2
-18/10/22,Getafe,Ath Bilbao,2,2,D,1,1,D,José Luis Munuera,11,14,4,4,14,11,7,4,7,4,0,0,4.75,3.3,1.83
-18/10/22,Ath Madrid,Vallecano,1,1,D,1,0,H,Javier Villanueva,12,14,4,4,11,11,3,4,3,0,0,0,1.55,3.75,7.0
-19/10/22,Cadiz,Betis,0,0,D,0,0,D,Antonio Matéu Lahoz,13,12,3,3,15,7,4,9,1,2,0,1,4.0,3.3,2.0
-19/10/22,Valladolid,Celta,4,1,H,1,1,D,Valentín Pizarro,9,22,7,5,12,11,3,7,1,1,0,0,2.9,3.3,2.45
-19/10/22,Sociedad,Mallorca,1,0,H,1,0,H,Miguel Ángel Ortiz Arias,14,12,7,3,18,9,10,7,1,2,0,0,1.55,4.0,6.5
-19/10/22,Elche,Real Madrid,0,3,A,0,1,A,Jesús Gil,10,10,3,7,14,10,8,2,1,1,0,0,8.5,5.75,1.3
-20/10/22,Almeria,Girona,3,2,H,3,0,H,Guillermo Cuadra,13,14,7,5,14,14,4,5,1,3,0,0,2.6,3.25,2.8
-20/10/22,Osasuna,Espanol,1,0,H,0,0,D,Mario Melero,17,5,5,3,17,15,9,2,1,2,0,0,2.05,3.6,3.5
-20/10/22,Barcelona,Villarreal,3,0,H,3,0,H,Carlos del Cerro,16,5,5,1,18,11,8,0,0,1,0,0,1.5,4.5,6.0
-22/10/22,Vallecano,Cadiz,5,1,H,2,0,H,Alejandro Muñíz,28,3,11,0,13,12,10,1,1,4,1,2,1.72,3.5,5.25
-22/10/22,Valladolid,Sociedad,1,0,H,1,0,H,Jorge Figueroa,9,20,2,2,19,14,4,10,2,3,0,0,3.6,3.4,2.05
-22/10/22,Valencia,Mallorca,1,2,A,0,0,D,José Sánchez,13,10,3,5,14,19,5,3,3,5,0,0,1.75,3.5,5.0
-22/10/22,Real Madrid,Sevilla,3,1,H,1,0,H,Alejandro Hernández,18,9,6,2,9,12,4,3,1,4,0,0,1.36,4.75,8.5
-23/10/22,Espanol,Elche,2,2,D,1,1,D,José Luis Munuera,13,9,5,4,13,10,5,3,2,3,0,0,1.66,3.75,5.25
-23/10/22,Betis,Ath Madrid,1,2,A,0,0,D,Jesús Gil,17,9,4,3,10,17,7,4,2,3,0,0,3.2,3.3,2.3
-23/10/22,Girona,Osasuna,1,1,D,1,1,D,Juan Pulido,7,9,1,2,11,11,3,5,2,3,0,0,2.55,3.2,2.9
-23/10/22,Villarreal,Almeria,2,1,H,0,1,A,Ricardo de Burgos,11,15,5,4,7,8,10,4,4,1,1,0,1.36,4.75,9.0
-23/10/22,Barcelona,Ath Bilbao,4,0,H,3,0,H,Juan Martínez,10,5,7,3,7,13,1,2,2,2,0,0,1.55,4.5,5.5
-24/10/22,Celta,Getafe,1,1,D,0,1,A,Pablo González,17,4,5,1,10,13,10,0,1,1,0,0,1.75,3.5,5.0
-28/10/22,Mallorca,Espanol,1,1,D,0,0,D,Isidro Díaz de Mera,12,7,5,2,15,9,4,4,4,1,0,0,2.25,3.1,3.4
-29/10/22,Almeria,Celta,3,1,H,0,1,A,Carlos del Cerro,19,8,5,3,10,7,6,4,4,0,0,1,3.3,3.3,2.25
-29/10/22,Cadiz,Ath Madrid,3,2,H,1,0,H,José Sánchez,10,15,7,7,15,12,5,3,2,4,0,0,7.0,3.6,1.6
-29/10/22,Sevilla,Vallecano,0,1,A,0,0,D,Antonio Matéu Lahoz,10,15,4,5,9,20,6,6,6,1,0,0,2.0,3.3,4.0
-29/10/22,Valencia,Barcelona,0,1,A,0,0,D,Ricardo de Burgos,3,13,2,2,13,7,3,10,4,5,0,0,5.0,4.33,1.57
-30/10/22,Osasuna,Valladolid,2,0,H,2,0,H,Guillermo Cuadra,20,7,10,2,14,16,1,8,1,3,0,0,1.9,3.4,4.33
-30/10/22,Real Madrid,Girona,1,1,D,0,0,D,Mario Melero,19,8,6,2,16,8,7,1,3,3,1,0,1.2,6.5,13.0
-30/10/22,Ath Bilbao,Villarreal,1,0,H,0,0,D,Miguel Ángel Ortiz Arias,19,6,7,3,12,10,6,2,2,1,0,0,2.2,3.3,3.4
-30/10/22,Sociedad,Betis,0,2,A,0,0,D,Javier Villanueva,14,10,7,4,22,16,5,3,4,4,0,0,2.0,3.5,3.8
-31/10/22,Elche,Getafe,0,1,A,0,0,D,César Soto,12,8,5,3,12,11,6,2,0,3,0,1,2.7,3.0,2.87
-04/11/22,Girona,Ath Bilbao,2,1,H,0,0,D,Valentín Pizarro,19,11,10,7,11,11,7,1,1,1,0,0,3.75,3.5,2.0
-05/11/22,Getafe,Cadiz,0,0,D,0,0,D,Alejandro Hernández,13,15,2,4,15,16,5,5,5,2,2,1,2.2,3.1,3.75
-05/11/22,Valladolid,Elche,2,1,H,1,0,H,Ricardo de Burgos,16,4,11,2,9,10,8,4,2,0,0,0,1.83,3.6,4.33
-05/11/22,Celta,Osasuna,1,2,A,1,2,A,Jorge Figueroa,13,8,5,4,12,20,2,3,1,5,0,0,2.1,3.3,3.75
-05/11/22,Barcelona,Almeria,2,0,H,0,0,D,Pablo González,27,4,13,1,14,13,9,1,2,1,0,0,1.08,10.0,26.0
-06/11/22,Ath Madrid,Espanol,1,1,D,0,0,D,Juan Pulido,27,6,7,2,13,10,12,2,3,5,0,1,1.44,4.5,8.0
-06/11/22,Sociedad,Valencia,1,1,D,1,1,D,José Luis Munuera,9,14,4,3,11,12,1,11,2,0,1,0,1.95,3.4,4.0
-06/11/22,Villarreal,Mallorca,0,2,A,0,1,A,Alejandro Muñíz,9,7,2,5,17,16,5,2,4,6,0,0,1.57,4.0,5.75
-06/11/22,Betis,Sevilla,1,1,D,1,0,H,José Sánchez,9,22,4,6,6,20,1,4,4,5,2,1,2.2,3.2,3.6
-07/11/22,Vallecano,Real Madrid,3,2,H,2,2,D,Juan Martínez,15,16,7,2,22,11,4,5,4,5,0,0,4.75,4.2,1.65
-08/11/22,Elche,Girona,1,2,A,1,1,D,Pablo González,11,21,2,3,16,9,2,5,3,2,0,0,3.25,3.3,2.2
-08/11/22,Ath Bilbao,Valladolid,3,0,H,1,0,H,Isidro Díaz de Mera,19,8,6,0,20,6,10,2,3,1,0,0,1.4,4.5,7.5
-08/11/22,Osasuna,Barcelona,1,2,A,1,0,H,Jesús Gil,15,9,3,3,15,6,2,5,4,4,0,2,5.75,4.2,1.53
-09/11/22,Almeria,Getafe,1,0,H,1,0,H,Alejandro Muñíz,8,11,3,3,17,8,7,6,8,4,1,0,2.15,3.3,3.5
-09/11/22,Sevilla,Sociedad,1,2,A,1,2,A,Carlos del Cerro,6,17,3,9,9,12,2,1,2,2,2,0,2.6,3.2,2.8
-09/11/22,Espanol,Villarreal,0,1,A,0,0,D,Javier Villanueva,14,10,6,3,11,6,4,7,1,3,0,0,3.2,3.2,2.37
-09/11/22,Mallorca,Ath Madrid,1,0,H,1,0,H,Mario Melero,9,17,3,5,14,17,2,5,5,3,0,0,3.8,3.1,2.1
-10/11/22,Vallecano,Celta,0,0,D,0,0,D,José Luis Munuera,10,11,3,3,19,16,5,3,7,1,0,0,2.2,3.2,3.5
-10/11/22,Valencia,Betis,3,0,H,0,0,D,Miguel Ángel Ortiz Arias,15,5,7,1,12,9,5,5,1,3,0,1,2.1,3.4,3.6
-10/11/22,Real Madrid,Cadiz,2,1,H,1,0,H,César Soto,18,10,5,5,12,16,7,1,3,3,0,0,1.14,8.5,15.0
-29/12/22,Girona,Vallecano,2,2,D,1,1,D,Jorge Figueroa,16,12,7,4,14,14,2,4,3,2,0,0,2.3,3.2,3.3
-29/12/22,Betis,Ath Bilbao,0,0,D,0,0,D,Alejandro Hernández,9,10,5,0,8,17,2,6,1,4,1,0,2.88,3.3,2.5
-29/12/22,Ath Madrid,Elche,2,0,H,0,0,D,Guillermo Cuadra,18,5,4,1,14,20,3,5,3,4,1,2,1.29,5.5,10.0
-30/12/22,Getafe,Mallorca,2,0,H,0,0,D,Hsu Jason,14,3,6,0,10,19,4,2,0,1,0,0,2.75,2.75,3.1
-30/12/22,Cadiz,Almeria,1,1,D,0,1,A,Juan Martínez,12,18,6,9,7,14,3,2,2,0,0,0,2.38,3.1,3.25
-30/12/22,Celta,Sevilla,1,1,D,1,0,H,Ricardo de Burgos,17,7,5,5,11,13,5,6,2,4,0,1,2.2,3.3,3.4
-30/12/22,Valladolid,Real Madrid,0,2,A,0,0,D,José Luis Munuera,14,19,4,8,7,9,5,9,2,0,1,0,6.5,4.75,1.45
-31/12/22,Barcelona,Espanol,1,1,D,1,0,H,Antonio Matéu,21,4,6,1,11,15,10,2,6,7,1,1,1.25,6.5,10.0
-31/12/22,Sociedad,Osasuna,2,0,H,1,0,H,Valentín Pizarro,9,11,2,3,10,15,3,2,1,1,0,0,1.85,3.3,4.75
-31/12/22,Villarreal,Valencia,2,1,H,1,1,D,José Sánchez,14,13,8,4,12,16,5,2,1,3,0,0,1.95,3.4,4.2
-06/01/23,Elche,Celta,0,1,A,0,1,A,Miguel Ángel Ortiz Arias,13,14,5,7,15,15,8,4,3,1,1,0,4.0,3.25,1.95
-06/01/23,Valencia,Cadiz,0,1,A,0,1,A,Pablo González,11,6,2,2,14,21,13,2,5,6,0,0,1.57,4.0,5.75
-07/01/23,Villarreal,Real Madrid,2,1,H,0,0,D,César Soto,17,13,5,3,13,6,6,5,4,1,0,0,3.25,3.8,2.05
-07/01/23,Mallorca,Valladolid,1,0,H,0,0,D,Valentín Pizarro,13,9,4,1,14,17,6,2,2,3,0,0,1.95,3.3,4.2
-07/01/23,Espanol,Girona,2,2,D,0,1,A,Carlos del Cerro,12,12,6,5,13,16,5,2,3,2,0,0,2.25,3.4,3.2
-08/01/23,Almeria,Sociedad,0,2,A,0,0,D,Hsu Jason,6,9,1,6,13,14,4,2,1,0,0,0,4.2,3.3,1.95
-08/01/23,Vallecano,Betis,1,2,A,1,2,A,Isidro Díaz de Mera,15,14,3,3,10,16,5,7,3,2,0,0,2.3,3.3,3.2
-08/01/23,Sevilla,Getafe,2,1,H,1,0,H,Juan Martínez,11,11,5,2,13,16,4,4,3,3,0,0,1.75,3.4,5.25
-08/01/23,Ath Madrid,Barcelona,0,1,A,0,1,A,José Luis Munuera,20,10,5,2,8,16,7,4,2,3,1,1,3.1,3.4,2.3
-09/01/23,Ath Bilbao,Osasuna,0,0,D,0,0,D,Mario Melero,17,3,3,1,8,13,14,1,0,1,0,0,1.67,3.6,5.75
-13/01/23,Celta,Villarreal,1,1,D,0,1,A,Hsu Jason,21,3,8,1,11,8,14,3,0,2,0,0,2.88,3.3,2.5
-14/01/23,Valladolid,Vallecano,0,1,A,0,0,D,Mario Melero,9,13,2,6,17,18,4,8,2,2,0,0,2.75,3.25,2.63
-14/01/23,Girona,Sevilla,2,1,H,0,1,A,Valentín Pizarro,19,10,7,2,11,7,5,2,3,1,0,0,2.38,3.4,3.0
-14/01/23,Osasuna,Mallorca,1,0,H,0,0,D,César Soto,15,6,4,2,15,19,3,1,2,3,0,0,2.0,3.1,4.33
-14/01/23,Sociedad,Ath Bilbao,3,1,H,2,1,H,Guillermo Cuadra,11,6,5,2,20,15,4,2,5,1,0,1,2.4,3.2,3.1
-15/01/23,Getafe,Espanol,1,2,A,1,1,D,Jorge Figueroa,10,10,2,4,20,13,5,1,2,3,0,0,2.5,3.0,3.1
-15/01/23,Almeria,Ath Madrid,1,1,D,1,1,D,José Sánchez,14,12,3,6,14,12,3,4,4,4,0,1,5.0,3.75,1.7
-16/01/23,Cadiz,Elche,1,1,D,1,0,H,Carlos del Cerro,16,12,3,5,11,21,3,6,3,2,0,0,1.91,3.4,4.33
-20/01/23,Mallorca,Celta,1,0,H,0,0,D,Juan Pulido,8,10,3,3,15,11,4,6,2,3,0,0,2.8,2.75,3.0
-21/01/23,Vallecano,Sociedad,0,2,A,0,2,A,Antonio Matéu,14,12,2,7,11,11,3,4,0,0,0,0,3.1,3.2,2.38
-21/01/23,Espanol,Betis,1,0,H,1,0,H,Pablo González,8,13,2,4,18,8,7,4,3,2,0,0,2.7,3.2,2.7
-21/01/23,Ath Madrid,Valladolid,3,0,H,3,0,H,Ricardo de Burgos,18,7,8,1,12,7,4,1,1,1,0,0,1.4,4.75,8.5
-21/01/23,Sevilla,Cadiz,1,0,H,0,0,D,Alejandro Hernández,17,4,9,1,15,14,8,1,1,4,0,1,1.7,3.75,5.0
-22/01/23,Villarreal,Girona,1,0,H,0,0,D,Carlos del Cerro,19,8,9,1,21,15,3,2,5,5,0,1,1.73,3.8,4.5
-22/01/23,Elche,Osasuna,1,1,D,0,1,A,Alejandro Muñíz,13,8,4,4,19,9,7,2,2,1,0,0,3.5,3.25,2.15
-22/01/23,Barcelona,Getafe,1,0,H,1,0,H,Javier Villanueva,8,7,4,3,11,6,4,2,1,2,0,0,1.18,8.0,15.0
-22/01/23,Ath Bilbao,Real Madrid,0,2,A,0,1,A,José Sánchez,18,10,3,4,17,10,12,2,3,2,0,0,2.9,3.4,2.38
-23/01/23,Valencia,Almeria,2,2,D,0,0,D,Jesús Gil,16,14,6,3,8,8,6,2,2,1,0,0,1.6,4.2,5.25
-27/01/23,Almeria,Espanol,3,1,H,1,0,H,Javier Villanueva,19,6,7,3,16,6,2,2,3,3,0,0,2.38,3.1,3.2
-28/01/23,Cadiz,Mallorca,2,0,H,2,0,H,Ricardo de Burgos,11,9,4,2,13,12,6,2,2,2,0,0,2.88,2.8,2.9
-28/01/23,Girona,Barcelona,0,1,A,0,0,D,Alejandro Muñíz,8,8,2,3,10,15,4,2,2,3,1,0,5.0,4.33,1.57
-28/01/23,Sevilla,Elche,3,0,H,3,0,H,César Soto,22,6,8,1,7,8,5,2,1,3,0,1,1.53,4.0,7.0
-28/01/23,Getafe,Betis,0,1,A,0,0,D,Guillermo Cuadra,6,13,1,2,25,12,6,1,4,2,0,0,3.2,2.88,2.63
-29/01/23,Valladolid,Valencia,1,0,H,0,0,D,Jorge Figueroa,13,15,6,2,14,15,4,7,3,1,0,0,3.25,3.1,2.4
-29/01/23,Osasuna,Ath Madrid,0,1,A,0,0,D,Hsu Jason,14,13,4,5,13,7,5,4,1,0,0,0,3.6,3.1,2.2
-29/01/23,Celta,Ath Bilbao,1,0,H,0,0,D,Isidro Díaz de Mera,9,5,3,0,17,19,2,5,3,2,0,0,2.88,3.0,2.7
-29/01/23,Real Madrid,Sociedad,0,0,D,0,0,D,Mario Melero,20,8,7,3,8,19,10,3,1,4,0,0,1.67,3.8,5.0
-30/01/23,Villarreal,Vallecano,0,1,A,0,0,D,Juan Pulido,12,11,3,3,11,18,5,4,2,3,0,0,1.67,3.8,5.25
-01/02/23,Betis,Barcelona,1,2,A,0,0,D,Ricardo de Burgos,5,13,1,3,17,9,1,6,3,0,1,0,5.0,3.8,1.67
-02/02/23,Real Madrid,Valencia,2,0,H,0,0,D,Hsu Jason,19,4,7,0,12,17,6,6,3,1,0,1,1.44,4.75,6.5
-03/02/23,Ath Bilbao,Cadiz,4,1,H,3,1,H,Valentín Pizarro,17,15,9,3,14,12,0,3,2,1,1,0,1.36,4.5,9.5
-04/02/23,Espanol,Osasuna,1,1,D,0,1,A,Jesús Gil,9,9,4,3,9,17,4,3,3,5,1,1,2.55,3.0,3.0
-04/02/23,Elche,Villarreal,3,1,H,2,1,H,José Luis Munuera,18,14,7,2,19,8,6,10,4,2,0,0,5.0,3.8,1.67
-04/02/23,Ath Madrid,Getafe,1,1,D,0,0,D,Antonio Matéu,12,9,4,1,11,18,8,0,3,5,0,0,1.4,4.33,9.0
-04/02/23,Betis,Celta,3,4,A,2,2,D,Carlos del Cerro,15,9,7,7,11,13,5,5,2,3,1,0,2.2,3.2,3.5
-05/02/23,Mallorca,Real Madrid,1,0,H,1,0,H,Alejandro Hernández,4,20,1,1,29,14,1,12,5,5,0,0,5.0,3.5,1.73
-05/02/23,Girona,Valencia,1,0,H,0,0,D,Javier Villanueva,20,8,8,4,11,10,8,4,1,4,0,0,2.2,3.2,3.5
-05/02/23,Sociedad,Valladolid,0,1,A,0,0,D,Pablo González,15,7,4,2,17,14,0,4,4,5,0,0,1.44,4.33,7.5
-05/02/23,Barcelona,Sevilla,3,0,H,0,0,D,José Sánchez,16,3,7,1,8,10,8,3,0,2,0,0,1.33,5.25,8.5
-06/02/23,Vallecano,Almeria,2,0,H,0,0,D,César Soto,15,14,11,5,16,9,3,7,3,3,0,0,1.73,3.6,5.0
-10/02/23,Cadiz,Girona,2,0,H,2,0,H,Juan Pulido,12,7,3,1,17,11,5,6,4,4,0,0,3.0,3.2,2.45
-11/02/23,Almeria,Betis,2,3,A,1,2,A,Hsu Jason,16,12,9,7,12,10,8,2,2,3,0,0,2.8,3.4,2.5
-11/02/23,Sevilla,Mallorca,2,0,H,2,0,H,Javier Villanueva,15,6,6,0,9,14,8,2,5,2,0,0,1.91,3.2,4.5
-11/02/23,Valencia,Ath Bilbao,1,2,A,1,1,D,César Soto,18,11,8,3,11,17,7,1,2,2,0,0,3.0,3.2,2.45
-12/02/23,Getafe,Vallecano,1,1,D,0,1,A,Isidro Díaz de Mera,13,19,4,4,21,19,5,6,4,4,1,0,2.8,2.9,2.88
-12/02/23,Celta,Ath Madrid,0,1,A,0,0,D,Jorge Figueroa,14,10,3,2,10,13,7,5,2,2,0,1,3.6,3.1,2.2
-12/02/23,Valladolid,Osasuna,0,0,D,0,0,D,Guillermo Cuadra,18,15,5,4,13,16,10,4,1,3,0,0,2.75,3.1,2.7
-12/02/23,Villarreal,Barcelona,0,1,A,0,1,A,Alejandro Hernández,11,7,2,4,22,18,6,2,4,4,0,0,3.75,4.0,1.85
-13/02/23,Espanol,Sociedad,2,3,A,0,1,A,Alejandro Muñíz,10,11,6,5,9,17,4,3,4,1,1,0,3.5,3.0,2.3
-15/02/23,Real Madrid,Elche,4,0,H,3,0,H,Ricardo de Burgos,26,7,13,0,5,13,6,4,1,3,0,0,1.18,7.5,15.0
-17/02/23,Girona,Almeria,6,2,H,4,0,H,Valentín Pizarro,14,16,8,4,10,8,1,7,1,1,0,0,1.8,3.75,4.33
-18/02/23,Sociedad,Celta,1,1,D,1,0,H,Miguel Ángel Ortiz Arias,9,18,3,4,14,12,3,7,3,5,0,1,1.8,3.3,5.25
-18/02/23,Betis,Valladolid,2,1,H,2,1,H,Antonio Matéu,16,17,10,3,18,15,4,6,3,5,0,0,1.6,3.75,6.5
-18/02/23,Mallorca,Villarreal,4,2,H,2,1,H,José Sánchez,13,8,5,4,19,8,4,4,5,0,0,1,3.2,3.0,2.45
-18/02/23,Osasuna,Real Madrid,0,2,A,0,0,D,José Luis Munuera,11,11,4,6,17,7,5,5,3,2,0,0,4.33,3.6,1.8
-19/02/23,Elche,Espanol,0,1,A,0,0,D,Carlos del Cerro,19,11,5,4,11,12,10,5,2,3,1,0,2.9,3.1,2.63
-19/02/23,Vallecano,Sevilla,1,1,D,0,1,A,Jesús Gil,18,7,5,2,15,6,7,3,4,1,0,0,2.5,3.1,3.0
-19/02/23,Ath Madrid,Ath Bilbao,1,0,H,0,0,D,Juan Martínez,17,8,5,2,7,13,6,5,2,3,0,0,2.0,3.3,4.0
-19/02/23,Barcelona,Cadiz,2,0,H,2,0,H,Pablo González,16,14,5,4,15,18,5,6,2,3,0,0,1.18,7.0,13.0
-20/02/23,Getafe,Valencia,1,0,H,0,0,D,Mario Melero,15,8,6,3,11,8,4,5,6,1,0,0,2.75,3.0,2.8
-24/02/23,Elche,Betis,2,3,A,2,0,H,Javier Villanueva,4,21,2,9,16,9,3,3,4,1,2,0,3.5,3.3,2.1
-25/02/23,Espanol,Mallorca,2,1,H,1,1,D,Hsu Jason,9,15,3,4,15,18,0,4,2,2,0,0,2.5,2.9,3.2
-25/02/23,Cadiz,Vallecano,1,0,H,0,0,D,Alejandro Muñíz,5,11,3,2,19,19,4,6,3,4,0,1,2.9,3.0,2.7
-25/02/23,Real Madrid,Ath Madrid,1,1,D,0,0,D,Jesús Gil,18,7,7,2,10,8,7,4,3,3,0,1,1.8,3.5,5.0
-25/02/23,Valencia,Sociedad,1,0,H,1,0,H,Alejandro Hernández,8,11,3,3,13,12,7,8,6,3,0,0,3.1,3.1,2.5
-26/02/23,Ath Bilbao,Girona,2,3,A,1,3,A,Isidro Díaz de Mera,17,8,3,4,17,8,11,3,5,5,0,0,1.67,3.8,5.25
-26/02/23,Celta,Valladolid,3,0,H,2,0,H,Ricardo de Burgos,18,6,4,3,6,5,5,4,1,3,0,1,1.7,3.75,5.25
-26/02/23,Almeria,Barcelona,1,0,H,1,0,H,Miguel Ángel Ortiz Arias,7,14,4,1,13,11,4,7,3,3,0,0,7.0,4.75,1.44
-26/02/23,Sevilla,Osasuna,2,3,A,0,1,A,Juan Pulido,22,11,8,4,10,15,10,2,4,2,1,0,1.85,3.25,4.5
-27/02/23,Villarreal,Getafe,2,1,H,1,1,D,Jorge Figueroa,11,8,5,3,9,13,6,6,0,1,0,0,1.67,3.6,5.75
-03/03/23,Sociedad,Cadiz,0,0,D,0,0,D,Antonio Matéu,15,6,3,2,18,18,4,0,0,1,0,0,1.5,3.9,7.5
-04/03/23,Getafe,Girona,3,2,H,3,0,H,Juan Martínez,10,9,6,7,24,11,3,3,5,4,0,0,2.75,3.0,2.8
-04/03/23,Almeria,Villarreal,0,2,A,0,0,D,Pablo González,6,16,0,6,11,10,2,10,2,4,0,0,3.5,3.6,2.05
-04/03/23,Mallorca,Elche,0,1,A,0,0,D,José Luis Munuera,14,15,3,6,17,14,6,7,3,3,0,0,1.7,3.4,5.75
-04/03/23,Ath Madrid,Sevilla,6,1,H,2,1,H,Guillermo Cuadra,18,8,8,1,12,11,7,3,1,4,0,1,1.67,3.6,5.25
-05/03/23,Valladolid,Espanol,2,1,H,1,0,H,Valentín Pizarro,15,12,5,2,4,11,9,6,3,2,0,0,2.5,3.2,2.88
-05/03/23,Barcelona,Valencia,1,0,H,1,0,H,Hsu Jason,13,13,4,1,11,13,5,2,0,0,1,0,1.53,4.5,5.75
-05/03/23,Vallecano,Ath Bilbao,0,0,D,0,0,D,Mario Melero,18,16,2,3,9,17,7,9,1,0,0,1,2.9,3.1,2.6
-05/03/23,Betis,Real Madrid,0,0,D,0,0,D,César Soto,8,15,4,5,12,13,5,3,3,4,0,0,4.75,3.75,1.73
-06/03/23,Osasuna,Celta,0,0,D,0,0,D,José Sánchez,10,6,5,0,12,12,6,4,0,2,0,0,2.8,3.0,2.8
-10/03/23,Cadiz,Getafe,2,2,D,1,0,H,Alejandro Hernández,11,16,4,10,13,16,2,6,4,5,1,1,2.5,2.88,3.3
-11/03/23,Real Madrid,Espanol,3,1,H,2,1,H,Jorge Figueroa,22,10,7,3,12,17,7,4,3,2,0,0,1.25,6.5,9.5
-11/03/23,Elche,Valladolid,1,1,D,0,1,A,Isidro Díaz de Mera,24,5,10,1,19,11,10,3,4,6,0,2,2.7,3.3,2.7
-11/03/23,Celta,Vallecano,3,0,H,0,0,D,Juan Pulido,15,12,6,3,13,12,3,7,2,3,0,0,2.1,3.2,4.0
-11/03/23,Valencia,Osasuna,1,0,H,0,0,D,Javier Villanueva,8,7,4,0,8,19,12,3,2,5,0,0,2.1,3.2,3.8
-12/03/23,Mallorca,Sociedad,1,1,D,0,1,A,Juan Martínez,8,8,2,2,19,20,3,2,2,2,0,1,3.5,2.9,2.38
-12/03/23,Sevilla,Almeria,2,1,H,1,1,D,Ricardo de Burgos,27,13,5,5,8,11,6,4,4,4,0,0,1.73,3.6,5.25
-12/03/23,Villarreal,Betis,1,1,D,0,1,A,Miguel Ángel Ortiz Arias,15,6,4,3,8,11,2,4,3,2,0,0,1.95,3.6,3.8
-12/03/23,Ath Bilbao,Barcelona,0,1,A,0,1,A,Jesús Gil,15,10,5,2,13,7,5,3,2,1,0,0,3.5,3.3,2.15
-13/03/23,Girona,Ath Madrid,0,1,A,0,0,D,Mario Melero,6,14,4,4,6,12,1,3,2,3,0,0,3.75,3.4,2.05
-17/03/23,Valladolid,Ath Bilbao,1,3,A,0,1,A,Hsu Jason,15,15,3,6,9,14,2,9,2,2,0,0,4.2,3.6,1.83
-18/03/23,Almeria,Cadiz,1,1,D,0,0,D,Carlos del Cerro,17,10,5,4,12,12,5,2,1,4,0,0,2.0,3.5,3.6
-18/03/23,Vallecano,Girona,2,2,D,2,1,H,Pablo González,15,12,3,4,15,16,3,5,2,2,0,0,2.0,3.4,3.8
-18/03/23,Espanol,Celta,1,3,A,0,2,A,Guillermo Cuadra,11,8,3,4,11,12,4,1,2,2,0,0,2.75,3.25,2.55
-18/03/23,Ath Madrid,Valencia,3,0,H,1,0,H,José Luis Munuera,14,9,6,1,12,9,4,2,2,0,0,0,1.55,4.2,5.75
-19/03/23,Betis,Mallorca,1,0,H,0,0,D,Valentín Pizarro,10,5,3,1,8,15,4,4,1,2,0,0,1.8,3.2,5.25
-19/03/23,Osasuna,Villarreal,0,3,A,0,1,A,Alejandro Muñíz,10,12,2,6,15,7,7,1,3,2,0,0,3.0,3.1,2.45
-19/03/23,Sociedad,Elche,2,0,H,0,0,D,José Sánchez,17,4,4,3,16,16,5,3,2,1,0,0,1.4,4.75,8.5
-19/03/23,Getafe,Sevilla,2,0,H,0,0,D,Antonio Matéu,15,11,4,4,22,10,4,1,4,2,0,0,2.9,3.1,2.5
-19/03/23,Barcelona,Real Madrid,2,1,H,1,1,D,Ricardo de Burgos,17,11,7,3,12,13,8,1,4,3,0,0,2.15,3.5,3.25
-31/03/23,Mallorca,Osasuna,0,0,D,0,0,D,Isidro Díaz de Mera,10,11,1,2,19,17,2,3,7,3,1,0,2.2,2.9,3.9
-01/04/23,Girona,Espanol,2,1,H,0,0,D,Miguel Ángel Ortiz Arias,14,5,4,1,12,16,5,2,4,2,0,1,1.91,3.3,4.33
-01/04/23,Ath Bilbao,Getafe,0,0,D,0,0,D,Javier Villanueva,17,9,3,1,8,9,13,3,0,0,0,0,1.57,3.8,6.5
-01/04/23,Cadiz,Sevilla,0,2,A,0,0,D,César Soto,14,11,3,5,9,14,8,4,3,4,0,0,3.4,3.1,2.3
-01/04/23,Elche,Barcelona,0,4,A,0,1,A,Carlos del Cerro,15,12,2,6,11,11,11,3,0,3,0,0,9.5,5.0,1.33
-02/04/23,Celta,Almeria,2,2,D,2,2,D,Alejandro Hernández,21,8,5,3,13,12,4,1,3,5,0,0,1.55,4.0,6.0
-02/04/23,Real Madrid,Valladolid,6,0,H,4,0,H,Juan Pulido,30,12,17,2,17,11,9,1,0,1,0,0,1.2,7.5,11.0
-02/04/23,Villarreal,Sociedad,2,0,H,0,0,D,Jesús Gil,16,16,4,3,12,19,4,4,5,3,1,0,2.4,3.1,3.2
-02/04/23,Ath Madrid,Betis,1,0,H,0,0,D,Juan Martínez,13,6,7,2,20,11,5,1,1,2,0,0,1.53,4.0,6.5
-03/04/23,Valencia,Vallecano,1,1,D,0,1,A,Jorge Figueroa,18,7,4,2,15,16,13,3,2,3,0,0,2.05,3.2,3.8
-07/04/23,Sevilla,Celta,2,2,D,1,0,H,Valentín Pizarro,7,9,2,4,11,9,8,3,6,2,2,0,2.1,3.4,3.5
-08/04/23,Osasuna,Elche,2,1,H,0,1,A,Pablo González,22,7,6,1,15,7,9,2,1,3,0,0,1.73,3.6,5.0
-08/04/23,Espanol,Ath Bilbao,1,2,A,0,1,A,José Luis Munuera,9,12,2,7,14,18,8,7,6,4,1,0,3.5,3.2,2.2
-08/04/23,Sociedad,Getafe,2,0,H,1,0,H,Mario Melero,11,6,6,4,11,9,3,2,2,1,0,0,1.7,3.3,6.0
-08/04/23,Real Madrid,Villarreal,2,3,A,1,1,D,Hsu Jason,18,17,4,8,8,19,6,7,0,3,0,0,1.53,4.33,5.75
-09/04/23,Valladolid,Mallorca,3,3,D,1,0,H,Alejandro Muñíz,10,14,6,6,13,20,1,2,3,5,0,0,2.5,2.9,3.2
-09/04/23,Betis,Cadiz,0,2,A,0,0,D,Guillermo Cuadra,9,15,3,4,18,16,5,6,3,3,2,0,1.62,3.75,5.75
-09/04/23,Almeria,Valencia,2,1,H,0,0,D,José Sánchez,10,11,4,4,11,11,3,7,3,2,0,0,3.0,3.3,2.4
-09/04/23,Vallecano,Ath Madrid,1,2,A,0,2,A,Ricardo de Burgos,15,14,3,4,8,7,8,2,0,0,1,0,4.33,3.5,1.85
-10/04/23,Barcelona,Girona,0,0,D,0,0,D,Antonio Matéu,18,5,3,0,14,14,12,2,0,2,0,0,1.3,5.5,10.0
-14/04/23,Vallecano,Osasuna,2,1,H,2,0,H,José Luis Munuera,12,8,3,4,18,16,2,3,2,3,0,0,2.2,3.1,3.6
-15/04/23,Villarreal,Valladolid,1,2,A,0,2,A,Javier Villanueva,22,14,7,7,9,18,8,5,1,6,0,0,1.44,4.75,6.5
-15/04/23,Ath Bilbao,Sociedad,2,0,H,1,0,H,César Soto,13,13,5,4,16,14,5,2,5,2,0,0,2.25,3.1,3.5
-15/04/23,Betis,Espanol,3,1,H,2,0,H,Alejandro Hernández,15,13,8,4,9,13,4,13,2,2,0,0,1.83,3.5,4.5
-15/04/23,Cadiz,Real Madrid,0,2,A,0,0,D,Jesús Gil,12,35,3,11,12,7,2,9,1,0,0,0,5.75,4.2,1.55
-16/04/23,Girona,Elche,2,0,H,1,0,H,Jorge Figueroa,14,13,4,5,9,14,3,4,3,3,0,1,1.53,4.33,6.0
-16/04/23,Getafe,Barcelona,0,0,D,0,0,D,Juan Pulido,5,15,1,3,13,12,1,5,2,1,0,0,6.0,3.8,1.6
-16/04/23,Ath Madrid,Almeria,2,1,H,2,1,H,Isidro Díaz de Mera,19,2,7,0,7,8,9,2,3,3,0,0,1.22,7.0,11.0
-16/04/23,Valencia,Sevilla,0,2,A,0,0,D,Carlos del Cerro,13,6,3,3,10,17,6,2,1,4,1,0,2.2,3.2,3.6
-17/04/23,Celta,Mallorca,0,1,A,0,1,A,Miguel Ángel Ortiz Arias,12,8,3,2,10,19,7,5,2,1,1,0,1.8,3.3,5.25
-21/04/23,Espanol,Cadiz,0,0,D,0,0,D,Juan Martínez,14,11,5,2,8,22,6,3,4,2,0,0,2.05,3.25,3.8
-22/04/23,Osasuna,Betis,3,2,H,3,1,H,Hsu Jason,10,21,5,6,20,13,5,13,2,0,0,0,2.55,3.2,2.88
-22/04/23,Almeria,Ath Bilbao,1,2,A,0,1,A,Valentín Pizarro,12,14,4,3,8,20,3,4,2,4,0,0,3.8,3.75,1.85
-22/04/23,Sociedad,Vallecano,2,1,H,0,0,D,Alejandro Muñíz,7,7,1,2,18,19,3,3,1,2,0,0,1.67,3.5,6.0
-22/04/23,Valladolid,Girona,1,0,H,1,0,H,Mario Melero,15,12,6,6,14,9,5,7,1,1,0,0,2.5,3.4,2.8
-22/04/23,Real Madrid,Celta,2,0,H,1,0,H,Antonio Matéu,17,12,5,2,10,10,8,3,1,2,0,0,1.36,5.0,9.0
-23/04/23,Elche,Valencia,0,2,A,0,2,A,Guillermo Cuadra,7,5,1,3,12,6,11,6,3,1,0,0,4.33,3.5,1.85
-23/04/23,Barcelona,Ath Madrid,1,0,H,1,0,H,José Sánchez,13,13,4,3,15,16,3,3,4,7,0,0,1.95,3.3,4.2
-23/04/23,Mallorca,Getafe,3,1,H,0,1,A,Pablo González,8,3,4,1,15,18,2,2,2,3,0,0,2.3,2.88,3.75
-23/04/23,Sevilla,Villarreal,2,1,H,1,0,H,Ricardo de Burgos,17,17,4,5,12,10,5,3,1,2,0,0,2.75,3.4,2.55
-25/04/23,Cadiz,Osasuna,0,1,A,0,0,D,Carlos del Cerro,20,6,4,4,8,15,11,2,0,1,0,1,2.3,3.1,3.4
-25/04/23,Girona,Real Madrid,4,2,H,2,1,H,Javier Villanueva,13,18,5,3,7,6,3,8,1,2,0,0,5.25,4.33,1.57
-25/04/23,Betis,Sociedad,0,0,D,0,0,D,Juan Martínez,10,10,1,3,13,23,2,4,1,3,0,0,2.75,3.25,2.63
-26/04/23,Ath Madrid,Mallorca,3,1,H,1,1,D,Juan Pulido,24,6,9,2,10,9,5,8,0,0,0,0,1.4,4.33,8.5
-26/04/23,Getafe,Almeria,1,2,A,0,1,A,Hsu Jason,21,23,9,11,15,9,4,6,2,2,1,0,1.91,3.3,4.5
-26/04/23,Celta,Elche,1,0,H,0,0,D,Isidro Díaz de Mera,17,16,9,1,9,12,10,6,0,0,0,0,1.3,5.25,10.0
-26/04/23,Vallecano,Barcelona,2,1,H,1,0,H,Jesús Gil,9,10,6,5,10,14,3,9,1,4,0,0,4.75,3.75,1.73
-27/04/23,Valencia,Valladolid,2,1,H,0,1,A,José Luis Munuera,18,8,5,2,16,17,6,2,0,4,0,0,1.75,3.75,4.75
-27/04/23,Villarreal,Espanol,4,2,H,0,1,A,César Soto,31,13,13,4,14,10,9,2,2,4,0,1,1.57,4.0,6.0
-27/04/23,Ath Bilbao,Sevilla,0,1,A,0,0,D,Alejandro Hernández,7,4,2,1,7,11,8,2,3,3,0,0,1.75,3.6,4.5
-28/04/23,Osasuna,Sociedad,0,2,A,0,1,A,Valentín Pizarro,13,12,1,8,12,15,4,2,3,1,0,0,3.75,3.0,2.2
-29/04/23,Elche,Vallecano,4,0,H,1,0,H,Mario Melero,18,14,9,3,13,16,3,8,1,2,0,1,4.75,3.5,1.8
-29/04/23,Real Madrid,Almeria,4,2,H,3,1,H,Guillermo Cuadra,15,9,12,3,12,16,7,0,2,2,0,0,1.14,8.5,15.0
-29/04/23,Barcelona,Betis,4,0,H,3,0,H,Carlos del Cerro,15,4,8,1,10,9,10,0,0,2,0,1,1.33,5.0,9.0
-30/04/23,Cadiz,Valencia,2,1,H,1,0,H,Ricardo de Burgos,8,16,4,4,14,10,5,6,6,2,0,0,3.1,3.1,2.45
-30/04/23,Villarreal,Celta,3,1,H,2,1,H,Pablo González,9,14,3,5,12,11,4,9,1,4,0,0,1.8,3.6,4.5
-30/04/23,Espanol,Getafe,1,0,H,1,0,H,José Sánchez,17,7,8,2,12,23,6,3,3,5,0,0,2.38,3.0,3.3
-30/04/23,Valladolid,Ath Madrid,2,5,A,1,3,A,Antonio Matéu,19,9,6,6,14,8,9,1,2,1,0,0,5.5,3.8,1.65
-01/05/23,Mallorca,Ath Bilbao,1,1,D,0,0,D,Jorge Figueroa,9,16,2,6,17,9,5,7,4,2,0,0,3.6,3.0,2.25
-01/05/23,Sevilla,Girona,0,2,A,0,1,A,Alejandro Muñíz,23,9,5,3,14,11,6,1,1,1,0,0,1.95,3.5,3.8
-02/05/23,Almeria,Elche,2,1,H,1,0,H,Alejandro Hernández,10,14,4,1,8,9,7,13,2,2,0,0,1.62,4.33,5.0
-02/05/23,Barcelona,Osasuna,1,0,H,0,0,D,Javier Villanueva,21,7,4,2,7,10,11,0,0,0,0,1,1.14,7.5,19.0
-02/05/23,Sociedad,Real Madrid,2,0,H,0,0,D,Juan Pulido,9,10,4,5,17,9,2,6,1,5,0,1,2.55,3.4,2.8
-03/05/23,Valencia,Villarreal,1,1,D,0,0,D,Jesús Gil,8,11,1,4,14,13,6,6,4,2,0,0,2.75,3.3,2.55
-03/05/23,Ath Madrid,Cadiz,5,1,H,2,0,H,César Soto,18,2,8,1,12,9,5,2,3,2,0,0,1.29,5.5,12.0
-03/05/23,Getafe,Celta,1,0,H,1,0,H,Guillermo Cuadra,14,7,4,1,21,14,1,5,7,5,0,1,2.55,3.0,3.1
-04/05/23,Girona,Mallorca,2,1,H,1,0,H,Juan Martínez,17,8,7,2,9,13,9,5,4,0,0,0,2.1,3.2,3.75
-04/05/23,Sevilla,Espanol,3,2,H,1,2,A,Hsu Jason,18,7,6,3,15,11,9,0,1,2,0,0,1.83,3.6,4.2
-04/05/23,Ath Bilbao,Betis,0,1,A,0,1,A,Miguel Ángel Ortiz Arias,21,12,6,2,13,7,13,2,1,3,1,0,1.7,4.0,4.75
-04/05/23,Vallecano,Valladolid,2,1,H,0,0,D,Isidro Díaz de Mera,16,7,6,4,18,15,3,4,0,0,0,0,1.73,3.8,4.75
-12/05/23,Mallorca,Cadiz,1,0,H,1,0,H,José Sánchez,8,14,3,4,16,14,3,7,5,3,0,0,2.15,2.9,4.0
-13/05/23,Sociedad,Girona,2,2,D,2,2,D,Jorge Figueroa,18,13,6,6,22,13,7,4,5,3,0,1,1.62,4.0,5.5
-13/05/23,Osasuna,Almeria,3,1,H,0,0,D,Antonio Matéu,18,8,7,3,7,7,4,1,0,0,0,0,2.05,3.5,3.6
-13/05/23,Villarreal,Ath Bilbao,5,1,H,2,1,H,Carlos del Cerro,17,11,11,5,11,13,7,5,4,3,0,0,2.1,3.5,3.4
-13/05/23,Real Madrid,Getafe,1,0,H,0,0,D,Juan Martínez,16,9,3,2,5,23,1,3,1,4,0,0,1.55,4.0,6.5
-14/05/23,Celta,Valencia,1,2,A,0,1,A,César Soto,10,12,6,5,13,19,5,4,3,5,0,1,2.2,3.3,3.4
-14/05/23,Elche,Ath Madrid,1,0,H,1,0,H,Alejandro Muñíz,15,13,4,4,16,3,3,5,2,0,0,0,8.0,5.0,1.36
-14/05/23,Valladolid,Sevilla,0,3,A,0,0,D,Miguel Ángel Ortiz Arias,28,17,6,5,9,16,8,3,2,1,0,0,2.25,3.5,3.1
-14/05/23,Espanol,Barcelona,2,4,A,0,3,A,Ricardo de Burgos,15,15,7,5,12,9,4,3,1,3,0,0,5.25,4.0,1.65
-15/05/23,Betis,Vallecano,3,1,H,2,0,H,Juan Pulido,11,16,5,4,11,9,6,5,3,2,0,1,1.91,3.5,4.0
-19/05/23,Cadiz,Valladolid,2,0,H,0,0,D,Juan Martínez,11,6,4,2,18,18,4,3,4,4,0,1,2.2,3.4,3.3
-20/05/23,Girona,Villarreal,1,2,A,1,1,D,Valentín Pizarro,9,10,3,5,16,11,3,1,2,1,0,0,2.8,3.75,2.3
-20/05/23,Ath Bilbao,Celta,2,1,H,1,0,H,Mario Melero,10,8,3,3,17,12,8,5,4,1,0,0,1.62,3.8,5.5
-20/05/23,Almeria,Mallorca,3,0,H,2,0,H,Carlos del Cerro,12,7,3,3,11,15,4,6,1,2,0,0,2.25,3.25,3.3
-20/05/23,Getafe,Elche,1,1,D,1,1,D,Javier Villanueva,9,13,5,4,19,11,5,6,3,1,0,0,1.5,4.0,7.0
-20/05/23,Barcelona,Sociedad,1,2,A,0,1,A,Hsu Jason,13,13,4,6,8,16,8,2,4,4,0,0,1.8,3.75,4.33
-21/05/23,Vallecano,Espanol,1,2,A,1,1,D,Alejandro Hernández,15,10,5,6,8,11,4,4,2,2,0,0,2.15,3.4,3.4
-21/05/23,Ath Madrid,Osasuna,3,0,H,1,0,H,Pablo González,15,12,5,2,6,11,8,10,0,2,0,0,1.36,4.75,8.0
-21/05/23,Valencia,Real Madrid,1,0,H,1,0,H,Ricardo de Burgos,12,13,6,5,13,4,2,9,4,2,0,1,3.2,3.5,2.2
-21/05/23,Sevilla,Betis,0,0,D,0,0,D,Jesús Gil,10,5,4,0,14,11,4,3,2,2,0,1,2.3,3.3,3.1
-23/05/23,Celta,Girona,1,1,D,1,0,H,Antonio Matéu,16,11,7,4,13,13,9,3,0,0,0,0,2.0,3.5,3.75
-23/05/23,Sociedad,Almeria,1,0,H,1,0,H,Pablo González,15,2,2,2,20,8,10,2,0,1,0,1,1.36,5.0,8.0
-23/05/23,Valladolid,Barcelona,3,1,H,2,0,H,César Soto,8,16,4,6,13,9,2,6,1,0,0,0,3.6,3.8,1.91
-24/05/23,Elche,Sevilla,1,1,D,1,1,D,Isidro Díaz de Mera,20,9,7,3,12,10,9,5,1,4,0,1,4.0,3.75,1.91
-24/05/23,Real Madrid,Vallecano,2,1,H,1,0,H,Jesús Gil,12,15,3,6,11,14,5,2,1,3,0,0,1.62,4.0,5.25
-24/05/23,Villarreal,Cadiz,2,0,H,2,0,H,Juan Pulido,13,16,7,8,14,8,7,6,1,2,0,0,1.44,4.5,7.0
-24/05/23,Betis,Getafe,0,1,A,0,0,D,Ricardo de Burgos,11,9,4,2,8,12,2,5,2,5,1,0,2.0,3.2,4.2
-24/05/23,Espanol,Ath Madrid,3,3,D,0,2,A,Mario Melero,26,16,13,7,6,9,16,1,2,3,0,0,2.88,3.5,2.38
-25/05/23,Mallorca,Valencia,1,0,H,0,0,D,Alejandro Hernández,4,15,3,5,15,12,2,4,4,2,0,0,3.3,3.0,2.4
-25/05/23,Osasuna,Ath Bilbao,2,0,H,0,0,D,Alejandro Muñíz,9,10,3,5,17,13,3,6,3,3,0,0,3.0,3.25,2.45
-27/05/23,Sevilla,Real Madrid,1,2,A,1,1,D,César Soto,11,6,1,3,23,10,1,1,2,4,1,0,2.88,3.5,2.4
-28/05/23,Almeria,Valladolid,0,0,D,0,0,D,Hsu Jason,23,8,7,2,11,16,2,4,0,4,0,0,2.25,3.4,3.1
-28/05/23,Ath Bilbao,Elche,0,1,A,0,0,D,Valentín Pizarro,27,6,8,2,7,10,19,3,1,1,0,0,1.3,5.0,11.0
-28/05/23,Ath Madrid,Sociedad,2,1,H,1,0,H,Juan Pulido,11,10,5,5,8,10,6,4,2,2,0,0,2.0,3.5,3.6
-28/05/23,Barcelona,Mallorca,3,0,H,2,0,H,Jorge Figueroa,28,3,9,1,4,9,14,3,0,0,0,1,1.33,5.0,9.5
-28/05/23,Cadiz,Celta,1,0,H,0,0,D,Ricardo de Burgos,13,9,3,4,16,10,3,3,9,5,0,0,2.6,3.1,2.75
-28/05/23,Getafe,Osasuna,2,1,H,1,1,D,Antonio Matéu,16,10,6,2,11,6,1,1,3,1,0,0,2.2,3.1,3.5
-28/05/23,Girona,Betis,1,2,A,1,0,H,Isidro Díaz de Mera,9,18,3,7,14,12,8,5,0,1,0,0,1.95,3.6,3.6
-28/05/23,Valencia,Espanol,2,2,D,1,1,D,Jesús Gil,19,9,4,5,12,12,10,3,0,4,0,0,2.0,3.75,3.4
-28/05/23,Vallecano,Villarreal,2,1,H,0,0,D,Javier Villanueva,15,7,4,2,9,9,4,6,3,5,0,0,3.0,3.6,2.2
-04/06/23,Mallorca,Vallecano,3,0,H,0,0,D,Antonio Matéu,8,20,4,4,14,15,2,6,0,0,0,0,3.0,3.3,2.38
-04/06/23,Osasuna,Girona,2,1,H,0,0,D,Miguel Ángel Ortiz Arias,14,11,7,6,12,9,5,2,1,5,0,0,2.05,3.6,3.4
-04/06/23,Real Madrid,Ath Bilbao,1,1,D,0,0,D,Isidro Díaz de Mera,9,15,2,9,11,14,5,6,2,2,0,0,1.91,3.75,3.75
-04/06/23,Sociedad,Sevilla,2,1,H,1,0,H,Carlos del Cerro,17,9,6,4,10,13,5,2,0,1,0,0,1.73,3.9,4.6
-04/06/23,Villarreal,Ath Madrid,2,2,D,1,1,D,Ricardo de Burgos,22,9,7,3,9,12,12,1,3,2,0,1,2.7,3.5,2.5
-04/06/23,Betis,Valencia,1,1,D,1,0,H,Hsu Jason,8,10,3,3,11,11,5,4,3,0,0,1,2.63,3.6,2.5
-04/06/23,Celta,Barcelona,2,1,H,1,0,H,Juan Pulido,12,9,9,2,13,9,2,4,2,2,0,0,2.6,3.8,2.5
-04/06/23,Elche,Cadiz,1,1,D,0,1,A,Jesús Gil,12,14,5,3,18,8,7,4,4,3,0,0,2.63,3.4,2.63
-04/06/23,Espanol,Almeria,3,3,D,1,1,D,César Soto,12,11,8,4,11,12,7,6,2,3,0,0,2.75,3.8,2.38
-04/06/23,Valladolid,Getafe,0,0,D,0,0,D,José Luis Munuera,15,4,0,1,9,25,6,1,1,3,0,0,2.2,3.3,3.4
+Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HTHG,HTAG,HTR,Referee,HS,AS,HST,AST,HF,AF,HC,AC,HY,AY,HR,AR,B365H,B365D,B365A,Home_PPDA,Away_PPDA
+12/08/22,Osasuna,Sevilla,2,1,H,1,1,D,Carlos del Cerro,12,10,5,3,16,9,5,2,5,3,0,0,3.2,3.1,2.4,15.773,7.1
+13/08/22,Celta,Espanol,2,2,D,1,0,H,Miguel Ángel Ortiz Arias,8,10,3,2,17,15,3,3,5,2,0,0,1.8,3.75,4.75,7.929,8.026
+13/08/22,Valladolid,Villarreal,0,3,A,0,0,D,Mario Melero,12,10,6,4,6,10,4,5,1,0,0,0,3.9,3.6,1.9,8.423,9.56
+13/08/22,Barcelona,Vallecano,0,0,D,0,0,D,Alejandro Hernández,21,4,6,2,16,14,8,0,3,6,1,0,1.22,7.0,12.0,4.424,11.7
+14/08/22,Cadiz,Sociedad,0,1,A,0,1,A,Isidro Díaz de Mera,7,15,2,7,9,20,3,6,4,2,0,0,3.6,3.2,2.2,12.105,4.243
+14/08/22,Valencia,Girona,1,0,H,1,0,H,Jorge Figueroa,17,5,2,1,18,14,4,4,2,3,1,0,1.85,3.4,4.5,9.261,9.474
+14/08/22,Almeria,Real Madrid,1,2,A,1,0,H,Juan Martínez,10,29,6,15,11,4,2,15,3,1,0,0,7.5,5.0,1.4,32.2,19.9
+15/08/22,Ath Bilbao,Mallorca,0,0,D,0,0,D,Javier Villanueva,23,6,6,2,13,12,7,2,0,6,0,0,1.6,3.75,6.5,6.947,10.867
+15/08/22,Getafe,Ath Madrid,0,3,A,0,1,A,José Sánchez,10,12,0,5,14,19,3,6,2,1,0,0,5.0,3.1,1.9,14.833,8.76
+15/08/22,Betis,Elche,3,0,H,2,0,H,Guillermo Cuadra,17,4,8,2,10,18,8,4,3,6,0,1,1.44,4.5,7.0,7.625,14.704
+19/08/22,Espanol,Vallecano,0,2,A,0,1,A,Jorge Figueroa,13,8,1,3,12,17,9,2,2,5,1,1,2.45,3.1,3.1,16.125,19.692
+19/08/22,Sevilla,Valladolid,1,1,D,0,0,D,Juan Pulido,18,6,2,3,20,10,12,2,3,2,1,1,1.5,4.2,6.5,4.969,11.952
+20/08/22,Osasuna,Cadiz,2,0,H,1,0,H,Antonio Matéu Lahoz,16,9,3,2,11,13,2,2,2,5,0,1,1.9,3.25,4.5,6.379,18.273
+20/08/22,Mallorca,Betis,1,2,A,0,1,A,Pablo González,13,8,7,3,22,17,5,2,7,8,0,0,3.1,3.2,2.4,9.08,8.25
+20/08/22,Celta,Real Madrid,1,4,A,1,2,A,Jesús Gil,15,16,2,7,12,8,2,2,2,2,0,0,4.5,4.2,1.66,12.48,12.68
+21/08/22,Ath Bilbao,Valencia,1,0,H,1,0,H,César Soto,12,10,2,0,11,15,6,3,5,2,0,0,1.8,3.75,4.5,15.833,6.04
+21/08/22,Ath Madrid,Villarreal,0,2,A,0,0,D,Ricardo de Burgos,13,19,5,5,8,11,5,6,2,3,1,0,1.85,3.5,4.33,20.353,16.556
+21/08/22,Sociedad,Barcelona,1,4,A,1,1,D,José Luis Munuera,10,15,5,7,16,9,3,6,2,1,0,0,3.3,3.6,2.1,12.179,8.385
+22/08/22,Elche,Almeria,1,1,D,1,1,D,Isidro Díaz de Mera,13,12,3,7,12,16,6,5,1,4,0,1,2.5,3.2,3.0,11.632,6.212
+22/08/22,Girona,Getafe,3,1,H,1,0,H,Alejandro Muñíz,12,7,6,3,16,18,5,2,3,6,0,1,2.8,2.9,2.9,6.045,14.583
+26/08/22,Girona,Celta,0,1,A,0,0,D,Carlos del Cerro,11,11,3,6,16,13,2,4,2,1,0,0,2.8,3.1,2.75,11.8,12.231
+26/08/22,Betis,Osasuna,1,0,H,1,0,H,Juan Martínez,7,12,1,2,9,21,2,4,0,3,1,0,1.8,3.6,4.75,9.882,7.758
+27/08/22,Elche,Sociedad,0,1,A,0,1,A,Javier Villanueva,12,9,5,5,13,18,4,6,3,3,0,0,3.6,3.2,2.15,15.722,4.892
+27/08/22,Vallecano,Mallorca,0,2,A,0,1,A,José Sánchez,15,9,0,4,11,18,7,3,1,3,0,0,2.05,3.25,4.0,5.714,16.278
+27/08/22,Almeria,Sevilla,2,1,H,1,1,D,Jesús Gil,11,13,5,5,18,11,5,2,5,8,0,0,3.6,3.25,2.15,13.682,11.167
+28/08/22,Getafe,Villarreal,0,0,D,0,0,D,Jorge Figueroa,8,11,2,6,11,19,1,4,1,5,0,0,4.33,3.4,1.85,13.85,6.5
+28/08/22,Barcelona,Valladolid,4,0,H,2,0,H,Ricardo de Burgos,24,8,9,3,9,8,14,4,0,3,0,0,1.14,8.5,15.0,7.583,22.692
+28/08/22,Espanol,Real Madrid,1,3,A,1,1,D,Mario Melero,15,19,4,6,15,12,7,7,0,0,1,0,6.5,4.75,1.45,25.077,10.214
+29/08/22,Cadiz,Ath Bilbao,0,4,A,0,1,A,Miguel Ángel Ortiz Arias,9,20,3,8,18,4,0,6,2,1,0,0,3.6,3.2,2.15,15.4,12.667
+29/08/22,Valencia,Ath Madrid,0,1,A,0,0,D,Guillermo Cuadra,12,13,2,7,15,17,6,2,4,3,0,0,4.0,3.3,2.0,8.056,19.294
+02/09/22,Celta,Cadiz,3,0,H,0,0,D,Juan Pulido,9,7,5,0,13,23,2,2,1,2,0,0,1.66,3.6,5.5,12.733,8.359
+03/09/22,Mallorca,Girona,1,1,D,0,0,D,Isidro Díaz de Mera,10,10,4,4,23,9,6,3,4,2,0,0,2.15,3.2,3.6,7.7,11.556
+03/09/22,Real Madrid,Betis,2,1,H,1,1,D,José Sánchez,22,8,4,4,8,12,9,2,0,1,0,0,1.4,5.25,6.5,10.267,14.111
+03/09/22,Sociedad,Ath Madrid,1,1,D,0,1,A,César Soto,12,15,5,7,18,13,7,7,5,4,0,0,2.9,3.2,2.55,6.793,13.389
+03/09/22,Sevilla,Barcelona,0,3,A,0,2,A,Antonio Matéu Lahoz,9,18,4,7,15,14,4,4,2,4,0,0,4.5,3.6,1.8,7.645,8.783
+04/09/22,Osasuna,Vallecano,2,1,H,0,0,D,Alejandro Muñíz,13,5,6,3,14,16,4,0,2,2,0,0,2.0,3.1,4.33,8.68,7.15
+04/09/22,Ath Bilbao,Espanol,0,1,A,0,0,D,Juan Martínez,17,9,2,2,12,12,4,2,3,2,0,0,1.53,4.0,6.5,6.722,15.222
+04/09/22,Villarreal,Elche,4,0,H,2,0,H,Miguel Ángel Ortiz Arias,18,7,10,0,10,9,6,4,1,3,0,0,1.33,5.0,10.0,9.208,11.8
+04/09/22,Valencia,Getafe,5,1,H,3,0,H,José Luis Munuera,24,7,9,4,11,21,9,1,3,6,1,1,1.9,3.2,4.5,8.133,13.818
+05/09/22,Valladolid,Almeria,1,0,H,0,0,D,Pablo González,14,12,6,1,11,20,2,8,1,6,0,0,2.3,3.3,3.1,6.0,6.889
+09/09/22,Girona,Valladolid,2,1,H,1,1,D,César Soto,14,14,5,4,11,15,3,12,0,2,0,0,2.25,3.25,3.4,9.12,5.636
+10/09/22,Vallecano,Valencia,2,1,H,1,0,H,Jesús Gil,14,17,6,4,22,11,7,7,5,2,0,0,2.62,3.1,2.87,4.971,8.071
+10/09/22,Espanol,Sevilla,2,3,A,1,3,A,Guillermo Cuadra,19,11,5,7,11,14,9,3,3,5,0,1,2.87,3.25,2.5,6.043,10.85
+10/09/22,Cadiz,Barcelona,0,4,A,0,0,D,Carlos del Cerro,6,16,0,8,12,13,5,6,1,2,0,0,13.0,6.5,1.22,11.88,5.824
+10/09/22,Ath Madrid,Celta,4,1,H,1,0,H,Alejandro Hernández,10,14,4,3,11,6,4,7,2,3,0,0,1.61,3.8,6.0,17.55,11.875
+11/09/22,Real Madrid,Mallorca,4,1,H,1,1,D,Jorge Figueroa,22,5,7,2,7,15,4,3,3,5,0,0,1.25,6.0,11.0,10.647,16.25
+11/09/22,Elche,Ath Bilbao,1,4,A,0,4,A,Mario Melero,9,16,2,8,15,9,5,5,3,0,0,0,4.0,3.6,1.9,9.25,12.412
+11/09/22,Getafe,Sociedad,2,1,H,1,0,H,Juan Pulido,8,13,3,6,9,16,3,7,4,1,0,0,3.75,3.0,2.15,13.318,7.929
+11/09/22,Betis,Villarreal,1,0,H,0,0,D,Ricardo de Burgos,16,14,5,3,11,14,9,8,1,1,0,0,2.8,3.4,2.5,8.609,7.76
+12/09/22,Almeria,Osasuna,0,1,A,0,1,A,Javier Villanueva,7,15,2,4,4,9,5,10,0,2,0,0,2.6,3.25,2.75,12.75,25.143
+16/09/22,Valladolid,Cadiz,0,1,A,0,0,D,José Sánchez,18,7,6,1,12,19,8,2,1,4,0,0,2.0,3.25,4.0,6.56,11.409
+17/09/22,Mallorca,Almeria,1,0,H,1,0,H,Juan Martínez,5,9,2,3,15,14,5,2,3,6,0,0,2.0,3.3,4.0,14.571,9.92
+17/09/22,Barcelona,Elche,3,0,H,2,0,H,Alejandro Muñíz,25,1,9,1,11,9,6,0,2,2,0,1,1.08,11.0,26.0,3.774,30.25
+17/09/22,Valencia,Celta,3,0,H,1,0,H,Pablo González,14,6,7,2,18,23,5,4,3,2,0,1,2.3,3.2,3.3,4.909,7.765
+17/09/22,Ath Bilbao,Vallecano,3,2,H,3,1,H,Antonio Matéu Lahoz,14,11,7,2,13,13,2,7,1,2,0,0,1.53,4.0,6.5,13.048,6.88
+18/09/22,Osasuna,Getafe,0,2,A,0,1,A,Isidro Díaz de Mera,12,10,4,4,15,15,8,1,7,3,1,1,1.8,3.4,5.0,11.6,17.067
+18/09/22,Villarreal,Sevilla,1,1,D,0,1,A,Alejandro Hernández,17,12,7,1,15,12,6,4,1,5,0,0,1.7,3.8,5.0,11.417,6.63
+18/09/22,Betis,Girona,2,1,H,1,1,D,Miguel Ángel Ortiz Arias,9,8,3,3,9,8,2,4,0,3,0,0,1.75,3.6,5.0,14.083,13.0
+18/09/22,Sociedad,Espanol,2,1,H,2,1,H,Carlos del Cerro,14,14,6,4,18,8,4,2,3,0,0,0,1.7,3.6,5.0,6.182,14.238
+18/09/22,Ath Madrid,Real Madrid,1,2,A,0,2,A,José Luis Munuera,12,6,5,3,15,16,8,1,4,2,1,0,3.1,3.4,2.3,13.536,16.864
+30/09/22,Ath Bilbao,Almeria,4,0,H,2,0,H,Juan Pulido,17,8,4,2,17,8,11,2,1,3,0,0,1.33,5.0,9.5,7.259,23.2
+01/10/22,Cadiz,Villarreal,0,0,D,0,0,D,Javier Villanueva,10,14,2,6,13,8,6,5,2,3,1,0,6.0,4.0,1.57,8.7,13.077
+01/10/22,Getafe,Valladolid,2,3,A,2,2,D,Alejandro Muñíz,14,14,6,7,23,13,4,2,2,4,0,0,2.3,3.0,3.5,9.071,9.941
+01/10/22,Sevilla,Ath Madrid,0,2,A,0,1,A,Ricardo de Burgos,14,20,3,6,9,12,5,7,3,2,0,0,3.0,3.2,2.5,7.25,28.25
+01/10/22,Mallorca,Barcelona,0,1,A,0,1,A,Jesús Gil,13,11,3,3,9,13,5,5,2,4,0,0,9.0,5.0,1.36,39.909,6.52
+02/10/22,Espanol,Valencia,2,2,D,0,0,D,Valentín Pizarro,10,12,5,5,16,15,6,4,2,1,1,1,2.62,3.3,2.7,12.5,5.476
+02/10/22,Celta,Betis,1,0,H,1,0,H,César Soto,11,9,4,4,26,3,5,3,4,3,0,1,2.45,3.4,2.87,6.5,13.333
+02/10/22,Girona,Sociedad,3,5,A,2,2,D,Mario Melero,16,11,8,5,9,19,2,2,3,1,0,0,3.25,3.2,2.3,14.158,6.071
+02/10/22,Real Madrid,Osasuna,1,1,D,1,0,H,Guillermo Cuadra,22,8,4,2,9,13,10,2,1,2,0,1,1.3,5.5,9.5,8.857,24.846
+03/10/22,Vallecano,Elche,2,1,H,1,1,D,Jorge Figueroa,15,5,6,2,5,19,13,3,1,8,0,0,1.72,3.6,5.25,3.727,14.056
+07/10/22,Osasuna,Valencia,1,2,A,0,1,A,Miguel Ángel Ortiz Arias,11,15,2,7,11,19,7,5,3,6,2,1,2.4,3.2,3.1,16.167,7.476
+08/10/22,Almeria,Vallecano,3,1,H,3,0,H,Pablo González,10,12,4,4,22,12,7,6,4,2,1,0,2.9,3.3,2.55,9.148,4.76
+08/10/22,Ath Madrid,Girona,2,1,H,1,0,H,Juan Martínez,13,11,7,4,12,13,8,3,3,1,0,0,1.45,4.33,7.5,15.88,10.938
+08/10/22,Sevilla,Ath Bilbao,1,1,D,1,0,H,Jesús Gil,10,21,3,4,19,14,5,7,4,0,0,1,3.0,3.3,2.4,12.706,7.16
+08/10/22,Getafe,Real Madrid,0,1,A,0,1,A,Antonio Matéu Lahoz,9,19,2,4,10,5,4,4,0,0,0,0,6.5,4.5,1.5,33.769,17.583
+09/10/22,Valladolid,Betis,0,0,D,0,0,D,Carlos del Cerro,12,4,3,1,12,16,3,1,1,1,0,1,2.8,3.4,2.4,9.765,12.391
+09/10/22,Cadiz,Espanol,2,2,D,1,0,H,Alejandro Hernández,8,9,3,6,13,12,8,3,4,4,0,0,2.87,3.2,2.55,11.118,7.375
+09/10/22,Sociedad,Villarreal,1,0,H,1,0,H,César Soto,17,5,5,1,21,18,9,3,5,3,0,0,2.5,3.4,2.75,6.714,10.96
+09/10/22,Barcelona,Celta,1,0,H,1,0,H,José Luis Munuera,13,14,5,3,16,9,6,3,2,4,0,0,1.28,6.0,9.0,8.63,14.048
+10/10/22,Elche,Mallorca,1,1,D,1,0,H,Valentín Pizarro,7,11,2,4,12,17,5,7,4,5,1,1,3.0,3.1,2.5,18.571,7.037
+14/10/22,Vallecano,Getafe,0,0,D,0,0,D,Mario Melero,16,6,3,3,13,17,4,1,2,3,0,0,2.05,3.2,3.8,7.652,25.417
+15/10/22,Girona,Cadiz,1,1,D,0,0,D,Ricardo de Burgos,23,9,6,2,16,9,6,2,5,4,0,0,1.9,3.3,4.5,5.4,25.222
+15/10/22,Valencia,Elche,2,2,D,2,1,H,Juan Pulido,20,8,8,6,14,19,6,1,3,6,0,0,1.4,4.75,7.5,6.893,11.706
+15/10/22,Mallorca,Sevilla,0,1,A,0,0,D,Javier Villanueva,9,4,5,1,17,15,1,3,2,3,0,0,2.9,3.0,2.7,19.786,11.1
+15/10/22,Ath Bilbao,Ath Madrid,0,1,A,0,0,D,Jorge Figueroa,13,3,3,1,14,17,6,1,0,6,0,0,2.45,3.2,3.0,7.138,11.6
+16/10/22,Celta,Sociedad,1,2,A,1,1,D,Guillermo Cuadra,10,8,3,6,14,17,1,6,5,7,1,0,2.6,3.2,2.8,7.1,8.393
+16/10/22,Real Madrid,Barcelona,3,1,H,2,0,H,José Sánchez,8,18,4,5,11,14,2,3,2,2,0,0,2.2,3.6,3.1,16.75,7.452
+16/10/22,Espanol,Valladolid,1,0,H,0,0,D,Antonio Matéu Lahoz,15,14,3,2,13,11,6,4,1,4,0,0,2.2,3.3,3.5,7.344,14.0
+16/10/22,Betis,Almeria,3,1,H,1,0,H,Alejandro Muñíz,15,12,6,5,6,7,9,3,1,1,0,0,1.57,4.1,5.75,17.0,21.538
+17/10/22,Villarreal,Osasuna,2,0,H,1,0,H,Pablo González,12,14,9,3,14,23,8,4,2,6,0,0,1.57,4.2,6.0,7.682,7.964
+18/10/22,Sevilla,Valencia,1,1,D,0,1,A,César Soto,18,13,5,5,11,26,11,6,4,7,1,0,2.25,3.4,3.2,10.5,8.571
+18/10/22,Getafe,Ath Bilbao,2,2,D,1,1,D,José Luis Munuera,11,14,4,4,14,11,7,4,7,4,0,0,4.75,3.3,1.83,13.864,18.4
+18/10/22,Ath Madrid,Vallecano,1,1,D,1,0,H,Javier Villanueva,12,14,4,4,11,11,3,4,3,0,0,0,1.55,3.75,7.0,12.19,15.762
+19/10/22,Cadiz,Betis,0,0,D,0,0,D,Antonio Matéu Lahoz,13,12,3,3,15,7,4,9,1,2,0,1,4.0,3.3,2.0,15.444,12.286
+19/10/22,Valladolid,Celta,4,1,H,1,1,D,Valentín Pizarro,9,22,7,5,12,11,3,7,1,1,0,0,2.9,3.3,2.45,13.5,12.083
+19/10/22,Sociedad,Mallorca,1,0,H,1,0,H,Miguel Ángel Ortiz Arias,14,12,7,3,18,9,10,7,1,2,0,0,1.55,4.0,6.5,7.385,10.706
+19/10/22,Elche,Real Madrid,0,3,A,0,1,A,Jesús Gil,10,10,3,7,14,10,8,2,1,1,0,0,8.5,5.75,1.3,28.786,11.87
+20/10/22,Almeria,Girona,3,2,H,3,0,H,Guillermo Cuadra,13,14,7,5,14,14,4,5,1,3,0,0,2.6,3.25,2.8,20.286,5.409
+20/10/22,Osasuna,Espanol,1,0,H,0,0,D,Mario Melero,17,5,5,3,17,15,9,2,1,2,0,0,2.05,3.6,3.5,5.952,11.429
+20/10/22,Barcelona,Villarreal,3,0,H,3,0,H,Carlos del Cerro,16,5,5,1,18,11,8,0,0,1,0,0,1.5,4.5,6.0,5.684,27.5
+22/10/22,Vallecano,Cadiz,5,1,H,2,0,H,Alejandro Muñíz,28,3,11,0,13,12,10,1,1,4,1,2,1.72,3.5,5.25,5.923,27.5
+22/10/22,Valladolid,Sociedad,1,0,H,1,0,H,Jorge Figueroa,9,20,2,2,19,14,4,10,2,3,0,0,3.6,3.4,2.05,11.037,3.476
+22/10/22,Valencia,Mallorca,1,2,A,0,0,D,José Sánchez,13,10,3,5,14,19,5,3,3,5,0,0,1.75,3.5,5.0,5.75,16.4
+22/10/22,Real Madrid,Sevilla,3,1,H,1,0,H,Alejandro Hernández,18,9,6,2,9,12,4,3,1,4,0,0,1.36,4.75,8.5,14.174,14.68
+23/10/22,Espanol,Elche,2,2,D,1,1,D,José Luis Munuera,13,9,5,4,13,10,5,3,2,3,0,0,1.66,3.75,5.25,13.074,15.231
+23/10/22,Betis,Ath Madrid,1,2,A,0,0,D,Jesús Gil,17,9,4,3,10,17,7,4,2,3,0,0,3.2,3.3,2.3,12.304,11.483
+23/10/22,Girona,Osasuna,1,1,D,1,1,D,Juan Pulido,7,9,1,2,11,11,3,5,2,3,0,0,2.55,3.2,2.9,11.32,13.227
+23/10/22,Villarreal,Almeria,2,1,H,0,1,A,Ricardo de Burgos,11,15,5,4,7,8,10,4,4,1,1,0,1.36,4.75,9.0,12.474,17.357
+23/10/22,Barcelona,Ath Bilbao,4,0,H,3,0,H,Juan Martínez,10,5,7,3,7,13,1,2,2,2,0,0,1.55,4.5,5.5,12.286,14.812
+24/10/22,Celta,Getafe,1,1,D,0,1,A,Pablo González,17,4,5,1,10,13,10,0,1,1,0,0,1.75,3.5,5.0,4.615,23.0
+28/10/22,Mallorca,Espanol,1,1,D,0,0,D,Isidro Díaz de Mera,12,7,5,2,15,9,4,4,4,1,0,0,2.25,3.1,3.4,11.286,12.789
+29/10/22,Almeria,Celta,3,1,H,0,1,A,Carlos del Cerro,19,8,5,3,10,7,6,4,4,0,0,1,3.3,3.3,2.25,8.182,21.571
+29/10/22,Cadiz,Ath Madrid,3,2,H,1,0,H,José Sánchez,10,15,7,7,15,12,5,3,2,4,0,0,7.0,3.6,1.6,18.125,8.727
+29/10/22,Sevilla,Vallecano,0,1,A,0,0,D,Antonio Matéu Lahoz,10,15,4,5,9,20,6,6,6,1,0,0,2.0,3.3,4.0,10.0,6.714
+29/10/22,Valencia,Barcelona,0,1,A,0,0,D,Ricardo de Burgos,3,13,2,2,13,7,3,10,4,5,0,0,5.0,4.33,1.57,14.25,7.429
+30/10/22,Osasuna,Valladolid,2,0,H,2,0,H,Guillermo Cuadra,20,7,10,2,14,16,1,8,1,3,0,0,1.9,3.4,4.33,9.276,9.667
+30/10/22,Real Madrid,Girona,1,1,D,0,0,D,Mario Melero,19,8,6,2,16,8,7,1,3,3,1,0,1.2,6.5,13.0,11.444,56.8
+30/10/22,Ath Bilbao,Villarreal,1,0,H,0,0,D,Miguel Ángel Ortiz Arias,19,6,7,3,12,10,6,2,2,1,0,0,2.2,3.3,3.4,10.903,15.5
+30/10/22,Sociedad,Betis,0,2,A,0,0,D,Javier Villanueva,14,10,7,4,22,16,5,3,4,4,0,0,2.0,3.5,3.8,5.345,14.235
+31/10/22,Elche,Getafe,0,1,A,0,0,D,César Soto,12,8,5,3,12,11,6,2,0,3,0,1,2.7,3.0,2.87,14.6,25.714
+04/11/22,Girona,Ath Bilbao,2,1,H,0,0,D,Valentín Pizarro,19,11,10,7,11,11,7,1,1,1,0,0,3.75,3.5,2.0,20.615,9.273
+05/11/22,Getafe,Cadiz,0,0,D,0,0,D,Alejandro Hernández,13,15,2,4,15,16,5,5,5,2,2,1,2.2,3.1,3.75,9.348,14.312
+05/11/22,Valladolid,Elche,2,1,H,1,0,H,Ricardo de Burgos,16,4,11,2,9,10,8,4,2,0,0,0,1.83,3.6,4.33,10.826,21.75
+05/11/22,Celta,Osasuna,1,2,A,1,2,A,Jorge Figueroa,13,8,5,4,12,20,2,3,1,5,0,0,2.1,3.3,3.75,6.759,18.706
+05/11/22,Barcelona,Almeria,2,0,H,0,0,D,Pablo González,27,4,13,1,14,13,9,1,2,1,0,0,1.08,10.0,26.0,6.593,31.7
+06/11/22,Ath Madrid,Espanol,1,1,D,0,0,D,Juan Pulido,27,6,7,2,13,10,12,2,3,5,0,1,1.44,4.5,8.0,6.13,19.357
+06/11/22,Sociedad,Valencia,1,1,D,1,1,D,José Luis Munuera,9,14,4,3,11,12,1,11,2,0,1,0,1.95,3.4,4.0,16.143,6.056
+06/11/22,Villarreal,Mallorca,0,2,A,0,1,A,Alejandro Muñíz,9,7,2,5,17,16,5,2,4,6,0,0,1.57,4.0,5.75,6.333,19.929
+06/11/22,Betis,Sevilla,1,1,D,1,0,H,José Sánchez,9,22,4,6,6,20,1,4,4,5,2,1,2.2,3.2,3.6,32.625,7.5
+07/11/22,Vallecano,Real Madrid,3,2,H,2,2,D,Juan Martínez,15,16,7,2,22,11,4,5,4,5,0,0,4.75,4.2,1.65,8.581,7.889
+08/11/22,Elche,Girona,1,2,A,1,1,D,Pablo González,11,21,2,3,16,9,2,5,3,2,0,0,3.25,3.3,2.2,13.889,10.75
+08/11/22,Ath Bilbao,Valladolid,3,0,H,1,0,H,Isidro Díaz de Mera,19,8,6,0,20,6,10,2,3,1,0,0,1.4,4.5,7.5,7.645,10.5
+08/11/22,Osasuna,Barcelona,1,2,A,1,0,H,Jesús Gil,15,9,3,3,15,6,2,5,4,4,0,2,5.75,4.2,1.53,15.842,15.533
+09/11/22,Almeria,Getafe,1,0,H,1,0,H,Alejandro Muñíz,8,11,3,3,17,8,7,6,8,4,1,0,2.15,3.3,3.5,10.111,14.526
+09/11/22,Sevilla,Sociedad,1,2,A,1,2,A,Carlos del Cerro,6,17,3,9,9,12,2,1,2,2,2,0,2.6,3.2,2.8,19.474,7.364
+09/11/22,Espanol,Villarreal,0,1,A,0,0,D,Javier Villanueva,14,10,6,3,11,6,4,7,1,3,0,0,3.2,3.2,2.37,15.19,12.35
+09/11/22,Mallorca,Ath Madrid,1,0,H,1,0,H,Mario Melero,9,17,3,5,14,17,2,5,5,3,0,0,3.8,3.1,2.1,17.824,7.0
+10/11/22,Vallecano,Celta,0,0,D,0,0,D,José Luis Munuera,10,11,3,3,19,16,5,3,7,1,0,0,2.2,3.2,3.5,4.886,12.217
+10/11/22,Valencia,Betis,3,0,H,0,0,D,Miguel Ángel Ortiz Arias,15,5,7,1,12,9,5,5,1,3,0,1,2.1,3.4,3.6,9.35,24.308
+10/11/22,Real Madrid,Cadiz,2,1,H,1,0,H,César Soto,18,10,5,5,12,16,7,1,3,3,0,0,1.14,8.5,15.0,5.515,19.944
+29/12/22,Girona,Vallecano,2,2,D,1,1,D,Jorge Figueroa,16,12,7,4,14,14,2,4,3,2,0,0,2.3,3.2,3.3,7.636,12.2
+29/12/22,Betis,Ath Bilbao,0,0,D,0,0,D,Alejandro Hernández,9,10,5,0,8,17,2,6,1,4,1,0,2.88,3.3,2.5,11.059,6.75
+29/12/22,Ath Madrid,Elche,2,0,H,0,0,D,Guillermo Cuadra,18,5,4,1,14,20,3,5,3,4,1,2,1.29,5.5,10.0,8.583,15.917
+30/12/22,Getafe,Mallorca,2,0,H,0,0,D,Hsu Jason,14,3,6,0,10,19,4,2,0,1,0,0,2.75,2.75,3.1,11.81,12.048
+30/12/22,Cadiz,Almeria,1,1,D,0,1,A,Juan Martínez,12,18,6,9,7,14,3,2,2,0,0,0,2.38,3.1,3.25,14.526,11.174
+30/12/22,Celta,Sevilla,1,1,D,1,0,H,Ricardo de Burgos,17,7,5,5,11,13,5,6,2,4,0,1,2.2,3.3,3.4,17.389,9.148
+30/12/22,Valladolid,Real Madrid,0,2,A,0,0,D,José Luis Munuera,14,19,4,8,7,9,5,9,2,0,1,0,6.5,4.75,1.45,39.25,16.714
+31/12/22,Barcelona,Espanol,1,1,D,1,0,H,Antonio Matéu,21,4,6,1,11,15,10,2,6,7,1,1,1.25,6.5,10.0,5.533,19.455
+31/12/22,Sociedad,Osasuna,2,0,H,1,0,H,Valentín Pizarro,9,11,2,3,10,15,3,2,1,1,0,0,1.85,3.3,4.75,8.087,7.3
+31/12/22,Villarreal,Valencia,2,1,H,1,1,D,José Sánchez,14,13,8,4,12,16,5,2,1,3,0,0,1.95,3.4,4.2,9.5,9.208
+06/01/23,Elche,Celta,0,1,A,0,1,A,Miguel Ángel Ortiz Arias,13,14,5,7,15,15,8,4,3,1,1,0,4.0,3.25,1.95,9.083,12.524
+06/01/23,Valencia,Cadiz,0,1,A,0,1,A,Pablo González,11,6,2,2,14,21,13,2,5,6,0,0,1.57,4.0,5.75,3.241,11.538
+07/01/23,Villarreal,Real Madrid,2,1,H,0,0,D,César Soto,17,13,5,3,13,6,6,5,4,1,0,0,3.25,3.8,2.05,14.526,11.318
+07/01/23,Mallorca,Valladolid,1,0,H,0,0,D,Valentín Pizarro,13,9,4,1,14,17,6,2,2,3,0,0,1.95,3.3,4.2,11.6,9.15
+07/01/23,Espanol,Girona,2,2,D,0,1,A,Carlos del Cerro,12,12,6,5,13,16,5,2,3,2,0,0,2.25,3.4,3.2,10.833,7.25
+08/01/23,Almeria,Sociedad,0,2,A,0,0,D,Hsu Jason,6,9,1,6,13,14,4,2,1,0,0,0,4.2,3.3,1.95,13.381,7.0
+08/01/23,Vallecano,Betis,1,2,A,1,2,A,Isidro Díaz de Mera,15,14,3,3,10,16,5,7,3,2,0,0,2.3,3.3,3.2,7.273,11.619
+08/01/23,Sevilla,Getafe,2,1,H,1,0,H,Juan Martínez,11,11,5,2,13,16,4,4,3,3,0,0,1.75,3.4,5.25,15.667,14.762
+08/01/23,Ath Madrid,Barcelona,0,1,A,0,1,A,José Luis Munuera,20,10,5,2,8,16,7,4,2,3,1,1,3.1,3.4,2.3,12.206,7.96
+09/01/23,Ath Bilbao,Osasuna,0,0,D,0,0,D,Mario Melero,17,3,3,1,8,13,14,1,0,1,0,0,1.67,3.6,5.75,7.7,10.042
+13/01/23,Celta,Villarreal,1,1,D,0,1,A,Hsu Jason,21,3,8,1,11,8,14,3,0,2,0,0,2.88,3.3,2.5,15.333,15.278
+14/01/23,Valladolid,Vallecano,0,1,A,0,0,D,Mario Melero,9,13,2,6,17,18,4,8,2,2,0,0,2.75,3.25,2.63,7.192,5.606
+14/01/23,Girona,Sevilla,2,1,H,0,1,A,Valentín Pizarro,19,10,7,2,11,7,5,2,3,1,0,0,2.38,3.4,3.0,12.833,14.833
+14/01/23,Osasuna,Mallorca,1,0,H,0,0,D,César Soto,15,6,4,2,15,19,3,1,2,3,0,0,2.0,3.1,4.33,6.692,13.409
+14/01/23,Sociedad,Ath Bilbao,3,1,H,2,1,H,Guillermo Cuadra,11,6,5,2,20,15,4,2,5,1,0,1,2.4,3.2,3.1,5.871,14.85
+15/01/23,Getafe,Espanol,1,2,A,1,1,D,Jorge Figueroa,10,10,2,4,20,13,5,1,2,3,0,0,2.5,3.0,3.1,5.091,14.0
+15/01/23,Almeria,Ath Madrid,1,1,D,1,1,D,José Sánchez,14,12,3,6,14,12,3,4,4,4,0,1,5.0,3.75,1.7,12.81,17.65
+16/01/23,Cadiz,Elche,1,1,D,1,0,H,Carlos del Cerro,16,12,3,5,11,21,3,6,3,2,0,0,1.91,3.4,4.33,12.765,8.0
+20/01/23,Mallorca,Celta,1,0,H,0,0,D,Juan Pulido,8,10,3,3,15,11,4,6,2,3,0,0,2.8,2.75,3.0,21.375,12.211
+21/01/23,Vallecano,Sociedad,0,2,A,0,2,A,Antonio Matéu,14,12,2,7,11,11,3,4,0,0,0,0,3.1,3.2,2.38,10.0,8.556
+21/01/23,Espanol,Betis,1,0,H,1,0,H,Pablo González,8,13,2,4,18,8,7,4,3,2,0,0,2.7,3.2,2.7,14.652,9.214
+21/01/23,Ath Madrid,Valladolid,3,0,H,3,0,H,Ricardo de Burgos,18,7,8,1,12,7,4,1,1,1,0,0,1.4,4.75,8.5,17.85,11.542
+21/01/23,Sevilla,Cadiz,1,0,H,0,0,D,Alejandro Hernández,17,4,9,1,15,14,8,1,1,4,0,1,1.7,3.75,5.0,3.931,38.333
+22/01/23,Villarreal,Girona,1,0,H,0,0,D,Carlos del Cerro,19,8,9,1,21,15,3,2,5,5,0,1,1.73,3.8,4.5,3.778,24.769
+22/01/23,Elche,Osasuna,1,1,D,0,1,A,Alejandro Muñíz,13,8,4,4,19,9,7,2,2,1,0,0,3.5,3.25,2.15,9.524,9.438
+22/01/23,Barcelona,Getafe,1,0,H,1,0,H,Javier Villanueva,8,7,4,3,11,6,4,2,1,2,0,0,1.18,8.0,15.0,8.037,82.8
+22/01/23,Ath Bilbao,Real Madrid,0,2,A,0,1,A,José Sánchez,18,10,3,4,17,10,12,2,3,2,0,0,2.9,3.4,2.38,9.267,18.636
+23/01/23,Valencia,Almeria,2,2,D,0,0,D,Jesús Gil,16,14,6,3,8,8,6,2,2,1,0,0,1.6,4.2,5.25,7.6,13.5
+27/01/23,Almeria,Espanol,3,1,H,1,0,H,Javier Villanueva,19,6,7,3,16,6,2,2,3,3,0,0,2.38,3.1,3.2,6.52,10.591
+28/01/23,Cadiz,Mallorca,2,0,H,2,0,H,Ricardo de Burgos,11,9,4,2,13,12,6,2,2,2,0,0,2.88,2.8,2.9,11.16,11.933
+28/01/23,Girona,Barcelona,0,1,A,0,0,D,Alejandro Muñíz,8,8,2,3,10,15,4,2,2,3,1,0,5.0,4.33,1.57,16.444,8.889
+28/01/23,Sevilla,Elche,3,0,H,3,0,H,César Soto,22,6,8,1,7,8,5,2,1,3,0,1,1.53,4.0,7.0,4.333,41.9
+28/01/23,Getafe,Betis,0,1,A,0,0,D,Guillermo Cuadra,6,13,1,2,25,12,6,1,4,2,0,0,3.2,2.88,2.63,9.529,6.96
+29/01/23,Valladolid,Valencia,1,0,H,0,0,D,Jorge Figueroa,13,15,6,2,14,15,4,7,3,1,0,0,3.25,3.1,2.4,5.382,11.952
+29/01/23,Osasuna,Ath Madrid,0,1,A,0,0,D,Hsu Jason,14,13,4,5,13,7,5,4,1,0,0,0,3.6,3.1,2.2,13.045,22.538
+29/01/23,Celta,Ath Bilbao,1,0,H,0,0,D,Isidro Díaz de Mera,9,5,3,0,17,19,2,5,3,2,0,0,2.88,3.0,2.7,10.0,7.267
+29/01/23,Real Madrid,Sociedad,0,0,D,0,0,D,Mario Melero,20,8,7,3,8,19,10,3,1,4,0,0,1.67,3.8,5.0,11.875,11.654
+30/01/23,Villarreal,Vallecano,0,1,A,0,0,D,Juan Pulido,12,11,3,3,11,18,5,4,2,3,0,0,1.67,3.8,5.25,6.792,9.9
+01/02/23,Betis,Barcelona,1,2,A,0,0,D,Ricardo de Burgos,5,13,1,3,17,9,1,6,3,0,1,0,5.0,3.8,1.67,15.542,6.276
+02/02/23,Real Madrid,Valencia,2,0,H,0,0,D,Hsu Jason,19,4,7,0,12,17,6,6,3,1,0,1,1.44,4.75,6.5,5.444,21.526
+03/02/23,Ath Bilbao,Cadiz,4,1,H,3,1,H,Valentín Pizarro,17,15,9,3,14,12,0,3,2,1,1,0,1.36,4.5,9.5,16.944,8.227
+04/02/23,Espanol,Osasuna,1,1,D,0,1,A,Jesús Gil,9,9,4,3,9,17,4,3,3,5,1,1,2.55,3.0,3.0,17.875,7.609
+04/02/23,Elche,Villarreal,3,1,H,2,1,H,José Luis Munuera,18,14,7,2,19,8,6,10,4,2,0,0,5.0,3.8,1.67,9.286,6.923
+04/02/23,Ath Madrid,Getafe,1,1,D,0,0,D,Antonio Matéu,12,9,4,1,11,18,8,0,3,5,0,0,1.4,4.33,9.0,7.391,17.2
+04/02/23,Betis,Celta,3,4,A,2,2,D,Carlos del Cerro,15,9,7,7,11,13,5,5,2,3,1,0,2.2,3.2,3.5,7.52,13.0
+05/02/23,Mallorca,Real Madrid,1,0,H,1,0,H,Alejandro Hernández,4,20,1,1,29,14,1,12,5,5,0,0,5.0,3.5,1.73,11.724,4.103
+05/02/23,Girona,Valencia,1,0,H,0,0,D,Javier Villanueva,20,8,8,4,11,10,8,4,1,4,0,0,2.2,3.2,3.5,15.706,23.429
+05/02/23,Sociedad,Valladolid,0,1,A,0,0,D,Pablo González,15,7,4,2,17,14,0,4,4,5,0,0,1.44,4.33,7.5,7.846,9.032
+05/02/23,Barcelona,Sevilla,3,0,H,0,0,D,José Sánchez,16,3,7,1,8,10,8,3,0,2,0,0,1.33,5.25,8.5,11.13,25.125
+06/02/23,Vallecano,Almeria,2,0,H,0,0,D,César Soto,15,14,11,5,16,9,3,7,3,3,0,0,1.73,3.6,5.0,7.759,9.565
+10/02/23,Cadiz,Girona,2,0,H,2,0,H,Juan Pulido,12,7,3,1,17,11,5,6,4,4,0,0,3.0,3.2,2.45,7.838,6.619
+11/02/23,Almeria,Betis,2,3,A,1,2,A,Hsu Jason,16,12,9,7,12,10,8,2,2,3,0,0,2.8,3.4,2.5,11.4,11.684
+11/02/23,Sevilla,Mallorca,2,0,H,2,0,H,Javier Villanueva,15,6,6,0,9,14,8,2,5,2,0,0,1.91,3.2,4.5,15.583,12.773
+11/02/23,Valencia,Ath Bilbao,1,2,A,1,1,D,César Soto,18,11,8,3,11,17,7,1,2,2,0,0,3.0,3.2,2.45,8.31,6.654
+12/02/23,Getafe,Vallecano,1,1,D,0,1,A,Isidro Díaz de Mera,13,19,4,4,21,19,5,6,4,4,1,0,2.8,2.9,2.88,7.933,8.35
+12/02/23,Celta,Ath Madrid,0,1,A,0,0,D,Jorge Figueroa,14,10,3,2,10,13,7,5,2,2,0,1,3.6,3.1,2.2,11.96,8.167
+12/02/23,Valladolid,Osasuna,0,0,D,0,0,D,Guillermo Cuadra,18,15,5,4,13,16,10,4,1,3,0,0,2.75,3.1,2.7,7.036,9.455
+12/02/23,Villarreal,Barcelona,0,1,A,0,1,A,Alejandro Hernández,11,7,2,4,22,18,6,2,4,4,0,0,3.75,4.0,1.85,6.686,5.311
+13/02/23,Espanol,Sociedad,2,3,A,0,1,A,Alejandro Muñíz,10,11,6,5,9,17,4,3,4,1,1,0,3.5,3.0,2.3,12.727,7.107
+15/02/23,Real Madrid,Elche,4,0,H,3,0,H,Ricardo de Burgos,26,7,13,0,5,13,6,4,1,3,0,0,1.18,7.5,15.0,8.429,23.368
+17/02/23,Girona,Almeria,6,2,H,4,0,H,Valentín Pizarro,14,16,8,4,10,8,1,7,1,1,0,0,1.8,3.75,4.33,17.571,12.043
+18/02/23,Sociedad,Celta,1,1,D,1,0,H,Miguel Ángel Ortiz Arias,9,18,3,4,14,12,3,7,3,5,0,1,1.8,3.3,5.25,10.353,11.36
+18/02/23,Betis,Valladolid,2,1,H,2,1,H,Antonio Matéu,16,17,10,3,18,15,4,6,3,5,0,0,1.6,3.75,6.5,6.853,6.065
+18/02/23,Mallorca,Villarreal,4,2,H,2,1,H,José Sánchez,13,8,5,4,19,8,4,4,5,0,0,1,3.2,3.0,2.45,8.531,13.0
+18/02/23,Osasuna,Real Madrid,0,2,A,0,0,D,José Luis Munuera,11,11,4,6,17,7,5,5,3,2,0,0,4.33,3.6,1.8,10.692,26.667
+19/02/23,Elche,Espanol,0,1,A,0,0,D,Carlos del Cerro,19,11,5,4,11,12,10,5,2,3,1,0,2.9,3.1,2.63,8.444,7.476
+19/02/23,Vallecano,Sevilla,1,1,D,0,1,A,Jesús Gil,18,7,5,2,15,6,7,3,4,1,0,0,2.5,3.1,3.0,6.923,9.609
+19/02/23,Ath Madrid,Ath Bilbao,1,0,H,0,0,D,Juan Martínez,17,8,5,2,7,13,6,5,2,3,0,0,2.0,3.3,4.0,13.158,18.053
+19/02/23,Barcelona,Cadiz,2,0,H,2,0,H,Pablo González,16,14,5,4,15,18,5,6,2,3,0,0,1.18,7.0,13.0,7.957,17.429
+20/02/23,Getafe,Valencia,1,0,H,0,0,D,Mario Melero,15,8,6,3,11,8,4,5,6,1,0,0,2.75,3.0,2.8,18.6,8.562
+24/02/23,Elche,Betis,2,3,A,2,0,H,Javier Villanueva,4,21,2,9,16,9,3,3,4,1,2,0,3.5,3.3,2.1,23.083,3.727
+25/02/23,Espanol,Mallorca,2,1,H,1,1,D,Hsu Jason,9,15,3,4,15,18,0,4,2,2,0,0,2.5,2.9,3.2,7.9,8.579
+25/02/23,Cadiz,Vallecano,1,0,H,0,0,D,Alejandro Muñíz,5,11,3,2,19,19,4,6,3,4,0,1,2.9,3.0,2.7,6.71,4.739
+25/02/23,Real Madrid,Ath Madrid,1,1,D,0,0,D,Jesús Gil,18,7,7,2,10,8,7,4,3,3,0,1,1.8,3.5,5.0,9.909,17.056
+25/02/23,Valencia,Sociedad,1,0,H,1,0,H,Alejandro Hernández,8,11,3,3,13,12,7,8,6,3,0,0,3.1,3.1,2.5,10.043,5.0
+26/02/23,Ath Bilbao,Girona,2,3,A,1,3,A,Isidro Díaz de Mera,17,8,3,4,17,8,11,3,5,5,0,0,1.67,3.8,5.25,5.618,10.095
+26/02/23,Celta,Valladolid,3,0,H,2,0,H,Ricardo de Burgos,18,6,4,3,6,5,5,4,1,3,0,1,1.7,3.75,5.25,8.296,11.55
+26/02/23,Almeria,Barcelona,1,0,H,1,0,H,Miguel Ángel Ortiz Arias,7,14,4,1,13,11,4,7,3,3,0,0,7.0,4.75,1.44,20.0,3.952
+26/02/23,Sevilla,Osasuna,2,3,A,0,1,A,Juan Pulido,22,11,8,4,10,15,10,2,4,2,1,0,1.85,3.25,4.5,10.615,12.37
+27/02/23,Villarreal,Getafe,2,1,H,1,1,D,Jorge Figueroa,11,8,5,3,9,13,6,6,0,1,0,0,1.67,3.6,5.75,8.882,9.281
+03/03/23,Sociedad,Cadiz,0,0,D,0,0,D,Antonio Matéu,15,6,3,2,18,18,4,0,0,1,0,0,1.5,3.9,7.5,2.767,10.333
+04/03/23,Getafe,Girona,3,2,H,3,0,H,Juan Martínez,10,9,6,7,24,11,3,3,5,4,0,0,2.75,3.0,2.8,7.912,7.438
+04/03/23,Almeria,Villarreal,0,2,A,0,0,D,Pablo González,6,16,0,6,11,10,2,10,2,4,0,0,3.5,3.6,2.05,16.5,8.538
+04/03/23,Mallorca,Elche,0,1,A,0,0,D,José Luis Munuera,14,15,3,6,17,14,6,7,3,3,0,0,1.7,3.4,5.75,8.545,10.409
+04/03/23,Ath Madrid,Sevilla,6,1,H,2,1,H,Guillermo Cuadra,18,8,8,1,12,11,7,3,1,4,0,1,1.67,3.6,5.25,18.095,17.579
+05/03/23,Valladolid,Espanol,2,1,H,1,0,H,Valentín Pizarro,15,12,5,2,4,11,9,6,3,2,0,0,2.5,3.2,2.88,13.235,8.667
+05/03/23,Barcelona,Valencia,1,0,H,1,0,H,Hsu Jason,13,13,4,1,11,13,5,2,0,0,1,0,1.53,4.5,5.75,8.826,10.556
+05/03/23,Vallecano,Ath Bilbao,0,0,D,0,0,D,Mario Melero,18,16,2,3,9,17,7,9,1,0,0,1,2.9,3.1,2.6,9.889,5.0
+05/03/23,Betis,Real Madrid,0,0,D,0,0,D,César Soto,8,15,4,5,12,13,5,3,3,4,0,0,4.75,3.75,1.73,17.478,7.567
+06/03/23,Osasuna,Celta,0,0,D,0,0,D,José Sánchez,10,6,5,0,12,12,6,4,0,2,0,0,2.8,3.0,2.8,5.621,19.278
+10/03/23,Cadiz,Getafe,2,2,D,1,0,H,Alejandro Hernández,11,16,4,10,13,16,2,6,4,5,1,1,2.5,2.88,3.3,8.933,7.263
+11/03/23,Real Madrid,Espanol,3,1,H,2,1,H,Jorge Figueroa,22,10,7,3,12,17,7,4,3,2,0,0,1.25,6.5,9.5,8.474,10.6
+11/03/23,Elche,Valladolid,1,1,D,0,1,A,Isidro Díaz de Mera,24,5,10,1,19,11,10,3,4,6,0,2,2.7,3.3,2.7,5.0,7.905
+11/03/23,Celta,Vallecano,3,0,H,0,0,D,Juan Pulido,15,12,6,3,13,12,3,7,2,3,0,0,2.1,3.2,4.0,9.667,7.478
+11/03/23,Valencia,Osasuna,1,0,H,0,0,D,Javier Villanueva,8,7,4,0,8,19,12,3,2,5,0,0,2.1,3.2,3.8,9.625,6.4
+12/03/23,Mallorca,Sociedad,1,1,D,0,1,A,Juan Martínez,8,8,2,2,19,20,3,2,2,2,0,1,3.5,2.9,2.38,11.958,4.129
+12/03/23,Sevilla,Almeria,2,1,H,1,1,D,Ricardo de Burgos,27,13,5,5,8,11,6,4,4,4,0,0,1.73,3.6,5.25,8.077,12.111
+12/03/23,Villarreal,Betis,1,1,D,0,1,A,Miguel Ángel Ortiz Arias,15,6,4,3,8,11,2,4,3,2,0,0,1.95,3.6,3.8,10.45,15.368
+12/03/23,Ath Bilbao,Barcelona,0,1,A,0,1,A,Jesús Gil,15,10,5,2,13,7,5,3,2,1,0,0,3.5,3.3,2.15,11.839,13.455
+13/03/23,Girona,Ath Madrid,0,1,A,0,0,D,Mario Melero,6,14,4,4,6,12,1,3,2,3,0,0,3.75,3.4,2.05,17.812,20.882
+17/03/23,Valladolid,Ath Bilbao,1,3,A,0,1,A,Hsu Jason,15,15,3,6,9,14,2,9,2,2,0,0,4.2,3.6,1.83,9.333,7.8
+18/03/23,Almeria,Cadiz,1,1,D,0,0,D,Carlos del Cerro,17,10,5,4,12,12,5,2,1,4,0,0,2.0,3.5,3.6,5.2,24.0
+18/03/23,Vallecano,Girona,2,2,D,2,1,H,Pablo González,15,12,3,4,15,16,3,5,2,2,0,0,2.0,3.4,3.8,8.444,7.565
+18/03/23,Espanol,Celta,1,3,A,0,2,A,Guillermo Cuadra,11,8,3,4,11,12,4,1,2,2,0,0,2.75,3.25,2.55,9.318,12.182
+18/03/23,Ath Madrid,Valencia,3,0,H,1,0,H,José Luis Munuera,14,9,6,1,12,9,4,2,2,0,0,0,1.55,4.2,5.75,10.565,20.0
+19/03/23,Betis,Mallorca,1,0,H,0,0,D,Valentín Pizarro,10,5,3,1,8,15,4,4,1,2,0,0,1.8,3.2,5.25,7.68,14.364
+19/03/23,Osasuna,Villarreal,0,3,A,0,1,A,Alejandro Muñíz,10,12,2,6,15,7,7,1,3,2,0,0,3.0,3.1,2.45,7.433,13.133
+19/03/23,Sociedad,Elche,2,0,H,0,0,D,José Sánchez,17,4,4,3,16,16,5,3,2,1,0,0,1.4,4.75,8.5,4.625,11.773
+19/03/23,Getafe,Sevilla,2,0,H,0,0,D,Antonio Matéu,15,11,4,4,22,10,4,1,4,2,0,0,2.9,3.1,2.5,8.026,11.818
+19/03/23,Barcelona,Real Madrid,2,1,H,1,1,D,Ricardo de Burgos,17,11,7,3,12,13,8,1,4,3,0,0,2.15,3.5,3.25,10.481,13.409
+31/03/23,Mallorca,Osasuna,0,0,D,0,0,D,Isidro Díaz de Mera,10,11,1,2,19,17,2,3,7,3,1,0,2.2,2.9,3.9,8.783,5.909
+01/04/23,Girona,Espanol,2,1,H,0,0,D,Miguel Ángel Ortiz Arias,14,5,4,1,12,16,5,2,4,2,0,1,1.91,3.3,4.33,8.733,10.739
+01/04/23,Ath Bilbao,Getafe,0,0,D,0,0,D,Javier Villanueva,17,9,3,1,8,9,13,3,0,0,0,0,1.57,3.8,6.5,5.895,12.35
+01/04/23,Cadiz,Sevilla,0,2,A,0,0,D,César Soto,14,11,3,5,9,14,8,4,3,4,0,0,3.4,3.1,2.3,7.944,5.583
+01/04/23,Elche,Barcelona,0,4,A,0,1,A,Carlos del Cerro,15,12,2,6,11,11,11,3,0,3,0,0,9.5,5.0,1.33,11.867,8.15
+02/04/23,Celta,Almeria,2,2,D,2,2,D,Alejandro Hernández,21,8,5,3,13,12,4,1,3,5,0,0,1.55,4.0,6.0,10.115,11.478
+02/04/23,Real Madrid,Valladolid,6,0,H,4,0,H,Juan Pulido,30,12,17,2,17,11,9,1,0,1,0,0,1.2,7.5,11.0,8.75,19.188
+02/04/23,Villarreal,Sociedad,2,0,H,0,0,D,Jesús Gil,16,16,4,3,12,19,4,4,5,3,1,0,2.4,3.1,3.2,7.13,8.37
+02/04/23,Ath Madrid,Betis,1,0,H,0,0,D,Juan Martínez,13,6,7,2,20,11,5,1,1,2,0,0,1.53,4.0,6.5,8.457,19.0
+03/04/23,Valencia,Vallecano,1,1,D,0,1,A,Jorge Figueroa,18,7,4,2,15,16,13,3,2,3,0,0,2.05,3.2,3.8,7.15,6.968
+07/04/23,Sevilla,Celta,2,2,D,1,0,H,Valentín Pizarro,7,9,2,4,11,9,8,3,6,2,2,0,2.1,3.4,3.5,16.056,9.077
+08/04/23,Osasuna,Elche,2,1,H,0,1,A,Pablo González,22,7,6,1,15,7,9,2,1,3,0,0,1.73,3.6,5.0,4.125,17.857
+08/04/23,Espanol,Ath Bilbao,1,2,A,0,1,A,José Luis Munuera,9,12,2,7,14,18,8,7,6,4,1,0,3.5,3.2,2.2,14.412,10.4
+08/04/23,Sociedad,Getafe,2,0,H,1,0,H,Mario Melero,11,6,6,4,11,9,3,2,2,1,0,0,1.7,3.3,6.0,9.529,18.0
+08/04/23,Real Madrid,Villarreal,2,3,A,1,1,D,Hsu Jason,18,17,4,8,8,19,6,7,0,3,0,0,1.53,4.33,5.75,20.0,8.265
+09/04/23,Valladolid,Mallorca,3,3,D,1,0,H,Alejandro Muñíz,10,14,6,6,13,20,1,2,3,5,0,0,2.5,2.9,3.2,7.235,8.235
+09/04/23,Betis,Cadiz,0,2,A,0,0,D,Guillermo Cuadra,9,15,3,4,18,16,5,6,3,3,2,0,1.62,3.75,5.75,18.167,5.312
+09/04/23,Almeria,Valencia,2,1,H,0,0,D,José Sánchez,10,11,4,4,11,11,3,7,3,2,0,0,3.0,3.3,2.4,17.231,12.231
+09/04/23,Vallecano,Ath Madrid,1,2,A,0,2,A,Ricardo de Burgos,15,14,3,4,8,7,8,2,0,0,1,0,4.33,3.5,1.85,15.478,20.769
+10/04/23,Barcelona,Girona,0,0,D,0,0,D,Antonio Matéu,18,5,3,0,14,14,12,2,0,2,0,0,1.3,5.5,10.0,6.719,11.714
+14/04/23,Vallecano,Osasuna,2,1,H,2,0,H,José Luis Munuera,12,8,3,4,18,16,2,3,2,3,0,0,2.2,3.1,3.6,7.485,6.68
+15/04/23,Villarreal,Valladolid,1,2,A,0,2,A,Javier Villanueva,22,14,7,7,9,18,8,5,1,6,0,0,1.44,4.75,6.5,4.682,10.154
+15/04/23,Ath Bilbao,Sociedad,2,0,H,1,0,H,César Soto,13,13,5,4,16,14,5,2,5,2,0,0,2.25,3.1,3.5,4.579,6.793
+15/04/23,Betis,Espanol,3,1,H,2,0,H,Alejandro Hernández,15,13,8,4,9,13,4,13,2,2,0,0,1.83,3.5,4.5,11.737,11.1
+15/04/23,Cadiz,Real Madrid,0,2,A,0,0,D,Jesús Gil,12,35,3,11,12,7,2,9,1,0,0,0,5.75,4.2,1.55,22.312,8.389
+16/04/23,Girona,Elche,2,0,H,1,0,H,Jorge Figueroa,14,13,4,5,9,14,3,4,3,3,0,1,1.53,4.33,6.0,13.4,9.958
+16/04/23,Getafe,Barcelona,0,0,D,0,0,D,Juan Pulido,5,15,1,3,13,12,1,5,2,1,0,0,6.0,3.8,1.6,10.81,5.737
+16/04/23,Ath Madrid,Almeria,2,1,H,2,1,H,Isidro Díaz de Mera,19,2,7,0,7,8,9,2,3,3,0,0,1.22,7.0,11.0,9.52,25.857
+16/04/23,Valencia,Sevilla,0,2,A,0,0,D,Carlos del Cerro,13,6,3,3,10,17,6,2,1,4,1,0,2.2,3.2,3.6,10.765,16.562
+17/04/23,Celta,Mallorca,0,1,A,0,1,A,Miguel Ángel Ortiz Arias,12,8,3,2,10,19,7,5,2,1,1,0,1.8,3.3,5.25,4.471,11.857
+21/04/23,Espanol,Cadiz,0,0,D,0,0,D,Juan Martínez,14,11,5,2,8,22,6,3,4,2,0,0,2.05,3.25,3.8,11.385,7.542
+22/04/23,Osasuna,Betis,3,2,H,3,1,H,Hsu Jason,10,21,5,6,20,13,5,13,2,0,0,0,2.55,3.2,2.88,9.5,6.273
+22/04/23,Almeria,Ath Bilbao,1,2,A,0,1,A,Valentín Pizarro,12,14,4,3,8,20,3,4,2,4,0,0,3.8,3.75,1.85,15.071,9.615
+22/04/23,Sociedad,Vallecano,2,1,H,0,0,D,Alejandro Muñíz,7,7,1,2,18,19,3,3,1,2,0,0,1.67,3.5,6.0,3.364,6.25
+22/04/23,Valladolid,Girona,1,0,H,1,0,H,Mario Melero,15,12,6,6,14,9,5,7,1,1,0,0,2.5,3.4,2.8,7.703,8.043
+22/04/23,Real Madrid,Celta,2,0,H,1,0,H,Antonio Matéu,17,12,5,2,10,10,8,3,1,2,0,0,1.36,5.0,9.0,6.654,23.722
+23/04/23,Elche,Valencia,0,2,A,0,2,A,Guillermo Cuadra,7,5,1,3,12,6,11,6,3,1,0,0,4.33,3.5,1.85,4.333,13.591
+23/04/23,Barcelona,Ath Madrid,1,0,H,1,0,H,José Sánchez,13,13,4,3,15,16,3,3,4,7,0,0,1.95,3.3,4.2,9.429,13.385
+23/04/23,Mallorca,Getafe,3,1,H,0,1,A,Pablo González,8,3,4,1,15,18,2,2,2,3,0,0,2.3,2.88,3.75,10.0,8.208
+23/04/23,Sevilla,Villarreal,2,1,H,1,0,H,Ricardo de Burgos,17,17,4,5,12,10,5,3,1,2,0,0,2.75,3.4,2.55,9.724,9.692
+25/04/23,Cadiz,Osasuna,0,1,A,0,0,D,Carlos del Cerro,20,6,4,4,8,15,11,2,0,1,0,1,2.3,3.1,3.4,14.2,12.947
+25/04/23,Girona,Real Madrid,4,2,H,2,1,H,Javier Villanueva,13,18,5,3,7,6,3,8,1,2,0,0,5.25,4.33,1.57,21.867,9.0
+25/04/23,Betis,Sociedad,0,0,D,0,0,D,Juan Martínez,10,10,1,3,13,23,2,4,1,3,0,0,2.75,3.25,2.63,8.667,7.933
+26/04/23,Ath Madrid,Mallorca,3,1,H,1,1,D,Juan Pulido,24,6,9,2,10,9,5,8,0,0,0,0,1.4,4.33,8.5,5.68,26.231
+26/04/23,Getafe,Almeria,1,2,A,0,1,A,Hsu Jason,21,23,9,11,15,9,4,6,2,2,1,0,1.91,3.3,4.5,9.769,5.739
+26/04/23,Celta,Elche,1,0,H,0,0,D,Isidro Díaz de Mera,17,16,9,1,9,12,10,6,0,0,0,0,1.3,5.25,10.0,8.516,10.889
+26/04/23,Vallecano,Barcelona,2,1,H,1,0,H,Jesús Gil,9,10,6,5,10,14,3,9,1,4,0,0,4.75,3.75,1.73,11.423,6.762
+27/04/23,Valencia,Valladolid,2,1,H,0,1,A,José Luis Munuera,18,8,5,2,16,17,6,2,0,4,0,0,1.75,3.75,4.75,8.63,6.542
+27/04/23,Villarreal,Espanol,4,2,H,0,1,A,César Soto,31,13,13,4,14,10,9,2,2,4,0,1,1.57,4.0,6.0,7.833,10.5
+27/04/23,Ath Bilbao,Sevilla,0,1,A,0,0,D,Alejandro Hernández,7,4,2,1,7,11,8,2,3,3,0,0,1.75,3.6,4.5,9.55,8.846
+28/04/23,Osasuna,Sociedad,0,2,A,0,1,A,Valentín Pizarro,13,12,1,8,12,15,4,2,3,1,0,0,3.75,3.0,2.2,9.304,10.333
+29/04/23,Elche,Vallecano,4,0,H,1,0,H,Mario Melero,18,14,9,3,13,16,3,8,1,2,0,1,4.75,3.5,1.8,12.133,5.162
+29/04/23,Real Madrid,Almeria,4,2,H,3,1,H,Guillermo Cuadra,15,9,12,3,12,16,7,0,2,2,0,0,1.14,8.5,15.0,5.743,25.357
+29/04/23,Barcelona,Betis,4,0,H,3,0,H,Carlos del Cerro,15,4,8,1,10,9,10,0,0,2,0,1,1.33,5.0,9.0,9.13,24.857
+30/04/23,Cadiz,Valencia,2,1,H,1,0,H,Ricardo de Burgos,8,16,4,4,14,10,5,6,6,2,0,0,3.1,3.1,2.45,6.077,4.92
+30/04/23,Villarreal,Celta,3,1,H,2,1,H,Pablo González,9,14,3,5,12,11,4,9,1,4,0,0,1.8,3.6,4.5,9.542,14.091
+30/04/23,Espanol,Getafe,1,0,H,1,0,H,José Sánchez,17,7,8,2,12,23,6,3,3,5,0,0,2.38,3.0,3.3,4.273,8.44
+30/04/23,Valladolid,Ath Madrid,2,5,A,1,3,A,Antonio Matéu,19,9,6,6,14,8,9,1,2,1,0,0,5.5,3.8,1.65,9.5,31.444
+01/05/23,Mallorca,Ath Bilbao,1,1,D,0,0,D,Jorge Figueroa,9,16,2,6,17,9,5,7,4,2,0,0,3.6,3.0,2.25,22.857,5.955
+01/05/23,Sevilla,Girona,0,2,A,0,1,A,Alejandro Muñíz,23,9,5,3,14,11,6,1,1,1,0,0,1.95,3.5,3.8,5.083,22.077
+02/05/23,Almeria,Elche,2,1,H,1,0,H,Alejandro Hernández,10,14,4,1,8,9,7,13,2,2,0,0,1.62,4.33,5.0,13.235,6.867
+02/05/23,Barcelona,Osasuna,1,0,H,0,0,D,Javier Villanueva,21,7,4,2,7,10,11,0,0,0,0,1,1.14,7.5,19.0,6.125,20.429
+02/05/23,Sociedad,Real Madrid,2,0,H,0,0,D,Juan Pulido,9,10,4,5,17,9,2,6,1,5,0,1,2.55,3.4,2.8,8.333,19.333
+03/05/23,Valencia,Villarreal,1,1,D,0,0,D,Jesús Gil,8,11,1,4,14,13,6,6,4,2,0,0,2.75,3.3,2.55,11.185,4.095
+03/05/23,Ath Madrid,Cadiz,5,1,H,2,0,H,César Soto,18,2,8,1,12,9,5,2,3,2,0,0,1.29,5.5,12.0,18.143,22.154
+03/05/23,Getafe,Celta,1,0,H,1,0,H,Guillermo Cuadra,14,7,4,1,21,14,1,5,7,5,0,1,2.55,3.0,3.1,10.625,5.2
+04/05/23,Girona,Mallorca,2,1,H,1,0,H,Juan Martínez,17,8,7,2,9,13,9,5,4,0,0,0,2.1,3.2,3.75,6.478,13.05
+04/05/23,Sevilla,Espanol,3,2,H,1,2,A,Hsu Jason,18,7,6,3,15,11,9,0,1,2,0,0,1.83,3.6,4.2,5.862,12.944
+04/05/23,Ath Bilbao,Betis,0,1,A,0,1,A,Miguel Ángel Ortiz Arias,21,12,6,2,13,7,13,2,1,3,1,0,1.7,4.0,4.75,7.316,19.2
+04/05/23,Vallecano,Valladolid,2,1,H,0,0,D,Isidro Díaz de Mera,16,7,6,4,18,15,3,4,0,0,0,0,1.73,3.8,4.75,7.393,6.138
+12/05/23,Mallorca,Cadiz,1,0,H,1,0,H,José Sánchez,8,14,3,4,16,14,3,7,5,3,0,0,2.15,2.9,4.0,10.286,9.467
+13/05/23,Sociedad,Girona,2,2,D,2,2,D,Jorge Figueroa,18,13,6,6,22,13,7,4,5,3,0,1,1.62,4.0,5.5,6.486,18.909
+13/05/23,Osasuna,Almeria,3,1,H,0,0,D,Antonio Matéu,18,8,7,3,7,7,4,1,0,0,0,0,2.05,3.5,3.6,9.391,14.5
+13/05/23,Villarreal,Ath Bilbao,5,1,H,2,1,H,Carlos del Cerro,17,11,11,5,11,13,7,5,4,3,0,0,2.1,3.5,3.4,9.278,8.969
+13/05/23,Real Madrid,Getafe,1,0,H,0,0,D,Juan Martínez,16,9,3,2,5,23,1,3,1,4,0,0,1.55,4.0,6.5,6.105,22.174
+14/05/23,Celta,Valencia,1,2,A,0,1,A,César Soto,10,12,6,5,13,19,5,4,3,5,0,1,2.2,3.3,3.4,5.038,12.391
+14/05/23,Elche,Ath Madrid,1,0,H,1,0,H,Alejandro Muñíz,15,13,4,4,16,3,3,5,2,0,0,0,8.0,5.0,1.36,9.3,15.632
+14/05/23,Valladolid,Sevilla,0,3,A,0,0,D,Miguel Ángel Ortiz Arias,28,17,6,5,9,16,8,3,2,1,0,0,2.25,3.5,3.1,8.895,11.611
+14/05/23,Espanol,Barcelona,2,4,A,0,3,A,Ricardo de Burgos,15,15,7,5,12,9,4,3,1,3,0,0,5.25,4.0,1.65,19.208,7.095
+15/05/23,Betis,Vallecano,3,1,H,2,0,H,Juan Pulido,11,16,5,4,11,9,6,5,3,2,0,1,1.91,3.5,4.0,12.316,8.476
+19/05/23,Cadiz,Valladolid,2,0,H,0,0,D,Juan Martínez,11,6,4,2,18,18,4,3,4,4,0,1,2.2,3.4,3.3,7.429,3.862
+20/05/23,Girona,Villarreal,1,2,A,1,1,D,Valentín Pizarro,9,10,3,5,16,11,3,1,2,1,0,0,2.8,3.75,2.3,9.882,7.242
+20/05/23,Ath Bilbao,Celta,2,1,H,1,0,H,Mario Melero,10,8,3,3,17,12,8,5,4,1,0,0,1.62,3.8,5.5,11.32,9.5
+20/05/23,Almeria,Mallorca,3,0,H,2,0,H,Carlos del Cerro,12,7,3,3,11,15,4,6,1,2,0,0,2.25,3.25,3.3,9.476,9.179
+20/05/23,Getafe,Elche,1,1,D,1,1,D,Javier Villanueva,9,13,5,4,19,11,5,6,3,1,0,0,1.5,4.0,7.0,9.32,6.667
+20/05/23,Barcelona,Sociedad,1,2,A,0,1,A,Hsu Jason,13,13,4,6,8,16,8,2,4,4,0,0,1.8,3.75,4.33,5.69,14.96
+21/05/23,Vallecano,Espanol,1,2,A,1,1,D,Alejandro Hernández,15,10,5,6,8,11,4,4,2,2,0,0,2.15,3.4,3.4,6.35,11.682
+21/05/23,Ath Madrid,Osasuna,3,0,H,1,0,H,Pablo González,15,12,5,2,6,11,8,10,0,2,0,0,1.36,4.75,8.0,22.583,17.8
+21/05/23,Valencia,Real Madrid,1,0,H,1,0,H,Ricardo de Burgos,12,13,6,5,13,4,2,9,4,2,0,1,3.2,3.5,2.2,22.353,4.6
+21/05/23,Sevilla,Betis,0,0,D,0,0,D,Jesús Gil,10,5,4,0,14,11,4,3,2,2,0,1,2.3,3.3,3.1,5.267,6.129
+23/05/23,Celta,Girona,1,1,D,1,0,H,Antonio Matéu,16,11,7,4,13,13,9,3,0,0,0,0,2.0,3.5,3.75,13.852,10.111
+23/05/23,Sociedad,Almeria,1,0,H,1,0,H,Pablo González,15,2,2,2,20,8,10,2,0,1,0,1,1.36,5.0,8.0,3.24,33.875
+23/05/23,Valladolid,Barcelona,3,1,H,2,0,H,César Soto,8,16,4,6,13,9,2,6,1,0,0,0,3.6,3.8,1.91,18.111,8.933
+24/05/23,Elche,Sevilla,1,1,D,1,1,D,Isidro Díaz de Mera,20,9,7,3,12,10,9,5,1,4,0,1,4.0,3.75,1.91,6.6,16.316
+24/05/23,Real Madrid,Vallecano,2,1,H,1,0,H,Jesús Gil,12,15,3,6,11,14,5,2,1,3,0,0,1.62,4.0,5.25,11.65,11.486
+24/05/23,Villarreal,Cadiz,2,0,H,2,0,H,Juan Pulido,13,16,7,8,14,8,7,6,1,2,0,0,1.44,4.5,7.0,4.903,14.75
+24/05/23,Betis,Getafe,0,1,A,0,0,D,Ricardo de Burgos,11,9,4,2,8,12,2,5,2,5,1,0,2.0,3.2,4.2,8.3,12.333
+24/05/23,Espanol,Ath Madrid,3,3,D,0,2,A,Mario Melero,26,16,13,7,6,9,16,1,2,3,0,0,2.88,3.5,2.38,17.227,10.312
+25/05/23,Mallorca,Valencia,1,0,H,0,0,D,Alejandro Hernández,4,15,3,5,15,12,2,4,4,2,0,0,3.3,3.0,2.4,12.5,6.556
+25/05/23,Osasuna,Ath Bilbao,2,0,H,0,0,D,Alejandro Muñíz,9,10,3,5,17,13,3,6,3,3,0,0,3.0,3.25,2.45,7.735,8.115
+27/05/23,Sevilla,Real Madrid,1,2,A,1,1,D,César Soto,11,6,1,3,23,10,1,1,2,4,1,0,2.88,3.5,2.4,17.286,10.1
+28/05/23,Almeria,Valladolid,0,0,D,0,0,D,Hsu Jason,23,8,7,2,11,16,2,4,0,4,0,0,2.25,3.4,3.1,8.696,9.4
+28/05/23,Ath Bilbao,Elche,0,1,A,0,0,D,Valentín Pizarro,27,6,8,2,7,10,19,3,1,1,0,0,1.3,5.0,11.0,6.207,12.364
+28/05/23,Ath Madrid,Sociedad,2,1,H,1,0,H,Juan Pulido,11,10,5,5,8,10,6,4,2,2,0,0,2.0,3.5,3.6,17.105,14.227
+28/05/23,Barcelona,Mallorca,3,0,H,2,0,H,Jorge Figueroa,28,3,9,1,4,9,14,3,0,0,0,1,1.33,5.0,9.5,6.812,26.75
+28/05/23,Cadiz,Celta,1,0,H,0,0,D,Ricardo de Burgos,13,9,3,4,16,10,3,3,9,5,0,0,2.6,3.1,2.75,6.387,11.765
+28/05/23,Getafe,Osasuna,2,1,H,1,1,D,Antonio Matéu,16,10,6,2,11,6,1,1,3,1,0,0,2.2,3.1,3.5,7.885,17.7
+28/05/23,Girona,Betis,1,2,A,1,0,H,Isidro Díaz de Mera,9,18,3,7,14,12,8,5,0,1,0,0,1.95,3.6,3.6,13.706,11.862
+28/05/23,Valencia,Espanol,2,2,D,1,1,D,Jesús Gil,19,9,4,5,12,12,10,3,0,4,0,0,2.0,3.75,3.4,9.125,7.32
+28/05/23,Vallecano,Villarreal,2,1,H,0,0,D,Javier Villanueva,15,7,4,2,9,9,4,6,3,5,0,0,3.0,3.6,2.2,12.667,5.667
+04/06/23,Mallorca,Vallecano,3,0,H,0,0,D,Antonio Matéu,8,20,4,4,14,15,2,6,0,0,0,0,3.0,3.3,2.38,11.231,6.4
+04/06/23,Osasuna,Girona,2,1,H,0,0,D,Miguel Ángel Ortiz Arias,14,11,7,6,12,9,5,2,1,5,0,0,2.05,3.6,3.4,11.133,10.267
+04/06/23,Real Madrid,Ath Bilbao,1,1,D,0,0,D,Isidro Díaz de Mera,9,15,2,9,11,14,5,6,2,2,0,0,1.91,3.75,3.75,7.0,16.625
+04/06/23,Sociedad,Sevilla,2,1,H,1,0,H,Carlos del Cerro,17,9,6,4,10,13,5,2,0,1,0,0,1.73,3.9,4.6,9.24,16.579
+04/06/23,Villarreal,Ath Madrid,2,2,D,1,1,D,Ricardo de Burgos,22,9,7,3,9,12,12,1,3,2,0,1,2.7,3.5,2.5,6.84,16.765
+04/06/23,Betis,Valencia,1,1,D,1,0,H,Hsu Jason,8,10,3,3,11,11,5,4,3,0,0,1,2.63,3.6,2.5,8.611,12.0
+04/06/23,Celta,Barcelona,2,1,H,1,0,H,Juan Pulido,12,9,9,2,13,9,2,4,2,2,0,0,2.6,3.8,2.5,24.278,6.158
+04/06/23,Elche,Cadiz,1,1,D,0,1,A,Jesús Gil,12,14,5,3,18,8,7,4,4,3,0,0,2.63,3.4,2.63,5.765,12.087
+04/06/23,Espanol,Almeria,3,3,D,1,1,D,César Soto,12,11,8,4,11,12,7,6,2,3,0,0,2.75,3.8,2.38,6.562,13.0
+04/06/23,Valladolid,Getafe,0,0,D,0,0,D,José Luis Munuera,15,4,0,1,9,25,6,1,1,3,0,0,2.2,3.3,3.4,3.2,12.667
