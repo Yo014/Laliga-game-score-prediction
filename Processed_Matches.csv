@@ -774,7 +774,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2017-08-26,Alaves,Barcelona,0,2,A,11,23,2,11,1,14,12,10,2,3,0,0,Carlos del Cerro,10.0,5.75,1.29,17.722,7.522
 2017-08-26,Girona,Malaga,1,0,H,15,7,4,2,2,3,11,15,3,4,0,0,Santiago Jaime,2.15,3.25,3.6,7.1,7.783
 2017-08-26,Las Palmas,Ath Madrid,1,5,A,10,8,4,6,4,2,10,9,4,1,0,0,Ignacio Iglesias,4.75,3.75,1.75,6.862,12.148
-2017-08-26,Levante,La Coruna,2,2,D,24,11,5,4,6,5,11,12,0,2,1,0,Hsu Jason,2.2,3.1,3.6,8.125,15.917
+2017-08-26,Levante,La Coruna,2,2,D,24,11,5,4,6,5,11,12,0,2,1,0,Alberola Rojas,2.2,3.1,3.6,8.125,15.917
 2017-08-27,Eibar,Ath Bilbao,0,1,A,14,10,5,4,4,3,14,11,1,1,1,0,José Sánchez,2.5,3.1,3.1,5.429,9.957
 2017-08-27,Espanol,Leganes,0,1,A,17,12,2,8,9,1,10,14,3,3,0,0,Pablo González,1.95,3.25,4.33,10.412,10.875
 2017-08-27,Getafe,Sevilla,0,1,A,15,6,3,3,7,5,20,10,0,1,0,0,Alberto Undiano,3.6,3.3,2.15,6.667,8.059
@@ -798,7 +798,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2017-09-17,Girona,Sevilla,0,1,A,13,13,0,8,8,1,14,19,2,5,0,0,Ricardo de Burgos,3.3,3.25,2.3,12.074,6.719
 2017-09-17,Las Palmas,Ath Bilbao,1,0,H,12,11,3,5,7,6,12,19,2,3,0,0,Pablo González,2.75,3.4,2.55,8.16,8.152
 2017-09-17,Sociedad,Real Madrid,1,3,A,10,18,5,6,4,6,12,15,3,2,0,0,Ignacio Iglesias,5.0,4.0,1.67,9.615,11.875
-2017-09-18,Espanol,Celta,2,1,H,9,11,3,1,3,5,12,14,1,4,0,0,Hsu Jason,2.3,3.3,3.2,13.931,8.389
+2017-09-18,Espanol,Celta,2,1,H,9,11,3,1,3,5,12,14,1,4,0,0,Alberola Rojas,2.3,3.3,3.2,13.931,8.389
 2017-09-19,Barcelona,Eibar,6,1,H,11,13,10,4,7,7,4,9,0,2,0,0,Alejandro Hernández,1.11,10.0,15.0,29.0,11.97
 2017-09-19,Valencia,Malaga,5,0,H,16,11,11,2,4,9,9,10,0,1,0,0,Alfonso Álvarez,1.5,4.0,7.0,11.35,14.842
 2017-09-20,Ath Bilbao,Ath Madrid,1,2,A,12,16,7,9,6,0,12,12,0,2,0,0,Daniel Ask,3.4,3.2,2.25,7.786,20.571
@@ -816,7 +816,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2017-09-24,Eibar,Celta,0,4,A,9,10,0,6,4,4,14,5,2,1,0,0,David Fernández,2.2,3.3,3.4,8.7,15.5
 2017-09-24,Espanol,La Coruna,4,1,H,17,21,5,6,4,6,16,7,1,2,0,0,Ricardo de Burgos,1.95,3.5,4.0,9.345,16.889
 2017-09-24,Getafe,Villarreal,4,0,H,17,6,8,1,7,4,11,16,1,4,0,0,Ignacio Iglesias,2.88,3.1,2.63,10.875,7.158
-2017-09-24,Las Palmas,Leganes,0,2,A,8,9,3,3,3,2,10,15,1,3,0,0,Hsu Jason,2.05,3.25,3.8,7.333,13.061
+2017-09-24,Las Palmas,Leganes,0,2,A,8,9,3,3,3,2,10,15,1,3,0,0,Alberola Rojas,2.05,3.25,3.8,7.333,13.061
 2017-09-24,Sociedad,Valencia,2,3,A,18,13,6,4,7,6,11,13,3,7,1,1,Santiago Jaime,2.3,3.4,3.1,9.571,22.9
 2017-09-25,Betis,Levante,4,0,H,14,8,6,1,6,3,9,5,1,0,0,0,Pablo González,1.85,3.5,4.5,7.4,24.833
 2017-09-29,Celta,Girona,3,3,D,16,10,9,6,5,6,9,17,2,5,0,0,Pablo González,1.67,3.6,5.75,8.895,13.536
@@ -830,7 +830,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2017-10-01,Valencia,Ath Bilbao,3,2,H,10,16,6,6,2,8,18,16,3,4,0,0,Alejandro Hernández,1.91,3.5,4.2,11.458,4.318
 2017-10-01,Villarreal,Eibar,3,0,H,12,8,6,1,6,3,15,9,2,1,0,0,Mario Melero,1.83,3.6,4.33,5.667,15.105
 2017-10-13,Espanol,Levante,0,0,D,20,13,6,3,9,4,9,13,2,3,0,0,Alberto Undiano,1.75,3.6,5.0,8.167,11.667
-2017-10-14,Alaves,Sociedad,0,2,A,8,13,0,6,4,9,11,7,1,1,0,0,Hsu Jason,3.5,3.4,2.15,18.286,5.3
+2017-10-14,Alaves,Sociedad,0,2,A,8,13,0,6,4,9,11,7,1,1,0,0,Alberola Rojas,3.5,3.4,2.15,18.286,5.3
 2017-10-14,Ath Bilbao,Sevilla,1,0,H,15,14,2,6,6,6,18,9,5,5,0,0,Ignacio Iglesias,2.5,3.25,2.9,7.294,7.111
 2017-10-14,Ath Madrid,Barcelona,1,1,D,5,15,4,7,2,1,12,10,3,2,0,0,Antonio Matéu Lahoz,3.0,3.4,2.38,26.455,6.407
 2017-10-14,Getafe,Real Madrid,1,2,A,8,16,3,6,4,7,23,8,2,3,0,0,Juan Martínez,10.0,5.75,1.29,10.714,3.724
@@ -853,7 +853,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2017-10-28,Ath Bilbao,Barcelona,0,2,A,17,17,5,5,6,4,15,12,1,4,0,0,Juan Martínez,7.0,4.5,1.44,7.816,8.55
 2017-10-28,Ath Madrid,Villarreal,1,1,D,18,12,6,4,11,6,13,20,0,4,0,0,Alberto Undiano,1.5,4.0,7.5,8.118,7.067
 2017-10-28,Sevilla,Leganes,2,1,H,9,10,5,1,5,6,16,19,0,3,0,0,David Medié,1.61,3.75,6.0,5.154,13.0
-2017-10-29,Eibar,Levante,2,2,D,16,3,6,2,6,2,8,16,1,3,0,0,Hsu Jason,1.95,3.39,4.2,5.042,18.188
+2017-10-29,Eibar,Levante,2,2,D,16,3,6,2,6,2,8,16,1,3,0,0,Alberola Rojas,1.95,3.39,4.2,5.042,18.188
 2017-10-29,Getafe,Sociedad,2,1,H,10,15,5,4,8,7,19,16,3,2,0,0,José Sánchez,2.45,3.39,2.87,8.667,11.385
 2017-10-29,Girona,Real Madrid,2,1,H,15,15,4,6,2,7,21,11,2,1,0,0,Alejandro Hernández,10.0,6.5,1.25,7.476,7.36
 2017-10-29,Malaga,Celta,2,1,H,15,10,4,2,4,1,20,12,2,3,0,0,Santiago Jaime,3.1,3.39,2.29,13.069,7.0
@@ -887,7 +887,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2017-11-26,La Coruna,Ath Bilbao,2,2,D,14,10,4,3,5,2,11,14,4,1,0,0,José González,2.75,3.29,2.6,10.3,7.129
 2017-11-26,Sociedad,Las Palmas,2,2,D,16,8,3,7,11,3,22,14,4,3,1,0,Pablo González,1.44,4.75,7.0,7.07,10.75
 2017-11-26,Valencia,Barcelona,1,1,D,8,12,1,8,3,9,12,11,4,0,0,0,Ignacio Iglesias,4.0,3.89,1.85,12.233,4.514
-2017-11-26,Villarreal,Sevilla,2,3,A,19,15,4,4,6,6,9,17,4,3,1,0,Hsu Jason,2.37,3.39,3.0,11.296,8.897
+2017-11-26,Villarreal,Sevilla,2,3,A,19,15,4,4,6,6,9,17,4,3,1,0,Alberola Rojas,2.37,3.39,3.0,11.296,8.897
 2017-11-27,Espanol,Getafe,1,0,H,10,7,5,4,6,4,12,18,3,6,0,0,Juan Martínez,2.0,3.39,3.79,6.769,7.815
 2017-12-01,Malaga,Levante,0,0,D,18,3,2,3,7,2,12,15,1,3,0,0,Ricardo de Burgos,1.72,3.79,4.75,4.962,15.833
 2017-12-02,Ath Bilbao,Real Madrid,0,0,D,11,19,4,4,3,5,20,13,2,5,0,1,Antonio Matéu Lahoz,7.5,4.5,1.44,11.062,7.478
@@ -898,9 +898,9 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2017-12-03,Getafe,Valencia,1,0,H,11,13,3,6,5,12,18,11,8,4,1,0,David Medié,3.0,3.39,2.29,8.64,3.579
 2017-12-03,Las Palmas,Betis,1,0,H,21,8,7,2,6,4,12,21,1,7,0,1,Daniel Ask,2.2,3.5,3.1,8.438,12.556
 2017-12-03,Leganes,Villarreal,3,1,H,12,12,5,4,5,6,11,17,2,4,0,0,David Fernández,2.79,3.25,2.62,16.294,6.611
-2017-12-04,Girona,Alaves,2,3,A,11,9,3,4,6,5,8,13,1,2,0,0,Hsu Jason,1.6,3.79,6.0,8.72,13.818
+2017-12-04,Girona,Alaves,2,3,A,11,9,3,4,6,5,8,13,1,2,0,0,Alberola Rojas,1.6,3.79,6.0,8.72,13.818
 2017-12-08,Alaves,Las Palmas,2,0,H,22,6,9,1,8,3,23,12,2,0,0,0,David Medié,2.29,3.25,3.25,10.216,6.333
-2017-12-09,Getafe,Eibar,0,0,D,6,7,3,2,9,7,14,13,1,4,0,0,Hsu Jason,2.04,3.39,3.75,9.0,5.269
+2017-12-09,Getafe,Eibar,0,0,D,6,7,3,2,9,7,14,13,1,4,0,0,Alberola Rojas,2.04,3.39,3.75,9.0,5.269
 2017-12-09,La Coruna,Leganes,1,0,H,15,3,4,0,6,1,16,21,4,4,0,0,Mario Melero,2.37,3.2,3.2,6.613,10.348
 2017-12-09,Real Madrid,Sevilla,5,0,H,20,11,8,3,9,3,12,11,0,2,0,0,Juan Martínez,1.33,5.5,8.5,13.789,17.421
 2017-12-09,Valencia,Celta,2,1,H,13,13,7,5,10,2,16,12,2,5,0,0,José Munuera,1.66,4.0,5.0,10.778,6.0
@@ -917,7 +917,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2017-12-17,Celta,Villarreal,0,1,A,10,8,3,5,2,2,11,19,1,3,0,0,Daniel Ask,2.29,3.39,3.1,8.148,14.667
 2017-12-17,Girona,Getafe,1,0,H,9,7,2,0,1,7,20,25,2,6,0,0,Alberto Undiano,2.2,3.25,3.5,6.45,6.5
 2017-12-17,Las Palmas,Espanol,2,2,D,14,8,5,3,9,2,6,25,3,3,0,0,José Sánchez,2.5,3.29,2.87,12.789,9.925
-2017-12-18,Malaga,Betis,0,2,A,18,10,2,4,3,4,15,15,2,2,1,0,Hsu Jason,2.0,3.39,3.79,10.0,7.32
+2017-12-18,Malaga,Betis,0,2,A,18,10,2,4,3,4,15,15,2,2,1,0,Alberola Rojas,2.0,3.39,3.79,10.0,7.32
 2017-12-19,Levante,Leganes,0,0,D,10,10,3,2,6,5,21,17,6,6,1,1,Santiago Jaime,2.7,3.0,2.89,4.633,4.457
 2017-12-20,Getafe,Las Palmas,2,0,H,13,17,7,6,3,1,23,11,3,1,0,0,Ricardo de Burgos,1.75,3.6,5.0,8.349,5.952
 2017-12-20,Sociedad,Sevilla,3,1,H,14,9,5,4,4,5,9,18,1,5,0,0,Alejandro Hernández,2.25,3.5,3.0,9.621,8.364
@@ -941,7 +941,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2018-01-12,Getafe,Malaga,1,0,H,7,9,3,2,5,2,19,16,3,1,0,0,Juan Martínez,1.8,3.39,5.0,9.037,6.15
 2018-01-13,Eibar,Ath Madrid,0,1,A,11,7,4,3,9,1,12,9,2,1,0,0,Antonio Matéu Lahoz,4.0,3.2,2.04,3.938,15.158
 2018-01-13,Girona,Las Palmas,6,0,H,15,3,8,1,5,2,25,20,2,5,0,0,Mario Melero,1.72,3.79,4.75,8.179,5.783
-2018-01-13,La Coruna,Valencia,1,2,A,12,12,2,5,8,10,13,8,2,1,0,0,Hsu Jason,3.0,3.39,2.37,9.667,13.6
+2018-01-13,La Coruna,Valencia,1,2,A,12,12,2,5,8,10,13,8,2,1,0,0,Alberola Rojas,3.0,3.39,2.37,9.667,13.6
 2018-01-13,Real Madrid,Villarreal,0,1,A,28,10,7,4,11,0,11,12,2,1,0,0,Alberto Undiano,1.25,6.5,10.0,9.621,16.0
 2018-01-14,Alaves,Sevilla,1,0,H,12,14,3,1,5,4,18,12,5,2,1,0,José Sánchez,3.25,3.25,2.29,10.778,4.667
 2018-01-14,Espanol,Ath Bilbao,1,1,D,11,8,3,3,4,2,14,16,2,4,0,0,Daniel Trujillo,2.54,3.0,3.0,16.647,12.188
@@ -966,11 +966,11 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2018-01-28,Ath Madrid,Las Palmas,3,0,H,18,9,7,1,4,1,17,11,1,2,0,0,Alfonso Álvarez,1.16,7.5,17.0,7.485,8.741
 2018-01-28,Barcelona,Alaves,2,1,H,18,7,12,4,8,1,6,18,0,2,0,0,Ignacio Iglesias,1.08,11.0,26.0,3.609,14.522
 2018-01-28,Leganes,Espanol,3,2,H,11,12,6,4,1,7,20,19,2,4,0,0,Juan Martínez,2.37,2.79,3.5,5.968,5.185
-2018-01-28,Sevilla,Getafe,1,1,D,15,7,1,2,3,4,12,15,3,3,0,0,Hsu Jason,1.5,4.33,6.5,6.167,12.731
+2018-01-28,Sevilla,Getafe,1,1,D,15,7,1,2,3,4,12,15,3,3,0,0,Alberola Rojas,1.5,4.33,6.5,6.167,12.731
 2018-01-29,Celta,Betis,3,2,H,13,7,5,3,7,2,13,8,1,5,0,0,José Sánchez,1.75,3.75,4.75,21.562,10.15
 2018-02-02,Sociedad,La Coruna,5,0,H,19,4,8,1,9,5,11,11,0,1,0,0,Alberto Undiano,1.44,4.75,6.5,6.773,17.75
 2018-02-03,Alaves,Celta,2,1,H,9,16,3,4,2,1,13,11,3,2,0,0,Juan Martínez,2.62,3.2,2.79,14.333,5.2
-2018-02-03,Betis,Villarreal,2,1,H,13,12,4,3,2,6,11,12,1,2,0,1,Hsu Jason,2.79,3.39,2.5,12.474,14.056
+2018-02-03,Betis,Villarreal,2,1,H,13,12,4,3,2,6,11,12,1,2,0,1,Alberola Rojas,2.79,3.39,2.5,12.474,14.056
 2018-02-03,Eibar,Sevilla,5,1,H,17,11,7,3,5,3,11,20,0,3,0,0,Daniel Trujillo,2.6,3.29,2.75,10.591,7.438
 2018-02-03,Levante,Real Madrid,2,2,D,12,23,4,9,4,6,14,7,3,3,0,0,Mario Melero,13.0,7.0,1.19,17.609,6.9
 2018-02-04,Ath Madrid,Valencia,1,0,H,14,9,4,0,9,1,18,4,1,1,0,0,Ignacio Iglesias,1.44,4.33,7.5,10.088,18.714
@@ -1000,7 +1000,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2018-02-19,Getafe,Celta,3,0,H,9,4,5,1,5,5,21,15,4,3,0,0,Pablo González,2.5,3.29,2.87,10.265,3.458
 2018-02-21,Leganes,Real Madrid,1,3,A,7,13,3,7,6,5,18,7,3,1,0,0,José González,11.0,6.0,1.25,10.944,9.28
 2018-02-23,La Coruna,Espanol,0,0,D,17,9,4,1,4,2,9,10,5,1,0,0,David Fernández,2.54,3.2,2.87,7.964,9.625
-2018-02-24,Barcelona,Girona,6,1,H,21,10,14,4,5,3,11,11,1,1,0,0,Hsu Jason,1.14,8.0,19.0,8.5,14.667
+2018-02-24,Barcelona,Girona,6,1,H,21,10,14,4,5,3,11,11,1,1,0,0,Alberola Rojas,1.14,8.0,19.0,8.5,14.667
 2018-02-24,Celta,Eibar,2,0,H,8,15,3,2,3,9,11,16,2,3,0,0,Carlos del Cerro,2.0,3.5,3.7,12.25,8.583
 2018-02-24,Leganes,Las Palmas,0,0,D,11,4,2,1,6,5,22,17,4,5,0,0,Santiago Jaime,1.8,3.5,4.75,6.147,5.174
 2018-02-24,Real Madrid,Alaves,4,0,H,25,11,10,5,9,5,9,14,1,2,0,0,Daniel Ask,1.14,8.5,17.0,6.63,12.538
@@ -1025,7 +1025,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2018-03-03,Sevilla,Ath Bilbao,2,0,H,18,10,8,3,8,4,14,13,2,3,0,0,Alberto Undiano,1.7,3.75,5.25,13.3,10.68
 2018-03-03,Villarreal,Girona,0,2,A,14,4,5,3,7,2,14,18,4,1,0,0,Pablo González,1.8,3.39,4.75,4.433,11.81
 2018-03-04,Barcelona,Ath Madrid,1,0,H,16,6,5,1,12,1,16,20,2,2,0,0,Jesús Gil,1.72,3.79,4.75,8.0,7.417
-2018-03-04,Levante,Espanol,1,1,D,13,15,4,3,2,1,14,13,0,3,0,0,Hsu Jason,3.1,3.1,2.45,11.385,4.5
+2018-03-04,Levante,Espanol,1,1,D,13,15,4,3,2,1,14,13,0,3,0,0,Alberola Rojas,3.1,3.1,2.45,11.385,4.5
 2018-03-04,Sociedad,Alaves,2,1,H,14,3,5,1,8,4,10,13,0,1,0,0,Juan Martínez,1.64,4.0,5.25,8.85,11.742
 2018-03-04,Valencia,Betis,2,0,H,12,9,6,4,7,0,14,11,1,4,0,0,Alejandro Hernández,1.44,4.75,6.5,14.172,8.1
 2018-03-05,Celta,Las Palmas,2,1,H,14,10,6,3,10,7,13,15,1,2,0,0,Ricardo de Burgos,1.44,4.33,7.0,10.333,7.306
@@ -1035,7 +1035,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2018-03-10,Malaga,Barcelona,0,2,A,6,20,2,9,2,5,15,9,1,1,1,0,Juan Martínez,13.0,6.0,1.25,21.261,4.6
 2018-03-10,Sevilla,Valencia,0,2,A,21,10,5,5,7,3,15,15,4,2,0,0,Ricardo de Burgos,2.0,3.5,3.79,6.143,9.385
 2018-03-11,Ath Bilbao,Leganes,2,0,H,13,12,5,1,3,6,12,14,2,5,0,0,José Sánchez,1.9,3.29,4.5,8.333,7.9
-2018-03-11,Ath Madrid,Celta,3,0,H,7,8,3,2,6,4,14,10,1,2,0,0,Hsu Jason,1.39,4.75,8.0,9.242,9.895
+2018-03-11,Ath Madrid,Celta,3,0,H,7,8,3,2,6,4,14,10,1,2,0,0,Alberola Rojas,1.39,4.75,8.0,9.242,9.895
 2018-03-11,Espanol,Sociedad,2,1,H,18,11,7,5,6,4,18,14,0,2,0,0,Antonio Matéu Lahoz,2.87,3.1,2.62,7.667,15.929
 2018-03-11,Las Palmas,Villarreal,0,2,A,9,11,3,4,7,3,15,17,1,1,1,0,David Medié,3.5,3.5,2.1,6.243,9.929
 2018-03-12,Alaves,Betis,1,3,A,9,10,1,4,6,2,18,17,2,3,0,0,Carlos del Cerro,2.14,3.29,3.6,8.161,11.438
@@ -1046,7 +1046,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2018-03-17,Valencia,Alaves,3,1,H,24,16,10,4,9,2,8,14,1,1,0,0,José Munuera,1.44,4.5,7.5,9.889,13.741
 2018-03-18,Barcelona,Ath Bilbao,2,0,H,18,10,9,3,6,5,7,14,2,2,0,0,Santiago Jaime,1.16,8.0,15.0,10.789,9.19
 2018-03-18,Celta,Malaga,0,0,D,9,5,3,0,4,5,16,24,3,2,0,0,Alberto Undiano,1.44,4.5,7.0,6.419,6.297
-2018-03-18,Leganes,Sevilla,2,1,H,12,10,6,4,5,4,13,11,2,4,0,1,Hsu Jason,3.7,3.29,2.1,13.375,6.952
+2018-03-18,Leganes,Sevilla,2,1,H,12,10,6,4,5,4,13,11,2,4,0,1,Alberola Rojas,3.7,3.29,2.1,13.375,6.952
 2018-03-18,Real Madrid,Girona,6,3,H,20,10,14,6,6,7,13,13,1,2,0,0,Jesús Gil,1.16,7.5,17.0,7.077,23.533
 2018-03-18,Villarreal,Ath Madrid,2,1,H,17,8,5,2,5,4,13,16,5,3,0,1,David Fernández,4.2,3.1,2.04,6.5,16.05
 2018-03-31,Ath Bilbao,Celta,1,1,D,11,13,2,3,4,5,10,10,3,1,0,0,Carlos del Cerro,2.04,3.29,3.6,13.333,7.458
@@ -1088,12 +1088,12 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2018-04-19,Alaves,Girona,1,2,A,11,14,5,5,3,6,15,12,4,4,0,0,Pablo González,2.37,3.1,3.29,12.062,11.0
 2018-04-19,Betis,Las Palmas,1,0,H,17,1,8,0,6,3,18,17,3,5,0,1,José Sánchez,1.36,5.25,7.5,7.065,11.231
 2018-04-19,Levante,Malaga,1,0,H,11,10,2,2,4,3,9,17,1,1,0,0,Santiago Jaime,1.85,3.5,4.5,13.05,9.094
-2018-04-19,Sociedad,Ath Madrid,3,0,H,12,9,4,2,6,6,13,13,1,0,0,0,Hsu Jason,3.29,3.29,2.25,6.741,13.783
+2018-04-19,Sociedad,Ath Madrid,3,0,H,12,9,4,2,6,6,13,13,1,0,0,0,Alberola Rojas,3.29,3.29,2.25,6.741,13.783
 2018-04-20,Leganes,La Coruna,0,0,D,13,12,0,3,9,4,12,13,0,2,0,0,Alfonso Álvarez,2.29,3.25,3.2,7.2,8.5
 2018-04-21,Celta,Valencia,1,1,D,10,17,3,7,4,3,14,19,1,2,0,0,Alberto Undiano,2.7,3.39,2.6,8.565,15.818
 2018-04-21,Eibar,Getafe,0,1,A,12,7,2,4,8,3,15,16,4,1,0,0,Ignacio Iglesias,2.04,3.2,4.0,2.941,6.677
 2018-04-22,Ath Madrid,Betis,0,0,D,10,10,2,4,8,3,17,14,2,5,0,0,Juan Martínez,1.61,3.75,6.0,8.736,4.645
-2018-04-22,Girona,Espanol,0,2,A,20,5,6,4,10,0,18,18,1,2,0,0,Hsu Jason,2.14,3.25,3.6,7.103,11.391
+2018-04-22,Girona,Espanol,0,2,A,20,5,6,4,10,0,18,18,1,2,0,0,Alberola Rojas,2.14,3.25,3.6,7.103,11.391
 2018-04-22,Las Palmas,Alaves,0,4,A,12,10,1,7,3,3,14,19,2,2,0,0,Mario Melero,3.1,3.2,2.39,3.857,9.69
 2018-04-22,Malaga,Sociedad,2,0,H,4,14,3,2,5,3,16,0,4,1,0,0,Daniel Ask,5.25,3.6,1.72,26.071,12.0
 2018-04-23,Ath Bilbao,Levante,1,3,A,18,11,5,7,2,9,13,14,3,3,0,0,José Munuera,1.66,3.75,5.5,8.708,10.684
@@ -1101,14 +1101,14 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2018-04-28,Espanol,Las Palmas,1,1,D,16,13,7,2,6,7,18,22,2,4,0,0,Pablo González,1.36,4.75,9.5,7.714,8.567
 2018-04-28,Real Madrid,Leganes,2,1,H,12,16,5,6,3,2,16,15,0,1,0,1,Ignacio Iglesias,1.3,5.5,10.0,9.182,9.073
 2018-04-28,Sociedad,Ath Bilbao,3,1,H,17,9,4,3,3,7,16,16,3,6,1,0,José Sánchez,1.85,3.6,4.33,8.714,7.147
-2018-04-28,Villarreal,Celta,4,1,H,13,15,7,4,5,7,14,8,2,0,0,0,Hsu Jason,1.72,3.75,5.0,19.368,11.895
+2018-04-28,Villarreal,Celta,4,1,H,13,15,7,4,5,7,14,8,2,0,0,0,Alberola Rojas,1.72,3.75,5.0,19.368,11.895
 2018-04-29,Alaves,Ath Madrid,0,1,A,7,14,3,6,3,4,14,12,4,6,0,1,David Fernández,3.29,3.1,2.37,8.545,5.391
 2018-04-29,Getafe,Girona,1,1,D,10,15,2,2,4,4,19,21,6,4,1,0,Alejandro Hernández,2.1,3.1,4.0,9.208,2.829
 2018-04-29,La Coruna,Barcelona,2,4,A,17,21,5,9,6,7,9,9,1,1,0,0,Ricardo de Burgos,12.0,6.0,1.25,12.84,12.353
 2018-04-29,Valencia,Eibar,0,0,D,16,8,5,2,8,2,12,19,2,3,0,0,Santiago Jaime,1.5,4.0,7.5,6.7,6.432
 2018-04-30,Betis,Malaga,2,1,H,12,9,3,3,6,4,9,17,1,4,0,0,Carlos del Cerro,1.44,4.5,7.5,7.375,11.406
 2018-05-04,Sevilla,Sociedad,1,0,H,16,11,6,1,6,4,17,13,4,2,0,0,Santiago Jaime,2.1,3.79,3.1,9.212,9.889
-2018-05-05,Ath Bilbao,Betis,2,0,H,14,6,5,3,4,5,13,12,0,2,0,0,Hsu Jason,2.25,3.29,3.29,14.68,11.0
+2018-05-05,Ath Bilbao,Betis,2,0,H,14,6,5,3,4,5,13,12,0,2,0,0,Alberola Rojas,2.25,3.29,3.29,14.68,11.0
 2018-05-05,Celta,La Coruna,1,1,D,13,11,4,2,4,10,6,11,4,2,0,0,Carlos del Cerro,1.61,4.0,5.5,17.5,9.667
 2018-05-05,Girona,Eibar,1,4,A,16,15,5,6,6,5,12,13,2,5,0,0,Daniel Trujillo,2.1,3.29,3.75,9.615,9.2
 2018-05-05,Villarreal,Valencia,1,0,H,13,6,5,2,7,3,18,18,5,3,0,0,Jesús Gil,2.25,3.39,3.2,7.0,10.429
@@ -1122,7 +1122,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2018-05-12,Alaves,Ath Bilbao,3,1,H,4,13,3,4,0,8,15,13,2,5,0,0,Daniel Ask,2.5,3.29,2.89,8.167,5.586
 2018-05-12,Betis,Sevilla,2,2,D,9,13,5,5,4,5,10,19,1,4,0,0,Alfonso Álvarez,2.62,3.39,2.7,13.048,8.9
 2018-05-12,Eibar,Las Palmas,1,0,H,10,8,5,2,3,11,13,12,3,1,0,0,Antonio Matéu Lahoz,1.39,4.5,9.0,7.483,6.731
-2018-05-12,Getafe,Ath Madrid,0,1,A,11,5,4,3,8,2,13,17,3,2,0,0,Hsu Jason,2.79,3.1,2.79,7.25,5.0
+2018-05-12,Getafe,Ath Madrid,0,1,A,11,5,4,3,8,2,13,17,3,2,0,0,Alberola Rojas,2.79,3.1,2.79,7.25,5.0
 2018-05-12,Girona,Valencia,0,1,A,16,10,4,4,6,2,16,11,2,3,0,0,Ignacio Iglesias,2.5,3.39,2.75,6.158,10.0
 2018-05-12,La Coruna,Villarreal,2,4,A,16,11,7,7,11,0,14,5,3,0,0,0,Alejandro Hernández,3.5,3.6,2.04,20.471,18.053
 2018-05-12,Real Madrid,Celta,6,0,H,15,5,10,1,4,2,5,10,0,1,0,0,Pablo González,1.36,5.0,9.0,10.621,21.5
@@ -3468,7 +3468,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2024-09-15,Las Palmas,Ath Bilbao,2,3,A,15,9,6,4,9,3,8,12,1,2,0,1,Miguel Ángel Ortiz Arias,3.8,3.4,2.0,5.29,17.95
 2024-09-15,Ath Madrid,Valencia,3,0,H,14,5,5,1,7,3,10,8,1,2,0,0,César Soto,1.33,4.5,11.0,19.545,20.562
 2024-09-16,Vallecano,Osasuna,3,1,H,17,5,6,2,7,4,12,15,3,2,0,0,Alejandro Quintero,2.05,3.1,4.0,4.381,7.933
-2024-09-17,Mallorca,Sociedad,1,0,H,10,13,4,4,5,5,5,10,1,1,0,0,Adri園 Cordero,2.9,2.75,3.0,18.75,6.966
+2024-09-17,Mallorca,Sociedad,1,0,H,10,13,4,4,5,5,5,10,1,1,0,0,Adrián Cordero,2.9,2.75,3.0,18.75,6.966
 2024-09-18,Betis,Getafe,2,1,H,18,15,8,5,8,4,10,20,3,5,0,0,Juan Pulido,1.91,3.0,5.0,4.81,12.174
 2024-09-19,Leganes,Ath Bilbao,0,2,A,14,10,3,4,4,7,12,11,3,0,0,0,Francisco Hernández,3.75,3.2,2.05,11.478,14.667
 2024-09-20,Alaves,Sevilla,2,1,H,10,8,4,2,3,5,11,16,1,4,0,0,Javier Alberola,2.15,3.1,3.7,13.583,7.615
@@ -3476,7 +3476,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2024-09-21,Osasuna,Las Palmas,2,1,H,13,11,2,4,2,4,14,11,2,5,0,0,Isidro Díaz de Mera,1.9,3.4,4.2,10.033,6.25
 2024-09-21,Valencia,Girona,2,0,H,7,8,2,3,5,4,13,10,3,2,0,0,Alejandro Hernández,2.88,3.3,2.5,15.538,5.955
 2024-09-21,Real Madrid,Espanol,4,1,H,31,10,14,2,9,4,7,5,4,3,0,0,José Luis Munuera,1.17,7.0,19.0,5.667,31.846
-2024-09-22,Getafe,Leganes,1,1,D,12,6,3,3,6,2,16,17,3,2,0,0,Adri園 Cordero,2.05,2.8,4.75,5.407,8.714
+2024-09-22,Getafe,Leganes,1,1,D,12,6,3,3,6,2,16,17,3,2,0,0,Adrián Cordero,2.05,2.8,4.75,5.407,8.714
 2024-09-22,Ath Bilbao,Celta,3,1,H,10,11,7,4,3,6,16,11,3,2,0,0,Jose Maria Sánchez,1.7,3.7,5.25,19.091,6.727
 2024-09-22,Villarreal,Barcelona,1,5,A,13,17,4,10,7,3,12,12,6,1,0,0,Mateo Busquets,3.9,3.9,1.85,18.789,5.647
 2024-09-22,Vallecano,Ath Madrid,1,1,D,15,10,3,5,3,4,9,12,0,0,0,0,Mario Melero,5.0,3.4,1.8,12.048,14.3
@@ -3502,7 +3502,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2024-10-04,Leganes,Valencia,0,0,D,8,6,0,1,1,2,15,14,2,2,0,0,Alejandro Quintero,2.9,2.88,2.8,8.5,12.269
 2024-10-05,Espanol,Mallorca,2,1,H,8,11,3,4,4,6,14,19,1,5,0,0,Francisco Hernández,3.1,3.0,2.55,11.524,5.833
 2024-10-05,Getafe,Osasuna,1,1,D,11,6,3,2,4,2,17,10,2,4,0,0,Jose Maria Sánchez,2.2,2.9,3.9,8.2,3.895
-2024-10-05,Las Palmas,Celta,0,1,A,24,8,5,1,11,2,9,13,3,8,0,2,Adri園 Cordero,3.1,3.5,2.25,13.733,10.909
+2024-10-05,Las Palmas,Celta,0,1,A,24,8,5,1,11,2,9,13,3,8,0,2,Adrián Cordero,3.1,3.5,2.25,13.733,10.909
 2024-10-05,Valladolid,Vallecano,1,2,A,13,17,5,3,5,13,13,18,4,2,0,0,Pablo González,3.1,3.0,2.5,11.292,6.571
 2024-10-05,Real Madrid,Villarreal,2,0,H,11,10,2,1,2,5,7,11,0,1,0,0,Guillermo Cuadra,1.27,6.25,8.5,12.391,20.688
 2024-10-06,Girona,Ath Bilbao,2,1,H,14,13,6,4,6,1,12,13,4,3,0,1,Juan Pulido,2.35,3.3,3.1,7.667,13.593
@@ -3521,7 +3521,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2024-10-21,Valencia,Las Palmas,2,3,A,14,11,7,6,11,2,12,12,4,9,1,0,Jesús Gil,1.62,3.8,5.5,12.16,16.214
 2024-10-25,Espanol,Sevilla,0,2,A,16,6,1,3,13,2,14,9,2,0,0,0,Miguel Ángel Ortiz Arias,3.0,3.25,2.4,10.464,17.4
 2024-10-26,Valladolid,Villarreal,1,2,A,7,21,3,9,4,6,16,13,4,3,0,0,Francisco Hernández,3.5,3.75,2.0,15.579,19.571
-2024-10-26,Vallecano,Alaves,1,0,H,16,15,4,7,6,2,8,14,2,4,1,0,Adri園 Cordero,2.25,3.1,3.5,11.105,8.476
+2024-10-26,Vallecano,Alaves,1,0,H,16,15,4,7,6,2,8,14,2,4,1,0,Adrián Cordero,2.25,3.1,3.5,11.105,8.476
 2024-10-26,Las Palmas,Girona,1,0,H,12,8,3,3,3,5,12,14,4,5,0,1,Alejandro Quintero,2.88,3.4,2.45,10.31,6.963
 2024-10-26,Real Madrid,Barcelona,0,4,A,9,15,4,7,10,3,15,17,2,5,0,0,Jose Maria Sánchez,2.0,4.1,3.25,8.258,7.269
 2024-10-27,Leganes,Celta,3,0,H,7,18,4,5,4,2,15,17,2,2,0,0,Mario Melero,3.25,3.25,2.3,12.577,8.25
@@ -3544,7 +3544,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2024-11-10,Betis,Celta,2,2,D,19,3,6,2,2,0,12,8,3,0,0,0,Miguel Ángel Ortiz Arias,1.95,3.4,4.0,9.613,38.0
 2024-11-10,Mallorca,Ath Madrid,0,1,A,12,9,6,2,7,2,10,16,1,3,0,0,Jose Maria Sánchez,3.6,3.1,2.2,17.444,12.826
 2024-11-10,Getafe,Girona,0,1,A,8,3,0,2,5,2,25,16,3,3,0,0,Juan Martínez,2.45,3.2,3.0,8.2,8.5
-2024-11-10,Valladolid,Ath Bilbao,1,1,D,6,17,3,1,5,5,12,12,4,4,0,0,Adri園 Cordero,4.5,3.4,1.85,18.375,8.667
+2024-11-10,Valladolid,Ath Bilbao,1,1,D,6,17,3,1,5,5,12,12,4,4,0,0,Adrián Cordero,4.5,3.4,1.85,18.375,8.667
 2024-11-10,Sociedad,Barcelona,1,0,H,14,11,6,0,7,6,17,6,3,1,0,0,Guillermo Cuadra,4.75,4.1,1.65,11.176,9.867
 2024-11-22,Getafe,Valladolid,2,0,H,12,6,5,3,3,2,15,15,3,2,0,0,Pablo González,1.65,3.4,6.5,6.412,11.385
 2024-11-23,Valencia,Betis,4,2,H,11,7,5,3,2,4,10,16,4,2,0,0,Ricardo de Burgos,3.0,3.0,2.6,11.5,9.68
@@ -3557,7 +3557,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2024-11-24,Leganes,Real Madrid,0,3,A,4,16,0,9,2,4,17,11,2,0,0,0,Javier Alberola,7.5,4.5,1.42,14.652,9.875
 2024-11-24,Ath Bilbao,Sociedad,1,0,H,12,6,4,1,4,4,18,9,3,4,0,0,Jesús Gil,2.25,3.0,3.6,10.903,6.739
 2024-11-29,Mallorca,Valencia,2,1,H,9,7,3,1,3,6,9,14,0,0,0,0,Alejandro Quintero,2.0,3.0,4.5,15.053,10.115
-2024-11-30,Barcelona,Las Palmas,1,2,A,27,5,8,3,7,0,7,11,0,0,0,0,Adri園 Cordero,1.17,8.5,13.0,5.957,20.312
+2024-11-30,Barcelona,Las Palmas,1,2,A,27,5,8,3,7,0,7,11,0,0,0,0,Adrián Cordero,1.17,8.5,13.0,5.957,20.312
 2024-11-30,Alaves,Leganes,1,1,D,18,6,7,3,13,8,15,15,1,4,0,0,Isidro Díaz de Mera,1.8,3.4,5.0,4.63,9.316
 2024-11-30,Espanol,Celta,3,1,H,9,16,5,2,2,5,13,7,2,2,0,0,Jose Maria Sánchez,3.3,3.4,2.2,31.071,4.588
 2024-11-30,Valladolid,Ath Madrid,0,5,A,9,13,1,9,3,5,6,11,1,2,0,0,Guillermo Cuadra,6.0,4.2,1.53,27.615,25.143
@@ -3579,7 +3579,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2024-12-08,Ath Madrid,Sevilla,4,3,H,14,4,9,3,5,3,11,8,4,3,0,0,Javier Alberola,1.38,4.75,8.5,13.52,24.312
 2024-12-09,Getafe,Espanol,1,0,H,15,9,6,1,3,3,14,15,3,6,0,0,Mateo Busquets,1.8,3.1,5.75,9.778,5.741
 2024-12-13,Valladolid,Valencia,1,0,H,2,14,1,2,1,7,10,10,4,3,1,0,Miguel Ángel Ortiz Arias,3.1,3.1,2.38,15.647,9.167
-2024-12-14,Espanol,Osasuna,0,0,D,9,6,3,0,5,4,13,13,3,1,0,0,Adri園 Cordero,2.75,3.2,2.6,16.895,9.429
+2024-12-14,Espanol,Osasuna,0,0,D,9,6,3,0,5,4,13,13,3,1,0,0,Adrián Cordero,2.75,3.2,2.6,16.895,9.429
 2024-12-14,Mallorca,Girona,2,1,H,8,13,2,1,2,4,10,14,5,2,1,0,Francisco Hernández,2.3,3.1,3.25,29.0,6.957
 2024-12-14,Sevilla,Celta,1,0,H,8,10,3,2,3,4,12,9,7,3,0,0,Jesús Gil,2.2,3.25,3.3,10.1,14.529
 2024-12-14,Vallecano,Real Madrid,3,3,D,14,13,5,6,4,3,18,8,4,2,0,0,Juan Martínez,6.0,3.8,1.57,10.314,8.1
@@ -3603,7 +3603,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2025-01-03,Valencia,Real Madrid,1,2,A,8,17,5,5,2,5,16,9,2,3,0,1,César Soto,7.0,4.5,1.42,25.571,9.615
 2025-01-10,Vallecano,Celta,2,1,H,8,23,5,7,3,3,18,9,2,3,0,1,Guillermo Cuadra,2.75,3.1,2.7,9.783,15.158
 2025-01-11,Alaves,Girona,0,1,A,11,3,2,1,6,3,16,11,1,4,0,0,Mateo Busquets,2.75,3.1,2.75,10.179,10.706
-2025-01-11,Valladolid,Betis,1,0,H,12,14,1,3,1,8,21,10,2,4,0,0,Adri園 Cordero,4.5,3.5,1.83,10.577,7.741
+2025-01-11,Valladolid,Betis,1,0,H,12,14,1,3,1,8,21,10,2,4,0,0,Adrián Cordero,4.5,3.5,1.83,10.577,7.741
 2025-01-11,Espanol,Leganes,1,1,D,15,14,5,6,8,4,15,19,2,2,0,1,Juan Martínez,2.1,3.0,4.0,13.143,9.615
 2025-01-11,Sevilla,Valencia,1,1,D,15,5,5,1,10,1,16,8,1,2,0,0,Francisco Hernández,2.0,3.3,4.0,7.862,17.0
 2025-01-12,Las Palmas,Getafe,1,2,A,15,12,7,3,4,5,14,17,2,3,0,0,Javier Alberola,2.45,2.9,3.3,6.0,10.0
@@ -3622,7 +3622,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2025-01-24,Las Palmas,Osasuna,1,1,D,16,16,7,4,4,2,14,17,7,8,1,0,Jesús Gil,2.5,3.1,3.0,14.4,13.733
 2025-01-25,Mallorca,Betis,0,1,A,16,8,3,3,4,4,12,18,2,2,1,0,Javier Alberola,2.25,3.0,3.5,9.071,5.97
 2025-01-25,Ath Madrid,Villarreal,1,1,D,20,11,8,1,5,6,10,14,4,2,0,0,Jose Maria Sánchez,1.7,4.0,4.75,9.192,15.19
-2025-01-25,Sevilla,Espanol,1,1,D,25,6,4,1,5,1,13,14,1,4,0,0,Adri園 Cordero,1.7,3.8,4.75,4.542,22.882
+2025-01-25,Sevilla,Espanol,1,1,D,25,6,4,1,5,1,13,14,1,4,0,0,Adrián Cordero,1.7,3.8,4.75,4.542,22.882
 2025-01-25,Valladolid,Real Madrid,0,3,A,6,20,2,4,1,7,11,12,3,3,1,0,Mateo Busquets,10.0,6.0,1.27,20.118,11.167
 2025-01-26,Vallecano,Girona,2,1,H,17,12,7,5,4,1,19,9,3,1,0,0,Isidro Díaz de Mera,2.75,2.9,2.88,7.31,12.292
 2025-01-26,Sociedad,Getafe,0,3,A,13,13,4,4,5,2,11,15,3,6,0,0,Guillermo Cuadra,1.75,3.4,5.5,6.867,5.483
@@ -3648,7 +3648,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2025-02-09,Valencia,Leganes,2,0,H,18,12,4,4,9,3,14,9,1,1,0,0,Guillermo Cuadra,1.73,3.4,5.5,13.55,6.833
 2025-02-09,Sociedad,Espanol,2,1,H,13,4,3,1,6,0,11,17,1,2,0,0,Javier Alberola,1.6,3.9,5.75,6.048,13.455
 2025-02-09,Sevilla,Barcelona,1,4,A,8,10,4,6,5,6,14,6,5,2,0,1,Alejandro Hernández,5.25,4.5,1.55,14.889,9.6
-2025-02-10,Mallorca,Osasuna,1,1,D,10,19,2,4,7,11,7,11,1,4,0,0,Adri園 Cordero,2.0,3.0,4.33,13.533,7.833
+2025-02-10,Mallorca,Osasuna,1,1,D,10,19,2,4,7,11,7,11,1,4,0,0,Adrián Cordero,2.0,3.0,4.33,13.533,7.833
 2025-02-14,Girona,Getafe,1,2,A,14,10,4,6,3,3,11,23,2,3,1,0,Alejandro Quintero,1.95,3.25,4.33,3.857,10.4
 2025-02-15,Leganes,Alaves,3,3,D,8,16,3,7,3,2,18,15,4,5,1,0,Pablo González,3.1,2.9,2.6,12.438,8.857
 2025-02-15,Osasuna,Real Madrid,1,1,D,11,17,4,6,6,2,16,7,3,1,0,1,José Luis Munuera,5.75,4.1,1.57,13.7,22.444
@@ -3663,7 +3663,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2025-02-22,Alaves,Espanol,0,1,A,15,9,5,2,7,0,13,17,2,2,0,0,Juan Pulido,1.8,3.25,5.25,6.455,11.895
 2025-02-22,Vallecano,Villarreal,0,1,A,10,10,5,5,3,5,15,12,1,4,1,0,Víctor García,2.88,3.5,2.38,8.786,9.96
 2025-02-22,Valencia,Ath Madrid,0,3,A,18,11,2,3,7,0,18,16,1,3,0,0,Mateo Busquets,4.2,3.4,1.91,11.065,12.524
-2025-02-22,Las Palmas,Barcelona,0,2,A,10,15,2,5,5,3,13,4,1,1,0,0,Adri園 Cordero,8.5,7.0,1.25,17.762,8.278
+2025-02-22,Las Palmas,Barcelona,0,2,A,10,15,2,5,5,3,13,4,1,1,0,0,Adrián Cordero,8.5,7.0,1.25,17.762,8.278
 2025-02-23,Ath Bilbao,Valladolid,7,1,H,29,5,16,3,4,4,10,5,2,3,0,1,César Soto,1.17,7.0,19.0,10.85,19.182
 2025-02-23,Real Madrid,Girona,2,0,H,22,6,5,2,11,5,1,7,0,2,0,0,Guillermo Cuadra,1.29,6.25,8.5,35.5,31.167
 2025-02-23,Getafe,Betis,1,2,A,10,13,4,6,2,5,17,20,3,0,1,1,Javier Alberola,2.6,3.1,2.9,6.4,5.633
@@ -3686,7 +3686,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2025-03-09,Ath Bilbao,Mallorca,1,1,D,8,9,2,2,3,3,6,13,1,3,0,0,Alejandro Hernández,1.62,3.7,6.0,19.455,9.75
 2025-03-09,Betis,Las Palmas,1,0,H,14,8,6,1,11,1,12,14,2,8,0,1,Jose Maria Sánchez,1.42,4.5,7.5,6.364,17.526
 2025-03-09,Sociedad,Sevilla,0,1,A,7,9,2,4,6,3,14,12,2,1,0,0,Víctor García,2.2,3.2,3.5,7.833,24.75
-2025-03-10,Espanol,Girona,1,1,D,7,18,4,4,4,9,11,13,3,3,0,0,Adri園 Cordero,3.1,3.2,2.4,26.583,6.538
+2025-03-10,Espanol,Girona,1,1,D,7,18,4,4,4,9,11,13,3,3,0,0,Adrián Cordero,3.1,3.2,2.4,26.583,6.538
 2025-03-14,Las Palmas,Alaves,2,2,D,14,9,7,3,4,5,10,22,5,5,0,0,Mario Melero,2.88,3.0,2.75,7.4,10.25
 2025-03-15,Valladolid,Celta,0,1,A,5,10,2,1,3,4,9,15,3,3,0,0,Víctor García,5.0,3.8,1.63,21.733,9.08
 2025-03-15,Mallorca,Espanol,2,1,H,20,2,7,0,6,2,10,12,0,2,0,0,Alejandro Quintero,1.77,3.3,5.0,8.824,17.643
@@ -3698,7 +3698,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2025-03-16,Vallecano,Sociedad,2,2,D,10,8,5,4,4,4,16,9,3,2,0,0,Alejandro Muñíz,2.5,3.0,3.1,6.115,12.0
 2025-03-16,Ath Madrid,Barcelona,2,4,A,7,13,2,6,6,6,10,11,1,3,0,0,Ricardo de Burgos,3.1,3.6,2.2,17.267,5.333
 2025-03-27,Barcelona,Osasuna,3,0,H,19,4,5,0,8,4,7,14,1,3,0,0,Mateo Busquets,1.29,7.0,7.0,7.0,12.364
-2025-03-29,Sociedad,Valladolid,2,1,H,12,12,2,5,3,6,20,10,2,3,0,0,Adri園 Cordero,1.33,4.75,11.0,5.971,17.0
+2025-03-29,Sociedad,Valladolid,2,1,H,12,12,2,5,3,6,20,10,2,3,0,0,Adrián Cordero,1.33,4.75,11.0,5.971,17.0
 2025-03-29,Espanol,Ath Madrid,1,1,D,8,13,1,2,4,3,12,14,2,1,0,0,Javier Alberola,5.5,3.75,1.62,14.75,11.35
 2025-03-29,Alaves,Vallecano,0,2,A,12,11,4,5,8,5,14,12,3,5,0,0,José Luis Munuera,2.15,2.9,4.1,6.407,9.056
 2025-03-29,Real Madrid,Leganes,3,2,H,24,10,10,4,8,3,9,13,1,4,0,0,Pablo González,1.14,8.0,17.0,7.706,30.3
@@ -3726,7 +3726,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2025-04-13,Osasuna,Girona,2,1,H,13,18,6,8,4,4,17,15,2,0,0,0,Pablo González,2.45,3.2,3.1,16.8,6.55
 2025-04-13,Alaves,Real Madrid,0,1,A,13,11,6,4,4,4,21,12,4,4,1,1,César Soto,5.25,4.1,1.62,5.732,14.333
 2025-04-13,Betis,Villarreal,1,2,A,24,8,5,2,5,5,4,13,0,4,0,0,Juan Pulido,2.35,3.3,3.1,11.143,12.429
-2025-04-13,Ath Bilbao,Vallecano,3,1,H,13,11,4,3,7,1,12,7,4,3,0,0,Adri園 Cordero,1.75,3.4,5.5,7.926,12.474
+2025-04-13,Ath Bilbao,Vallecano,3,1,H,13,11,4,3,7,1,12,7,4,3,0,0,Adrián Cordero,1.75,3.4,5.5,7.926,12.474
 2025-04-14,Ath Madrid,Valladolid,4,2,H,24,6,9,3,5,1,11,8,1,1,0,0,Isidro Díaz de Mera,1.14,8.0,19.0,12.207,32.667
 2025-04-18,Espanol,Getafe,1,0,H,9,9,3,4,6,8,12,15,0,2,0,1,Ricardo de Burgos,2.88,2.63,3.0,3.81,11.545
 2025-04-19,Vallecano,Valencia,1,1,D,11,10,4,3,5,2,18,13,3,1,0,0,Alejandro Quintero,2.25,3.0,3.4,6.7,10.955
@@ -3745,7 +3745,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2025-04-23,Alaves,Sociedad,1,0,H,10,6,1,0,6,6,17,17,4,5,0,0,Mateo Busquets,2.35,3.0,3.4,6.535,6.941
 2025-04-23,Getafe,Real Madrid,0,1,A,20,14,6,7,4,4,15,7,3,1,0,0,Jose Maria Sánchez,4.75,3.6,1.75,13.115,10.357
 2025-04-24,Leganes,Girona,1,1,D,7,8,1,3,4,5,16,18,4,2,1,0,José Luis Munuera,2.75,3.1,2.75,15.6,7.706
-2025-04-24,Osasuna,Sevilla,1,0,H,9,12,2,3,4,4,14,13,4,2,0,1,Adri園 Cordero,2.5,3.0,3.2,11.059,24.5
+2025-04-24,Osasuna,Sevilla,1,0,H,9,12,2,3,4,4,14,13,4,2,0,1,Adrián Cordero,2.5,3.0,3.2,11.059,24.5
 2025-04-24,Ath Madrid,Vallecano,3,0,H,10,12,5,5,6,3,8,15,0,2,0,0,Pablo González,1.53,4.0,6.5,19.765,8.862
 2025-04-24,Betis,Valladolid,5,1,H,16,10,6,5,4,4,7,7,1,0,0,0,Francisco Hernández,1.2,7.0,13.0,6.185,16.684
 2025-04-27,Villarreal,Espanol,1,0,H,14,12,5,1,8,6,19,11,4,0,0,0,José Luis Munuera,1.44,5.0,6.25,10.577,18.0
@@ -3760,7 +3760,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2025-05-04,Sociedad,Ath Bilbao,0,0,D,12,3,3,1,7,3,18,13,1,2,0,0,César Soto,2.55,3.0,3.0,5.778,17.7
 2025-05-05,Girona,Mallorca,1,0,H,13,9,6,1,5,2,11,14,0,2,0,0,Mario Melero,2.0,3.1,4.2,9.806,17.667
 2025-05-09,Las Palmas,Vallecano,0,1,A,11,16,2,5,8,8,8,9,2,3,0,0,Francisco Hernández,2.45,3.25,3.0,9.9,9.643
-2025-05-10,Valencia,Getafe,3,0,H,10,10,6,3,2,6,17,20,3,5,0,0,Adri園 Cordero,2.0,3.0,4.33,5.095,6.971
+2025-05-10,Valencia,Getafe,3,0,H,10,10,6,3,2,6,17,20,3,5,0,0,Adrián Cordero,2.0,3.0,4.33,5.095,6.971
 2025-05-10,Celta,Sevilla,3,2,H,8,19,4,10,3,6,11,16,0,2,1,0,Pablo González,1.8,3.6,4.5,19.615,10.433
 2025-05-10,Girona,Villarreal,0,1,A,7,14,0,5,5,3,13,10,2,3,0,0,Isidro Díaz de Mera,3.1,3.8,2.1,14.474,30.364
 2025-05-10,Mallorca,Valladolid,2,1,H,12,16,4,7,5,10,16,12,2,1,0,0,Juan Pulido,1.33,5.25,9.0,8.429,18.077
@@ -3779,7 +3779,7 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2025-05-15,Osasuna,Ath Madrid,2,0,H,9,9,3,5,3,5,12,11,1,1,0,0,Mario Melero,3.6,3.3,2.1,12.333,8.263
 2025-05-15,Espanol,Barcelona,0,2,A,9,12,1,4,3,3,8,10,2,2,1,0,César Soto,9.0,5.75,1.3,23.438,4.76
 2025-05-15,Getafe,Ath Bilbao,0,2,A,11,9,1,2,2,5,10,7,1,0,0,0,Guillermo Cuadra,3.2,2.75,2.63,12.783,8.333
-2025-05-18,Ath Madrid,Betis,4,1,H,20,12,11,7,7,4,12,9,1,1,0,0,Adri園 Cordero,1.91,3.6,3.8,14.136,15.15
+2025-05-18,Ath Madrid,Betis,4,1,H,20,12,11,7,7,4,12,9,1,1,0,0,Adrián Cordero,1.91,3.6,3.8,14.136,15.15
 2025-05-18,Barcelona,Villarreal,2,3,A,24,7,9,3,11,3,14,9,2,0,0,0,José Luis Munuera,1.83,4.1,3.75,6.862,16.333
 2025-05-18,Celta,Vallecano,1,2,A,24,7,7,2,9,2,10,17,2,3,0,0,Juan Pulido,1.75,3.9,4.33,11.2,12.182
 2025-05-18,Las Palmas,Leganes,0,1,A,12,11,3,4,9,2,15,12,2,2,0,0,Jose Maria Sánchez,2.9,3.5,2.35,5.0,14.28
@@ -4138,3 +4138,44 @@ Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR,HS,AS,HST,AST,HC,AC,HF,AF,HY,AY,HR,AR,Refer
 2026-05-03,Getafe,Vallecano,0,2,A,13,10,3,6,4,1,7,22,3,5,0,0,Miguel Sesma,1.91,3.3,4.2,5.125,3.588
 2026-05-03,Betis,Oviedo,3,0,H,10,17,5,5,5,4,9,4,0,0,0,0,Adrián Cordero,1.57,4.1,5.75,9.893,15.941
 2026-05-03,Espanol,Real Madrid,0,2,A,17,15,3,5,5,6,19,16,3,4,0,0,Jesús Gil,4.5,3.9,1.73,22.368,6.111
+2026-05-04,Sevilla,Sociedad,1,0,H,19,6,5,0,3,3,19,11,3,1,0,0,Juan Martínez,2.38,3.5,2.9,9.581,11.647
+2026-05-08,Levante,Osasuna,3,2,H,35,5,12,3,15,1,11,13,2,0,0,1,José Luis Munuera,2.5,3.25,2.88,7.905,25.333
+2026-05-09,Elche,Alaves,1,1,D,16,12,5,4,7,3,15,13,3,6,0,0,Mateo Busquets,2.25,3.3,3.3,4.64,15.6
+2026-05-09,Sevilla,Espanol,2,1,H,21,10,6,5,4,6,14,17,5,5,0,0,Javier Alberola,2.05,3.4,3.7,3.31,9.625
+2026-05-09,Ath Madrid,Celta,0,1,A,20,3,4,1,10,0,11,13,1,2,0,0,Iosu Galech,2.05,3.5,3.5,12.4,20.067
+2026-05-09,Sociedad,Betis,2,2,D,14,14,6,6,4,3,12,9,2,3,0,1,Alejandro Muñíz,2.55,3.5,2.7,8.739,25.438
+2026-05-10,Mallorca,Villarreal,1,1,D,18,7,8,2,5,4,17,13,2,0,0,0,Víctor García,2.3,3.5,3.0,8.167,21.083
+2026-05-10,Ath Bilbao,Valencia,0,1,A,14,7,4,3,13,5,9,7,2,3,0,0,Miguel Ángel Ortiz Arias,1.7,3.75,5.0,10.381,12.235
+2026-05-10,Oviedo,Getafe,0,0,D,8,22,4,4,1,9,9,16,2,3,2,0,César Soto,3.0,3.25,2.4,8.826,6.357
+2026-05-10,Barcelona,Real Madrid,2,0,H,10,8,7,1,4,8,18,9,2,4,0,0,Alejandro Hernández,1.62,5.0,4.33,11.565,29.077
+2026-05-11,Vallecano,Girona,1,1,D,18,9,5,5,9,5,10,9,1,1,0,0,Guillermo Cuadra,2.3,3.5,3.0,7.68,18.688
+2026-05-12,Celta,Levante,2,3,A,11,14,6,6,4,4,7,10,0,2,0,0,Adrián Cordero,1.8,3.8,4.2,15.615,22.2
+2026-05-12,Betis,Elche,2,1,H,16,8,7,2,8,1,16,13,3,3,0,1,Isidro Díaz de Mera,1.57,4.33,5.25,11.393,10.958
+2026-05-12,Osasuna,Ath Madrid,1,2,A,23,5,5,4,8,4,15,12,6,5,0,1,José Guzmán,2.55,3.5,2.63,8.52,16.0
+2026-05-13,Espanol,Ath Bilbao,2,0,H,12,11,5,4,8,9,9,14,0,0,0,0,Francisco Hernández,2.63,3.3,2.7,6.35,12.12
+2026-05-13,Villarreal,Sevilla,2,3,A,6,13,4,5,6,4,11,9,2,1,0,0,Mateo Busquets,2.1,3.3,3.6,10.889,18.0
+2026-05-13,Alaves,Barcelona,1,0,H,9,8,3,0,6,4,14,8,1,2,0,0,Jose Maria Sánchez,3.1,3.75,2.15,17.348,3.625
+2026-05-13,Getafe,Mallorca,3,1,H,6,9,4,2,3,3,17,18,3,4,0,0,Juan Martínez,2.2,3.2,3.5,11.962,8.941
+2026-05-14,Valencia,Vallecano,1,1,D,12,6,3,3,5,1,9,20,1,1,0,0,Alejandro Quintero,2.2,3.4,3.3,10.045,6.378
+2026-05-14,Girona,Sociedad,1,1,D,29,6,4,2,6,3,13,19,2,7,0,0,Miguel Sesma,2.05,3.8,3.3,9.885,9.9
+2026-05-14,Real Madrid,Oviedo,2,0,H,19,9,7,1,4,5,7,14,0,0,0,0,Ricardo de Burgos,1.22,7.0,11.0,12.222,19.278
+2026-05-17,Ath Bilbao,Celta,1,1,D,27,3,9,2,5,0,14,11,2,2,0,0,Isidro Díaz de Mera,2.15,3.2,3.4,7.194,10.0
+2026-05-17,Ath Madrid,Girona,1,0,H,17,25,4,11,9,8,7,9,2,0,0,0,Alejandro Muñíz,1.73,3.6,4.5,9.5,13.684
+2026-05-17,Elche,Getafe,1,0,H,10,4,3,0,4,0,18,13,3,1,0,1,Víctor García,2.2,3.0,3.4,4.704,15.375
+2026-05-17,Levante,Mallorca,2,0,H,15,8,3,3,4,6,11,15,2,0,1,1,Javier Alberola,2.1,3.4,3.3,15.545,5.684
+2026-05-17,Osasuna,Espanol,1,2,A,24,7,8,3,9,2,10,13,1,2,0,0,Miguel Ángel Ortiz Arias,2.05,3.1,3.8,7.938,20.6
+2026-05-17,Oviedo,Alaves,0,1,A,8,7,0,1,5,2,13,18,3,1,0,0,José Luis Munuera,3.7,3.6,1.9,6.889,15.5
+2026-05-17,Sevilla,Real Madrid,0,1,A,14,12,6,1,4,4,18,12,4,0,0,0,Jose Maria Sánchez,3.0,3.5,2.15,9.25,7.727
+2026-05-17,Sociedad,Valencia,3,4,A,8,13,3,6,3,2,13,11,4,0,0,1,Iosu Galech,2.15,3.4,3.2,7.29,13.85
+2026-05-17,Vallecano,Villarreal,2,0,H,15,11,7,2,1,9,12,10,2,1,0,0,Ricardo de Burgos,2.35,3.5,2.63,9.44,12.545
+2026-05-17,Barcelona,Betis,3,1,H,15,7,9,2,6,4,7,8,1,0,0,0,Guillermo Cuadra,1.33,6.0,7.5,13.556,19.478
+2026-05-23,Alaves,Vallecano,1,2,A,19,15,11,7,10,5,13,14,3,3,0,0,Jesús Gil,2.45,3.4,2.8,12.316,6.808
+2026-05-23,Betis,Levante,2,1,H,18,15,8,7,4,8,11,7,1,2,0,0,Mateo Busquets,2.25,3.2,3.4,14.667,16.577
+2026-05-23,Celta,Sevilla,1,0,H,12,9,3,2,4,3,11,20,1,1,0,0,Francisco Hernández,1.73,3.8,4.75,12.45,8.895
+2026-05-23,Espanol,Sociedad,1,1,D,17,9,8,4,3,5,11,17,1,3,0,0,José Luis Munuera,2.45,3.5,2.75,12.55,8.355
+2026-05-23,Getafe,Osasuna,1,0,H,6,11,3,5,2,4,17,20,1,2,0,0,Alejandro Quintero,2.45,2.88,3.4,5.353,6.5
+2026-05-23,Girona,Elche,1,1,D,10,3,7,1,2,1,20,20,4,4,0,0,Alejandro Hernández,1.8,3.9,4.2,7.5,7.333
+2026-05-23,Mallorca,Oviedo,3,0,H,23,7,7,0,5,5,10,8,2,1,0,0,Sánchez Santos,1.44,4.5,7.0,8.0,20.667
+2026-05-23,Real Madrid,Ath Bilbao,4,2,H,13,8,8,2,2,1,6,20,2,0,0,0,Juan Martínez,1.5,4.75,5.75,12.2,18.4
+2026-05-23,Valencia,Barcelona,3,1,H,19,11,6,4,7,8,11,8,2,2,0,0,Adrián Cordero,3.6,4.2,1.85,20.273,6.467
+2026-05-24,Villarreal,Ath Madrid,5,1,H,14,9,8,4,5,9,3,12,0,1,0,0,Miguel Sesma,2.45,3.6,2.75,31.333,11.792

@@ -3,7 +3,7 @@ import os
 
 # Paths
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sp1_path = os.path.join(base_dir, "LaligaSeasons", "SP1 25-26.csv")
+sp1_path = os.path.join(base_dir, "LaligaSeasons", "SP1.csv")
 target_path = os.path.join(base_dir, "LaligaSeasons", "La Liga Season 2526.csv")
 
 # Load data
