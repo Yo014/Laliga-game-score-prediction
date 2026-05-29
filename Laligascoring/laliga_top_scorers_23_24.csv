@@ -1,0 +1,41 @@
+Player,Team,Goals,Matches Played,Coefficient,Expected Goals (xG)
+Artem Dovbyk,Girona FC,24,36,0.67,24.3
+A. Sørloth,Villarreal,23,34,0.68,12.7
+J. Bellingham,Real Madrid,19,28,0.68,11.1
+R. Lewandowski,FC Barcelona,19,35,0.54,18.1
+A. Budimir,Osasuna,16,33,0.48,14.2
+A. Griezmann,Atlético de Madrid,16,33,0.48,12.4
+Y. En-Nesyri,Sevilla,16,33,0.48,10.8
+Vinícius,Real Madrid,15,26,0.58,13.1
+B. Mayoral,Getafe,15,27,0.56,11.9
+Á. Morata,Atlético de Madrid,15,32,0.47,0.1
+G. Guruzeta,Athletic,14,32,0.44,11.7
+J. Larsen,Celta,13,37,0.35,0.7
+Hugo Duro,Valencia,13,37,0.35,11.5
+I. Williams,Athletic,12,34,0.35,6.0
+Myrto Uzuni,Granada,11,34,0.32,13.0
+Gerard Moreno,Villarreal,10,30,0.33,9.7
+Willian José,Real Betis,10,33,0.3,5.7
+Joselu,Real Madrid,10,34,0.29,12.0
+Rodrygo,Real Madrid,10,34,0.29,11.8
+Savinho,Girona FC,9,37,0.24,6.1
+Sergio Arribas,Almería,9,34,0.26,8.6
+Iago Aspas,Celta,9,35,0.26,11.5
+Samu Aghehowa,Deportivo Alavés,9,35,0.26,11.5
+Ayoze,Real Betis,9,31,0.29,7.4
+M. Oyarzabal,Real Sociedad,9,33,0.27,9.2
+Ángel Correa,Atlético de Madrid,9,32,0.28,8.0
+C. Stuani,Girona FC,9,31,0.29,9.7
+Isco,Real Betis,8,29,0.28,8.3
+V. Tsygankov,Girona FC,8,30,0.27,6.3
+Fermín López,FC Barcelona,8,31,0.26,7.5
+Brahim Díaz,Real Madrid,8,31,0.26,5.8
+Morales,Villarreal,7,29,0.24,1.0
+Ferran Torres,FC Barcelona,7,29,0.24,5.5
+Vedat Muriqi,Mallorca,7,29,0.24,10.5
+Take Kubo,Real Sociedad,7,30,0.23,3.5
+João Félix,FC Barcelona,7,30,0.23,8.8
+Tasos Douvikas,Celta,7,32,0.22,4.6
+M. Greenwood,Getafe,7,33,0.21,8.8
+Álex Berenguer,Athletic,7,35,0.2,5.2
+Portu,Girona FC,7,36,0.19,3.5

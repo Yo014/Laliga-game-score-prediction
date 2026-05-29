@@ -1,0 +1,100 @@
+Player,Team,Goals,Matches Played,Coefficient,Expected Goals (xG)
+R. Lewandowski,FC Barcelona,22,34,0.65,24.3
+K. Benzema,Real Madrid,19,24,0.79,21.5
+Joselu,Espanyol,16,34,0.47,14.6
+Borja,Iglesias Real Betis,15,35,0.43,0.7
+Vedat,Muriqi Mallorca,15,35,0.43,12.5
+A. Griezmann,Atlético de Madrid,15,38,0.39,12.3
+Enes,Ünal Getafe,14,35,0.4,0.6
+Taty,Castellanos Girona FC,13,35,0.37,
+Á. Morata,Atlético de Madrid,13,36,0.36,12.2
+Iago,Aspas Celta,12,37,0.32,11.2
+N. Jackson,Villarreal,12,26,0.46,8.0
+A. Sørloth,Real Sociedad,12,34,0.35,13.5
+Gabri,Veiga Celta,11,36,0.31,3.2
+M. Braithwaite,Espanyol,10,31,0.32,9.4
+Vinícius,Real Madrid,10,33,0.3,10.5
+Oihan,Sancet Athletic,10,36,0.28,0.4
+I. Williams,Athletic,10,36,0.28,4.9
+Ángel,Correa Atlético de Madrid,9,35,0.26,1.7
+Take,Kubo Real Sociedad,9,35,0.26,0.8
+Isi,Palazón Rayo Vallecano,9,37,0.24,0.5
+Rodrygo,Real Madrid,9,34,0.26,13.4
+M. Asensio,Real Madrid,9,31,0.29,5.5
+C. Stuani,Girona FC,9,32,0.28,9.9
+Cyle,Larin Real Valladolid,8,19,0.42,7.5
+Chimy,Ávila Osasuna,8,29,0.28,0.4
+Y. En-Nesyri,Sevilla,8,31,0.26,8.5
+A. Budimir,Osasuna,8,31,0.26,7.7
+Brais,Méndez Real Sociedad,8,34,0.24,5.6
+B. Mayoral,Getafe,8,35,0.23,7.9
+Y. Carrasco,Atlético de Madrid,7,35,0.2,8.0
+Javi,Puado Espanyol,7,37,0.19,3.2
+Ansu,Fati FC Barcelona,7,36,0.19,0.3
+Raphinha,FC Barcelona,7,36,0.19,9.3
+F. Valverde,Real Madrid,7,34,0.21,4.3
+Lucas,Boyé Elche,7,35,0.2,0.4
+Morales,Villarreal,7,29,0.24,0.3
+Gerard,Moreno Villarreal,7,21,0.33,1.2
+E. Touré,Almería,7,21,0.33,6.3
+Sergi,Darder Espanyol,6,38,0.16,3.9
+S. Lino,Valencia,6,38,0.16,2.9
+Álex,Baena Villarreal,6,35,0.17,0.1
+S. Chukwueze,Villarreal,6,37,0.16,6.5
+Nico,Williams Athletic,6,36,0.17,0.5
+Kang-In,Lee Mallorca,6,36,0.17,5.4
+Sergio,Camello Rayo Vallecano,6,38,0.16,3.9
+Erik,Lamela Sevilla,6,32,0.19,4.9
+G. Guruzeta,Athletic,6,30,0.2,6.3
+Sergio,León Real Valladolid,6,29,0.21,3.9
+Pedri,FC Barcelona,6,26,0.23,4.9
+Justin,Kluivert Valencia,6,26,0.23,0.7
+Lázaro,Almería,6,19,0.32,4.0
+Pere,Milla Elche,6,31,0.19,4.9
+Éder,Militão Real Madrid,5,33,0.15,4.9
+Álvaro,García Rayo Vallecano,5,35,0.14,4.0
+O. Dembélé,FC Barcelona,5,25,0.2,3.9
+Edinson,Cavani Valencia,5,25,0.2,6.0
+Memphis,Atlético de Madrid,5,10,0.5,3.8
+Luka,Modrić Real Madrid,4,33,0.12,4.2
+Florian,Lejeune Rayo Vallecano,4,31,0.13,2.8
+Tete,Morente Elche,4,32,0.13,4.2
+J. Larsen,Celta,4,32,0.13,5.6
+Ferran,Torres FC Barcelona,4,33,0.12,0.2
+Álex,Berenguer Athletic,4,37,0.11,0.1
+Nahuel,Molina Atlético de Madrid,4,33,0.12,2.6
+E. Ponce,Elche,4,34,0.12,3.6
+R. Riquelme,Girona FC,4,34,0.12,4.0
+Yéremy,Pino Villarreal,4,36,0.11,8.0
+Adrián,Embarba Almería,4,30,0.13,3.9
+T. Bongonda,Cádiz,4,31,0.13,5.2
+Sergio,Canales Real Betis,4,31,0.13,3.9
+Ez,Abde Osasuna,4,28,0.14,0.1
+Juanmi,Real Betis,4,22,0.18,4.3
+Léo,Baptistão Almería,4,28,0.14,0.1
+G. Escalante,Cádiz,4,14,0.29,3.5
+Lucas,Ocampos Sevilla,4,19,0.21,0.4
+Luis,Suárez Almería,4,21,0.19,0.1
+Raúl,De Tomás Rayo Vallecano,4,19,0.21,2.4
+Sergi,Roberto FC Barcelona,4,23,0.17,3.9
+M. Oyarzabal,Real Sociedad,4,23,0.17,4.6
+Lucas,Vázquez Real Madrid,4,23,0.17,0.4
+Samu,Castillejo Valencia,4,25,0.16,1.7
+G. Melero,Almería,4,27,0.15,3.0
+C. Montes,Espanyol,3,20,0.15,0.9
+Álex,Fernández Cádiz,3,28,0.11,0.1
+Fidel,Elche,3,27,0.11,2.3
+M. Hermoso,Atlético de Madrid,3,26,0.12,2.2
+Iván,Martín Girona FC,3,24,0.13,1.2
+A. Barrenetxea,Real Sociedad,3,23,0.13,3.0
+J. Miranda,Real Betis,3,21,0.14,2.4
+David,López Girona FC,3,20,0.15,3.2
+João,Félix Atlético de Madrid,3,14,0.21,0.4
+V. Tsygankov,Girona FC,3,19,0.16,2.8
+Ayoze,Real Betis,3,19,0.16,4.6
+Carmona,Elche,3,19,0.16,0.9
+H. Seferović,Celta,3,18,0.17,1.8
+Lucas,Pérez Cádiz,3,14,0.21,0.4
+Diego,López Valencia,3,10,0.3,0.2
+Umar,Sadiq Real Sociedad,3,5,0.6,0.3
+Munir,Getafe,3,28,0.11,4.3
