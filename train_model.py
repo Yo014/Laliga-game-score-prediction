@@ -117,6 +117,14 @@ def main():
     model_save_path = 'laliga_rf_model.pkl'
     joblib.dump(best_model, model_save_path)
     
+    # Save accuracy metrics for GUI consumption
+    import json
+    try:
+        with open('model_accuracy.json', 'w') as f:
+            json.dump({'accuracy': float(accuracy)}, f)
+    except Exception as e:
+        print(f"Error saving model_accuracy.json: {e}")
+        
     print(f"\nAdvanced model saved successfully to: {model_save_path}")
     print("You can now update predict.py to use this new .pkl file!")
 

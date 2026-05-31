@@ -92,8 +92,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // 2. Fetch Referees
             await loadRefereesData();
             
-            // Hardcoded premium default accuracy representation (can be trained/updated)
-            modelAccuracyBadge.innerText = "64.2%";
+            // 3. Fetch Model Accuracy Status
+            await loadModelStatus();
             
         } catch (err) {
             console.error("Initialization failed:", err);
@@ -165,6 +165,43 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (err) {
             console.error(err);
+        }
+    }
+
+    async function loadModelStatus() {
+        try {
+            const res = await fetch('/api/model-status');
+            const data = await res.json();
+            
+            if (data.success) {
+                const statValDiv = modelAccuracyBadge.closest('.quick-stat');
+                if (data.trained && data.accuracy > 0) {
+                    const accVal = (data.accuracy * 100).toFixed(1);
+                    modelAccuracyBadge.innerText = `${accVal}%`;
+                    modelAccuracyBadge.style.color = "var(--color-gold)";
+                    if (statValDiv) {
+                        statValDiv.setAttribute('title', `Prediction model trained with evaluated accuracy of ${accVal}%.`);
+                    }
+                } else {
+                    modelAccuracyBadge.innerText = "0.0%";
+                    modelAccuracyBadge.style.color = "var(--accent-danger)";
+                    if (statValDiv) {
+                        statValDiv.setAttribute('title', "Model accuracy not calculated yet. Run the Machine Learning Pipeline (Step 5) to retrain the core and compute model accuracy!");
+                    }
+                    
+                    // Alert user with a descriptive toast
+                    setTimeout(() => {
+                        showNotification(
+                            "Model Untrained", 
+                            "The predictive model accuracy hasn't been calculated yet. Run the ML Pipeline (Step 5: Train Prediction Model) to train the core and compute accuracy!", 
+                            "info"
+                        );
+                    }, 1500);
+                }
+            }
+        } catch (err) {
+            console.error("Could not fetch model status:", err);
+            modelAccuracyBadge.innerText = "Error";
         }
     }
 
@@ -577,8 +614,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Search logs for "Overall Accuracy: XX.XX%"
         const match = logs.match(/Overall Accuracy:\s*([0-9\.]+)%/i);
         if (match && match[1]) {
-            modelAccuracyBadge.innerText = `${parseFloat(match[1]).toFixed(1)}%`;
-            showNotification("Accuracy Restructured", `Prediction core retrained. Accuracy recorded: ${match[1]}%`, "success");
+            const accVal = parseFloat(match[1]).toFixed(1);
+            modelAccuracyBadge.innerText = `${accVal}%`;
+            modelAccuracyBadge.style.color = "var(--color-gold)";
+            const statValDiv = modelAccuracyBadge.closest('.quick-stat');
+            if (statValDiv) {
+                statValDiv.setAttribute('title', `Prediction model trained with evaluated accuracy of ${accVal}%.`);
+            }
+            showNotification("Accuracy Restructured", `Prediction core retrained. Accuracy recorded: ${accVal}%`, "success");
         }
     }
 

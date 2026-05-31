@@ -95,6 +95,29 @@ def get_referees():
     except Exception as e:
         return jsonify({"success": False, "error": str(e)})
 
+@app.route('/api/model-status', methods=['GET'])
+def get_model_status():
+    """Retrieve trained status and accuracy of the model."""
+    accuracy_path = os.path.join(BASE_DIR, 'model_accuracy.json')
+    try:
+        if os.path.exists(accuracy_path):
+            import json
+            with open(accuracy_path, 'r') as f:
+                data = json.load(f)
+            return jsonify({
+                "success": True,
+                "trained": True,
+                "accuracy": data.get('accuracy', 0.0)
+            })
+        else:
+            return jsonify({
+                "success": True,
+                "trained": False,
+                "accuracy": 0.0
+            })
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)})
+
 @app.route('/api/predict', methods=['POST'])
 def run_prediction():
     """Execute prediction model on user-defined matchup parameters."""
