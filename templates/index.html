@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Liga Predictor Pro - Match Analytics & ML Engine</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-trophy text-gold"></i>
+                </div>
+                <div class="brand-name">
+                    <h1>La Liga</h1>
+                    <span>Predicting Model</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="nav-item active" data-tab="predictor-tab">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Match Predictor</span>
+                </button>
+                <button class="nav-item" data-tab="squad-tab">
+                    <i class="fa-solid fa-hospital-user"></i>
+                    <span>Squad Health</span>
+                </button>
+                <button class="nav-item" data-tab="pipeline-tab">
+                    <i class="fa-solid fa-server"></i>
+                    <span>ML Pipeline</span>
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="system-status">
+                    <span class="status-indicator online"></span>
+                    <span>Local ML Engine Online</span>
+                </div>
+                <div class="version-info">v2.1.0 (XGBoost)</div>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard Area -->
+        <main class="dashboard-main">
+            <header class="top-bar">
+                <div class="welcome-text">
+                    <h2 id="page-title">Match Predictor</h2>
+                    <p id="page-subtitle">Formulate matchups and simulate outcomes using local historical features and real-time squad health metrics.</p>
+                </div>
+                <div class="top-bar-actions">
+                    <div class="quick-stat">
+                        <span class="stat-label">Model Accuracy</span>
+                        <span class="stat-value text-gold" id="model-accuracy-badge">--.-%</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-container">
+                <!-- TAB 1: MATCH PREDICTOR -->
+                <section id="predictor-tab" class="tab-content active">
+                    <div class="grid-layout">
+                        <!-- Setup Card (Form) -->
+                        <div class="panel glass-panel config-panel">
+                            <div class="panel-header">
+                                <h3><i class="fa-solid fa-sliders text-gold"></i> Match Configuration</h3>
+                            </div>
+                            <form id="prediction-form" class="panel-body">
+                                <div class="form-row flex-row">
+                                    <!-- Home Team Select -->
+                                    <div class="form-group flex-1">
+                                        <label for="home_team"><i class="fa-solid fa-house"></i> Home Team</label>
+                                        <div class="select-wrapper">
+                                            <select id="home_team" name="home_team" required>
+                                                <option value="" disabled selected>Select Home Team</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- VS Separator -->
+                                    <div class="vs-text">VS</div>
+                                    <!-- Away Team Select -->
+                                    <div class="form-group flex-1">
+                                        <label for="away_team"><i class="fa-solid fa-plane-departure"></i> Away Team</label>
+                                        <div class="select-wrapper">
+                                            <select id="away_team" name="away_team" required>
+                                                <option value="" disabled selected>Select Away Team</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row flex-row">
+                                    <!-- Home Rest Days -->
+                                    <div class="form-group flex-1 slider-group">
+                                        <div class="label-with-value">
+                                            <label for="home_rest_days">Home Rest Days</label>
+                                            <span class="slider-val" id="home_rest_val">6</span>
+                                        </div>
+                                        <input type="range" id="home_rest_days" name="home_rest_days" min="0" max="15" value="6" step="1">
+                                    </div>
+                                    <!-- Away Rest Days -->
+                                    <div class="form-group flex-1 slider-group">
+                                        <div class="label-with-value">
+                                            <label for="away_rest_days">Away Rest Days</label>
+                                            <span class="slider-val" id="away_rest_val">6</span>
+                                        </div>
+                                        <input type="range" id="away_rest_days" name="away_rest_days" min="0" max="15" value="6" step="1">
+                                    </div>
+                                </div>
+
+                                <div class="divider"><span>Market Betting Odds (B365)</span></div>
+
+                                <div class="form-row flex-row">
+                                    <!-- Odd Home -->
+                                    <div class="form-group flex-1">
+                                        <label for="b365h">1 (Home Odds)</label>
+                                        <input type="number" id="b365h" name="b365h" min="1.0" step="0.01" value="2.10" required>
+                                    </div>
+                                    <!-- Odd Draw -->
+                                    <div class="form-group flex-1">
+                                        <label for="b365d">X (Draw Odds)</label>
+                                        <input type="number" id="b365d" name="b365d" min="1.0" step="0.01" value="3.40" required>
+                                    </div>
+                                    <!-- Odd Away -->
+                                    <div class="form-group flex-1">
+                                        <label for="b365a">2 (Away Odds)</label>
+                                        <input type="number" id="b365a" name="b365a" min="1.0" step="0.01" value="3.20" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <!-- Referee -->
+                                    <div class="form-group">
+                                        <label for="referee"><i class="fa-solid fa-whistle"></i> Match Referee</label>
+                                        <div class="select-wrapper">
+                                            <select id="referee" name="referee">
+                                                <option value="Unknown" selected>Select Referee (Optional)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full animate-pulse" id="predict-btn">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i> Compute Prediction
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Results Panel (Placeholder -> Result) -->
+                        <div class="panel glass-panel result-panel" id="prediction-result-container">
+                            <div class="result-placeholder">
+                                <i class="fa-solid fa-chart-pie placeholder-icon"></i>
+                                <h4>Awaiting Match Parameters</h4>
+                                <p>Fill in the configuration panel on the left and click "Compute Prediction" to execute the XGBoost model and display outcomes.</p>
+                            </div>
+                            
+                            <!-- Hidden Actual Results Card -->
+                            <div class="actual-results hidden">
+                                <div class="prediction-header">
+                                    <div class="predicted-badge">
+                                        <span>Model Prediction</span>
+                                        <h2 id="res-prediction-outcome">HOME WIN</h2>
+                                    </div>
+                                </div>
+
+                                <!-- Probability Bar Display -->
+                                <div class="probability-section">
+                                    <h4>Probability Distribution</h4>
+                                    <div class="prob-progress-bar-container">
+                                        <div class="prob-segment home-win" id="prob-home-bar" style="width: 45%;">
+                                            <span class="label">Home Win</span>
+                                            <span class="val" id="prob-home-val">45.0%</span>
+                                        </div>
+                                        <div class="prob-segment draw" id="prob-draw-bar" style="width: 25%;">
+                                            <span class="label">Draw</span>
+                                            <span class="val" id="prob-draw-val">25.0%</span>
+                                        </div>
+                                        <div class="prob-segment away-win" id="prob-away-bar" style="width: 30%;">
+                                            <span class="label">Away Win</span>
+                                            <span class="val" id="prob-away-val">30.0%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Team Comparison Metrics -->
+                                <div class="metrics-comparison-grid">
+                                    <!-- Value Comparison -->
+                                    <div class="stat-card">
+                                        <div class="stat-card-title">Squad Market Value</div>
+                                        <div class="stat-comparison">
+                                            <div class="team-metric" id="metric-home-value">€350.0M</div>
+                                            <div class="vs-label">VS</div>
+                                            <div class="team-metric" id="metric-away-value">€280.0M</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Expected Offense Comparison -->
+                                    <div class="stat-card">
+                                        <div class="stat-card-title">xG+xA Expected Offense Index</div>
+                                        <div class="stat-comparison">
+                                            <div class="team-metric" id="metric-home-offense">2.45</div>
+                                            <div class="vs-label">VS</div>
+                                            <div class="team-metric" id="metric-away-offense">1.82</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Injury Sidelined Key Players -->
+                                    <div class="stat-card colspan-2">
+                                        <div class="stat-card-title">Squad Availability & Injuries</div>
+                                        <div class="squad-health-summary-panel">
+                                            <div class="team-health-detail text-left">
+                                                <strong id="home-team-name-badge">Barcelona</strong>
+                                                <div id="home-health-info" class="health-meta">
+                                                    Missing <strong>2</strong> key players (<span class="text-danger">15.2%</span> playing impact, <span class="text-danger">10.0%</span> goals)
+                                                </div>
+                                            </div>
+                                            <div class="team-health-detail text-right">
+                                                <strong id="away-team-name-badge">Real Madrid</strong>
+                                                <div id="away-health-info" class="health-meta">
+                                                    Missing <strong>1</strong> key players (<span class="text-danger">3.5%</span> playing impact, <span class="text-danger">0.0%</span> goals)
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TAB 2: SQUAD HEALTH & INJURIES -->
+                <section id="squad-tab" class="tab-content">
+                    <div class="squad-layout">
+                        <!-- Left pane: Team health aggregates -->
+                        <div class="panel glass-panel team-list-panel">
+                            <div class="panel-header">
+                                <h3><i class="fa-solid fa-list-check text-gold"></i> La Liga Roster Health</h3>
+                            </div>
+                            <div class="panel-body no-padding scrollable-y list-container">
+                                <table class="custom-table" id="team-health-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Team</th>
+                                            <th>Injured</th>
+                                            <th>Key Out</th>
+                                            <th>Impact %</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="team-health-list">
+                                        <!-- Loaded via API -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Right pane: Player detailed editor -->
+                        <div class="panel glass-panel player-edit-panel">
+                            <div class="panel-header flex-row flex-between" id="squad-editor-header">
+                                <h3><i class="fa-solid fa-users text-gold"></i> Squad Roster Editor</h3>
+                                <span class="text-muted text-sm" id="active-squad-name">Select a team from the left to edit player injuries</span>
+                            </div>
+                            
+                            <!-- Placeholder -->
+                            <div class="squad-placeholder" id="squad-editor-placeholder">
+                                <i class="fa-solid fa-user-pen placeholder-icon"></i>
+                                <h4>No Squad Loaded</h4>
+                                <p>Click on any team in the roster health list on the left to pull their current Transfermarkt player profiles and manage real-time injuries.</p>
+                            </div>
+
+                            <!-- Squad Table Container (Hidden by default) -->
+                            <div class="squad-editor-content hidden" id="squad-editor-content">
+                                <div class="squad-actions flex-row flex-between">
+                                    <span class="player-count-badge" id="player-count">35 Players Listed</span>
+                                    <button class="btn btn-success btn-sm" id="save-squad-btn">
+                                        <i class="fa-solid fa-floppy-disk"></i> Save & Recalculate Health
+                                    </button>
+                                </div>
+                                <div class="table-container scrollable-y squad-players-wrapper">
+                                    <table class="custom-table edit-table" id="squad-players-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Player Name</th>
+                                                <th>Apps</th>
+                                                <th>Goals</th>
+                                                <th>Status</th>
+                                                <th>Date Injured</th>
+                                                <th>Games Out</th>
+                                                <th>Expected Return</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="squad-players-list">
+                                            <!-- Dynamically generated fields -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TAB 3: DATA & TRAINING PIPELINE -->
+                <section id="pipeline-tab" class="tab-content">
+                    <div class="pipeline-layout">
+                        <!-- Controls panel -->
+                        <div class="panel glass-panel pipeline-controls">
+                            <div class="panel-header">
+                                <h3><i class="fa-solid fa-gears text-gold"></i> Orchestrate Pipeline</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p class="panel-description">
+                                    Trigger pipeline script subprocesses in sequence. The Flask backend will spin up background executions and capture all standard streams for real-time inspection.
+                                </p>
+                                
+                                <div class="pipeline-steps">
+                                    <!-- Step 1: Seed DB -->
+                                    <div class="pipeline-step-card">
+                                        <div class="step-meta">
+                                            <span class="step-num">Step 1</span>
+                                            <h5>Seed SQL Database</h5>
+                                            <p>Parses raw matches/squad files and populates SQLite.</p>
+                                        </div>
+                                        <div class="step-actions">
+                                            <span class="status-pill idle" id="status-populate_db.py">Idle</span>
+                                            <button class="btn btn-outline run-script-btn" data-script="populate_db.py">
+                                                <i class="fa-solid fa-play"></i> Run
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 2: Process Data -->
+                                    <div class="pipeline-step-card">
+                                        <div class="step-meta">
+                                            <span class="step-num">Step 2</span>
+                                            <h5>Process & Clean Matches</h5>
+                                            <p>Cleans, standardizes, and writes processed matches datasets.</p>
+                                        </div>
+                                        <div class="step-actions">
+                                            <span class="status-pill idle" id="status-Data_processing.py">Idle</span>
+                                            <button class="btn btn-outline run-script-btn" data-script="Data_processing.py">
+                                                <i class="fa-solid fa-play"></i> Run
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 3: Build Squad Health -->
+                                    <div class="pipeline-step-card">
+                                        <div class="step-meta">
+                                            <span class="step-num">Step 3</span>
+                                            <h5>Build Squad Health CSV</h5>
+                                            <p>Aggregates player records to form team injury indices.</p>
+                                        </div>
+                                        <div class="step-actions">
+                                            <span class="status-pill idle" id="status-build_squad_health.py">Idle</span>
+                                            <button class="btn btn-outline run-script-btn" data-script="build_squad_health.py">
+                                                <i class="fa-solid fa-play"></i> Run
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 4: Feature Engineering -->
+                                    <div class="pipeline-step-card">
+                                        <div class="step-meta">
+                                            <span class="step-num">Step 4</span>
+                                            <h5>Run Feature Engineering</h5>
+                                            <p>Calculates rolling EMAs, values, and matchup differentials.</p>
+                                        </div>
+                                        <div class="step-actions">
+                                            <span class="status-pill idle" id="status-feature_engeneering.py">Idle</span>
+                                            <button class="btn btn-outline run-script-btn" data-script="feature_engeneering.py">
+                                                <i class="fa-solid fa-play"></i> Run
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Step 5: Train Model -->
+                                    <div class="pipeline-step-card">
+                                        <div class="step-meta">
+                                            <span class="step-num">Step 5</span>
+                                            <h5>Train Prediction Model</h5>
+                                            <p>Executes Grid Search cross-validation and saves XGBoost model.</p>
+                                        </div>
+                                        <div class="step-actions">
+                                            <span class="status-pill idle" id="status-train_model.py">Idle</span>
+                                            <button class="btn btn-outline run-script-btn" data-script="train_model.py">
+                                                <i class="fa-solid fa-play"></i> Run
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Console outputs panel -->
+                        <div class="panel glass-panel pipeline-logs">
+                            <div class="panel-header flex-row flex-between">
+                                <h3><i class="fa-solid fa-terminal text-gold"></i> Live Process Console</h3>
+                                <div class="console-actions">
+                                    <span class="console-target-badge" id="console-target-name">No active process log</span>
+                                    <button class="btn btn-outline btn-xs" id="clear-console-btn">
+                                        <i class="fa-solid fa-trash-can"></i> Clear
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="panel-body console-body-wrapper">
+                                <pre class="terminal-stdout" id="terminal-stdout">System initialized. Awaiting process activation...</pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- UI Notification Panel -->
+    <div id="notification-toast" class="notification hidden">
+        <i class="fa-solid fa-circle-check info-icon text-success"></i>
+        <div class="notification-body">
+            <h5 id="notif-title">Success</h5>
+            <p id="notif-message">Roster changes successfully saved.</p>
+        </div>
+        <button id="notif-close-btn" class="notif-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <!-- Custom Frontend Logic -->
+    <script src="/static/app.js"></script>
+</body>
+</html>

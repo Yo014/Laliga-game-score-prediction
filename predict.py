@@ -247,6 +247,27 @@ def predict_match(home_team, away_team, home_rest_days, away_rest_days, b365h=2.
     print(f"\n Model Prediction: {outcomes[prediction].upper()} \n")
     print(f"==============================================\n")
 
+    return {
+        "home_team": home_team,
+        "away_team": away_team,
+        "home_expected_offense": float(home_stats[10]),
+        "away_expected_offense": float(away_stats[10]),
+        "home_squad_value": float(home_stats[15]),
+        "away_squad_value": float(away_stats[15]),
+        "home_missing_key": int(home_missing_key),
+        "home_missing_impact": float(home_missing_impact),
+        "home_missing_goals": float(home_missing_goals),
+        "away_missing_key": int(away_missing_key),
+        "away_missing_impact": float(away_missing_impact),
+        "away_missing_goals": float(away_missing_goals),
+        "probabilities": {
+            "home": float(probabilities[2]),
+            "draw": float(probabilities[1]),
+            "away": float(probabilities[0])
+        },
+        "prediction": outcomes[prediction]
+    }
+
 if __name__ == "__main__":
     # Test matchups with Betting Odds and Referees!
     # Format: home, away, home_rest, away_rest, b365h, b365d, b365a, referee

@@ -32,14 +32,33 @@ This project uses historical match data, top scorer information, top assist data
 - `feature_engeneering.py`: The feature engineering script. Queries team squads and match history directly from SQLite (with a CSV fallback), calculates EMA features, and outputs `ml_ready_data.csv`.
 - `train_model.py`: The machine learning training script. Trains an `XGBClassifier` with grid search, evaluates accuracy, and saves the model as `laliga_rf_model.pkl`. Includes feature importance visualization.
 - `predict.py`: The inference script. Queries matches from SQLite, dynamically calculates match differentials, and makes live matchup predictions.
+- `app.py`: The local Flask backend serving the dashboard API endpoints and subprocess log pipelines.
+- `templates/index.html`: The structural markup defining the dashboard layouts and terminal console screen.
+- `static/style.css`: A premium dark-mode stylesheet utilizing glassmorphic tokens, grids, custom widgets, and smooth micro-animations.
+- `static/app.js`: The frontend client state orchestrator managing asynchronous fetches, roster updates, and log polling.
 
 ## Prerequisites
 Make sure you have the following Python packages installed. (Note: `sqlite3` is built into Python's standard library and requires no extra installation).
 ```bash
-pip install pandas numpy scikit-learn joblib xgboost
+pip install pandas numpy scikit-learn joblib xgboost flask
 ```
 
 ## How to Use
+
+### Option A: Local Graphical User Interface (Recommended)
+A premium, responsive local web dashboard is available to visualize matchups, manage player injury sheets graphically, and run pipeline processes.
+
+1. **Launch the Dashboard Server**
+   ```bash
+   python app.py
+   ```
+2. **Access the App**
+   Open your browser and navigate to **[http://127.0.0.1:5000](http://127.0.0.1:5000)**.
+   - *Match Predictor:* Formulate match parameters, select referees, and review interactive win probabilities, expected offense indexes, and comparative squad values.
+   - *Squad Health:* Manage player injury directories inline without modifying CSV files manually. Recalculates metrics automatically on save.
+   - *ML Pipeline:* Run database seedings, processing steps, feature extractions, and retrain the XGBoost core with real-time log outputs printing inside a stylized dark console.
+
+### Option B: Terminal Command Line Interface (CLI)
 
 1. **Seed the SQL Database (First Time Only)**
    ```bash
