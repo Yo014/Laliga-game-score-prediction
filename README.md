@@ -53,11 +53,11 @@ A premium, responsive local web dashboard is available to visualize matchups, ma
    python app.py
    ```
 2. **Access the App**
-   Open your browser and navigate to **[http://127.0.0.1:5000](http://127.0.0.1:5000)**.
+   Open your browser and navigate to **[http://127.0.0.1:5001](http://127.0.0.1:5001)**.
    - *Match Predictor:* Formulate match parameters, select referees, and review interactive win probabilities, expected offense indexes, and comparative squad values.
    - *Squad Health:* Manage player injury directories inline without modifying CSV files manually. Recalculates metrics automatically on save.
    - *ML Pipeline:* Run database seedings, processing steps, feature extractions, and retrain the XGBoost core with real-time log outputs printing inside a stylized dark console.
-<img width="5088" height="3348" alt="image" src="https://github.com/user-attachments/assets/816d7470-6ce8-40b6-81ce-3d5fedac36c6" />
+![alt text](image.png)
 
 ### Option B: Terminal Command Line Interface (CLI)
 

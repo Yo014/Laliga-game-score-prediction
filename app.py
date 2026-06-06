@@ -327,16 +327,16 @@ if __name__ == '__main__':
     # Launch local GUI
     print("--------------------------------------------------")
     print("La Liga Prediction GUI Dashboard Local Web Server")
-    print("Address: http://127.0.0.1:5000")
+    print("Address: http://127.0.0.1:5001")
     print("Press Ctrl+C to terminate the local server.")
     print("--------------------------------------------------")
     
     # Optional auto-browser launch (standard utility)
     import webbrowser
     def open_browser():
-        webbrowser.open_new('http://127.0.0.1:5000/')
+        webbrowser.open_new('http://127.0.0.1:5001/')
         
     threading.Timer(1.5, open_browser).start()
     
     # Run server
-    app.run(host='127.0.0.1', port=5000, debug=False)
+    app.run(host='127.0.0.1', port=5001, debug=False)

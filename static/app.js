@@ -9,11 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
         activeSquadTeam: null,
         activeSquadPlayers: [],
         runningScripts: {},
-        logPollingIntervals: {}
+        logPollingIntervals: {},
+        priceChartInstance: null
     };
 
     // DOM Elements
-    const navItems = document.querySelectorAll('.nav-item');
+    const navItems = document.querySelectorAll('.nav-item, .top-nav-item, [data-tab]');
     const tabContents = document.querySelectorAll('.tab-content');
     const pageTitle = document.getElementById('page-title');
     const pageSubtitle = document.getElementById('page-subtitle');
@@ -29,14 +30,37 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const predictionResultContainer = document.getElementById('prediction-result-container');
     const modelAccuracyBadge = document.getElementById('model-accuracy-badge');
+
+    // Polymarket Outcome Buttons
+    const btnHomeOutcome = document.querySelector('.outcome-button.home-win-btn');
+    const btnDrawOutcome = document.querySelector('.outcome-button.draw-btn');
+    const btnAwayOutcome = document.querySelector('.outcome-button.away-win-btn');
     
     // Tab switching logic
     navItems.forEach(item => {
         item.addEventListener('click', () => {
             const targetTab = item.getAttribute('data-tab');
-            switchTab(targetTab);
+            if (targetTab) {
+                switchTab(targetTab);
+            }
         });
     });
+
+    // Market Question Dynamic Update
+    if (homeTeamSelect && awayTeamSelect) {
+        homeTeamSelect.addEventListener('change', updateMarketQuestion);
+        awayTeamSelect.addEventListener('change', updateMarketQuestion);
+    }
+
+    function updateMarketQuestion() {
+        const homeTeam = (homeTeamSelect && homeTeamSelect.value) ? homeTeamSelect.options[homeTeamSelect.selectedIndex]?.text : "[Home Team]";
+        const awayTeam = (awayTeamSelect && awayTeamSelect.value) ? awayTeamSelect.options[awayTeamSelect.selectedIndex]?.text : "[Away Team]";
+        
+        const questionHome = document.getElementById('question-home-team');
+        const questionAway = document.getElementById('question-away-team');
+        if (questionHome) questionHome.innerText = homeTeam;
+        if (questionAway) questionAway.innerText = awayTeam;
+    }
 
     function switchTab(tabId) {
         state.activeTab = tabId;
@@ -59,27 +83,56 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Update headers dynamically
-        if (tabId === 'predictor-tab') {
-            pageTitle.innerText = "Match Predictor";
-            pageSubtitle.innerText = "Formulate matchups and simulate outcomes using local historical features and real-time squad health metrics.";
-        } else if (tabId === 'squad-tab') {
-            pageTitle.innerText = "Squad Health & Injury Manager";
-            pageSubtitle.innerText = "Monitor player availability, manage active injuries, and see direct impacts on team competitiveness.";
+        // Update headers dynamically (safe check for missing headers in reskinned designs)
+        if (pageTitle) {
+            if (tabId === 'predictor-tab') pageTitle.innerText = "Match Predictor";
+            else if (tabId === 'squad-tab') pageTitle.innerText = "Squad Health & Injury Manager";
+            else if (tabId === 'pipeline-tab') pageTitle.innerText = "Data & Machine Learning Pipeline";
+        }
+        if (pageSubtitle) {
+            if (tabId === 'predictor-tab') pageSubtitle.innerText = "Formulate matchups and simulate outcomes using local historical features and real-time squad health metrics.";
+            else if (tabId === 'squad-tab') pageSubtitle.innerText = "Monitor player availability, manage active injuries, and see direct impacts on team competitiveness.";
+            else if (tabId === 'pipeline-tab') pageSubtitle.innerText = "Seed datasets, run advanced feature extraction, and retrain the prediction neural core.";
+        }
+        
+        if (tabId === 'squad-tab') {
             loadTeamsData(); // Refresh teams list
-        } else if (tabId === 'pipeline-tab') {
-            pageTitle.innerText = "Data & Machine Learning Pipeline";
-            pageSubtitle.innerText = "Seed datasets, run advanced feature extraction, and retrain the prediction neural core.";
         }
     }
 
     // Sync Slider values in GUI
-    homeRestDays.addEventListener('input', (e) => {
-        homeRestVal.innerText = e.target.value;
-    });
-    awayRestDays.addEventListener('input', (e) => {
-        awayRestVal.innerText = e.target.value;
-    });
+    if (homeRestDays && homeRestVal) {
+        homeRestDays.addEventListener('input', (e) => {
+            homeRestVal.innerText = e.target.value;
+        });
+    }
+    if (awayRestDays && awayRestVal) {
+        awayRestDays.addEventListener('input', (e) => {
+            awayRestVal.innerText = e.target.value;
+        });
+    }
+
+    // Sync Question and Outcome Buttons on Team Select change
+    const questionHome = document.getElementById('question-home-team');
+    const questionAway = document.getElementById('question-away-team');
+    const outcomeHomeLabel = document.getElementById('outcome-home-label');
+    const outcomeAwayLabel = document.getElementById('outcome-away-label');
+
+    if (homeTeamSelect) {
+        homeTeamSelect.addEventListener('change', () => {
+            const name = homeTeamSelect.value || '[Home Team]';
+            if (questionHome) questionHome.innerText = name;
+            if (outcomeHomeLabel) outcomeHomeLabel.innerText = `${name} Win`;
+        });
+    }
+
+    if (awayTeamSelect) {
+        awayTeamSelect.addEventListener('change', () => {
+            const name = awayTeamSelect.value || '[Away Team]';
+            if (questionAway) questionAway.innerText = name;
+            if (outcomeAwayLabel) outcomeAwayLabel.innerText = `${name} Win`;
+        });
+    }
 
     // Initialize App Data
     async function initializeApp() {
@@ -94,6 +147,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // 3. Fetch Model Accuracy Status
             await loadModelStatus();
+            
+            // 4. Render Initial Flat Price Chart
+            renderInitialChart();
             
         } catch (err) {
             console.error("Initialization failed:", err);
@@ -110,30 +166,37 @@ document.addEventListener('DOMContentLoaded', () => {
                 state.teams = data.teams;
                 
                 // Clear and rebuild selects
-                const homeVal = homeTeamSelect.value;
-                const awayVal = awayTeamSelect.value;
+                const homeVal = homeTeamSelect ? homeTeamSelect.value : '';
+                const awayVal = awayTeamSelect ? awayTeamSelect.value : '';
                 
-                homeTeamSelect.innerHTML = '<option value="" disabled selected>Select Home Team</option>';
-                awayTeamSelect.innerHTML = '<option value="" disabled selected>Select Away Team</option>';
+                if (homeTeamSelect) homeTeamSelect.innerHTML = '<option value="" disabled selected>Select Home Team</option>';
+                if (awayTeamSelect) awayTeamSelect.innerHTML = '<option value="" disabled selected>Select Away Team</option>';
                 
                 // Sort teams alphabetically
                 const sortedTeams = [...state.teams].sort((a, b) => a.Team.localeCompare(b.Team));
                 
                 sortedTeams.forEach(t => {
-                    const optH = document.createElement('option');
-                    optH.value = t.Team;
-                    optH.innerText = t.Team;
-                    homeTeamSelect.appendChild(optH);
+                    if (homeTeamSelect) {
+                        const optH = document.createElement('option');
+                        optH.value = t.Team;
+                        optH.innerText = t.Team;
+                        homeTeamSelect.appendChild(optH);
+                    }
 
-                    const optA = document.createElement('option');
-                    optA.value = t.Team;
-                    optA.innerText = t.Team;
-                    awayTeamSelect.appendChild(optA);
+                    if (awayTeamSelect) {
+                        const optA = document.createElement('option');
+                        optA.value = t.Team;
+                        optA.innerText = t.Team;
+                        awayTeamSelect.appendChild(optA);
+                    }
                 });
                 
                 // Restore values if still available
-                if (homeVal) homeTeamSelect.value = homeVal;
-                if (awayVal) awayTeamSelect.value = awayVal;
+                if (homeTeamSelect && homeVal) homeTeamSelect.value = homeVal;
+                if (awayTeamSelect && awayVal) awayTeamSelect.value = awayVal;
+
+                // Dynamically update the market question text
+                updateMarketQuestion();
 
                 // Populate Squad Health list overview
                 populateTeamHealthTable(sortedTeams);
@@ -150,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const res = await fetch('/api/referees');
             const data = await res.json();
             
-            if (data.success) {
+            if (data.success && refereeSelect) {
                 state.referees = data.referees;
                 refereeSelect.innerHTML = '<option value="Unknown" selected>Select Referee (Optional)</option>';
                 
@@ -174,17 +237,21 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = await res.json();
             
             if (data.success) {
-                const statValDiv = modelAccuracyBadge.closest('.quick-stat');
+                const statValDiv = modelAccuracyBadge ? modelAccuracyBadge.closest('.quick-stat') : null;
                 if (data.trained && data.accuracy > 0) {
                     const accVal = (data.accuracy * 100).toFixed(1);
-                    modelAccuracyBadge.innerText = `${accVal}%`;
-                    modelAccuracyBadge.style.color = "var(--color-gold)";
+                    if (modelAccuracyBadge) {
+                        modelAccuracyBadge.innerText = `${accVal}%`;
+                        modelAccuracyBadge.style.color = "var(--color-gold)";
+                    }
                     if (statValDiv) {
                         statValDiv.setAttribute('title', `Prediction model trained with evaluated accuracy of ${accVal}%.`);
                     }
                 } else {
-                    modelAccuracyBadge.innerText = "0.0%";
-                    modelAccuracyBadge.style.color = "var(--accent-danger)";
+                    if (modelAccuracyBadge) {
+                        modelAccuracyBadge.innerText = "0.0%";
+                        modelAccuracyBadge.style.color = "var(--accent-danger)";
+                    }
                     if (statValDiv) {
                         statValDiv.setAttribute('title', "Model accuracy not calculated yet. Run the Machine Learning Pipeline (Step 5) to retrain the core and compute model accuracy!");
                     }
@@ -201,13 +268,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         } catch (err) {
             console.error("Could not fetch model status:", err);
-            modelAccuracyBadge.innerText = "Error";
+            if (modelAccuracyBadge) modelAccuracyBadge.innerText = "Error";
         }
     }
 
     // Populate the list of teams on the Roster tab
     function populateTeamHealthTable(teams) {
         const tbody = document.getElementById('team-health-list');
+        if (!tbody) return;
         tbody.innerHTML = '';
 
         teams.forEach(t => {
@@ -255,13 +323,16 @@ document.addEventListener('DOMContentLoaded', () => {
         state.activeSquadTeam = teamName;
         
         // Hide placeholder, show loader/content
-        document.getElementById('squad-editor-placeholder').classList.add('hidden');
+        const placeholder = document.getElementById('squad-editor-placeholder');
+        if (placeholder) placeholder.classList.add('hidden');
         const contentDiv = document.getElementById('squad-editor-content');
-        contentDiv.classList.remove('hidden');
+        if (contentDiv) contentDiv.classList.remove('hidden');
         
-        document.getElementById('active-squad-name').innerHTML = `Managing <strong>${teamName}</strong> player profiles`;
+        const squadNameEl = document.getElementById('active-squad-name');
+        if (squadNameEl) squadNameEl.innerHTML = `Managing <strong>${teamName}</strong> player profiles`;
         
         const listBody = document.getElementById('squad-players-list');
+        if (!listBody) return;
         listBody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align: center; padding: 40px;"><i class="fa-solid fa-spinner fa-spin"></i> Retrieving player details...</td></tr>';
         
         try {
@@ -270,7 +341,8 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (data.success) {
                 state.activeSquadPlayers = data.players;
-                document.getElementById('player-count').innerText = `${data.players.length} Players Listed`;
+                const playerCountEl = document.getElementById('player-count');
+                if (playerCountEl) playerCountEl.innerText = `${data.players.length} Players Listed`;
                 
                 listBody.innerHTML = '';
                 
@@ -306,24 +378,26 @@ document.addEventListener('DOMContentLoaded', () => {
                     const gamesOutInput = tr.querySelector('.player-games-out');
                     const expRetInput = tr.querySelector('.player-expected-return');
                     
-                    toggleInput.addEventListener('change', (e) => {
-                        const checked = e.target.checked;
-                        dayInjInput.disabled = !checked;
-                        gamesOutInput.disabled = !checked;
-                        expRetInput.disabled = !checked;
-                        
-                        if (checked) {
-                            // Populate logical defaults
-                            const todayStr = getTodayFormattedString();
-                            dayInjInput.value = todayStr;
-                            gamesOutInput.value = 1;
-                            expRetInput.value = "Unknown";
-                        } else {
-                            dayInjInput.value = '';
-                            gamesOutInput.value = 0;
-                            expRetInput.value = '';
-                        }
-                    });
+                    if (toggleInput) {
+                        toggleInput.addEventListener('change', (e) => {
+                            const checked = e.target.checked;
+                            if (dayInjInput) dayInjInput.disabled = !checked;
+                            if (gamesOutInput) gamesOutInput.disabled = !checked;
+                            if (expRetInput) expRetInput.disabled = !checked;
+                            
+                            if (checked) {
+                                // Populate logical defaults
+                                const todayStr = getTodayFormattedString();
+                                if (dayInjInput) dayInjInput.value = todayStr;
+                                if (gamesOutInput) gamesOutInput.value = 1;
+                                if (expRetInput) expRetInput.value = "Unknown";
+                            } else {
+                                if (dayInjInput) dayInjInput.value = '';
+                                if (gamesOutInput) gamesOutInput.value = 0;
+                                if (expRetInput) expRetInput.value = '';
+                            }
+                        });
+                    }
                     
                     listBody.appendChild(tr);
                 });
@@ -337,61 +411,68 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Save squad edits
-    document.getElementById('save-squad-btn').addEventListener('click', async () => {
-        if (!state.activeSquadTeam) return;
-        
-        const saveBtn = document.getElementById('save-squad-btn');
-        const origHtml = saveBtn.innerHTML;
-        saveBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Saving changes...';
-        saveBtn.disabled = true;
-        
-        const updatedPlayers = [];
-        
-        // Read input rows
-        const toggles = document.querySelectorAll('.injury-toggle');
-        toggles.forEach(tog => {
-            const playerName = tog.dataset.player;
-            const parentRow = tog.closest('tr');
+    const saveSquadBtn = document.getElementById('save-squad-btn');
+    if (saveSquadBtn) {
+        saveSquadBtn.addEventListener('click', async () => {
+            if (!state.activeSquadTeam) return;
             
-            const isInjured = tog.checked ? 1 : 0;
-            const dayInjured = parentRow.querySelector('.player-day-injured').value.trim();
-            const gamesOut = parseInt(parentRow.querySelector('.player-games-out').value) || 0;
-            const expectedReturn = parentRow.querySelector('.player-expected-return').value.trim();
+            const origHtml = saveSquadBtn.innerHTML;
+            saveSquadBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Saving changes...';
+            saveSquadBtn.disabled = true;
             
-            updatedPlayers.push({
-                Player: playerName,
-                Injuries: isInjured,
-                "Day Injured": dayInjured,
-                "Missed Games": gamesOut,
-                "Expected Return": expectedReturn
+            const updatedPlayers = [];
+            
+            // Read input rows
+            const toggles = document.querySelectorAll('.injury-toggle');
+            toggles.forEach(tog => {
+                const playerName = tog.dataset.player;
+                const parentRow = tog.closest('tr');
+                if (parentRow) {
+                    const isInjured = tog.checked ? 1 : 0;
+                    const dayInjuredInput = parentRow.querySelector('.player-day-injured');
+                    const gamesOutInput = parentRow.querySelector('.player-games-out');
+                    const expectedReturnInput = parentRow.querySelector('.player-expected-return');
+                    
+                    const dayInjured = dayInjuredInput ? dayInjuredInput.value.trim() : '';
+                    const gamesOut = gamesOutInput ? (parseInt(gamesOutInput.value) || 0) : 0;
+                    const expectedReturn = expectedReturnInput ? expectedReturnInput.value.trim() : '';
+                    
+                    updatedPlayers.push({
+                        Player: playerName,
+                        Injuries: isInjured,
+                        "Day Injured": dayInjured,
+                        "Missed Games": gamesOut,
+                        "Expected Return": expectedReturn
+                    });
+                }
             });
-        });
-        
-        try {
-            const res = await fetch(`/api/squad/${state.activeSquadTeam}/update`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ players: updatedPlayers })
-            });
             
-            const data = await res.json();
-            
-            if (data.success) {
-                showNotification("Success", `Roster changes saved for ${state.activeSquadTeam}. Squad health recalculated.`, "success");
-                // Reload data
-                await loadTeamsData();
-                await loadTeamRoster(state.activeSquadTeam);
-            } else {
-                showNotification("Update Failed", data.error, "danger");
+            try {
+                const res = await fetch(`/api/squad/${state.activeSquadTeam}/update`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ players: updatedPlayers })
+                });
+                
+                const data = await res.json();
+                
+                if (data.success) {
+                    showNotification("Success", `Roster changes saved for ${state.activeSquadTeam}. Squad health recalculated.`, "success");
+                    // Reload data
+                    await loadTeamsData();
+                    await loadTeamRoster(state.activeSquadTeam);
+                } else {
+                    showNotification("Update Failed", data.error, "danger");
+                }
+            } catch (err) {
+                console.error(err);
+                showNotification("Connection Failure", "Could not send edits to server.", "danger");
+            } finally {
+                saveSquadBtn.innerHTML = origHtml;
+                saveSquadBtn.disabled = false;
             }
-        } catch (err) {
-            console.error(err);
-            showNotification("Connection Failure", "Could not send edits to server.", "danger");
-        } finally {
-            saveBtn.innerHTML = origHtml;
-            saveBtn.disabled = false;
-        }
-    });
+        });
+    }
 
     // Helper: returns DD/MM/YYYY string for today
     function getTodayFormattedString() {
@@ -407,66 +488,206 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Prediction Form Submission Handler
-    predictionForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        
-        const predictBtn = document.getElementById('predict-btn');
-        const origHtml = predictBtn.innerHTML;
-        predictBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Analyzing Matchup...';
-        predictBtn.disabled = true;
-
-        const payload = {
-            home_team: homeTeamSelect.value,
-            away_team: awayTeamSelect.value,
-            home_rest_days: parseInt(homeRestDays.value),
-            away_rest_days: parseInt(awayRestDays.value),
-            b365h: parseFloat(document.getElementById('b365h').value),
-            b365d: parseFloat(document.getElementById('b365d').value),
-            b365a: parseFloat(document.getElementById('b365a').value),
-            referee: refereeSelect.value
-        };
-
-        try {
-            const res = await fetch('/api/predict', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(payload)
-            });
+    if (predictionForm) {
+        predictionForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
             
-            const data = await res.json();
-            
-            if (data.success) {
-                renderPredictionResults(data.data);
-            } else {
-                showNotification("Prediction Error", data.error, "danger");
+            const predictBtn = document.getElementById('predict-btn');
+            const origHtml = predictBtn ? predictBtn.innerHTML : '';
+            if (predictBtn) {
+                predictBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Analyzing Matchup...';
+                predictBtn.disabled = true;
             }
-        } catch (err) {
-            console.error(err);
-            showNotification("Inference Failed", "Model calculation timed out or crashed.", "danger");
-        } finally {
-            predictBtn.innerHTML = origHtml;
-            predictBtn.disabled = false;
-        }
-    });
 
-    // Display prediction outcome values on screen
+            const payload = {
+                home_team: homeTeamSelect ? homeTeamSelect.value : '',
+                away_team: awayTeamSelect ? awayTeamSelect.value : '',
+                home_rest_days: homeRestDays ? parseInt(homeRestDays.value) : 6,
+                away_rest_days: awayRestDays ? parseInt(awayRestDays.value) : 6,
+                b365h: document.getElementById('b365h') ? parseFloat(document.getElementById('b365h').value) : 2.10,
+                b365d: document.getElementById('b365d') ? parseFloat(document.getElementById('b365d').value) : 3.40,
+                b365a: document.getElementById('b365a') ? parseFloat(document.getElementById('b365a').value) : 3.20,
+                referee: refereeSelect ? refereeSelect.value : 'Unknown'
+            };
+
+            try {
+                const res = await fetch('/api/predict', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                
+                const data = await res.json();
+                
+                if (data.success) {
+                    renderPredictionResults(data.data);
+                } else {
+                    showNotification("Prediction Error", data.error, "danger");
+                }
+            } catch (err) {
+                console.error(err);
+                showNotification("Inference Failed", "Model calculation timed out or crashed.", "danger");
+            } finally {
+                if (predictBtn) {
+                    predictBtn.innerHTML = origHtml;
+                    predictBtn.disabled = false;
+                }
+            }
+        });
+    }
+
+    // Custom Canvas Drawing Helper for Polymarket-style Price Chart
+    function drawPriceChartCanvas(finalProbability, outcomeName, isInitial = false) {
+        const canvas = document.getElementById('price-chart');
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+
+        // Determine colors based on outcomeName
+        let strokeColor = '#10B981'; // Green for Home Win
+        let fillColorStart = 'rgba(16, 185, 129, 0.2)';
+        let fillColorEnd = 'rgba(16, 185, 129, 0.0)';
+
+        if (outcomeName === "Away Win") {
+            strokeColor = '#6366F1'; // Indigo/Blue for Away Win
+            fillColorStart = 'rgba(99, 102, 241, 0.2)';
+        } else if (outcomeName === "Draw") {
+            strokeColor = '#F59E0B'; // Gold/Yellow for Draw
+            fillColorStart = 'rgba(245, 158, 11, 0.2)';
+        }
+
+        if (isInitial) {
+            strokeColor = 'rgba(148, 163, 184, 0.4)'; // Gray for initial
+            fillColorStart = 'rgba(148, 163, 184, 0.05)';
+        }
+
+        // Handle high DPI screens
+        const dpr = window.devicePixelRatio || 1;
+        const rect = canvas.getBoundingClientRect();
+        const width = rect.width || canvas.width || 600;
+        const height = rect.height || canvas.height || 200;
+
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+        ctx.scale(dpr, dpr);
+
+        ctx.clearRect(0, 0, width, height);
+
+        // Generate points (random walk)
+        const N = 50; // number of steps
+        const points = [];
+        
+        if (isInitial) {
+            // Flat line at 33% or 50%
+            const val = 0.33;
+            for (let i = 0; i <= N; i++) {
+                points.push(val);
+            }
+        } else {
+            // Generate a random walk ending at finalProbability
+            const startVal = 0.5 + (Math.random() - 0.5) * 0.2;
+            for (let i = 0; i <= N; i++) {
+                const t = i / N;
+                // Convergence towards final probability + random noise that decays to 0
+                const noise = (1 - t) * (Math.random() - 0.5) * 0.15;
+                let val = startVal + t * (finalProbability - startVal) + noise;
+                // Clamp values to stay visible on chart
+                val = Math.max(0.05, Math.min(0.95, val));
+                points.push(val);
+            }
+            // Ensure the last point is exactly the final probability
+            points[N] = finalProbability;
+        }
+
+        // Coordinates mapping
+        const xStep = width / N;
+        const getX = (i) => i * xStep;
+        // 1.0 probability is at the top (y=15), 0.0 is near the bottom (y=height-15)
+        const padding = 15;
+        const getY = (val) => padding + (1 - val) * (height - 2 * padding);
+
+        // Draw gradient area under the line
+        ctx.beginPath();
+        ctx.moveTo(getX(0), height);
+        for (let i = 0; i <= N; i++) {
+            ctx.lineTo(getX(i), getY(points[i]));
+        }
+        ctx.lineTo(getX(N), height);
+        ctx.closePath();
+
+        const gradient = ctx.createLinearGradient(0, 0, 0, height);
+        gradient.addColorStop(0, fillColorStart);
+        gradient.addColorStop(1, fillColorEnd);
+        ctx.fillStyle = gradient;
+        ctx.fill();
+
+        // Draw smooth line
+        ctx.beginPath();
+        ctx.moveTo(getX(0), getY(points[0]));
+        for (let i = 1; i <= N; i++) {
+            ctx.lineTo(getX(i), getY(points[i]));
+        }
+        ctx.strokeStyle = strokeColor;
+        ctx.lineWidth = 3;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.stroke();
+
+        // Draw final dot
+        if (!isInitial) {
+            const lastX = getX(N);
+            const lastY = getY(points[N]);
+
+            // Outer glow
+            ctx.beginPath();
+            ctx.arc(lastX, lastY, 6, 0, 2 * Math.PI);
+            ctx.fillStyle = strokeColor;
+            ctx.shadowBlur = 8;
+            ctx.shadowColor = strokeColor;
+            ctx.fill();
+
+            // Reset shadow
+            ctx.shadowBlur = 0;
+
+            // Inner white dot
+            ctx.beginPath();
+            ctx.arc(lastX, lastY, 2, 0, 2 * Math.PI);
+            ctx.fillStyle = '#FFFFFF';
+            ctx.fill();
+
+            // Draw current probability label (e.g. "65%") near the final dot
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = 'bold 12px JetBrains Mono, monospace';
+            ctx.textAlign = 'right';
+            ctx.fillText(`${(finalProbability * 100).toFixed(0)}%`, lastX - 10, lastY - 5);
+        }
+    }
+
+    // Display prediction outcome values on screen and render Polymarket price chart
     function renderPredictionResults(res) {
         // Hide placeholder, show actual results panel
-        predictionResultContainer.querySelector('.result-placeholder').classList.add('hidden');
-        const actualContainer = predictionResultContainer.querySelector('.actual-results');
-        actualContainer.classList.remove('hidden');
+        if (predictionResultContainer) {
+            const placeholder = predictionResultContainer.querySelector('.result-placeholder');
+            if (placeholder) placeholder.classList.add('hidden');
+            
+            const actualContainer = predictionResultContainer.querySelector('.actual-results');
+            if (actualContainer) actualContainer.classList.remove('hidden');
+        }
 
         // Set outcome title
         const outcomeBadge = document.getElementById('res-prediction-outcome');
-        outcomeBadge.innerText = res.prediction.toUpperCase();
-        
-        // Color code outcome badge background
-        if (res.prediction === "Home Win") {
-            outcomeBadge.style.color = "var(--color-home-win)";
-        } else if (res.prediction === "Away Win") {
-            outcomeBadge.style.color = "var(--color-away-win)";
-        } else {
-            outcomeBadge.style.color = "var(--color-draw)";
+        if (outcomeBadge) {
+            outcomeBadge.innerText = res.prediction.toUpperCase();
+            
+            // Color code outcome badge background
+            if (res.prediction === "Home Win") {
+                outcomeBadge.style.color = "var(--color-home-win)";
+            } else if (res.prediction === "Away Win") {
+                outcomeBadge.style.color = "var(--color-away-win)";
+            } else {
+                outcomeBadge.style.color = "var(--color-draw)";
+            }
         }
 
         // Set probability bar widths and texts
@@ -479,38 +700,129 @@ document.addEventListener('DOMContentLoaded', () => {
         const awayBar = document.getElementById('prob-away-bar');
 
         // Apply width and text content
-        homeBar.style.width = `${homePct}%`;
-        document.getElementById('prob-home-val').innerText = `${homePct}%`;
+        if (homeBar) homeBar.style.width = `${homePct}%`;
+        const probHomeVal = document.getElementById('prob-home-val');
+        if (probHomeVal) probHomeVal.innerText = `${homePct}%`;
         
-        drawBar.style.width = `${drawPct}%`;
-        document.getElementById('prob-draw-val').innerText = `${drawPct}%`;
+        if (drawBar) drawBar.style.width = `${drawPct}%`;
+        const probDrawVal = document.getElementById('prob-draw-val');
+        if (probDrawVal) probDrawVal.innerText = `${drawPct}%`;
         
-        awayBar.style.width = `${awayPct}%`;
-        document.getElementById('prob-away-val').innerText = `${awayPct}%`;
+        if (awayBar) awayBar.style.width = `${awayPct}%`;
+        const probAwayVal = document.getElementById('prob-away-val');
+        if (probAwayVal) probAwayVal.innerText = `${awayPct}%`;
+
+        // Update Polymarket outcome button labels and percentages
+        const outcomeHomeLabel = document.getElementById('outcome-home-label');
+        const outcomeAwayLabel = document.getElementById('outcome-away-label');
+        if (outcomeHomeLabel) outcomeHomeLabel.innerText = `${res.home_team} Win`;
+        if (outcomeAwayLabel) outcomeAwayLabel.innerText = `${res.away_team} Win`;
+        
+        const btnHomeProb = document.getElementById('prob-home-val-btn');
+        const btnDrawProb = document.getElementById('prob-draw-val-btn');
+        const btnAwayProb = document.getElementById('prob-away-val-btn');
+        if (btnHomeProb) btnHomeProb.innerText = `${homePct}%`;
+        if (btnDrawProb) btnDrawProb.innerText = `${drawPct}%`;
+        if (btnAwayProb) btnAwayProb.innerText = `${awayPct}%`;
+
+        // Highlight the predicted outcome button (active states/highlight colors)
+        [btnHomeOutcome, btnDrawOutcome, btnAwayOutcome].forEach(btn => {
+            if (btn) {
+                btn.classList.remove('active');
+                btn.style.backgroundColor = '';
+                btn.style.borderColor = '';
+            }
+        });
+
+        if (res.prediction === "Home Win" && btnHomeOutcome) {
+            btnHomeOutcome.classList.add('active');
+            btnHomeOutcome.style.backgroundColor = 'rgba(16, 185, 129, 0.1)';
+            btnHomeOutcome.style.borderColor = 'var(--color-home-win)';
+        } else if (res.prediction === "Away Win" && btnAwayOutcome) {
+            btnAwayOutcome.classList.add('active');
+            btnAwayOutcome.style.backgroundColor = 'rgba(99, 102, 241, 0.1)';
+            btnAwayOutcome.style.borderColor = 'var(--color-away-win)';
+        } else if (res.prediction === "Draw" && btnDrawOutcome) {
+            btnDrawOutcome.classList.add('active');
+            btnDrawOutcome.style.backgroundColor = 'rgba(245, 158, 11, 0.1)';
+            btnDrawOutcome.style.borderColor = 'var(--color-draw)';
+        }
+
+        // Sync market question banner text
+        const questionHome = document.getElementById('question-home-team');
+        const questionAway = document.getElementById('question-away-team');
+        if (questionHome) questionHome.innerText = res.home_team;
+        if (questionAway) questionAway.innerText = res.away_team;
+
+        // Render the Polymarket interactive line chart
+        renderChart(res.probabilities.home, res.probabilities.draw, res.probabilities.away, res.home_team, res.away_team);
 
         // Set Metric values
-        document.getElementById('metric-home-value').innerText = `€${(res.home_squad_value / 1e6).toFixed(1)}M`;
-        document.getElementById('metric-away-value').innerText = `€${(res.away_squad_value / 1e6).toFixed(1)}M`;
+        const metricHomeVal = document.getElementById('metric-home-value');
+        if (metricHomeVal) metricHomeVal.innerText = `€${(res.home_squad_value / 1e6).toFixed(1)}M`;
+        const metricAwayVal = document.getElementById('metric-away-value');
+        if (metricAwayVal) metricAwayVal.innerText = `€${(res.away_squad_value / 1e6).toFixed(1)}M`;
 
-        document.getElementById('metric-home-offense').innerText = res.home_expected_offense.toFixed(2);
-        document.getElementById('metric-away-offense').innerText = res.away_expected_offense.toFixed(2);
+        const metricHomeOffense = document.getElementById('metric-home-offense');
+        if (metricHomeOffense) metricHomeOffense.innerText = res.home_expected_offense.toFixed(2);
+        const metricAwayOffense = document.getElementById('metric-away-offense');
+        if (metricAwayOffense) metricAwayOffense.innerText = res.away_expected_offense.toFixed(2);
 
         // Sidelined Player health summary details
-        document.getElementById('home-team-name-badge').innerText = res.home_team;
-        document.getElementById('home-health-info').innerHTML = `
-            Missing <strong class="text-gold">${res.home_missing_key}</strong> key players 
-            (<span class="text-danger">${res.home_missing_impact.toFixed(1)}%</span> playing impact, 
-            <span class="text-danger">${res.home_missing_goals.toFixed(1)}%</span> goals)
-        `;
+        const homeTeamNameBadge = document.getElementById('home-team-name-badge');
+        if (homeTeamNameBadge) homeTeamNameBadge.innerText = res.home_team;
 
-        document.getElementById('away-team-name-badge').innerText = res.away_team;
-        document.getElementById('away-health-info').innerHTML = `
-            Missing <strong class="text-gold">${res.away_missing_key}</strong> key players 
-            (<span class="text-danger">${res.away_missing_impact.toFixed(1)}%</span> playing impact, 
-            <span class="text-danger">${res.away_missing_goals.toFixed(1)}%</span> goals)
-        `;
+        const homeHealthInfo = document.getElementById('home-health-info');
+        if (homeHealthInfo) {
+            homeHealthInfo.innerHTML = `
+                <div class="health-stack">
+                    <span class="health-count">${res.home_missing_key}</span>
+                    <span class="health-label">key players missing</span>
+                    <div class="health-sub">
+                        <span class="text-danger">${res.home_missing_impact.toFixed(1)}%</span> playing impact · <span class="text-danger">${res.home_missing_goals.toFixed(1)}%</span> goals
+                    </div>
+                </div>
+            `;
+        }
+
+        const awayTeamNameBadge = document.getElementById('away-team-name-badge');
+        if (awayTeamNameBadge) awayTeamNameBadge.innerText = res.away_team;
+
+        const awayHealthInfo = document.getElementById('away-health-info');
+        if (awayHealthInfo) {
+            awayHealthInfo.innerHTML = `
+                <div class="health-stack">
+                    <span class="health-count">${res.away_missing_key}</span>
+                    <span class="health-label">key players missing</span>
+                    <div class="health-sub">
+                        <span class="text-danger">${res.away_missing_impact.toFixed(1)}%</span> playing impact · <span class="text-danger">${res.away_missing_goals.toFixed(1)}%</span> goals
+                    </div>
+                </div>
+            `;
+        }
 
         showNotification("Match Analyzed", `Prediction compiled successfully for ${res.home_team} vs ${res.away_team}.`, "success");
+    }
+
+    // Chart.js rendering helpers for Polymarket interactive feel
+    function renderInitialChart() {
+        drawPriceChartCanvas(0.33, 'Initial', true);
+    }
+
+    function renderChart(homeProb, drawProb, awayProb, homeTeam, awayTeam) {
+        // Find the outcome with the highest probability
+        let finalProb = homeProb;
+        let outcomeName = "Home Win";
+        
+        if (awayProb > homeProb && awayProb > drawProb) {
+            finalProb = awayProb;
+            outcomeName = "Away Win";
+        } else if (drawProb > homeProb && drawProb > awayProb) {
+            finalProb = drawProb;
+            outcomeName = "Draw";
+        }
+        
+        drawPriceChartCanvas(finalProb, outcomeName, false);
     }
 
     // RUN SCRIPTS ORCHESTRATION PIPELINE
@@ -528,11 +840,13 @@ document.addEventListener('DOMContentLoaded', () => {
     async function executePipelineScript(scriptName) {
         // Toggle UI button
         const pill = document.getElementById(`status-${scriptName}`);
-        pill.innerText = "Running";
-        pill.className = "status-pill running";
+        if (pill) {
+            pill.innerText = "Running";
+            pill.className = "status-pill running";
+        }
         
-        terminalStdout.innerText = `[Engine] Launching subprocess: ${scriptName}...\n`;
-        consoleTargetName.innerText = scriptName;
+        if (terminalStdout) terminalStdout.innerText = `[Engine] Launching subprocess: ${scriptName}...\n`;
+        if (consoleTargetName) consoleTargetName.innerText = scriptName;
 
         try {
             const res = await fetch('/api/run-script', {
@@ -548,16 +862,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Start polling logs
                 startLogPolling(scriptName);
             } else {
-                pill.innerText = "Failed";
-                pill.className = "status-pill failed";
-                terminalStdout.innerText += `[Engine Error] Failed to launch: ${data.error}\n`;
+                if (pill) {
+                    pill.innerText = "Failed";
+                    pill.className = "status-pill failed";
+                }
+                if (terminalStdout) terminalStdout.innerText += `[Engine Error] Failed to launch: ${data.error}\n`;
                 showNotification("Launch Failed", data.error, "danger");
             }
         } catch (err) {
             console.error(err);
-            pill.innerText = "Failed";
-            pill.className = "status-pill failed";
-            terminalStdout.innerText += `[Engine Error] Connection crashed while executing script.\n`;
+            if (pill) {
+                pill.innerText = "Failed";
+                pill.className = "status-pill failed";
+            }
+            if (terminalStdout) terminalStdout.innerText += `[Engine Error] Connection crashed while executing script.\n`;
         }
     }
 
@@ -574,18 +892,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 if (data.success) {
                     // Update Terminal output
-                    if (consoleTargetName.innerText === scriptName) {
-                        terminalStdout.innerText = data.logs || "Awaiting logs...";
-                        // Auto scroll console
-                        const consoleWrapper = terminalStdout.closest('.console-body-wrapper');
-                        consoleWrapper.scrollTop = consoleWrapper.scrollHeight;
+                    if (consoleTargetName && consoleTargetName.innerText === scriptName) {
+                        if (terminalStdout) {
+                            terminalStdout.innerText = data.logs || "Awaiting logs...";
+                            // Auto scroll console
+                            const consoleWrapper = terminalStdout.closest('.console-body-wrapper');
+                            if (consoleWrapper) consoleWrapper.scrollTop = consoleWrapper.scrollHeight;
+                        }
                     }
 
                     // Check if complete
                     const pill = document.getElementById(`status-${scriptName}`);
                     if (data.status === 'completed') {
-                        pill.innerText = "Completed";
-                        pill.className = "status-pill completed";
+                        if (pill) {
+                            pill.innerText = "Completed";
+                            pill.className = "status-pill completed";
+                        }
                         clearInterval(state.logPollingIntervals[scriptName]);
                         showNotification("Process Finished", `${scriptName} has completed successfully.`, "success");
                         
@@ -594,8 +916,10 @@ document.addEventListener('DOMContentLoaded', () => {
                             extractNewAccuracy(data.logs);
                         }
                     } else if (data.status === 'failed') {
-                        pill.innerText = "Failed";
-                        pill.className = "status-pill failed";
+                        if (pill) {
+                            pill.innerText = "Failed";
+                            pill.className = "status-pill failed";
+                        }
                         clearInterval(state.logPollingIntervals[scriptName]);
                         showNotification("Process Failed", `${scriptName} exited with errors.`, "danger");
                     }
@@ -615,45 +939,51 @@ document.addEventListener('DOMContentLoaded', () => {
         const match = logs.match(/Overall Accuracy:\s*([0-9\.]+)%/i);
         if (match && match[1]) {
             const accVal = parseFloat(match[1]).toFixed(1);
-            modelAccuracyBadge.innerText = `${accVal}%`;
-            modelAccuracyBadge.style.color = "var(--color-gold)";
-            const statValDiv = modelAccuracyBadge.closest('.quick-stat');
-            if (statValDiv) {
-                statValDiv.setAttribute('title', `Prediction model trained with evaluated accuracy of ${accVal}%.`);
+            if (modelAccuracyBadge) {
+                modelAccuracyBadge.innerText = `${accVal}%`;
+                modelAccuracyBadge.style.color = "var(--color-gold)";
+                const statValDiv = modelAccuracyBadge.closest('.quick-stat');
+                if (statValDiv) {
+                    statValDiv.setAttribute('title', `Prediction model trained with evaluated accuracy of ${accVal}%.`);
+                }
             }
             showNotification("Accuracy Restructured", `Prediction core retrained. Accuracy recorded: ${accVal}%`, "success");
         }
     }
 
     // Clear console terminal
-    document.getElementById('clear-console-btn').addEventListener('click', () => {
-        terminalStdout.innerText = "Console buffer flushed. Ready for process signals.";
-    });
+    const clearConsoleBtn = document.getElementById('clear-console-btn');
+    if (clearConsoleBtn) {
+        clearConsoleBtn.addEventListener('click', () => {
+            if (terminalStdout) terminalStdout.innerText = "Console buffer flushed. Ready for process signals.";
+        });
+    }
 
     // TOAST NOTIFICATIONS
     function showNotification(title, message, type = 'success') {
         const toast = document.getElementById('notification-toast');
+        if (!toast) return;
         const icon = toast.querySelector('.info-icon');
         const titleEl = document.getElementById('notif-title');
         const msgEl = document.getElementById('notif-message');
 
-        titleEl.innerText = title;
-        msgEl.innerText = message;
+        if (titleEl) titleEl.innerText = title;
+        if (msgEl) msgEl.innerText = message;
 
         // Reset classes
         toast.className = "notification";
-        icon.className = "fa-solid info-icon";
+        if (icon) icon.className = "fa-solid info-icon";
 
         if (type === 'success') {
             toast.style.borderColor = "rgba(16, 185, 129, 0.35)";
-            icon.classList.add('fa-circle-check', 'text-success');
+            if (icon) icon.classList.add('fa-circle-check', 'text-success');
         } else if (type === 'danger') {
             toast.style.borderColor = "rgba(239, 68, 68, 0.35)";
-            icon.classList.add('fa-circle-exclamation', 'text-danger');
+            if (icon) icon.classList.add('fa-circle-exclamation', 'text-danger');
         } else {
             // Info
             toast.style.borderColor = "rgba(226, 184, 66, 0.35)";
-            icon.classList.add('fa-circle-info', 'text-gold');
+            if (icon) icon.classList.add('fa-circle-info', 'text-gold');
         }
 
         // Remove hidden
@@ -667,9 +997,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Close notification btn
-    document.getElementById('notif-close-btn').addEventListener('click', () => {
-        document.getElementById('notification-toast').classList.add('hidden');
-    });
+    const notifCloseBtn = document.getElementById('notif-close-btn');
+    if (notifCloseBtn) {
+        notifCloseBtn.addEventListener('click', () => {
+            const toast = document.getElementById('notification-toast');
+            if (toast) toast.classList.add('hidden');
+        });
+    }
 
     // Initialize application
     initializeApp();

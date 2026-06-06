@@ -11,47 +11,54 @@
     <link rel="stylesheet" href="/static/style.css">
     <!-- FontAwesome for Premium Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Chart.js for Polymarket Style Price Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+
 </head>
 <body>
     <div class="app-container">
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar">
-            <div class="brand">
-                <div class="brand-logo">
-                    <i class="fa-solid fa-trophy text-gold"></i>
+        <!-- Sidebar Navigation Header -->
+        <header class="sidebar">
+            <div class="header-left">
+                <div class="brand">
+                    <div class="brand-logo">
+                        <img src="/static/laliga-monogram.svg" alt="La Liga Logo" style="height: 18px; width: auto;">
+                    </div>
+                    <div class="brand-name">
+                        <h1>La Liga</h1>
+                        <span class="brand-subtitle">PREDICTING MODEL</span>
+                    </div>
                 </div>
-                <div class="brand-name">
-                    <h1>La Liga</h1>
-                    <span>Predicting Model</span>
-                </div>
+                
+                <nav class="nav-menu">
+                    <button class="nav-item active" data-tab="predictor-tab">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Match Predictor</span>
+                    </button>
+                    <button class="nav-item" data-tab="squad-tab">
+                        <i class="fa-solid fa-hospital-user"></i>
+                        <span>Squad Health</span>
+                    </button>
+                    <button class="nav-item" data-tab="pipeline-tab">
+                        <i class="fa-solid fa-server"></i>
+                        <span>ML Pipeline</span>
+                    </button>
+                </nav>
             </div>
-            
-            <nav class="nav-menu">
-                <button class="nav-item active" data-tab="predictor-tab">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <span>Match Predictor</span>
-                </button>
-                <button class="nav-item" data-tab="squad-tab">
-                    <i class="fa-solid fa-hospital-user"></i>
-                    <span>Squad Health</span>
-                </button>
-                <button class="nav-item" data-tab="pipeline-tab">
-                    <i class="fa-solid fa-server"></i>
-                    <span>ML Pipeline</span>
-                </button>
-            </nav>
 
             <div class="sidebar-footer">
                 <div class="system-status">
                     <span class="status-indicator online"></span>
-                    <span>Local ML Engine Online</span>
+                    <span class="status-text">Engine Online</span>
                 </div>
-                <div class="version-info">v2.1.0 (XGBoost)</div>
+                <span class="version-info">v2.1.0</span>
             </div>
-        </aside>
+        </header>
 
         <!-- Main Dashboard Area -->
         <main class="dashboard-main">
+            <!-- Sub header used for compatibility and tab titles -->
             <header class="top-bar">
                 <div class="welcome-text">
                     <h2 id="page-title">Match Predictor</h2>
@@ -69,10 +76,10 @@
                 <!-- TAB 1: MATCH PREDICTOR -->
                 <section id="predictor-tab" class="tab-content active">
                     <div class="grid-layout">
-                        <!-- Setup Card (Form) -->
-                        <div class="panel glass-panel config-panel">
+                        <!-- Left column: The MATCH CONFIGURATION panel containing the form -->
+                        <div class="match-configuration-panel panel glass-panel">
                             <div class="panel-header">
-                                <h3><i class="fa-solid fa-sliders text-gold"></i> Match Configuration</h3>
+                                <h3><i class="fa-solid fa-gears text-gold"></i> Match Configuration</h3>
                             </div>
                             <form id="prediction-form" class="panel-body">
                                 <div class="form-row flex-row">
@@ -85,8 +92,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <!-- VS Separator -->
-                                    <div class="vs-text">VS</div>
+                                    <div class="vs-text">vs</div>
                                     <!-- Away Team Select -->
                                     <div class="form-group flex-1">
                                         <label for="away_team"><i class="fa-solid fa-plane-departure"></i> Away Team</label>
@@ -100,7 +106,7 @@
 
                                 <div class="form-row flex-row">
                                     <!-- Home Rest Days -->
-                                    <div class="form-group flex-1 slider-group">
+                                    <div class="form-group slider-group flex-1">
                                         <div class="label-with-value">
                                             <label for="home_rest_days">Home Rest Days</label>
                                             <span class="slider-val" id="home_rest_val">6</span>
@@ -108,7 +114,7 @@
                                         <input type="range" id="home_rest_days" name="home_rest_days" min="0" max="15" value="6" step="1">
                                     </div>
                                     <!-- Away Rest Days -->
-                                    <div class="form-group flex-1 slider-group">
+                                    <div class="form-group slider-group flex-1">
                                         <div class="label-with-value">
                                             <label for="away_rest_days">Away Rest Days</label>
                                             <span class="slider-val" id="away_rest_val">6</span>
@@ -155,12 +161,36 @@
                             </form>
                         </div>
 
-                        <!-- Results Panel (Placeholder -> Result) -->
-                        <div class="panel glass-panel result-panel" id="prediction-result-container">
+                        <!-- Right column: The prediction results (prediction-result-container) -->
+                        <div class="market-main-panel panel glass-panel" id="prediction-result-container">
+                            <div class="market-header">
+                                <h2 class="market-question">
+                                    Will <span id="question-home-team">[Home Team]</span> win against <span id="question-away-team">[Away Team]</span>?
+                                </h2>
+                            </div>
+                            
+                            <!-- Outcome Buttons -->
+                            <div class="market-outcomes">
+                                <button type="button" class="outcome-button home-win-btn">
+                                    <span class="outcome-title" id="outcome-home-label">Home Win</span>
+                                    <span class="outcome-prob" id="prob-home-val-btn">--%</span>
+                                </button>
+                                <button type="button" class="outcome-button draw-btn">
+                                    <span class="outcome-title">Draw</span>
+                                    <span class="outcome-prob" id="prob-draw-val-btn">--%</span>
+                                </button>
+                                <button type="button" class="outcome-button away-win-btn">
+                                    <span class="outcome-title" id="outcome-away-label">Away Win</span>
+                                    <span class="outcome-prob" id="prob-away-val-btn">--%</span>
+                                </button>
+                            </div>
+
+
+                            <!-- Result Placeholder -->
                             <div class="result-placeholder">
                                 <i class="fa-solid fa-chart-pie placeholder-icon"></i>
                                 <h4>Awaiting Match Parameters</h4>
-                                <p>Fill in the configuration panel on the left and click "Compute Prediction" to execute the XGBoost model and display outcomes.</p>
+                                <p>Fill in the configuration panel in the Betting Slip on the right and click "Compute Prediction" to execute the XGBoost model and display outcomes.</p>
                             </div>
                             
                             <!-- Hidden Actual Results Card -->
@@ -220,13 +250,13 @@
                                             <div class="team-health-detail text-left">
                                                 <strong id="home-team-name-badge">Barcelona</strong>
                                                 <div id="home-health-info" class="health-meta">
-                                                    Missing <strong>2</strong> key players (<span class="text-danger">15.2%</span> playing impact, <span class="text-danger">10.0%</span> goals)
+                                                    Missing <strong id="home-missing-count">2</strong> key players <span id="home-health-desc">(<span class="text-danger">15.2%</span> playing impact, <span class="text-danger">10.0%</span> goals)</span>
                                                 </div>
                                             </div>
                                             <div class="team-health-detail text-right">
                                                 <strong id="away-team-name-badge">Real Madrid</strong>
                                                 <div id="away-health-info" class="health-meta">
-                                                    Missing <strong>1</strong> key players (<span class="text-danger">3.5%</span> playing impact, <span class="text-danger">0.0%</span> goals)
+                                                    Missing <strong id="away-missing-count">1</strong> key players <span id="away-health-desc">(<span class="text-danger">3.5%</span> playing impact, <span class="text-danger">0.0%</span> goals)</span>
                                                 </div>
                                             </div>
                                         </div>
