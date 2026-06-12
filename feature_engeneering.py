@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
+import unicodedata
 import db_manager
 
 
@@ -52,6 +53,7 @@ def load_squad_value_data():
             return pd.DataFrame(columns=['Team', 'Total_Squad_Value'])
 
         for folder_name in os.listdir(base_dir):
+            folder_name_nfc = unicodedata.normalize('NFC', folder_name)
             folder_path = os.path.join(base_dir, folder_name)
             if os.path.isdir(folder_path):
                 file_path = os.path.join(folder_path, 'player_data.csv')
@@ -59,7 +61,7 @@ def load_squad_value_data():
                     df = pd.read_csv(file_path)
                     if 'Market Value' in df.columns:
                         total_value = df['Market Value'].apply(parse_market_value).sum()
-                        match_name = SQUAD_NAME_MAP.get(folder_name, folder_name)
+                        match_name = SQUAD_NAME_MAP.get(folder_name_nfc, folder_name_nfc)
                         squad_values.append({'Team': match_name, 'Total_Squad_Value': total_value})
         
         return pd.DataFrame(squad_values)

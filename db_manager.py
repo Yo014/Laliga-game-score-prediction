@@ -58,10 +58,11 @@ def get_squad_value_data():
     
     # Inline parse_market_value functionality to simulate feature_engeneering.py
     from feature_engeneering import parse_market_value, SQUAD_NAME_MAP
+    import unicodedata
     
     players_df['Total_Squad_Value'] = players_df['Market Value'].apply(parse_market_value)
     
     # Group by Team and sum
     squad_values = players_df.groupby('Team')['Total_Squad_Value'].sum().reset_index()
-    squad_values['Team'] = squad_values['Team'].apply(lambda x: SQUAD_NAME_MAP.get(x, x))
+    squad_values['Team'] = squad_values['Team'].apply(lambda x: SQUAD_NAME_MAP.get(unicodedata.normalize('NFC', str(x)), x))
     return squad_values

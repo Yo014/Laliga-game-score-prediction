@@ -1,6 +1,7 @@
 import os
 import glob
 import re
+import unicodedata
 import pandas as pd
 import db_manager
 
@@ -23,12 +24,13 @@ def populate_squad_players():
         return
 
     for folder_name in os.listdir(base_dir):
+        folder_name_nfc = unicodedata.normalize('NFC', folder_name)
         folder_path = os.path.join(base_dir, folder_name)
         if os.path.isdir(folder_path):
             file_path = os.path.join(folder_path, 'player_data.csv')
             if os.path.exists(file_path):
                 df = pd.read_csv(file_path)
-                df['Team'] = folder_name  # Keep raw team name, map inside pipeline
+                df['Team'] = folder_name_nfc  # Keep NFC normalized team name
                 all_players.append(df)
                 
     if all_players:

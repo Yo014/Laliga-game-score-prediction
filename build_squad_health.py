@@ -5,6 +5,7 @@ current_squad_health.csv with per-team injury aggregates.
 """
 
 import os
+import unicodedata
 import pandas as pd
 from datetime import datetime
 
@@ -83,12 +84,13 @@ def build_squad_health():
     rows = []
 
     for folder_name in sorted(os.listdir(SQUADS_DIR)):
+        folder_name_nfc = unicodedata.normalize('NFC', folder_name)
         folder_path = os.path.join(SQUADS_DIR, folder_name)
         csv_path = os.path.join(folder_path, 'player_data.csv')
         if not os.path.isfile(csv_path):
             continue
 
-        model_name = FOLDER_TO_MODEL_NAME.get(folder_name, folder_name)
+        model_name = FOLDER_TO_MODEL_NAME.get(folder_name_nfc, folder_name_nfc)
         df = pd.read_csv(csv_path)
 
         # Parse appearances and goals
