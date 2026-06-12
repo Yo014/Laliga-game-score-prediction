@@ -57,6 +57,8 @@ A premium, responsive local web dashboard is available to visualize matchups, ma
    - *Match Predictor:* Formulate match parameters, select referees, and review interactive win probabilities, expected offense indexes, and comparative squad values.
    - *Squad Health:* Manage player injury directories inline without modifying CSV files manually. Recalculates metrics automatically on save.
    - *ML Pipeline:* Run database seedings, processing steps, feature extractions, and retrain the XGBoost core with real-time log outputs printing inside a stylized dark console.
+
+
 https://github.com/user-attachments/assets/603277c5-46c7-4779-b7ac-03af9b5152c7
 
 ### Option B: Terminal Command Line Interface (CLI)
